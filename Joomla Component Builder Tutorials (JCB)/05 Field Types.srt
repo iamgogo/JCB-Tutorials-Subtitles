@@ -1,0 +1,1640 @@
+1
+00:00:01,024 --> 00:00:04,352
+If you have a good knowledge of Joomla's API
+
+2
+00:00:04,608 --> 00:00:09,728
+You will know that it has a means by which it builds its forms
+
+3
+00:00:10,496 --> 00:00:13,568
+The forms that you use in your component
+
+4
+00:00:13,824 --> 00:00:18,432
+And it's basically done through what is called the XML file
+
+5
+00:00:18,944 --> 00:00:22,528
+Now I can show you that XML file but maybe this is
+
+6
+00:00:22,784 --> 00:00:24,064
+a little bit Too Soon
+
+7
+00:00:24,576 --> 00:00:26,624
+So all I'll tell you is that
+
+8
+00:00:26,880 --> 00:00:30,464
+Component builder basically builds that XML file
+
+9
+00:00:30,976 --> 00:00:33,024
+And place it in in the right place
+
+10
+00:00:33,536 --> 00:00:35,840
+So that your model
+
+11
+00:00:36,096 --> 00:00:37,376
+View and controller
+
+12
+00:00:37,632 --> 00:00:39,680
+Can access that file
+
+13
+00:00:40,192 --> 00:00:42,240
+Through the Joomla API
+
+14
+00:00:42,496 --> 00:00:47,104
+And with it builds the fields which you would use in a view
+
+15
+00:00:47,872 --> 00:00:48,384
+So
+
+16
+00:00:48,640 --> 00:00:51,456
+we Need to define a few terms what is a view
+
+17
+00:00:51,712 --> 00:00:52,736
+What is a field
+
+18
+00:00:53,248 --> 00:00:54,528
+What is a component
+
+19
+00:00:54,784 --> 00:00:56,576
+All those kind of things so
+
+20
+00:00:56,832 --> 00:01:00,160
+We would like to start with what is known as field types
+
+21
+00:01:00,928 --> 00:01:04,256
+There is always a field type needed
+
+22
+00:01:04,512 --> 00:01:06,304
+If you are building a field
+
+23
+00:01:07,328 --> 00:01:13,216
+Field types if we were to just go to Joomla itself and maybe create a new article
+
+24
+00:01:15,264 --> 00:01:18,080
+You basically this is what we would call a view
+
+25
+00:01:18,336 --> 00:01:19,360
+In fact even the
+
+26
+00:01:19,616 --> 00:01:22,176
+URL which I suppose you can't see
+
+27
+00:01:22,432 --> 00:01:23,712
+let me Scroll down a bit there
+
+28
+00:01:24,480 --> 00:01:26,528
+URL says that it's in a view
+
+29
+00:01:27,040 --> 00:01:28,832
+View equals article
+
+30
+00:01:29,344 --> 00:01:30,368
+Ok so
+
+31
+00:01:30,880 --> 00:01:32,416
+This is an article View
+
+32
+00:01:33,440 --> 00:01:36,256
+If you close this and you see a list of
+
+33
+00:01:36,512 --> 00:01:39,072
+Oh there's no articles here it's a blank website
+
+34
+00:01:39,584 --> 00:01:43,168
+Then this is a list of articles and it's articles are plural
+
+35
+00:01:44,192 --> 00:01:47,008
+So if you create one it's article single
+
+36
+00:01:47,520 --> 00:01:50,336
+And if it's the list of the articles it's plural
+
+37
+00:01:50,848 --> 00:01:52,896
+Both of these are seen as views
+
+38
+00:01:53,664 --> 00:01:54,688
+So this is the
+
+39
+00:01:54,944 --> 00:01:55,968
+List View
+
+40
+00:01:56,480 --> 00:01:58,272
+And if you click on new
+
+41
+00:01:58,528 --> 00:02:02,368
+This is the what we call the edit view or the Single View
+
+42
+00:02:03,392 --> 00:02:04,160
+So
+
+43
+00:02:04,416 --> 00:02:08,768
+Your components mostly will have these two views in the backend
+
+44
+00:02:09,280 --> 00:02:11,328
+When it comes to your different datasets
+
+45
+00:02:12,352 --> 00:02:12,864
+Now
+
+46
+00:02:13,376 --> 00:02:16,448
+This title here is what we would call a text view
+
+47
+00:02:16,960 --> 00:02:19,264
+the alias here is also a text view
+
+48
+00:02:20,032 --> 00:02:24,384
+This editor block here is what we would call there sorry not text View
+
+49
+00:02:24,640 --> 00:02:26,688
+I mean text field
+
+50
+00:02:28,736 --> 00:02:34,112
+And this editor here is also called a text editor field
+
+51
+00:02:34,624 --> 00:02:35,648
+This is a
+
+52
+00:02:35,904 --> 00:02:36,416
+List
+
+53
+00:02:37,184 --> 00:02:37,696
+Field
+
+54
+00:02:38,208 --> 00:02:39,744
+This is a radio
+
+55
+00:02:40,000 --> 00:02:41,792
+Field another list field
+
+56
+00:02:42,048 --> 00:02:44,864
+Another list field this is a tag field
+
+57
+00:02:45,888 --> 00:02:47,680
+This is a text field
+
+58
+00:02:48,448 --> 00:02:50,496
+And so you have all these fields
+
+59
+00:02:50,752 --> 00:02:51,520
+This is a
+
+60
+00:02:52,032 --> 00:02:52,800
+Date field
+
+61
+00:02:54,336 --> 00:02:56,384
+This is a user field
+
+62
+00:02:58,944 --> 00:03:00,480
+This is a text field
+
+63
+00:03:00,992 --> 00:03:01,760
+Is a text
+
+64
+00:03:02,528 --> 00:03:03,552
+Area
+
+65
+00:03:03,808 --> 00:03:04,832
+Text area
+
+66
+00:03:05,088 --> 00:03:05,856
+Text field
+
+67
+00:03:06,112 --> 00:03:06,624
+List
+
+68
+00:03:07,392 --> 00:03:09,952
+So we can continue this is a
+
+69
+00:03:10,208 --> 00:03:13,792
+Normal text field but that's got a certain feature called
+
+70
+00:03:14,048 --> 00:03:15,328
+Read only
+
+71
+00:03:15,584 --> 00:03:16,352
+Added to it
+
+72
+00:03:17,120 --> 00:03:21,472
+As we will see these things are all in place in our application
+
+73
+00:03:21,728 --> 00:03:26,592
+For you to make use of all these different changes that can be made with one type of field
+
+74
+00:03:27,616 --> 00:03:32,224
+So these are all seen as Fields and they all live inside a view
+
+75
+00:03:32,736 --> 00:03:36,576
+So that's one concept that is quite important for you to realise
+
+76
+00:03:37,088 --> 00:03:41,184
+That you have Fields which live in views now
+
+77
+00:03:41,440 --> 00:03:44,256
+You might not think that the list view has
+
+78
+00:03:44,512 --> 00:03:50,656
+Fields and you're partly right it more displays these fields
+
+79
+00:03:50,912 --> 00:03:52,192
+Let's do a dummy
+
+80
+00:03:52,448 --> 00:03:55,008
+test article here
+
+81
+00:03:55,520 --> 00:03:59,616
+Hi I think that's about all I need to fill in save and close
+
+82
+00:04:01,408 --> 00:04:04,224
+So we at least have a list item
+
+83
+00:04:04,992 --> 00:04:07,040
+But that is also a field
+
+84
+00:04:07,296 --> 00:04:11,904
+That is a field and if you are to click on search options all these are fields
+
+85
+00:04:13,184 --> 00:04:13,696
+And
+
+86
+00:04:13,952 --> 00:04:18,047
+So your list view also has certain Fields which are primarily
+
+87
+00:04:18,303 --> 00:04:24,447
+Only available in the list view. The list view is also the place where we do most of our
+
+88
+00:04:24,703 --> 00:04:30,847
+Features for a multiple items where as opening one item
+
+89
+00:04:31,103 --> 00:04:33,663
+you do what's only required for one item
+
+90
+00:04:34,431 --> 00:04:39,551
+Ok and then there is obviously a table here which is part of the list view
+
+91
+00:04:40,319 --> 00:04:45,183
+now Component builder sets Up the back end List view and edit view for you
+
+92
+00:04:45,439 --> 00:04:50,559
+Based on the fields and how you map them into your view
+
+93
+00:04:51,327 --> 00:04:53,887
+We will look at each of those concepts
+
+94
+00:04:54,143 --> 00:04:54,911
+More
+
+95
+00:04:55,167 --> 00:04:55,679
+Deeply
+
+96
+00:04:56,191 --> 00:05:00,031
+But I need to have you understand from which angle we are coming
+
+97
+00:05:00,287 --> 00:05:01,311
+We are
+
+98
+00:05:01,567 --> 00:05:02,847
+Gonna try and
+
+99
+00:05:03,103 --> 00:05:04,127
+Show you
+
+100
+00:05:04,383 --> 00:05:05,663
+That inside of
+
+101
+00:05:05,919 --> 00:05:07,199
+This article
+
+102
+00:05:07,711 --> 00:05:12,831
+You will be creating Fields even put them into different tabs
+
+103
+00:05:13,343 --> 00:05:19,487
+Which will eventually be rendered in a specific order in Joomla in in the component when it's been
+
+104
+00:05:19,743 --> 00:05:22,815
+Compiled through component Builder
+
+105
+00:05:23,839 --> 00:05:24,607
+So
+
+106
+00:05:26,399 --> 00:05:28,191
+That's using Joomla's own
+
+107
+00:05:29,471 --> 00:05:32,031
+Article manager as sort of an example
+
+108
+00:05:32,287 --> 00:05:33,823
+But we could just as well
+
+109
+00:05:34,335 --> 00:05:35,871
+Go onto component Builder
+
+110
+00:05:36,639 --> 00:05:42,271
+Since it has the demo article sorry the demo application in it we can select the demo
+
+111
+00:05:42,527 --> 00:05:43,551
+Compile it
+
+112
+00:05:44,831 --> 00:05:50,975
+It says that there's a copy warning this is because we haven't set some options in the global settings
+
+113
+00:05:51,999 --> 00:05:58,143
+It doesn't mean that there's been an error in the compiling it just means it couldn't move the file to the Git repository
+
+114
+00:05:58,399 --> 00:06:01,983
+You see we selected this Git thing here
+
+115
+00:06:02,495 --> 00:06:04,031
+And also that one
+
+116
+00:06:04,799 --> 00:06:08,639
+If we've unselected those let's start again
+
+117
+00:06:10,175 --> 00:06:13,247
+let me unselect those and we only do a compile
+
+118
+00:06:15,807 --> 00:06:17,599
+You see it doesn't give you the same warning
+
+119
+00:06:18,111 --> 00:06:20,159
+Because it's not trying to move things around
+
+120
+00:06:20,415 --> 00:06:21,439
+And since that
+
+121
+00:06:21,695 --> 00:06:24,767
+it couldn't move the others because they are Global figures
+
+122
+00:06:25,023 --> 00:06:27,071
+Settings that we haven't set
+
+123
+00:06:27,583 --> 00:06:28,863
+We'll look at those in a moment
+
+124
+00:06:29,631 --> 00:06:30,143
+So
+
+125
+00:06:30,911 --> 00:06:32,703
+Now we could just click install
+
+126
+00:06:33,983 --> 00:06:36,543
+And it is installed the component
+
+127
+00:06:36,799 --> 00:06:38,335
+Into this Joomla site
+
+128
+00:06:39,103 --> 00:06:44,735
+Now as you'll see it doesn't have any images because we don't ship the images with the components
+
+129
+00:06:45,247 --> 00:06:47,039
+that are sent as demo
+
+130
+00:06:47,295 --> 00:06:48,063
+So
+
+131
+00:06:48,319 --> 00:06:52,927
+Unfortunately at this stage we might change that in the future
+
+132
+00:06:53,183 --> 00:06:57,023
+But you already have your demo component running
+
+133
+00:06:57,279 --> 00:06:59,583
+If you click on add a look
+
+134
+00:06:59,839 --> 00:07:05,983
+It will open the edit view if you click looks It will open a list view of where the looks will be displayed
+
+135
+00:07:06,239 --> 00:07:10,591
+We added an import feature which your normal Joomla
+
+136
+00:07:10,847 --> 00:07:12,639
+Components don't have
+
+137
+00:07:13,151 --> 00:07:14,687
+We will explain that
+
+138
+00:07:14,943 --> 00:07:15,711
+Later
+
+139
+00:07:16,479 --> 00:07:17,759
+But we click new
+
+140
+00:07:18,271 --> 00:07:22,367
+You'd see that we have a text field here a radio button if I
+
+141
+00:07:22,623 --> 00:07:26,207
+Add something to the textfield it opens an alias field
+
+142
+00:07:26,463 --> 00:07:27,743
+Also text field
+
+143
+00:07:27,999 --> 00:07:29,791
+We have a repeatable field
+
+144
+00:07:31,327 --> 00:07:31,839
+in here
+
+145
+00:07:33,375 --> 00:07:36,191
+And we can add information to this
+
+146
+00:07:36,959 --> 00:07:39,007
+And that is sort of
+
+147
+00:07:39,263 --> 00:07:40,287
+Look at
+
+148
+00:07:40,543 --> 00:07:43,103
+The fields that is in the demo component
+
+149
+00:07:43,359 --> 00:07:45,151
+And so these are all fields
+
+150
+00:07:45,919 --> 00:07:48,991
+And they are mapped into the component
+
+151
+00:07:49,503 --> 00:07:51,551
+Through Joomla's infrastructure that
+
+152
+00:07:52,063 --> 00:07:53,087
+If we go to
+
+153
+00:07:54,111 --> 00:07:54,879
+Admin views
+
+154
+00:07:56,159 --> 00:07:56,927
+There is Look
+
+155
+00:07:57,695 --> 00:07:58,719
+if you look
+
+156
+00:08:00,511 --> 00:08:01,279
+It has in it
+
+157
+00:08:02,303 --> 00:08:03,839
+Those Fields we just looked at
+
+158
+00:08:04,095 --> 00:08:04,607
+Right
+
+159
+00:08:04,863 --> 00:08:05,887
+there's the name
+
+160
+00:08:06,655 --> 00:08:10,751
+There is the earliest acronym all this information
+
+161
+00:08:11,007 --> 00:08:12,031
+We just looked at
+
+162
+00:08:12,287 --> 00:08:12,799
+And
+
+163
+00:08:13,311 --> 00:08:16,127
+They are all mapped into this view
+
+164
+00:08:16,639 --> 00:08:18,943
+Through the field add button here
+
+165
+00:08:19,455 --> 00:08:25,599
+Reason why these two are Why you're not adding in through this area is because this simply is to edit
+
+166
+00:08:25,855 --> 00:08:26,623
+Existing
+
+167
+00:08:27,135 --> 00:08:27,647
+fields
+
+168
+00:08:28,415 --> 00:08:29,951
+Instead of adding them
+
+169
+00:08:30,463 --> 00:08:36,607
+So if you were to open an admin view you can edit them from here and it's maybe easier to get to those
+
+170
+00:08:36,863 --> 00:08:38,143
+Fields especially
+
+171
+00:08:38,399 --> 00:08:38,911
+If you
+
+172
+00:08:39,167 --> 00:08:40,703
+Have many components already
+
+173
+00:08:41,215 --> 00:08:44,287
+You'll have many Fields and this is a way to
+
+174
+00:08:44,543 --> 00:08:48,127
+Sort of just look at the fields related to this component's view
+
+175
+00:08:48,895 --> 00:08:49,919
+Ok so
+
+176
+00:08:50,687 --> 00:08:56,575
+If you were to add more Fields you would open this box and this is where you'll be adding Fields I see we are missing
+
+177
+00:08:57,599 --> 00:08:58,111
+One
+
+178
+00:08:58,623 --> 00:08:59,647
+Possibly I need to
+
+179
+00:09:00,415 --> 00:09:02,975
+Ensure that it's with the export and it's been dropped ou
+
+180
+00:09:04,255 --> 00:09:05,279
+I'll look at that
+
+181
+00:09:05,791 --> 00:09:06,559
+Ok
+
+182
+00:09:08,607 --> 00:09:10,911
+Now let's step back to
+
+183
+00:09:12,447 --> 00:09:13,471
+Field types
+
+184
+00:09:13,727 --> 00:09:15,775
+Because that's really where it all starts
+
+185
+00:09:16,287 --> 00:09:17,567
+We've already added
+
+186
+00:09:17,823 --> 00:09:20,127
+All the field types that I think you would need
+
+187
+00:09:21,151 --> 00:09:22,431
+The field types are
+
+188
+00:09:22,687 --> 00:09:23,711
+Basically
+
+189
+00:09:23,967 --> 00:09:28,063
+Mapping to the libraries inside of Joomla
+
+190
+00:09:28,575 --> 00:09:31,135
+Joomla has many field types
+
+191
+00:09:31,647 --> 00:09:34,207
+And for each field type which you build
+
+192
+00:09:34,463 --> 00:09:39,071
+You need to set certain values in an XML document
+
+193
+00:09:39,583 --> 00:09:40,863
+These values are
+
+194
+00:09:42,655 --> 00:09:44,703
+for example if you with use checkbox
+
+195
+00:09:45,727 --> 00:09:46,239
+Set
+
+196
+00:09:46,495 --> 00:09:47,775
+Up in Properties
+
+197
+00:09:49,055 --> 00:09:49,567
+So
+
+198
+00:09:49,823 --> 00:09:51,359
+You have these
+
+199
+00:09:53,151 --> 00:09:57,759
+Be certain changing properties that you can adjust for each
+
+200
+00:09:58,271 --> 00:09:58,783
+field
+
+201
+00:09:59,295 --> 00:10:00,063
+So this is
+
+202
+00:10:00,319 --> 00:10:02,367
+This is only the properties for
+
+203
+00:10:02,623 --> 00:10:04,927
+the checkbox field
+
+204
+00:10:05,695 --> 00:10:11,839
+Now you might wonder if you need to set these and most of the time you would never need to do that unless you become advanced
+
+205
+00:10:13,119 --> 00:10:16,191
+You would want to add more field types which we haven't covered
+
+206
+00:10:16,703 --> 00:10:20,287
+Or if you want to extend the existing field types
+
+207
+00:10:20,799 --> 00:10:23,615
+But for the most part you would not probably need to
+
+208
+00:10:24,127 --> 00:10:25,407
+You know tinker with this
+
+209
+00:10:25,919 --> 00:10:28,479
+I am simply trying to explain to you where
+
+210
+00:10:28,735 --> 00:10:29,503
+field type
+
+211
+00:10:30,015 --> 00:10:31,295
+comes from and
+
+212
+00:10:31,551 --> 00:10:32,831
+Amazing
+
+213
+00:10:34,367 --> 00:10:36,159
+Scalability that exists
+
+214
+00:10:36,671 --> 00:10:38,975
+You see with most other component
+
+215
+00:10:39,231 --> 00:10:43,071
+Builders you need to wait for the developer to add a new field type
+
+216
+00:10:43,583 --> 00:10:48,703
+Where as in this one you can add your own field type which simply needs to map to Joomla's
+
+217
+00:10:48,959 --> 00:10:50,239
+Library
+
+218
+00:10:50,495 --> 00:10:52,799
+And the way that they have their field type set
+
+219
+00:10:53,055 --> 00:10:58,175
+Now there are certain few types like repeatable field which is quite tricky and
+
+220
+00:10:58,431 --> 00:11:02,015
+Needs special attention even in the code of the compiler
+
+221
+00:11:02,271 --> 00:11:08,415
+But the majority of field types are very straight forward and simple to implement and we have implemented
+
+222
+00:11:08,671 --> 00:11:09,951
+those already
+
+223
+00:11:10,975 --> 00:11:15,327
+We have not implemented all the attributes that can be targeted though
+
+224
+00:11:15,583 --> 00:11:20,703
+And those would be the ones that you might need to come and add if you want to use them for example
+
+225
+00:11:20,959 --> 00:11:22,751
+I added this showon
+
+226
+00:11:23,007 --> 00:11:24,287
+option
+
+227
+00:11:24,799 --> 00:11:27,871
+quite recently to old field types which I found
+
+228
+00:11:28,127 --> 00:11:34,015
+Because this is a way of showing and hiding Fields based on other Fields' values
+
+229
+00:11:34,783 --> 00:11:36,831
+And although we have a very excellent
+
+230
+00:11:37,343 --> 00:11:41,951
+Application in place in component builder to take control of those
+
+231
+00:11:42,463 --> 00:11:43,231
+Features
+
+232
+00:11:43,743 --> 00:11:45,535
+of showing and hiding fields
+
+233
+00:11:46,047 --> 00:11:52,191
+This is an added feature which Joomla itself actually has and if we can in a component
+
+234
+00:11:52,447 --> 00:11:58,591
+That we are developing if we can use show on instead of the component Builders version
+
+235
+00:11:59,103 --> 00:12:01,407
+I would obviously suggest we do that
+
+236
+00:12:02,943 --> 00:12:06,783
+And none the less I would still explain much more on this topic as we continue
+
+237
+00:12:07,295 --> 00:12:08,319
+So just
+
+238
+00:12:08,575 --> 00:12:11,135
+Briefly let me start here at the top
+
+239
+00:12:12,159 --> 00:12:14,463
+You have name which is called type
+
+240
+00:12:14,719 --> 00:12:16,767
+And a value for checkbox
+
+241
+00:12:17,279 --> 00:12:17,791
+And it
+
+242
+00:12:18,047 --> 00:12:23,167
+Must be set to not adjustable because that is the way Joomla expects it
+
+243
+00:12:23,679 --> 00:12:27,519
+If you don't understand any of this information that I'm showing you here
+
+244
+00:12:28,031 --> 00:12:29,311
+Then a place to go to
+
+245
+00:12:30,335 --> 00:12:31,615
+Is this URL
+
+246
+00:12:33,663 --> 00:12:35,455
+Let me open that for you
+
+247
+00:12:38,527 --> 00:12:40,575
+It's called the form fields
+
+248
+00:12:41,343 --> 00:12:45,695
+You'd see a whole list of form Fields and these are the same form Fields you just saw
+
+249
+00:12:46,207 --> 00:12:47,999
+In our application
+
+250
+00:12:48,767 --> 00:12:49,791
+If I was to take
+
+251
+00:12:51,583 --> 00:12:53,119
+Checkbox (where is it?)
+
+252
+00:12:54,399 --> 00:12:54,911
+Up
+
+253
+00:12:56,447 --> 00:12:57,727
+here it is checkbox
+
+254
+00:12:58,239 --> 00:12:59,519
+Checkboxes
+
+255
+00:13:01,311 --> 00:13:01,823
+
+
+256
+00:13:02,335 --> 00:13:06,943
+Ok if I would open that you'd see that they give you a list of those
+
+257
+00:13:07,199 --> 00:13:07,967
+Fields type
+
+258
+00:13:08,223 --> 00:13:10,783
+Name and they tell you what is mandatory
+
+259
+00:13:11,039 --> 00:13:12,063
+And what is optional
+
+260
+00:13:12,575 --> 00:13:14,879
+And basically we are just mapping those
+
+261
+00:13:15,135 --> 00:13:15,647
+Data
+
+262
+00:13:16,159 --> 00:13:17,183
+Into this
+
+263
+00:13:17,439 --> 00:13:18,207
+form here
+
+264
+00:13:18,719 --> 00:13:24,863
+And if we wanna add another attribute you just click on the + and it creates a new field and we add the name add
+
+265
+00:13:25,119 --> 00:13:28,191
+The value tweak these switches in correspondence
+
+266
+00:13:28,447 --> 00:13:29,727
+And some information
+
+267
+00:13:29,983 --> 00:13:33,311
+This is really for yourself this information block here
+
+268
+00:13:33,823 --> 00:13:39,967
+We put information there when later when you use this field type you are reminded what this specific attribute is for.
+
+269
+00:13:41,503 --> 00:13:44,319
+And I basically took this information
+
+270
+00:13:44,575 --> 00:13:45,087
+by
+
+271
+00:13:45,343 --> 00:13:47,391
+Copying it right here from
+
+272
+00:13:47,903 --> 00:13:50,207
+Joomla's website and placed it in there
+
+273
+00:13:50,719 --> 00:13:55,839
+And where I felt there might be more said I added some customs text to it
+
+274
+00:13:56,607 --> 00:14:01,983
+And what these values will do is it'll create an XML string like that
+
+275
+00:14:02,751 --> 00:14:04,287
+In your form
+
+276
+00:14:04,543 --> 00:14:07,615
+Which Joomla then uses to build those forms
+
+277
+00:14:08,127 --> 00:14:08,895
+So
+
+278
+00:14:09,151 --> 00:14:12,735
+Basically we first setup a field Type by
+
+279
+00:14:12,991 --> 00:14:13,759
+Telling you
+
+280
+00:14:14,015 --> 00:14:15,039
+Which input
+
+281
+00:14:15,551 --> 00:14:21,695
+Values would be able to use for the specific field type which at this stage is
+
+282
+00:14:21,951 --> 00:14:22,719
+Check boxes
+
+283
+00:14:23,743 --> 00:14:25,535
+And then we save this
+
+284
+00:14:25,791 --> 00:14:30,143
+And then later you can reuse this field type when you start creating fields
+
+285
+00:14:30,911 --> 00:14:34,239
+So let me just close this check box
+
+286
+00:14:35,519 --> 00:14:36,799
+And go to text field
+
+287
+00:14:46,527 --> 00:14:48,575
+And you'll see that here is a
+
+288
+00:14:48,831 --> 00:14:50,367
+List of the fields
+
+289
+00:14:50,879 --> 00:14:53,439
+That used text field as its type
+
+290
+00:14:54,719 --> 00:14:57,279
+Now you can open one of these fields
+
+291
+00:14:59,327 --> 00:15:04,959
+And here the bottom you see very something very similar if I was to go back here
+
+292
+00:15:05,727 --> 00:15:07,263
+And go to text field
+
+293
+00:15:11,871 --> 00:15:13,151
+on Joomla's website
+
+294
+00:15:14,175 --> 00:15:19,295
+You see that it shows you examples of how that XML line should look right see
+
+295
+00:15:20,063 --> 00:15:20,831
+Now
+
+296
+00:15:21,343 --> 00:15:22,111
+here
+
+297
+00:15:22,367 --> 00:15:22,879
+In the
+
+298
+00:15:23,135 --> 00:15:25,439
+Field area where you've created the field
+
+299
+00:15:25,951 --> 00:15:29,535
+Basically gave the field the name this is just for the system
+
+300
+00:15:30,047 --> 00:15:33,375
+The name used here is the one that is important
+
+301
+00:15:34,143 --> 00:15:36,447
+That should be the correct name the label
+
+302
+00:15:37,215 --> 00:15:40,031
+This name is just that you when you add it to your view
+
+303
+00:15:40,287 --> 00:15:43,103
+You know this is what we use to identify it
+
+304
+00:15:43,615 --> 00:15:45,919
+We'll still explain adding it to the view
+
+305
+00:15:46,431 --> 00:15:47,455
+In more detail
+
+306
+00:15:48,479 --> 00:15:54,111
+This data type and things will also explain when we go into more depth around
+
+307
+00:15:54,367 --> 00:15:57,439
+What a field is and how to build one
+
+308
+00:15:57,951 --> 00:16:04,095
+I'm simply now looking at few types and showing you how the changes that you've made in field type
+
+309
+00:16:04,607 --> 00:16:05,631
+affects
+
+310
+00:16:05,887 --> 00:16:08,191
+fields that you would build with that type
+
+311
+00:16:08,959 --> 00:16:10,239
+So here is that
+
+312
+00:16:10,495 --> 00:16:13,055
+Detail that was in field type
+
+313
+00:16:13,311 --> 00:16:14,847
+remember on change
+
+314
+00:16:15,359 --> 00:16:16,639
+And it tells you
+
+315
+00:16:17,663 --> 00:16:23,039
+What is mandatory and what is optional but that's basically because I placed it in the description right
+
+316
+00:16:23,551 --> 00:16:26,879
+I mean let's we can click close to go back to that field type
+
+317
+00:16:29,695 --> 00:16:31,231
+And then click on property
+
+318
+00:16:32,511 --> 00:16:35,583
+And we'll see that I added optional and mandatory
+
+319
+00:16:35,839 --> 00:16:37,119
+To the description
+
+320
+00:16:37,631 --> 00:16:40,447
+So that I can know is this optional or mandatory
+
+321
+00:16:41,215 --> 00:16:41,983
+Yes you could
+
+322
+00:16:42,239 --> 00:16:47,871
+Possibly argue that I should have done it from here and that it's not shouldn't be necessary to add it there
+
+323
+00:16:48,127 --> 00:16:51,199
+But you know this
+
+324
+00:16:51,711 --> 00:16:55,295
+settings here is used when we compile the component
+
+325
+00:16:55,807 --> 00:16:56,831
+Where as this
+
+326
+00:16:57,087 --> 00:16:58,879
+Here is used for you
+
+327
+00:16:59,135 --> 00:17:02,207
+to know what this field attribute is all about
+
+328
+00:17:02,719 --> 00:17:04,511
+And maybe as we
+
+329
+00:17:04,767 --> 00:17:07,327
+Continue to develop this component I might
+
+330
+00:17:07,583 --> 00:17:08,607
+Make a change to that
+
+331
+00:17:09,119 --> 00:17:13,215
+But I wouldn't make such a change that it affects anything that already exists
+
+332
+00:17:14,751 --> 00:17:16,031
+Dramatically in any way
+
+333
+00:17:16,543 --> 00:17:19,103
+Ok so let's go back to a field
+
+334
+00:17:23,455 --> 00:17:29,343
+The way the compiler works it is doesn't really grab the string and just put it into the XML
+
+335
+00:17:29,855 --> 00:17:33,439
+In fact if I show you how a string looks that the compiler has built
+
+336
+00:17:34,975 --> 00:17:35,743
+Wrong window
+
+337
+00:17:36,767 --> 00:17:40,095
+Let's go to a string that the compiler has built
+
+338
+00:17:53,919 --> 00:17:55,199
+Assessment type
+
+339
+00:17:55,967 --> 00:17:58,527
+You'd see that it is completely reformatted
+
+340
+00:17:58,783 --> 00:18:02,367
+The label is turned into a translatable string
+
+341
+00:18:02,879 --> 00:18:05,439
+So as has been done with the description
+
+342
+00:18:06,207 --> 00:18:11,583
+It also tells you where in the compiler if well we'll still look at that because this might
+
+343
+00:18:11,839 --> 00:18:14,143
+Sometimes show and sometimes you can
+
+344
+00:18:14,399 --> 00:18:14,911
+Tweak
+
+345
+00:18:15,423 --> 00:18:16,191
+Your
+
+346
+00:18:16,703 --> 00:18:19,007
+Your component that it doesn't show it
+
+347
+00:18:19,775 --> 00:18:21,567
+But it tells you
+
+348
+00:18:22,079 --> 00:18:24,127
+you know in which line in the
+
+349
+00:18:24,383 --> 00:18:28,735
+Compiler it was built and also in which file which is very nice
+
+350
+00:18:28,991 --> 00:18:34,879
+I think those of you that are developers will appreciate this feature tremendously
+
+351
+00:18:35,391 --> 00:18:37,183
+It also tells you the field types
+
+352
+00:18:37,439 --> 00:18:40,511
+Obviously as you can see as we scroll through this
+
+353
+00:18:40,767 --> 00:18:41,791
+You can see that
+
+354
+00:18:42,047 --> 00:18:46,143
+Component builder really goes way out of its way to
+
+355
+00:18:46,399 --> 00:18:47,679
+Reconstruct
+
+356
+00:18:48,191 --> 00:18:49,727
+That
+
+357
+00:18:50,495 --> 00:18:51,263
+That field
+
+358
+00:18:52,287 --> 00:18:53,823
+It is not using
+
+359
+00:18:54,079 --> 00:18:55,615
+This directly
+
+360
+00:18:56,127 --> 00:18:57,663
+It in fact
+
+361
+00:18:57,919 --> 00:18:58,943
+Grabs
+
+362
+00:18:59,199 --> 00:19:00,735
+That area
+
+363
+00:19:00,991 --> 00:19:01,759
+And that
+
+364
+00:19:02,015 --> 00:19:04,063
+To determine that this is a
+
+365
+00:19:04,319 --> 00:19:04,831
+Text
+
+366
+00:19:05,087 --> 00:19:05,599
+Field
+
+367
+00:19:05,855 --> 00:19:09,695
+So it actually is really dependent on that part
+
+368
+00:19:10,719 --> 00:19:13,279
+Which is up to name come now
+
+369
+00:19:13,791 --> 00:19:14,303
+And
+
+370
+00:19:14,559 --> 00:19:15,583
+That part there
+
+371
+00:19:16,607 --> 00:19:18,143
+So the opening
+
+372
+00:19:20,447 --> 00:19:22,495
+Exclamation and the closing one
+
+373
+00:19:22,751 --> 00:19:25,823
+And the value in between those is what is used
+
+374
+00:19:26,335 --> 00:19:30,175
+So if you by accident drop off this
+
+375
+00:19:30,687 --> 00:19:34,783
+Or that it will still work perfectly
+
+376
+00:19:35,039 --> 00:19:36,831
+These are really the only
+
+377
+00:19:37,087 --> 00:19:38,111
+Things that are
+
+378
+00:19:38,367 --> 00:19:39,391
+Really needed
+
+379
+00:19:39,903 --> 00:19:41,439
+And part of what I am
+
+380
+00:19:41,695 --> 00:19:47,583
+Hoping to achieve eventually is that this becomes just input Fields Like These
+
+381
+00:19:49,375 --> 00:19:51,935
+And yet I'm wondering if I should go that way
+
+382
+00:19:52,191 --> 00:19:55,007
+The fact that they all in one big text area
+
+383
+00:19:55,519 --> 00:19:59,103
+Leaves us with a lot of room and freedom
+
+384
+00:19:59,359 --> 00:20:04,223
+to really adjust it easily without major
+
+385
+00:20:04,479 --> 00:20:05,503
+Complications
+
+386
+00:20:06,015 --> 00:20:10,111
+And any case if you start a new field which we'll look at later
+
+387
+00:20:10,367 --> 00:20:14,975
+It populates this with the demo data and the demo data
+
+388
+00:20:15,231 --> 00:20:17,023
+Is actually values that you set
+
+389
+00:20:17,535 --> 00:20:19,071
+When you create a field type
+
+390
+00:20:19,327 --> 00:20:20,095
+You see
+
+391
+00:20:20,607 --> 00:20:22,655
+there it is the demo is this
+
+392
+00:20:22,911 --> 00:20:24,447
+Value or example
+
+393
+00:20:24,703 --> 00:20:25,983
+That is placed here
+
+394
+00:20:26,239 --> 00:20:31,615
+It's from these values that it region if you create a new text field
+
+395
+00:20:31,871 --> 00:20:36,223
+It grabs these values as the values which you can then
+
+396
+00:20:36,479 --> 00:20:38,783
+Adjust to your purpose
+
+397
+00:20:39,039 --> 00:20:40,063
+Of you know
+
+398
+00:20:40,319 --> 00:20:43,391
+Implementation for that specific field at that moment
+
+399
+00:20:44,159 --> 00:20:47,999
+If you leave it blank it will also build it without any value
+
+400
+00:20:48,255 --> 00:20:49,279
+Between those two
+
+401
+00:20:49,791 --> 00:20:51,071
+Exclamation marks
+
+402
+00:20:51,839 --> 00:20:52,607
+Ok
+
+403
+00:20:54,399 --> 00:20:56,191
+That is looking at field types
+
+404
+00:20:56,959 --> 00:21:00,031
+I'm not gonna spend much more time on this
+
+405
+00:21:00,287 --> 00:21:03,103
+Primarily because all the field types has been setup
+
+406
+00:21:03,871 --> 00:21:10,015
+And you hardly ever would need to come here and change things unless you really wanna do your own thing
+
+407
+00:21:10,271 --> 00:21:13,855
+And then you will be able to do that without my help I suppose
+
+408
+00:21:14,367 --> 00:21:19,744
+So our next tutorial will be on how to use field types in
+
+409
+00:21:20,000 --> 00:21:20,512
+Fields
+
+410
+00:21:21,280 --> 00:21:22,048
+Thank you for watching
+

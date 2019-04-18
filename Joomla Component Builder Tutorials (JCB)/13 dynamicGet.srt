@@ -1,0 +1,3328 @@
+1
+00:00:02,048 --> 00:00:02,560
+Hi
+
+2
+00:00:04,096 --> 00:00:05,376
+We still working with
+
+3
+00:00:05,632 --> 00:00:06,656
+Sermon distributor
+
+4
+00:00:06,912 --> 00:00:08,704
+So I'm gonna use this preacher
+
+5
+00:00:09,984 --> 00:00:10,496
+Which is a
+
+6
+00:00:10,752 --> 00:00:12,544
+Get that I already have set up here
+
+7
+00:00:12,800 --> 00:00:13,568
+I'll use that
+
+8
+00:00:14,080 --> 00:00:15,360
+In our illustration
+
+9
+00:00:19,456 --> 00:00:21,504
+So here we can see that I have
+
+10
+00:00:22,016 --> 00:00:22,528
+This
+
+11
+00:00:23,040 --> 00:00:24,064
+Back end
+
+12
+00:00:25,088 --> 00:00:26,112
+View selected
+
+13
+00:00:26,624 --> 00:00:27,136
+So
+
+14
+00:00:27,392 --> 00:00:28,672
+It's been select nothing
+
+15
+00:00:29,440 --> 00:00:30,976
+This is usually how it will look
+
+16
+00:00:31,232 --> 00:00:32,000
+When you start
+
+17
+00:00:33,024 --> 00:00:33,536
+So
+
+18
+00:00:33,792 --> 00:00:34,560
+You'd look
+
+19
+00:00:34,816 --> 00:00:35,328
+Select
+
+20
+00:00:35,840 --> 00:00:36,352
+This
+
+21
+00:00:37,888 --> 00:00:38,912
+Depending on which
+
+22
+00:00:39,168 --> 00:00:39,936
+Area of the
+
+23
+00:00:40,192 --> 00:00:42,496
+Backend you wanna get the data from
+
+24
+00:00:43,008 --> 00:00:43,520
+You'd select
+
+25
+00:00:43,776 --> 00:00:44,800
+Backend View
+
+26
+00:00:45,568 --> 00:00:46,336
+Which is the
+
+27
+00:00:46,848 --> 00:00:48,384
+Best way to do it I would say
+
+28
+00:00:48,896 --> 00:00:50,688
+Then there is the Joomla Database
+
+29
+00:00:50,944 --> 00:00:51,456
+option
+
+30
+00:00:51,968 --> 00:00:58,112
+Would basically gives you the access to draw data from any other component installed that moment in the Joomla
+
+31
+00:01:00,416 --> 00:01:01,184
+Website
+
+32
+00:01:01,696 --> 00:01:03,744
+So if you select your Joomla Database
+
+33
+00:01:04,256 --> 00:01:06,048
+You can select any Database
+
+34
+00:01:06,816 --> 00:01:07,328
+That
+
+35
+00:01:07,584 --> 00:01:09,376
+Is actually at that stage
+
+36
+00:01:09,888 --> 00:01:10,656
+On your
+
+37
+00:01:10,912 --> 00:01:11,424
+Database
+
+38
+00:01:12,192 --> 00:01:12,960
+Installed
+
+39
+00:01:13,472 --> 00:01:17,056
+And that means you can reach out to other components
+
+40
+00:01:17,312 --> 00:01:18,080
+Through this dynamic get
+
+41
+00:01:19,360 --> 00:01:20,896
+I'm gonna not do that
+
+42
+00:01:21,408 --> 00:01:25,248
+In fact that's also an area which I haven't tested so well
+
+43
+00:01:26,016 --> 00:01:26,528
+I
+
+44
+00:01:26,784 --> 00:01:28,832
+You possibly might try to implement that
+
+45
+00:01:29,088 --> 00:01:30,368
+And ran into some bugs
+
+46
+00:01:30,880 --> 00:01:33,696
+And this stage I can't make any apologies for that since
+
+47
+00:01:34,208 --> 00:01:37,280
+Really thing you should do is instead using
+
+48
+00:01:37,536 --> 00:01:38,304
+Back end
+
+49
+00:01:38,560 --> 00:01:39,072
+View
+
+50
+00:01:40,352 --> 00:01:40,864
+Option
+
+51
+00:01:41,376 --> 00:01:41,888
+Now
+
+52
+00:01:42,656 --> 00:01:44,704
+You might say but why is the other option there
+
+53
+00:01:44,960 --> 00:01:48,800
+Well it's because that's a feature we certainly want in the application right
+
+54
+00:01:49,312 --> 00:01:51,360
+And so I'm busy working in that direction
+
+55
+00:01:51,872 --> 00:01:52,640
+And busy
+
+56
+00:01:53,664 --> 00:01:56,224
+Programming so did that feature will work without any problems
+
+57
+00:01:57,248 --> 00:02:00,064
+In fact for the most part if you don't do very complex
+
+58
+00:02:01,344 --> 00:02:01,856
+Mapping
+
+59
+00:02:02,112 --> 00:02:03,648
+If you just do a simple
+
+60
+00:02:03,904 --> 00:02:05,952
+Direct database fetch like that
+
+61
+00:02:06,464 --> 00:02:09,024
+Are you be able to use this it won't give you an issue
+
+62
+00:02:09,536 --> 00:02:12,096
+What it really is about these other
+
+63
+00:02:12,352 --> 00:02:12,864
+Linked
+
+64
+00:02:13,376 --> 00:02:15,424
+or Joint database structures
+
+65
+00:02:15,680 --> 00:02:17,216
+That really would make it complex
+
+66
+00:02:18,240 --> 00:02:19,008
+So
+
+67
+00:02:19,264 --> 00:02:19,776
+And that might
+
+68
+00:02:20,032 --> 00:02:20,800
+Cause problems
+
+69
+00:02:21,568 --> 00:02:23,360
+I'm not 100% sure
+
+70
+00:02:23,616 --> 00:02:24,896
+Obviously it did work
+
+71
+00:02:25,152 --> 00:02:31,296
+But I haven't tested it well enough as well as I have tested the other part and that is this back-end view
+
+72
+00:02:32,064 --> 00:02:33,856
+There is also the custom option
+
+73
+00:02:34,368 --> 00:02:36,160
+Where you can just dump the whole
+
+74
+00:02:36,416 --> 00:02:37,952
+Option of
+
+75
+00:02:38,976 --> 00:02:41,792
+Using component builder to sort of write your
+
+76
+00:02:42,560 --> 00:02:43,328
+Your your
+
+77
+00:02:43,840 --> 00:02:45,120
+PHP for you
+
+78
+00:02:45,632 --> 00:02:47,680
+And here you can add custom PHP
+
+79
+00:02:47,936 --> 00:02:48,704
+it will add
+
+80
+00:02:48,960 --> 00:02:50,752
+The methods data for you
+
+81
+00:02:52,288 --> 00:02:55,360
+So this is a custom get option where you write the code
+
+82
+00:02:55,872 --> 00:02:56,896
+Basically by hand
+
+83
+00:02:57,664 --> 00:02:59,456
+Where is this option
+
+84
+00:02:59,712 --> 00:03:01,248
+Write the code for you
+
+85
+00:03:01,760 --> 00:03:02,272
+So
+
+86
+00:03:02,528 --> 00:03:05,088
+You select the back-end view that you want to use
+
+87
+00:03:05,344 --> 00:03:06,880
+again that back-end view
+
+88
+00:03:07,392 --> 00:03:11,744
+Will be the the view that you connected to your component right
+
+89
+00:03:12,000 --> 00:03:15,328
+So you need to type that you name in here and then select
+
+90
+00:03:16,608 --> 00:03:17,120
+That package
+
+91
+00:03:18,656 --> 00:03:19,680
+And it will load
+
+92
+00:03:20,192 --> 00:03:22,240
+All the field names
+
+93
+00:03:23,008 --> 00:03:29,152
+As a.id and a.asset id and a.name and allias and icon
+
+94
+00:03:29,664 --> 00:03:32,736
+So these are all the fields inside of this view
+
+95
+00:03:33,248 --> 00:03:35,808
+And I will load it and I'll put this as
+
+96
+00:03:36,576 --> 00:03:37,600
+Asset ID
+
+97
+00:03:37,856 --> 00:03:40,672
+Now again I would suggest you don't change that
+
+98
+00:03:41,184 --> 00:03:42,720
+What you can do is you can take
+
+99
+00:03:42,976 --> 00:03:43,488
+Out
+
+100
+00:03:43,744 --> 00:03:44,256
+a row
+
+101
+00:03:44,512 --> 00:03:46,304
+You feel ok I don't need that row
+
+102
+00:03:50,656 --> 00:03:51,168
+Then you can
+
+103
+00:03:51,424 --> 00:03:52,448
+Remove a row
+
+104
+00:03:52,960 --> 00:03:53,472
+Like that
+
+105
+00:03:54,496 --> 00:03:56,032
+And you can say I don't need the row
+
+106
+00:03:56,288 --> 00:03:57,568
+I don't need these
+
+107
+00:03:59,104 --> 00:04:00,128
+Way to there
+
+108
+00:04:00,640 --> 00:04:02,688
+Basically that's all the data you might want
+
+109
+00:04:03,456 --> 00:04:05,248
+And then you will know
+
+110
+00:04:05,760 --> 00:04:08,576
+That this would be the variable name
+
+111
+00:04:08,832 --> 00:04:11,904
+Of the data on When do When these get is used
+
+112
+00:04:13,952 --> 00:04:15,232
+So that's the
+
+113
+00:04:15,744 --> 00:04:18,559
+The basic part of setting up a Get
+
+114
+00:04:18,815 --> 00:04:24,959
+I need to mention that you have get types as well now the get types have 4 of them
+
+115
+00:04:25,215 --> 00:04:28,031
+There is the get item
+
+116
+00:04:28,543 --> 00:04:33,407
+Which will get one item so that means from this preacher table
+
+117
+00:04:33,663 --> 00:04:34,943
+It will get one item
+
+118
+00:04:35,711 --> 00:04:38,015
+Then you got the get listQuery
+
+119
+00:04:38,271 --> 00:04:39,039
+Which will get
+
+120
+00:04:39,295 --> 00:04:40,063
+Multiple
+
+121
+00:04:40,319 --> 00:04:40,831
+Items
+
+122
+00:04:41,599 --> 00:04:47,743
+Ok so depending on how many items you want to get from the database you would select either get item or get list
+
+123
+00:04:48,255 --> 00:04:50,559
+Then you get custom
+
+124
+00:04:51,327 --> 00:04:52,095
+And then you got
+
+125
+00:04:52,351 --> 00:04:53,887
+Get customs that
+
+126
+00:04:54,143 --> 00:04:54,655
+plural
+
+127
+00:04:55,167 --> 00:04:55,935
+And
+
+128
+00:04:56,191 --> 00:04:57,983
+The difference between these two
+
+129
+00:04:58,239 --> 00:04:59,007
+or four
+
+130
+00:04:59,519 --> 00:05:00,543
+Is the get item
+
+131
+00:05:00,799 --> 00:05:03,871
+Is what you will use only once per
+
+132
+00:05:04,127 --> 00:05:05,407
+Per view
+
+133
+00:05:05,919 --> 00:05:08,735
+So if you are building a custom admin view
+
+134
+00:05:08,991 --> 00:05:12,063
+You will select a main get
+
+135
+00:05:12,575 --> 00:05:15,647
+Either of a get item or either of get list
+
+136
+00:05:16,159 --> 00:05:19,231
+But you can add multiple custom get item
+
+137
+00:05:19,487 --> 00:05:20,767
+Or custom get items
+
+138
+00:05:21,791 --> 00:05:22,303
+So
+
+139
+00:05:22,559 --> 00:05:24,095
+You can see these as
+
+140
+00:05:24,351 --> 00:05:24,863
+Other
+
+141
+00:05:25,375 --> 00:05:29,471
+Methods that you're adding to the page but it's not the main method
+
+142
+00:05:30,239 --> 00:05:34,335
+so you have main methods which are these a get item and get listquery
+
+143
+00:05:34,847 --> 00:05:38,431
+Which by the way is the exact naming of the methods that will be used
+
+144
+00:05:38,943 --> 00:05:43,295
+And then you got this custom get custom and get customs
+
+145
+00:05:43,551 --> 00:05:44,319
+Which is really
+
+146
+00:05:44,575 --> 00:05:47,903
+almost same as these two it's just that they are not Main
+
+147
+00:05:48,159 --> 00:05:51,231
+There will only be another method in the
+
+148
+00:05:51,487 --> 00:05:52,255
+model
+
+149
+00:05:52,511 --> 00:05:54,303
+Which will bring data to the view
+
+150
+00:05:54,815 --> 00:05:56,863
+So you can add as many custom
+
+151
+00:05:57,375 --> 00:05:59,935
+Get custom and get customs
+
+152
+00:06:00,191 --> 00:06:01,471
+Methods
+
+153
+00:06:01,727 --> 00:06:05,823
+To your view as you like but you could only add one get item and you only add
+
+154
+00:06:06,079 --> 00:06:07,871
+one get listquery
+
+155
+00:06:08,639 --> 00:06:09,919
+Usually the way we would
+
+156
+00:06:10,687 --> 00:06:11,711
+decide on this
+
+157
+00:06:12,223 --> 00:06:13,247
+is that we would
+
+158
+00:06:14,783 --> 00:06:17,343
+Say what is the main objective of The View
+
+159
+00:06:17,855 --> 00:06:21,951
+What is the main dataset that we want to use in the view
+
+160
+00:06:22,207 --> 00:06:25,791
+And that is what we will use the get list query and get item for
+
+161
+00:06:26,047 --> 00:06:26,559
+Respectively
+
+162
+00:06:27,327 --> 00:06:29,119
+So if the main purpose of The View
+
+163
+00:06:29,375 --> 00:06:32,191
+It's a show preachers, a list of preachers
+
+164
+00:06:32,447 --> 00:06:35,519
+I would use the get list query as the main
+
+165
+00:06:36,543 --> 00:06:37,567
+Selection here
+
+166
+00:06:38,079 --> 00:06:43,199
+Now you see that you have when you do a list query you have the option of adding pagination
+
+167
+00:06:43,967 --> 00:06:44,479
+So
+
+168
+00:06:44,735 --> 00:06:50,111
+Basically that would mean whether the data should only return a certain number
+
+169
+00:06:50,367 --> 00:06:53,183
+Now Joomla has a global number there
+
+170
+00:06:53,695 --> 00:06:57,791
+Which you set in the system administrative area
+
+171
+00:06:58,303 --> 00:07:00,095
+under your Global settings
+
+172
+00:07:00,863 --> 00:07:01,631
+let me show you that
+
+173
+00:07:03,679 --> 00:07:05,215
+So you go to system
+
+174
+00:07:05,471 --> 00:07:05,983
+Then
+
+175
+00:07:06,239 --> 00:07:07,519
+Global configuration
+
+176
+00:07:08,799 --> 00:07:11,615
+And then you see there is a default list limit
+
+177
+00:07:12,383 --> 00:07:13,151
+This one here
+
+178
+00:07:14,175 --> 00:07:14,687
+And
+
+179
+00:07:14,943 --> 00:07:17,247
+That is what will be used as the amount
+
+180
+00:07:18,015 --> 00:07:20,831
+That limits the data being returned to the page
+
+181
+00:07:21,599 --> 00:07:24,415
+so it will only return at this stage 20 item
+
+182
+00:07:26,207 --> 00:07:27,231
+If I set that
+
+183
+00:07:27,999 --> 00:07:29,279
+pagination to yes
+
+184
+00:07:31,583 --> 00:07:34,655
+And if I set it to no it will load all the data
+
+185
+00:07:35,167 --> 00:07:37,215
+So yes would just load some of it
+
+186
+00:07:37,727 --> 00:07:43,359
+And no will load all of the data so depends on what you wanna do if you wanna do an Ajax
+
+187
+00:07:44,639 --> 00:07:50,783
+Well you wanna be sure that all the data is being loaded every time and you rather use JavaScript
+
+188
+00:07:51,039 --> 00:07:53,599
+Set up pagination for yourself for your view
+
+189
+00:07:54,111 --> 00:07:55,647
+Then that is why you would use
+
+190
+00:07:55,903 --> 00:07:59,231
+the no switch most of the time you're just say yes
+
+191
+00:07:59,743 --> 00:08:00,255
+And
+
+192
+00:08:00,767 --> 00:08:01,535
+Joomla world
+
+193
+00:08:01,791 --> 00:08:06,655
+Sorry component builder will automatically add the pagination code to the page
+
+194
+00:08:07,423 --> 00:08:09,727
+It will also automatically add pagination
+
+195
+00:08:09,983 --> 00:08:11,263
+code to the model
+
+196
+00:08:11,775 --> 00:08:14,847
+And at the bottom of the page it will show a
+
+197
+00:08:15,103 --> 00:08:18,431
+one two three pagination now possibly depending on
+
+198
+00:08:18,687 --> 00:08:20,223
+The template you are using
+
+199
+00:08:20,479 --> 00:08:23,039
+And the styles that are on the page
+
+200
+00:08:23,295 --> 00:08:25,599
+Bootstrap is not on the page that
+
+201
+00:08:26,111 --> 00:08:31,231
+one two three might possibly not look right and you will need to add styling to it
+
+202
+00:08:31,999 --> 00:08:33,791
+component Builder doesn't
+
+203
+00:08:34,047 --> 00:08:37,887
+know what style is on your page so they cannot make provision for all of that
+
+204
+00:08:38,399 --> 00:08:41,471
+But it actually can load the pagination itself
+
+205
+00:08:42,239 --> 00:08:42,751
+And it does
+
+206
+00:08:43,007 --> 00:08:43,519
+Do that
+
+207
+00:08:44,031 --> 00:08:45,055
+Ok
+
+208
+00:08:45,311 --> 00:08:47,359
+Now here you have data and
+
+209
+00:08:47,615 --> 00:08:51,199
+You can join this data to other database tables
+
+210
+00:08:51,967 --> 00:08:55,295
+And now again here like with the main source
+
+211
+00:08:55,807 --> 00:08:57,343
+You're able to select
+
+212
+00:08:57,599 --> 00:08:59,391
+Joint Views From a table
+
+213
+00:08:59,903 --> 00:09:04,255
+A view Table which is basically the views of the component
+
+214
+00:09:04,511 --> 00:09:06,303
+Or just any database table
+
+215
+00:09:06,815 --> 00:09:09,375
+And to one of the database tables I often
+
+216
+00:09:09,631 --> 00:09:11,423
+Connect to these categories
+
+217
+00:09:12,703 --> 00:09:14,751
+you see because component builder
+
+218
+00:09:15,007 --> 00:09:16,287
+Integrates
+
+219
+00:09:16,543 --> 00:09:18,591
+It's application
+
+220
+00:09:18,847 --> 00:09:20,895
+If you add a category field
+
+221
+00:09:21,151 --> 00:09:22,687
+To any View
+
+222
+00:09:22,943 --> 00:09:27,039
+It dynamically set up a category for your component
+
+223
+00:09:27,551 --> 00:09:33,695
+And integrates the category concept into your component so it writes all that code for you and basically the way
+
+224
+00:09:33,951 --> 00:09:35,743
+that Joomla's own
+
+225
+00:09:35,999 --> 00:09:37,535
+Applications like
+
+226
+00:09:38,047 --> 00:09:41,119
+Article manager does it so it's using the same conventions
+
+227
+00:09:41,887 --> 00:09:47,263
+So if you know how Joomla article manager is bringing categories into the articles
+
+228
+00:09:47,519 --> 00:09:50,079
+Then that is the way your component is gonna do it as well
+
+229
+00:09:50,591 --> 00:09:51,103
+And
+
+230
+00:09:51,871 --> 00:09:52,383
+Here
+
+231
+00:09:52,639 --> 00:09:54,431
+You can now select categories
+
+232
+00:09:54,687 --> 00:09:56,223
+You can say
+
+233
+00:09:57,247 --> 00:09:58,527
+These switches I'll
+
+234
+00:09:58,783 --> 00:09:59,295
+Deal with
+
+235
+00:09:59,551 --> 00:10:00,575
+When we come and look
+
+236
+00:10:01,087 --> 00:10:02,623
+in More detail at this area
+
+237
+00:10:03,135 --> 00:10:05,183
+And then you can model the data there
+
+238
+00:10:05,695 --> 00:10:10,303
+And model I mean decide what you want to return you don't want to return everything from categories
+
+239
+00:10:11,583 --> 00:10:16,703
+But the one I want to look at first is actually this joint view Table we'll come back to the DB option
+
+240
+00:10:18,751 --> 00:10:23,359
+The joint view Table let you again select from any of the other views that is
+
+241
+00:10:23,615 --> 00:10:24,895
+Part of your component
+
+242
+00:10:25,407 --> 00:10:28,479
+And again you can select whether it should return a single row
+
+243
+00:10:28,991 --> 00:10:30,015
+Or a
+
+244
+00:10:30,271 --> 00:10:31,295
+List of rows
+
+245
+00:10:32,063 --> 00:10:35,647
+Now when you say single row it means it's gonna literally join it
+
+246
+00:10:35,903 --> 00:10:39,999
+To this other data set that you have as your main data or your main source
+
+247
+00:10:40,767 --> 00:10:43,071
+It will just be another
+
+248
+00:10:43,327 --> 00:10:44,863
+Item in the array
+
+249
+00:10:45,375 --> 00:10:48,191
+And so that's why you can't use the name
+
+250
+00:10:48,703 --> 00:10:49,215
+Name
+
+251
+00:10:49,727 --> 00:10:50,751
+For example here
+
+252
+00:10:51,007 --> 00:10:52,543
+It needs to have that
+
+253
+00:10:54,335 --> 00:10:56,639
+That series underscore in front of it
+
+254
+00:10:57,407 --> 00:11:02,271
+So that it doesn't clash with the other data set that possibly also has a value called name
+
+255
+00:11:03,295 --> 00:11:07,391
+So again here if you selected
+
+256
+00:11:07,903 --> 00:11:08,927
+you know let me just select
+
+257
+00:11:09,183 --> 00:11:09,951
+Anything here
+
+258
+00:11:10,719 --> 00:11:11,231
+Series
+
+259
+00:11:12,255 --> 00:11:17,375
+You see that it will populate this area with all the fields that is in that View
+
+260
+00:11:18,143 --> 00:11:19,423
+Then this as
+
+261
+00:11:19,679 --> 00:11:20,447
+Button here
+
+262
+00:11:21,215 --> 00:11:22,239
+Basically
+
+263
+00:11:22,495 --> 00:11:24,287
+You can't use the same
+
+264
+00:11:24,543 --> 00:11:25,567
+Alphabetic number
+
+265
+00:11:25,823 --> 00:11:27,103
+twice in the whole
+
+266
+00:11:29,151 --> 00:11:30,175
+In the whole query
+
+267
+00:11:31,199 --> 00:11:31,711
+So
+
+268
+00:11:31,967 --> 00:11:36,831
+So the whole get function can only use a once and then b once and then c once
+
+269
+00:11:37,087 --> 00:11:37,599
+and then D
+
+270
+00:11:37,855 --> 00:11:38,367
+So
+
+271
+00:11:38,623 --> 00:11:40,159
+You need to make sure that the
+
+272
+00:11:40,415 --> 00:11:42,975
+That these are set up that you can
+
+273
+00:11:43,231 --> 00:11:45,279
+we'd made provision up to z z
+
+274
+00:11:45,791 --> 00:11:47,583
+How many tables you can
+
+275
+00:11:48,095 --> 00:11:48,607
+have
+
+276
+00:11:49,119 --> 00:11:50,655
+Only in this area here
+
+277
+00:11:51,167 --> 00:11:51,935
+and So
+
+278
+00:11:52,191 --> 00:11:53,471
+Basically you would
+
+279
+00:11:53,983 --> 00:11:56,031
+First decide whether this row
+
+280
+00:11:56,543 --> 00:11:58,335
+Type what type of return it will be
+
+281
+00:11:58,591 --> 00:12:02,687
+If you set it to multiple you see that these names automatically update
+
+282
+00:12:02,943 --> 00:12:03,711
+Because now
+
+283
+00:12:04,479 --> 00:12:07,039
+The way that the get method will
+
+284
+00:12:07,295 --> 00:12:07,807
+Work
+
+285
+00:12:08,063 --> 00:12:09,855
+Is it will create a new
+
+286
+00:12:10,111 --> 00:12:10,879
+Method
+
+287
+00:12:11,391 --> 00:12:12,671
+Which will get this data
+
+288
+00:12:12,927 --> 00:12:14,975
+And add it into your item list
+
+289
+00:12:15,231 --> 00:12:17,535
+Via this relationship so
+
+290
+00:12:17,791 --> 00:12:19,583
+I'm adding the on field
+
+291
+00:12:20,351 --> 00:12:24,191
+as the Dot a series that's where the ID is for the series
+
+292
+00:12:24,703 --> 00:12:28,799
+And the joint field I'm using the C ID which is that one
+
+293
+00:12:29,311 --> 00:12:31,615
+So that means in the main Database
+
+294
+00:12:31,871 --> 00:12:33,407
+That is the a database
+
+295
+00:12:33,919 --> 00:12:36,223
+There must be a field called series
+
+296
+00:12:36,991 --> 00:12:39,039
+And it has the ID of the series
+
+297
+00:12:39,551 --> 00:12:42,623
+And it corresponds to the ID in this list
+
+298
+00:12:43,135 --> 00:12:46,207
+And if I wanted to return a multiple it means that
+
+299
+00:12:46,463 --> 00:12:49,279
+The main database which is in that case a sermon
+
+300
+00:12:49,535 --> 00:12:51,839
+Can be linked to multiple serieses
+
+301
+00:12:52,863 --> 00:12:55,935
+But in the system we are working with here
+
+302
+00:12:56,191 --> 00:12:57,983
+That is not possible you can only
+
+303
+00:12:58,495 --> 00:12:59,519
+Connect a sermon
+
+304
+00:12:59,775 --> 00:13:00,799
+to one series
+
+305
+00:13:01,311 --> 00:13:03,871
+So that means it's certainly a single return
+
+306
+00:13:04,383 --> 00:13:06,431
+Then it will immediately add this
+
+307
+00:13:06,687 --> 00:13:08,991
+Series underscore in front of everything
+
+308
+00:13:09,503 --> 00:13:11,807
+to insure doesn't clash with your a table
+
+309
+00:13:12,063 --> 00:13:13,343
+That's What It's basically doing
+
+310
+00:13:13,855 --> 00:13:16,415
+Again you can remove the fields you don't want but
+
+311
+00:13:16,671 --> 00:13:17,951
+Please do not edit
+
+312
+00:13:18,207 --> 00:13:18,975
+The string
+
+313
+00:13:19,487 --> 00:13:21,279
+It possibly would make it break
+
+314
+00:13:21,791 --> 00:13:26,143
+I wanted to be possible that you can change this name to anything you like
+
+315
+00:13:26,655 --> 00:13:32,543
+And we are gonna try and do that eventually but for now it's still doesn't really like you doing that
+
+316
+00:13:32,799 --> 00:13:36,639
+And it it in fact you can be changing it it will still
+
+317
+00:13:36,895 --> 00:13:39,199
+write it this way in the code that's
+
+318
+00:13:39,711 --> 00:13:45,855
+That's part of why I'm saying you shouldn't change it not because it will break something but because it will be ignored and you might
+
+319
+00:13:46,111 --> 00:13:48,671
+expect something else than what it is actually doing
+
+320
+00:13:49,439 --> 00:13:51,743
+So it still is gonna use this
+
+321
+00:13:51,999 --> 00:13:54,047
+Implementation even if you change it
+
+322
+00:13:54,559 --> 00:13:59,423
+But it will drop the fields you don't select so if you say I don't want these
+
+323
+00:14:05,823 --> 00:14:06,335
+That
+
+324
+00:14:06,591 --> 00:14:10,687
+Then it won't get those Fields and you will only have this data returned
+
+325
+00:14:11,455 --> 00:14:12,735
+And
+
+326
+00:14:12,991 --> 00:14:15,039
+again here you can have equal
+
+327
+00:14:15,295 --> 00:14:16,319
+Not equal
+
+328
+00:14:16,575 --> 00:14:17,343
+Equal or not
+
+329
+00:14:18,623 --> 00:14:19,135
+And
+
+330
+00:14:19,391 --> 00:14:20,927
+we also have in function
+
+331
+00:14:21,695 --> 00:14:22,463
+That means
+
+332
+00:14:22,719 --> 00:14:24,255
+if This joint value
+
+333
+00:14:25,279 --> 00:14:25,791
+Sorry
+
+334
+00:14:26,047 --> 00:14:27,327
+If this on field
+
+335
+00:14:27,583 --> 00:14:28,351
+Is an array
+
+336
+00:14:29,375 --> 00:14:30,911
+Then you can use the in function
+
+337
+00:14:31,679 --> 00:14:32,959
+To make sure that it
+
+338
+00:14:33,471 --> 00:14:36,543
+Actually looks whether the id in this
+
+339
+00:14:36,799 --> 00:14:38,335
+That's the in function
+
+340
+00:14:40,127 --> 00:14:40,639
+And again
+
+341
+00:14:40,895 --> 00:14:45,247
+Remember when we started out I told you that you need to be willing to get your hands dirty
+
+342
+00:14:45,759 --> 00:14:46,271
+Now
+
+343
+00:14:46,783 --> 00:14:47,551
+This code
+
+344
+00:14:48,063 --> 00:14:50,111
+If we go to the component itself
+
+345
+00:14:50,367 --> 00:14:52,415
+I'll show you where it writes this code
+
+346
+00:14:53,951 --> 00:14:54,463
+So
+
+347
+00:14:54,719 --> 00:14:56,511
+Let me scroll down to the bottom here
+
+348
+00:14:56,767 --> 00:14:59,071
+And let's see we're looking into sermon
+
+349
+00:14:59,327 --> 00:15:00,095
+Preacher ID
+
+350
+00:15:00,351 --> 00:15:03,423
+Now we'll still get to why it says preacher ID
+
+351
+00:15:03,935 --> 00:15:06,239
+When we look at the filters and the where
+
+352
+00:15:06,495 --> 00:15:07,775
+but let us go to the code
+
+353
+00:15:08,543 --> 00:15:09,823
+Now you can actually see
+
+354
+00:15:10,079 --> 00:15:12,639
+I'm gonna refresh this page and then go to the code
+
+355
+00:15:13,663 --> 00:15:17,759
+Ok so since this get is used in the front
+
+356
+00:15:18,015 --> 00:15:21,599
+Of the component we will go to the front end and not to the admin area
+
+357
+00:15:22,367 --> 00:15:23,647
+So we go to the front end
+
+358
+00:15:23,903 --> 00:15:25,183
+Of sermon distributor
+
+359
+00:15:25,695 --> 00:15:26,719
+And then we are
+
+360
+00:15:26,975 --> 00:15:29,535
+Looking at the model right the get
+
+361
+00:15:29,791 --> 00:15:32,095
+Dynamic get is used in the model to get the data
+
+362
+00:15:33,375 --> 00:15:35,423
+And we are looking at sermons
+
+363
+00:15:35,679 --> 00:15:36,959
+let me just make sure of that
+
+364
+00:15:37,471 --> 00:15:39,519
+Yes it's sermons
+
+365
+00:15:39,775 --> 00:15:42,335
+Getting a list query and it's using pagination
+
+366
+00:15:42,847 --> 00:15:43,615
+Getting all this
+
+367
+00:15:44,127 --> 00:15:44,639
+So
+
+368
+00:15:44,895 --> 00:15:46,175
+we're Looking at sermons
+
+369
+00:15:50,783 --> 00:15:52,575
+Sermons on the
+
+370
+00:15:53,087 --> 00:15:55,647
+Under the preacher ID so it should be this model
+
+371
+00:15:58,463 --> 00:16:01,279
+I'll still show you the way that I know all that
+
+372
+00:16:02,303 --> 00:16:04,607
+But just that I could get you into the code
+
+373
+00:16:05,631 --> 00:16:06,911
+here You can see
+
+374
+00:16:07,167 --> 00:16:08,191
+the main
+
+375
+00:16:09,727 --> 00:16:10,239
+Method
+
+376
+00:16:11,007 --> 00:16:13,055
+Which actually has this dot ID
+
+377
+00:16:13,311 --> 00:16:14,079
+or the main
+
+378
+00:16:14,591 --> 00:16:16,127
+Data set sorry not method
+
+379
+00:16:18,431 --> 00:16:18,943
+data set
+
+380
+00:16:19,199 --> 00:16:20,479
+It is written here
+
+381
+00:16:21,503 --> 00:16:26,367
+So here you can see ID, acid ID name alias link types short description
+
+382
+00:16:26,879 --> 00:16:27,903
+If you look at the
+
+383
+00:16:28,415 --> 00:16:29,695
+UI it says the same things, alias, link type short description
+
+384
+00:16:31,743 --> 00:16:34,303
+Icon preacher series category ID
+
+385
+00:16:35,327 --> 00:16:37,375
+So this is where it writes it
+
+386
+00:16:37,631 --> 00:16:39,935
+And it shows you where in the complier it's done that
+
+387
+00:16:40,191 --> 00:16:40,703
+
+
+388
+00:16:41,471 --> 00:16:44,287
+Then it sets up the Second one Series you see
+
+389
+00:16:45,823 --> 00:16:46,335
+And
+
+390
+00:16:46,591 --> 00:16:47,103
+Then
+
+391
+00:16:47,359 --> 00:16:49,919
+You can also see it says series
+
+392
+00:16:50,175 --> 00:16:50,943
+Equals
+
+393
+00:16:51,199 --> 00:16:52,223
+c ID
+
+394
+00:16:52,479 --> 00:16:53,759
+So series
+
+395
+00:16:55,295 --> 00:16:56,319
+There is series
+
+396
+00:16:58,111 --> 00:16:58,623
+Equals
+
+397
+00:16:58,879 --> 00:16:59,647
+The c
+
+398
+00:17:00,159 --> 00:17:01,695
+This table series
+
+399
+00:17:02,719 --> 00:17:03,231
+ID
+
+400
+00:17:03,999 --> 00:17:10,143
+And then it also tells you what it wants from c it wants the name and the alias and then it wants a series name
+
+401
+00:17:11,167 --> 00:17:12,447
+that Changes it to series
+
+402
+00:17:12,959 --> 00:17:14,495
+Since this is in the select
+
+403
+00:17:15,263 --> 00:17:16,287
+Query this is one
+
+404
+00:17:18,847 --> 00:17:19,359
+function there
+
+405
+00:17:20,383 --> 00:17:20,895
+And
+
+406
+00:17:22,687 --> 00:17:23,455
+So that array
+
+407
+00:17:23,711 --> 00:17:24,223
+And
+
+408
+00:17:24,479 --> 00:17:26,015
+Transposes to this array
+
+409
+00:17:27,551 --> 00:17:30,111
+That is the way that you make use of Joomla's
+
+410
+00:17:30,367 --> 00:17:32,671
+Database PPI
+
+411
+00:17:33,183 --> 00:17:34,975
+So it has a thing called quote name
+
+412
+00:17:35,231 --> 00:17:36,767
+Which you can pass to arrays
+
+413
+00:17:37,279 --> 00:17:39,839
+And the first array being the actual
+
+414
+00:17:40,095 --> 00:17:41,631
+Name of the
+
+415
+00:17:41,887 --> 00:17:44,447
+Value which in this case is name and alias
+
+416
+00:17:44,959 --> 00:17:45,983
+And the second array
+
+417
+00:17:46,239 --> 00:17:48,287
+What you wanted to be once the query is completed
+
+418
+00:17:50,335 --> 00:17:53,407
+So it links this into the the query
+
+419
+00:17:53,919 --> 00:17:54,431
+One-by-one
+
+420
+00:17:54,687 --> 00:17:57,759
+See all of those even the category one is linked in here
+
+421
+00:17:58,271 --> 00:17:59,039
+And then
+
+422
+00:17:59,295 --> 00:18:01,343
+It does a check whether there's an ID
+
+423
+00:18:02,111 --> 00:18:05,439
+And if it exists it checks whether it's a string
+
+424
+00:18:05,951 --> 00:18:07,487
+If it's a string it adds a quote
+
+425
+00:18:08,255 --> 00:18:10,047
+And if it isn't if it's a number
+
+426
+00:18:10,303 --> 00:18:11,327
+It just adds it directly
+
+427
+00:18:12,095 --> 00:18:13,119
+and That is where
+
+428
+00:18:13,375 --> 00:18:14,143
+Where the query is done
+
+429
+00:18:15,423 --> 00:18:15,935
+And
+
+430
+00:18:16,703 --> 00:18:19,263
+here basically return false if there is no ID
+
+431
+00:18:20,543 --> 00:18:23,359
+And so we'll look at this area in a moment this is done
+
+432
+00:18:23,615 --> 00:18:24,383
+To the filtering
+
+433
+00:18:24,895 --> 00:18:25,407
+and the wear
+
+434
+00:18:26,687 --> 00:18:27,199
+Ok
+
+435
+00:18:27,455 --> 00:18:29,759
+So I just wanted to show how it adds this
+
+436
+00:18:30,015 --> 00:18:32,063
+Preacher as well as series
+
+437
+00:18:32,575 --> 00:18:33,855
+To the query
+
+438
+00:18:34,623 --> 00:18:35,647
+if we Look at the back
+
+439
+00:18:36,159 --> 00:18:36,927
+Open up here
+
+440
+00:18:37,183 --> 00:18:38,463
+You see that series
+
+441
+00:18:39,231 --> 00:18:39,743
+And preacher
+
+442
+00:18:41,279 --> 00:18:43,071
+And statistics but statistics
+
+443
+00:18:43,583 --> 00:18:44,351
+You see we select
+
+444
+00:18:44,607 --> 00:18:45,631
+Multiple statistics
+
+445
+00:18:45,887 --> 00:18:46,911
+Because for one
+
+446
+00:18:47,423 --> 00:18:48,447
+sermon
+
+447
+00:18:48,703 --> 00:18:50,751
+There can be multiple downloads right
+
+448
+00:18:51,007 --> 00:18:52,543
+So there's multiple statistics
+
+449
+00:18:53,055 --> 00:18:55,615
+Oh sorry not multiple downloads multiple files
+
+450
+00:18:56,383 --> 00:18:58,943
+And per file there will be a a a number
+
+451
+00:18:59,199 --> 00:19:01,759
+So if we look at how he does that
+
+452
+00:19:02,015 --> 00:19:05,343
+It is first does the query and hearing get item
+
+453
+00:19:06,367 --> 00:19:07,391
+It actually
+
+454
+00:19:07,903 --> 00:19:09,439
+Adds a new function
+
+455
+00:19:09,695 --> 00:19:10,207
+Called
+
+456
+00:19:10,463 --> 00:19:13,279
+Get ID sermon statistics and with a
+
+457
+00:19:13,791 --> 00:19:15,839
+With a random
+
+458
+00:19:16,095 --> 00:19:16,607
+Key
+
+459
+00:19:17,119 --> 00:19:19,679
+To ensure that it doesn't conflict with any other method on the page
+
+460
+00:19:20,959 --> 00:19:22,239
+We had to add this random key here
+
+461
+00:19:23,263 --> 00:19:26,847
+And it puts it into this variable and that something that you need to
+
+462
+00:19:27,103 --> 00:19:27,871
+Come and look at
+
+463
+00:19:28,383 --> 00:19:28,895
+And
+
+464
+00:19:29,151 --> 00:19:31,455
+Possibly when we look at the the site
+
+465
+00:19:31,711 --> 00:19:34,015
+Layout area as well as the tablets
+
+466
+00:19:34,271 --> 00:19:37,343
+I'll be talking about this transition here again
+
+467
+00:19:37,855 --> 00:19:39,391
+And the fact that you need to know
+
+468
+00:19:39,647 --> 00:19:41,183
+That it is in this variable
+
+469
+00:19:41,951 --> 00:19:46,303
+And I'm trying inside of your layouts and your site views
+
+470
+00:19:46,559 --> 00:19:49,119
+and these things I'm trying to give you the correct name
+
+471
+00:19:49,631 --> 00:19:50,655
+But it is not
+
+472
+00:19:51,167 --> 00:19:52,703
+Water tight correctly
+
+473
+00:19:52,959 --> 00:19:55,775
+Possibly you need to come and check this if it doesn't just work
+
+474
+00:19:57,311 --> 00:19:59,359
+But again I'll explain that when we get there
+
+475
+00:19:59,615 --> 00:20:00,639
+just that you know
+
+476
+00:20:00,895 --> 00:20:07,039
+We're adding statistics into this variable through a method which is also on the page and we passing the ID
+
+477
+00:20:07,807 --> 00:20:09,343
+Of of the sermon
+
+478
+00:20:09,599 --> 00:20:12,159
+So if you look at UI
+
+479
+00:20:13,439 --> 00:20:14,975
+This exactly what we're saying here
+
+480
+00:20:15,487 --> 00:20:16,255
+We're saying
+
+481
+00:20:16,511 --> 00:20:18,815
+Okay get statistics multiple
+
+482
+00:20:19,327 --> 00:20:20,095
+so we Went to the left
+
+483
+00:20:20,351 --> 00:20:22,143
+Can you can select any of these
+
+484
+00:20:22,655 --> 00:20:23,167
+And then
+
+485
+00:20:23,935 --> 00:20:28,287
+Use the main table dot ID
+
+486
+00:20:28,543 --> 00:20:30,591
+Must be equal to e.sermon
+
+487
+00:20:31,871 --> 00:20:34,687
+And then this is the only values I want to return
+
+488
+00:20:35,199 --> 00:20:36,479
+From the e.sermon
+
+489
+00:20:38,271 --> 00:20:40,575
+So the e.sermon is this value here
+
+490
+00:20:42,879 --> 00:20:43,391
+okay
+
+491
+00:20:43,647 --> 00:20:46,719
+o I'm saying a ID must equal is e.sermon
+
+492
+00:20:48,255 --> 00:20:49,791
+And then if you look at the code
+
+493
+00:20:51,071 --> 00:20:54,399
+It basically if we go to this function which should be just here
+
+494
+00:20:56,191 --> 00:20:57,215
+there it is. It takes that ID
+
+495
+00:20:57,727 --> 00:20:58,239
+And
+
+496
+00:20:58,751 --> 00:21:00,799
+Places that next to e.sermon
+
+497
+00:21:03,615 --> 00:21:04,639
+and puts into its place
+
+498
+00:21:05,663 --> 00:21:08,223
+Basically also here's the two arrays what it
+
+499
+00:21:08,479 --> 00:21:10,015
+What it is in the database and what it should be now
+
+500
+00:21:11,551 --> 00:21:12,319
+And
+
+501
+00:21:12,831 --> 00:21:17,440
+it checks whether executes, checks whether it's got any arrays or any values
+
+502
+00:21:17,952 --> 00:21:19,488
+And then returns that is an object
+
+503
+00:21:19,744 --> 00:21:20,256
+List
+
+504
+00:21:21,536 --> 00:21:24,096
+And that then gets placed inside of this
+
+505
+00:21:33,824 --> 00:21:35,104
+Space inside here
+
+506
+00:21:37,920 --> 00:21:39,968
+Now you would see this area here
+
+507
+00:21:40,224 --> 00:21:41,504
+Is actually custom scripting
+
+508
+00:21:44,320 --> 00:21:48,928
+So if we go back to the dynamic get you see that there is a custom script area here
+
+509
+00:21:49,696 --> 00:21:50,720
+If you click on that
+
+510
+00:21:51,232 --> 00:21:52,000
+You'd see that there is
+
+511
+00:21:52,256 --> 00:21:53,536
+Different switches
+
+512
+00:21:54,048 --> 00:21:55,328
+You can select
+
+513
+00:21:55,840 --> 00:21:57,120
+Get list query
+
+514
+00:21:57,376 --> 00:21:59,680
+Or before getting the items
+
+515
+00:22:00,192 --> 00:22:01,472
+After getting the items
+
+516
+00:22:02,496 --> 00:22:04,288
+If you select after getting the items
+
+517
+00:22:04,544 --> 00:22:06,080
+And you place any code there
+
+518
+00:22:06,592 --> 00:22:09,152
+Then data gets dumped right after
+
+519
+00:22:09,408 --> 00:22:10,944
+The initial items we've
+
+520
+00:22:11,200 --> 00:22:11,968
+Received
+
+521
+00:22:12,736 --> 00:22:14,016
+It will it will add that
+
+522
+00:22:14,272 --> 00:22:15,808
+Code in there and then only return
+
+523
+00:22:16,064 --> 00:22:16,576
+The items
+
+524
+00:22:17,344 --> 00:22:19,648
+So that is why you can model the data
+
+525
+00:22:20,160 --> 00:22:22,208
+Right there in the dynamic get
+
+526
+00:22:22,720 --> 00:22:23,744
+You gonna write the code
+
+527
+00:22:24,000 --> 00:22:24,768
+For the data
+
+528
+00:22:25,024 --> 00:22:26,048
+After it's been get
+
+529
+00:22:26,560 --> 00:22:27,328
+And you can check
+
+530
+00:22:27,840 --> 00:22:28,864
+If I remove this
+
+531
+00:22:29,376 --> 00:22:32,448
+Code here you'd see tells you that there is an array of items
+
+532
+00:22:33,216 --> 00:22:34,496
+Where all values are
+
+533
+00:22:34,752 --> 00:22:36,288
+And then I'm just saying
+
+534
+00:22:36,544 --> 00:22:40,128
+I want to be sure that those items are set and that they are there
+
+535
+00:22:40,384 --> 00:22:42,176
+Before I start doing it on each of them
+
+536
+00:22:43,968 --> 00:22:46,016
+And so again here I'm using
+
+537
+00:22:46,528 --> 00:22:47,808
+Some double
+
+538
+00:22:48,832 --> 00:22:51,392
+You know the street bracket component helper functions
+
+539
+00:22:51,648 --> 00:22:52,928
+to check whether the String is there
+
+540
+00:22:54,464 --> 00:22:56,256
+So you can dump some nice PHP
+
+541
+00:22:57,024 --> 00:23:01,888
+Even before getting the item you can add some filters or get list query
+
+542
+00:23:02,400 --> 00:23:04,704
+Before the if you if this is model list
+
+543
+00:23:05,216 --> 00:23:06,496
+If this is item
+
+544
+00:23:07,008 --> 00:23:07,776
+You'd see that
+
+545
+00:23:08,032 --> 00:23:09,568
+Then there's a different set of
+
+546
+00:23:09,824 --> 00:23:11,104
+Switches is available
+
+547
+00:23:11,872 --> 00:23:13,152
+And so it
+
+548
+00:23:13,408 --> 00:23:14,432
+Adjusts to
+
+549
+00:23:14,688 --> 00:23:15,456
+To the type of
+
+550
+00:23:15,712 --> 00:23:16,480
+Query type up here
+
+551
+00:23:17,760 --> 00:23:18,784
+Ok
+
+552
+00:23:19,040 --> 00:23:20,576
+Coming back to this area
+
+553
+00:23:21,344 --> 00:23:23,904
+Let's again look at the database table option
+
+554
+00:23:24,672 --> 00:23:30,816
+Basically you see I selected category and it's a single row that's returned I called it b
+
+555
+00:23:31,584 --> 00:23:33,376
+I joined it left and I said a
+
+556
+00:23:33,888 --> 00:23:36,704
+Cat ID must be equal to b ID
+
+557
+00:23:36,960 --> 00:23:39,008
+Which is the ID of the category
+
+558
+00:23:39,520 --> 00:23:40,288
+And I only want
+
+559
+00:23:40,544 --> 00:23:41,312
+The title
+
+560
+00:23:42,080 --> 00:23:42,848
+And the alias
+
+561
+00:23:43,872 --> 00:23:44,384
+So that is
+
+562
+00:23:44,896 --> 00:23:45,920
+how we set that up
+
+563
+00:23:46,432 --> 00:23:47,712
+I need a title in the alias
+
+564
+00:23:48,480 --> 00:23:50,016
+And it returns that for us
+
+565
+00:23:51,296 --> 00:23:51,808
+Then
+
+566
+00:23:52,320 --> 00:23:55,392
+It links it in there and that's part of what you saw here
+
+567
+00:23:55,904 --> 00:23:57,184
+when You looked at the query option here
+
+568
+00:23:59,232 --> 00:24:00,768
+Basically the sixth section here
+
+569
+00:24:02,560 --> 00:24:04,352
+Now let's look at the filters
+
+570
+00:24:05,120 --> 00:24:06,656
+You see where we've a filter
+
+571
+00:24:08,448 --> 00:24:11,520
+And a where and an ordering and setting of Globals
+
+572
+00:24:12,032 --> 00:24:13,568
+now the setting of Globals
+
+573
+00:24:14,080 --> 00:24:16,640
+if you have a value in this query
+
+574
+00:24:16,896 --> 00:24:20,992
+That you possibly want to use in a custom query which isn't even
+
+575
+00:24:22,272 --> 00:24:25,600
+Setup yet but you want you know I'm gonna need this value in the model
+
+576
+00:24:26,112 --> 00:24:27,392
+Then you can through this
+
+577
+00:24:27,648 --> 00:24:28,416
+Global
+
+578
+00:24:28,928 --> 00:24:29,952
+option here
+
+579
+00:24:30,464 --> 00:24:32,256
+You can set a global area
+
+580
+00:24:32,512 --> 00:24:35,072
+now Again here you should maybe test it
+
+581
+00:24:35,328 --> 00:24:37,888
+There is an option of using this and State
+
+582
+00:24:38,144 --> 00:24:39,424
+there is the different type of
+
+583
+00:24:39,936 --> 00:24:40,704
+Set types
+
+584
+00:24:40,960 --> 00:24:44,288
+You can set the value to state or you can set the value to this
+
+585
+00:24:46,336 --> 00:24:46,848
+And
+
+586
+00:24:47,360 --> 00:24:48,640
+here you need to know
+
+587
+00:24:48,896 --> 00:24:50,176
+key so
+
+588
+00:24:50,432 --> 00:24:52,224
+So let's I wanna do the name
+
+589
+00:24:53,760 --> 00:24:56,064
+Obviously in this case is not gonna work ideal
+
+590
+00:24:56,320 --> 00:24:57,600
+Because you got more than one name
+
+591
+00:24:58,112 --> 00:25:01,440
+So usually this Global function only functions well
+
+592
+00:25:01,696 --> 00:25:03,744
+When you are returning a single
+
+593
+00:25:04,256 --> 00:25:07,328
+Item so when you only do get item not get list query
+
+594
+00:25:07,840 --> 00:25:08,608
+But you do get
+
+595
+00:25:08,864 --> 00:25:09,376
+Item
+
+596
+00:25:10,912 --> 00:25:13,984
+Then this make sense and then you can give it a name
+
+597
+00:25:14,752 --> 00:25:15,520
+And
+
+598
+00:25:15,776 --> 00:25:17,568
+it will add it to the global
+
+599
+00:25:17,824 --> 00:25:19,616
+Scope of the method
+
+600
+00:25:19,872 --> 00:25:20,896
+or the model rather
+
+601
+00:25:21,408 --> 00:25:23,968
+Which you can access through other
+
+602
+00:25:24,224 --> 00:25:24,736
+Model
+
+603
+00:25:24,992 --> 00:25:25,504
+Methods
+
+604
+00:25:27,040 --> 00:25:27,808
+Which are custom
+
+605
+00:25:28,064 --> 00:25:28,576
+Methods
+
+606
+00:25:29,600 --> 00:25:31,648
+Ok so that is setting the global
+
+607
+00:25:31,904 --> 00:25:32,928
+The filtering
+
+608
+00:25:33,184 --> 00:25:35,744
+You have a a list of possible filtering
+
+609
+00:25:37,024 --> 00:25:37,536
+So
+
+610
+00:25:38,048 --> 00:25:40,352
+Depending on what you wanna do
+
+611
+00:25:40,608 --> 00:25:45,472
+You might select ID or user or access level or group or category
+
+612
+00:25:45,984 --> 00:25:47,008
+or Tags or date
+
+613
+00:25:47,264 --> 00:25:52,384
+Some of these are not really well formulated yet like date doesn't work that well yet
+
+614
+00:25:53,152 --> 00:25:57,504
+But categories does user group access level user and ID does well
+
+615
+00:25:59,040 --> 00:26:01,600
+You know this function variable works well
+
+616
+00:26:02,112 --> 00:26:02,624
+and Array
+
+617
+00:26:03,136 --> 00:26:05,696
+Array value repeatable value and other
+
+618
+00:26:06,208 --> 00:26:08,000
+All those already work very well
+
+619
+00:26:08,768 --> 00:26:10,816
+And you can already use them and
+
+620
+00:26:11,072 --> 00:26:11,584
+Implement them
+
+621
+00:26:13,120 --> 00:26:15,168
+Now the only way for you to really
+
+622
+00:26:15,680 --> 00:26:20,544
+Know exactly how it works you need to know a little PHP and then you need to
+
+623
+00:26:20,800 --> 00:26:24,896
+compile and go look in the code what it has done and where it's placed what
+
+624
+00:26:25,408 --> 00:26:25,920
+And that
+
+625
+00:26:26,176 --> 00:26:26,944
+Is
+
+626
+00:26:27,200 --> 00:26:30,272
+Why I showed you that this is all set in the model
+
+627
+00:26:30,784 --> 00:26:31,296
+Ok
+
+628
+00:26:31,552 --> 00:26:32,320
+So currently
+
+629
+00:26:32,576 --> 00:26:34,368
+We are saying we wanted to
+
+630
+00:26:34,624 --> 00:26:36,672
+do a J request
+
+631
+00:26:37,184 --> 00:26:38,720
+Get into here by ID
+
+632
+00:26:39,744 --> 00:26:40,768
+So this is the
+
+633
+00:26:41,024 --> 00:26:42,816
+get area that I added
+
+634
+00:26:43,328 --> 00:26:44,864
+I look in The code it says
+
+635
+00:26:45,120 --> 00:26:46,144
+State the key
+
+636
+00:26:46,912 --> 00:26:47,680
+and it's this Here
+
+637
+00:26:48,192 --> 00:26:50,496
+you see and we set it is a function variable
+
+638
+00:26:51,264 --> 00:26:53,824
+So it doesn't change or adapt this at all
+
+639
+00:26:54,848 --> 00:26:57,408
+And then says it must be equal to preacher
+
+640
+00:26:58,176 --> 00:27:04,320
+So what we are doing since component builder doesn't know where the this variable is gonna be a string or integer
+
+641
+00:27:04,832 --> 00:27:08,416
+That's why we have this function which first checks were that is string
+
+642
+00:27:08,928 --> 00:27:10,464
+And then checks whether it's a number
+
+643
+00:27:10,720 --> 00:27:13,536
+And related and builds up the query respectively
+
+644
+00:27:14,304 --> 00:27:16,608
+You might feel that is too much and
+
+645
+00:27:16,864 --> 00:27:17,632
+you're Possibly right
+
+646
+00:27:17,888 --> 00:27:19,680
+But that is the only way I am implement it at this stage
+
+647
+00:27:23,008 --> 00:27:23,520
+And
+
+648
+00:27:23,776 --> 00:27:25,568
+getting more developers involved
+
+649
+00:27:26,080 --> 00:27:27,360
+May possibly improve this long run
+
+650
+00:27:30,688 --> 00:27:33,248
+Then you see there the Access
+
+651
+00:27:34,016 --> 00:27:38,624
+Now we have a bunch of values that fire every time in a custom
+
+652
+00:27:39,136 --> 00:27:40,160
+Dynamic get model
+
+653
+00:27:41,952 --> 00:27:44,768
+And it is the these values
+
+654
+00:27:45,024 --> 00:27:47,840
+And often times you you might need these values
+
+655
+00:27:48,352 --> 00:27:49,888
+So instead of you
+
+656
+00:27:50,144 --> 00:27:53,728
+Having to do custom scripting to get these values on the page
+
+657
+00:27:53,984 --> 00:27:56,544
+We add these values dynamically every time
+
+658
+00:27:57,056 --> 00:28:01,152
+So the user ID the group The authorised group the access level
+
+659
+00:28:01,664 --> 00:28:03,456
+The app and then the input values
+
+660
+00:28:03,968 --> 00:28:05,760
+Which by other URL or post
+
+661
+00:28:06,272 --> 00:28:07,296
+is on the page
+
+662
+00:28:08,320 --> 00:28:10,624
+And it tells you that it's been initiated
+
+663
+00:28:10,880 --> 00:28:14,208
+so This is set to true so that if you have custom
+
+664
+00:28:14,976 --> 00:28:15,744
+Methods
+
+665
+00:28:16,768 --> 00:28:17,536
+Like this one
+
+666
+00:28:18,048 --> 00:28:18,816
+get Preacher
+
+667
+00:28:20,608 --> 00:28:22,400
+It's checks whether it's been set
+
+668
+00:28:22,912 --> 00:28:25,984
+And if it has been set it doesn't set that again it can just use it
+
+669
+00:28:26,240 --> 00:28:29,568
+But if it hasn't been set it sets it and also again sets it to true
+
+670
+00:28:30,592 --> 00:28:31,104
+So
+
+671
+00:28:31,360 --> 00:28:32,128
+
+
+672
+00:28:32,384 --> 00:28:35,200
+variables Global variables
+
+673
+00:28:35,456 --> 00:28:40,320
+Can then be used inside of the coaches like the global variable we spoke of earlier
+
+674
+00:28:41,856 --> 00:28:42,624
+Ok so
+
+675
+00:28:43,648 --> 00:28:45,696
+Out of that Global variable
+
+676
+00:28:46,208 --> 00:28:46,976
+We are
+
+677
+00:28:47,232 --> 00:28:48,512
+Actually accessing
+
+678
+00:28:49,792 --> 00:28:50,816
+This levels
+
+679
+00:28:51,584 --> 00:28:52,864
+And so it's this one here
+
+680
+00:28:54,144 --> 00:28:58,496
+Which basically has the get authorized view levels
+
+681
+00:28:58,752 --> 00:29:00,288
+Of the specific user
+
+682
+00:29:00,544 --> 00:29:01,568
+That is now
+
+683
+00:29:02,080 --> 00:29:03,104
+you know accessed this
+
+684
+00:29:04,640 --> 00:29:06,944
+Model or the view that this model belongs to
+
+685
+00:29:08,480 --> 00:29:11,040
+And if he is in these access levels
+
+686
+00:29:11,296 --> 00:29:14,112
+So you remember that public is another access level
+
+687
+00:29:14,624 --> 00:29:19,744
+And so if the user isn't signed in he's a public it will this will validate true in the query
+
+688
+00:29:21,536 --> 00:29:22,304
+Ok so
+
+689
+00:29:22,816 --> 00:29:26,144
+We set that up simply by adding access level
+
+690
+00:29:26,400 --> 00:29:26,912
+In
+
+691
+00:29:27,168 --> 00:29:27,936
+A access
+
+692
+00:29:28,704 --> 00:29:29,728
+So you must check in the
+
+693
+00:29:30,752 --> 00:29:31,264
+Main
+
+694
+00:29:31,776 --> 00:29:32,800
+Source table
+
+695
+00:29:33,824 --> 00:29:35,616
+For access
+
+696
+00:29:35,872 --> 00:29:38,176
+And whether this user is in that
+
+697
+00:29:38,688 --> 00:29:40,992
+So that means you don't need to add a state key because
+
+698
+00:29:41,248 --> 00:29:42,272
+The code is done for you
+
+699
+00:29:43,552 --> 00:29:44,064
+Ok
+
+700
+00:29:44,320 --> 00:29:46,368
+That is some of the filters
+
+701
+00:29:46,624 --> 00:29:47,648
+then the where
+
+702
+00:29:48,160 --> 00:29:50,464
+Is you can add any table key
+
+703
+00:29:50,976 --> 00:29:52,512
+Equals to a certain value
+
+704
+00:29:52,768 --> 00:29:54,816
+now that Value could be another table
+
+705
+00:29:55,072 --> 00:29:56,096
+like b field
+
+706
+00:29:56,608 --> 00:30:00,704
+or it could even be a global variable like we said we could set up
+
+707
+00:30:01,216 --> 00:30:04,800
+So it can also be in ID, a user ID now the user ID is already
+
+708
+00:30:05,312 --> 00:30:06,848
+On the table so it could be
+
+709
+00:30:07,360 --> 00:30:08,384
+Just user ID
+
+710
+00:30:11,200 --> 00:30:15,296
+And or it could be like we've done it this case just an integer which is one
+
+711
+00:30:15,808 --> 00:30:17,600
+So we wanna make sure that all the
+
+712
+00:30:18,112 --> 00:30:19,392
+Sermons returned
+
+713
+00:30:19,648 --> 00:30:20,416
+Is published
+
+714
+00:30:20,672 --> 00:30:22,720
+And if you have an unpublished sermon it shouldn't even
+
+715
+00:30:22,976 --> 00:30:24,000
+Return it at all
+
+716
+00:30:24,768 --> 00:30:26,816
+Ok so That's what we doing with that
+
+717
+00:30:28,608 --> 00:30:29,120
+
+
+718
+00:30:29,376 --> 00:30:32,192
+That is setting up a get list query
+
+719
+00:30:32,704 --> 00:30:33,472
+With pagination
+
+720
+00:30:34,240 --> 00:30:35,264
+Through this
+
+721
+00:30:35,776 --> 00:30:39,360
+Ordering method we just saying use the a ordering
+
+722
+00:30:39,616 --> 00:30:41,920
+and a send now you can order all the items
+
+723
+00:30:43,456 --> 00:30:44,992
+Just add many as you like
+
+724
+00:30:45,760 --> 00:30:47,296
+Be sure that the table that you
+
+725
+00:30:47,552 --> 00:30:48,064
+ordering
+
+726
+00:30:48,320 --> 00:30:50,112
+You could even use a name right
+
+727
+00:30:50,880 --> 00:30:52,160
+So could be a name
+
+728
+00:30:52,416 --> 00:30:53,440
+As an ordering
+
+729
+00:30:54,720 --> 00:30:55,488
+Table key
+
+730
+00:30:56,512 --> 00:30:59,072
+Then it you could do it a descending or ascending
+
+731
+00:31:00,608 --> 00:31:02,400
+Then it would be added to the query
+
+732
+00:31:03,936 --> 00:31:04,448
+Ok
+
+733
+00:31:04,704 --> 00:31:06,496
+That is also added ordering
+
+734
+00:31:06,752 --> 00:31:07,776
+To the data set
+
+735
+00:31:08,544 --> 00:31:09,056
+From
+
+736
+00:31:09,312 --> 00:31:10,592
+Your Dynamic get method
+
+737
+00:31:11,360 --> 00:31:14,944
+and so here with the joint view tables you can do very nice
+
+738
+00:31:16,480 --> 00:31:17,248
+Dependency
+
+739
+00:31:18,016 --> 00:31:18,784
+Calls
+
+740
+00:31:19,040 --> 00:31:20,832
+From other tables in the backend
+
+741
+00:31:21,344 --> 00:31:24,928
+And bring the data together into one items array
+
+742
+00:31:25,696 --> 00:31:28,256
+That's basically what Dynamic get is for
+
+743
+00:31:28,512 --> 00:31:29,536
+and as you saw
+
+744
+00:31:29,792 --> 00:31:30,304
+We have
+
+745
+00:31:30,560 --> 00:31:31,072
+A
+
+746
+00:31:31,328 --> 00:31:34,144
+The normal what I call main source on the table
+
+747
+00:31:34,656 --> 00:31:35,936
+sorry in the model
+
+748
+00:31:36,192 --> 00:31:38,752
+And then we have this other one called get preacher
+
+749
+00:31:39,264 --> 00:31:40,032
+So
+
+750
+00:31:41,056 --> 00:31:42,336
+That is another
+
+751
+00:31:42,848 --> 00:31:44,896
+Dynamic get function which we
+
+752
+00:31:45,152 --> 00:31:45,920
+Looked at
+
+753
+00:31:47,456 --> 00:31:48,224
+it's called this one
+
+754
+00:31:48,736 --> 00:31:49,504
+Get preacher
+
+755
+00:31:49,760 --> 00:31:50,784
+if we Open it
+
+756
+00:31:52,064 --> 00:31:53,856
+We see it's a
+
+757
+00:31:54,112 --> 00:31:54,880
+It's a custom
+
+758
+00:31:55,392 --> 00:31:56,416
+Get custom
+
+759
+00:31:56,928 --> 00:31:59,488
+And we gave it a cluster name called get preacher
+
+760
+00:32:00,512 --> 00:32:02,304
+and this is It's relationships
+
+761
+00:32:02,560 --> 00:32:04,608
+So it is basically having No
+
+762
+00:32:04,864 --> 00:32:06,144
+Relationship there
+
+763
+00:32:06,912 --> 00:32:08,192
+Neither here so it's
+
+764
+00:32:08,448 --> 00:32:09,984
+It's not linking to other tables
+
+765
+00:32:10,496 --> 00:32:12,800
+It's simply getting the preachers details
+
+766
+00:32:14,080 --> 00:32:14,592
+Right there
+
+767
+00:32:15,360 --> 00:32:16,128
+Simple as that
+
+768
+00:32:16,384 --> 00:32:22,528
+But it has a filter which is basically using the same integer
+
+769
+00:32:22,784 --> 00:32:28,928
+And access levels as the filters
+
+770
+00:32:29,184 --> 00:32:35,328
+It's also using a where I suppose yes published and it doesn't need ordering
+
+771
+00:32:35,584 --> 00:32:41,728
+Because it's just one preacher but I none the less added the ordering I could actually delete this
+
+772
+00:32:41,984 --> 00:32:48,128
+And it doesn't have any globally settings okay so that is get preacher and so from the
+
+773
+00:32:48,384 --> 00:32:54,528
+This settings here I don't think there's custom scripting nope from this settings here
+
+774
+00:32:54,784 --> 00:33:00,928
+component builder writes all this code
+
+775
+00:33:01,184 --> 00:33:07,328
+You'd see that we have this function everywhere called UI kit comp
+
+776
+00:33:07,584 --> 00:33:13,728
+And then we using a global method a static method get ui comp
+
+777
+00:33:13,984 --> 00:33:20,128
+it's a method that I built if you know uikit if you don't know it go to get UI kit or just google it
+
+778
+00:33:20,384 --> 00:33:26,528
+It's a It's a JavaScript
+
+779
+00:33:26,784 --> 00:33:32,928
+Library CSS JavaScript library which really makes modeling of your views very nice and easy
+
+780
+00:33:33,184 --> 00:33:39,328
+And it has components that you can use
+
+781
+00:33:39,584 --> 00:33:45,728
+So like tool tip and model
+
+782
+00:33:45,984 --> 00:33:52,128
+All these kind of models but Gordian is another component
+
+783
+00:33:52,384 --> 00:33:58,528
+And we don't load all of it's components every time so what we've done is we've
+
+784
+00:33:58,784 --> 00:34:04,928
+Written in PHP a method that looks at Fields that are text area fields
+
+785
+00:34:05,184 --> 00:34:11,328
+And normal text Fields no mostly okay it's
+
+786
+00:34:11,584 --> 00:34:17,728
+Not looking at every field is only looking at the text Fields and editor Fields so in in this
+
+787
+00:34:17,984 --> 00:34:24,128
+Component we know that this description field is a
+
+788
+00:34:24,384 --> 00:34:30,528
+Editor field and so we are sending it to this method now you can go look at this Method Method
+
+789
+00:34:30,784 --> 00:34:36,928
+In your helper class it's over there
+
+790
+00:34:43,584 --> 00:34:49,728
+Here's the method so
+
+791
+00:34:49,984 --> 00:34:56,128
+So it has the classes that already has been identified which is what this
+
+792
+00:34:56,384 --> 00:35:02,528
+Initial this component area sorry
+
+793
+00:35:02,784 --> 00:35:08,928
+Field name field value model field value is actually holding
+
+794
+00:35:09,184 --> 00:35:15,328
+it's Holding any component names that already has been identified this gets
+
+795
+00:35:15,584 --> 00:35:21,728
+past also here with the content then we check in the content whether there is a class UI
+
+796
+00:35:21,984 --> 00:35:28,128
+UK underscore and if it's not false we start looping to check what
+
+797
+00:35:28,384 --> 00:35:34,528
+What what are all the components that are in there and here is the list of the components that are available
+
+798
+00:35:34,784 --> 00:35:40,928
+and so On-the-fly we are determining whether these components should be loaded just by
+
+799
+00:35:41,184 --> 00:35:47,328
+Looking at the content that was placed in the description field and then we added back to this
+
+800
+00:35:47,584 --> 00:35:53,728
+Array so it updates this eventually you have an array of
+
+801
+00:35:53,984 --> 00:36:00,128
+All those items and in the view we go to the view
+
+802
+00:36:00,384 --> 00:36:06,528
+Which in this case is gonna be preacher
+
+803
+00:36:06,784 --> 00:36:12,928
+We open the view dot HTML
+
+804
+00:36:13,184 --> 00:36:19,328
+We get to a place which basically everything is gonna be happening so
+
+805
+00:36:19,584 --> 00:36:25,728
+These are of the components that go in component builder compiled
+
+806
+00:36:25,984 --> 00:36:32,128
+the application it looks inside of the content of your site view as well as your custom admin View
+
+807
+00:36:32,384 --> 00:36:38,528
+and it identify that these components must be loaded for uikit and so it
+
+808
+00:36:38,784 --> 00:36:44,928
+Places it here dynamically but since you could've added some components inside of the script that
+
+809
+00:36:45,184 --> 00:36:51,328
+that is stored in the description area it now has this get uikit component which basically
+
+810
+00:36:51,584 --> 00:36:57,728
+reach back into the model and in the model gets this
+
+811
+00:36:57,984 --> 00:37:04,128
+Variables value through a method which is here at the bottom of the page there it is
+
+812
+00:37:04,384 --> 00:37:10,528
+Get UI kit component basically through this method it is reaching in
+
+813
+00:37:10,784 --> 00:37:16,928
+Into getting that array and once it has that array we basically check whether it is set
+
+814
+00:37:17,184 --> 00:37:23,328
+Whether it is an array and if it is an array we set
+
+815
+00:37:23,584 --> 00:37:29,728
+To the array that is already on this page then over here we loop through that array
+
+816
+00:37:29,984 --> 00:37:36,128
+And we load in those components CSS and JavaScript as required
+
+817
+00:37:36,384 --> 00:37:42,528
+so that You always can be sure that the UI kits needed components will be loaded on the page
+
+818
+00:37:42,784 --> 00:37:48,928
+simply by user adding some of that components to its description as style
+
+819
+00:37:49,184 --> 00:37:55,328
+Because the way uikit works is you just like Bootstrap you just Add the class name
+
+820
+00:37:55,584 --> 00:38:01,728
+To the specific div or tag html tag and then it activates
+
+821
+00:38:01,984 --> 00:38:08,128
+the needed scripting around it which is a nice library but it's
+
+822
+00:38:08,384 --> 00:38:14,528
+Quite heavy and you don't want it on the page every time now I know you could have done this through JavaScript
+
+823
+00:38:14,784 --> 00:38:20,928
+You know it is fact they have a way for you to do this through the JavaScript but to me I felt
+
+824
+00:38:21,184 --> 00:38:27,328
+Let me do the most work in the html so relieve the load on the on the server
+
+825
+00:38:27,584 --> 00:38:33,728
+And that the browser already has much more Leverage and Freedom so that's why we
+
+826
+00:38:33,984 --> 00:38:40,128
+This feature this is maybe Beyond the scope of the get the dynamic get
+
+827
+00:38:40,384 --> 00:38:46,528
+But since we ran into I quickly mentioned it here okay so it is all
+
+828
+00:38:46,784 --> 00:38:52,928
+Also placed in the query that is developed by Dynamic get that's partly why it
+
+829
+00:38:53,184 --> 00:38:59,328
+Fits so once you've got your Dynamic get set up you now will add these dynamic
+
+830
+00:38:59,584 --> 00:39:05,728
+Gets to either site views or to admin custom admin views so these Dynamic gets is what
+
+831
+00:39:05,984 --> 00:39:12,128
+What gets the data for you and it's where you model the data that you want to work with and you can then
+
+832
+00:39:12,384 --> 00:39:18,528
+Use them in site views and custom admin views. Now next stop we will look at adding it to a site view and how all of that works. Thank you for watching.
+

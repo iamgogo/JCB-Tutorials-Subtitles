@@ -1,0 +1,512 @@
+1
+00:00:00,256 --> 00:00:01,024
+Hi
+
+2
+00:00:01,536 --> 00:00:07,680
+Now let's look at adding admin views and site views to component Builders component
+
+3
+00:00:08,448 --> 00:00:13,312
+And looking at all the different switches and the nice features that we have there installed for you
+
+4
+00:00:13,568 --> 00:00:15,872
+So we first login here
+
+5
+00:00:17,920 --> 00:00:21,760
+Then we have component builder open on the component builder
+
+6
+00:00:22,528 --> 00:00:24,576
+And then we will go to
+
+7
+00:00:25,856 --> 00:00:26,368
+Let's see components
+
+8
+00:00:28,416 --> 00:00:30,464
+And we will open
+
+9
+00:00:31,232 --> 00:00:31,744
+Sermon
+
+10
+00:00:32,000 --> 00:00:32,512
+Distributor
+
+11
+00:00:36,096 --> 00:00:37,632
+And then go to settings
+
+12
+00:00:40,704 --> 00:00:46,336
+And in settings you see there is a place for admin views we're ready illustrated adding the admin views
+
+13
+00:00:47,104 --> 00:00:49,920
+Then there's custom admin views and their site views
+
+14
+00:00:51,200 --> 00:00:56,576
+And we wanna look at those now so I'll just click on add custom admin View
+
+15
+00:00:56,832 --> 00:00:59,648
+There isn't any added to this component because component builder
+
+16
+00:01:00,160 --> 00:01:01,440
+Sorry
+
+17
+00:01:01,952 --> 00:01:03,744
+sermon distributor does not have
+
+18
+00:01:04,000 --> 00:01:05,024
+a Custom admin views
+
+19
+00:01:05,792 --> 00:01:08,352
+But I'll illustrate it in another component for you
+
+20
+00:01:09,120 --> 00:01:10,400
+Then site views
+
+21
+00:01:11,936 --> 00:01:13,216
+It has quite a few
+
+22
+00:01:13,472 --> 00:01:15,776
+You might sometimes open it and see
+
+23
+00:01:16,032 --> 00:01:18,336
+That some of the buttons are not selected
+
+24
+00:01:19,104 --> 00:01:21,664
+Although you know you selected it previously and saved
+
+25
+00:01:22,176 --> 00:01:23,200
+You know now doesn't show
+
+26
+00:01:23,712 --> 00:01:24,992
+This is a glitch and
+
+27
+00:01:25,248 --> 00:01:26,016
+In the
+
+28
+00:01:26,528 --> 00:01:27,552
+Joomla's own
+
+29
+00:01:28,320 --> 00:01:30,112
+JavaScript or whatever
+
+30
+00:01:30,624 --> 00:01:36,768
+That is causing this and so the only way I have found to solve it as yet is to simply
+
+31
+00:01:37,024 --> 00:01:37,792
+re-open
+
+32
+00:01:38,816 --> 00:01:41,120
+Like for now you see the admin view that's same issue
+
+33
+00:01:42,144 --> 00:01:44,448
+So if you close it and open it again
+
+34
+00:01:44,704 --> 00:01:45,984
+It has it all selected
+
+35
+00:01:47,520 --> 00:01:53,664
+This is a heads up keep a look out for this because if you make changes and save it with those buttons unticked
+
+36
+00:01:53,920 --> 00:01:56,480
+Your build will
+
+37
+00:01:56,992 --> 00:01:58,784
+Not include those values
+
+38
+00:01:59,040 --> 00:02:00,576
+Since it will be stored as null
+
+39
+00:02:01,088 --> 00:02:02,880
+And
+
+40
+00:02:03,136 --> 00:02:05,184
+Yeah you might get unexpected results
+
+41
+00:02:05,696 --> 00:02:08,768
+So always make sure that your old ticks are
+
+42
+00:02:09,024 --> 00:02:11,328
+All in place that just a heads up
+
+43
+00:02:11,840 --> 00:02:14,144
+Not really something I can change at this stage it is a
+
+44
+00:02:15,424 --> 00:02:16,192
+Joomla thing
+
+45
+00:02:16,960 --> 00:02:18,496
+of the repeatable fields
+
+46
+00:02:19,264 --> 00:02:21,056
+Ok so if we go to site view
+
+47
+00:02:21,824 --> 00:02:22,592
+And we just
+
+48
+00:02:23,104 --> 00:02:24,128
+Close it again and
+
+49
+00:02:24,640 --> 00:02:25,664
+Open it again
+
+50
+00:02:26,176 --> 00:02:27,456
+You see everything is selected
+
+51
+00:02:28,736 --> 00:02:30,784
+You see that it has 123
+
+52
+00:02:31,040 --> 00:02:32,064
+4 options here
+
+53
+00:02:32,832 --> 00:02:34,880
+Obviously here you select the site views
+
+54
+00:02:35,904 --> 00:02:37,440
+Just add as many as you like
+
+55
+00:02:37,952 --> 00:02:43,584
+Then add menu means that this site view will be added to the add menu
+
+56
+00:02:44,096 --> 00:02:46,144
+Aspect of Joomla
+
+57
+00:02:46,656 --> 00:02:48,448
+You know If you go to create menu
+
+58
+00:02:48,704 --> 00:02:50,752
+And then you go to add menu
+
+59
+00:02:51,264 --> 00:02:52,032
+Item
+
+60
+00:02:52,288 --> 00:02:53,568
+Then there is a select
+
+61
+00:02:53,824 --> 00:02:56,896
+Type and when you click on select type then there is this list
+
+62
+00:02:57,152 --> 00:02:58,688
+Articles and whatever
+
+63
+00:02:58,944 --> 00:03:04,320
+Now if you say yes there you'll create a XML file
+
+64
+00:03:04,576 --> 00:03:05,856
+Which allows
+
+65
+00:03:06,112 --> 00:03:09,184
+Joomla to notice that your component needs to be in the list
+
+66
+00:03:09,952 --> 00:03:12,512
+And the XML file we will look at in the moment
+
+67
+00:03:12,768 --> 00:03:15,072
+But that's just you know that's what this
+
+68
+00:03:15,328 --> 00:03:16,608
+Switch here add menu does
+
+69
+00:03:17,376 --> 00:03:20,192
+Add metadata means that
+
+70
+00:03:24,032 --> 00:03:24,800
+this page
+
+71
+00:03:25,312 --> 00:03:29,152
+Is gonna actually make use of the Net the metadata
+
+72
+00:03:29,920 --> 00:03:31,712
+That is being passed to it
+
+73
+00:03:32,480 --> 00:03:36,576
+Usually that means that in your model you've set up your data
+
+74
+00:03:36,832 --> 00:03:38,368
+So that there is a
+
+75
+00:03:38,880 --> 00:03:43,232
+Metadata in the items array or in the
+
+76
+00:03:43,744 --> 00:03:46,816
+In the item array or in the this array
+
+77
+00:03:47,328 --> 00:03:48,864
+Either By by
+
+78
+00:03:49,888 --> 00:03:51,424
+The global setting or
+
+79
+00:03:51,680 --> 00:03:53,984
+By the the actual item
+
+80
+00:03:54,752 --> 00:03:57,824
+So this is meta implementation
+
+81
+00:03:58,080 --> 00:04:00,384
+You even if you set yes here
+
+82
+00:04:00,640 --> 00:04:01,664
+And you did not
+
+83
+00:04:01,920 --> 00:04:04,480
+Set up the data in the in the model
+
+84
+00:04:04,736 --> 00:04:10,880
+Correctly it won't work and the way for you to look at that is obviously click yes here try
+
+85
+00:04:11,136 --> 00:04:15,488
+your best setting up the data the model then compile and go look in the view
+
+86
+00:04:16,000 --> 00:04:22,143
+.HTML.PHP file to see how it grabs the meta data because it will still add
+
+87
+00:04:22,655 --> 00:04:25,983
+The Script that is needed to load the metadata into the
+
+88
+00:04:27,007 --> 00:04:27,775
+the document
+
+89
+00:04:29,567 --> 00:04:30,847
+But if it doesn't
+
+90
+00:04:31,103 --> 00:04:32,383
+Grab it correctly
+
+91
+00:04:32,639 --> 00:04:34,431
+Then you'd see that as well
+
+92
+00:04:34,943 --> 00:04:36,223
+Ok then
+
+93
+00:04:36,735 --> 00:04:39,295
+Whether you can only have one default View
+
+94
+00:04:39,551 --> 00:04:41,855
+So don't click more than one to yes
+
+95
+00:04:42,367 --> 00:04:47,743
+but what the default view effectively is is that sometimes when
+
+96
+00:04:47,999 --> 00:04:52,607
+You make a change and the system doesn't know where you wanna go
+
+97
+00:04:53,119 --> 00:04:55,423
+It actually throws you back to the default View
+
+98
+00:04:56,191 --> 00:05:00,799
+Know that default view could either be your sights default view being home page
+
+99
+00:05:03,359 --> 00:05:08,223
+Or it can be if your in this component it could be for example on this one it's preachers
+
+100
+00:05:09,247 --> 00:05:09,759
+So
+
+101
+00:05:10,015 --> 00:05:14,879
+Let's say some of these views you set that they don't user
+
+102
+00:05:15,135 --> 00:05:21,279
+a Public user don't have access for example to sermon then if they try to access that page
+
+103
+00:05:21,535 --> 00:05:26,399
+The system will throw them back to the default view and give him a message saying you don't have access
+
+104
+00:05:27,423 --> 00:05:29,471
+And so that's what the default View
+
+105
+00:05:29,727 --> 00:05:31,263
+Primarily used for at the moment
+
+106
+00:05:32,031 --> 00:05:37,151
+But I can see it being coming even more useful as we continue to improve in component Builder
+
+107
+00:05:37,919 --> 00:05:39,455
+Then add access
+
+108
+00:05:39,711 --> 00:05:45,599
+It's basically making sure that a Sydney user has the specific access rights
+
+109
+00:05:46,367 --> 00:05:49,951
+You see in a in an item you can set the access rights
+
+110
+00:05:50,463 --> 00:05:53,279
+As well as the view rights
+
+111
+00:05:53,535 --> 00:05:55,583
+So it's multiple implementations
+
+112
+00:05:56,095 --> 00:06:01,983
+Different implementations one's access groups the other one is just groups
+
+113
+00:06:02,239 --> 00:06:06,847
+And so you can tweak whether you want access on this specific View to be monitored
+
+114
+00:06:07,359 --> 00:06:07,871
+And
+
+115
+00:06:08,383 --> 00:06:09,151
+If you tick that
+
+116
+00:06:09,663 --> 00:06:10,431
+Then
+
+117
+00:06:10,687 --> 00:06:13,503
+Component building will ensure that the access
+
+118
+00:06:14,271 --> 00:06:15,295
+Table is there
+
+119
+00:06:15,807 --> 00:06:16,319
+Ok
+
+120
+00:06:16,831 --> 00:06:19,135
+So that is adding a site view
+
+121
+00:06:19,647 --> 00:06:20,159
+to
+
+122
+00:06:20,415 --> 00:06:21,951
+to your component
+
+123
+00:06:22,463 --> 00:06:25,279
+Obviously after having created the site view
+
+124
+00:06:25,535 --> 00:06:27,583
+Then this is how you can add it to check it
+
+125
+00:06:28,351 --> 00:06:29,375
+See how it works
+
+126
+00:06:30,399 --> 00:06:32,447
+Ok now next up we gonna look at
+
+127
+00:06:32,703 --> 00:06:35,007
+Custom admin views being added
+
+128
+00:06:35,519 --> 00:06:36,543
+Thank you for watching
+

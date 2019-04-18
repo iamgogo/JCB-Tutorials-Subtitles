@@ -1,0 +1,4360 @@
+1
+00:00:01,280 --> 00:00:06,912
+I wanna talk to you about a collaborative workflow now JCB
+
+2
+00:00:07,168 --> 00:00:09,216
+Like any other Joomla component
+
+3
+00:00:09,984 --> 00:00:13,824
+Can function in a shared environmental quite easily
+
+4
+00:00:14,336 --> 00:00:18,176
+Will you have one website or one system that is online
+
+5
+00:00:18,944 --> 00:00:20,224
+And people can login
+
+6
+00:00:20,480 --> 00:00:21,760
+And they can
+
+7
+00:00:22,272 --> 00:00:23,808
+Edit documents
+
+8
+00:00:24,064 --> 00:00:25,600
+Say that's a components
+
+9
+00:00:26,112 --> 00:00:26,624
+and they can
+
+10
+00:00:27,136 --> 00:00:28,416
+Click on a component
+
+11
+00:00:28,928 --> 00:00:31,232
+And while they're working on that component
+
+12
+00:00:32,768 --> 00:00:34,304
+No one else can
+
+13
+00:00:34,560 --> 00:00:36,352
+Because it will in effect
+
+14
+00:00:37,376 --> 00:00:40,448
+Lock the component out to them so if we open
+
+15
+00:00:41,472 --> 00:00:44,032
+That list you again you see that it's checked out
+
+16
+00:00:44,544 --> 00:00:46,592
+And so this functionality
+
+17
+00:00:46,848 --> 00:00:49,152
+Is available in JCB already
+
+18
+00:00:49,664 --> 00:00:54,784
+So with it whether it's an admin view whether it's field
+
+19
+00:00:55,040 --> 00:01:00,416
+If your login and someone else opens it up it takes out the item and so people can work together
+
+20
+00:01:00,672 --> 00:01:01,696
+Quite easily
+
+21
+00:01:01,952 --> 00:01:03,232
+In a shared inviroment
+
+22
+00:01:03,488 --> 00:01:05,024
+Weather have one JCB
+
+23
+00:01:05,280 --> 00:01:06,816
+But multiple users
+
+24
+00:01:07,840 --> 00:01:08,608
+More than that
+
+25
+00:01:08,864 --> 00:01:11,424
+It's also has a very strong
+
+26
+00:01:11,680 --> 00:01:13,216
+Permissional structure
+
+27
+00:01:13,472 --> 00:01:16,288
+Which if you open the component Builder
+
+28
+00:01:16,544 --> 00:01:21,408
+permissional area you'll see that it has quite a long list
+
+29
+00:01:21,664 --> 00:01:23,200
+I suppose longer than
+
+30
+00:01:23,456 --> 00:01:24,736
+One might anticipate
+
+31
+00:01:25,248 --> 00:01:27,552
+But it's huge
+
+32
+00:01:28,064 --> 00:01:29,344
+List of permissions
+
+33
+00:01:30,368 --> 00:01:35,232
+And that means you can have different groups in your Joomla
+
+34
+00:01:35,744 --> 00:01:38,048
+You know groups in regarding to these
+
+35
+00:01:38,304 --> 00:01:42,400
+But I have access and is allowed to work on only certain areas
+
+36
+00:01:42,912 --> 00:01:43,936
+And
+
+37
+00:01:44,192 --> 00:01:45,984
+So your possibilities
+
+38
+00:01:46,240 --> 00:01:49,312
+Of setting up a development workflow with JCB
+
+39
+00:01:49,568 --> 00:01:52,384
+In one Joomla website is endless
+
+40
+00:01:52,896 --> 00:01:56,736
+And that was the whole idea behind here was to make JCB
+
+41
+00:01:56,992 --> 00:01:59,552
+A place where you could have teams work together
+
+42
+00:01:59,808 --> 00:02:00,576
+In Joomla
+
+43
+00:02:01,088 --> 00:02:02,624
+Developing components
+
+44
+00:02:03,136 --> 00:02:04,160
+So this is the
+
+45
+00:02:04,416 --> 00:02:08,000
+The one that's worked from day one this or this this approach
+
+46
+00:02:08,256 --> 00:02:11,072
+And it is it is very powerful and
+
+47
+00:02:11,584 --> 00:02:17,728
+I've already been told by quite a number of developers that they are using that they put teams working together
+
+48
+00:02:17,984 --> 00:02:20,288
+On components and it is excellent
+
+49
+00:02:20,544 --> 00:02:22,592
+So I'm happy to see that working
+
+50
+00:02:22,848 --> 00:02:27,712
+But like we all know JCB's most
+
+51
+00:02:27,968 --> 00:02:31,552
+desirable environment is an offline environment
+
+52
+00:02:32,064 --> 00:02:36,928
+Where you do development in your own local developing environment
+
+53
+00:02:37,440 --> 00:02:40,256
+Where you maybe have a virtual machine running
+
+54
+00:02:40,512 --> 00:02:43,072
+And you can do docer appointments
+
+55
+00:02:43,328 --> 00:02:45,888
+Or something like that when your on Joomla and
+
+56
+00:02:46,144 --> 00:02:48,448
+You're safe within your own network
+
+57
+00:02:48,960 --> 00:02:50,496
+And when you do that
+
+58
+00:02:50,752 --> 00:02:54,336
+The collaborative concept of working together other developers
+
+59
+00:02:54,592 --> 00:02:57,152
+Sort of doesn't come to its right
+
+60
+00:02:57,664 --> 00:02:58,688
+And
+
+61
+00:02:59,200 --> 00:03:00,992
+That's what I've been working on
+
+62
+00:03:01,248 --> 00:03:06,368
+And the whole idea of the JCB packages was birthed out of this
+
+63
+00:03:06,624 --> 00:03:07,136
+Need
+
+64
+00:03:07,392 --> 00:03:11,744
+The need to collaborate with others around a specific component
+
+65
+00:03:12,512 --> 00:03:18,144
+So we've also started working on a area called servers
+
+66
+00:03:18,656 --> 00:03:21,472
+In which we now have actually
+
+67
+00:03:21,728 --> 00:03:22,752
+Added
+
+68
+00:03:23,008 --> 00:03:25,056
+This option
+
+69
+00:03:26,080 --> 00:03:28,128
+For SFTP which is
+
+70
+00:03:28,384 --> 00:03:29,664
+Oh really smart
+
+71
+00:03:29,920 --> 00:03:31,712
+So you know protocol
+
+72
+00:03:31,968 --> 00:03:35,808
+And it's purely PHP so it it will function
+
+73
+00:03:36,064 --> 00:03:36,576
+In
+
+74
+00:03:37,344 --> 00:03:37,856
+Moving
+
+75
+00:03:38,112 --> 00:03:41,440
+At the moment only moving zip files and things around
+
+76
+00:03:41,696 --> 00:03:43,488
+But the idea would be in the long run
+
+77
+00:03:44,000 --> 00:03:49,120
+That we could possibly create connections between different JCBs
+
+78
+00:03:49,632 --> 00:03:55,520
+Which could automatically synchronise things like almost like they're on the same
+
+79
+00:03:57,056 --> 00:03:58,336
+Yeah system
+
+80
+00:03:58,592 --> 00:03:59,360
+But ok
+
+81
+00:03:59,616 --> 00:04:02,176
+ I did have a thread open on that
+
+82
+00:04:02,432 --> 00:04:03,456
+On GITHUB
+
+83
+00:04:04,480 --> 00:04:08,320
+Connecting JCBs with each other to sync development on agreed
+
+84
+00:04:08,576 --> 00:04:09,088
+Projects
+
+85
+00:04:09,600 --> 00:04:12,928
+That was The issue that I opened up issue 233
+
+86
+00:04:13,440 --> 00:04:13,952
+And
+
+87
+00:04:14,208 --> 00:04:17,024
+Then there was basically discussion between me
+
+88
+00:04:17,536 --> 00:04:19,327
+And one of my coworkers
+
+89
+00:04:19,583 --> 00:04:20,607
+And then
+
+90
+00:04:20,863 --> 00:04:22,655
+Some other in the community
+
+91
+00:04:22,911 --> 00:04:24,447
+Which ended up in
+
+92
+00:04:24,703 --> 00:04:27,775
+Saying good this is a premium feature
+
+93
+00:04:30,591 --> 00:04:33,919
+And although we have sort of put it on the back burner
+
+94
+00:04:34,175 --> 00:04:35,455
+Like you see me say here
+
+95
+00:04:35,967 --> 00:04:38,783
+I am still very much thinking about
+
+96
+00:04:40,063 --> 00:04:42,367
+Taking this and making this reality
+
+97
+00:04:42,879 --> 00:04:44,415
+and so part of doing that
+
+98
+00:04:44,671 --> 00:04:47,487
+Is taking a specific area of JCB
+
+99
+00:04:48,255 --> 00:04:51,071
+And that area is the import of JCB packages
+
+100
+00:04:51,583 --> 00:04:55,935
+And to improve this area so considerably that we basically
+
+101
+00:04:56,191 --> 00:05:01,823
+The synchronisation will be nothing else but a JCB package traveling from one to the other
+
+102
+00:05:02,335 --> 00:05:05,919
+And updating each other automatically and so
+
+103
+00:05:06,175 --> 00:05:10,015
+To achieve that I started working on a feature
+
+104
+00:05:10,271 --> 00:05:14,879
+Which now is available in the latest version 2.7 9
+
+105
+00:05:15,903 --> 00:05:16,671
+Auto
+
+106
+00:05:16,927 --> 00:05:17,695
+Wait where's it
+
+107
+00:05:17,951 --> 00:05:20,255
+Development method right that's the one
+
+108
+00:05:20,767 --> 00:05:25,119
+And what we called it is the default is the way that it always worked
+
+109
+00:05:25,375 --> 00:05:28,447
+And then there's this expansion there's a tutorial about this
+
+110
+00:05:28,703 --> 00:05:31,007
+Which really explains that you can select
+
+111
+00:05:31,519 --> 00:05:32,031
+Specific
+
+112
+00:05:32,287 --> 00:05:33,055
+Components
+
+113
+00:05:33,311 --> 00:05:34,335
+That you've developed
+
+114
+00:05:34,591 --> 00:05:35,615
+And then
+
+115
+00:05:35,871 --> 00:05:37,151
+On the
+
+116
+00:05:37,663 --> 00:05:39,199
+Frequency of this
+
+117
+00:05:39,455 --> 00:05:40,735
+Cron job
+
+118
+00:05:41,503 --> 00:05:44,063
+It will actually build and install
+
+119
+00:05:44,319 --> 00:05:45,855
+This project automatically
+
+120
+00:05:46,367 --> 00:05:49,695
+So that that is the first step of needing to
+
+121
+00:05:50,207 --> 00:05:54,559
+Sort of make that connection between two projects possible
+
+122
+00:05:54,815 --> 00:05:58,911
+Now projects literally talking out different Joomla websites right
+
+123
+00:05:59,423 --> 00:06:02,495
+One being offline one being online and then
+
+124
+00:06:02,751 --> 00:06:05,567
+This one that's online to serve like a hub
+
+125
+00:06:06,079 --> 00:06:07,871
+And I'm everybody that's offline
+
+126
+00:06:08,127 --> 00:06:14,271
+Would be pushing the changes to this online and pulling Again from it so that is the 
+
+127
+00:06:14,527 --> 00:06:15,039
+Long-term aim
+
+128
+00:06:15,295 --> 00:06:17,599
+So if you are listening
+
+129
+00:06:18,111 --> 00:06:24,255
+That you would realise where I'm heading I'm I'm trying to get to the point where I can have a team of developers
+
+130
+00:06:24,511 --> 00:06:27,327
+All having their offline environments
+
+131
+00:06:27,839 --> 00:06:30,143
+Doing development on the same project
+
+132
+00:06:30,399 --> 00:06:36,543
+And as they feel they have achieved a certain level of stability in the project in a certain area
+
+133
+00:06:37,055 --> 00:06:37,823
+They can make
+
+134
+00:06:38,079 --> 00:06:39,615
+Literally a pull request
+
+135
+00:06:40,127 --> 00:06:43,199
+To the on line environment where JCB is running
+
+136
+00:06:43,711 --> 00:06:47,295
+And then others can review those changes and
+
+137
+00:06:47,551 --> 00:06:51,135
+May that component can come in as a clone
+
+138
+00:06:51,647 --> 00:06:55,743
+And they can play around with it until they feel yeah this this is good enough
+
+139
+00:06:55,999 --> 00:06:59,583
+And then it can be merged into the main branch somehow
+
+140
+00:06:59,839 --> 00:07:04,447
+So it's somehow putting GIT in a in a sort of an interface
+
+141
+00:07:04,703 --> 00:07:06,239
+And
+
+142
+00:07:06,495 --> 00:07:09,311
+Then obviously at some point I became
+
+143
+00:07:09,567 --> 00:07:11,103
+So overwhelmed with the task
+
+144
+00:07:11,359 --> 00:07:15,455
+That I started doing all these other little things that you now see coming about
+
+145
+00:07:15,711 --> 00:07:16,991
+One of them being
+
+146
+00:07:18,527 --> 00:07:23,647
+That I added a BBM package area which basically takes all the packages that we have
+
+147
+00:07:23,903 --> 00:07:27,487
+Available online and put it right here easy to
+
+148
+00:07:27,743 --> 00:07:28,767
+So get hold of it
+
+149
+00:07:29,279 --> 00:07:30,303
+And
+
+150
+00:07:30,559 --> 00:07:34,399
+So there are some free ones between them at the moment like this demo package here
+
+151
+00:07:35,423 --> 00:07:37,215
+All of the packages that
+
+152
+00:07:37,471 --> 00:07:39,519
+Are actually available won't GITHUB
+
+153
+00:07:40,031 --> 00:07:43,871
+The actual Joomla component of this package
+
+154
+00:07:44,383 --> 00:07:46,431
+Will have the source code link
+
+155
+00:07:46,943 --> 00:07:50,015
+Showing up so that you can actually go look if you
+
+156
+00:07:50,271 --> 00:07:52,575
+If you let say use select
+
+157
+00:07:53,343 --> 00:07:55,391
+Which one question and answers
+
+158
+00:07:55,903 --> 00:07:57,951
+Then there's actually a source code
+
+159
+00:07:58,207 --> 00:08:00,511
+Area we can go look on get up
+
+160
+00:08:00,767 --> 00:08:06,911
+To this program and you can actually take it and install it on Joomla website to see it's functionality
+
+161
+00:08:07,423 --> 00:08:08,703
+And to see it's features
+
+162
+00:08:09,215 --> 00:08:11,263
+And if you then
+
+163
+00:08:11,519 --> 00:08:14,335
+Yeah that's how you can evaluate the package easily
+
+164
+00:08:14,847 --> 00:08:20,479
+Basically it means that this JCB package produces this source code that's really what it gets down to
+
+165
+00:08:22,015 --> 00:08:23,551
+So now today
+
+166
+00:08:24,063 --> 00:08:24,575
+The
+
+167
+00:08:25,087 --> 00:08:27,135
+The current workflow
+
+168
+00:08:27,647 --> 00:08:28,415
+Model
+
+169
+00:08:28,671 --> 00:08:30,463
+Looks as follow
+
+170
+00:08:31,231 --> 00:08:34,047
+First you need to realise there is the JCB mapped
+
+171
+00:08:34,303 --> 00:08:35,583
+Two-piece there
+
+172
+00:08:36,095 --> 00:08:39,935
+Mapped pack component and then there is the Joomla component
+
+173
+00:08:40,703 --> 00:08:46,847
+This is the one that is sort of the feels the views the code everything inside
+
+174
+00:08:47,103 --> 00:08:47,615
+JCB
+
+175
+00:08:47,871 --> 00:08:48,895
+That can be moved
+
+176
+00:08:49,151 --> 00:08:49,663
+between
+
+177
+00:08:49,919 --> 00:08:50,687
+JCBs
+
+178
+00:08:51,455 --> 00:08:51,967
+Being
+
+179
+00:08:52,479 --> 00:08:52,991
+One
+
+180
+00:08:53,503 --> 00:08:55,551
+On one website one on the other
+
+181
+00:08:56,063 --> 00:08:58,111
+So you can actually extract a package
+
+182
+00:08:58,623 --> 00:09:02,463
+And give it to someone and you can import it into his JCB
+
+183
+00:09:02,975 --> 00:09:03,999
+And this is what this
+
+184
+00:09:04,255 --> 00:09:04,767
+Is
+
+185
+00:09:05,023 --> 00:09:08,863
+Where is the Joomla component is the produced package which
+
+186
+00:09:09,119 --> 00:09:15,263
+Then when you compile that map to component it produces a Joomla component and these are two
+
+187
+00:09:15,775 --> 00:09:16,799
+Different things
+
+188
+00:09:17,055 --> 00:09:18,847
+Although they are the same thing
+
+189
+00:09:19,615 --> 00:09:20,127
+Now
+
+190
+00:09:20,383 --> 00:09:22,431
+When I think about the workflow then
+
+191
+00:09:22,943 --> 00:09:25,503
+This is affecting this
+
+192
+00:09:25,759 --> 00:09:27,039
+But this cannot
+
+193
+00:09:27,295 --> 00:09:27,807
+Effect
+
+194
+00:09:28,063 --> 00:09:28,575
+This
+
+195
+00:09:29,087 --> 00:09:30,367
+So you can
+
+196
+00:09:30,623 --> 00:09:35,487
+Change here make changes to this package and it produces a different
+
+197
+00:09:35,743 --> 00:09:36,511
+Result
+
+198
+00:09:36,767 --> 00:09:37,791
+In this package
+
+199
+00:09:38,303 --> 00:09:44,447
+But if you make changes to this package it does not immediately would make any difference to this 
+
+200
+00:09:44,703 --> 00:09:45,983
+Package unless you make
+
+201
+00:09:46,239 --> 00:09:48,031
+Use of what we have
+
+202
+00:09:48,287 --> 00:09:50,847
+Called the custom code implementation
+
+203
+00:09:51,103 --> 00:09:52,383
+We do editing
+
+204
+00:09:52,639 --> 00:09:53,919
+Within the IDE
+
+205
+00:09:54,431 --> 00:09:58,783
+Then yes then making changes to this package will affect this one
+
+206
+00:09:59,295 --> 00:10:00,575
+But that's a whole different story
+
+207
+00:10:00,831 --> 00:10:01,343
+And
+
+208
+00:10:01,599 --> 00:10:02,879
+Little bit
+
+209
+00:10:03,135 --> 00:10:05,183
+Beyond what I want to explain here
+
+210
+00:10:05,695 --> 00:10:11,327
+So when I think about a work flow then I would like to see that we make it change to this package
+
+211
+00:10:12,095 --> 00:10:16,447
+It gets validated by what we have here
+
+212
+00:10:16,703 --> 00:10:18,239
+And then everybody
+
+213
+00:10:18,495 --> 00:10:22,591
+Updates again this package to be the same as what we decided on
+
+214
+00:10:22,847 --> 00:10:25,151
+Here now that may not make sense
+
+215
+00:10:25,407 --> 00:10:26,943
+So let me add some arrows
+
+216
+00:10:27,455 --> 00:10:29,247
+And demonstration to this
+
+217
+00:10:31,039 --> 00:10:33,855
+I'm gonna use this question and answers
+
+218
+00:10:34,879 --> 00:10:36,671
+Package as an example
+
+219
+00:10:37,183 --> 00:10:39,743
+So if you were going to become
+
+220
+00:10:39,999 --> 00:10:40,511
+A
+
+221
+00:10:40,767 --> 00:10:43,839
+Collaborator on the question answers package
+
+222
+00:10:44,351 --> 00:10:46,911
+Then you first need to go to the source code of it
+
+223
+00:10:47,679 --> 00:10:50,495
+So on GitHub you would go and open the source code
+
+224
+00:10:51,007 --> 00:10:52,543
+And you will work
+
+225
+00:10:52,799 --> 00:10:54,079
+This source code
+
+226
+00:10:55,871 --> 00:10:57,151
+Which would then
+
+227
+00:10:57,919 --> 00:11:01,503
+Give you the option of making changes to this
+
+228
+00:11:01,759 --> 00:11:03,551
+But not directly
+
+229
+00:11:03,807 --> 00:11:04,575
+Manually
+
+230
+00:11:05,087 --> 00:11:07,135
+But instead through JCB
+
+231
+00:11:08,415 --> 00:11:08,927
+Now
+
+232
+00:11:09,183 --> 00:11:13,535
+That means that you will then clone this repository that you're forked
+
+233
+00:11:14,047 --> 00:11:16,095
+Down to your local development environment
+
+234
+00:11:16,607 --> 00:11:18,399
+And doing it as follow
+
+235
+00:11:19,167 --> 00:11:20,703
+The first thing you then do
+
+236
+00:11:20,959 --> 00:11:25,311
+Is you go back to your component where it's installed on your local developing environment
+
+237
+00:11:26,079 --> 00:11:27,871
+And you open the options area
+
+238
+00:11:28,127 --> 00:11:29,663
+So that you can set the
+
+239
+00:11:29,919 --> 00:11:30,943
+Folder path
+
+240
+00:11:31,199 --> 00:11:31,967
+For your GIT
+
+241
+00:11:32,223 --> 00:11:32,735
+Files
+
+242
+00:11:33,503 --> 00:11:35,039
+You gonna have a place
+
+243
+00:11:35,295 --> 00:11:39,903
+Where all you GIT files basically the component on ZIPPED
+
+244
+00:11:40,415 --> 00:11:42,975
+Is going to be placed automatically for you
+
+245
+00:11:43,487 --> 00:11:43,999
+So
+
+246
+00:11:44,255 --> 00:11:45,023
+here you would
+
+247
+00:11:45,279 --> 00:11:46,047
+add that
+
+248
+00:11:47,071 --> 00:11:48,863
+So I'm gonna place it in my
+
+249
+00:11:49,375 --> 00:11:51,167
+Basically my
+
+250
+00:11:51,423 --> 00:11:52,447
+User folder
+
+251
+00:11:52,959 --> 00:11:56,799
+I'm going create a folder there called Joomla I have to do this manually
+
+252
+00:11:57,567 --> 00:12:00,895
+And then inside of that I'm gonna add another folder called Git
+
+253
+00:12:01,663 --> 00:12:05,247
+So that's what I'm gonna do and I'm gonna save this
+
+254
+00:12:05,503 --> 00:12:08,319
+And then I'm quickly gonna create this folders and
+
+255
+00:12:08,575 --> 00:12:10,623
+So I'll show it to you in the command line
+
+256
+00:12:14,463 --> 00:12:17,791
+Ok I need to first add the
+
+257
+00:12:18,559 --> 00:12:20,095
+Company information here
+
+258
+00:12:21,631 --> 00:12:23,679
+Can now save and close
+
+259
+00:12:23,935 --> 00:12:24,703
+Call another one too
+
+260
+00:12:24,959 --> 00:12:25,471
+Choose
+
+261
+00:12:27,007 --> 00:12:29,311
+This is just the language make sure
+
+262
+00:12:29,567 --> 00:12:31,871
+To put it to British at this stage that is
+
+263
+00:12:32,383 --> 00:12:32,895
+The
+
+264
+00:12:33,151 --> 00:12:34,175
+Best practice
+
+265
+00:12:34,687 --> 00:12:37,247
+And oh yes another thing
+
+266
+00:12:38,271 --> 00:12:40,575
+I don't want to have any prefix at this stage
+
+267
+00:12:41,343 --> 00:12:42,623
+And yes
+
+268
+00:12:43,135 --> 00:12:43,903
+Save and close
+
+269
+00:12:44,927 --> 00:12:48,255
+Ok now we've got our GIT path setup
+
+270
+00:12:48,767 --> 00:12:51,327
+Now I need to actually create this files
+
+271
+00:12:51,583 --> 00:12:53,887
+In my local developing environment
+
+272
+00:12:54,143 --> 00:12:56,447
+So I'll do that via
+
+273
+00:12:56,703 --> 00:12:57,471
+Command line
+
+274
+00:12:59,007 --> 00:13:00,287
+So first I will
+
+275
+00:13:00,543 --> 00:13:01,055
+Make
+
+276
+00:13:01,567 --> 00:13:02,847
+Directory
+
+277
+00:13:03,615 --> 00:13:06,175
+Then I'm gonna change to that directory
+
+278
+00:13:08,991 --> 00:13:09,759
+Now
+
+279
+00:13:10,015 --> 00:13:12,063
+In that directory I'm gonna create another
+
+280
+00:13:12,319 --> 00:13:13,855
+Directory called GIT
+
+281
+00:13:17,183 --> 00:13:17,695
+And
+
+282
+00:13:17,951 --> 00:13:19,743
+Change that directory well
+
+283
+00:13:21,535 --> 00:13:25,631
+So this is the directory where in my components are going to be placed
+
+284
+00:13:26,143 --> 00:13:29,983
+Not the moment if we look inside of this directory there is really nothing showing
+
+285
+00:13:30,495 --> 00:13:31,007
+But
+
+286
+00:13:31,263 --> 00:13:33,567
+The first time I compile a component
+
+287
+00:13:34,079 --> 00:13:36,895
+And I say to the compiler to add my
+
+288
+00:13:37,407 --> 00:13:39,967
+Files to the git repository is going to create
+
+289
+00:13:40,223 --> 00:13:41,759
+A folder with all the
+
+290
+00:13:42,015 --> 00:13:43,551
+So code inside it
+
+291
+00:13:43,807 --> 00:13:44,575
+Automatically
+
+292
+00:13:45,343 --> 00:13:47,135
+So you remember that I
+
+293
+00:13:47,391 --> 00:13:48,159
+Cloned
+
+294
+00:13:48,415 --> 00:13:50,463
+This repository on GitHub
+
+295
+00:13:51,231 --> 00:13:53,279
+Joomla questions and answers
+
+296
+00:13:53,535 --> 00:13:54,303
+Now
+
+297
+00:13:54,815 --> 00:13:56,863
+If I do continue I need to get
+
+298
+00:13:57,119 --> 00:13:59,167
+The JCB package for this
+
+299
+00:14:00,703 --> 00:14:03,007
+Installed into my JCB
+
+300
+00:14:03,263 --> 00:14:03,775
+Program
+
+301
+00:14:05,055 --> 00:14:08,639
+The way this is done obviously we we go to the JCB package area
+
+302
+00:14:09,151 --> 00:14:10,431
+And we select
+
+303
+00:14:11,199 --> 00:14:11,711
+The
+
+304
+00:14:12,223 --> 00:14:14,015
+Questions and answers package
+
+305
+00:14:14,527 --> 00:14:15,551
+And we
+
+306
+00:14:16,063 --> 00:14:16,831
+Get the package
+
+307
+00:14:18,111 --> 00:14:19,391
+Then we add the key
+
+308
+00:14:20,159 --> 00:14:21,439
+And we
+
+309
+00:14:21,695 --> 00:14:23,999
+At the moment there is not really any components
+
+310
+00:14:24,255 --> 00:14:27,839
+On this in install so it's fine to leave this to yes
+
+311
+00:14:29,119 --> 00:14:32,447
+I'm gonna also Force local update of anything
+
+312
+00:14:32,703 --> 00:14:37,055
+And so we can just check again that it is the right package yes it's to correct package
+
+313
+00:14:37,311 --> 00:14:38,847
+And the checksum
+
+314
+00:14:39,103 --> 00:14:40,383
+You can read this
+
+315
+00:14:41,663 --> 00:14:47,807
+Basically there is a checksum for the package and at the moment it seems that everything is fine you can make it final
+
+316
+00:14:48,063 --> 00:14:49,855
+check of just clicking this link
+
+317
+00:14:50,111 --> 00:14:53,183
+And make sure that this number is the same as the one seeing
+
+318
+00:14:53,695 --> 00:14:54,719
+On the page here
+
+319
+00:14:54,975 --> 00:14:55,743
+And yes it is
+
+320
+00:14:55,999 --> 00:14:57,023
+So always good
+
+321
+00:14:57,279 --> 00:14:58,815
+And then we click continue
+
+322
+00:15:00,863 --> 00:15:04,191
+And there you have it we've got the component in our
+
+323
+00:15:04,703 --> 00:15:05,215
+System
+
+324
+00:15:05,983 --> 00:15:07,263
+This component now
+
+325
+00:15:07,775 --> 00:15:10,079
+If I compile it for the first time
+
+326
+00:15:11,103 --> 00:15:13,407
+Let's again just this for
+
+327
+00:15:13,663 --> 00:15:15,199
+For your sake let me show you
+
+328
+00:15:15,711 --> 00:15:16,991
+That there still is
+
+329
+00:15:17,247 --> 00:15:17,759
+No
+
+330
+00:15:18,271 --> 00:15:19,551
+File here whatsoever
+
+331
+00:15:20,319 --> 00:15:20,831
+Ok
+
+332
+00:15:21,087 --> 00:15:21,599
+Now
+
+333
+00:15:21,855 --> 00:15:23,903
+I'm going to compile this component
+
+334
+00:15:24,415 --> 00:15:25,439
+And I'm gonna say
+
+335
+00:15:27,231 --> 00:15:29,023
+Add to repository folder
+
+336
+00:15:29,535 --> 00:15:30,303
+Ok so this
+
+337
+00:15:30,559 --> 00:15:35,679
+Should the component been moved to your local repository folder now we already set the path for this
+
+338
+00:15:35,935 --> 00:15:36,703
+So now you work
+
+339
+00:15:37,215 --> 00:15:37,983
+If we have
+
+340
+00:15:38,495 --> 00:15:41,055
+Say yes and then compile this
+
+341
+00:15:43,359 --> 00:15:46,687
+We see that it's actually been done and it's all well
+
+342
+00:15:46,943 --> 00:15:48,735
+And we now go back to that folder
+
+343
+00:15:50,015 --> 00:15:55,391
+And we check again we see that now there is a folder with its exact name
+
+344
+00:15:55,903 --> 00:15:57,951
+So if we changed into that folder
+
+345
+00:15:59,999 --> 00:16:02,047
+Will see that it is at the moment
+
+346
+00:16:02,303 --> 00:16:03,583
+LSLA
+
+347
+00:16:03,839 --> 00:16:04,863
+There's no GIT
+
+348
+00:16:05,375 --> 00:16:07,167
+Information here so this
+
+349
+00:16:07,423 --> 00:16:10,495
+Folder is basically just the source code without
+
+350
+00:16:10,751 --> 00:16:11,263
+Any GIT
+
+351
+00:16:11,775 --> 00:16:12,543
+Connected
+
+352
+00:16:12,799 --> 00:16:13,311
+To it
+
+353
+00:16:13,823 --> 00:16:15,871
+So what we gonna do now
+
+354
+00:16:16,127 --> 00:16:16,895
+At this point
+
+355
+00:16:17,151 --> 00:16:19,967
+We are gonna connect your forked version
+
+356
+00:16:20,223 --> 00:16:21,503
+That you have on GitHub
+
+357
+00:16:22,015 --> 00:16:24,575
+To this folders here
+
+358
+00:16:25,087 --> 00:16:26,367
+And that from now on
+
+359
+00:16:26,623 --> 00:16:28,671
+If you make a change to the component
+
+360
+00:16:28,927 --> 00:16:34,559
+It will be and you have to push the changes in this folder to the GitHub repository
+
+361
+00:16:35,327 --> 00:16:37,887
+The way to make this the
+
+362
+00:16:38,143 --> 00:16:38,655
+GITHUB
+
+363
+00:16:39,167 --> 00:16:40,959
+Link the two to each other
+
+364
+00:16:41,215 --> 00:16:43,007
+Use the following commands
+
+365
+00:16:44,799 --> 00:16:48,383
+Making sure that you're in the correct directory com -
+
+366
+00:16:48,639 --> 00:16:50,431
+Questions and - and
+
+367
+00:16:50,943 --> 00:16:54,015
+- answers - - Joomla - 3
+
+368
+00:16:54,783 --> 00:16:56,831
+You can run the command r m
+
+369
+00:16:57,087 --> 00:16:57,855
+- f
+
+370
+00:16:58,623 --> 00:16:59,647
+R
+
+371
+00:17:00,159 --> 00:17:00,671
+Asterix
+
+372
+00:17:00,927 --> 00:17:01,695
+Now you know
+
+373
+00:17:02,207 --> 00:17:03,487
+You might say why
+
+374
+00:17:03,999 --> 00:17:04,767
+did we
+
+375
+00:17:05,279 --> 00:17:07,839
+Compile it in now delete everything
+
+376
+00:17:08,095 --> 00:17:09,631
+Well unfortunately
+
+377
+00:17:10,143 --> 00:17:11,935
+That is the only way to do this
+
+378
+00:17:12,447 --> 00:17:17,055
+Without difficulty you first need to get the information down from GITHUB
+
+379
+00:17:17,567 --> 00:17:18,079
+And
+
+380
+00:17:18,335 --> 00:17:22,431
+Then you might ask why didn't we just do that first and that was because
+
+381
+00:17:22,943 --> 00:17:24,735
+It seemed easier to just let
+
+382
+00:17:24,991 --> 00:17:26,783
+JCB build folder for you
+
+383
+00:17:27,295 --> 00:17:28,063
+And then
+
+384
+00:17:28,319 --> 00:17:29,599
+You use the folder
+
+385
+00:17:30,111 --> 00:17:33,951
+And so I'm gonna just wipe out all the files if we checked there now
+
+386
+00:17:34,207 --> 00:17:35,231
+Basically no file left
+
+387
+00:17:35,743 --> 00:17:37,023
+Then we going to
+
+388
+00:17:37,279 --> 00:17:38,303
+Start by
+
+389
+00:17:38,815 --> 00:17:40,351
+Actually pulling
+
+390
+00:17:40,607 --> 00:17:41,375
+The
+
+391
+00:17:41,631 --> 00:17:43,423
+The files down from GITHUB
+
+392
+00:17:44,191 --> 00:17:45,983
+First is to say GIT in it
+
+393
+00:17:49,055 --> 00:17:52,383
+Then to actually add the remote branch
+
+394
+00:17:52,895 --> 00:17:58,015
+And to get the remote branches URL your type out get remote add origin
+
+395
+00:17:58,271 --> 00:18:00,319
+Then go to GitHub
+
+396
+00:18:00,831 --> 00:18:02,111
+Where you forked the branch
+
+397
+00:18:02,879 --> 00:18:07,231
+So and then here you get the URL is copying it here
+
+398
+00:18:07,743 --> 00:18:12,351
+You can either use the HTPS or the SSH which in my case is what I prefer
+
+399
+00:18:13,375 --> 00:18:14,911
+So you pasted in there and click
+
+400
+00:18:15,679 --> 00:18:17,215
+So to save it
+
+401
+00:18:17,471 --> 00:18:20,799
+If you now would check the the config information
+
+402
+00:18:21,055 --> 00:18:23,615
+You see that this remote branch is been added
+
+403
+00:18:24,383 --> 00:18:27,711
+Now the next thing to do is to pull down the master branch
+
+404
+00:18:28,223 --> 00:18:29,247
+This is done with GIT
+
+405
+00:18:29,503 --> 00:18:31,295
+Pull origin Master
+
+406
+00:18:34,111 --> 00:18:36,927
+This will now get all the information from GITHUB
+
+407
+00:18:37,439 --> 00:18:40,255
+Which basically is the same as what you have
+
+408
+00:18:40,511 --> 00:18:42,559
+Here behind my
+
+409
+00:18:43,839 --> 00:18:45,375
+Command line screen
+
+410
+00:18:45,631 --> 00:18:47,935
+So if we were now to gonna do 
+
+411
+00:18:49,727 --> 00:18:50,239
+LSLA
+
+412
+00:18:51,007 --> 00:18:52,031
+Will see that there
+
+413
+00:18:52,287 --> 00:18:53,311
+There is actually
+
+414
+00:18:53,823 --> 00:18:58,431
+The files all back as they should be but now we have GIT here as well
+
+415
+00:18:58,943 --> 00:18:59,967
+And my
+
+416
+00:19:00,479 --> 00:19:01,503
+My
+
+417
+00:19:01,759 --> 00:19:06,111
+Command line shows us that we have a git repository and we are on the master branch
+
+418
+00:19:06,879 --> 00:19:07,647
+Ok
+
+419
+00:19:07,903 --> 00:19:09,439
+So that was to get
+
+420
+00:19:09,695 --> 00:19:12,767
+us linked to this repository
+
+421
+00:19:13,279 --> 00:19:18,655
+Now we can go and compile it again at the moment if we do get status
+
+422
+00:19:19,167 --> 00:19:21,727
+It should say that everything is fine and clean
+
+423
+00:19:21,983 --> 00:19:24,287
+And there is no difference between these two
+
+424
+00:19:25,055 --> 00:19:25,567
+But
+
+425
+00:19:25,823 --> 00:19:27,359
+The moment we now
+
+426
+00:19:28,895 --> 00:19:30,175
+Do another compile
+
+427
+00:19:30,943 --> 00:19:33,759
+Is going to change the files obviously
+
+428
+00:19:39,391 --> 00:19:41,183
+So now if we do GIT
+
+429
+00:19:41,951 --> 00:19:42,463
+Status
+
+430
+00:19:43,487 --> 00:19:45,791
+We see that all these files were modified
+
+431
+00:19:48,095 --> 00:19:52,447
+And we can check to see what is it that was modified by doing git diff
+
+432
+00:19:53,727 --> 00:19:56,031
+And we'll see mostly ok it added
+
+433
+00:19:56,287 --> 00:19:57,055
+More lines
+
+434
+00:19:57,567 --> 00:19:59,615
+The compiled version
+
+435
+00:20:00,127 --> 00:20:00,895
+Was the
+
+436
+00:20:01,663 --> 00:20:02,943
+24th of April
+
+437
+00:20:03,455 --> 00:20:06,271
+And now it's the 5th of May
+
+438
+00:20:07,551 --> 00:20:09,599
+Ok scroll down
+
+439
+00:20:10,879 --> 00:20:11,903
+Ok
+
+440
+00:20:12,671 --> 00:20:15,743
+So ok here is another one that changed
+
+441
+00:20:20,095 --> 00:20:22,399
+Ok so there's some XML that changed
+
+442
+00:20:30,335 --> 00:20:32,127
+Oh yes and we made a improvement
+
+443
+00:20:32,383 --> 00:20:34,431
+To the Jason to string in JCB
+
+444
+00:20:34,943 --> 00:20:36,735
+so it also updated those functions
+
+445
+00:20:37,503 --> 00:20:39,807
+And we removed the abbreviative
+
+446
+00:20:40,319 --> 00:20:41,343
+sorry , prefix
+
+447
+00:20:41,855 --> 00:20:44,159
+To the name so that's been updated
+
+448
+00:20:44,671 --> 00:20:49,023
+So you can look through the diff to see all the changes that has been made
+
+449
+00:20:49,279 --> 00:20:50,303
+The reason why
+
+450
+00:20:50,559 --> 00:20:53,375
+The XML file format is changed
+
+451
+00:20:53,887 --> 00:20:57,983
+Is because we are using different XML compiler here
+
+452
+00:20:58,495 --> 00:21:01,823
+And I can show you that in a moment
+
+453
+00:21:02,335 --> 00:21:03,615
+That you might understand
+
+454
+00:21:04,127 --> 00:21:05,407
+OK hold on
+
+455
+00:21:05,663 --> 00:21:07,199
+Here in the global options
+
+456
+00:21:07,967 --> 00:21:11,551
+There is two ways to compile the XML in JCB
+
+457
+00:21:12,319 --> 00:21:17,952
+It's really about While the reason why there are two ways it's because some servers don't support this one
+
+458
+00:21:18,464 --> 00:21:20,256
+This simple XML
+
+459
+00:21:20,512 --> 00:21:21,024
+Option
+
+460
+00:21:21,792 --> 00:21:25,888
+It doesn't support it and mostly because it doesn't have all the
+
+461
+00:21:26,144 --> 00:21:27,680
+PHP
+
+462
+00:21:27,936 --> 00:21:30,496
+Models of things applications
+
+463
+00:21:30,752 --> 00:21:31,776
+Activated
+
+464
+00:21:32,288 --> 00:21:32,800
+So
+
+465
+00:21:33,056 --> 00:21:35,872
+What we then have as a string manipulation option
+
+466
+00:21:36,128 --> 00:21:40,992
+Which basically doesn't use the simple XML but does actually
+
+467
+00:21:41,248 --> 00:21:43,296
+Still replace most of the time
+
+468
+00:21:43,552 --> 00:21:46,368
+Building all these XML field string by string
+
+469
+00:21:47,648 --> 00:21:49,952
+This one is How JCB started
+
+470
+00:21:50,208 --> 00:21:51,488
+And is most certainly
+
+471
+00:21:51,744 --> 00:21:54,816
+Working very well so I like using it
+
+472
+00:21:55,328 --> 00:21:55,840
+But
+
+473
+00:21:56,096 --> 00:21:57,376
+It's not necessarily
+
+474
+00:21:57,632 --> 00:21:58,656
+The best option
+
+475
+00:21:58,912 --> 00:21:59,680
+It's faster
+
+476
+00:22:00,960 --> 00:22:03,008
+So we compile it again now
+
+477
+00:22:03,264 --> 00:22:06,080
+We will most probably see less changes to the exit now
+
+478
+00:22:06,592 --> 00:22:08,896
+Because I remember that package actually did
+
+479
+00:22:09,152 --> 00:22:09,664
+Have
+
+480
+00:22:11,712 --> 00:22:14,016
+Did use the string manipulation option
+
+481
+00:22:14,272 --> 00:22:16,576
+to exit this
+
+482
+00:22:16,832 --> 00:22:18,112
+you just press q
+
+483
+00:22:18,624 --> 00:22:19,392
+And then again
+
+484
+00:22:19,904 --> 00:22:20,928
+How to go back in
+
+485
+00:22:21,184 --> 00:22:24,256
+And let's see what changed now dates
+
+486
+00:22:27,072 --> 00:22:28,608
+And yeah there's much less
+
+487
+00:22:28,864 --> 00:22:30,656
+I don't see in XML changes
+
+488
+00:22:30,912 --> 00:22:31,424
+Now
+
+489
+00:22:32,960 --> 00:22:33,728
+Ok
+
+490
+00:22:34,240 --> 00:22:34,752
+So
+
+491
+00:22:35,264 --> 00:22:36,800
+Basically it's just a date
+
+492
+00:22:37,056 --> 00:22:37,824
+That is changed
+
+493
+00:22:38,336 --> 00:22:40,384
+And it's talking about the build date
+
+494
+00:22:41,152 --> 00:22:43,456
+Now this is something we might need to look at
+
+495
+00:22:43,968 --> 00:22:47,808
+Because the reason why is changed is because we imported it
+
+496
+00:22:48,064 --> 00:22:51,136
+Answer your your application thinks the build only started
+
+497
+00:22:51,392 --> 00:22:51,904
+Today
+
+498
+00:22:52,672 --> 00:22:53,952
+Wait I don't know
+
+499
+00:22:54,208 --> 00:22:55,232
+24th of April
+
+500
+00:22:56,000 --> 00:23:01,376
+Times flying that's all I realise that that is actually correct
+
+501
+00:23:01,632 --> 00:23:02,144
+Ok
+
+502
+00:23:02,400 --> 00:23:03,936
+So you we have
+
+503
+00:23:04,192 --> 00:23:07,008
+All the changes is really primarily
+
+504
+00:23:07,264 --> 00:23:08,288
+Just the built date
+
+505
+00:23:08,800 --> 00:23:12,640
+And there's a little bit here there which JCB itself has improved
+
+506
+00:23:13,152 --> 00:23:13,920
+So
+
+507
+00:23:14,176 --> 00:23:16,992
+It's improved with this variable here
+
+508
+00:23:17,248 --> 00:23:19,808
+Determines that that it's external
+
+509
+00:23:20,064 --> 00:23:23,136
+value that's with a Jason string remember I said to
+
+510
+00:23:23,392 --> 00:23:25,184
+you we done a little improvement there
+
+511
+00:23:25,696 --> 00:23:29,792
+So it really just actually reflecting the JCB improvements
+
+512
+00:23:30,304 --> 00:23:32,608
+Which is really the way it should be
+
+513
+00:23:33,888 --> 00:23:34,400
+Ok
+
+514
+00:23:34,656 --> 00:23:35,680
+So that means
+
+515
+00:23:35,936 --> 00:23:38,752
+If you now we were going to make a pull request
+
+516
+00:23:39,264 --> 00:23:43,616
+I will most probably will say thank you because you basically just updating
+
+517
+00:23:44,896 --> 00:23:47,968
+The JCB improvements to the component
+
+518
+00:23:49,504 --> 00:23:51,296
+Ok so let's show you how that will work
+
+519
+00:23:52,064 --> 00:23:53,856
+You would now make a commit
+
+520
+00:23:54,368 --> 00:23:55,904
+We should look something like this
+
+521
+00:23:56,416 --> 00:23:59,488
+and remember I always show you the the simple easy way to do it
+
+522
+00:24:00,000 --> 00:24:02,048
+There are more precise
+
+523
+00:24:02,304 --> 00:24:03,328
+Better maybe but
+
+524
+00:24:03,584 --> 00:24:05,120
+more difficult ways
+
+525
+00:24:12,288 --> 00:24:15,616
+So update a component with improvements made to JCB
+
+526
+00:24:16,640 --> 00:24:19,712
+And we click that obviously you sign
+
+527
+00:24:19,968 --> 00:24:22,272
+Your comment and
+
+528
+00:24:22,528 --> 00:24:23,040
+GIT
+
+529
+00:24:23,296 --> 00:24:23,808
+Push
+
+530
+00:24:24,576 --> 00:24:26,368
+So this point
+
+531
+00:24:26,624 --> 00:24:30,720
+You have made a change to component via your JCB
+
+532
+00:24:31,232 --> 00:24:32,000
+Install
+
+533
+00:24:33,024 --> 00:24:34,304
+And you're pushing it back
+
+534
+00:24:34,816 --> 00:24:36,608
+To your forked version
+
+535
+00:24:37,120 --> 00:24:38,656
+Of this components
+
+536
+00:24:38,912 --> 00:24:41,728
+Joomla component which is on GITHUB
+
+537
+00:24:42,496 --> 00:24:43,520
+Now that means
+
+538
+00:24:43,776 --> 00:24:45,824
+That if you refresh this page now
+
+539
+00:24:46,592 --> 00:24:48,640
+He'll say that it's won't commit a head
+
+540
+00:24:49,664 --> 00:24:50,432
+Now
+
+541
+00:24:51,200 --> 00:24:57,344
+I think at this point we need to discuss how many changes should you make before you make a pull
+
+542
+00:24:57,600 --> 00:24:58,112
+Request
+
+543
+00:24:58,368 --> 00:25:02,208
+And if 5 or 6 or 7 people make the same changes
+
+544
+00:25:02,720 --> 00:25:03,488
+Regarding
+
+545
+00:25:04,000 --> 00:25:06,816
+Implementing to JCB's improvements
+
+546
+00:25:07,328 --> 00:25:08,864
+Who's do we accept 
+
+547
+00:25:09,120 --> 00:25:10,656
+Yeah all those kind of things
+
+548
+00:25:11,168 --> 00:25:13,984
+I suppose we'll still be ironed out as we go
+
+549
+00:25:14,240 --> 00:25:17,824
+But at this point you could click make PULL request
+
+550
+00:25:18,848 --> 00:25:21,664
+And it will automatically take
+
+551
+00:25:23,712 --> 00:25:24,736
+Take the
+
+552
+00:25:25,504 --> 00:25:28,320
+Components and show that it can be merged then you click
+
+553
+00:25:29,344 --> 00:25:31,136
+on that PULL request
+
+554
+00:25:31,392 --> 00:25:34,208
+And your comment should usually end up here in the
+
+555
+00:25:34,464 --> 00:25:36,000
+In the title area
+
+556
+00:25:36,768 --> 00:25:41,888
+We will for every package that we manage we'll eventually add a pull request template
+
+557
+00:25:42,144 --> 00:25:43,168
+With instructions
+
+558
+00:25:43,424 --> 00:25:45,472
+And how to manage it from here further
+
+559
+00:25:45,984 --> 00:25:50,336
+And at this point you're actually saying I've made changes to the JCB
+
+560
+00:25:50,592 --> 00:25:51,104
+Program
+
+561
+00:25:51,360 --> 00:25:51,872
+Package
+
+562
+00:25:52,128 --> 00:25:53,152
+Whatever you wanna call it
+
+563
+00:25:53,664 --> 00:25:57,760
+And these are the changes I have made, tested and please let me know
+
+564
+00:25:58,016 --> 00:25:58,784
+If you
+
+565
+00:25:59,040 --> 00:26:00,320
+Like what I've done
+
+566
+00:26:01,088 --> 00:26:01,600
+and
+
+567
+00:26:01,856 --> 00:26:06,976
+There will be discussions here and please do not be discouraged if it doesn't go
+
+568
+00:26:07,232 --> 00:26:08,256
+You know quickly
+
+569
+00:26:08,512 --> 00:26:13,376
+There there obviously reasons for us to always go through things quite slowly and thoroughly
+
+570
+00:26:13,888 --> 00:26:15,424
+I know in our own
+
+571
+00:26:15,680 --> 00:26:17,216
+In-house developing team
+
+572
+00:26:17,472 --> 00:26:20,800
+Things are going quite fast at this point because we have
+
+573
+00:26:21,056 --> 00:26:23,616
+Sort of come to a place of understanding each other's
+
+574
+00:26:24,896 --> 00:26:26,688
+Perspective so it goes quickly
+
+575
+00:26:26,944 --> 00:26:27,456
+But
+
+576
+00:26:27,712 --> 00:26:30,016
+Working with strangers and people we don't know
+
+577
+00:26:30,272 --> 00:26:32,832
+Is obviously going to be more difficult and slower
+
+578
+00:26:33,088 --> 00:26:39,232
+ you won't have the option of editing all these values like I do because I actually own this 
+
+579
+00:26:39,488 --> 00:26:40,000
+repository
+
+580
+00:26:40,256 --> 00:26:42,560
+But you must probably will be able to
+
+581
+00:26:42,816 --> 00:26:44,864
+Come up to here and actually put in
+
+582
+00:26:45,120 --> 00:26:47,424
+The necessary information that will ask for
+
+583
+00:26:47,680 --> 00:26:49,728
+And then click here create pull request
+
+584
+00:26:50,240 --> 00:26:52,032
+So this point If I did that
+
+585
+00:26:53,824 --> 00:26:54,336
+It will
+
+586
+00:26:55,616 --> 00:26:57,408
+create a pull request and
+
+587
+00:26:57,664 --> 00:27:01,760
+The developers will be notified and will start communicating from here
+
+588
+00:27:02,528 --> 00:27:06,112
+Now when this pull request with your changes have been
+
+589
+00:27:06,368 --> 00:27:07,392
+Fully accepted
+
+590
+00:27:07,904 --> 00:27:10,720
+And obviously you haven't made further changes
+
+591
+00:27:11,232 --> 00:27:12,256
+To this component
+
+592
+00:27:13,024 --> 00:27:13,536
+Then
+
+593
+00:27:13,792 --> 00:27:15,584
+The next part of the
+
+594
+00:27:16,096 --> 00:27:17,632
+Process needs to happen
+
+595
+00:27:17,888 --> 00:27:18,400
+So
+
+596
+00:27:18,656 --> 00:27:21,216
+If I can illustrate what has happened so far
+
+597
+00:27:22,240 --> 00:27:23,264
+Your first forked
+
+598
+00:27:23,520 --> 00:27:27,872
+The component then you imported that components JCB package
+
+599
+00:27:28,384 --> 00:27:34,528
+Then you made changes in this case we didn't make changes but you could have added a new field or a new View
+
+600
+00:27:35,296 --> 00:27:36,320
+Then you compiled
+
+601
+00:27:36,576 --> 00:27:37,088
+It
+
+602
+00:27:37,856 --> 00:27:39,648
+Then in your local development
+
+603
+00:27:39,904 --> 00:27:42,208
+You committed to changes to the GIT
+
+604
+00:27:42,720 --> 00:27:43,744
+repository so there's
+
+605
+00:27:44,256 --> 00:27:45,792
+The here is also
+
+606
+00:27:46,048 --> 00:27:46,560
+Linked
+
+607
+00:27:47,584 --> 00:27:50,144
+And commit the changes to GIT
+
+608
+00:27:50,656 --> 00:27:52,704
+Then you put the changes to the forked
+
+609
+00:27:53,216 --> 00:27:53,984
+ version
+
+610
+00:27:54,240 --> 00:27:55,520
+And then you make a pull request
+
+611
+00:27:55,776 --> 00:27:57,312
+And now the next step
+
+612
+00:27:57,824 --> 00:28:03,712
+And this is the place where the JCB package manager is going to really come into play
+
+613
+00:28:04,224 --> 00:28:05,248
+Because now
+
+614
+00:28:05,504 --> 00:28:09,088
+You want to contribute this changes not only
+
+615
+00:28:09,344 --> 00:28:10,624
+To the actual
+
+616
+00:28:10,880 --> 00:28:13,440
+Joomla component which already is well-being
+
+617
+00:28:13,696 --> 00:28:15,232
+You know this this
+
+618
+00:28:15,488 --> 00:28:16,256
+Pull request
+
+619
+00:28:16,768 --> 00:28:17,792
+Is contributing it
+
+620
+00:28:18,048 --> 00:28:19,840
+To this area of the component
+
+621
+00:28:20,352 --> 00:28:22,912
+When this has been finalised
+
+622
+00:28:23,168 --> 00:28:23,936
+The Next Step
+
+623
+00:28:24,448 --> 00:28:25,984
+Is to also contribute it
+
+624
+00:28:26,240 --> 00:28:27,776
+To the JCB map to component
+
+625
+00:28:28,544 --> 00:28:30,336
+And this one is
+
+626
+00:28:30,848 --> 00:28:32,896
+Crucial because then everybody who's
+
+627
+00:28:33,152 --> 00:28:34,432
+Helping to develop
+
+628
+00:28:34,688 --> 00:28:35,968
+The map component
+
+629
+00:28:36,480 --> 00:28:37,504
+Get this update
+
+630
+00:28:38,016 --> 00:28:40,064
+Via JCB package manager
+
+631
+00:28:40,576 --> 00:28:41,088
+And
+
+632
+00:28:41,344 --> 00:28:44,672
+Ok so we're going to now demonstrate the next step
+
+633
+00:28:45,696 --> 00:28:50,560
+Let say at this point your commit is been accepted and merged into the
+
+634
+00:28:51,072 --> 00:28:51,584
+Root
+
+635
+00:28:51,840 --> 00:28:53,120
+The master branch
+
+636
+00:28:53,632 --> 00:28:55,424
+Of the repository
+
+637
+00:28:55,936 --> 00:28:58,496
+Then it should look like this it will say merged
+
+638
+00:28:59,008 --> 00:29:01,568
+And if we were going to look at this here
+
+639
+00:29:01,824 --> 00:29:05,152
+It says now update the component with improvements made to JCB
+
+640
+00:29:05,408 --> 00:29:06,176
+Ok so
+
+641
+00:29:06,688 --> 00:29:07,200
+Really
+
+642
+00:29:07,456 --> 00:29:07,968
+That was
+
+643
+00:29:08,736 --> 00:29:13,088
+The the point at which the next step must take place only once
+
+644
+00:29:13,600 --> 00:29:16,672
+The changes you've made has been accepted
+
+645
+00:29:17,184 --> 00:29:17,952
+In the 
+
+646
+00:29:18,208 --> 00:29:19,744
+Joomla component
+
+647
+00:29:20,000 --> 00:29:21,024
+Source
+
+648
+00:29:21,536 --> 00:29:22,560
+Of the project
+
+649
+00:29:22,816 --> 00:29:27,168
+Now The Next Step is to do that with JCB the package as well
+
+650
+00:29:28,192 --> 00:29:31,776
+All VDM's JCB packages are kept
+
+651
+00:29:32,288 --> 00:29:34,592
+in the JCB packages repository
+
+652
+00:29:35,360 --> 00:29:39,200
+So the next thing you need to do is you need to fork this repository
+
+653
+00:29:40,736 --> 00:29:42,528
+I already forked this repository
+
+654
+00:29:42,784 --> 00:29:43,808
+Few weeks ago
+
+655
+00:29:44,320 --> 00:29:45,344
+Few days ago
+
+656
+00:29:45,600 --> 00:29:46,880
+But you'll see that
+
+657
+00:29:47,392 --> 00:29:50,464
+It's already four commits behind the master branch
+
+658
+00:29:50,976 --> 00:29:52,512
+I can't really do anything
+
+659
+00:29:52,768 --> 00:29:54,816
+Until I get in sync again
+
+660
+00:29:55,072 --> 00:29:56,864
+With this master branch
+
+661
+00:29:57,376 --> 00:29:59,168
+Making a commits now
+
+662
+00:29:59,424 --> 00:30:01,216
+will mess things up and so
+
+663
+00:30:01,472 --> 00:30:05,312
+First thing I'm going to do is make sure that this repository
+
+664
+00:30:05,568 --> 00:30:06,592
+Is In sync
+
+665
+00:30:06,848 --> 00:30:08,384
+With the master branch
+
+666
+00:30:09,920 --> 00:30:15,296
+So obviously this repository needs to be cloned down to my local system
+
+667
+00:30:16,832 --> 00:30:22,208
+those of you that have quite a number of repositories and keeping them all in sync is a pain
+
+668
+00:30:22,464 --> 00:30:25,536
+We have this little shell script update forks
+
+669
+00:30:26,048 --> 00:30:27,840
+Which is very useful
+
+670
+00:30:28,352 --> 00:30:31,424
+Even if you're gonna run the Shell script itself
+
+671
+00:30:31,936 --> 00:30:32,960
+you can at least sort of
+
+672
+00:30:33,216 --> 00:30:35,264
+Peak at some of the commands
+
+673
+00:30:35,520 --> 00:30:36,800
+And how to get this done
+
+674
+00:30:37,824 --> 00:30:43,968
+The way this does the moment what it does is it runs you know gets all the repositories that you
+
+675
+00:30:44,224 --> 00:30:47,296
+You have forked and then it also updates them
+
+676
+00:30:47,552 --> 00:30:49,088
+So there are a number of
+
+677
+00:30:49,600 --> 00:30:53,184
+SSH file that you should have a look at
+
+678
+00:30:53,440 --> 00:30:55,232
+I'm just going to open this
+
+679
+00:30:55,488 --> 00:30:56,768
+Update repositories
+
+680
+00:30:57,792 --> 00:30:59,584
+Well now I got the file open here
+
+681
+00:30:59,840 --> 00:31:02,400
+I realise ok this is not gonna work
+
+682
+00:31:03,680 --> 00:31:05,472
+Unless you able to understand
+
+683
+00:31:05,728 --> 00:31:06,240
+Bash
+
+684
+00:31:06,752 --> 00:31:09,056
+You must probably not gonna actually
+
+685
+00:31:09,312 --> 00:31:10,336
+Be able follow this
+
+686
+00:31:10,848 --> 00:31:13,408
+So Let me rather do the commands one of the time
+
+687
+00:31:13,664 --> 00:31:15,456
+Inside of that Repo
+
+688
+00:31:16,736 --> 00:31:19,552
+But at least you know that there is a package here
+
+689
+00:31:19,808 --> 00:31:20,832
+And if you do know
+
+690
+00:31:21,088 --> 00:31:22,880
+Git  Sorry I mean bash
+
+691
+00:31:23,136 --> 00:31:25,952
+Then this is most certainly something to try out
+
+692
+00:31:26,208 --> 00:31:29,536
+I'm it's working very well I'm using it quite a lot
+
+693
+00:31:30,048 --> 00:31:33,632
+And it's keeping all my forked repositories up to date and then sync
+
+694
+00:31:33,888 --> 00:31:36,448
+With the master branch so that if I work with them
+
+695
+00:31:36,704 --> 00:31:40,800
+That it already is ready and I'm able to just you know
+
+696
+00:31:41,056 --> 00:31:42,080
+Jump in and do it
+
+697
+00:31:42,592 --> 00:31:45,152
+But it's not that hard to do it manually anyway
+
+698
+00:31:45,664 --> 00:31:47,200
+So let's do that
+
+699
+00:31:48,224 --> 00:31:52,320
+If you haven't cloned down the repository to your local developing environment
+
+700
+00:31:52,576 --> 00:31:57,952
+Then you need to do that first nothing of what I'm gonna show you now will work unless you've done that
+
+701
+00:31:58,464 --> 00:32:03,840
+there are a few documentations that GITHUB has that helps with us quite a lot so if your on windows
+
+702
+00:32:04,352 --> 00:32:05,888
+or Mac or Linux
+
+703
+00:32:07,424 --> 00:32:13,568
+Yeah you can actually go to this URL,s or just type in Google update my fork repo
+
+704
+00:32:13,824 --> 00:32:15,104
+And do a search
+
+705
+00:32:15,360 --> 00:32:17,664
+And then look for the one
+
+706
+00:32:18,176 --> 00:32:19,456
+Which sort of
+
+707
+00:32:19,712 --> 00:32:21,504
+Well this is a place you wanna end up at
+
+708
+00:32:22,016 --> 00:32:24,832
+and then I gonna tell you that you must first configure
+
+709
+00:32:25,600 --> 00:32:28,928
+Your repo to actually see the remote upstream
+
+710
+00:32:29,440 --> 00:32:31,488
+So click on that and do this first
+
+711
+00:32:33,024 --> 00:32:34,816
+And then we'll come back to this one
+
+712
+00:32:36,608 --> 00:32:38,912
+First we do is we gonna just check out
+
+713
+00:32:39,424 --> 00:32:41,984
+In a repo what is the remote branches
+
+714
+00:32:44,800 --> 00:32:47,360
+And so we see that it only has this
+
+715
+00:32:47,616 --> 00:32:49,152
+To remote branches
+
+716
+00:32:49,408 --> 00:32:51,456
+And it's fetched and pulled from those
+
+717
+00:32:52,224 --> 00:32:55,296
+Now we want to add the remote branch
+
+718
+00:32:55,552 --> 00:32:57,088
+Which is the upstream branch
+
+719
+00:32:57,344 --> 00:32:58,368
+And we gonna use
+
+720
+00:32:58,880 --> 00:32:59,904
+This one and
+
+721
+00:33:00,160 --> 00:33:03,232
+Add the original owner so this one is your name
+
+722
+00:33:03,744 --> 00:33:06,048
+This one must be the original owners name
+
+723
+00:33:06,816 --> 00:33:10,144
+And the original repositories name So those two
+
+724
+00:33:10,400 --> 00:33:11,680
+Values you need to
+
+725
+00:33:11,936 --> 00:33:12,960
+You know update
+
+726
+00:33:14,496 --> 00:33:17,056
+The way to get them is go back to your Repo
+
+727
+00:33:17,312 --> 00:33:17,824
+And just
+
+728
+00:33:18,080 --> 00:33:19,872
+Click on this
+
+729
+00:33:20,128 --> 00:33:21,152
+Value here
+
+730
+00:33:21,664 --> 00:33:23,456
+This should take you to
+
+731
+00:33:23,968 --> 00:33:24,480
+To that
+
+732
+00:33:24,992 --> 00:33:26,016
+Original branch
+
+733
+00:33:26,528 --> 00:33:28,064
+And then you can just get it
+
+734
+00:33:28,320 --> 00:33:29,088
+By coping
+
+735
+00:33:29,600 --> 00:33:30,624
+This value here
+
+736
+00:33:32,160 --> 00:33:33,696
+So then your type remote
+
+737
+00:33:33,952 --> 00:33:35,232
+Add upstream
+
+738
+00:33:35,488 --> 00:33:37,536
+Like it says there on GITHUB
+
+739
+00:33:38,048 --> 00:33:38,816
+And you will
+
+740
+00:33:39,328 --> 00:33:40,608
+Control shift
+
+741
+00:33:40,864 --> 00:33:41,376
+v
+
+742
+00:33:41,888 --> 00:33:43,424
+To paste in command line
+
+743
+00:33:43,680 --> 00:33:45,984
+Or as if you you can also paste
+
+744
+00:33:46,240 --> 00:33:47,008
+With the mouse
+
+745
+00:33:47,520 --> 00:33:50,080
+And so there is the repository
+
+746
+00:33:50,592 --> 00:33:52,128
+I have a little
+
+747
+00:33:54,688 --> 00:33:58,016
+Change to my SSH which means I use VDM
+
+748
+00:33:58,528 --> 00:34:00,320
+To identify the server name
+
+749
+00:34:00,576 --> 00:34:03,136
+That is something you must have you wouldn't need to do
+
+750
+00:34:03,648 --> 00:34:05,440
+And you click enter
+
+751
+00:34:05,952 --> 00:34:07,232
+Ok so now
+
+752
+00:34:07,488 --> 00:34:08,512
+If we do that
+
+753
+00:34:08,768 --> 00:34:11,584
+Remote branch will now see that there are two
+
+754
+00:34:12,096 --> 00:34:13,120
+Remote branches
+
+755
+00:34:15,424 --> 00:34:16,192
+Sorry Two branches
+
+756
+00:34:16,448 --> 00:34:17,216
+That are remote
+
+757
+00:34:17,984 --> 00:34:20,544
+And one is the origin and one is the upstream
+
+758
+00:34:21,056 --> 00:34:22,592
+And that now is
+
+759
+00:34:23,104 --> 00:34:24,128
+Time for The Next Step
+
+760
+00:34:24,896 --> 00:34:26,432
+Which is the sync the fork
+
+761
+00:34:26,944 --> 00:34:28,224
+So first what we will do
+
+762
+00:34:28,480 --> 00:34:30,528
+we will fetch the upstream
+
+763
+00:34:34,880 --> 00:34:36,928
+This will basically fetch the files
+
+764
+00:34:37,184 --> 00:34:38,208
+That has changed
+
+765
+00:34:38,464 --> 00:34:39,744
+From the upstream
+
+766
+00:34:40,000 --> 00:34:41,792
+Which at this stage we know
+
+767
+00:34:42,048 --> 00:34:42,816
+Is the
+
+768
+00:34:43,072 --> 00:34:44,352
+Main Master branch
+
+769
+00:34:45,888 --> 00:34:48,960
+Then just to make sure that you are on the master branch
+
+770
+00:34:49,216 --> 00:34:50,496
+We are going to
+
+771
+00:34:57,408 --> 00:34:57,920
+Say
+
+772
+00:34:58,176 --> 00:34:58,688
+Git
+
+773
+00:34:59,456 --> 00:34:59,968
+Checkout
+
+774
+00:35:01,248 --> 00:35:02,016
+Master
+
+775
+00:35:03,040 --> 00:35:06,112
+To make sure you are on the master branch next
+
+776
+00:35:07,136 --> 00:35:08,160
+We are going to
+
+777
+00:35:09,184 --> 00:35:09,952
+Merge
+
+778
+00:35:10,464 --> 00:35:13,536
+The upstream branch into your master branch
+
+779
+00:35:15,584 --> 00:35:19,168
+This will look differently depending on what happened
+
+780
+00:35:19,680 --> 00:35:20,192
+But
+
+781
+00:35:20,448 --> 00:35:23,264
+It will give you a bunch of information and then
+
+782
+00:35:23,520 --> 00:35:26,848
+This branch is now basically
+
+783
+00:35:27,104 --> 00:35:28,896
+The local branch is now in sync
+
+784
+00:35:29,152 --> 00:35:30,176
+With master branch
+
+785
+00:35:30,688 --> 00:35:32,992
+Upstream Master branch now
+
+786
+00:35:33,248 --> 00:35:34,016
+To get this
+
+787
+00:35:34,272 --> 00:35:36,064
+To also update your
+
+788
+00:35:36,320 --> 00:35:39,648
+Branch on GitHub you just need to do get
+
+789
+00:35:40,160 --> 00:35:40,672
+Push
+
+790
+00:35:42,464 --> 00:35:45,024
+And this will push the changes
+
+791
+00:35:45,280 --> 00:35:46,304
+Back to GIT
+
+792
+00:35:46,816 --> 00:35:49,376
+Now there are many things that can actually
+
+793
+00:35:49,632 --> 00:35:50,656
+Go wrong or
+
+794
+00:35:51,168 --> 00:35:52,704
+Sort of work out different
+
+795
+00:35:53,216 --> 00:35:54,240
+In in Git
+
+796
+00:35:54,496 --> 00:35:57,312
+And so I'm not here to teach you how to use git
+
+797
+00:35:57,824 --> 00:35:59,104
+Made you run into
+
+798
+00:35:59,360 --> 00:36:01,664
+Some Grey areas or difficult issues
+
+799
+00:36:01,920 --> 00:36:03,456
+You need to Google and
+
+800
+00:36:03,968 --> 00:36:05,504
+Figure out how to get this done
+
+801
+00:36:06,016 --> 00:36:06,784
+This is just
+
+802
+00:36:07,040 --> 00:36:08,320
+Illustrating
+
+803
+00:36:08,576 --> 00:36:09,600
+The
+
+804
+00:36:09,856 --> 00:36:11,392
+Proposed workflow
+
+805
+00:36:11,648 --> 00:36:16,000
+Of developing components in JCB while collaborating
+
+806
+00:36:16,256 --> 00:36:17,792
+With the greater community
+
+807
+00:36:18,048 --> 00:36:19,840
+Around a JCB package
+
+808
+00:36:21,888 --> 00:36:23,424
+those of you that watched
+
+809
+00:36:23,936 --> 00:36:26,752
+The tutorial on how to contribute
+
+810
+00:36:27,008 --> 00:36:28,032
+To the community
+
+811
+00:36:28,544 --> 00:36:29,056
+Directory
+
+812
+00:36:29,568 --> 00:36:31,104
+JCB packages
+
+813
+00:36:31,360 --> 00:36:34,176
+The match of what I'm gonna be explaining further
+
+814
+00:36:34,432 --> 00:36:36,736
+Is already covered in that previous tutorial
+
+815
+00:36:37,248 --> 00:36:37,760
+And
+
+816
+00:36:38,016 --> 00:36:41,088
+So we are almost finished with the circle
+
+817
+00:36:41,344 --> 00:36:45,696
+We started by forking the JCB sorry did Joomla component
+
+818
+00:36:45,952 --> 00:36:48,000
+And importing the JCB package
+
+819
+00:36:48,512 --> 00:36:50,048
+Then making changes to that
+
+820
+00:36:50,560 --> 00:36:52,096
+And then compiled it
+
+821
+00:36:52,352 --> 00:36:55,680
+And pushed those changes to the Joomla Repo
+
+822
+00:36:56,192 --> 00:36:57,984
+And when those changes were accepted
+
+823
+00:36:58,240 --> 00:36:59,008
+Into that
+
+824
+00:36:59,264 --> 00:37:00,032
+Repo
+
+825
+00:37:00,288 --> 00:37:01,312
+We now
+
+826
+00:37:01,824 --> 00:37:06,688
+Went to the place where we found the JCB's package which in VDM's case
+
+827
+00:37:06,944 --> 00:37:09,248
+Is the VDM package area
+
+828
+00:37:09,504 --> 00:37:13,344
+Where if it was a community component then you would follow
+
+829
+00:37:13,600 --> 00:37:17,184
+The explanation given to you in that previous tutorial
+
+830
+00:37:17,696 --> 00:37:23,328
+And at this point what we going to do is we basically gonna export JCB package
+
+831
+00:37:23,840 --> 00:37:27,168
+Add it to these packages that we have here
+
+832
+00:37:27,680 --> 00:37:32,288
+And run our hash so if we look at this LSLA
+
+833
+00:37:33,312 --> 00:37:34,336
+We've got a
+
+834
+00:37:34,848 --> 00:37:37,408
+Hash sh file here
+
+835
+00:37:37,664 --> 00:37:38,944
+But if you run it now
+
+836
+00:37:39,456 --> 00:37:42,016
+There're should be no changes to the repo
+
+837
+00:37:42,528 --> 00:37:43,040
+And
+
+838
+00:37:43,552 --> 00:37:45,344
+Just as we expected nothing changed
+
+839
+00:37:45,856 --> 00:37:47,904
+So everything is up to date at the moment
+
+840
+00:37:48,416 --> 00:37:50,976
+And so the only file we are going to change
+
+841
+00:37:51,232 --> 00:37:54,304
+Is basically these three files here
+
+842
+00:37:54,816 --> 00:37:59,424
+Because we're gonna update this package by exporting it from JCB
+
+843
+00:37:59,936 --> 00:38:01,728
+With the changes we've made
+
+844
+00:38:01,984 --> 00:38:02,752
+Now
+
+845
+00:38:03,264 --> 00:38:06,080
+Since you've contributed those changes to this
+
+846
+00:38:06,336 --> 00:38:08,128
+Question and answers
+
+847
+00:38:09,664 --> 00:38:10,176
+Joomla
+
+848
+00:38:10,688 --> 00:38:11,456
+A component
+
+849
+00:38:11,712 --> 00:38:13,248
+repository
+
+850
+00:38:13,504 --> 00:38:15,808
+Those who are gonna validate this
+
+851
+00:38:16,064 --> 00:38:17,600
+Push which we're about to make
+
+852
+00:38:17,856 --> 00:38:19,904
+are gonna go back to that repository
+
+853
+00:38:20,160 --> 00:38:24,768
+And make sure that you're not changing things other than we should contributed there
+
+854
+00:38:25,024 --> 00:38:25,536
+In fact
+
+855
+00:38:25,792 --> 00:38:31,936
+But some point my Anticipation is to actually build a bot which would validate this
+
+856
+00:38:32,192 --> 00:38:36,032
+For us so at this stage it will still be a little manuel so it will be little bit slow
+
+857
+00:38:36,288 --> 00:38:41,920
+but eventually will speed it up and the validation will happen faster and more efficient
+
+858
+00:38:42,688 --> 00:38:43,968
+So you in JCB
+
+859
+00:38:44,480 --> 00:38:47,552
+We now basically click on questions and answers
+
+860
+00:38:48,064 --> 00:38:52,416
+And there is one little snag here which I realised
+
+861
+00:38:52,672 --> 00:38:54,208
+I haven't actually resolved it
+
+862
+00:38:54,720 --> 00:38:59,328
+And that is that you now need to actually have the same
+
+863
+00:38:59,840 --> 00:39:01,632
+Key for this package
+
+864
+00:39:01,888 --> 00:39:05,216
+Set in the admin or rather in the component
+
+865
+00:39:05,472 --> 00:39:07,520
+As the one that the developer uses
+
+866
+00:39:08,032 --> 00:39:13,152
+And that can only be given to you by the original owner of this package
+
+867
+00:39:13,408 --> 00:39:15,200
+Which in this case is myself
+
+868
+00:39:15,712 --> 00:39:21,600
+So and where does that what is that mean it means that this export key
+
+869
+00:39:21,856 --> 00:39:23,648
+Must be the same one
+
+870
+00:39:23,904 --> 00:39:26,976
+As the one that the package was compiled with originally
+
+871
+00:39:27,488 --> 00:39:30,816
+now if you have imported this and you see a key here
+
+872
+00:39:31,072 --> 00:39:34,656
+You can be hundred percent sure it is not the same key
+
+873
+00:39:34,912 --> 00:39:36,960
+Because this is encrypted field
+
+874
+00:39:37,216 --> 00:39:40,032
+You are basically just seeing the encrypted value
+
+875
+00:39:40,288 --> 00:39:41,824
+Not the actual key
+
+876
+00:39:42,080 --> 00:39:44,896
+The actual key was never exported
+
+877
+00:39:45,152 --> 00:39:51,296
+unencrypted it always remains in crypted and that's why we have the encrypted Fields all around JCB
+
+878
+00:39:51,808 --> 00:39:55,648
+Not because we think is gonna make the database more secure necessarily
+
+879
+00:39:55,904 --> 00:39:58,720
+That is because when we export and move data around
+
+880
+00:39:58,976 --> 00:40:01,024
+That which is secret stay secret
+
+881
+00:40:01,280 --> 00:40:07,424
+And only within that specific component developing environment of those
+
+882
+00:40:07,680 --> 00:40:08,704
+keys is unique
+
+883
+00:40:09,216 --> 00:40:12,032
+So the way you get this is you need to communicate
+
+884
+00:40:12,288 --> 00:40:14,848
+With that developer and actually ask him permission
+
+885
+00:40:15,104 --> 00:40:19,968
+Whether you can extend on this package and then he needs to manually give you this key
+
+886
+00:40:20,480 --> 00:40:21,760
+And so
+
+887
+00:40:22,016 --> 00:40:23,552
+Since I can ask that
+
+888
+00:40:23,808 --> 00:40:25,088
+From
+
+889
+00:40:25,344 --> 00:40:30,976
+From for myself I'm going to just add that key to me sure that it is the same key
+
+890
+00:40:31,232 --> 00:40:33,536
+With which it originally was compiled with
+
+891
+00:40:34,560 --> 00:40:37,632
+Ok so now we've got those keys to be the same
+
+892
+00:40:37,888 --> 00:40:43,264
+And it's sort of the way to tell everyone that you and that other developer
+
+893
+00:40:43,520 --> 00:40:44,544
+Are an agreement
+
+894
+00:40:44,800 --> 00:40:47,872
+That this in fact it possibly could happen
+
+895
+00:40:48,128 --> 00:40:50,432
+That once your pull request
+
+896
+00:40:50,688 --> 00:40:53,248
+To the JCB sorry to the Joomla component
+
+897
+00:40:53,504 --> 00:40:54,016
+Repo
+
+898
+00:40:54,528 --> 00:40:56,320
+Has been merged and accepted
+
+899
+00:40:56,576 --> 00:40:58,880
+Then that team needs to give you the key
+
+900
+00:40:59,136 --> 00:41:01,184
+That's how I think will work
+
+901
+00:41:02,464 --> 00:41:05,792
+I'm not hundred percent sure this gonna be cemented
+
+902
+00:41:06,048 --> 00:41:07,072
+Always got it changed
+
+903
+00:41:07,584 --> 00:41:11,680
+But you do realise that trust and collaboration goes hand in hand
+
+904
+00:41:12,192 --> 00:41:18,336
+So they need to give you the key if it's not a JCB package that actually requires a key
+
+905
+00:41:18,592 --> 00:41:19,616
+Then it is a different story
+
+906
+00:41:19,872 --> 00:41:26,016
+And yet the same sort of procedure will reply except the exchange of keys won't be necessary
+
+907
+00:41:27,296 --> 00:41:30,624
+But now that you've got the key in place we basically click here
+
+908
+00:41:30,880 --> 00:41:32,928
+And export the JCB package
+
+909
+00:41:36,000 --> 00:41:37,792
+So we now have this package
+
+910
+00:41:38,048 --> 00:41:39,584
+Here in this folder
+
+911
+00:41:39,840 --> 00:41:41,632
+And we now need to move it
+
+912
+00:41:41,888 --> 00:41:43,168
+Into the repository
+
+913
+00:41:43,424 --> 00:41:44,704
+Which is also
+
+914
+00:41:44,960 --> 00:41:48,800
+Obviously the one we have now synchronised with our forked version
+
+915
+00:41:50,592 --> 00:41:52,384
+so I have it here I'm gonna copy it
+
+916
+00:41:53,151 --> 00:41:54,175
+actually going cut
+
+917
+00:41:54,431 --> 00:41:54,943
+let's cut it
+
+918
+00:41:55,967 --> 00:41:59,039
+From my templer folder in my Joomla website
+
+919
+00:41:59,551 --> 00:42:01,855
+To this repository paste it in
+
+920
+00:42:02,879 --> 00:42:04,159
+And is gonna ask if we should
+
+921
+00:42:04,415 --> 00:42:06,463
+Replace and we're gonna say yes
+
+922
+00:42:06,975 --> 00:42:07,487
+Replace it
+
+923
+00:42:08,767 --> 00:42:12,095
+And then we go with got the package updated
+
+924
+00:42:12,607 --> 00:42:13,375
+Now
+
+925
+00:42:13,631 --> 00:42:15,167
+We go back to command line
+
+926
+00:42:15,679 --> 00:42:16,703
+And we do
+
+927
+00:42:17,215 --> 00:42:17,727
+Git
+
+928
+00:42:19,775 --> 00:42:20,287
+diff
+
+929
+00:42:21,311 --> 00:42:22,079
+We'll see that
+
+930
+00:42:22,335 --> 00:42:23,871
+That file is changed
+
+931
+00:42:24,639 --> 00:42:27,711
+Now we also need to run this h
+
+932
+00:42:28,479 --> 00:42:30,015
+This hash file
+
+933
+00:42:30,527 --> 00:42:31,807
+To update the
+
+934
+00:42:32,063 --> 00:42:32,575
+And
+
+935
+00:42:32,831 --> 00:42:33,855
+Now git
+
+936
+00:42:34,879 --> 00:42:35,647
+Status
+
+937
+00:42:36,159 --> 00:42:38,463
+we'll see that those files have updated
+
+938
+00:42:39,487 --> 00:42:40,255
+So
+
+939
+00:42:41,023 --> 00:42:45,887
+You would possibly I'm not sure what the vl Convention but
+
+940
+00:42:46,143 --> 00:42:46,655
+I think
+
+941
+00:42:46,911 --> 00:42:49,983
+Your pull request to the Joomla
+
+942
+00:42:51,775 --> 00:42:54,079
+Repository of this component
+
+943
+00:42:54,591 --> 00:42:57,919
+The idea of that could possibly be useful here
+
+944
+00:42:59,711 --> 00:43:03,295
+It's just to sort of give a heads up and validate that you did First
+
+945
+00:43:03,551 --> 00:43:04,831
+Contributed code
+
+946
+00:43:05,087 --> 00:43:08,159
+To the actual Joomla component and it was accepted
+
+947
+00:43:08,415 --> 00:43:11,231
+And now this is the change to the package
+
+948
+00:43:11,743 --> 00:43:14,815
+Which also now needs to be looked at
+
+949
+00:43:16,095 --> 00:43:17,375
+so now in our case
+
+950
+00:43:17,631 --> 00:43:20,191
+This is the pull request URL
+
+951
+00:43:20,703 --> 00:43:22,751
+ I think we just gonna use that
+
+952
+00:43:24,287 --> 00:43:25,567
+And our commit message
+
+953
+00:43:26,591 --> 00:43:27,103
+And
+
+954
+00:43:27,615 --> 00:43:29,407
+Use the same commit message
+
+955
+00:43:36,319 --> 00:43:37,855
+Search it looks something like this
+
+956
+00:43:38,367 --> 00:43:42,719
+Update the component with the improvements made in JCB and maybe say riff
+
+957
+00:43:45,023 --> 00:43:46,303
+And then
+
+958
+00:43:46,559 --> 00:43:50,655
+The repositories username or organisation name
+
+959
+00:43:50,911 --> 00:43:52,191
+The repository name
+
+960
+00:43:52,703 --> 00:43:53,471
+With this
+
+961
+00:43:53,727 --> 00:43:54,751
+ power
+
+962
+00:43:55,519 --> 00:43:56,287
+Hash one
+
+963
+00:43:56,543 --> 00:43:57,567
+Since it was
+
+964
+00:43:58,335 --> 00:43:59,871
+pull request was number one
+
+965
+00:44:00,383 --> 00:44:01,663
+Ok that would
+
+966
+00:44:01,919 --> 00:44:03,199
+Do and then
+
+967
+00:44:03,455 --> 00:44:05,503
+Will submit that
+
+968
+00:44:08,575 --> 00:44:09,343
+And
+
+969
+00:44:09,599 --> 00:44:12,927
+Now we push those changes to our
+
+970
+00:44:13,439 --> 00:44:15,999
+Version of the repository
+
+971
+00:44:23,679 --> 00:44:24,959
+Going back to git up then
+
+972
+00:44:25,471 --> 00:44:27,263
+after the push is been submitted
+
+973
+00:44:28,031 --> 00:44:29,311
+and we look at this commit
+
+974
+00:44:29,567 --> 00:44:31,103
+You see it actually has a link
+
+975
+00:44:31,615 --> 00:44:34,687
+And this link is to that issue on githup
+
+976
+00:44:35,199 --> 00:44:40,319
+so it'll be easy for us to trace where you have contributed it to the actual Joomla component
+
+977
+00:44:41,087 --> 00:44:44,927
+And why it's all happened being the same comment message
+
+978
+00:44:45,695 --> 00:44:49,023
+Now this stage you again would make a pull request
+
+979
+00:44:49,535 --> 00:44:50,559
+To the master branch
+
+980
+00:44:51,839 --> 00:44:53,631
+Where we will basically review
+
+981
+00:44:53,887 --> 00:44:54,655
+The changes
+
+982
+00:44:57,983 --> 00:44:59,263
+now Again at this stage
+
+983
+00:44:59,519 --> 00:45:02,847
+We don't have a pull request templates and everything in place
+
+984
+00:45:03,103 --> 00:45:07,711
+But as soon as they do get to be placed there and please follow those instructions
+
+985
+00:45:07,967 --> 00:45:11,039
+We'll try to be as thorough as we can
+
+986
+00:45:11,295 --> 00:45:16,159
+But obviously being a community is always up for discussion and we will
+
+987
+00:45:16,415 --> 00:45:16,927
+Try and
+
+988
+00:45:17,183 --> 00:45:17,951
+Do this
+
+989
+00:45:18,207 --> 00:45:18,975
+The right way
+
+990
+00:45:19,487 --> 00:45:25,631
+At the moment we can put the ref in the description and then just again the comment in the
+
+991
+00:45:25,887 --> 00:45:28,959
+Title if it's a long comment then just put
+
+992
+00:45:29,215 --> 00:45:32,799
+Maybe a summary here short one and put the wrong comment back in here
+
+993
+00:45:33,311 --> 00:45:37,407
+Ok and then you basically create the pull request
+
+994
+00:45:38,175 --> 00:45:40,223
+At this point discussion will begin
+
+995
+00:45:40,479 --> 00:45:43,551
+Validating to see that you followed all the procedures
+
+996
+00:45:43,807 --> 00:45:47,903
+And that this package is stable and ready to become part of the
+
+997
+00:45:48,159 --> 00:45:48,927
+Actual
+
+998
+00:45:49,183 --> 00:45:49,951
+Repo
+
+999
+00:45:50,463 --> 00:45:54,303
+And then once accepted it will be merged into the master branch
+
+1000
+00:45:54,559 --> 00:45:55,839
+Become available to the rest of
+
+1001
+00:45:56,095 --> 00:45:56,607
+Community
+
+1002
+00:45:57,119 --> 00:45:57,887
+So that's
+
+1003
+00:45:58,399 --> 00:45:59,423
+At the moment
+
+1004
+00:45:59,679 --> 00:46:05,311
+Illustration of what I consider a collaborative workflow in JCB
+
+1005
+00:46:06,591 --> 00:46:07,359
+So we
+
+1006
+00:46:07,871 --> 00:46:08,383
+Where at
+
+1007
+00:46:08,639 --> 00:46:09,407
+Next Step
+
+1008
+00:46:09,919 --> 00:46:11,711
+And we had to move today JCB
+
+1009
+00:46:12,479 --> 00:46:13,247
+Where
+
+1010
+00:46:13,503 --> 00:46:16,063
+They have now accepted and merged
+
+1011
+00:46:16,575 --> 00:46:17,087
+The
+
+1012
+00:46:17,343 --> 00:46:18,367
+Changes you made
+
+1013
+00:46:18,623 --> 00:46:19,647
+To the Joomla component
+
+1014
+00:46:20,671 --> 00:46:23,743
+And now the owner has given you the original key
+
+1015
+00:46:23,999 --> 00:46:25,023
+Because they trust
+
+1016
+00:46:25,279 --> 00:46:26,303
+The changes you've made
+
+1017
+00:46:27,327 --> 00:46:27,839
+And
+
+1018
+00:46:28,351 --> 00:46:31,167
+you now forked the JCB package repository
+
+1019
+00:46:31,935 --> 00:46:35,007
+Make sure we have it in sync if it's an old fork
+
+1020
+00:46:36,031 --> 00:46:38,591
+Then update the key with the key from the owner
+
+1021
+00:46:39,103 --> 00:46:40,895
+Then export to JCB package
+
+1022
+00:46:41,407 --> 00:46:45,247
+Added to the local repo with a commit message and the reference
+
+1023
+00:46:45,503 --> 00:46:46,527
+As illustrated
+
+1024
+00:46:47,295 --> 00:46:50,367
+Then push changed to your forked repo and make a pull request
+
+1025
+00:46:51,391 --> 00:46:52,159
+So here
+
+1026
+00:46:52,671 --> 00:46:53,951
+Is The workflow
+
+1027
+00:46:54,719 --> 00:46:55,487
+This could
+
+1028
+00:46:55,743 --> 00:46:57,791
+Become nicely documented
+
+1029
+00:46:58,047 --> 00:46:59,071
+I suppose
+
+1030
+00:46:59,327 --> 00:47:01,375
+Someone can take that upon them to even
+
+1031
+00:47:01,887 --> 00:47:03,935
+Make some nice chart
+
+1032
+00:47:05,215 --> 00:47:07,519
+I maybe not the correct guy for the job
+
+1033
+00:47:08,031 --> 00:47:09,055
+And this might
+
+1034
+00:47:09,311 --> 00:47:12,639
+Expand and become maybe much more advanced
+
+1035
+00:47:13,151 --> 00:47:15,199
+or it could be made more simple
+
+1036
+00:47:15,967 --> 00:47:17,247
+But in a nutshell
+
+1037
+00:47:18,015 --> 00:47:18,527
+just
+
+1038
+00:47:19,551 --> 00:47:21,087
+Below an hour
+
+1039
+00:47:21,599 --> 00:47:22,879
+We've 47 minutes
+
+1040
+00:47:23,135 --> 00:47:23,903
+ sort of
+
+1041
+00:47:25,439 --> 00:47:28,255
+This is the explanation of the collaborative
+
+1042
+00:47:28,511 --> 00:47:31,071
+Workflow with external
+
+1043
+00:47:32,607 --> 00:47:33,375
+Partners
+
+1044
+00:47:33,887 --> 00:47:35,679
+Around a JCB package
+
+1045
+00:47:36,191 --> 00:47:39,519
+Once this pull request gets merged we are basically back
+
+1046
+00:47:40,031 --> 00:47:40,799
+At the
+
+1047
+00:47:41,055 --> 00:47:42,335
+This is in sync
+
+1048
+00:47:42,591 --> 00:47:43,103
+And
+
+1049
+00:47:43,359 --> 00:47:44,383
+This is in sync
+
+1050
+00:47:45,151 --> 00:47:47,967
+And this will continue and I'll go on and on
+
+1051
+00:47:48,479 --> 00:47:51,039
+And obviously others will contribute so
+
+1052
+00:47:51,295 --> 00:47:53,599
+There there are some other complexities also
+
+1053
+00:47:54,111 --> 00:47:55,647
+In this process
+
+1054
+00:47:55,903 --> 00:47:58,719
+But that is sort of what I can see happening
+
+1055
+00:48:00,511 --> 00:48:02,047
+I know that when you
+
+1056
+00:48:02,559 --> 00:48:06,655
+Pull the changes from the previous package you know this
+
+1057
+00:48:07,167 --> 00:48:07,935
+Where is it
+
+1058
+00:48:09,983 --> 00:48:12,031
+You know the import the JCB package
+
+1059
+00:48:12,287 --> 00:48:15,103
+There is the option to import it as a clone
+
+1060
+00:48:15,359 --> 00:48:17,663
+Order import it with a merge
+
+1061
+00:48:18,175 --> 00:48:23,039
+Now the idea would be that you will only import and merge your JCB package
+
+1062
+00:48:23,551 --> 00:48:26,111
+With the global Repo
+
+1063
+00:48:26,367 --> 00:48:27,391
+As they accept
+
+1064
+00:48:27,647 --> 00:48:28,415
+These pull request
+
+1065
+00:48:29,183 --> 00:48:30,719
+And so that
+
+1066
+00:48:30,975 --> 00:48:35,839
+You would always stay in sync with what actually is currently the community version
+
+1067
+00:48:36,351 --> 00:48:37,119
+Of the package
+
+1068
+00:48:37,631 --> 00:48:43,775
+And you could import it it as a clone and make changes to the Clone and effect that will not effect
+
+1069
+00:48:44,031 --> 00:48:45,823
+ the Main Master
+
+1070
+00:48:46,079 --> 00:48:46,847
+Version
+
+1071
+00:48:47,103 --> 00:48:50,687
+But this all is a trial and error process which
+
+1072
+00:48:50,943 --> 00:48:51,455
+You would
+
+1073
+00:48:51,711 --> 00:48:54,015
+Sort of show you teach yourself how that works
+
+1074
+00:48:55,295 --> 00:49:00,671
+And so my idea is to do that within a blank install try it out
+
+1075
+00:49:00,927 --> 00:49:02,719
+Pulling some of the free versions
+
+1076
+00:49:03,231 --> 00:49:04,511
+But play around with it
+
+1077
+00:49:04,767 --> 00:49:06,047
+Until you become confident
+
+1078
+00:49:06,559 --> 00:49:09,119
+And then you are able to also start contributing
+
+1079
+00:49:09,375 --> 00:49:11,423
+Do not only the community packages
+
+1080
+00:49:11,679 --> 00:49:14,751
+But also VDM packages to which you've got access
+
+1081
+00:49:15,775 --> 00:49:18,591
+And so help improve those components
+
+1082
+00:49:18,847 --> 00:49:19,615
+For everyone
+
+1083
+00:49:20,127 --> 00:49:21,407
+Well thanks for watching
+
+1084
+00:49:21,663 --> 00:49:23,199
+Hope this is insightful
+
+1085
+00:49:23,455 --> 00:49:27,807
+And I'm sure there might be things that some of you would not able to follow
+
+1086
+00:49:28,063 --> 00:49:30,367
+And I would encourage you to just Google that
+
+1087
+00:49:30,879 --> 00:49:32,415
+and do some tutorials and
+
+1088
+00:49:33,183 --> 00:49:34,719
+Then you I'm sure you will
+
+1089
+00:49:34,975 --> 00:49:35,487
+Manage
+
+1090
+00:49:35,999 --> 00:49:37,023
+ok Thanks for watching
+

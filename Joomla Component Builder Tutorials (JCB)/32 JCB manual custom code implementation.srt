@@ -1,0 +1,2000 @@
+1
+00:00:00,256 --> 00:00:05,632
+Automatic import of custom code during compilation
+
+2
+00:00:06,656 --> 00:00:09,472
+This is one of our latest features that's been added to the
+
+3
+00:00:09,728 --> 00:00:10,240
+JCB
+
+4
+00:00:13,312 --> 00:00:13,824
+component
+
+5
+00:00:16,384 --> 00:00:22,528
+And I'm happy to demonstrate it to you now since all it's functionality is in place
+
+6
+00:00:22,784 --> 00:00:27,392
+Also explain to you some of the limitations that currently still exist
+
+7
+00:00:28,160 --> 00:00:29,952
+And hope that it will become
+
+8
+00:00:30,976 --> 00:00:32,000
+A very useful tool
+
+9
+00:00:32,768 --> 00:00:33,792
+To all of you out there
+
+10
+00:00:35,328 --> 00:00:36,352
+Ok so
+
+11
+00:00:37,120 --> 00:00:38,400
+First what does it do
+
+12
+00:00:38,912 --> 00:00:39,680
+Well
+
+13
+00:00:40,192 --> 00:00:46,336
+Is actually a little mutated from what it's original intent was
+
+14
+00:00:46,592 --> 00:00:52,736
+And it's become two things really so the first thing is And this is obviously what was initially
+
+15
+00:00:52,992 --> 00:00:53,760
+Intended
+
+16
+00:00:54,784 --> 00:00:56,320
+Is that you would be able
+
+17
+00:00:58,368 --> 00:00:59,392
+To add
+
+18
+00:00:59,648 --> 00:01:00,160
+Code
+
+19
+00:01:01,440 --> 00:01:07,584
+To your component once it's been compiled and installed
+
+20
+00:01:07,840 --> 00:01:10,144
+into that same Joomla website
+
+21
+00:01:11,424 --> 00:01:13,216
+That you be able to
+
+22
+00:01:14,240 --> 00:01:15,520
+Go into that code
+
+23
+00:01:16,032 --> 00:01:17,824
+And with a few placeholders
+
+24
+00:01:18,592 --> 00:01:20,384
+Actually add code
+
+25
+00:01:21,152 --> 00:01:23,968
+That once you compile the component again
+
+26
+00:01:24,992 --> 00:01:31,136
+JCB with dynamically grab that code extracted into
+
+27
+00:01:31,392 --> 00:01:34,208
+It's database store it there
+
+28
+00:01:34,464 --> 00:01:36,512
+And from there on forward
+
+29
+00:01:36,768 --> 00:01:38,560
+Continue to add it back in
+
+30
+00:01:38,816 --> 00:01:40,352
+Into the component every time
+
+31
+00:01:42,400 --> 00:01:42,912
+Now
+
+32
+00:01:43,680 --> 00:01:44,960
+The way we've done that
+
+33
+00:01:45,472 --> 00:01:47,520
+As we have not used the line numbers
+
+34
+00:01:48,032 --> 00:01:49,056
+As the main
+
+35
+00:01:50,080 --> 00:01:56,224
+Way of determining where that code must be added because of the reality that line numbers
+
+36
+00:01:56,480 --> 00:01:58,528
+Always will change
+
+37
+00:01:58,784 --> 00:02:00,576
+You know you might have let's say
+
+38
+00:02:01,088 --> 00:02:04,416
+let's say the custom code that you're adding
+
+39
+00:02:05,184 --> 00:02:05,952
+You said line
+
+40
+00:02:06,208 --> 00:02:07,232
+105 or something
+
+41
+00:02:08,768 --> 00:02:10,560
+And if you make it change at line
+
+42
+00:02:11,072 --> 00:02:11,584
+20
+
+43
+00:02:12,608 --> 00:02:13,120
+Then that
+
+44
+00:02:13,376 --> 00:02:19,520
+Means all the code moves down of course and now we don't know where to add your code
+
+45
+00:02:19,776 --> 00:02:24,384
+Without either writing over or placing it before and
+
+46
+00:02:24,640 --> 00:02:26,432
+You know there's all kinds of complications
+
+47
+00:02:27,712 --> 00:02:29,760
+So the only way we could resolve that
+
+48
+00:02:30,528 --> 00:02:31,552
+Is to create
+
+49
+00:02:32,320 --> 00:02:34,624
+What we initially called the fingerprint
+
+50
+00:02:35,136 --> 00:02:36,672
+But later became a
+
+51
+00:02:36,928 --> 00:02:37,952
+Hash
+
+52
+00:02:38,464 --> 00:02:44,608
+Reference of the code a few lines of code above the
+
+53
+00:02:44,864 --> 00:02:46,144
+The the custom script
+
+54
+00:02:46,912 --> 00:02:49,472
+And a few lines of code below the customs
+
+55
+00:02:50,752 --> 00:02:51,264
+Now
+
+56
+00:02:52,544 --> 00:02:54,848
+It varies from how many lines it
+
+57
+00:02:55,104 --> 00:02:55,616
+Uses
+
+58
+00:02:56,896 --> 00:02:59,712
+And there is a reason for it I'm not gonna
+
+59
+00:02:59,968 --> 00:03:00,480
+Bore you with the
+
+60
+00:03:00,736 --> 00:03:01,248
+The detail
+
+61
+00:03:01,760 --> 00:03:07,904
+If you want to see how we do it there is actually
+
+62
+00:03:08,160 --> 00:03:12,000
+The code is open source so you can actually go look at it
+
+63
+00:03:14,304 --> 00:03:15,584
+So there is a function
+
+64
+00:03:16,096 --> 00:03:22,240
+In the A get file which is part of the
+
+65
+00:03:22,496 --> 00:03:24,800
+Compiler a set of
+
+66
+00:03:25,056 --> 00:03:25,568
+Files
+
+67
+00:03:26,848 --> 00:03:27,360
+So
+
+68
+00:03:28,128 --> 00:03:29,408
+The functions name is
+
+69
+00:03:29,664 --> 00:03:31,200
+Search file content
+
+70
+00:03:32,736 --> 00:03:37,344
+And it's in this function that it really goes through every line of the code
+
+71
+00:03:37,600 --> 00:03:39,136
+That is already on
+
+72
+00:03:39,392 --> 00:03:45,536
+The Joomla website and then when it finds it it's adds it
+
+73
+00:03:45,792 --> 00:03:49,632
+to in array which eventually gets safe to do they device
+
+74
+00:03:50,400 --> 00:03:52,704
+So this is the lines that actually does the work
+
+75
+00:03:53,472 --> 00:03:55,520
+Obviously there's lots of things that works
+
+76
+00:03:56,288 --> 00:03:58,848
+With this this function
+
+77
+00:04:00,640 --> 00:04:01,920
+But this is the
+
+78
+00:04:02,432 --> 00:04:04,224
+Yeah this is the centre of
+
+79
+00:04:04,480 --> 00:04:05,248
+Of everything
+
+80
+00:04:06,016 --> 00:04:11,392
+Obviously I'm very sure there are better ways to do this
+
+81
+00:04:13,440 --> 00:04:17,024
+And so we will constantly improve this as others makes suggestions
+
+82
+00:04:19,327 --> 00:04:19,839
+And
+
+83
+00:04:20,095 --> 00:04:21,887
+Make sure that it remains stable
+
+84
+00:04:23,167 --> 00:04:26,239
+But to to explain why it sometimes
+
+85
+00:04:27,263 --> 00:04:33,407
+Uses more or less of the lines above it should never use more than
+
+86
+00:04:33,663 --> 00:04:34,431
+8 lines
+
+87
+00:04:34,943 --> 00:04:36,223
+Because basically
+
+88
+00:04:36,479 --> 00:04:38,783
+Here it is packing the fingerprint
+
+89
+00:04:39,039 --> 00:04:42,111
+Taking the line content putting it into an array
+
+90
+00:04:42,879 --> 00:04:44,415
+And every time
+
+91
+00:04:45,183 --> 00:04:47,743
+It passes it shakes where that array
+
+92
+00:04:48,255 --> 00:04:49,791
+You know if it's greater than 10
+
+93
+00:04:50,303 --> 00:04:52,095
+We cut it down to 6
+
+94
+00:04:53,631 --> 00:04:54,143
+Ok
+
+95
+00:04:54,399 --> 00:05:00,543
+And this continues to happen over and over and over because we don't want this fingerprint array to become bigger
+
+96
+00:05:00,799 --> 00:05:02,847
+Then let's say 10 lines
+
+97
+00:05:04,127 --> 00:05:06,431
+And at some point when we find
+
+98
+00:05:06,687 --> 00:05:09,247
+A placeholder we actually take that
+
+99
+00:05:09,759 --> 00:05:10,783
+Fingerprint
+
+100
+00:05:11,039 --> 00:05:11,807
+Array
+
+101
+00:05:12,575 --> 00:05:14,111
+And we we create
+
+102
+00:05:14,879 --> 00:05:17,183
+A a hash
+
+103
+00:05:17,695 --> 00:05:18,463
+From it
+
+104
+00:05:18,975 --> 00:05:23,071
+And then we store that hash into the database
+
+105
+00:05:24,095 --> 00:05:25,119
+So that means
+
+106
+00:05:26,911 --> 00:05:29,215
+That amount of lines are changing
+
+107
+00:05:31,263 --> 00:05:36,127
+Because it could be or we have just cleared the array and we are at 6 lines
+
+108
+00:05:37,919 --> 00:05:43,039
+And then we add a 7th and now we find a place holder and everything happens
+
+109
+00:05:43,295 --> 00:05:46,879
+Obviously there are two ways in which the code is added
+
+110
+00:05:47,135 --> 00:05:48,671
+Ok and I think I have
+
+111
+00:05:48,927 --> 00:05:49,951
+Explain that in the
+
+112
+00:05:50,463 --> 00:05:53,023
+Previous tutorial but I can do that again here
+
+113
+00:05:53,279 --> 00:05:53,791
+Quickly
+
+114
+00:05:54,559 --> 00:05:55,071
+Let's see where is it
+
+115
+00:05:56,863 --> 00:05:57,631
+Oh here we go
+
+116
+00:05:59,423 --> 00:06:01,471
+In that same file there is a comment
+
+117
+00:06:01,727 --> 00:06:02,495
+Way at the top
+
+118
+00:06:03,263 --> 00:06:05,055
+Which gives their explanation
+
+119
+00:06:05,311 --> 00:06:06,591
+Of the place holders
+
+120
+00:06:08,383 --> 00:06:12,735
+Now obviously the place holders these these
+
+121
+00:06:17,599 --> 00:06:19,135
+These X s here
+
+122
+00:06:19,647 --> 00:06:20,415
+Must be Asterixs
+
+123
+00:06:22,719 --> 00:06:23,487
+There like that one
+
+124
+00:06:25,535 --> 00:06:26,303
+And they get
+
+125
+00:06:26,815 --> 00:06:32,959
+This is the one with which you would start either to insert or to replace
+
+126
+00:06:33,215 --> 00:06:36,031
+There is also note on GitHub about this which may be
+
+127
+00:06:36,287 --> 00:06:37,055
+Would
+
+128
+00:06:37,311 --> 00:06:38,847
+See more logical
+
+129
+00:06:39,615 --> 00:06:40,639
+Let's go there
+
+130
+00:06:42,175 --> 00:06:43,199
+So here we are
+
+131
+00:06:43,455 --> 00:06:44,223
+at Github
+
+132
+00:06:44,479 --> 00:06:49,343
+It's on issue 37 if you want to go look at it
+
+133
+00:06:49,599 --> 00:06:51,391
+Under the Joomlal component
+
+134
+00:06:52,159 --> 00:06:52,927
+On GitHub
+
+135
+00:06:55,487 --> 00:06:57,279
+The component Builder on GitHub so
+
+136
+00:06:57,535 --> 00:06:58,815
+Basically to start
+
+137
+00:06:59,839 --> 00:07:03,167
+Inserting code you would use this as a placeholder
+
+138
+00:07:03,679 --> 00:07:04,703
+And then your code
+
+139
+00:07:04,959 --> 00:07:06,239
+Obviously on a new line
+
+140
+00:07:06,751 --> 00:07:12,895
+And then when you're finished this would close that code block but sometimes you don't want it insert code
+
+141
+00:07:13,151 --> 00:07:16,991
+You wanna actually Place code that was generated by JCB
+
+142
+00:07:17,503 --> 00:07:20,319
+And then you'd use the replace code placeholder
+
+143
+00:07:21,343 --> 00:07:22,111
+And then again
+
+144
+00:07:22,623 --> 00:07:24,927
+Use this one to end the code block
+
+145
+00:07:25,951 --> 00:07:27,999
+Now when component Builder
+
+146
+00:07:28,767 --> 00:07:31,583
+On compilation discovers these tags
+
+147
+00:07:31,839 --> 00:07:37,983
+They get converted to from insert to inserted and from replaced from
+
+148
+00:07:38,239 --> 00:07:39,519
+Replace to be replaced
+
+149
+00:07:40,543 --> 00:07:41,055
+And
+
+150
+00:07:41,311 --> 00:07:45,407
+It adds it back with out this diamond
+
+151
+00:07:48,223 --> 00:07:49,247
+In between those
+
+152
+00:07:50,527 --> 00:07:51,551
+You know dollar signs
+
+153
+00:07:51,807 --> 00:07:52,575
+And inserted
+
+154
+00:07:52,831 --> 00:07:54,367
+Text or replaced text
+
+155
+00:07:55,135 --> 00:08:01,279
+It removes them because basically by doing that it means that this
+
+156
+00:08:01,535 --> 00:08:03,071
+code doesn't need to be updated
+
+157
+00:08:03,839 --> 00:08:05,631
+The moment to add those
+
+158
+00:08:05,887 --> 00:08:06,399
+two back
+
+159
+00:08:06,655 --> 00:08:07,935
+In there between those
+
+160
+00:08:08,191 --> 00:08:09,215
+2
+
+161
+00:08:09,727 --> 00:08:10,495
+Values
+
+162
+00:08:11,263 --> 00:08:14,591
+Then the next time component Builder compiles
+
+163
+00:08:15,103 --> 00:08:21,247
+It actually knows ok this piece of code I need to check again and update
+
+164
+00:08:21,503 --> 00:08:25,087
+Whatever is in the database because it's been changed
+
+165
+00:08:25,343 --> 00:08:27,647
+This diamond here tells it
+
+166
+00:08:28,159 --> 00:08:29,951
+There is a change you need to update
+
+167
+00:08:30,719 --> 00:08:31,231
+Now
+
+168
+00:08:32,255 --> 00:08:35,583
+You will see that now there is this new number being added next to the
+
+169
+00:08:35,839 --> 00:08:36,351
+The code
+
+170
+00:08:37,119 --> 00:08:38,143
+That number
+
+171
+00:08:38,655 --> 00:08:39,935
+Is actually the ID
+
+172
+00:08:40,447 --> 00:08:42,751
+Of the data Database
+
+173
+00:08:44,031 --> 00:08:46,847
+Column sorry
+
+174
+00:08:47,103 --> 00:08:49,407
+Row the database row
+
+175
+00:08:49,919 --> 00:08:51,199
+That JCB
+
+176
+00:08:51,455 --> 00:08:51,967
+Is
+
+177
+00:08:52,223 --> 00:08:54,015
+Actually stored the code in
+
+178
+00:08:55,039 --> 00:08:57,343
+So if you change this number
+
+179
+00:08:57,599 --> 00:08:58,367
+You gonna
+
+180
+00:08:58,879 --> 00:09:00,159
+Yeah you gonna have a problem
+
+181
+00:09:00,927 --> 00:09:04,255
+So don't change this number JCB put this number in
+
+182
+00:09:04,511 --> 00:09:05,535
+So that he can
+
+183
+00:09:06,047 --> 00:09:12,191
+Basically know where to go update the code in the database so
+
+184
+00:09:12,447 --> 00:09:18,591
+Once you've made any changes to the code you would simply at this diamond back in that's quite important otherwise it will not be
+
+185
+00:09:18,847 --> 00:09:21,663
+Be parsed and it will be overwritten by what's in the
+
+186
+00:09:21,919 --> 00:09:22,431
+Database
+
+187
+00:09:23,711 --> 00:09:24,223
+So
+
+188
+00:09:24,991 --> 00:09:31,135
+That's really it that was the initial purpose of this new feature was to be able to in the
+
+189
+00:09:31,391 --> 00:09:37,535
+Editor create code and then on the fly have it become part of the JCB
+
+190
+00:09:37,791 --> 00:09:38,815
+Infrastructure
+
+191
+00:09:39,327 --> 00:09:40,351
+For your component
+
+192
+00:09:41,119 --> 00:09:44,703
+And then in the future it will continue adding that code back in
+
+193
+00:09:44,959 --> 00:09:46,495
+Without you having to write it
+
+194
+00:09:46,751 --> 00:09:47,263
+Or
+
+195
+00:09:47,519 --> 00:09:48,031
+Remembered
+
+196
+00:09:48,287 --> 00:09:49,055
+or in anyway
+
+197
+00:09:49,823 --> 00:09:52,127
+And if you wanna change the code you just add these
+
+198
+00:09:52,383 --> 00:09:56,479
+Diamonds either for the insert or for the replace depending on what you did
+
+199
+00:09:56,735 --> 00:10:02,879
+And it will automatically then know there's been a change and it will first update what is in the data
+
+200
+00:10:03,135 --> 00:10:04,671
+Base and then store it back
+
+201
+00:10:05,183 --> 00:10:06,975
+Into the new compiled version
+
+202
+00:10:08,255 --> 00:10:08,767
+So
+
+203
+00:10:09,023 --> 00:10:10,559
+That is exciting in itself
+
+204
+00:10:10,815 --> 00:10:11,583
+I realize
+
+205
+00:10:12,863 --> 00:10:15,423
+It's a It's a real stunning new feature
+
+206
+00:10:15,935 --> 00:10:22,079
+We have been doing some teething on some of its implementation if you even read down here
+
+207
+00:10:22,335 --> 00:10:28,479
+There's some comments and things we are at the moment at version 2.3.2
+
+208
+00:10:28,735 --> 00:10:30,271
+which is not yet released
+
+209
+00:10:30,527 --> 00:10:31,551
+I'm busy working on it
+
+210
+00:10:33,087 --> 00:10:34,879
+Because this new version
+
+211
+00:10:35,391 --> 00:10:35,903
+2
+
+212
+00:10:36,159 --> 00:10:36,927
+3.
+
+213
+00:10:37,439 --> 00:10:38,975
+Sorry 2.3.2
+
+214
+00:10:39,999 --> 00:10:41,023
+Will include
+
+215
+00:10:41,535 --> 00:10:47,679
+The extra feature which wasn't Ever Really discussed here on the Forum
+
+216
+00:10:47,935 --> 00:10:50,239
+Because it was a feature that I've been
+
+217
+00:10:50,751 --> 00:10:51,775
+Hoping for
+
+218
+00:10:52,031 --> 00:10:52,799
+Quite some time
+
+219
+00:10:54,079 --> 00:10:57,663
+You know I've actually build quite a number of components with
+
+220
+00:10:57,919 --> 00:10:58,687
+JCB by now
+
+221
+00:10:59,455 --> 00:11:03,295
+And I've always had this issue that I would develop a very smart
+
+222
+00:11:03,551 --> 00:11:04,063
+Function
+
+223
+00:11:04,319 --> 00:11:10,463
+A custom script obviously inside of some view or some field or somewhere
+
+224
+00:11:10,719 --> 00:11:15,327
+In JCB and then I would like to use it again elsewhere
+
+225
+00:11:15,583 --> 00:11:16,863
+But then I have to copy it
+
+226
+00:11:17,119 --> 00:11:18,655
+And go pasted there
+
+227
+00:11:19,167 --> 00:11:21,983
+And it will happen that I would improve it there you know it
+
+228
+00:11:22,495 --> 00:11:24,543
+Add this little thing there and I
+
+229
+00:11:25,055 --> 00:11:26,335
+Sort of debug this
+
+230
+00:11:26,591 --> 00:11:32,735
+Improve the whole function the whole maybe just pieces script or whatever I just improves it
+
+231
+00:11:32,991 --> 00:11:39,135
+And then it where I took it from does I need to know copy again back there and it
+
+232
+00:11:39,391 --> 00:11:40,159
+It's always this
+
+233
+00:11:40,671 --> 00:11:45,023
+Copy and move and then obviously there's variables inside that needs
+
+234
+00:11:45,279 --> 00:11:46,559
+To be different names
+
+235
+00:11:47,327 --> 00:11:47,839
+And
+
+236
+00:11:48,095 --> 00:11:49,119
+This always been a
+
+237
+00:11:49,631 --> 00:11:50,143
+Yeah
+
+238
+00:11:50,399 --> 00:11:51,423
+Very unpleasant
+
+239
+00:11:51,679 --> 00:11:52,191
+Experience
+
+240
+00:11:52,959 --> 00:11:59,103
+And so since I know of object orientated concepts I've always wondered
+
+241
+00:11:59,359 --> 00:12:02,687
+Is there a way for me to with JCB create the
+
+242
+00:12:02,943 --> 00:12:03,711
+Same kind of
+
+243
+00:12:04,735 --> 00:12:06,271
+In a small way of course
+
+244
+00:12:06,527 --> 00:12:08,831
+But give that some kind of functionality
+
+245
+00:12:09,599 --> 00:12:12,671
+And so when this new improvement came along
+
+246
+00:12:13,439 --> 00:12:19,583
+Immediately thought Well yes there is actually there is a
+
+247
+00:12:19,839 --> 00:12:25,983
+Way for us to make this work for both both of these aspects so what did we do
+
+248
+00:12:26,751 --> 00:12:27,263
+Well
+
+249
+00:12:27,775 --> 00:12:28,543
+I
+
+250
+00:12:29,567 --> 00:12:30,079
+Let me see where we
+
+251
+00:12:32,127 --> 00:12:33,151
+I created
+
+252
+00:12:33,663 --> 00:12:35,967
+The option for you to
+
+253
+00:12:38,783 --> 00:12:41,087
+Either I used the hash automation
+
+254
+00:12:41,599 --> 00:12:47,743
+Which is the one I've just explained or to use the JCB manual
+
+255
+00:12:47,999 --> 00:12:51,327
+Now JCB manual if you setup custom code
+
+256
+00:12:51,839 --> 00:12:53,375
+The JCB manual
+
+257
+00:12:53,887 --> 00:12:55,679
+Will do exactly that
+
+258
+00:12:56,191 --> 00:12:57,727
+It will literally create
+
+259
+00:12:58,751 --> 00:12:59,519
+The option
+
+260
+00:12:59,775 --> 00:13:00,287
+For you
+
+261
+00:13:00,799 --> 00:13:01,311
+To take
+
+262
+00:13:01,567 --> 00:13:02,847
+This place holder
+
+263
+00:13:03,103 --> 00:13:03,871
+For example
+
+264
+00:13:04,383 --> 00:13:09,247
+And I have a field let me open it
+
+265
+00:13:47,647 --> 00:13:48,927
+Ok sorry about that
+
+266
+00:13:49,183 --> 00:13:50,463
+Where Have a few jumps there
+
+267
+00:13:50,975 --> 00:13:52,511
+I had to open the field
+
+268
+00:13:52,767 --> 00:13:58,911
+So basically I have a field here with which I upload images so that will drag and drop
+
+269
+00:13:59,167 --> 00:14:05,311
+Field is actually and note as you can see but I'm using some HTML in the
+
+270
+00:14:05,567 --> 00:14:07,871
+Description and I've added some
+
+271
+00:14:08,127 --> 00:14:08,895
+JavaScript
+
+272
+00:14:09,407 --> 00:14:12,479
+To this footer of wherever does field is being used
+
+273
+00:14:13,503 --> 00:14:14,015
+So
+
+274
+00:14:14,527 --> 00:14:15,807
+Basically this code
+
+275
+00:14:16,319 --> 00:14:17,855
+Is used to upload
+
+276
+00:14:18,111 --> 00:14:24,255
+Or to it's part of the process this much more code but this is what I need to
+
+277
+00:14:24,511 --> 00:14:25,535
+Reuse quite often
+
+278
+00:14:25,791 --> 00:14:27,071
+And so
+
+279
+00:14:27,327 --> 00:14:32,447
+Improve this in many areas and then I would always have to come back here and there are certain
+
+280
+00:14:33,471 --> 00:14:35,775
+Ask a sorry text
+
+281
+00:14:36,287 --> 00:14:37,567
+The differs from each
+
+282
+00:14:37,823 --> 00:14:40,127
+Place for example that word teaser
+
+283
+00:14:40,639 --> 00:14:41,663
+It's a bit different
+
+284
+00:14:42,175 --> 00:14:48,319
+Everywhere else and the word image sometimes it must be
+
+285
+00:14:48,575 --> 00:14:50,623
+Images and not just image
+
+286
+00:14:50,879 --> 00:14:54,463
+And so what I've done now is I've actually taken
+
+287
+00:14:54,975 --> 00:14:55,487
+This code
+
+288
+00:14:56,511 --> 00:14:58,815
+I've added it to a custom code
+
+289
+00:14:59,327 --> 00:15:01,631
+Obviously I have set this is JCB manual
+
+290
+00:15:02,143 --> 00:15:04,191
+And I everywhere where I want
+
+291
+00:15:04,447 --> 00:15:05,983
+Dynamic
+
+292
+00:15:06,239 --> 00:15:12,383
+Script updates I've added the Arg values If You Wanna understand and more about the Arg values
+
+293
+00:15:12,639 --> 00:15:16,735
+Just read this note above here for basically in
+
+294
+00:15:17,247 --> 00:15:18,783
+To make to say it simply
+
+295
+00:15:19,295 --> 00:15:19,807
+Arg
+
+296
+00:15:20,319 --> 00:15:22,623
+These arg areas is like placeholders
+
+297
+00:15:23,391 --> 00:15:25,439
+And I can pass strings or
+
+298
+00:15:25,695 --> 00:15:26,463
+Values
+
+299
+00:15:27,231 --> 00:15:29,535
+Via this custom
+
+300
+00:15:29,791 --> 00:15:35,935
+Code placeholder and it gets updated on the fly during
+
+301
+00:15:36,191 --> 00:15:39,263
+Compliation everywhere where I used this
+
+302
+00:15:39,519 --> 00:15:41,823
+Code snippet else in elsewhere in in
+
+303
+00:15:42,079 --> 00:15:42,847
+JCB
+
+304
+00:15:43,615 --> 00:15:44,383
+So this
+
+305
+00:15:44,639 --> 00:15:46,431
+This gives me a little bit of that
+
+306
+00:15:47,455 --> 00:15:48,735
+Object orientated
+
+307
+00:15:48,991 --> 00:15:53,087
+Feeling where I write a function or a piece of script once
+
+308
+00:15:53,343 --> 00:15:55,647
+And then I can reuse it everywhere else
+
+309
+00:15:56,159 --> 00:16:02,303
+And simply update the values being passed to it so it's it's by far
+
+310
+00:16:02,559 --> 00:16:03,327
+not
+
+311
+00:16:03,583 --> 00:16:05,375
+Not error proof there if you
+
+312
+00:16:05,887 --> 00:16:10,239
+Obviously you can't use any commas in these values and you can't use any plus signs
+
+313
+00:16:11,007 --> 00:16:12,031
+In these values
+
+314
+00:16:13,567 --> 00:16:14,335
+It needs to be
+
+315
+00:16:15,871 --> 00:16:16,639
+One word
+
+316
+00:16:17,407 --> 00:16:20,479
+It can have a dollar sign if you wanna actually have it
+
+317
+00:16:20,735 --> 00:16:26,879
+Place A Dollar Sign symbol in the code but it obviously doesn't
+
+318
+00:16:27,391 --> 00:16:33,023
+Execute the string that you pass so it will literally just pasted in
+
+319
+00:16:34,815 --> 00:16:37,375
+Wherever you've placed this arg place holder
+
+320
+00:16:37,887 --> 00:16:40,447
+So you have got you can add as many
+
+321
+00:16:40,703 --> 00:16:43,007
+Values to this custom code
+
+322
+00:16:43,263 --> 00:16:44,543
+I'm in arg values
+
+323
+00:16:45,055 --> 00:16:51,199
+As you want but always make sure that they're mounted values that is in the code must
+
+324
+00:16:51,455 --> 00:16:54,271
+Correspond to the amount of values that you are passing to it
+
+325
+00:16:54,783 --> 00:16:57,087
+Otherwise you would end up having a certain
+
+326
+00:16:57,343 --> 00:16:58,879
+Area of the code the arg
+
+327
+00:16:59,135 --> 00:17:01,695
+Placeholder will not be replaced
+
+328
+00:17:02,463 --> 00:17:04,767
+With anything it will stay
+
+329
+00:17:05,023 --> 00:17:05,535
+Like that
+
+330
+00:17:06,047 --> 00:17:08,351
+If there doesn't have a value for it
+
+331
+00:17:08,607 --> 00:17:14,751
+Ok so now what I'm doing is back into the field I basically
+
+332
+00:17:18,335 --> 00:17:20,127
+Add the place holder here
+
+333
+00:17:20,639 --> 00:17:21,663
+Since it is
+
+334
+00:17:22,175 --> 00:17:28,319
+Id1 obviously it's that one number one and I am passing three values to it
+
+335
+00:17:28,575 --> 00:17:30,367
+Image image and teaser
+
+336
+00:17:31,135 --> 00:17:35,231
+Which will then correspond to the replacing arg values here
+
+337
+00:17:35,487 --> 00:17:37,535
+So that 01 would be image
+
+338
+00:17:39,327 --> 00:17:43,935
+This one value here would be image and this one would be teaser
+
+339
+00:17:44,703 --> 00:17:50,847
+So it will actually replace it on compilation and now I'm able
+
+340
+00:17:51,103 --> 00:17:53,663
+To reuse this code anywhere else
+
+341
+00:17:54,175 --> 00:17:55,199
+In
+
+342
+00:17:55,455 --> 00:17:56,479
+in JCB
+
+343
+00:17:56,735 --> 00:17:59,551
+So far I obviously have saved this previously
+
+344
+00:18:00,063 --> 00:18:02,879
+I'm gonna just close it now and just open another one
+
+345
+00:18:03,391 --> 00:18:04,671
+I've got one here called poster
+
+346
+00:18:05,695 --> 00:18:07,743
+Which is basically doing the same thing
+
+347
+00:18:07,999 --> 00:18:14,143
+And so now I'm also passing image image and then poster so
+
+348
+00:18:14,399 --> 00:18:17,215
+That means now on this
+
+349
+00:18:17,983 --> 00:18:18,751
+Area
+
+350
+00:18:19,007 --> 00:18:20,031
+It will actually
+
+351
+00:18:20,543 --> 00:18:24,639
+Change that second Arg value which is actually the third one
+
+352
+00:18:25,151 --> 00:18:26,175
+It will update it
+
+353
+00:18:26,431 --> 00:18:27,455
+to poster instead
+
+354
+00:18:27,967 --> 00:18:28,991
+And so I have
+
+355
+00:18:29,503 --> 00:18:31,295
+Somehow the ability to now
+
+356
+00:18:31,551 --> 00:18:32,575
+have dynamic
+
+357
+00:18:33,855 --> 00:18:39,487
+Code in custom code which can be reused all over JCB
+
+358
+00:18:39,743 --> 00:18:41,791
+The only negative thing currently
+
+359
+00:18:42,047 --> 00:18:42,559
+Is that
+
+360
+00:18:43,071 --> 00:18:46,143
+This kind of code that actually has
+
+361
+00:18:46,399 --> 00:18:48,447
+Dynamic values past
+
+362
+00:18:48,703 --> 00:18:49,215
+To it
+
+363
+00:18:49,727 --> 00:18:51,007
+Will not be updated
+
+364
+00:18:52,543 --> 00:18:58,687
+By any changes you make in the editor outside of JCB so if you think about the
+
+365
+00:18:58,943 --> 00:19:04,831
+Two functions you'd realize that they do not fully merge at this stage
+
+366
+00:19:06,111 --> 00:19:06,623
+But
+
+367
+00:19:07,135 --> 00:19:09,183
+Let me say this if you
+
+368
+00:19:09,695 --> 00:19:13,791
+Have a snippet of code which has None of these Arg
+
+369
+00:19:14,303 --> 00:19:16,607
+For example if you only used
+
+370
+00:19:17,119 --> 00:19:18,911
+It like this
+
+371
+00:19:19,167 --> 00:19:21,727
+Without any place holders like that
+
+372
+00:19:21,983 --> 00:19:27,871
+Sorry without any extra values now that code will be actually
+
+373
+00:19:28,639 --> 00:19:29,663
+Replaced
+
+374
+00:19:30,175 --> 00:19:32,735
+If you make any changes to it in the editor
+
+375
+00:19:32,991 --> 00:19:33,759
+So it will
+
+376
+00:19:34,271 --> 00:19:40,159
+Start behaving like the initial implementation it it will place it back into the component
+
+377
+00:19:40,671 --> 00:19:46,815
+With that inserted tag above it and if you put the diamond in like we explained you know it will
+
+378
+00:19:47,071 --> 00:19:52,191
+get this inserted tag sorry not that one this one
+
+379
+00:19:54,239 --> 00:19:56,543
+So if you if you have a custom code
+
+380
+00:19:57,055 --> 00:19:59,359
+To which you not passing any values
+
+381
+00:20:00,127 --> 00:20:04,991
+Then it will add this inserted around it and you can then in the editor
+
+382
+00:20:05,247 --> 00:20:08,063
+Add a diamond in there so that looks like this
+
+383
+00:20:08,319 --> 00:20:14,463
+And then on compilation it will update that code in JCB and then place it back into
+
+384
+00:20:14,719 --> 00:20:16,255
+The new compiled component
+
+385
+00:20:16,767 --> 00:20:17,535
+So
+
+386
+00:20:17,791 --> 00:20:18,815
+That still works
+
+387
+00:20:19,327 --> 00:20:21,375
+And I think it's amazing that it does but
+
+388
+00:20:21,887 --> 00:20:25,215
+Unfortunately the moment you pass any arguments to it
+
+389
+00:20:27,519 --> 00:20:33,663
+Like so then we know that there are Arg placeholders in the
+
+390
+00:20:33,919 --> 00:20:34,943
+Script like that
+
+391
+00:20:35,199 --> 00:20:41,087
+And since the script is now being used at multiple areas with multiple values
+
+392
+00:20:41,855 --> 00:20:43,647
+Now let's say you change one of them
+
+393
+00:20:44,159 --> 00:20:49,023
+You don't really want it to replace the the database script because
+
+394
+00:20:49,279 --> 00:20:52,863
+How will we know where these arg placeholders should be placed
+
+395
+00:20:53,119 --> 00:20:59,263
+The code at that stage has nothing, no reference whatsoever to these arg values
+
+396
+00:20:59,519 --> 00:21:02,335
+Now there is an idea busy formulating
+
+397
+00:21:02,847 --> 00:21:03,871
+Which we would
+
+398
+00:21:04,383 --> 00:21:05,151
+Ideally
+
+399
+00:21:05,663 --> 00:21:06,431
+Move
+
+400
+00:21:06,943 --> 00:21:08,223
+All the arg values
+
+401
+00:21:08,479 --> 00:21:08,991
+Up
+
+402
+00:21:09,503 --> 00:21:10,527
+Above your script
+
+403
+00:21:11,295 --> 00:21:11,807
+Like this
+
+404
+00:21:12,319 --> 00:21:13,855
+Maybe put some
+
+405
+00:21:14,111 --> 00:21:15,135
+Convention of
+
+406
+00:21:15,647 --> 00:21:17,440
+arg's you know, wait
+
+407
+00:21:20,256 --> 00:21:24,096
+Like that and then arg and then equal
+
+408
+00:21:25,632 --> 00:21:27,168
+And then wait sorry
+
+409
+00:21:27,936 --> 00:21:29,472
+Then change this to
+
+410
+00:21:29,984 --> 00:21:30,752
+Value
+
+411
+00:21:34,848 --> 00:21:36,384
+Bar in this case because it's
+
+412
+00:21:36,640 --> 00:21:37,408
+JavaScript
+
+413
+00:21:39,200 --> 00:21:39,712
+And
+
+414
+00:21:40,224 --> 00:21:45,088
+That could possibly start resolving the issue
+
+415
+00:21:45,344 --> 00:21:51,488
+I'm still working on it which then we would only really not update this area
+
+416
+00:21:51,744 --> 00:21:53,024
+In the data in the database
+
+417
+00:21:53,536 --> 00:21:57,888
+But update the whole rest so you would then in that case use value
+
+418
+00:21:58,656 --> 00:22:00,960
+Where ever arg0 is to be found
+
+419
+00:22:02,752 --> 00:22:04,032
+Like that
+
+420
+00:22:05,056 --> 00:22:11,200
+Then we need only take care of this area and this area can be done
+
+421
+00:22:11,456 --> 00:22:12,480
+dynamically updated
+
+422
+00:22:14,272 --> 00:22:15,552
+I haven't actually
+
+423
+00:22:17,088 --> 00:22:19,136
+Find a complete
+
+424
+00:22:20,160 --> 00:22:21,952
+Satisfaction with this solution
+
+425
+00:22:22,464 --> 00:22:23,744
+I'm still working on it
+
+426
+00:22:24,512 --> 00:22:25,792
+But I can guarantee you
+
+427
+00:22:26,048 --> 00:22:32,192
+That it is something I would like to be able to do is to make a change to it in the editor and it
+
+428
+00:22:32,448 --> 00:22:37,056
+Also updates it here in the database I think that would be excellent
+
+429
+00:22:37,312 --> 00:22:38,336
+But for now
+
+430
+00:22:38,592 --> 00:22:40,128
+Any code with args
+
+431
+00:22:40,640 --> 00:22:46,784
+As long as this note remains here I think we said here that if there is any change to these limitations
+
+432
+00:22:47,040 --> 00:22:47,552
+
+
+433
+00:22:47,808 --> 00:22:49,088
+These notes will change
+
+434
+00:22:49,600 --> 00:22:55,744
+So the next time you open it and you see the note is different you would be as happy as we are with the
+
+435
+00:22:56,000 --> 00:23:01,120
+Advance and so that that is really the other
+
+436
+00:23:01,376 --> 00:23:03,168
+Feature that we've now add
+
+437
+00:23:03,680 --> 00:23:08,032
+Basically creating custom code and then reusing it across
+
+438
+00:23:08,544 --> 00:23:11,104
+Multiple areas of your component
+
+439
+00:23:11,872 --> 00:23:12,896
+Without
+
+440
+00:23:14,176 --> 00:23:15,712
+Without the
+
+441
+00:23:15,968 --> 00:23:17,760
+The old complexity of
+
+442
+00:23:18,016 --> 00:23:24,160
+needing to update it every where again obviously you need to know your PHP
+
+443
+00:23:24,416 --> 00:23:26,464
+and whatever language you are
+
+444
+00:23:26,720 --> 00:23:28,256
+Targeting with this custom
+
+445
+00:23:28,512 --> 00:23:29,280
+Code well enough
+
+446
+00:23:29,792 --> 00:23:30,816
+So that you
+
+447
+00:23:31,072 --> 00:23:33,632
+By this place holders and by everything else
+
+448
+00:23:35,168 --> 00:23:36,448
+that it actually works
+
+449
+00:23:36,960 --> 00:23:43,104
+If it does not work that debugging and everything unfortunately is is your responsibility
+
+450
+00:23:43,360 --> 00:23:49,504
+ there is another thing that is still functional though I think I didn't mention it
+
+451
+00:23:49,760 --> 00:23:52,320
+Yet and that's the component placeholder
+
+452
+00:23:52,832 --> 00:23:56,928
+And the view placeholder if if this specific script
+
+453
+00:23:57,184 --> 00:24:00,256
+Is gonna end up somewhere under a specific View
+
+454
+00:24:00,768 --> 00:24:02,304
+This one actually doesn't
+
+455
+00:24:02,816 --> 00:24:08,960
+Wait it does actually because your field script this field script it gets added
+
+456
+00:24:09,216 --> 00:24:12,288
+ to the view footer right so
+
+457
+00:24:13,056 --> 00:24:17,920
+Then you have a view placeholder which basically is just also three brackets
+
+458
+00:24:18,176 --> 00:24:18,688
+View
+
+459
+00:24:18,944 --> 00:24:19,712
+Like that
+
+460
+00:24:19,968 --> 00:24:20,736
+and three brackets
+
+461
+00:24:22,016 --> 00:24:25,344
+So that's how you could then do a view Dynamic update
+
+462
+00:24:25,856 --> 00:24:32,000
+Of anything you know if you if you need to use to view a string name any where
+
+463
+00:24:32,256 --> 00:24:36,864
+ in the script okay so that means you have component
+
+464
+00:24:37,120 --> 00:24:38,912
+Obviously with the uppercase
+
+465
+00:24:39,424 --> 00:24:41,728
+And the all uppercase and all that
+
+466
+00:24:41,984 --> 00:24:42,752
+Variations
+
+467
+00:24:43,264 --> 00:24:46,336
+And you have the view unfortunately only
+
+468
+00:24:46,592 --> 00:24:49,408
+That current view that is being targeted
+
+469
+00:24:49,920 --> 00:24:52,224
+Will be added to that place holder
+
+470
+00:24:52,480 --> 00:24:57,856
+In lowercase so that that is
+
+471
+00:24:58,112 --> 00:24:59,904
+Demonstrating the
+
+472
+00:25:00,160 --> 00:25:02,720
+Well I've demonstrated actually actually demonstrated
+
+473
+00:25:04,000 --> 00:25:07,584
+So we have got these there I'm just gonna not save it because
+
+474
+00:25:08,096 --> 00:25:09,888
+None of the changes here is relevant
+
+475
+00:25:11,424 --> 00:25:13,728
+And then I will compile this now
+
+476
+00:25:16,032 --> 00:25:16,800
+And then
+
+477
+00:25:17,056 --> 00:25:19,872
+In the code show you where it's been added
+
+478
+00:25:21,408 --> 00:25:22,176
+Ok
+
+479
+00:25:22,688 --> 00:25:23,712
+A component that it's
+
+480
+00:25:23,968 --> 00:25:24,480
+Using
+
+481
+00:25:24,992 --> 00:25:26,016
+That at the moment
+
+482
+00:25:26,528 --> 00:25:27,808
+is registry
+
+483
+00:25:32,672 --> 00:25:34,464
+Ok so I'm gonna install it now
+
+484
+00:25:35,744 --> 00:25:39,584
+So let's go look at the code where it should have been added
+
+485
+00:25:41,120 --> 00:25:45,728
+So in the code we see there the image is being updated with image
+
+486
+00:25:47,008 --> 00:25:49,824
+Teasers have been placed there images been placed
+
+487
+00:25:50,080 --> 00:25:50,592
+There
+
+488
+00:25:51,616 --> 00:25:56,736
+As well as in all the other areas where we had those arg placeholders they've all been updated
+
+489
+00:25:57,248 --> 00:25:59,552
+And the code itself has been inserted
+
+490
+00:26:00,064 --> 00:26:01,600
+in the correct area
+
+491
+00:26:02,624 --> 00:26:03,392
+Well
+
+492
+00:26:03,648 --> 00:26:09,792
+That is custom code in a little different implementation of it
+
+493
+00:26:10,560 --> 00:26:11,584
+We've called that
+
+494
+00:26:12,352 --> 00:26:13,120
+The
+
+495
+00:26:14,656 --> 00:26:16,192
+JCB manual option
+
+496
+00:26:17,472 --> 00:26:21,056
+If you wanna know more about the hash automation option
+
+497
+00:26:21,824 --> 00:26:23,872
+Then please watch the previous
+
+498
+00:26:24,128 --> 00:26:24,640
+Tutorial
+
+499
+00:26:25,152 --> 00:26:26,176
+On YouTube
+
+500
+00:26:26,688 --> 00:26:27,712
+Thank you for watching
+

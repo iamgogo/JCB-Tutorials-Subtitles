@@ -1,0 +1,660 @@
+1
+00:00:00,768 --> 00:00:04,864
+It often happens that you would like to use some of the default fields
+
+2
+00:00:05,120 --> 00:00:09,472
+Differently than how component builder is actually implementing it
+
+3
+00:00:09,728 --> 00:00:11,776
+Now what is the default fields
+
+4
+00:00:12,032 --> 00:00:13,824
+If you go to
+
+5
+00:00:14,848 --> 00:00:20,992
+Add a new admin view or if you go to an admin view that already exists like I've open one here
+
+6
+00:00:21,760 --> 00:00:23,808
+You'd see that there is this little note
+
+7
+00:00:24,320 --> 00:00:26,112
+Just above adding fields
+
+8
+00:00:26,368 --> 00:00:27,904
+It says that the ID
+
+9
+00:00:28,672 --> 00:00:30,208
+The asset ID the state
+
+10
+00:00:30,464 --> 00:00:35,328
+The access the ordering the created by the date created modified by
+
+11
+00:00:35,840 --> 00:00:37,632
+Date modified Checkout
+
+12
+00:00:37,888 --> 00:00:39,680
+Check out time version
+
+13
+00:00:39,936 --> 00:00:41,728
+Hits metakey
+
+14
+00:00:41,984 --> 00:00:44,288
+Meta description and metadata
+
+15
+00:00:44,800 --> 00:00:50,176
+Is already added to the view so these are your default
+
+16
+00:00:50,432 --> 00:00:52,480
+Fields
+
+17
+00:00:52,736 --> 00:00:58,112
+That always gets added to the view even if you don't create them in fact you don't need to create them
+
+18
+00:00:58,624 --> 00:01:04,768
+But I have seen that sometimes you might want to display some of these fields in a different
+
+19
+00:01:05,024 --> 00:01:05,536
+Area
+
+20
+00:01:05,792 --> 00:01:07,072
+Of the application
+
+21
+00:01:07,584 --> 00:01:08,608
+You see currently
+
+22
+00:01:11,680 --> 00:01:17,824
+The ID field and  the published
+
+23
+00:01:18,080 --> 00:01:18,592
+Where is it
+
+24
+00:01:20,640 --> 00:01:21,664
+I think that is State
+
+25
+00:01:21,920 --> 00:01:22,432
+Yeah
+
+26
+00:01:22,944 --> 00:01:23,968
+State field
+
+27
+00:01:24,224 --> 00:01:28,320
+Is the only field that is been shown by Default
+
+28
+00:01:28,576 --> 00:01:29,600
+In the listview
+
+29
+00:01:31,392 --> 00:01:34,976
+So here you can see there is the ID field and there is the states field
+
+30
+00:01:35,744 --> 00:01:38,048
+and the ordering field but the ordering field
+
+31
+00:01:38,304 --> 00:01:39,072
+Obviously
+
+32
+00:01:39,584 --> 00:01:43,680
+Doesn't show the order number you basically click on that button there
+
+33
+00:01:43,936 --> 00:01:45,472
+And then you can move them
+
+34
+00:01:45,728 --> 00:01:51,104
+You know order them so all that is done by Default and so as you can see
+
+35
+00:01:51,616 --> 00:01:52,640
+The sorry
+
+36
+00:01:53,664 --> 00:01:54,432
+The other
+
+37
+00:01:54,688 --> 00:01:57,248
+Values are not displayed in the listview
+
+38
+00:01:58,016 --> 00:02:04,160
+And so I had a client once saying to me that they would like to actually see the date that something was created
+
+39
+00:02:04,416 --> 00:02:06,720
+And also by whom it was created
+
+40
+00:02:07,232 --> 00:02:12,608
+And so I had to adapt component builder so that those things can also be overwritten
+
+41
+00:02:13,376 --> 00:02:14,912
+And this is exactly what we've done
+
+42
+00:02:15,680 --> 00:02:18,496
+What is done is if you create a field
+
+43
+00:02:19,776 --> 00:02:23,616
+In component builder as you would normally create a field and you give it
+
+44
+00:02:23,872 --> 00:02:30,016
+Any of these names you see created by or created date but obviously exactly
+
+45
+00:02:30,272 --> 00:02:36,416
+the same name then it actually will overwrite
+
+46
+00:02:36,672 --> 00:02:42,304
+The default so in this specific view the job order View
+
+47
+00:02:43,584 --> 00:02:44,352
+Excuse me
+
+48
+00:02:44,864 --> 00:02:46,144
+There is a field
+
+49
+00:02:47,424 --> 00:02:48,960
+Created by
+
+50
+00:02:49,472 --> 00:02:50,496
+So
+
+51
+00:02:50,752 --> 00:02:52,032
+I can open that
+
+52
+00:02:52,288 --> 00:02:55,104
+in a new tab there is also a field
+
+53
+00:02:56,896 --> 00:02:57,664
+Created
+
+54
+00:02:57,920 --> 00:03:00,224
+That's basically the date let me just
+
+55
+00:03:01,248 --> 00:03:02,528
+See where it is
+
+56
+00:03:05,856 --> 00:03:07,392
+Oh there it is create a date
+
+57
+00:03:07,648 --> 00:03:08,928
+I'll also open that one
+
+58
+00:03:11,744 --> 00:03:12,512
+So in the
+
+59
+00:03:13,024 --> 00:03:13,536
+Field
+
+60
+00:03:13,792 --> 00:03:15,584
+You see that I basically used
+
+61
+00:03:16,096 --> 00:03:18,144
+The name created by
+
+62
+00:03:18,400 --> 00:03:20,960
+it's obviously a user is the type of field
+
+63
+00:03:21,728 --> 00:03:26,080
+And the label is created by the user that created this is the description
+
+64
+00:03:26,336 --> 00:03:27,616
+And that's all that's needed
+
+65
+00:03:28,384 --> 00:03:29,920
+For a user type
+
+66
+00:03:30,688 --> 00:03:31,456
+Then
+
+67
+00:03:32,224 --> 00:03:34,272
+In the created date
+
+68
+00:03:34,528 --> 00:03:36,576
+Basically it's a calendar type
+
+69
+00:03:37,344 --> 00:03:38,880
+And I used created
+
+70
+00:03:39,136 --> 00:03:40,416
+The date it was created
+
+71
+00:03:40,928 --> 00:03:45,536
+The label and some of its defaults now these values if you don't know them
+
+72
+00:03:46,048 --> 00:03:48,352
+You can actually go and look
+
+73
+00:03:48,608 --> 00:03:49,888
+At the compiled
+
+74
+00:03:51,424 --> 00:03:53,216
+Field
+
+75
+00:03:53,472 --> 00:03:55,520
+Let me show you that
+
+76
+00:03:56,032 --> 00:04:00,128
+So in the backend of your component that is administrator components
+
+77
+00:04:00,384 --> 00:04:01,920
+Then the relevant component
+
+78
+00:04:02,944 --> 00:04:06,784
+You would open models and then there is a place called forms
+
+79
+00:04:07,552 --> 00:04:09,344
+And you would basically open that
+
+80
+00:04:09,600 --> 00:04:10,880
+And you'd see a list
+
+81
+00:04:11,392 --> 00:04:17,280
+Of forms that correspond to the backend views that you've created so now in our case
+
+82
+00:04:17,536 --> 00:04:18,559
+This job order
+
+83
+00:04:18,815 --> 00:04:19,327
+Is the one
+
+84
+00:04:19,583 --> 00:04:21,375
+You're obviously open the XML
+
+85
+00:04:21,887 --> 00:04:23,167
+So you double click on it
+
+86
+00:04:23,935 --> 00:04:25,471
+And then scrolling down
+
+87
+00:04:25,727 --> 00:04:27,775
+You can look at modified by
+
+88
+00:04:28,799 --> 00:04:30,335
+And some of its default
+
+89
+00:04:30,591 --> 00:04:32,383
+So you gonna overwritten
+
+90
+00:04:32,639 --> 00:04:34,943
+I'm sorry overwrite this value
+
+91
+00:04:35,199 --> 00:04:40,319
+Then you need to update or basically use these values here
+
+92
+00:04:40,575 --> 00:04:43,135
+Make sure this is the only part that is
+
+93
+00:04:43,647 --> 00:04:45,439
+You shouldn't change it if you change it
+
+94
+00:04:45,695 --> 00:04:46,719
+We won't know
+
+95
+00:04:46,975 --> 00:04:47,999
+that you're trying to
+
+96
+00:04:48,255 --> 00:04:49,023
+Overwrite
+
+97
+00:04:49,279 --> 00:04:53,375
+one of Default fields because it basically uses the name
+
+98
+00:04:53,631 --> 00:04:54,911
+As the identifier
+
+99
+00:04:55,679 --> 00:04:56,959
+Ok so back here
+
+100
+00:04:57,215 --> 00:05:00,287
+We basically created the fields that was the first part
+
+101
+00:05:02,079 --> 00:05:03,359
+I'll just close them again
+
+102
+00:05:04,127 --> 00:05:05,151
+And then
+
+103
+00:05:06,175 --> 00:05:08,735
+We would like any normal any other field
+
+104
+00:05:08,991 --> 00:05:10,783
+We simply went to fields
+
+105
+00:05:12,319 --> 00:05:14,879
+And we added those
+
+106
+00:05:15,391 --> 00:05:16,415
+Fields
+
+107
+00:05:17,183 --> 00:05:18,975
+So here you would see
+
+108
+00:05:19,743 --> 00:05:20,767
+you scroll down
+
+109
+00:05:22,559 --> 00:05:25,631
+There's the created date and there is the created by
+
+110
+00:05:26,143 --> 00:05:29,471
+We add both to be shown and also the position
+
+111
+00:05:29,983 --> 00:05:31,263
+and how it should be treated
+
+112
+00:05:31,775 --> 00:05:33,823
+And we said it was be in the left tab
+
+113
+00:05:34,591 --> 00:05:35,871
+Of the 15th
+
+114
+00:05:37,663 --> 00:05:39,199
+Oh yeah that's the other thing
+
+115
+00:05:41,247 --> 00:05:47,391
+If you would like the fields to again display in the same place as before in the edit view
+
+116
+00:05:48,415 --> 00:05:54,559
+Then you would add it to the 15th tab I reckoned that its
+
+117
+00:05:54,815 --> 00:05:58,143
+Very unlikely that somebody would create so many tabs
+
+118
+00:05:58,399 --> 00:05:59,935
+Now what is a tab?
+
+119
+00:06:00,191 --> 00:06:02,239
+If you would to go to the view
+
+120
+00:06:03,775 --> 00:06:07,615
+Then this is tab 1 this tab 2 3 4
+
+121
+00:06:07,871 --> 00:06:09,407
+5 and 6
+
+122
+00:06:10,175 --> 00:06:10,687
+So
+
+123
+00:06:11,455 --> 00:06:14,271
+Since publishing can really vary
+
+124
+00:06:14,783 --> 00:06:15,807
+It wasn't
+
+125
+00:06:16,575 --> 00:06:18,623
+Making any sense to me that I would
+
+126
+00:06:18,879 --> 00:06:20,671
+Targeted in any way
+
+127
+00:06:21,439 --> 00:06:23,487
+Directly as the 5th of the 4th
+
+128
+00:06:23,743 --> 00:06:26,047
+So I took a very high number 15
+
+129
+00:06:26,815 --> 00:06:30,399
+It's not very obvious and this is why I had to make this tutorial
+
+130
+00:06:32,703 --> 00:06:34,751
+If you select the number 15
+
+131
+00:06:35,007 --> 00:06:41,151
+It will basically add these two fields in the same place it would if it had to build it for you
+
+132
+00:06:41,407 --> 00:06:47,551
+But if for some reason you say no I want to also display the field in a different tab
+
+133
+00:06:47,807 --> 00:06:52,671
+You could actually click and say let's say put in in the 3rd tab you click save
+
+134
+00:06:53,183 --> 00:06:55,231
+And and then you would compile
+
+135
+00:06:56,255 --> 00:06:58,047
+The components install it
+
+136
+00:06:58,303 --> 00:06:59,071
+And then
+
+137
+00:07:01,631 --> 00:07:02,911
+You see 1, 2,
+
+138
+00:07:03,167 --> 00:07:04,959
+3 it's in the third tab
+
+139
+00:07:05,215 --> 00:07:05,983
+It's showing up
+
+140
+00:07:06,751 --> 00:07:07,263
+So
+
+141
+00:07:07,775 --> 00:07:13,919
+That's All You Had to Do as they had to say and what tab you would like it now to display if go here you would see
+
+142
+00:07:14,175 --> 00:07:17,247
+It no longer shows in the publish tab the create date
+
+143
+00:07:18,271 --> 00:07:24,415
+Its only created by that shows up here so it literally moves the field to a different tab
+
+144
+00:07:24,671 --> 00:07:26,207
+As well as
+
+145
+00:07:27,999 --> 00:07:29,791
+Now displays the field
+
+146
+00:07:30,303 --> 00:07:31,327
+In the listview
+
+147
+00:07:32,351 --> 00:07:33,119
+And that
+
+148
+00:07:33,375 --> 00:07:39,519
+Simply because you added the value the fields here you said that you wanted to display and you added to the third tab
+
+149
+00:07:39,775 --> 00:07:42,591
+I'm gonna move it back to 15
+
+150
+00:07:44,127 --> 00:07:48,223
+Which is the tab number if you wanted to be in its default place
+
+151
+00:07:48,735 --> 00:07:49,759
+So I click save
+
+152
+00:07:51,807 --> 00:07:52,831
+and then save there
+
+153
+00:07:54,623 --> 00:07:55,647
+compile this install it
+
+154
+00:08:03,071 --> 00:08:05,119
+Basically updating the component
+
+155
+00:08:07,167 --> 00:08:09,215
+Refresh the page and now
+
+156
+00:08:09,471 --> 00:08:14,591
+If we go to where it was it's no longer showing there it's not showing there
+
+157
+00:08:15,359 --> 00:08:21,503
+It is not showing there it's back in published in the correct place that's where it
+
+158
+00:08:21,759 --> 00:08:27,903
+Will usually anyway be set if you don't overwrite it so using the 15th tab
+
+159
+00:08:28,415 --> 00:08:29,951
+As the the target
+
+160
+00:08:30,207 --> 00:08:31,999
+Puts it's in default place
+
+161
+00:08:32,511 --> 00:08:38,399
+And if you use another tab number it removes it from its default place and puts it where you have
+
+162
+00:08:38,655 --> 00:08:44,799
+assigned it to be placed well that is how you can overwrite the custom
+
+163
+00:08:45,055 --> 00:08:48,383
+Added fields Fields of a backend View
+
+164
+00:08:49,663 --> 00:08:50,943
+I hope that will be very helpful
+
+165
+00:08:51,199 --> 00:08:52,223
+Thank you for watching
+

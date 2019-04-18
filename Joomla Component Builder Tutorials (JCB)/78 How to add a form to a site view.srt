@@ -1,0 +1,2592 @@
+1
+00:00:01,024 --> 00:00:03,072
+Ok I would like to
+
+2
+00:00:03,840 --> 00:00:05,888
+Give you a quick demonstration
+
+3
+00:00:06,144 --> 00:00:08,704
+on how to add a form to a site View
+
+4
+00:00:09,728 --> 00:00:10,240
+Now
+
+5
+00:00:10,496 --> 00:00:11,776
+Before I do that
+
+6
+00:00:12,032 --> 00:00:15,872
+I just again want to remind you that the best practice here
+
+7
+00:00:16,128 --> 00:00:20,224
+Is the use an admin view as a site view
+
+8
+00:00:21,248 --> 00:00:25,856
+The reason that is the best practice is because it is the Joomla way of doing it
+
+9
+00:00:26,624 --> 00:00:27,648
+So that means
+
+10
+00:00:28,160 --> 00:00:29,184
+If you
+
+11
+00:00:29,440 --> 00:00:30,720
+Actually want
+
+12
+00:00:30,976 --> 00:00:32,000
+A view
+
+13
+00:00:32,512 --> 00:00:34,560
+Or form if we say form
+
+14
+00:00:34,816 --> 00:00:37,120
+It means in the area where you submit data to be
+
+15
+00:00:37,376 --> 00:00:38,400
+stored with Database
+
+16
+00:00:39,424 --> 00:00:41,472
+If you want that the way to do that is to
+
+17
+00:00:41,984 --> 00:00:46,080
+Add create site view edit create site view for this
+
+18
+00:00:46,592 --> 00:00:47,360
+Admin View
+
+19
+00:00:47,616 --> 00:00:49,920
+So you just tick this box here
+
+20
+00:00:50,176 --> 00:00:54,528
+And it immediately adds it as you know an admin View
+
+21
+00:00:55,552 --> 00:01:00,160
+It moves it into a site view which you can access from the front of the site
+
+22
+00:01:00,928 --> 00:01:07,072
+This is the way that the of the code structure and the way that it's implemented is this
+
+23
+00:01:07,328 --> 00:01:08,096
+Standard way of doing it
+
+24
+00:01:08,864 --> 00:01:10,400
+Now
+
+25
+00:01:11,168 --> 00:01:16,288
+The the way to access that edit area you need to actually in your site view
+
+26
+00:01:16,800 --> 00:01:22,944
+In the I'm going to look here at looks you have to actually add a edit link
+
+27
+00:01:23,712 --> 00:01:24,992
+now this edit link
+
+28
+00:01:25,248 --> 00:01:27,808
+Is something that you need to build
+
+29
+00:01:28,064 --> 00:01:29,344
+It's not being built for you
+
+30
+00:01:30,368 --> 00:01:35,488
+Now I'm building this edit link if you have the demo component in the main get
+
+31
+00:01:36,000 --> 00:01:37,024
+Looks
+
+32
+00:01:37,536 --> 00:01:39,584
+Query I'm building it inside of it
+
+33
+00:01:40,096 --> 00:01:43,424
+Now we can quickly look at how I'm building it
+
+34
+00:01:43,680 --> 00:01:45,984
+By going to your Dynamic gets
+
+35
+00:01:46,752 --> 00:01:48,032
+An opening the looks
+
+36
+00:01:48,544 --> 00:01:52,896
+And will see that there is this place where I'm first getting the actions
+
+37
+00:01:53,664 --> 00:01:59,808
+And then I am checking whether there is a edital permission for this specific
+
+38
+00:02:00,064 --> 00:02:01,088
+user
+
+39
+00:02:01,344 --> 00:02:04,160
+And it true I actually built the link here
+
+40
+00:02:04,416 --> 00:02:05,184
+I'm using
+
+41
+00:02:05,440 --> 00:02:07,488
+J route
+
+42
+00:02:07,744 --> 00:02:09,024
+I'm adding a
+
+43
+00:02:09,280 --> 00:02:10,304
+Task
+
+44
+00:02:10,816 --> 00:02:14,912
+And we are setting up the link here and it's it's a little
+
+45
+00:02:15,168 --> 00:02:15,680
+little link
+
+46
+00:02:15,936 --> 00:02:16,960
+That's being built
+
+47
+00:02:17,216 --> 00:02:17,984
+a link
+
+48
+00:02:18,240 --> 00:02:21,568
+so and if if the user doesn't have permission it's just an empty string
+
+49
+00:02:22,592 --> 00:02:24,640
+Ok so that's where we build
+
+50
+00:02:24,896 --> 00:02:25,408
+The link
+
+51
+00:02:25,664 --> 00:02:28,736
+now you can build it anywhere but I like separating
+
+52
+00:02:28,992 --> 00:02:29,760
+The modelling
+
+53
+00:02:30,016 --> 00:02:31,808
+Of the data from The View
+
+54
+00:02:32,576 --> 00:02:36,160
+It just helps me sort of know ok well this is to
+
+55
+00:02:36,416 --> 00:02:37,440
+Do with the model
+
+56
+00:02:37,952 --> 00:02:38,720
+I'm sitting all that up
+
+57
+00:02:38,976 --> 00:02:39,488
+In there
+
+58
+00:02:39,744 --> 00:02:44,608
+And I know we started seeping in HTML and it's a little bit boundary but
+
+59
+00:02:44,864 --> 00:02:45,376
+Ok
+
+60
+00:02:45,632 --> 00:02:46,400
+Point taken
+
+61
+00:02:46,912 --> 00:02:49,216
+The reality is we
+
+62
+00:02:49,472 --> 00:02:51,008
+We've achieving  it
+
+63
+00:02:51,264 --> 00:02:51,776
+This way at the moment
+
+64
+00:02:52,800 --> 00:02:53,824
+Ok so now
+
+65
+00:02:54,336 --> 00:02:59,712
+You you come this far you've seen this you say no I still want to add my own site form
+
+66
+00:03:00,480 --> 00:03:01,248
+And
+
+67
+00:03:01,760 --> 00:03:03,296
+Well there are two ways to do this
+
+68
+00:03:03,552 --> 00:03:06,112
+The one is if you go into your site view
+
+69
+00:03:06,880 --> 00:03:08,416
+This area here
+
+70
+00:03:09,696 --> 00:03:11,232
+If you have pagination
+
+71
+00:03:12,000 --> 00:03:13,280
+Already is a form
+
+72
+00:03:15,072 --> 00:03:15,584
+So
+
+73
+00:03:17,120 --> 00:03:18,912
+Let's let's let's show you that
+
+74
+00:03:20,192 --> 00:03:21,728
+So I'm gonna open looks again
+
+75
+00:03:22,752 --> 00:03:26,336
+I'm gonna show you here is says list of looks
+
+76
+00:03:26,848 --> 00:03:28,128
+Ok it's a caption
+
+77
+00:03:28,896 --> 00:03:30,432
+And you see that there is no
+
+78
+00:03:30,688 --> 00:03:32,736
+I have added no form values here
+
+79
+00:03:35,040 --> 00:03:35,808
+Where is the look
+
+80
+00:03:36,064 --> 00:03:36,576
+Query
+
+81
+00:03:37,088 --> 00:03:38,624
+If we quickly opened that again
+
+82
+00:03:40,416 --> 00:03:41,952
+Has pagination
+
+83
+00:03:42,464 --> 00:03:43,232
+Set to yes
+
+84
+00:03:44,000 --> 00:03:45,536
+And that's
+
+85
+00:03:46,048 --> 00:03:47,840
+Why it adds a form
+
+86
+00:03:48,352 --> 00:03:49,120
+Even though
+
+87
+00:03:49,376 --> 00:03:51,936
+In here we don't have any button set
+
+88
+00:03:52,192 --> 00:03:55,520
+We have pagination set so if if compiled
+
+89
+00:03:55,776 --> 00:03:58,080
+The code that will be generated will look as follow
+
+90
+00:04:00,384 --> 00:04:04,224
+There is our caption and our demo list all looks
+
+91
+00:04:04,736 --> 00:04:05,504
+There's the form
+
+92
+00:04:07,040 --> 00:04:08,064
+So it's got a form
+
+93
+00:04:09,088 --> 00:04:10,112
+It's got a name
+
+94
+00:04:11,136 --> 00:04:17,280
+It has an ID and if you scroll down it doesn't have a task so you can grab submission of the
+
+95
+00:04:17,536 --> 00:04:18,047
+This form
+
+96
+00:04:18,303 --> 00:04:21,375
+And add your task to directed to the correct route
+
+97
+00:04:21,631 --> 00:04:22,399
+And function
+
+98
+00:04:22,655 --> 00:04:24,703
+It already has a form token
+
+99
+00:04:25,215 --> 00:04:29,055
+And there is the end of the form so you could simply add a button in here
+
+100
+00:04:29,567 --> 00:04:32,383
+And actually submit a form
+
+101
+00:04:32,639 --> 00:04:36,223
+You don't need to add a form again there is already a form
+
+102
+00:04:36,735 --> 00:04:40,319
+And it is already publishing or posting as in its action
+
+103
+00:04:40,575 --> 00:04:41,855
+To this component
+
+104
+00:04:42,367 --> 00:04:43,647
+It is a post for
+
+105
+00:04:44,159 --> 00:04:44,927
+So you could
+
+106
+00:04:45,439 --> 00:04:46,207
+Yeah
+
+107
+00:04:46,463 --> 00:04:51,071
+Actually just Add the trigger if you like
+
+108
+00:04:51,327 --> 00:04:53,119
+And then obviously some JavaScript
+
+109
+00:04:53,631 --> 00:04:55,167
+That when you trigger the button
+
+110
+00:04:55,679 --> 00:04:59,519
+It grabs the form does some validation whatever you want
+
+111
+00:04:59,775 --> 00:05:05,919
+And then adds the task incorrectly and based on the button that's clicked so you could add multiple
+
+112
+00:05:06,175 --> 00:05:06,943
+areas
+
+113
+00:05:07,199 --> 00:05:13,087
+Bind them with IDs and so forth so that would be the one way of doing this
+
+114
+00:05:13,343 --> 00:05:13,855
+And
+
+115
+00:05:14,111 --> 00:05:17,439
+That's practical because then your whole
+
+116
+00:05:18,719 --> 00:05:24,863
+Default View area becomes a place of setting up input values and so forth and you just
+
+117
+00:05:25,119 --> 00:05:26,143
+End here at the bottom
+
+118
+00:05:26,655 --> 00:05:27,423
+With a button
+
+119
+00:05:27,935 --> 00:05:29,983
+Now that button
+
+120
+00:05:30,495 --> 00:05:31,007
+Could
+
+121
+00:05:31,263 --> 00:05:32,287
+Just as well
+
+122
+00:05:32,543 --> 00:05:35,359
+Be a button that you build here
+
+123
+00:05:35,615 --> 00:05:36,639
+So you could have
+
+124
+00:05:36,895 --> 00:05:37,663
+JCB
+
+125
+00:05:38,175 --> 00:05:39,199
+Control
+
+126
+00:05:39,455 --> 00:05:39,967
+The
+
+127
+00:05:40,223 --> 00:05:42,015
+Setup of your controller
+
+128
+00:05:42,527 --> 00:05:44,575
+As well as the setup of your model
+
+129
+00:05:45,087 --> 00:05:46,623
+With this buttons
+
+130
+00:05:47,135 --> 00:05:49,183
+So you could say yes I want to add a button
+
+131
+00:05:49,695 --> 00:05:53,791
+And you can call it submit
+
+132
+00:05:54,303 --> 00:05:57,887
+You can give it a different icon
+
+133
+00:05:58,143 --> 00:05:59,423
+maybe let's say
+
+134
+00:06:02,495 --> 00:06:03,519
+Maybe that
+
+135
+00:06:03,775 --> 00:06:07,615
+Then you can give the the target controller method
+
+136
+00:06:07,871 --> 00:06:09,663
+A name so you could say
+
+137
+00:06:11,455 --> 00:06:12,223
+Save
+
+138
+00:06:14,271 --> 00:06:15,295
+Save my
+
+139
+00:06:15,551 --> 00:06:16,063
+Stuff
+
+140
+00:06:16,319 --> 00:06:16,831
+Like that
+
+141
+00:06:19,135 --> 00:06:20,159
+You can say that
+
+142
+00:06:20,415 --> 00:06:23,487
+How does this where does this button show up
+
+143
+00:06:23,743 --> 00:06:26,815
+And then what type of button is this
+
+144
+00:06:27,839 --> 00:06:29,631
+And I would leave all that
+
+145
+00:06:29,887 --> 00:06:33,215
+Just like that and then I would use this
+
+146
+00:06:33,471 --> 00:06:34,239
+Custom
+
+147
+00:06:34,495 --> 00:06:35,007
+Option
+
+148
+00:06:37,055 --> 00:06:38,079
+Copy
+
+149
+00:06:40,895 --> 00:06:44,223
+And I'll just paste this here at the bottom like that
+
+150
+00:06:44,735 --> 00:06:47,039
+Now add my button in the form
+
+151
+00:06:47,295 --> 00:06:48,575
+Because it's already form
+
+152
+00:06:49,343 --> 00:06:51,903
+So this button will now be in the form
+
+153
+00:06:52,159 --> 00:06:54,463
+And it will actually have what's needed
+
+154
+00:06:54,719 --> 00:06:55,487
+To trigger
+
+155
+00:06:55,743 --> 00:06:57,023
+This controller
+
+156
+00:06:57,791 --> 00:06:59,583
+Here it our controller
+
+157
+00:07:00,095 --> 00:07:01,119
+We need to of course
+
+158
+00:07:01,375 --> 00:07:03,423
+And our function
+
+159
+00:07:05,215 --> 00:07:07,263
+So you have a little controller method
+
+160
+00:07:07,519 --> 00:07:08,031
+And
+
+161
+00:07:08,287 --> 00:07:09,311
+You have to
+
+162
+00:07:10,079 --> 00:07:12,383
+And in the little token validation
+
+163
+00:07:13,151 --> 00:07:15,711
+Get the application get the model
+
+164
+00:07:15,967 --> 00:07:17,759
+you know get the form values
+
+165
+00:07:18,271 --> 00:07:19,039
+Get the input
+
+166
+00:07:19,295 --> 00:07:20,319
+Check the task
+
+167
+00:07:21,087 --> 00:07:23,135
+And then you start going down the list
+
+168
+00:07:23,391 --> 00:07:27,743
+Now I just copied this from another project so you need to update
+
+169
+00:07:28,255 --> 00:07:30,303
+These sort of values
+
+170
+00:07:30,815 --> 00:07:31,327
+To be
+
+171
+00:07:31,583 --> 00:07:32,863
+Related to this
+
+172
+00:07:33,119 --> 00:07:34,399
+Area that you're doing
+
+173
+00:07:35,935 --> 00:07:36,703
+And
+
+174
+00:07:37,215 --> 00:07:37,727
+Then
+
+175
+00:07:37,983 --> 00:07:39,007
+Because we
+
+176
+00:07:39,263 --> 00:07:42,079
+Want to have the option of
+
+177
+00:07:43,615 --> 00:07:45,151
+you know get the form
+
+178
+00:07:45,919 --> 00:07:46,431
+Do all kinds of
+
+179
+00:07:46,687 --> 00:07:47,455
+Neat things
+
+180
+00:07:48,479 --> 00:07:51,807
+This is part of what you need to know and if you don't know how to do this
+
+181
+00:07:52,575 --> 00:07:53,599
+I wouldn't suggest you 
+
+182
+00:07:53,855 --> 00:07:55,135
+Doing it because I will just
+
+183
+00:07:55,391 --> 00:07:55,903
+Make your
+
+184
+00:07:56,159 --> 00:07:56,927
+Application
+
+185
+00:07:57,183 --> 00:07:57,951
+vulnerable
+
+186
+00:07:59,231 --> 00:08:02,815
+To attack their there needs to be a lot of validation here
+
+187
+00:08:03,839 --> 00:08:05,375
+And so here
+
+188
+00:08:05,631 --> 00:08:07,679
+We actually do a model validation on the
+
+189
+00:08:07,935 --> 00:08:08,703
+Formdata
+
+190
+00:08:08,959 --> 00:08:10,495
+This is quite important
+
+191
+00:08:11,007 --> 00:08:13,311
+you need to know how to build a form
+
+192
+00:08:13,823 --> 00:08:14,335
+If you
+
+193
+00:08:14,591 --> 00:08:17,663
+If you gonna use this form validation class
+
+194
+00:08:19,711 --> 00:08:20,223
+So
+
+195
+00:08:20,479 --> 00:08:21,759
+It goes onto
+
+196
+00:08:22,015 --> 00:08:23,295
+Eventually
+
+197
+00:08:23,551 --> 00:08:24,575
+Saving the data
+
+198
+00:08:25,087 --> 00:08:30,207
+If something goes wrong we store the data into the user State so that can be placed back into
+
+199
+00:08:30,463 --> 00:08:31,999
+the form you know that kind of 
+
+200
+00:08:32,255 --> 00:08:33,279
+Behaviour
+
+201
+00:08:33,791 --> 00:08:38,143
+and down here if in everything is good we submit the application
+
+202
+00:08:38,399 --> 00:08:40,959
+Again a method that we build in the
+
+203
+00:08:41,215 --> 00:08:42,239
+Model
+
+204
+00:08:43,263 --> 00:08:46,591
+So this this is a function a method from the model
+
+205
+00:08:47,103 --> 00:08:50,431
+And even there something goes wrong we grab those errors we
+
+206
+00:08:50,687 --> 00:08:53,759
+Push them out to the user we can also save
+
+207
+00:08:54,271 --> 00:08:58,367
+We go on and a few things is on this point everything is good we say great
+
+208
+00:08:58,623 --> 00:08:59,647
+Would be done right
+
+209
+00:09:00,159 --> 00:09:05,023
+And we clear the user state and we redirect wherever we want to go
+
+210
+00:09:05,791 --> 00:09:07,327
+And we clear the application from the
+
+211
+00:09:07,839 --> 00:09:10,655
+Session and we return true so you can
+
+212
+00:09:10,911 --> 00:09:13,727
+Slowly go through this may pause the video
+
+213
+00:09:14,239 --> 00:09:15,519
+Whatever you need to do
+
+214
+00:09:15,775 --> 00:09:17,055
+But this is just
+
+215
+00:09:17,311 --> 00:09:18,591
+Actually generic
+
+216
+00:09:18,847 --> 00:09:22,431
+Implementation on the submission of a form
+
+217
+00:09:22,687 --> 00:09:26,783
+And how it's controller usually would look like so
+
+218
+00:09:27,039 --> 00:09:29,343
+That's really what this is it's not
+
+219
+00:09:30,111 --> 00:09:31,903
+That advanced in fact
+
+220
+00:09:32,415 --> 00:09:34,975
+There might be a many improvements on this to make
+
+221
+00:09:35,231 --> 00:09:36,767
+and even more
+
+222
+00:09:37,023 --> 00:09:39,327
+You know depending on what you need is
+
+223
+00:09:39,583 --> 00:09:41,119
+Now in the model
+
+224
+00:09:41,375 --> 00:09:42,911
+You'll need to add a few methods 
+
+225
+00:09:43,167 --> 00:09:47,263
+Of course which you are calling from your controller right because here
+
+226
+00:09:47,775 --> 00:09:49,823
+you're actually using the model
+
+227
+00:09:50,079 --> 00:09:50,847
+To validate
+
+228
+00:09:51,359 --> 00:09:52,639
+You using the model
+
+229
+00:09:53,151 --> 00:09:54,431
+To get the form
+
+230
+00:09:54,687 --> 00:10:00,063
+You using the model you see that sort of the MVC structure you you separating
+
+231
+00:10:00,319 --> 00:10:04,415
+What happens where which code decides where
+
+232
+00:10:04,671 --> 00:10:09,279
+And so here you are getting the model through the controller methods
+
+233
+00:10:09,535 --> 00:10:10,303
+itself
+
+234
+00:10:11,071 --> 00:10:17,215
+Ok so you'll have to add the the the custom script into the model there's
+
+235
+00:10:17,471 --> 00:10:22,079
+no automation for this you'll have to custom script this
+
+236
+00:10:24,383 --> 00:10:26,175
+Ok again I just
+
+237
+00:10:26,431 --> 00:10:28,735
+Punch the data over from my other project in
+
+238
+00:10:28,991 --> 00:10:29,503
+Here
+
+239
+00:10:30,015 --> 00:10:32,319
+Basically copy pasted it
+
+240
+00:10:32,831 --> 00:10:35,391
+Just because I wanted demonstrate this quickly
+
+241
+00:10:36,671 --> 00:10:42,815
+I had a little function that I build you to sort of get the form because this this
+
+242
+00:10:43,071 --> 00:10:47,935
+Actual site view submission is a dynamically generated
+
+243
+00:10:48,447 --> 00:10:52,287
+A form so the form isn't a static XML
+
+244
+00:10:52,543 --> 00:10:55,615
+It is dynamically generated through this little function
+
+245
+00:10:57,663 --> 00:11:02,527
+And I actually end up building a static XML but I build it through
+
+246
+00:11:02,783 --> 00:11:03,551
+Yeah various methods
+
+247
+00:11:04,575 --> 00:11:06,367
+But that's part of
+
+248
+00:11:06,623 --> 00:11:09,695
+Well I would say your own homework
+
+249
+00:11:09,951 --> 00:11:11,743
+You need to figure out how to do this
+
+250
+00:11:13,791 --> 00:11:15,839
+I don't want to because
+
+251
+00:11:16,351 --> 00:11:20,959
+You know there's some things if you haven't going through the process of seeing how and why
+
+252
+00:11:21,471 --> 00:11:27,615
+you're always gonna be unsure of why why these things work the way they do and so I wanna save you from that
+
+253
+00:11:27,871 --> 00:11:28,383
+I want to
+
+254
+00:11:28,895 --> 00:11:31,711
+Encourage you to really go and see why
+
+255
+00:11:31,967 --> 00:11:34,527
+Why is should this happen this way
+
+256
+00:11:34,783 --> 00:11:37,599
+There's a little sort of cheat to this I know
+
+257
+00:11:37,855 --> 00:11:39,135
+And that is
+
+258
+00:11:39,903 --> 00:11:46,047
+The compiler component JCB that has a compiler
+
+259
+00:11:46,559 --> 00:11:47,071
+View
+
+260
+00:11:47,839 --> 00:11:49,119
+And we've made that public
+
+261
+00:11:49,887 --> 00:11:51,423
+And in the compiler view
+
+262
+00:11:51,679 --> 00:11:52,703
+We build a form
+
+263
+00:11:53,215 --> 00:11:58,335
+And we display a form in a admin custom admin View
+
+264
+00:12:00,127 --> 00:12:03,199
+Custom admin view is very similar to a site view
+
+265
+00:12:03,455 --> 00:12:05,247
+It's a little bit more limited
+
+266
+00:12:05,503 --> 00:12:08,575
+But site views have more power in my opinion
+
+267
+00:12:09,343 --> 00:12:13,695
+But it's gives you the site view functionality of
+
+268
+00:12:13,951 --> 00:12:16,767
+you know maneuver and making your own thing happen
+
+269
+00:12:17,279 --> 00:12:18,047
+In the backend
+
+270
+00:12:18,815 --> 00:12:22,143
+Ok so that was the purpose of the custom admin view
+
+271
+00:12:22,399 --> 00:12:23,679
+So here
+
+272
+00:12:23,935 --> 00:12:24,959
+All I've done
+
+273
+00:12:25,215 --> 00:12:26,495
+Is I've created a button
+
+274
+00:12:27,007 --> 00:12:29,055
+I've created a controller
+
+275
+00:12:29,311 --> 00:12:31,359
+I've set up some methods in the model
+
+276
+00:12:31,871 --> 00:12:34,175
+And at the end of the day
+
+277
+00:12:34,687 --> 00:12:40,831
+Now I have placed the button which is really the key and I need to now to
+
+278
+00:12:41,087 --> 00:12:41,855
+Add a form here
+
+279
+00:12:42,111 --> 00:12:46,207
+This needs to be replaced with a form which is going to be submitted
+
+280
+00:12:47,487 --> 00:12:49,791
+With this button I'm not gonna do that
+
+281
+00:12:50,303 --> 00:12:51,839
+I trust you can do that yourself
+
+282
+00:12:52,095 --> 00:12:54,911
+I'm gonna just save this and compile it
+
+283
+00:12:55,423 --> 00:12:56,703
+So you can see
+
+284
+00:12:56,959 --> 00:12:57,727
+The
+
+285
+00:12:58,495 --> 00:12:59,263
+The code
+
+286
+00:12:59,775 --> 00:13:01,567
+Well well when it comes out
+
+287
+00:13:01,823 --> 00:13:03,103
+With that button then
+
+288
+00:13:03,359 --> 00:13:03,871
+Place
+
+289
+00:13:05,919 --> 00:13:07,199
+So here we have it
+
+290
+00:13:07,967 --> 00:13:08,991
+The form is still 
+
+291
+00:13:09,247 --> 00:13:10,783
+Intact and here is our button
+
+292
+00:13:12,063 --> 00:13:14,367
+Basically renders the toolbar
+
+293
+00:13:14,879 --> 00:13:18,207
+So you might wanna see ok well where is this happening
+
+294
+00:13:18,463 --> 00:13:21,279
+Well it's happening in the view.HTML file
+
+295
+00:13:22,047 --> 00:13:24,863
+so you'll come down here and you'd see it says
+
+296
+00:13:25,119 --> 00:13:26,143
+Add toolbar
+
+297
+00:13:26,655 --> 00:13:27,167
+And it's a
+
+298
+00:13:27,679 --> 00:13:28,191
+Local
+
+299
+00:13:28,703 --> 00:13:30,751
+Method so we could scroll down
+
+300
+00:13:31,263 --> 00:13:34,847
+And see o here's the add toolbar
+
+301
+00:13:35,359 --> 00:13:37,151
+And here
+
+302
+00:13:37,919 --> 00:13:38,687
+It is
+
+303
+00:13:38,943 --> 00:13:41,503
+Setting up the custom button
+
+304
+00:13:42,015 --> 00:13:42,527
+Look
+
+305
+00:13:43,039 --> 00:13:44,063
+Save my stuff
+
+306
+00:13:44,319 --> 00:13:45,087
+Add box
+
+307
+00:13:46,367 --> 00:13:48,927
+Is the icon there is the button name
+
+308
+00:13:49,439 --> 00:13:50,719
+And it adds it
+
+309
+00:13:52,511 --> 00:13:54,815
+It also if there is a helper
+
+310
+00:13:57,119 --> 00:13:59,167
+A helper menu added to this
+
+311
+00:13:59,423 --> 00:14:00,191
+Area
+
+312
+00:14:00,447 --> 00:14:03,007
+You also add the helper URL as a button
+
+313
+00:14:04,543 --> 00:14:06,335
+And then it adds this whole
+
+314
+00:14:06,847 --> 00:14:07,359
+Joomla
+
+315
+00:14:08,383 --> 00:14:09,151
+Toolbar
+
+316
+00:14:09,407 --> 00:14:11,199
+Get instance to the toolbar
+
+317
+00:14:11,711 --> 00:14:14,783
+Because you're it loads it then registers a lot of stuff
+
+318
+00:14:15,039 --> 00:14:15,551
+And then
+
+319
+00:14:16,063 --> 00:14:17,087
+throws it in here
+
+320
+00:14:17,599 --> 00:14:19,391
+And basically That's what we rendering here
+
+321
+00:14:20,671 --> 00:14:21,951
+That's how we get the button
+
+322
+00:14:22,463 --> 00:14:26,559
+To work alongside all the controllers stuff
+
+323
+00:14:26,815 --> 00:14:30,399
+Now if you go to the code the open the controller file
+
+324
+00:14:30,911 --> 00:14:31,423
+Then
+
+325
+00:14:32,191 --> 00:14:34,751
+You'll see that there is now a new file called looks
+
+326
+00:14:35,007 --> 00:14:36,543
+Which wasn't there before
+
+327
+00:14:37,055 --> 00:14:39,871
+So JCB just because of using its own buttons
+
+328
+00:14:40,127 --> 00:14:41,663
+Added your controller for you
+
+329
+00:14:41,919 --> 00:14:44,735
+And also if you do that with opening
+
+330
+00:14:45,247 --> 00:14:46,271
+The the models
+
+331
+00:14:46,783 --> 00:14:49,855
+There is the 4 the looks model
+
+332
+00:14:50,111 --> 00:14:52,927
+So we first open here we scroll down and low and behold
+
+333
+00:14:53,439 --> 00:14:54,719
+There is our
+
+334
+00:14:55,743 --> 00:14:56,511
+Method
+
+335
+00:14:57,023 --> 00:14:58,303
+Save my stuff
+
+336
+00:14:58,559 --> 00:15:01,375
+And there is everything we coded right into the model
+
+337
+00:15:02,399 --> 00:15:04,703
+So you actually have allow edit
+
+338
+00:15:05,215 --> 00:15:07,007
+Available here
+
+339
+00:15:07,519 --> 00:15:08,287
+Ok but
+
+340
+00:15:10,847 --> 00:15:13,663
+Ok so this is been deactivated to all
+
+341
+00:15:13,919 --> 00:15:14,687
+to false I see
+
+342
+00:15:15,455 --> 00:15:16,223
+Yeah
+
+343
+00:15:16,479 --> 00:15:18,271
+So it's a security measure
+
+344
+00:15:18,527 --> 00:15:19,039
+to
+
+345
+00:15:19,295 --> 00:15:21,087
+Allow no tampering
+
+346
+00:15:21,599 --> 00:15:23,647
+You need to validate everything in your
+
+347
+00:15:24,671 --> 00:15:25,183
+Function here
+
+348
+00:15:25,951 --> 00:15:28,767
+Now if you go to the looks model
+
+349
+00:15:29,023 --> 00:15:30,815
+You'll see that it also
+
+350
+00:15:31,327 --> 00:15:32,607
+Updated it with our
+
+351
+00:15:32,863 --> 00:15:33,631
+Get form
+
+352
+00:15:33,887 --> 00:15:36,703
+And so everything is been placed into the code
+
+353
+00:15:37,215 --> 00:15:38,239
+From the interface
+
+354
+00:15:39,519 --> 00:15:40,031
+So
+
+355
+00:15:40,287 --> 00:15:41,311
+if you look here in the 
+
+356
+00:15:41,567 --> 00:15:42,079
+Interface
+
+357
+00:15:43,615 --> 00:15:46,175
+It'd It'd added the
+
+358
+00:15:46,687 --> 00:15:47,967
+The necessary code
+
+359
+00:15:48,479 --> 00:15:49,247
+in the correct place
+
+360
+00:15:49,759 --> 00:15:51,295
+Now you could do all this
+
+361
+00:15:51,551 --> 00:15:53,343
+Without using our buttons
+
+362
+00:15:54,111 --> 00:15:56,159
+You don't need to use this button
+
+363
+00:15:56,415 --> 00:16:02,047
+I mean you could dump that and still just use it to setup your controller and your model information
+
+364
+00:16:03,071 --> 00:16:04,607
+You don't need to use the buttons
+
+365
+00:16:04,863 --> 00:16:09,215
+The button is just a little cheat in my opinion for you to save a little bit of
+
+366
+00:16:10,495 --> 00:16:13,055
+Well to ride on the back of
+
+367
+00:16:13,311 --> 00:16:14,335
+The actual
+
+368
+00:16:15,871 --> 00:16:16,383
+J
+
+369
+00:16:16,895 --> 00:16:19,455
+Toolbar helper class
+
+370
+00:16:19,711 --> 00:16:20,479
+Ok
+
+371
+00:16:20,735 --> 00:16:23,039
+So you could hand code your button in here
+
+372
+00:16:23,295 --> 00:16:25,599
+And do your own JavaScript
+
+373
+00:16:26,111 --> 00:16:26,623
+And so forth
+
+374
+00:16:26,879 --> 00:16:28,927
+So this is the first way
+
+375
+00:16:29,439 --> 00:16:29,951
+Or the
+
+376
+00:16:30,463 --> 00:16:31,743
+The one way of doing it
+
+377
+00:16:32,255 --> 00:16:34,815
+Is to actually think of this whole area
+
+378
+00:16:35,071 --> 00:16:35,839
+As a form
+
+379
+00:16:36,607 --> 00:16:38,399
+Now there's another way to do this
+
+380
+00:16:38,655 --> 00:16:44,799
+And this is the way which I think will work ideally for let say a search form
+
+381
+00:16:45,055 --> 00:16:45,567
+or something like that
+
+382
+00:16:46,591 --> 00:16:49,407
+And that is to actually do it
+
+383
+00:16:49,919 --> 00:16:50,943
+A little bit of
+
+384
+00:16:51,455 --> 00:16:52,735
+Workaround way
+
+385
+00:16:54,527 --> 00:17:00,671
+In the PHP tab in the custom view script this is the custom
+
+386
+00:17:00,927 --> 00:17:02,975
+View script area so if you open this
+
+387
+00:17:03,487 --> 00:17:07,839
+It says the PHP script that must run in the head of the file
+
+388
+00:17:08,095 --> 00:17:09,375
+So I'm gonna add a little
+
+389
+00:17:09,631 --> 00:17:12,959
+We are here do this
+
+390
+00:17:13,215 --> 00:17:14,495
+And save and close
+
+391
+00:17:15,263 --> 00:17:19,359
+And then compile this and let's go look at the code where that comes out
+
+392
+00:17:21,407 --> 00:17:22,943
+Ok so the code
+
+393
+00:17:23,967 --> 00:17:26,527
+Where we here
+
+394
+00:17:27,295 --> 00:17:29,087
+So we are here
+
+395
+00:17:29,343 --> 00:17:30,367
+That's where it comes out
+
+396
+00:17:30,623 --> 00:17:31,391
+So it's above
+
+397
+00:17:31,647 --> 00:17:32,927
+The existing form
+
+398
+00:17:34,719 --> 00:17:35,487
+And so
+
+399
+00:17:35,743 --> 00:17:37,023
+We could
+
+400
+00:17:37,279 --> 00:17:38,815
+Break out of this
+
+401
+00:17:39,583 --> 00:17:41,631
+PHP area
+
+402
+00:17:42,399 --> 00:17:46,751
+We could decide Ok we wanna add a new form but we wanna add it on top of this
+
+403
+00:17:47,263 --> 00:17:48,031
+So we could
+
+404
+00:17:48,287 --> 00:17:50,079
+You know end that PHP
+
+405
+00:17:50,335 --> 00:17:51,615
+Do our form
+
+406
+00:17:56,991 --> 00:17:58,271
+And then at the end
+
+407
+00:17:59,295 --> 00:18:01,343
+Just open the PHP again
+
+408
+00:18:01,599 --> 00:18:05,951
+Because that we have you can't remove this tag this is added by JCB
+
+409
+00:18:06,975 --> 00:18:09,791
+What you could do though you could now over here
+
+410
+00:18:11,071 --> 00:18:12,351
+Do some HTML
+
+411
+00:18:12,607 --> 00:18:13,887
+Sorry PHP
+
+412
+00:18:15,679 --> 00:18:17,215
+Details you know
+
+413
+00:18:19,007 --> 00:18:19,775
+Whatever you like
+
+414
+00:18:21,311 --> 00:18:27,455
+And so this is the code that you would now add into JCB so we'll take this just
+
+415
+00:18:27,711 --> 00:18:30,015
+To show you
+
+416
+00:18:30,783 --> 00:18:33,599
+And save here and and go back to JCB
+
+417
+00:18:36,159 --> 00:18:38,975
+Open the looks area
+
+418
+00:18:40,511 --> 00:18:43,071
+Then replace our we are here
+
+419
+00:18:43,583 --> 00:18:44,095
+With
+
+420
+00:18:44,863 --> 00:18:48,191
+Our Little Form
+
+421
+00:18:48,959 --> 00:18:49,727
+And save
+
+422
+00:18:51,519 --> 00:18:53,567
+So that will now effectively
+
+423
+00:18:54,335 --> 00:18:57,151
+Place this form outside of the other form
+
+424
+00:18:57,663 --> 00:18:58,943
+Above your content
+
+425
+00:18:59,199 --> 00:19:02,271
+Now you need to ensure that it's name is different
+
+426
+00:19:02,783 --> 00:19:04,319
+And it's ID
+
+427
+00:19:05,087 --> 00:19:08,415
+And you can still use the buttons
+
+428
+00:19:08,927 --> 00:19:11,231
+To manage your controller and model
+
+429
+00:19:11,487 --> 00:19:11,999
+And then
+
+430
+00:19:12,255 --> 00:19:14,815
+Rename this accordingly
+
+431
+00:19:15,583 --> 00:19:17,887
+So that the task actually fits
+
+432
+00:19:18,399 --> 00:19:19,935
+The controller and
+
+433
+00:19:20,447 --> 00:19:20,959
+Function
+
+434
+00:19:21,727 --> 00:19:25,823
+I which is really what is necessary with this area here
+
+435
+00:19:26,079 --> 00:19:27,871
+Or you could even
+
+436
+00:19:30,943 --> 00:19:32,735
+Add the toolbar here
+
+437
+00:19:33,247 --> 00:19:36,831
+And obviously setup your button
+
+438
+00:19:37,087 --> 00:19:39,647
+And then you are toolbar will actually
+
+439
+00:19:39,903 --> 00:19:40,927
+Show up here
+
+440
+00:19:41,695 --> 00:19:42,463
+Because it's a custom
+
+441
+00:19:42,719 --> 00:19:43,231
+Placeholder
+
+442
+00:19:44,255 --> 00:19:46,303
+So that would be another way
+
+443
+00:19:46,559 --> 00:19:48,607
+To get the button into this form
+
+444
+00:19:49,375 --> 00:19:51,167
+And then obviously you won't be using it
+
+445
+00:19:51,423 --> 00:19:52,703
+Here as well it will
+
+446
+00:19:53,983 --> 00:19:54,751
+break things
+
+447
+00:19:56,543 --> 00:19:58,591
+But if you add it in here it should work
+
+448
+00:19:59,359 --> 00:20:00,383
+Ok so then
+
+449
+00:20:00,639 --> 00:20:02,431
+That is how you could set up your form
+
+450
+00:20:02,687 --> 00:20:05,759
+You could save and then we can compile this
+
+451
+00:20:06,527 --> 00:20:07,551
+and install
+
+452
+00:20:08,319 --> 00:20:11,647
+then looking at the code we have
+
+453
+00:20:12,159 --> 00:20:13,439
+So looking at the code
+
+454
+00:20:13,951 --> 00:20:19,839
+When now have the form here with the rendering of the toolbar as we expected
+
+455
+00:20:20,607 --> 00:20:21,119
+And
+
+456
+00:20:21,375 --> 00:20:22,143
+That's really
+
+457
+00:20:22,399 --> 00:20:24,959
+As easy as he is to add a form
+
+458
+00:20:25,215 --> 00:20:25,983
+to site view
+
+459
+00:20:26,751 --> 00:20:32,895
+You of course now I need to take care of sanitation take care of where these data goes and what the model does
+
+460
+00:20:33,151 --> 00:20:36,479
+With it and how it should return and what it should return
+
+461
+00:20:36,991 --> 00:20:42,623
+And all of that is now basically what needs to be done in the controller and in the model
+
+462
+00:20:43,135 --> 00:20:43,903
+Of this
+
+463
+00:20:44,159 --> 00:20:44,671
+Forms
+
+464
+00:20:45,183 --> 00:20:45,951
+Receiving end
+
+465
+00:20:46,719 --> 00:20:52,351
+Oh well I trust that this would really help your on your way and adding forms to site view
+
+466
+00:20:53,375 --> 00:20:54,399
+It's really easy
+
+467
+00:20:54,655 --> 00:20:56,447
+I'm I've done it many times
+
+468
+00:20:56,959 --> 00:20:57,983
+Because of
+
+469
+00:20:58,239 --> 00:21:00,799
+Various reasons people want to have
+
+470
+00:21:01,311 --> 00:21:04,895
+Registration forms or they want to have a valuation forms
+
+471
+00:21:05,663 --> 00:21:06,943
+And they want that data split up in
+
+472
+00:21:07,199 --> 00:21:08,479
+Save to different tables and
+
+473
+00:21:08,735 --> 00:21:10,015
+Used in different ways
+
+474
+00:21:10,527 --> 00:21:11,807
+So there is often the need to
+
+475
+00:21:12,063 --> 00:21:12,575
+To do this
+
+476
+00:21:13,087 --> 00:21:17,440
+There's just a little side note that I wanna make before I actually close up this
+
+477
+00:21:18,208 --> 00:21:20,768
+And it's by going to component builder itself
+
+478
+00:21:21,536 --> 00:21:23,328
+In the admin area
+
+479
+00:21:24,096 --> 00:21:27,680
+And then opening its own
+
+480
+00:21:27,936 --> 00:21:29,216
+Custom View
+
+481
+00:21:29,984 --> 00:21:30,752
+admin View
+
+482
+00:21:31,520 --> 00:21:32,288
+This
+
+483
+00:21:32,800 --> 00:21:35,360
+Compiler I spoke about it earlier
+
+484
+00:21:35,872 --> 00:21:38,688
+But I want to give you a little bit of a
+
+485
+00:21:38,944 --> 00:21:42,272
+Heads up on how to build a form the right way
+
+486
+00:21:43,552 --> 00:21:46,880
+So in every form you have what is called attributes
+
+487
+00:21:47,136 --> 00:21:48,672
+Sorry never form field
+
+488
+00:21:49,696 --> 00:21:50,464
+Now
+
+489
+00:21:50,976 --> 00:21:52,256
+The attributes themselves
+
+490
+00:21:53,024 --> 00:21:53,536
+are
+
+491
+00:21:54,816 --> 00:21:58,144
+What type of field it should be what should be the name what should be the
+
+492
+00:21:58,400 --> 00:22:04,032
+Label what should be the class description all these kind of things and it depends on what type of field you build
+
+493
+00:22:04,544 --> 00:22:07,360
+On whether it will have options and so forth
+
+494
+00:22:08,128 --> 00:22:08,640
+Now
+
+495
+00:22:08,896 --> 00:22:11,200
+JCB has what we call a field
+
+496
+00:22:11,712 --> 00:22:12,992
+Get field object
+
+497
+00:22:13,248 --> 00:22:13,760
+Method
+
+498
+00:22:14,016 --> 00:22:16,576
+Which is by Default part of a helper class
+
+499
+00:22:17,344 --> 00:22:19,648
+Now the get field helper method
+
+500
+00:22:20,160 --> 00:22:26,304
+Takes attributes it takes the default value which could be the saved value that you've 
+
+501
+00:22:26,560 --> 00:22:31,168
+grabbed from the database and it takes the options if there is options
+
+502
+00:22:32,192 --> 00:22:34,240
+And then it actually builds
+
+503
+00:22:34,752 --> 00:22:35,264
+The
+
+504
+00:22:35,520 --> 00:22:36,544
+Field for you
+
+505
+00:22:36,800 --> 00:22:41,408
+In the Joomla correct conventional way if you wanna I don't have that's right way of saying it but
+
+506
+00:22:42,688 --> 00:22:43,968
+Does it the right way
+
+507
+00:22:44,224 --> 00:22:45,248
+And uses the
+
+508
+00:22:45,504 --> 00:22:46,528
+It's  jform helper
+
+509
+00:22:46,784 --> 00:22:52,160
+Class it loads the field Type by getting it from the attributes
+
+510
+00:22:52,416 --> 00:22:58,560
+The type and obviously if it's not been set it will return false so it wants the type in your attributes
+
+511
+00:23:00,864 --> 00:23:01,376
+Then
+
+512
+00:23:01,888 --> 00:23:08,032
+There is a simple XML field being created here then there is a XML
+
+513
+00:23:08,288 --> 00:23:09,312
+Attributes
+
+514
+00:23:09,568 --> 00:23:11,872
+Method which you could also look at
+
+515
+00:23:12,128 --> 00:23:16,992
+This is it which then adds the attributes to the XML
+
+516
+00:23:17,504 --> 00:23:19,040
+Values
+
+517
+00:23:20,064 --> 00:23:20,576
+And
+
+518
+00:23:21,088 --> 00:23:23,648
+Gives it back to our
+
+519
+00:23:26,208 --> 00:23:27,488
+Well because it's a
+
+520
+00:23:28,000 --> 00:23:29,536
+What you call it
+
+521
+00:23:29,792 --> 00:23:33,120
+Reference value this XML
+
+522
+00:23:33,376 --> 00:23:36,960
+It doesn't need to return it to anything it updated it by reference
+
+523
+00:23:37,472 --> 00:23:43,616
+Then it also checks whether there's options and if there is option there is also an XML add
+
+524
+00:23:43,872 --> 00:23:44,896
+Options function
+
+525
+00:23:45,408 --> 00:23:47,968
+Which adds the options to the XML
+
+526
+00:23:48,224 --> 00:23:50,528
+And then it takes this
+
+527
+00:23:50,784 --> 00:23:52,832
+Load field type
+
+528
+00:23:53,088 --> 00:23:55,136
+And it actually sets up the field
+
+529
+00:23:55,392 --> 00:23:57,440
+And returns the field as an object
+
+530
+00:23:58,720 --> 00:23:59,744
+This then again
+
+531
+00:24:00,000 --> 00:24:02,560
+Gets placed into a form array
+
+532
+00:24:03,584 --> 00:24:04,864
+In this little method in
+
+533
+00:24:05,120 --> 00:24:09,984
+You can look at this in the compiler in that .HTML.php file
+
+534
+00:24:10,752 --> 00:24:13,056
+So we building a whole bunch of
+
+535
+00:24:13,312 --> 00:24:16,640
+Form fields in an array
+
+536
+00:24:17,408 --> 00:24:19,200
+Then if we go to the template
+
+537
+00:24:20,224 --> 00:24:24,576
+We're basically gonna scroll down scroll down
+
+538
+00:24:24,832 --> 00:24:26,112
+And over here
+
+539
+00:24:26,368 --> 00:24:27,392
+We see that there's 
+
+540
+00:24:27,648 --> 00:24:30,464
+Form we look the form fields
+
+541
+00:24:31,232 --> 00:24:33,792
+We add the correct HTML
+
+542
+00:24:34,048 --> 00:24:37,120
+Surrounding the fields because this is how
+
+543
+00:24:37,376 --> 00:24:40,960
+you know controller group control label controls
+
+544
+00:24:41,472 --> 00:24:43,776
+This is how Joomla usually sets up a field
+
+545
+00:24:44,288 --> 00:24:47,104
+Then we Echo the label and we Echo the output
+
+546
+00:24:47,616 --> 00:24:53,504
+Sorry the input and then we eventually load the whole form onto the page
+
+547
+00:24:54,272 --> 00:24:55,296
+Through a more
+
+548
+00:24:56,832 --> 00:24:57,856
+Yeah A more
+
+549
+00:24:58,112 --> 00:25:01,440
+Easily readable what's going on here way
+
+550
+00:25:02,208 --> 00:25:08,352
+And it's still obviously being placed inside of the form because we are assuming that
+
+551
+00:25:09,632 --> 00:25:12,192
+We are we doing all this
+
+552
+00:25:12,704 --> 00:25:13,472
+Inside of the form
+
+553
+00:25:14,752 --> 00:25:20,896
+So there is a better way of building form input values that's all I'm saying and that is to let JCB
+
+554
+00:25:21,408 --> 00:25:23,200
+You're would rather let
+
+555
+00:25:23,456 --> 00:25:24,736
+Joomla do it for you
+
+556
+00:25:25,248 --> 00:25:29,856
+And so the only thing that you need to know about is actually this get field object
+
+557
+00:25:30,624 --> 00:25:34,464
+Which works quite easily with attributes now
+
+558
+00:25:34,720 --> 00:25:37,536
+You see that here we have a label
+
+559
+00:25:38,048 --> 00:25:39,840
+And it already has the
+
+560
+00:25:40,096 --> 00:25:41,120
+You know
+
+561
+00:25:41,376 --> 00:25:42,144
+The correct
+
+562
+00:25:42,400 --> 00:25:43,936
+Language string
+
+563
+00:25:44,448 --> 00:25:47,264
+And that's also quite easy to do
+
+564
+00:25:47,776 --> 00:25:48,288
+Now
+
+565
+00:25:48,800 --> 00:25:52,896
+You all know by now that you can get JCB as a mapped component
+
+566
+00:25:53,152 --> 00:25:53,920
+In JCB
+
+567
+00:25:55,968 --> 00:25:58,784
+I don't know if I should demonstrate that to you but
+
+568
+00:25:59,040 --> 00:25:59,552
+Maybe
+
+569
+00:25:59,808 --> 00:26:03,904
+Well I don't wanna make this video too long so I'm gonna do it very quickly
+
+570
+00:26:05,696 --> 00:26:11,840
+So back at JCB I'm gonna simply go to Joomla components and I'm gonna say import JCB
+
+571
+00:26:12,096 --> 00:26:12,608
+Package
+
+572
+00:26:13,376 --> 00:26:16,192
+Then I'm gonna go and I'm gonna actually select
+
+573
+00:26:16,704 --> 00:26:19,008
+component Builder
+
+574
+00:26:19,520 --> 00:26:20,032
+This one
+
+575
+00:26:20,544 --> 00:26:22,080
+And I'm gonna get the package
+
+576
+00:26:23,104 --> 00:26:29,248
+Then I'm gonna Force the local update I'm gonna add the package key which you would have received from us if you followed
+
+577
+00:26:29,504 --> 00:26:32,832
+The correct path in getting that key if you haven't got it
+
+578
+00:26:33,088 --> 00:26:36,416
+Just simply click here and do what it tells you and you'll get a key
+
+579
+00:26:37,440 --> 00:26:38,976
+Then I'll gonna click continue
+
+580
+00:26:39,488 --> 00:26:43,840
+And basically import the whole JCB mapped in JCB
+
+581
+00:26:46,656 --> 00:26:52,800
+So we have the component now mapped here I'm gonna quickly go to the customer admin View bear with me we are nearly done
+
+582
+00:26:53,824 --> 00:26:56,640
+We're gonna open the compiler custom admin view
+
+583
+00:26:56,896 --> 00:26:58,688
+Go to PHP scroll down
+
+584
+00:26:59,712 --> 00:27:03,552
+And here you see the method that being used to get that
+
+585
+00:27:03,808 --> 00:27:07,392
+Language string correctly setup is just text
+
+586
+00:27:08,160 --> 00:27:09,952
+With these two dots underscore
+
+587
+00:27:10,720 --> 00:27:11,232
+And that's it
+
+588
+00:27:12,256 --> 00:27:13,024
+Obviously also
+
+589
+00:27:13,280 --> 00:27:14,304
+This one here
+
+590
+00:27:15,072 --> 00:27:16,864
+So that's how you set up a just text
+
+591
+00:27:17,120 --> 00:27:19,680
+To what JCB then does is it
+
+592
+00:27:19,936 --> 00:27:20,448
+Take this
+
+593
+00:27:20,704 --> 00:27:21,216
+String
+
+594
+00:27:21,472 --> 00:27:23,776
+It's puts it into your language file
+
+595
+00:27:24,288 --> 00:27:24,800
+And
+
+596
+00:27:25,312 --> 00:27:26,592
+Just cranks out
+
+597
+00:27:26,848 --> 00:27:27,616
+The uppercase
+
+598
+00:27:27,872 --> 00:27:28,896
+Related value
+
+599
+00:27:29,408 --> 00:27:32,992
+Which is what you want to give to the field when you're being built
+
+600
+00:27:33,504 --> 00:27:37,088
+You don't want to give it
+
+601
+00:27:37,344 --> 00:27:38,368
+Yeah
+
+602
+00:27:38,624 --> 00:27:39,392
+The actual
+
+603
+00:27:40,160 --> 00:27:40,672
+Jtext response
+
+604
+00:27:41,184 --> 00:27:43,232
+You wanna give it the upper case
+
+605
+00:27:43,488 --> 00:27:47,584
+Values because that how it's been given to it from the XML file usually
+
+606
+00:27:48,096 --> 00:27:52,448
+Ok so this is where you can come and look and how to build your own form
+
+607
+00:27:52,960 --> 00:27:53,472
+Fields
+
+608
+00:27:54,240 --> 00:27:56,288
+And then actually easily
+
+609
+00:27:57,056 --> 00:27:58,080
+Grab them
+
+610
+00:27:58,592 --> 00:28:00,384
+Onto your
+
+611
+00:28:02,432 --> 00:28:03,712
+Your custom buttons
+
+612
+00:28:04,224 --> 00:28:04,992
+and the compiler
+
+613
+00:28:05,248 --> 00:28:07,552
+Everything and here
+
+614
+00:28:07,808 --> 00:28:08,576
+Scroll down
+
+615
+00:28:09,344 --> 00:28:12,672
+You'll see ok so this is where we're echoing it out
+
+616
+00:28:13,184 --> 00:28:19,328
+So this little cheat sheet if you forget about everything you can come back here and if we find better ways to do
+
+617
+00:28:19,584 --> 00:28:25,216
+This we'll obviously improve this area and as you can see I'm simply setting up my own little form here
+
+618
+00:28:25,728 --> 00:28:28,800
+Because this view doesn't have pagination
+
+619
+00:28:29,312 --> 00:28:33,664
+We don't have any form conflicts with fighting with each other who's the boss or whatever
+
+620
+00:28:33,920 --> 00:28:40,064
+And we still have our JavaScript up here that deals with our submission
+
+621
+00:28:40,320 --> 00:28:43,648
+And checks whether everything is fine and cranks out
+
+622
+00:28:43,904 --> 00:28:44,928
+on whatever it wants
+
+623
+00:28:45,952 --> 00:28:47,488
+And the way we want it so
+
+624
+00:28:47,744 --> 00:28:52,608
+All that is here and could be used right into a site view with little bit adaptation
+
+625
+00:28:52,864 --> 00:28:54,912
+to your application purposes
+
+626
+00:28:56,192 --> 00:28:57,984
+So as well as the buttons and
+
+627
+00:28:59,264 --> 00:29:00,032
+And some of the 
+
+628
+00:29:00,288 --> 00:29:00,800
+Compiler
+
+629
+00:29:01,056 --> 00:29:04,128
+You see because you could still use the the controller 
+
+630
+00:29:04,384 --> 00:29:05,152
+To deal with
+
+631
+00:29:05,664 --> 00:29:07,456
+Like in this case the compiler
+
+632
+00:29:07,968 --> 00:29:11,040
+Where you're buttons only we'll only have a button
+
+633
+00:29:11,296 --> 00:29:12,832
+To clear the temporary folder
+
+634
+00:29:13,088 --> 00:29:15,648
+Which is also a function there it is
+
+635
+00:29:15,904 --> 00:29:18,464
+But the buttons aren't being used
+
+636
+00:29:18,720 --> 00:29:19,744
+for
+
+637
+00:29:20,000 --> 00:29:21,792
+For this compiler
+
+638
+00:29:22,304 --> 00:29:24,608
+It's actually being done through the form itself
+
+639
+00:29:24,864 --> 00:29:25,888
+I say you can look
+
+640
+00:29:26,144 --> 00:29:32,032
+And how we set up the form to achieve that which is quite simple just make the task
+
+641
+00:29:32,288 --> 00:29:32,800
+Correct
+
+642
+00:29:33,056 --> 00:29:34,848
+And then over here in your
+
+643
+00:29:35,104 --> 00:29:35,872
+JavaScript
+
+644
+00:29:36,128 --> 00:29:37,152
+We deal with that as well
+
+645
+00:29:37,920 --> 00:29:42,528
+Ok well thanks for watching that was a quick demonstration
+
+646
+00:29:42,784 --> 00:29:46,112
+On how to add a form to a site view
+
+647
+00:29:46,624 --> 00:29:48,160
+With the least resistance
+
+648
+00:29:49,184 --> 00:29:49,696
+Enjoy
+

@@ -1,0 +1,2372 @@
+1
+00:00:01,536 --> 00:00:05,376
+Well I'm happy to announce that we have added a very
+
+2
+00:00:05,888 --> 00:00:07,424
+Long awaited feature
+
+3
+00:00:07,680 --> 00:00:08,704
+To JCB
+
+4
+00:00:10,752 --> 00:00:12,288
+You need to upgrade to
+
+5
+00:00:12,544 --> 00:00:14,080
+Version 2.8
+
+6
+00:00:14,848 --> 00:00:16,128
+To actually get this feature
+
+7
+00:00:17,664 --> 00:00:18,688
+This feature though
+
+8
+00:00:18,944 --> 00:00:19,968
+Does effect
+
+9
+00:00:21,504 --> 00:00:24,064
+How JCB builds the Admin View
+
+10
+00:00:24,576 --> 00:00:25,600
+List View
+
+11
+00:00:25,856 --> 00:00:27,136
+So that means
+
+12
+00:00:28,160 --> 00:00:28,928
+Basically
+
+13
+00:00:29,184 --> 00:00:30,464
+These areas
+
+14
+00:00:30,720 --> 00:00:32,768
+Where you got list of items
+
+15
+00:00:33,792 --> 00:00:36,864
+So if you got custom scripting in your component
+
+16
+00:00:37,120 --> 00:00:38,144
+In these areas
+
+17
+00:00:38,912 --> 00:00:39,680
+The
+
+18
+00:00:39,936 --> 00:00:43,264
+New when you install or upgrade to version 2
+
+19
+00:00:43,776 --> 00:00:47,616
+You would experience that your custom scripting doesn't get added
+
+20
+00:00:48,896 --> 00:00:49,664
+you know
+
+21
+00:00:50,176 --> 00:00:50,944
+Correctly
+
+22
+00:00:51,200 --> 00:00:54,272
+We'll still add it will still be added to the document
+
+23
+00:00:54,784 --> 00:00:59,136
+But you have to go and move it into the correct place and an commented and
+
+24
+00:00:59,648 --> 00:01:01,696
+You know do the
+
+25
+00:01:01,952 --> 00:01:03,232
+replacement of the code
+
+26
+00:01:04,768 --> 00:01:06,048
+Add those diamonds to
+
+27
+00:01:06,560 --> 00:01:09,120
+Notify JCB to update the placement
+
+28
+00:01:11,168 --> 00:01:11,936
+So that's
+
+29
+00:01:12,192 --> 00:01:15,776
+Just a heads up because the list views are
+
+30
+00:01:16,032 --> 00:01:17,568
+Improved actually
+
+31
+00:01:18,336 --> 00:01:19,616
+The way it's being built
+
+32
+00:01:21,152 --> 00:01:22,688
+The this extra
+
+33
+00:01:23,200 --> 00:01:23,968
+Sort of
+
+34
+00:01:24,224 --> 00:01:27,552
+Changes to the code snippets changes the fingerprints and all that
+
+35
+00:01:27,808 --> 00:01:32,416
+So enough that what the new features is all about is actually
+
+36
+00:01:32,672 --> 00:01:36,256
+Taking specific values like maybe this value
+
+37
+00:01:36,768 --> 00:01:38,048
+And that value
+
+38
+00:01:38,304 --> 00:01:41,888
+And to combine them into one value into one column
+
+39
+00:01:42,400 --> 00:01:47,520
+And yet have the option of still being able to filter with those values
+
+40
+00:01:48,288 --> 00:01:51,104
+Now we forgot this component
+
+41
+00:01:51,872 --> 00:01:53,152
+Sermon Distributor
+
+42
+00:01:53,664 --> 00:01:55,968
+And I am planning
+
+43
+00:01:56,480 --> 00:01:58,016
+To take the preachers
+
+44
+00:01:58,272 --> 00:01:59,552
+List View
+
+45
+00:01:59,808 --> 00:02:04,928
+You'll see that it now shows the name and a short description or whatever description you've added
+
+46
+00:02:05,696 --> 00:02:08,256
+I want to have it also show
+
+47
+00:02:08,512 --> 00:02:10,304
+If there is an email address
+
+48
+00:02:11,328 --> 00:02:13,376
+So if this email address is filled in
+
+49
+00:02:13,888 --> 00:02:15,680
+Then it should show the email address
+
+50
+00:02:17,472 --> 00:02:18,240
+Or
+
+51
+00:02:18,752 --> 00:02:21,824
+If it doesn't find an email address but it finds a
+
+52
+00:02:22,080 --> 00:02:24,384
+Web address it should show the web address
+
+53
+00:02:24,896 --> 00:02:26,944
+so it should show other one or the other
+
+54
+00:02:27,456 --> 00:02:30,272
+And it must connected next to the name
+
+55
+00:02:31,040 --> 00:02:35,392
+And and I think we'll use that as our demonstration of this feature
+
+56
+00:02:35,904 --> 00:02:38,464
+Ok so now let's go back to component Builder
+
+57
+00:02:39,232 --> 00:02:41,280
+And then we would go to
+
+58
+00:02:41,536 --> 00:02:42,304
+The admin views
+
+59
+00:02:44,096 --> 00:02:44,864
+And
+
+60
+00:02:45,120 --> 00:02:45,888
+If you
+
+61
+00:02:46,400 --> 00:02:51,008
+Or not if you haven't done it yet there won't be an icon showing up anywhere here
+
+62
+00:02:51,264 --> 00:02:54,592
+But once you've done it there will actually be one I'll show you that
+
+63
+00:02:54,848 --> 00:02:57,152
+So we will go to the preachers admin View
+
+64
+00:02:57,408 --> 00:02:59,456
+So just go to the the one you want to change
+
+65
+00:03:01,760 --> 00:03:05,600
+And then under the settings area
+
+66
+00:03:06,112 --> 00:03:07,648
+Sorry not the settings area
+
+67
+00:03:08,416 --> 00:03:09,952
+It's the fields area
+
+68
+00:03:10,720 --> 00:03:12,256
+You'll see that there is now
+
+69
+00:03:12,512 --> 00:03:15,328
+A new area called admin
+
+70
+00:03:15,584 --> 00:03:17,376
+Fields relations
+
+71
+00:03:18,144 --> 00:03:19,424
+and here at the bottom
+
+72
+00:03:19,680 --> 00:03:21,728
+You'll see a field relations
+
+73
+00:03:22,240 --> 00:03:24,800
+So that's the new area that's the new feature
+
+74
+00:03:25,824 --> 00:03:27,104
+You could either click here
+
+75
+00:03:27,616 --> 00:03:28,128
+Or
+
+76
+00:03:28,384 --> 00:03:29,408
+You click here
+
+77
+00:03:29,664 --> 00:03:32,224
+both of them will achieve the same
+
+78
+00:03:32,480 --> 00:03:33,248
+Taking you to the
+
+79
+00:03:33,504 --> 00:03:34,272
+Same place
+
+80
+00:03:34,528 --> 00:03:36,576
+So I'm the click on this one it's ok
+
+81
+00:03:37,600 --> 00:03:39,136
+And then
+
+82
+00:03:39,648 --> 00:03:42,976
+You basically in the admin Fields relations Builder
+
+83
+00:03:43,744 --> 00:03:45,792
+so you could click here on adding a
+
+84
+00:03:46,048 --> 00:03:49,632
+Admin fields we gonna set we gonna use the name
+
+85
+00:03:50,144 --> 00:03:52,448
+And we gonna join that up with the email
+
+86
+00:03:53,216 --> 00:03:55,264
+And with the web URL
+
+87
+00:03:56,032 --> 00:03:58,336
+Now will see that there is this area
+
+88
+00:03:59,104 --> 00:03:59,616
+Column
+
+89
+00:04:00,128 --> 00:04:02,176
+The area column actually
+
+90
+00:04:02,688 --> 00:04:03,456
+Can
+
+91
+00:04:03,712 --> 00:04:06,016
+Target three places
+
+92
+00:04:06,528 --> 00:04:10,112
+Before modelling the value after modelling the value
+
+93
+00:04:10,368 --> 00:04:11,392
+And the view
+
+94
+00:04:12,160 --> 00:04:12,672
+So
+
+95
+00:04:12,928 --> 00:04:17,280
+If you know I'm what a model is that means the area where you still working
+
+96
+00:04:17,536 --> 00:04:18,559
+Just with a code
+
+97
+00:04:18,815 --> 00:04:20,095
+Where as in the view
+
+98
+00:04:20,607 --> 00:04:22,911
+You must think of you already have a
+
+99
+00:04:23,167 --> 00:04:24,703
+HTML trunk
+
+100
+00:04:24,959 --> 00:04:26,495
+That represents that field
+
+101
+00:04:27,007 --> 00:04:29,567
+So if I could show you that more
+
+102
+00:04:30,079 --> 00:04:31,359
+Directly in the code
+
+103
+00:04:32,639 --> 00:04:36,735
+In first looking here at the folder structure you see I am in
+
+104
+00:04:36,991 --> 00:04:38,527
+administrator components
+
+105
+00:04:39,039 --> 00:04:41,087
+Then sermon distributor
+
+106
+00:04:41,343 --> 00:04:43,647
+Then here's the views and here's the models
+
+107
+00:04:43,903 --> 00:04:46,463
+So if we go to the model of the preacher
+
+108
+00:04:47,231 --> 00:04:49,535
+Plural one because we going to the list View
+
+109
+00:04:50,047 --> 00:04:50,815
+You'll see
+
+110
+00:04:51,071 --> 00:04:52,095
+That it has
+
+111
+00:04:52,351 --> 00:04:53,375
+Items
+
+112
+00:04:54,399 --> 00:04:54,911
+Now
+
+113
+00:04:55,935 --> 00:04:58,495
+At the moment there is basically nothing being modelled
+
+114
+00:04:59,007 --> 00:05:00,799
+Modelled usually would imply
+
+115
+00:05:01,311 --> 00:05:03,103
+If it is a json object
+
+116
+00:05:03,359 --> 00:05:06,175
+And it needs to be taken from json to an array
+
+117
+00:05:06,431 --> 00:05:09,759
+Or if it's a encrypted value in a needs to be decrypted
+
+118
+00:05:10,271 --> 00:05:11,551
+Those kind of things
+
+119
+00:05:12,319 --> 00:05:17,439
+Oh whether you wanna work with the value before that happens or after that has happened
+
+120
+00:05:19,487 --> 00:05:23,071
+Ok so then if you want a you work with the actual
+
+121
+00:05:23,327 --> 00:05:24,351
+Item
+
+122
+00:05:24,863 --> 00:05:31,007
+Where it's still just an integer or a string and really that's all that is
+
+123
+00:05:31,775 --> 00:05:33,823
+Then you'd target the model
+
+124
+00:05:34,847 --> 00:05:36,639
+If you wanna target the view
+
+125
+00:05:37,151 --> 00:05:39,967
+Which in this case if we go to preachers
+
+126
+00:05:41,503 --> 00:05:43,039
+And then the body
+
+127
+00:05:43,551 --> 00:05:45,087
+You see that
+
+128
+00:05:45,343 --> 00:05:47,135
+Basically
+
+129
+00:05:48,159 --> 00:05:49,439
+Everything from here
+
+130
+00:05:50,207 --> 00:05:51,231
+Up to here
+
+131
+00:05:51,743 --> 00:05:53,023
+Is representing
+
+132
+00:05:53,535 --> 00:05:54,815
+The ID
+
+133
+00:05:55,327 --> 00:05:56,607
+Everything from
+
+134
+00:05:56,863 --> 00:05:58,399
+here up to here
+
+135
+00:05:58,655 --> 00:06:00,191
+Is a presenting the name
+
+136
+00:06:00,703 --> 00:06:03,775
+And so if you wanna target this chunk
+
+137
+00:06:04,543 --> 00:06:06,079
+Because it still gets generated
+
+138
+00:06:06,335 --> 00:06:06,847
+of course
+
+139
+00:06:07,359 --> 00:06:09,407
+Then you would target the view
+
+140
+00:06:09,663 --> 00:06:13,503
+Because then JCB will still build this whole block for you
+
+141
+00:06:14,015 --> 00:06:15,551
+Basically this block
+
+142
+00:06:15,807 --> 00:06:21,951
+And you can move this block around and join it with the other block for the other field
+
+143
+00:06:22,207 --> 00:06:23,743
+As you like
+
+144
+00:06:23,999 --> 00:06:27,071
+So that we could be that you didn't have two links
+
+145
+00:06:27,327 --> 00:06:28,607
+Or that
+
+146
+00:06:28,863 --> 00:06:29,375
+Yes
+
+147
+00:06:29,887 --> 00:06:33,215
+All kinds of interesting things can happen my best
+
+148
+00:06:33,471 --> 00:06:37,055
+Advice is you know try it out take it for a spin
+
+149
+00:06:37,567 --> 00:06:40,127
+Make some changes compile it install it
+
+150
+00:06:40,639 --> 00:06:42,943
+See what's changed go to the areas
+
+151
+00:06:43,199 --> 00:06:43,967
+Which being
+
+152
+00:06:44,223 --> 00:06:45,247
+either the view
+
+153
+00:06:45,503 --> 00:06:50,367
+Or the model and see the code that was generated based on your selection
+
+154
+00:06:50,879 --> 00:06:51,903
+Now we gonna
+
+155
+00:06:52,159 --> 00:06:58,303
+Make multiple changes and show you what will happen so save you some other time and then understand
+
+156
+00:06:58,559 --> 00:06:59,327
+What's happening
+
+157
+00:06:59,839 --> 00:07:01,631
+And so let's go 
+
+158
+00:07:01,887 --> 00:07:02,399
+Do it
+
+159
+00:07:03,167 --> 00:07:06,239
+The first area I'm gonna target is the model area
+
+160
+00:07:06,751 --> 00:07:11,871
+Then it has a joint type which is either a concatenation with
+
+161
+00:07:12,127 --> 00:07:16,223
+With a glue option the glue option is basically what do you want to be placed
+
+162
+00:07:16,479 --> 00:07:17,759
+Between the values
+
+163
+00:07:18,015 --> 00:07:23,647
+You could say no I want them to be completely crank up against each other like that
+
+164
+00:07:24,159 --> 00:07:28,767
+And usually it'll still add a little space it'll still add a little space in
+
+165
+00:07:30,047 --> 00:07:30,559
+And
+
+166
+00:07:30,815 --> 00:07:34,655
+You can say no I want I want a little Arrow between them
+
+167
+00:07:34,911 --> 00:07:35,679
+Like that
+
+168
+00:07:36,191 --> 00:07:41,567
+But it's basically a value you want to place between these two values
+
+169
+00:07:41,823 --> 00:07:44,895
+Ok so I'm gonna just leave it as a comma for now
+
+170
+00:07:45,407 --> 00:07:47,455
+And then save and close
+
+171
+00:07:50,527 --> 00:07:53,343
+And then also save and close the view
+
+172
+00:07:53,855 --> 00:07:54,879
+And now you'll see
+
+173
+00:07:55,135 --> 00:07:57,695
+That there is a new icon here
+
+174
+00:07:57,951 --> 00:08:01,023
+We can click and directly go edit the relation
+
+175
+00:08:01,535 --> 00:08:02,303
+So
+
+176
+00:08:02,559 --> 00:08:04,351
+That is the new icon added
+
+177
+00:08:04,607 --> 00:08:06,655
+Now if we go to the compiler
+
+178
+00:08:06,911 --> 00:08:10,751
+We will be able to compile this and see it in action
+
+179
+00:08:11,263 --> 00:08:12,031
+So I'm not gonna 
+
+180
+00:08:12,287 --> 00:08:15,103
+Do that just gonna compile sermon distributor
+
+181
+00:08:17,407 --> 00:08:19,455
+Install it and now
+
+182
+00:08:19,967 --> 00:08:26,111
+First thing is let's open sermon distributor and let's go to the preachers table and 
+
+183
+00:08:26,367 --> 00:08:27,903
+See how it looks in the interface
+
+184
+00:08:28,927 --> 00:08:29,951
+So here we see
+
+185
+00:08:30,207 --> 00:08:31,487
+It basically adding
+
+186
+00:08:32,255 --> 00:08:35,583
+Both of them adding the email as well as the
+
+187
+00:08:36,607 --> 00:08:37,631
+URL
+
+188
+00:08:37,887 --> 00:08:42,751
+And because it's exceeding a specific length it is escaping it and we have this little
+
+189
+00:08:43,007 --> 00:08:44,031
+Pop-up come up here
+
+190
+00:08:44,543 --> 00:08:47,871
+It so there's that comma we added as a concatenation
+
+191
+00:08:48,383 --> 00:08:49,663
+Between the values
+
+192
+00:08:50,175 --> 00:08:52,991
+So that is really what we expected
+
+193
+00:08:53,759 --> 00:08:57,087
+Let's go back and make some changes
+
+194
+00:08:57,599 --> 00:09:00,671
+Well let me let me first show you the code that was built
+
+195
+00:09:01,439 --> 00:09:04,767
+So we were targeting the model so basically it just
+
+196
+00:09:05,023 --> 00:09:06,303
+Add this
+
+197
+00:09:06,559 --> 00:09:08,095
+As a glue
+
+198
+00:09:08,607 --> 00:09:10,655
+To glue these values together
+
+199
+00:09:11,167 --> 00:09:12,959
+Concatenating them
+
+200
+00:09:16,031 --> 00:09:16,543
+Yes
+
+201
+00:09:16,799 --> 00:09:18,591
+So that was the model now
+
+202
+00:09:18,847 --> 00:09:21,663
+Like I said this specific view doesn't have
+
+203
+00:09:22,175 --> 00:09:28,319
+Really any modeling it does to the values So even if I would to say it select after
+
+204
+00:09:30,623 --> 00:09:32,415
+It won't necessarily change anything
+
+205
+00:09:32,671 --> 00:09:33,695
+Ok so
+
+206
+00:09:34,719 --> 00:09:36,511
+Let's make another change
+
+207
+00:09:37,791 --> 00:09:40,607
+Let's instead of using the default glue option
+
+208
+00:09:40,863 --> 00:09:44,191
+Let's say Ok we wanna do a code option
+
+209
+00:09:44,447 --> 00:09:48,031
+Then you'll see the JCB cranks out sort of ok
+
+210
+00:09:48,799 --> 00:09:49,567
+to
+
+211
+00:09:50,079 --> 00:09:51,103
+Give you the
+
+212
+00:09:51,615 --> 00:09:53,919
+Freedom to actually write code
+
+213
+00:09:54,175 --> 00:09:56,223
+We are using the IDs
+
+214
+00:09:56,735 --> 00:09:57,759
+Of the fields
+
+215
+00:09:58,015 --> 00:09:59,551
+In in braces
+
+216
+00:10:00,319 --> 00:10:02,623
+Curly braces because
+
+217
+00:10:03,135 --> 00:10:04,159
+Well
+
+218
+00:10:04,415 --> 00:10:06,207
+Many reasons I'm not gonna
+
+219
+00:10:06,463 --> 00:10:07,231
+Waste your time
+
+220
+00:10:07,743 --> 00:10:08,511
+More or less
+
+221
+00:10:08,767 --> 00:10:14,143
+Boils down to the fact that it's difficult to know exactly what the field names gonna be at this point
+
+222
+00:10:14,655 --> 00:10:18,239
+For every kind of type of field that is there
+
+223
+00:10:18,495 --> 00:10:21,055
+So working with the ID just saves us a lot of
+
+224
+00:10:21,567 --> 00:10:22,079
+Effort
+
+225
+00:10:22,335 --> 00:10:27,711
+But since it's difficult to know which field is which ID we had this little comment
+
+226
+00:10:28,223 --> 00:10:34,367
+to sort of give you a heads up ok so this value is basically the website this one here is basically the
+
+227
+00:10:34,623 --> 00:10:35,135
+Email
+
+228
+00:10:35,391 --> 00:10:39,487
+And I would suggest if you are sure of what is what
+
+229
+00:10:39,743 --> 00:10:43,839
+To just take the comment out because otherwise it'll be added to the code
+
+230
+00:10:44,607 --> 00:10:45,631
+So that is just
+
+231
+00:10:45,887 --> 00:10:48,191
+What I would suggest so this stage we know
+
+232
+00:10:48,447 --> 00:10:51,519
+That what this is saying is basically what we saw
+
+233
+00:10:51,775 --> 00:10:55,103
+In the code it is almost exactly the same
+
+234
+00:10:55,615 --> 00:11:00,735
+Except that it is using numbers here so now we can do some little PHP
+
+235
+00:11:00,991 --> 00:11:02,783
+So we can say something like this
+
+236
+00:11:03,807 --> 00:11:05,855
+So we basically checking
+
+237
+00:11:06,111 --> 00:11:08,159
+If this is not empty
+
+238
+00:11:08,415 --> 00:11:11,999
+Then we use that which is the email otherwise
+
+239
+00:11:12,255 --> 00:11:13,535
+we fall back onto the
+
+240
+00:11:14,303 --> 00:11:15,327
+You know the URL
+
+241
+00:11:15,583 --> 00:11:19,423
+and when the URL is empty it just means that there will be an empty string
+
+242
+00:11:19,679 --> 00:11:21,727
+So maybe that's not that ideal either
+
+243
+00:11:22,239 --> 00:11:24,799
+So let's make it a little bit more advance
+
+244
+00:11:25,567 --> 00:11:31,711
+So now it's saying if there is an email use the email otherwise check is there a URL
+
+245
+00:11:32,223 --> 00:11:32,991
+No
+
+246
+00:11:33,247 --> 00:11:36,575
+If there is sure then add it if not then add nothing
+
+247
+00:11:36,831 --> 00:11:40,159
+And it just stays without the comma and everything
+
+248
+00:11:40,415 --> 00:11:41,183
+So there we go
+
+249
+00:11:41,695 --> 00:11:42,207
+Got a little
+
+250
+00:11:42,463 --> 00:11:43,743
+Adaptation there
+
+251
+00:11:43,999 --> 00:11:46,815
+So just make sure that this Convention is kept
+
+252
+00:11:47,583 --> 00:11:51,679
+So the Curly braces with the ID and then the closing curly brace
+
+253
+00:11:52,191 --> 00:11:58,335
+This will then be updated with the actual name of the field and so you can do full HTML
+
+254
+00:11:58,847 --> 00:12:01,663
+Sorry PHP coding in this area
+
+255
+00:12:02,175 --> 00:12:08,319
+And it will be implemented that means you could also pass the value to a function which then
+
+256
+00:12:08,831 --> 00:12:10,623
+Passes it back to the value
+
+257
+00:12:11,135 --> 00:12:12,927
+And this is in the model
+
+258
+00:12:13,183 --> 00:12:17,279
+And this is before modelling and after modelling oo
+
+259
+00:12:18,815 --> 00:12:19,583
+That's a
+
+260
+00:12:19,839 --> 00:12:23,423
+Good thing that happened every time you change anything here
+
+261
+00:12:23,679 --> 00:12:25,215
+It's going to update the code
+
+262
+00:12:25,727 --> 00:12:26,239
+Because
+
+263
+00:12:27,007 --> 00:12:30,079
+Sometimes it is expected that these two
+
+264
+00:12:30,591 --> 00:12:36,735
+Values might look different at this stage it doesn't but it is a JavaScript that fires on
+
+265
+00:12:37,247 --> 00:12:39,039
+Changing of any of these fields
+
+266
+00:12:39,551 --> 00:12:42,623
+And so I have to type all that over now
+
+267
+00:12:43,391 --> 00:12:46,719
+So the Best Idea is you wanna make changes here
+
+268
+00:12:46,975 --> 00:12:49,791
+First copy the value in here
+
+269
+00:12:50,303 --> 00:12:52,607
+And then you can make changes
+
+270
+00:12:54,399 --> 00:12:55,167
+And see
+
+271
+00:12:55,423 --> 00:12:56,959
+you know what what happens
+
+272
+00:12:58,495 --> 00:12:59,519
+And
+
+273
+00:12:59,775 --> 00:13:01,823
+Then as you decided what you want
+
+274
+00:13:02,079 --> 00:13:03,359
+You can just paste it back in
+
+275
+00:13:04,127 --> 00:13:05,407
+Ok so there we have it
+
+276
+00:13:05,919 --> 00:13:09,247
+If it doesn't behave exactly right just change it a few times
+
+277
+00:13:09,503 --> 00:13:10,271
+We will
+
+278
+00:13:10,527 --> 00:13:14,367
+Will still tweak the JavaScript here to make sure that it's
+
+279
+00:13:14,623 --> 00:13:16,671
+You know working exactly 100 Percent
+
+280
+00:13:16,927 --> 00:13:18,719
+So this is sort of
+
+281
+00:13:19,231 --> 00:13:21,791
+Beta phase sort of but it works the
+
+282
+00:13:22,047 --> 00:13:23,839
+The same functions as it should
+
+283
+00:13:24,351 --> 00:13:28,191
+It's just that the I'm still ironing out some JavaScript here
+
+284
+00:13:29,727 --> 00:13:30,751
+Another thing
+
+285
+00:13:31,263 --> 00:13:32,287
+You can only
+
+286
+00:13:32,543 --> 00:13:33,055
+Target
+
+287
+00:13:33,567 --> 00:13:35,871
+The name list field
+
+288
+00:13:36,639 --> 00:13:37,407
+Once
+
+289
+00:13:37,663 --> 00:13:41,247
+You cannot add it a second time like this
+
+290
+00:13:41,503 --> 00:13:44,575
+And say ok you're here we gonna do it again
+
+291
+00:13:44,831 --> 00:13:45,855
+But now
+
+292
+00:13:46,879 --> 00:13:48,671
+Using maybe some other values
+
+293
+00:13:49,183 --> 00:13:50,719
+To also target it
+
+294
+00:13:50,975 --> 00:13:51,743
+In some way
+
+295
+00:13:52,255 --> 00:13:56,863
+You cannot do that only one of them will get implemented the other one will be dropped
+
+296
+00:13:58,399 --> 00:14:01,983
+It's a limitation I know but believe me
+
+297
+00:14:02,495 --> 00:14:06,591
+This feature as it is now is already really stunning
+
+298
+00:14:07,359 --> 00:14:09,151
+And able to achieve quite
+
+299
+00:14:09,663 --> 00:14:11,199
+Impressive results
+
+300
+00:14:11,711 --> 00:14:17,855
+Ok so here we have it we've adapted it it will only show an email or a web address
+
+301
+00:14:18,111 --> 00:14:19,903
+If there is actually one set
+
+302
+00:14:20,159 --> 00:14:22,975
+And that There is None set it won't show any
+
+303
+00:14:23,231 --> 00:14:27,583
+That's the expected result so let's save this and see it
+
+304
+00:14:27,839 --> 00:14:28,863
+In action
+
+305
+00:14:31,679 --> 00:14:32,703
+So we will compile it
+
+306
+00:14:33,727 --> 00:14:34,751
+and install
+
+307
+00:14:39,359 --> 00:14:40,639
+So there we have it
+
+308
+00:14:40,895 --> 00:14:44,479
+The preacher showing up with an email address and that's it
+
+309
+00:14:44,991 --> 00:14:46,015
+Let's Create one
+
+310
+00:14:46,271 --> 00:14:47,807
+Without an email address
+
+311
+00:14:49,087 --> 00:14:50,623
+So we created one
+
+312
+00:14:50,879 --> 00:14:52,927
+With no email address if you see
+
+313
+00:14:53,183 --> 00:14:58,303
+There's none here let's add a web address let's just close again show you
+
+314
+00:14:58,559 --> 00:15:00,863
+Now there is nothing not even a comma
+
+315
+00:15:01,375 --> 00:15:05,471
+But as you see this now is a link the whole thing is a link
+
+316
+00:15:05,983 --> 00:15:06,495
+And
+
+317
+00:15:07,007 --> 00:15:09,311
+That might not be exactly what you
+
+318
+00:15:09,567 --> 00:15:10,591
+Actually want
+
+319
+00:15:12,127 --> 00:15:13,407
+Ok let's 
+
+320
+00:15:13,919 --> 00:15:15,711
+Let's add a web address
+
+321
+00:15:16,223 --> 00:15:17,759
+And then save and close
+
+322
+00:15:19,807 --> 00:15:20,575
+and so here
+
+323
+00:15:20,831 --> 00:15:22,879
+Because your web address was a little long
+
+324
+00:15:23,135 --> 00:15:25,183
+It created a a pop-up
+
+325
+00:15:26,463 --> 00:15:28,255
+Now all that can be changed
+
+326
+00:15:28,511 --> 00:15:30,047
+But let me just
+
+327
+00:15:30,559 --> 00:15:31,583
+Do something else
+
+328
+00:15:32,095 --> 00:15:33,887
+Let's use a shorter address
+
+329
+00:15:35,423 --> 00:15:36,447
+Save and close
+
+330
+00:15:37,471 --> 00:15:38,495
+And now there you have it
+
+331
+00:15:39,007 --> 00:15:41,311
+That looks more acceptable
+
+332
+00:15:42,335 --> 00:15:48,479
+And so it detects now whether there's an email or a web address and if there's none it shows none
+
+333
+00:15:48,735 --> 00:15:51,551
+So that was now with this new combine
+
+334
+00:15:52,063 --> 00:15:53,343
+Feature
+
+335
+00:15:53,855 --> 00:15:57,695
+So let's, let's do something even more interesting
+
+336
+00:15:58,719 --> 00:16:01,791
+So again we go and open that area clicking this icon
+
+337
+00:16:02,047 --> 00:16:04,095
+This is sort of a shortcut
+
+338
+00:16:04,863 --> 00:16:08,191
+And now instead of targeting the model
+
+339
+00:16:08,447 --> 00:16:10,239
+We gonna target The View
+
+340
+00:16:10,751 --> 00:16:14,079
+And this is where it really gets interesting
+
+341
+00:16:14,847 --> 00:16:20,991
+Because now this little place holder called field=199
+
+342
+00:16:22,271 --> 00:16:26,111
+Is basically a chunk of code as I explained
+
+343
+00:16:26,367 --> 00:16:28,159
+Initially in the beginning
+
+344
+00:16:28,415 --> 00:16:30,207
+Where we are saying
+
+345
+00:16:30,463 --> 00:16:31,743
+Ok
+
+346
+00:16:31,999 --> 00:16:32,767
+Instead of
+
+347
+00:16:33,535 --> 00:16:36,863
+Targeting the actual value database value
+
+348
+00:16:37,119 --> 00:16:41,983
+You are now targeting the produced code which JCB builds
+
+349
+00:16:42,495 --> 00:16:44,031
+The html block
+
+350
+00:16:44,287 --> 00:16:46,079
+For that specific field
+
+351
+00:16:46,591 --> 00:16:47,359
+So
+
+352
+00:16:47,615 --> 00:16:53,759
+We can now also I would also encourage you removing the comment this is the comment that shows you that that is the name
+
+353
+00:16:54,015 --> 00:16:54,783
+That's the email
+
+354
+00:16:55,039 --> 00:16:56,831
+And that's the web address
+
+355
+00:16:57,087 --> 00:17:03,231
+So I would also encourage you to once you seen it or just remove it we might at a later stage
+
+356
+00:17:03,487 --> 00:17:06,559
+Take the comment and added underneath the box so that it
+
+357
+00:17:06,815 --> 00:17:07,839
+Clearly is nowhere
+
+358
+00:17:08,351 --> 00:17:08,863
+In the way
+
+359
+00:17:09,631 --> 00:17:13,471
+But it is for you to just sort of know that this chunk
+
+360
+00:17:13,727 --> 00:17:17,055
+Is for the email and this is for the website
+
+361
+00:17:17,311 --> 00:17:19,871
+Address ok so again
+
+362
+00:17:20,127 --> 00:17:22,943
+I want to add a little bit Dynamic Script here
+
+363
+00:17:25,759 --> 00:17:28,831
+But I need to keep in mind that I'm actually in
+
+364
+00:17:29,599 --> 00:17:30,623
+HTML
+
+365
+00:17:31,135 --> 00:17:33,183
+So if I wanted to add
+
+366
+00:17:33,695 --> 00:17:34,975
+PHP here
+
+367
+00:17:35,231 --> 00:17:37,023
+I actually need to
+
+368
+00:17:37,279 --> 00:17:39,583
+Do the correct PHP tags
+
+369
+00:17:39,839 --> 00:17:41,119
+And all the rest of it
+
+370
+00:17:43,167 --> 00:17:43,935
+Ok
+
+371
+00:17:46,495 --> 00:17:48,799
+And that means you can actually
+
+372
+00:17:50,335 --> 00:17:52,127
+Target the item value
+
+373
+00:17:52,895 --> 00:17:56,991
+You can remove this and work with the actual item value
+
+374
+00:17:57,759 --> 00:18:01,599
+But this little placeholder will produce the whole
+
+375
+00:18:03,135 --> 00:18:06,719
+Block of code which if it's going to be a dynamic link
+
+376
+00:18:06,975 --> 00:18:08,255
+Or something like that
+
+377
+00:18:08,511 --> 00:18:10,559
+It'll produce all of that for you
+
+378
+00:18:11,071 --> 00:18:12,607
+So if it's a
+
+379
+00:18:12,863 --> 00:18:13,375
+If it's an
+
+380
+00:18:13,631 --> 00:18:16,959
+A custom field which links to a to another View
+
+381
+00:18:17,215 --> 00:18:19,775
+Then all of that can still be produced in this
+
+382
+00:18:20,031 --> 00:18:22,079
+Sort of dynamic placeholder here
+
+383
+00:18:22,591 --> 00:18:25,407
+But you can remove this all of this and you can
+
+384
+00:18:26,431 --> 00:18:27,199
+Yeah have it
+
+385
+00:18:27,711 --> 00:18:29,247
+Echo out anything
+
+386
+00:18:29,503 --> 00:18:32,063
+So which you just have to code of course
+
+387
+00:18:32,319 --> 00:18:33,343
+I think
+
+388
+00:18:33,599 --> 00:18:37,439
+Best to demonstrate is first used in concatenation option
+
+389
+00:18:38,207 --> 00:18:42,047
+And which would just put a break between the values
+
+390
+00:18:42,559 --> 00:18:43,839
+And then save and close
+
+391
+00:18:46,655 --> 00:18:48,447
+And compile install
+
+392
+00:18:52,799 --> 00:18:54,591
+So we refresh this area
+
+393
+00:18:56,383 --> 00:18:57,919
+And now we see that
+
+394
+00:18:58,175 --> 00:19:00,735
+This value is a link but the other two
+
+395
+00:19:01,247 --> 00:19:02,271
+It's actually just text
+
+396
+00:19:03,295 --> 00:19:04,831
+And that's exactly
+
+397
+00:19:05,087 --> 00:19:06,879
+What we wanted to achieve
+
+398
+00:19:08,415 --> 00:19:09,695
+Going into the code
+
+399
+00:19:09,951 --> 00:19:10,975
+We open the body
+
+400
+00:19:11,999 --> 00:19:13,279
+And you'll see
+
+401
+00:19:13,535 --> 00:19:15,839
+The JCB added the brakes
+
+402
+00:19:16,351 --> 00:19:17,375
+There is a break
+
+403
+00:19:17,631 --> 00:19:18,399
+There's a break
+
+404
+00:19:18,655 --> 00:19:21,215
+And there's the chunk of code that JCB build
+
+405
+00:19:22,751 --> 00:19:23,263
+So
+
+406
+00:19:23,519 --> 00:19:25,311
+It really build all of this
+
+407
+00:19:25,567 --> 00:19:27,871
+It's still built a link to the preacher
+
+408
+00:19:28,127 --> 00:19:28,895
+And then
+
+409
+00:19:29,407 --> 00:19:30,943
+It's still built this
+
+410
+00:19:31,455 --> 00:19:32,223
+As well
+
+411
+00:19:32,735 --> 00:19:36,831
+So if this was going to be a link to another View
+
+412
+00:19:37,087 --> 00:19:38,879
+It will produce that code
+
+413
+00:19:39,647 --> 00:19:41,951
+Checking again the permissions and everything
+
+414
+00:19:42,207 --> 00:19:43,487
+Which is really what makes
+
+415
+00:19:43,743 --> 00:19:46,559
+This areas implementation quite exciting
+
+416
+00:19:47,583 --> 00:19:51,423
+Because it still takes care of the hard work of producing
+
+417
+00:19:51,679 --> 00:19:55,263
+The actual code needed to display the value
+
+418
+00:19:56,543 --> 00:20:01,151
+If you pick up any behaviours in this new feature that sort of unexpected
+
+419
+00:20:01,919 --> 00:20:06,015
+Then please give us a heads up on Github open an issue
+
+420
+00:20:06,527 --> 00:20:10,111
+And we will try and address it as quick as we can
+
+421
+00:20:11,647 --> 00:20:13,183
+Again thank you for watching
+
+422
+00:20:13,439 --> 00:20:15,231
+This is the new feature of
+
+423
+00:20:15,487 --> 00:20:16,255
+Combining
+
+424
+00:20:16,767 --> 00:20:18,559
+admin view values
+
+425
+00:20:19,071 --> 00:20:20,095
+In a
+
+426
+00:20:20,351 --> 00:20:21,375
+Very easy way
+
+427
+00:20:22,143 --> 00:20:25,727
+It could have been done previously with some custom scripting
+
+428
+00:20:26,239 --> 00:20:29,311
+But this sort of helps you and I'm sure
+
+429
+00:20:29,823 --> 00:20:35,967
+Makes it easy for you to just select the field you want to Target of course that means
+
+430
+00:20:36,223 --> 00:20:41,087
+You first need to add the fields that you are ready going to show in the list View
+
+431
+00:20:41,343 --> 00:20:44,415
+And then select the field you wanna join to it
+
+432
+00:20:44,927 --> 00:20:46,719
+That's sort of
+
+433
+00:20:47,231 --> 00:20:50,047
+I expected you understood maybe that but
+
+434
+00:20:50,303 --> 00:20:52,607
+I realize I must mention that separate
+
+435
+00:20:53,119 --> 00:20:57,727
+So that means if we go into the preacher Fields area
+
+436
+00:20:58,239 --> 00:21:00,031
+you'll see
+
+437
+00:21:00,287 --> 00:21:00,799
+That
+
+438
+00:21:01,055 --> 00:21:03,615
+We actually just got two Fields the name
+
+439
+00:21:04,639 --> 00:21:05,919
+As shown in list
+
+440
+00:21:06,431 --> 00:21:08,223
+And the description shown in list
+
+441
+00:21:08,479 --> 00:21:13,087
+So here we don't make any changes we don't say that the email and then
+
+442
+00:21:13,343 --> 00:21:13,855
+Website
+
+443
+00:21:14,111 --> 00:21:16,672
+Must also show in the list View
+
+444
+00:21:16,928 --> 00:21:17,440
+In fact
+
+445
+00:21:17,952 --> 00:21:21,024
+Only the fields that I'm not showing in the list View
+
+446
+00:21:21,280 --> 00:21:25,120
+Show show in the relationship view as joint options
+
+447
+00:21:25,888 --> 00:21:27,680
+So that's just a heads up
+
+448
+00:21:27,936 --> 00:21:30,496
+What is exciting though as you can
+
+449
+00:21:30,752 --> 00:21:31,520
+Actually
+
+450
+00:21:31,776 --> 00:21:33,312
+Do a
+
+451
+00:21:33,568 --> 00:21:34,848
+a filter
+
+452
+00:21:35,616 --> 00:21:36,896
+And a
+
+453
+00:21:38,432 --> 00:21:41,504
+Yeah you can do a filter or a search
+
+454
+00:21:41,760 --> 00:21:47,648
+On these Fields that are not going to be placed but you know you gonna later select them as relationships
+
+455
+00:21:47,904 --> 00:21:51,744
+And then the end up creating JCB will in upgrading the filter
+
+456
+00:21:52,256 --> 00:21:55,328
+And make it searchable at even if it's a link
+
+457
+00:21:55,584 --> 00:21:56,096
+to
+
+458
+00:21:56,352 --> 00:21:59,936
+To another page you can click this to be a link
+
+459
+00:22:00,192 --> 00:22:01,728
+And then it will generate the link
+
+460
+00:22:02,240 --> 00:22:08,384
+Which is I think amazing knowing that it's gonna set that all the permissions in place
+
+461
+00:22:08,640 --> 00:22:09,664
+And everything else
+
+462
+00:22:10,432 --> 00:22:11,968
+Ok well maybe I should
+
+463
+00:22:12,224 --> 00:22:13,248
+Demonstrate that
+
+464
+00:22:13,504 --> 00:22:14,272
+Just quickly
+
+465
+00:22:15,552 --> 00:22:17,856
+So here in the sermons area
+
+466
+00:22:18,112 --> 00:22:22,720
+We see that we have a Preacher table and we gotta name table
+
+467
+00:22:23,488 --> 00:22:24,256
+So
+
+468
+00:22:24,512 --> 00:22:26,304
+That means we can actually
+
+469
+00:22:27,584 --> 00:22:30,912
+We have these two links this one will open the preacher
+
+470
+00:22:31,936 --> 00:22:33,216
+As
+
+471
+00:22:33,472 --> 00:22:34,496
+We know
+
+472
+00:22:34,752 --> 00:22:39,360
+Same as opening it from the preacher list view and then this one's gonna open the sermon
+
+473
+00:22:40,384 --> 00:22:41,152
+So
+
+474
+00:22:41,408 --> 00:22:44,992
+This is going to be easy because now
+
+475
+00:22:45,248 --> 00:22:50,112
+We can decide Ok we got so many rows here let's Combine the preacher
+
+476
+00:22:50,368 --> 00:22:51,392
+With the name row
+
+477
+00:22:51,904 --> 00:22:54,720
+And yet we wanna retain this link
+
+478
+00:22:55,232 --> 00:23:00,608
+As it is working now and we wanna retain the option to actually filter by
+
+479
+00:23:00,864 --> 00:23:01,888
+The preacher
+
+480
+00:23:02,400 --> 00:23:05,472
+So let's show you how easy it is to do that
+
+481
+00:23:06,240 --> 00:23:09,056
+So we'll go to the sermons list View
+
+482
+00:23:10,848 --> 00:23:12,896
+or admin viewing and then
+
+483
+00:23:13,152 --> 00:23:19,296
+Also again to the fields and click on create fields relations in this ad o wait before we
+
+484
+00:23:19,552 --> 00:23:20,064
+We do that
+
+485
+00:23:20,320 --> 00:23:22,112
+I first need to remove
+
+486
+00:23:22,624 --> 00:23:24,416
+The preacher
+
+487
+00:23:24,672 --> 00:23:28,768
+From the list so we first gonna go to the
+
+488
+00:23:29,280 --> 00:23:30,816
+Where we selected the fields
+
+489
+00:23:31,072 --> 00:23:32,352
+That needs to be linked
+
+490
+00:23:32,608 --> 00:23:33,376
+To the
+
+491
+00:23:33,632 --> 00:23:35,424
+List the admin list View
+
+492
+00:23:35,680 --> 00:23:37,472
+And the one we want to remove
+
+493
+00:23:37,728 --> 00:23:39,008
+Is the preacher value
+
+494
+00:23:40,800 --> 00:23:41,568
+So it's this one
+
+495
+00:23:42,080 --> 00:23:44,896
+Sermon preacher we gonna say no
+
+496
+00:23:45,152 --> 00:23:49,760
+Don't add it and when you do that is gonna wipe out all the links that usually
+
+497
+00:23:50,016 --> 00:23:53,088
+Should not be selected if it's not a listview
+
+498
+00:23:53,344 --> 00:23:55,648
+But since we still wanted to be a link
+
+499
+00:23:56,160 --> 00:23:58,464
+And we still wanted to be a filter
+
+500
+00:23:58,976 --> 00:24:00,512
+We gonna leave those checked
+
+501
+00:24:01,024 --> 00:24:02,816
+And then click save and close
+
+502
+00:24:05,376 --> 00:24:06,144
+So now
+
+503
+00:24:06,400 --> 00:24:07,680
+Getting back to this page
+
+504
+00:24:07,936 --> 00:24:10,240
+And going to Fields we'll see that
+
+505
+00:24:10,496 --> 00:24:12,288
+The the preacher now
+
+506
+00:24:12,544 --> 00:24:13,056
+Is
+
+507
+00:24:13,312 --> 00:24:16,128
+No longer going to show the list View
+
+508
+00:24:16,640 --> 00:24:17,664
+But it's still
+
+509
+00:24:17,920 --> 00:24:18,944
+Going to be
+
+510
+00:24:19,200 --> 00:24:20,480
+A filter in a link
+
+511
+00:24:20,992 --> 00:24:23,808
+And if you compile now it won't show up at all
+
+512
+00:24:24,064 --> 00:24:28,672
+You still need to now go and select the relations area
+
+513
+00:24:29,952 --> 00:24:31,488
+click on new
+
+514
+00:24:31,744 --> 00:24:33,024
+And then select name
+
+515
+00:24:33,280 --> 00:24:33,792
+Here
+
+516
+00:24:34,304 --> 00:24:35,072
+You would now
+
+517
+00:24:35,328 --> 00:24:36,352
+Need to select
+
+518
+00:24:36,864 --> 00:24:37,376
+The
+
+519
+00:24:37,888 --> 00:24:39,168
+sermon preacher
+
+520
+00:24:40,192 --> 00:24:41,728
+And then View
+
+521
+00:24:43,008 --> 00:24:44,032
+And then
+
+522
+00:24:44,544 --> 00:24:46,592
+Well we could either say
+
+523
+00:24:47,360 --> 00:24:49,408
+We wanna do this ourselves
+
+524
+00:24:50,176 --> 00:24:50,688
+Or
+
+525
+00:24:50,944 --> 00:24:51,712
+We could
+
+526
+00:24:51,968 --> 00:24:52,736
+Use glue
+
+527
+00:24:53,504 --> 00:24:54,528
+Which in this case
+
+528
+00:24:55,040 --> 00:24:57,856
+I'm just gonna use a space
+
+529
+00:24:58,368 --> 00:25:00,416
+just an empty space like that
+
+530
+00:25:00,928 --> 00:25:02,208
+And save and close
+
+531
+00:25:05,280 --> 00:25:07,072
+And then we compile
+
+532
+00:25:12,960 --> 00:25:14,240
+Install
+
+533
+00:25:16,032 --> 00:25:19,360
+And then refresh the sermon page we see that now
+
+534
+00:25:19,872 --> 00:25:20,640
+They are
+
+535
+00:25:21,152 --> 00:25:22,688
+Two links here
+
+536
+00:25:22,944 --> 00:25:24,736
+The one is to open the
+
+537
+00:25:24,992 --> 00:25:25,760
+Actual
+
+538
+00:25:26,784 --> 00:25:30,112
+Sermon and the other one is opening the
+
+539
+00:25:30,624 --> 00:25:32,416
+It's going to open the preacher
+
+540
+00:25:32,928 --> 00:25:38,048
+So if we click on it it still behaves as before the preacher gets opened
+
+541
+00:25:38,304 --> 00:25:39,328
+we closed again
+
+542
+00:25:40,096 --> 00:25:43,936
+And we back here and we still have the preacher filter
+
+543
+00:25:44,192 --> 00:25:45,984
+Here at the bottom of our page
+
+544
+00:25:46,240 --> 00:25:48,032
+As we had it before
+
+545
+00:25:48,288 --> 00:25:49,312
+And so
+
+546
+00:25:49,568 --> 00:25:51,616
+This is really
+
+547
+00:25:51,872 --> 00:25:52,384
+Great
+
+548
+00:25:52,896 --> 00:25:55,200
+We can also then open here
+
+549
+00:25:55,712 --> 00:25:56,480
+And
+
+550
+00:25:56,992 --> 00:25:59,040
+All is working as expected
+
+551
+00:26:02,112 --> 00:26:03,648
+Now as easy as it was
+
+552
+00:26:04,160 --> 00:26:07,488
+To combine these two values into one column
+
+553
+00:26:08,256 --> 00:26:14,400
+While still retaining the actual links and everything surrounding this value having a
+
+554
+00:26:14,656 --> 00:26:16,192
+Dynamically get the name
+
+555
+00:26:16,448 --> 00:26:19,264
+Because obviously in the table it's taught the ID only
+
+556
+00:26:19,776 --> 00:26:24,896
+And now showing it here it means it's actually remapped it in the database so let me show you that
+
+557
+00:26:25,408 --> 00:26:27,456
+So we open the sermons
+
+558
+00:26:29,760 --> 00:26:32,064
+Model and we scroll down
+
+559
+00:26:32,832 --> 00:26:36,672
+We'll see here in the the list query
+
+560
+00:26:37,184 --> 00:26:37,952
+It's still
+
+561
+00:26:38,208 --> 00:26:40,768
+Maps the preacher table in
+
+562
+00:26:41,536 --> 00:26:42,048
+And
+
+563
+00:26:42,304 --> 00:26:46,400
+Builds the connection on the ID in the preacher
+
+564
+00:26:47,168 --> 00:26:48,960
+And still selects
+
+565
+00:26:49,216 --> 00:26:50,496
+The preacher name
+
+566
+00:26:51,008 --> 00:26:54,080
+Then going to the view of that
+
+567
+00:26:55,872 --> 00:26:56,640
+Sermons
+
+568
+00:26:57,152 --> 00:26:58,944
+We see if you scroll down
+
+569
+00:27:02,784 --> 00:27:03,296
+Here
+
+570
+00:27:05,088 --> 00:27:05,856
+It has
+
+571
+00:27:06,112 --> 00:27:07,904
+Produced this chunk
+
+572
+00:27:08,160 --> 00:27:08,672
+Of code
+
+573
+00:27:08,928 --> 00:27:11,232
+For the for the preachers name
+
+574
+00:27:12,000 --> 00:27:14,048
+And this chunk of code
+
+575
+00:27:14,816 --> 00:27:15,584
+For the
+
+576
+00:27:16,096 --> 00:27:16,864
+Sermon name
+
+577
+00:27:17,888 --> 00:27:20,448
+So it still does all the
+
+578
+00:27:20,960 --> 00:27:22,240
+Producing of the
+
+579
+00:27:22,496 --> 00:27:26,848
+HTML code and all the permissional checking whether
+
+580
+00:27:27,104 --> 00:27:28,640
+Does this user actually have
+
+581
+00:27:28,896 --> 00:27:30,176
+The edit permission
+
+582
+00:27:30,432 --> 00:27:30,944
+to
+
+583
+00:27:31,456 --> 00:27:33,760
+To change this value
+
+584
+00:27:34,528 --> 00:27:36,064
+Of the specific preacher
+
+585
+00:27:37,600 --> 00:27:40,928
+So yes and yet it's showing the preacher name
+
+586
+00:27:41,184 --> 00:27:44,512
+As the linking up in the database was done
+
+587
+00:27:45,024 --> 00:27:46,304
+So it's quite exciting
+
+588
+00:27:46,560 --> 00:27:47,328
+I really
+
+589
+00:27:47,584 --> 00:27:51,680
+Hope that you would find it as useful as I am already doing
+
+590
+00:27:52,960 --> 00:27:58,336
+And like I said if you discover anything not to work as expected
+
+591
+00:27:58,848 --> 00:28:04,224
+Please do contact me and on GitHub open up a issue
+
+592
+00:28:04,480 --> 00:28:05,504
+And we will
+
+593
+00:28:06,016 --> 00:28:07,040
+Take it from there. Thanks for watching.
+

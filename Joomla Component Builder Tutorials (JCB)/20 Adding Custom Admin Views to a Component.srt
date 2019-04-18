@@ -1,0 +1,1088 @@
+1
+00:00:00,256 --> 00:00:01,280
+Hi
+
+2
+00:00:01,536 --> 00:00:04,864
+Now we'll look at adding custom admin view to a component
+
+3
+00:00:06,656 --> 00:00:09,728
+We'll make use of cost-benefit projection
+
+4
+00:00:11,008 --> 00:00:12,800
+As our component
+
+5
+00:00:13,568 --> 00:00:14,080
+And then we
+
+6
+00:00:14,336 --> 00:00:15,104
+Go to settings
+
+7
+00:00:16,128 --> 00:00:18,688
+And then we'll go to custom admin views
+
+8
+00:00:19,200 --> 00:00:19,968
+And we'll see oh let's just
+
+9
+00:00:20,992 --> 00:00:21,760
+Close that
+
+10
+00:00:22,016 --> 00:00:22,528
+open again
+
+11
+00:00:23,296 --> 00:00:26,624
+Now will see you there has to custom admin views added
+
+12
+00:00:27,648 --> 00:00:28,416
+Now
+
+13
+00:00:28,928 --> 00:00:34,560
+It has more switches than the site view because of its implementation being more dynamic
+
+14
+00:00:35,072 --> 00:00:37,120
+You can choose an icon
+
+15
+00:00:37,376 --> 00:00:38,656
+Because in the backend
+
+16
+00:00:38,912 --> 00:00:40,704
+You possibly
+
+17
+00:00:41,216 --> 00:00:44,032
+want to have an icon when your on that page
+
+18
+00:00:44,544 --> 00:00:45,056
+on the right
+
+19
+00:00:45,312 --> 00:00:45,824
+of the page
+
+20
+00:00:46,848 --> 00:00:49,920
+Then you can decide where this should show in the main menu
+
+21
+00:00:51,456 --> 00:00:54,528
+Selective if you should show in the main menu the main menu
+
+22
+00:00:54,784 --> 00:00:58,624
+Is a menu that drops down out of Joomla's menu item list
+
+23
+00:00:58,880 --> 00:00:59,392
+Right
+
+24
+00:00:59,904 --> 00:01:01,952
+And then the dashboard
+
+25
+00:01:02,464 --> 00:01:03,232
+Which is that
+
+26
+00:01:03,488 --> 00:01:07,840
+Dashboard we go to every time when we start with a component that
+
+27
+00:01:08,352 --> 00:01:10,144
+All the icons are showing up
+
+28
+00:01:10,400 --> 00:01:13,984
+Then the submenu is the one on the on the left
+
+29
+00:01:14,496 --> 00:01:17,312
+Which you see when you are in a view
+
+30
+00:01:19,104 --> 00:01:22,432
+So these are all placements where you can possibly add
+
+31
+00:01:22,944 --> 00:01:24,224
+This
+
+32
+00:01:24,992 --> 00:01:25,760
+Custom View
+
+33
+00:01:27,552 --> 00:01:29,088
+Now if you remember
+
+34
+00:01:29,600 --> 00:01:30,624
+The company
+
+35
+00:01:31,136 --> 00:01:33,184
+Results we didn't add
+
+36
+00:01:33,696 --> 00:01:34,464
+to
+
+37
+00:01:34,720 --> 00:01:35,488
+Any of the
+
+38
+00:01:36,000 --> 00:01:41,120
+Views individually we added to items so that's why all of these are set to no
+
+39
+00:01:41,632 --> 00:01:42,656
+And
+
+40
+00:01:43,168 --> 00:01:45,728
+That means we are targeting an item
+
+41
+00:01:45,984 --> 00:01:47,264
+In a view
+
+42
+00:01:47,520 --> 00:01:50,848
+And so all we need to do a select the view which we are targeting
+
+43
+00:01:51,104 --> 00:01:52,384
+Which is company
+
+44
+00:01:53,664 --> 00:01:54,688
+And we say ok
+
+45
+00:01:54,944 --> 00:01:56,992
+It has metadata yes or no
+
+46
+00:01:57,248 --> 00:01:59,040
+And it has access yes or no
+
+47
+00:01:59,808 --> 00:02:00,320
+And
+
+48
+00:02:00,576 --> 00:02:01,856
+That's basically it
+
+49
+00:02:02,368 --> 00:02:03,136
+To ensure that
+
+50
+00:02:03,392 --> 00:02:07,488
+Targets the correct view is simply by selecting company here
+
+51
+00:02:08,000 --> 00:02:09,792
+If I close this for a moment
+
+52
+00:02:10,048 --> 00:02:12,096
+And then open that component
+
+53
+00:02:12,352 --> 00:02:15,168
+Show you what is happened with the settings
+
+54
+00:02:16,192 --> 00:02:17,984
+So here we have that component open
+
+55
+00:02:18,496 --> 00:02:19,520
+If I was to open
+
+56
+00:02:19,776 --> 00:02:20,288
+Companies over here
+
+57
+00:02:22,336 --> 00:02:24,896
+You see that has a button here
+
+58
+00:02:25,408 --> 00:02:26,688
+for company result
+
+59
+00:02:27,456 --> 00:02:27,968
+Now
+
+60
+00:02:28,480 --> 00:02:31,808
+If you remember when we set up this custom admin
+
+61
+00:02:32,064 --> 00:02:32,576
+View
+
+62
+00:02:33,344 --> 00:02:35,392
+We we ensured that
+
+63
+00:02:35,648 --> 00:02:38,464
+We are targeting an item ID
+
+64
+00:02:38,720 --> 00:02:44,608
+And by selecting company we are saying we are targeting this company's item
+
+65
+00:02:45,632 --> 00:02:46,656
+ID
+
+66
+00:02:46,912 --> 00:02:48,960
+And that is what makes it work
+
+67
+00:02:49,216 --> 00:02:51,264
+And then we said we want to see a chart
+
+68
+00:02:51,520 --> 00:02:54,080
+I'm so if we look at these this little charts what shows up in
+
+69
+00:02:55,616 --> 00:02:57,152
+The icon itself
+
+70
+00:02:59,456 --> 00:03:00,480
+We click on it
+
+71
+00:03:01,248 --> 00:03:07,392
+We see the custom view shows up and that icon shows up next to it
+
+72
+00:03:07,648 --> 00:03:08,672
+And all works well
+
+73
+00:03:10,720 --> 00:03:13,024
+We also see that there is a combined results
+
+74
+00:03:13,280 --> 00:03:16,096
+Button showing up here in the toolbar
+
+75
+00:03:16,864 --> 00:03:19,168
+And that is because combined results
+
+76
+00:03:19,424 --> 00:03:21,216
+Which selected we want cogs
+
+77
+00:03:22,752 --> 00:03:24,544
+To be the icon
+
+78
+00:03:24,800 --> 00:03:25,568
+And we set
+
+79
+00:03:25,824 --> 00:03:28,384
+List of records is set to yes
+
+80
+00:03:29,152 --> 00:03:30,944
+And has metadata
+
+81
+00:03:31,200 --> 00:03:33,760
+And has access and also company
+
+82
+00:03:34,784 --> 00:03:35,296
+And so
+
+83
+00:03:35,808 --> 00:03:37,600
+These selections before
+
+84
+00:03:37,856 --> 00:03:42,464
+Is only really necessary when you select main menu and submenu
+
+85
+00:03:43,232 --> 00:03:45,280
+Because then you want to say before what
+
+86
+00:03:46,560 --> 00:03:47,840
+Item you want this
+
+87
+00:03:49,376 --> 00:03:50,144
+Menu to be created
+
+88
+00:03:51,424 --> 00:03:55,264
+Now we selected dashboard list of Records
+
+89
+00:03:55,776 --> 00:03:56,800
+And because of that
+
+90
+00:03:57,568 --> 00:03:58,848
+It places that in here
+
+91
+00:03:59,616 --> 00:04:03,968
+And you need to select the records that you want to look at
+
+92
+00:04:04,224 --> 00:04:07,552
+And then you can click on the combined results
+
+93
+00:04:08,320 --> 00:04:10,112
+And they'll grab those IDs and
+
+94
+00:04:10,368 --> 00:04:14,720
+Since we are modelling a data in the controller and the model
+
+95
+00:04:14,976 --> 00:04:17,536
+It gives back to the view these results
+
+96
+00:04:18,047 --> 00:04:21,119
+Through the custom implementation we've done
+
+97
+00:04:21,631 --> 00:04:22,911
+So
+
+98
+00:04:23,167 --> 00:04:24,447
+Just a quick refresher
+
+99
+00:04:25,215 --> 00:04:27,007
+If we go to component Builder
+
+100
+00:04:27,263 --> 00:04:29,567
+And custom admin views
+
+101
+00:04:31,103 --> 00:04:32,895
+and we open company results
+
+102
+00:04:34,943 --> 00:04:36,991
+We see that in the custom button
+
+103
+00:04:37,503 --> 00:04:39,551
+We added the PHP
+
+104
+00:04:39,807 --> 00:04:41,343
+We also added the button
+
+105
+00:04:41,855 --> 00:04:43,135
+We explain to
+
+106
+00:04:43,391 --> 00:04:46,975
+To component builder what we what kind of buttons we want
+
+107
+00:04:47,487 --> 00:04:50,815
+So we set we are targeting a single item you see those
+
+108
+00:04:52,095 --> 00:04:55,423
+Edit company go to company now those buttons
+
+109
+00:04:55,679 --> 00:04:56,447
+are
+
+110
+00:04:56,703 --> 00:04:58,495
+Actually related to
+
+111
+00:04:58,751 --> 00:04:59,775
+Going inside of the view
+
+112
+00:05:00,799 --> 00:05:02,591
+And
+
+113
+00:05:02,847 --> 00:05:04,639
+Then if you come out of this
+
+114
+00:05:06,687 --> 00:05:08,735
+We saw that even and combined results
+
+115
+00:05:08,991 --> 00:05:11,039
+We also added buttons
+
+116
+00:05:11,551 --> 00:05:15,903
+But again those buttons Vcard companies gotocompanies
+
+117
+00:05:16,159 --> 00:05:18,719
+corresponds to this controller
+
+118
+00:05:19,231 --> 00:05:22,047
+And if we go to the view itself
+
+119
+00:05:27,935 --> 00:05:33,311
+And we'll see that that's not responding to this button but actually
+
+120
+00:05:33,823 --> 00:05:37,407
+To the buttons inside called companies and edit
+
+121
+00:05:38,175 --> 00:05:42,271
+Those that's the buttons you were building in the custom View
+
+122
+00:05:42,527 --> 00:05:44,831
+Where is the buttons we are looking at in here
+
+123
+00:05:45,087 --> 00:05:48,159
+Is related to opening the custom view itself
+
+124
+00:05:48,671 --> 00:05:49,695
+So
+
+125
+00:05:50,463 --> 00:05:51,743
+That is just a quick
+
+126
+00:05:51,999 --> 00:05:52,767
+Refresher
+
+127
+00:05:53,535 --> 00:05:56,095
+Same goes with the combined results
+
+128
+00:05:57,119 --> 00:06:01,983
+The combined results is the button that you are setting up here
+
+129
+00:06:02,239 --> 00:06:05,567
+Where is the other buttons are once you have combined them
+
+130
+00:06:06,335 --> 00:06:08,895
+And you've click combined results
+
+131
+00:06:10,431 --> 00:06:16,575
+You see that it adds two buttons dashboard and companies and those two buttons was set up in the view it
+
+132
+00:06:16,831 --> 00:06:17,343
+Self
+
+133
+00:06:17,599 --> 00:06:20,415
+So that you can know and sort of
+
+134
+00:06:20,927 --> 00:06:22,207
+Understand what
+
+135
+00:06:22,463 --> 00:06:24,767
+Area controls what set of buttons
+
+136
+00:06:25,023 --> 00:06:27,583
+This area controls the buttons before opening
+
+137
+00:06:27,839 --> 00:06:33,983
+the view where is in the view the buttons your setting up there is for when you have opened the view
+
+138
+00:06:35,007 --> 00:06:38,335
+Ok so that is setting up a custom admin View
+
+139
+00:06:38,847 --> 00:06:41,151
+To your component
+
+140
+00:06:41,407 --> 00:06:44,223
+And some of the switches obviously again
+
+141
+00:06:45,503 --> 00:06:49,087
+If anything is unclear or you not exactly sure
+
+142
+00:06:49,599 --> 00:06:52,159
+You can obviously come on and do anything
+
+143
+00:06:52,415 --> 00:06:58,559
+So simply go change it to what you would think should work and compile a component and go look in the code
+
+144
+00:06:58,815 --> 00:07:01,887
+And see what has been done and look and the
+
+145
+00:07:02,143 --> 00:07:03,423
+Joomla
+
+146
+00:07:03,935 --> 00:07:04,703
+if the face
+
+147
+00:07:04,959 --> 00:07:06,751
+See what is being displayed
+
+148
+00:07:07,007 --> 00:07:09,823
+And play around with it until you get that what you expected
+
+149
+00:07:10,079 --> 00:07:13,151
+Just a quick heads up this
+
+150
+00:07:13,407 --> 00:07:17,247
+ordering before is only compulsory when
+
+151
+00:07:17,503 --> 00:07:21,343
+Actually selecting add to main menu or add sub menu
+
+152
+00:07:21,855 --> 00:07:23,647
+And if you use those
+
+153
+00:07:23,903 --> 00:07:24,927
+It means
+
+154
+00:07:25,183 --> 00:07:25,695
+That
+
+155
+00:07:25,951 --> 00:07:26,463
+If
+
+156
+00:07:26,719 --> 00:07:28,255
+If you go to your component
+
+157
+00:07:28,511 --> 00:07:33,119
+You have the icons area and here in the top you have your your
+
+158
+00:07:33,375 --> 00:07:34,399
+Your
+
+159
+00:07:34,655 --> 00:07:36,191
+Main menu items
+
+160
+00:07:36,447 --> 00:07:37,983
+And once you've opened
+
+161
+00:07:38,239 --> 00:07:38,751
+A
+
+162
+00:07:39,775 --> 00:07:42,079
+Then you're here on the right you have sub menu
+
+163
+00:07:42,335 --> 00:07:45,919
+So this is main menu this is dash list
+
+164
+00:07:46,943 --> 00:07:50,015
+Now dash list is that one which goes to the top
+
+165
+00:07:50,527 --> 00:07:52,063
+Of the
+
+166
+00:07:53,855 --> 00:07:54,879
+Of the components
+
+167
+00:07:55,135 --> 00:07:55,647
+Toolbar
+
+168
+00:07:56,159 --> 00:07:57,951
+and then submenu is the one here on the side
+
+169
+00:07:58,975 --> 00:08:00,767
+So if if this
+
+170
+00:08:01,023 --> 00:08:07,167
+Custom admin view is simply needs to be placed in the submenu and its lives on its own it's not related to any other
+
+171
+00:08:07,935 --> 00:08:08,703
+Dataset
+
+172
+00:08:09,215 --> 00:08:12,031
+Then you can use the submenu method if you only wanna
+
+173
+00:08:12,287 --> 00:08:14,847
+Featured in the main menu these are all the features that you could set
+
+174
+00:08:17,663 --> 00:08:19,455
+Where is the dashboard
+
+175
+00:08:19,711 --> 00:08:20,735
+List record
+
+176
+00:08:20,991 --> 00:08:21,759
+Feature
+
+177
+00:08:22,015 --> 00:08:23,039
+Helps you to sort of
+
+178
+00:08:23,295 --> 00:08:25,087
+Link it to a specific set
+
+179
+00:08:25,599 --> 00:08:26,111
+Of
+
+180
+00:08:26,367 --> 00:08:28,415
+Data data structures like
+
+181
+00:08:28,671 --> 00:08:29,439
+Like this one does
+
+182
+00:08:29,951 --> 00:08:33,023
+So you can select these ids and when when you click
+
+183
+00:08:33,279 --> 00:08:39,423
+On this combined results the ids of the selected items gets passed
+
+184
+00:08:39,679 --> 00:08:41,727
+to the controller
+
+185
+00:08:41,983 --> 00:08:44,543
+And if I go back to that quickly
+
+186
+00:08:44,799 --> 00:08:48,127
+Show you that how we use it
+
+187
+00:08:49,151 --> 00:08:50,431
+Combined results
+
+188
+00:08:52,991 --> 00:08:53,759
+Custom button
+
+189
+00:08:54,271 --> 00:08:56,319
+You basically see that
+
+190
+00:08:56,831 --> 00:08:59,135
+Go to companies
+
+191
+00:08:59,391 --> 00:09:01,183
+Is not in here
+
+192
+00:09:07,071 --> 00:09:12,191
+So we see we're using the main get called companies data get list query
+
+193
+00:09:12,959 --> 00:09:16,799
+So let's go look at that data query I think that's we will find
+
+194
+00:09:17,311 --> 00:09:19,615
+The use of the implementation of those ids
+
+195
+00:09:25,759 --> 00:09:29,343
+So we see we are basically reaching into the
+
+196
+00:09:29,599 --> 00:09:30,879
+Input array
+
+197
+00:09:31,135 --> 00:09:32,671
+Array sorry object here
+
+198
+00:09:32,927 --> 00:09:34,719
+We getting CID
+
+199
+00:09:35,743 --> 00:09:37,023
+Selected ids
+
+200
+00:09:37,279 --> 00:09:38,815
+And we saying
+
+201
+00:09:39,583 --> 00:09:41,119
+It can be SMD
+
+202
+00:09:42,399 --> 00:09:42,911
+And
+
+203
+00:09:43,423 --> 00:09:45,727
+Then we are exploding it and
+
+204
+00:09:45,983 --> 00:09:48,287
+We are making sure it is intervals
+
+205
+00:09:48,543 --> 00:09:51,103
+And we placing it in ids
+
+206
+00:09:51,871 --> 00:09:55,199
+And so this actually gets the value
+
+207
+00:09:55,455 --> 00:09:55,967
+From the post
+
+208
+00:09:56,991 --> 00:09:58,783
+Object
+
+209
+00:09:59,039 --> 00:09:59,551
+And
+
+210
+00:09:59,807 --> 00:10:03,647
+Places that into ids and here we do some validation
+
+211
+00:10:03,903 --> 00:10:06,207
+To ensure that the person who's trying to access
+
+212
+00:10:06,463 --> 00:10:06,975
+the data has actualy the right
+
+213
+00:10:07,999 --> 00:10:08,511
+To do it
+
+214
+00:10:09,023 --> 00:10:10,559
+And once we past that
+
+215
+00:10:10,815 --> 00:10:13,119
+We basically use those ids
+
+216
+00:10:13,887 --> 00:10:14,655
+to
+
+217
+00:10:15,167 --> 00:10:16,703
+to get
+
+218
+00:10:17,215 --> 00:10:20,031
+The data so in in the filter
+
+219
+00:10:20,543 --> 00:10:23,103
+We use ids
+
+220
+00:10:23,871 --> 00:10:24,895
+And check whether
+
+221
+00:10:25,151 --> 00:10:25,919
+All the IDs
+
+222
+00:10:26,175 --> 00:10:29,247
+Are in a ID and that in the code
+
+223
+00:10:29,759 --> 00:10:31,807
+Basically if you look at the code
+
+224
+00:10:32,063 --> 00:10:34,623
+It's on the models combine results
+
+225
+00:10:36,927 --> 00:10:40,511
+We see that it uses our checking method here
+
+226
+00:10:40,767 --> 00:10:42,047
+Later
+
+227
+00:10:42,303 --> 00:10:43,071
+down here
+
+228
+00:10:43,583 --> 00:10:44,863
+It checks the IDs
+
+229
+00:10:45,631 --> 00:10:49,215
+Puts it array check if it's in array then implodes it
+
+230
+00:10:49,471 --> 00:10:50,751
+And checks whether it is
+
+231
+00:10:51,519 --> 00:10:53,055
+You know only gets those IDs
+
+232
+00:10:53,567 --> 00:10:56,895
+That's how we we filtered the dataset
+
+233
+00:10:57,151 --> 00:10:58,175
+With the results
+
+234
+00:10:58,431 --> 00:10:59,455
+of the selection
+
+235
+00:11:00,223 --> 00:11:00,735
+And
+
+236
+00:11:01,247 --> 00:11:01,759
+So
+
+237
+00:11:02,015 --> 00:11:04,319
+That's just a little bit looking into the backend
+
+238
+00:11:04,831 --> 00:11:06,879
+On how to make use of those
+
+239
+00:11:07,391 --> 00:11:13,535
+Features and again as you can see it's some custom scripting we added to the dynamic get method
+
+240
+00:11:13,791 --> 00:11:16,863
+To take those ids and to use them
+
+241
+00:11:17,119 --> 00:11:18,143
+In the way we intend
+
+242
+00:11:18,655 --> 00:11:20,959
+now you you can ignore them
+
+243
+00:11:21,215 --> 00:11:24,287
+But here is the way that I implemented it
+
+244
+00:11:25,567 --> 00:11:27,871
+If you wanna drop that down pause the video
+
+245
+00:11:28,127 --> 00:11:30,687
+And copy some of this area here
+
+246
+00:11:30,943 --> 00:11:32,479
+Think would be the only part that will be
+
+247
+00:11:32,735 --> 00:11:36,319
+Useful to your purpose
+
+248
+00:11:36,575 --> 00:11:39,391
+And then you can use the IDs in your code
+
+249
+00:11:39,647 --> 00:11:40,415
+As you please
+
+250
+00:11:40,927 --> 00:11:43,999
+And know that this PHP as you saw
+
+251
+00:11:44,511 --> 00:11:45,535
+In the code
+
+252
+00:11:45,791 --> 00:11:48,095
+It runs before the get methods
+
+253
+00:11:48,607 --> 00:11:50,911
+So it basically is a filtering option as you see there
+
+254
+00:11:53,215 --> 00:11:55,775
+So then this query starts
+
+255
+00:11:56,287 --> 00:11:58,079
+Then that code be wrote
+
+256
+00:11:58,335 --> 00:12:01,151
+Is entered in here and then the rest of the code which is
+
+257
+00:12:01,407 --> 00:12:02,687
+build by component Builder
+
+258
+00:12:03,199 --> 00:12:07,295
+Is being done and you can use a filter option with whatever you
+
+259
+00:12:07,807 --> 00:12:08,831
+Collected up here
+
+260
+00:12:09,855 --> 00:12:10,623
+Ok so that's
+
+261
+00:12:10,879 --> 00:12:15,487
+Looking into adding custom admin views to component Builder
+
+262
+00:12:15,743 --> 00:12:18,815
+And just showing you again the tremendous
+
+263
+00:12:19,071 --> 00:12:20,863
+Leverage and
+
+264
+00:12:21,631 --> 00:12:23,935
+Design choices you can make
+
+265
+00:12:24,447 --> 00:12:26,751
+In ensuring that your component is dynamic
+
+266
+00:12:27,007 --> 00:12:27,775
+And
+
+267
+00:12:28,543 --> 00:12:30,847
+Get sort of breaks out of the mould
+
+268
+00:12:31,103 --> 00:12:32,639
+So that you can achieve
+
+269
+00:12:32,895 --> 00:12:33,663
+Nice
+
+270
+00:12:33,919 --> 00:12:34,943
+Complex components
+
+271
+00:12:35,199 --> 00:12:36,735
+Write inside component Builder
+
+272
+00:12:37,247 --> 00:12:38,015
+Thank you for watching
+

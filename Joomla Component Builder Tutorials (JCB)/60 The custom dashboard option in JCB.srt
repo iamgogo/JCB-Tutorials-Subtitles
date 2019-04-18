@@ -1,0 +1,692 @@
+1
+00:00:00,256 --> 00:00:04,352
+The option to now add your own custom dashboard
+
+2
+00:00:05,120 --> 00:00:08,704
+To your component has actually finally come
+
+3
+00:00:09,472 --> 00:00:14,336
+I might have mentioned this in some previous tutorials but it's somewhat hidden
+
+4
+00:00:14,592 --> 00:00:17,920
+So I thought Well let's do it quick tutorial just about this
+
+5
+00:00:19,200 --> 00:00:25,344
+So in the past all components basically it's layout ended up as the dashboard looking like this
+
+6
+00:00:26,112 --> 00:00:27,648
+Obviously with your own icons
+
+7
+00:00:28,416 --> 00:00:31,744
+But you could do only about what you see here
+
+8
+00:00:32,256 --> 00:00:34,560
+And this is still the default dashboard
+
+9
+00:00:34,816 --> 00:00:36,352
+So if you don't add your own
+
+10
+00:00:36,608 --> 00:00:38,400
+You're basically Build this for you
+
+11
+00:00:38,912 --> 00:00:43,008
+Based on your Fields based on it's icons and layout selection
+
+12
+00:00:43,776 --> 00:00:46,592
+So you could add tabs like we have here
+
+13
+00:00:46,848 --> 00:00:49,408
+And these tabs are quite powerful
+
+14
+00:00:49,920 --> 00:00:51,456
+You can really
+
+15
+00:00:53,248 --> 00:00:53,760
+Add
+
+16
+00:00:54,016 --> 00:00:54,528
+A lot of
+
+17
+00:00:54,784 --> 00:00:56,320
+Functionality within that
+
+18
+00:00:56,832 --> 00:01:02,464
+But for some of you this might be boring and not really what you would like in fact you wanna look different
+
+19
+00:01:02,720 --> 00:01:06,560
+You don't want your component to look like it was built with JCB
+
+20
+00:01:07,072 --> 00:01:10,400
+And I don't blame you because that is what makes components
+
+21
+00:01:11,168 --> 00:01:11,936
+Valuable
+
+22
+00:01:12,192 --> 00:01:14,240
+Is that they are actually unique
+
+23
+00:01:14,752 --> 00:01:20,896
+And that is really why JCB exists it exist because I didn't want a cookie cutter component
+
+24
+00:01:22,176 --> 00:01:26,272
+I wanted to build my own components that actually look different from
+
+25
+00:01:26,528 --> 00:01:29,088
+Each other in yet have similar
+
+26
+00:01:29,344 --> 00:01:31,648
+Behaviour because of my company's approach
+
+27
+00:01:32,672 --> 00:01:33,184
+But
+
+28
+00:01:33,440 --> 00:01:36,000
+None of the others out there actually
+
+29
+00:01:36,256 --> 00:01:37,280
+Could do that for me
+
+30
+00:01:37,792 --> 00:01:38,560
+They all
+
+31
+00:01:38,816 --> 00:01:39,840
+We ended up looking
+
+32
+00:01:40,096 --> 00:01:40,864
+Just like
+
+33
+00:01:41,888 --> 00:01:42,400
+The one
+
+34
+00:01:42,656 --> 00:01:43,424
+We were using
+
+35
+00:01:43,936 --> 00:01:45,472
+So now with JCB
+
+36
+00:01:45,728 --> 00:01:46,752
+We constantly
+
+37
+00:01:47,264 --> 00:01:52,640
+Trying to make sure that this is not the case in fact that's why the site view area is it a bit more difficult
+
+38
+00:01:52,896 --> 00:01:54,432
+Because you wanna give you
+
+39
+00:01:54,688 --> 00:01:58,272
+The opportunity to express your components functionality
+
+40
+00:01:58,784 --> 00:02:00,576
+In a way that's unique to you
+
+41
+00:02:01,344 --> 00:02:06,208
+This might be a challenge but in the long run believe me it is the advantage
+
+42
+00:02:06,720 --> 00:02:09,792
+If you could do it without knowing
+
+43
+00:02:10,048 --> 00:02:13,120
+Any Javascript with CSS or HTML
+
+44
+00:02:13,632 --> 00:02:15,936
+Then anyone else can do it as well
+
+45
+00:02:16,192 --> 00:02:18,496
+So there is like a little bit of a
+
+46
+00:02:20,032 --> 00:02:21,824
+Yeah incentive to sort of
+
+47
+00:02:22,336 --> 00:02:24,640
+Get your head around some of these Technologies
+
+48
+00:02:24,896 --> 00:02:29,760
+And any case to be a good component developer and not knowing PHP
+
+49
+00:02:30,272 --> 00:02:31,040
+And those
+
+50
+00:02:31,552 --> 00:02:33,088
+Front-end languages
+
+51
+00:02:33,344 --> 00:02:36,672
+Is most certainly a risk ok
+
+52
+00:02:36,928 --> 00:02:37,440
+Well
+
+53
+00:02:37,696 --> 00:02:41,024
+So without any further ado if we were to go
+
+54
+00:02:41,280 --> 00:02:43,584
+We'll have your this common known
+
+55
+00:02:43,840 --> 00:02:44,608
+Hello World
+
+56
+00:02:44,864 --> 00:02:45,632
+Component
+
+57
+00:02:46,400 --> 00:02:47,168
+and if we would to
+
+58
+00:02:47,424 --> 00:02:49,984
+Open it in the website now
+
+59
+00:02:50,240 --> 00:02:52,032
+This is it dashboard
+
+60
+00:02:52,800 --> 00:02:55,104
+Now it doesn't have a custom dashboard
+
+61
+00:02:56,384 --> 00:02:57,152
+And
+
+62
+00:02:57,408 --> 00:03:01,248
+I'm not gonna add one at this point but I am gonna
+
+63
+00:03:01,504 --> 00:03:02,528
+Take-away
+
+64
+00:03:02,784 --> 00:03:04,576
+The dashboard it has and
+
+65
+00:03:04,832 --> 00:03:06,368
+So then it's sort of behaves
+
+66
+00:03:06,624 --> 00:03:08,928
+Like the article manager for example
+
+67
+00:03:09,440 --> 00:03:14,304
+If we would go here there's an in the components area there is a new tab or rather
+
+68
+00:03:14,560 --> 00:03:15,584
+a tab called
+
+69
+00:03:16,096 --> 00:03:17,888
+ Dash&Install
+
+70
+00:03:18,144 --> 00:03:20,192
+You see here it has the default
+
+71
+00:03:20,960 --> 00:03:22,240
+And then here
+
+72
+00:03:22,496 --> 00:03:25,312
+It has some description of what that means
+
+73
+00:03:26,080 --> 00:03:27,360
+If you click on dynamic
+
+74
+00:03:27,616 --> 00:03:30,944
+It actually gives you a list of all the available
+
+75
+00:03:31,456 --> 00:03:32,224
+Sites
+
+76
+00:03:32,480 --> 00:03:35,552
+Views that are linked to the component
+
+77
+00:03:35,808 --> 00:03:38,112
+And that would be custom admin views
+
+78
+00:03:38,368 --> 00:03:39,136
+As well as
+
+79
+00:03:39,392 --> 00:03:42,208
+Normal admin views it will show you a list of them all
+
+80
+00:03:42,976 --> 00:03:44,512
+And you can then select
+
+81
+00:03:44,768 --> 00:03:45,536
+Any of those
+
+82
+00:03:46,048 --> 00:03:48,864
+And that will become the new dashboard for your component
+
+83
+00:03:49,376 --> 00:03:51,168
+So basically save and close
+
+84
+00:03:52,448 --> 00:03:55,264
+And go to the compiler and compile the
+
+85
+00:03:55,520 --> 00:03:56,288
+Hello World
+
+86
+00:03:56,800 --> 00:03:57,824
+Component
+
+87
+00:03:58,336 --> 00:04:00,384
+And basically just reinstall
+
+88
+00:04:00,896 --> 00:04:04,992
+So to demonstrate how that changed our components behaviour
+
+89
+00:04:06,016 --> 00:04:06,528
+So
+
+90
+00:04:07,296 --> 00:04:08,320
+we're going to install
+
+91
+00:04:11,136 --> 00:04:11,904
+Then we will
+
+92
+00:04:12,160 --> 00:04:15,232
+Basically go to components and click on
+
+93
+00:04:16,000 --> 00:04:17,280
+This hello world link
+
+94
+00:04:17,791 --> 00:04:21,119
+To see what it does now as its default dashboard
+
+95
+00:04:21,887 --> 00:04:25,727
+And so it loads the listview and the dashboard is gone
+
+96
+00:04:25,983 --> 00:04:27,775
+So from this point forward
+
+97
+00:04:28,031 --> 00:04:29,823
+Your Hello World Component
+
+98
+00:04:30,335 --> 00:04:31,103
+Actually
+
+99
+00:04:31,359 --> 00:04:32,383
+Looks like this
+
+100
+00:04:32,639 --> 00:04:34,175
+And it doesn't have a dashboard
+
+101
+00:04:34,943 --> 00:04:37,503
+Now you could use a custom dashboard
+
+102
+00:04:38,015 --> 00:04:40,575
+Which and In our case
+
+103
+00:04:41,855 --> 00:04:42,367
+If you
+
+104
+00:04:42,623 --> 00:04:44,159
+If you're using
+
+105
+00:04:44,415 --> 00:04:45,439
+A component
+
+106
+00:04:45,695 --> 00:04:48,255
+That has custom admin views
+
+107
+00:04:48,767 --> 00:04:50,047
+So JCB has
+
+108
+00:04:51,071 --> 00:04:54,911
+The compiler and the gets Snippets area as custom admin views
+
+109
+00:04:55,423 --> 00:04:57,727
+So if we were to do the similar
+
+110
+00:04:57,983 --> 00:04:59,263
+thing with JCB
+
+111
+00:04:59,775 --> 00:05:01,311
+We could just as well
+
+112
+00:05:01,823 --> 00:05:02,335
+Select
+
+113
+00:05:02,847 --> 00:05:03,871
+One of those
+
+114
+00:05:04,383 --> 00:05:06,431
+Obviously say dynamic
+
+115
+00:05:06,687 --> 00:05:07,199
+And select
+
+116
+00:05:07,455 --> 00:05:09,247
+One of those views
+
+117
+00:05:09,503 --> 00:05:10,783
+So scroll down a bit
+
+118
+00:05:11,039 --> 00:05:11,551
+Where is it
+
+119
+00:05:12,831 --> 00:05:13,343
+There
+
+120
+00:05:13,599 --> 00:05:16,415
+The compiler we could make the compiler
+
+121
+00:05:16,671 --> 00:05:17,695
+JCB's
+
+122
+00:05:17,951 --> 00:05:18,719
+Dashboard
+
+123
+00:05:19,231 --> 00:05:19,743
+Now
+
+124
+00:05:20,255 --> 00:05:24,607
+I know it's gonna break a lot of things somehow I suppose but let's try it out
+
+125
+00:05:25,375 --> 00:05:29,471
+So we got JCB now we switched it to have another dashboard
+
+126
+00:05:29,727 --> 00:05:31,519
+Instead of the normal dashboard
+
+127
+00:05:32,287 --> 00:05:33,567
+The compile it here
+
+128
+00:05:33,823 --> 00:05:35,103
+And then install
+
+129
+00:05:36,383 --> 00:05:39,967
+Before install it I just want to tell you what I meant by things may break
+
+130
+00:05:40,735 --> 00:05:42,271
+We got a bunch of times here
+
+131
+00:05:42,783 --> 00:05:46,367
+And all these tabs are getting information and making it available
+
+132
+00:05:46,623 --> 00:05:48,671
+To you so you could just get
+
+133
+00:05:48,927 --> 00:05:49,439
+information from us
+
+134
+00:05:50,975 --> 00:05:55,583
+And we got the version here in the last build date and
+
+135
+00:05:56,095 --> 00:06:00,191
+Yeah so you are basically gonna remove this whole area
+
+136
+00:06:00,703 --> 00:06:02,495
+So or we just did
+
+137
+00:06:02,751 --> 00:06:04,287
+If I click on this 
+
+138
+00:06:04,543 --> 00:06:05,311
+install
+
+139
+00:06:10,175 --> 00:06:11,199
+we see first
+
+140
+00:06:11,455 --> 00:06:14,527
+It tells us that this language string is no longer here
+
+141
+00:06:15,039 --> 00:06:19,391
+And at first it seems like it's a broken issue but if we refreshed it
+
+142
+00:06:19,903 --> 00:06:21,695
+You see that actually removed it
+
+143
+00:06:21,951 --> 00:06:23,743
+And so it's just a cash thing there
+
+144
+00:06:23,999 --> 00:06:26,047
+So basically the dashboard is gone
+
+145
+00:06:26,559 --> 00:06:28,351
+And if I was to
+
+146
+00:06:28,607 --> 00:06:30,143
+Go here and click on
+
+147
+00:06:30,399 --> 00:06:35,007
+Component builder, it will from now on open right at the compiler
+
+148
+00:06:35,775 --> 00:06:37,823
+And that will now be it's default page
+
+149
+00:06:38,591 --> 00:06:40,383
+Which is what we told it
+
+150
+00:06:40,639 --> 00:06:42,431
+And so the behaviour is correct
+
+151
+00:06:42,943 --> 00:06:44,223
+We don't see any issues
+
+152
+00:06:44,479 --> 00:06:47,039
+And actually if you were to gonna go to the code
+
+153
+00:06:47,551 --> 00:06:51,647
+Dashboard is completely removed all is files everything
+
+154
+00:06:51,903 --> 00:06:54,207
+And so no trace of it is left
+
+155
+00:06:54,719 --> 00:06:56,511
+Obviously to undo this
+
+156
+00:06:57,535 --> 00:06:58,047
+you could
+
+157
+00:06:58,559 --> 00:07:00,607
+Simply say default again
+
+158
+00:07:01,119 --> 00:07:02,399
+And save and close
+
+159
+00:07:03,167 --> 00:07:05,215
+And then compile it again
+
+160
+00:07:05,983 --> 00:07:08,031
+And it will place the dashboard back
+
+161
+00:07:08,799 --> 00:07:09,311
+So
+
+162
+00:07:09,823 --> 00:07:12,895
+That's not really any harm done to the component
+
+163
+00:07:13,407 --> 00:07:17,247
+But for those of you wanna take the custom admin views
+
+164
+00:07:17,503 --> 00:07:19,295
+And design a much more
+
+165
+00:07:19,807 --> 00:07:21,599
+Impressive maybe not a boring
+
+166
+00:07:21,855 --> 00:07:22,879
+Dashboard
+
+167
+00:07:23,135 --> 00:07:24,671
+Can now do so
+
+168
+00:07:24,927 --> 00:07:26,975
+By Simply using this new feature
+
+169
+00:07:29,535 --> 00:07:32,095
+And I'm sure it's gonna be a lot of fun
+
+170
+00:07:33,887 --> 00:07:35,935
+So there we refresh now
+
+171
+00:07:37,215 --> 00:07:39,519
+Are dashboards back and if you click on it
+
+172
+00:07:40,287 --> 00:07:42,335
+There we go everything is fine again
+
+173
+00:07:43,103 --> 00:07:46,687
+Shoo away thanks for watching
+

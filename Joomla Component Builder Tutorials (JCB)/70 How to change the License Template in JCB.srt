@@ -1,0 +1,808 @@
+1
+00:00:00,768 --> 00:00:04,864
+I would like to talk to you about changing the licence template
+
+2
+00:00:05,120 --> 00:00:06,400
+For your component
+
+3
+00:00:07,424 --> 00:00:11,520
+This would be expected that you've made at least
+
+4
+00:00:12,800 --> 00:00:14,080
+40% change
+
+5
+00:00:14,336 --> 00:00:16,384
+To any of the demo components
+
+6
+00:00:18,944 --> 00:00:19,968
+Yes so
+
+7
+00:00:20,992 --> 00:00:23,296
+Let's say you've changed this component
+
+8
+00:00:24,064 --> 00:00:25,344
+Quite considerably
+
+9
+00:00:26,112 --> 00:00:27,648
+Then there is this place called
+
+10
+00:00:27,904 --> 00:00:29,952
+Licensing template
+
+11
+00:00:32,000 --> 00:00:34,304
+Now it actually tells you there what you should do
+
+12
+00:00:34,560 --> 00:00:35,584
+Select a file
+
+13
+00:00:35,840 --> 00:00:38,656
+That should be used for license all files
+
+14
+00:00:39,424 --> 00:00:40,448
+Found in
+
+15
+00:00:40,960 --> 00:00:42,496
+Administrator component
+
+16
+00:00:42,752 --> 00:00:43,520
+Component Builder
+
+17
+00:00:43,776 --> 00:00:44,544
+Compiler
+
+18
+00:00:45,056 --> 00:00:46,336
+Now the files
+
+19
+00:00:46,592 --> 00:00:50,432
+What I should add to the note is actually the txt files
+
+20
+00:00:50,944 --> 00:00:54,528
+So that means you could put any txt file in there
+
+21
+00:00:54,784 --> 00:00:57,344
+And then selected here as a license template
+
+22
+00:00:57,600 --> 00:00:59,136
+Now let me show you how that works
+
+23
+00:01:00,928 --> 00:01:01,952
+Ok first of all
+
+24
+00:01:02,720 --> 00:01:04,000
+It must be done
+
+25
+00:01:04,256 --> 00:01:09,888
+When the Joomla component Builder's ready installed on your website.  So here I have a website Joomla Mount
+
+26
+00:01:10,400 --> 00:01:11,680
+So in Administrators
+
+27
+00:01:12,448 --> 00:01:13,216
+Component
+
+28
+00:01:13,728 --> 00:01:15,264
+or administrator 
+
+29
+00:01:15,520 --> 00:01:16,544
+components
+
+30
+00:01:17,312 --> 00:01:18,336
+component builder
+
+31
+00:01:18,592 --> 00:01:20,896
+There is a folder called compiler
+
+32
+00:01:21,152 --> 00:01:22,176
+And in it there is
+
+33
+00:01:22,432 --> 00:01:23,968
+123
+
+34
+00:01:24,224 --> 00:01:27,040
+4 txt files 5 txt files
+
+35
+00:01:27,808 --> 00:01:29,600
+And going back to the component
+
+36
+00:01:30,624 --> 00:01:31,648
+There is
+
+37
+00:01:31,904 --> 00:01:37,280
+12345 files I see it's also using the HTML
+
+38
+00:01:37,536 --> 00:01:39,840
+That one will obviously not come out right
+
+39
+00:01:40,096 --> 00:01:40,864
+Ok
+
+40
+00:01:41,120 --> 00:01:41,632
+So
+
+41
+00:01:42,400 --> 00:01:46,240
+These ones with the .txt's the one that you would
+
+42
+00:01:46,496 --> 00:01:47,008
+Select
+
+43
+00:01:47,264 --> 00:01:48,288
+Any one of those
+
+44
+00:01:48,800 --> 00:01:51,872
+To be the template that you are going to use
+
+45
+00:01:52,640 --> 00:01:58,784
+Now if you use one of the existing templates and just change it then with the next update
+
+46
+00:01:59,040 --> 00:02:00,576
+Your changes will be overwritten
+
+47
+00:02:00,832 --> 00:02:03,392
+So you wanna do it in a way that sort of
+
+48
+00:02:03,904 --> 00:02:05,696
+Preserved your changes
+
+49
+00:02:06,208 --> 00:02:09,792
+And the way you do that is you actually go
+
+50
+00:02:10,560 --> 00:02:11,840
+Back to that area
+
+51
+00:02:12,352 --> 00:02:13,632
+And then you select
+
+52
+00:02:13,888 --> 00:02:15,936
+Or let's say were you selected default one
+
+53
+00:02:16,960 --> 00:02:19,520
+And maybe you don't like this
+
+54
+00:02:19,776 --> 00:02:21,056
+So you want to take that out
+
+55
+00:02:21,568 --> 00:02:22,080
+like that
+
+56
+00:02:22,592 --> 00:02:24,896
+And maybe you don't want to really support
+
+57
+00:02:25,152 --> 00:02:27,968
+Or show that you used JCB so
+
+58
+00:02:28,992 --> 00:02:30,016
+Take that out
+
+59
+00:02:30,784 --> 00:02:32,064
+I really don't mind
+
+60
+00:02:32,320 --> 00:02:32,832
+in fact
+
+61
+00:02:33,344 --> 00:02:36,416
+I'm so much so supportive open-source that
+
+62
+00:02:36,928 --> 00:02:37,440
+I don't
+
+63
+00:02:37,696 --> 00:02:38,976
+I don't mind you changing
+
+64
+00:02:39,232 --> 00:02:41,024
+Anything here
+
+65
+00:02:41,792 --> 00:02:44,608
+And anything else in fact anything there
+
+66
+00:02:45,120 --> 00:02:46,400
+And anything there
+
+67
+00:02:47,168 --> 00:02:49,216
+This I would want you to leave
+
+68
+00:02:49,984 --> 00:02:50,752
+Basically
+
+69
+00:02:51,264 --> 00:02:53,312
+Because you could set this in the
+
+70
+00:02:53,568 --> 00:02:56,384
+you know these placeholders are being replaced
+
+71
+00:02:56,640 --> 00:02:58,432
+By the settings of your component
+
+72
+00:02:58,944 --> 00:03:00,992
+So that means you could still tweak this
+
+73
+00:03:01,248 --> 00:03:02,528
+But do it in the component
+
+74
+00:03:02,784 --> 00:03:04,832
+But leave a license somehow
+
+75
+00:03:05,088 --> 00:03:06,112
+Copyright notice
+
+76
+00:03:06,880 --> 00:03:09,952
+So that people know how to use your program
+
+77
+00:03:11,488 --> 00:03:12,000
+But
+
+78
+00:03:12,768 --> 00:03:14,048
+Having said all that
+
+79
+00:03:14,560 --> 00:03:20,448
+You do realize that the lot of the code between all the components at JCB built are more or less the same
+
+80
+00:03:20,960 --> 00:03:22,752
+It's just little names here and there
+
+81
+00:03:23,264 --> 00:03:25,824
+and that's really the only thing you copy writing
+
+82
+00:03:26,336 --> 00:03:27,616
+Just keep that in mind
+
+83
+00:03:27,872 --> 00:03:29,408
+You're not copy writing the
+
+84
+00:03:29,920 --> 00:03:33,504
+Every little line really your copy writing the changes because
+
+85
+00:03:33,760 --> 00:03:35,040
+The
+
+86
+00:03:35,296 --> 00:03:41,440
+The idea of how built is already been copyrighted either by Joomla itself or by
+
+87
+00:03:41,696 --> 00:03:43,232
+sorry
+
+88
+00:03:44,000 --> 00:03:48,864
+JCB yes that's right so just keep that in the back of your head
+
+89
+00:03:49,120 --> 00:03:51,424
+Your copy writing the changes you've made
+
+90
+00:03:51,680 --> 00:03:53,472
+And that would you done
+
+91
+00:03:54,240 --> 00:04:00,384
+And maybe when someone uses your component they won't think about it that way and I don't I don't mind and I nothing
+
+92
+00:04:00,640 --> 00:04:03,456
+Anyone would because we are open source community
+
+93
+00:04:04,224 --> 00:04:04,736
+But
+
+94
+00:04:04,992 --> 00:04:08,832
+If you do change your program to a proprietary software
+
+95
+00:04:09,344 --> 00:04:10,880
+You might have
+
+96
+00:04:11,648 --> 00:04:12,416
+to
+
+97
+00:04:12,928 --> 00:04:17,024
+Yeah you know you need to look at What would be the implication because
+
+98
+00:04:17,791 --> 00:04:19,327
+I think
+
+99
+00:04:19,839 --> 00:04:21,887
+There's a possibility that some areas
+
+100
+00:04:22,399 --> 00:04:23,935
+Cannot be made proprietary be
+
+101
+00:04:24,191 --> 00:04:28,031
+Because of the Open Source license already being on JCB
+
+102
+00:04:28,287 --> 00:04:29,055
+And on
+
+103
+00:04:29,311 --> 00:04:30,079
+Everything that it's
+
+104
+00:04:30,335 --> 00:04:30,847
+done
+
+105
+00:04:32,895 --> 00:04:39,039
+Ok so that's just I'm not sure I'm not a lawyer I don't know how all that works out
+
+106
+00:04:40,063 --> 00:04:40,575
+But
+
+107
+00:04:40,831 --> 00:04:45,951
+I want to give many people so much freedom and I'm not really gonna check people up
+
+108
+00:04:46,463 --> 00:04:49,791
+Someone else may there is actually places that
+
+109
+00:04:50,047 --> 00:04:52,351
+Might feel obligated to do so
+
+110
+00:04:52,863 --> 00:04:55,423
+I wanna be busy with code
+
+111
+00:04:55,679 --> 00:04:56,959
+Writing programs
+
+112
+00:04:58,495 --> 00:04:59,007
+Ok
+
+113
+00:05:00,031 --> 00:05:01,567
+So this is how you change the template
+
+114
+00:05:01,823 --> 00:05:07,967
+More or less you could leave things in the one that think that's the most let's see
+
+115
+00:05:08,223 --> 00:05:09,759
+You can check between them
+
+116
+00:05:10,015 --> 00:05:15,903
+You see like this the way to know what is all the place holders that are available
+
+117
+00:05:16,415 --> 00:05:19,743
+Is really to go to the
+
+118
+00:05:20,511 --> 00:05:22,047
+Let's see helper
+
+119
+00:05:22,559 --> 00:05:23,839
+Compiler
+
+120
+00:05:24,607 --> 00:05:27,167
+I think it's that infusion is 1
+
+121
+00:05:28,447 --> 00:05:28,959
+So
+
+122
+00:05:29,215 --> 00:05:31,007
+You should look at the infusion
+
+123
+00:05:31,519 --> 00:05:32,287
+Now like
+
+124
+00:05:32,799 --> 00:05:35,871
+There is a company name you see there's a creation date
+
+125
+00:05:36,383 --> 00:05:41,759
+There's the built date there's author, author e-mail website copyright license version
+
+126
+00:05:42,271 --> 00:05:43,295
+Actual version
+
+127
+00:05:44,831 --> 00:05:48,159
+Component names for short description description
+
+128
+00:05:48,927 --> 00:05:51,487
+Image type access so they are
+
+129
+00:05:52,255 --> 00:05:52,767
+Really
+
+130
+00:05:53,023 --> 00:05:54,815
+Most of these aesthetic
+
+131
+00:05:55,327 --> 00:06:01,471
+A content placeholders could be used obviously some of them won't make sense like custom helper
+
+132
+00:06:01,727 --> 00:06:02,751
+Script that
+
+133
+00:06:03,007 --> 00:06:08,383
+Means it's got add the custom helper script in that lines It's not gonna come out right
+
+134
+00:06:08,639 --> 00:06:11,455
+So these Place holders are really from where
+
+135
+00:06:11,711 --> 00:06:14,527
+The content is being updated in the file
+
+136
+00:06:14,783 --> 00:06:15,807
+Ok so you'll see
+
+137
+00:06:16,319 --> 00:06:18,111
+That it is the same
+
+138
+00:06:18,367 --> 00:06:24,255
+This is a new method we are using to put it in the hashes these these hashes here
+
+139
+00:06:25,791 --> 00:06:26,303
+So
+
+140
+00:06:26,559 --> 00:06:28,607
+Basically the creation date
+
+141
+00:06:29,375 --> 00:06:30,911
+Is this one here
+
+142
+00:06:31,167 --> 00:06:35,263
+And it's getting it from the infusion which is found in helpers compiler
+
+143
+00:06:35,519 --> 00:06:39,103
+So you can check out these and use any of those as you like
+
+144
+00:06:39,615 --> 00:06:41,407
+The point being
+
+145
+00:06:41,663 --> 00:06:43,199
+It's best to leave this in
+
+146
+00:06:43,711 --> 00:06:49,855
+And at least tell people who who who you do did it so someone
+
+147
+00:06:50,111 --> 00:06:53,439
+Can be blamed anyway
+
+148
+00:06:53,951 --> 00:06:54,719
+And
+
+149
+00:06:55,231 --> 00:06:57,023
+There we go now
+
+150
+00:06:57,279 --> 00:06:58,815
+If you just save now
+
+151
+00:06:59,071 --> 00:07:02,399
+It'll still work the default template will be updated
+
+152
+00:07:03,167 --> 00:07:09,055
+But the problem is the sooner we released a new update for JCB and you install that update
+
+153
+00:07:09,311 --> 00:07:10,847
+Is actually gonna over right this
+
+154
+00:07:11,103 --> 00:07:13,663
+So what we would suggest the saying save as
+
+155
+00:07:15,711 --> 00:07:16,479
+And then give it
+
+156
+00:07:16,735 --> 00:07:19,551
+your name I'm just gonna say
+
+157
+00:07:22,623 --> 00:07:23,391
+q
+
+158
+00:07:23,647 --> 00:07:24,671
+Default q
+
+159
+00:07:24,927 --> 00:07:25,695
+Save
+
+160
+00:07:26,207 --> 00:07:27,487
+Now we have a new file
+
+161
+00:07:28,511 --> 00:07:31,839
+And we can actually go back to JCB
+
+162
+00:07:32,607 --> 00:07:35,167
+And we can just refresh the component area
+
+163
+00:07:36,703 --> 00:07:39,007
+And now we'll see that there it is
+
+164
+00:07:39,263 --> 00:07:40,031
+The new
+
+165
+00:07:40,287 --> 00:07:40,799
+Template
+
+166
+00:07:41,311 --> 00:07:42,847
+Now if I save
+
+167
+00:07:43,615 --> 00:07:46,431
+And compile this component
+
+168
+00:07:46,943 --> 00:07:48,479
+It will actually
+
+169
+00:07:48,735 --> 00:07:53,855
+Use the new template now let me first see do I have it installed yes I do let me show you that
+
+170
+00:07:54,623 --> 00:07:59,743
+So in the code we go down to sermon distributor we just open any of its files
+
+171
+00:07:59,999 --> 00:08:02,559
+And that's how it's current template looks like
+
+172
+00:08:03,071 --> 00:08:04,863
+Ok so there is the current template
+
+173
+00:08:05,887 --> 00:08:07,167
+All the way down to there
+
+174
+00:08:09,215 --> 00:08:11,263
+Now let's compile and see
+
+175
+00:08:11,519 --> 00:08:14,079
+It'll update every file across the
+
+176
+00:08:14,335 --> 00:08:14,847
+Spectrum
+
+177
+00:08:16,383 --> 00:08:18,175
+So we just gonna say
+
+178
+00:08:18,687 --> 00:08:20,735
+sermon distributor and compile
+
+179
+00:08:24,575 --> 00:08:26,367
+Ok and then this install it
+
+180
+00:08:28,415 --> 00:08:30,463
+Now let's go check out our template
+
+181
+00:08:31,743 --> 00:08:35,583
+And now if we scroll up we see up it's got the new
+
+182
+00:08:36,095 --> 00:08:36,863
+The new
+
+183
+00:08:37,119 --> 00:08:40,191
+Template is being used no longer the old one
+
+184
+00:08:40,703 --> 00:08:43,775
+It's the same file I just it just refreshed it
+
+185
+00:08:44,031 --> 00:08:44,799
+In the background
+
+186
+00:08:45,055 --> 00:08:46,079
+Ok so
+
+187
+00:08:46,335 --> 00:08:47,359
+That how it works
+
+188
+00:08:47,615 --> 00:08:48,383
+Easy
+
+189
+00:08:48,639 --> 00:08:54,783
+To change the license and that's really means you can make it a small or is big as you like
+
+190
+00:08:55,551 --> 00:08:57,087
+Any shape and size
+
+191
+00:08:57,599 --> 00:09:02,207
+Just keep in mind that you need to escape it and unescape it
+
+192
+00:09:02,975 --> 00:09:05,535
+Because otherwise it will mess up the code
+
+193
+00:09:06,559 --> 00:09:09,887
+Ok well that is how you change the license template
+
+194
+00:09:10,143 --> 00:09:10,911
+Now
+
+195
+00:09:11,167 --> 00:09:11,935
+So
+
+196
+00:09:12,703 --> 00:09:16,287
+Make a wise decisions and how you deal with this area
+
+197
+00:09:16,799 --> 00:09:19,615
+I don't wanna say too much more and put
+
+198
+00:09:19,871 --> 00:09:22,431
+You know restraints up because really
+
+199
+00:09:24,991 --> 00:09:26,527
+I know that
+
+200
+00:09:28,319 --> 00:09:30,367
+The initial Desire here
+
+201
+00:09:30,879 --> 00:09:33,951
+Was really to give everybody as much freedom as they need
+
+202
+00:09:35,231 --> 00:09:35,743
+Thank you for watching.
+

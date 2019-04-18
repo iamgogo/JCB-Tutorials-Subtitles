@@ -1,0 +1,2420 @@
+1
+00:00:00,768 --> 00:00:03,840
+Now that we've added the admin views to the component
+
+2
+00:00:05,376 --> 00:00:09,984
+Let's look at some of the features that is still available inside of components
+
+3
+00:00:14,592 --> 00:00:18,688
+As you can see adding your custom admin views is done there
+
+4
+00:00:18,944 --> 00:00:20,736
+And the site views is done here
+
+5
+00:00:21,760 --> 00:00:27,136
+Then there is a custom admin menus now this this don't let this trough you out
+
+6
+00:00:27,648 --> 00:00:30,720
+Controlling the menu structures for these are
+
+7
+00:00:30,976 --> 00:00:35,072
+Custom admin views in the site views are done inside of these
+
+8
+00:00:35,328 --> 00:00:37,888
+This is if you are actually adding
+
+9
+00:00:38,144 --> 00:00:39,680
+Custom backend
+
+10
+00:00:40,192 --> 00:00:40,960
+Views
+
+11
+00:00:41,472 --> 00:00:45,312
+Which hasn't been developed inside of component Builder
+
+12
+00:00:46,080 --> 00:00:47,616
+So for example
+
+13
+00:00:47,872 --> 00:00:51,200
+Component builder its self has a compiler View
+
+14
+00:00:51,456 --> 00:00:53,248
+You all have seen that
+
+15
+00:00:53,504 --> 00:00:54,016
+If I
+
+16
+00:00:54,272 --> 00:00:55,296
+quickly go there
+
+17
+00:00:56,320 --> 00:00:57,856
+It's this view here
+
+18
+00:00:58,624 --> 00:01:02,208
+Now this whole view is done outside of component Builder
+
+19
+00:01:02,464 --> 00:01:03,744
+I I actually
+
+20
+00:01:04,000 --> 00:01:05,792
+This is just hand coded little script
+
+21
+00:01:06,304 --> 00:01:07,840
+That kicks off a bunch of
+
+22
+00:01:09,632 --> 00:01:10,912
+Events now
+
+23
+00:01:11,936 --> 00:01:15,264
+It needs a model it needs a controller so I wrote that
+
+24
+00:01:15,776 --> 00:01:17,568
+With my hand know just manually
+
+25
+00:01:18,080 --> 00:01:19,872
+with hand coding
+
+26
+00:01:20,384 --> 00:01:21,920
+And it also needs a view
+
+27
+00:01:22,176 --> 00:01:24,992
+And so basically the view and everything
+
+28
+00:01:25,248 --> 00:01:26,528
+In regards to it
+
+29
+00:01:27,040 --> 00:01:30,368
+If you look at my infrastructure of component Builder
+
+30
+00:01:32,928 --> 00:01:33,952
+You would see
+
+31
+00:01:34,976 --> 00:01:35,488
+That
+
+32
+00:01:36,256 --> 00:01:37,024
+I have let me just look at this
+
+33
+00:01:40,096 --> 00:01:40,864
+compiler
+
+34
+00:01:42,656 --> 00:01:44,704
+I have a place called custom
+
+35
+00:01:45,216 --> 00:01:45,728
+you see
+
+36
+00:01:46,240 --> 00:01:47,776
+Now Inside of custom
+
+37
+00:01:48,032 --> 00:01:54,176
+Is where everything that you want it into you know include inside of your component is added into the
+
+38
+00:01:54,432 --> 00:01:55,200
+Custom folder
+
+39
+00:01:55,712 --> 00:02:01,856
+Any files any folders anything that you want to integrate is in here now you might look there
+
+40
+00:02:02,112 --> 00:02:04,672
+See there are a bunch of things already there
+
+41
+00:02:04,928 --> 00:02:11,072
+And I would encourage you not to remove them because depending on what you do in component builder it will
+
+42
+00:02:11,328 --> 00:02:13,120
+Automatically include those
+
+43
+00:02:13,376 --> 00:02:15,424
+Specially the the footables
+
+44
+00:02:15,680 --> 00:02:17,728
+And the import View
+
+45
+00:02:18,752 --> 00:02:20,032
+And the uikit and I think some
+
+46
+00:02:21,312 --> 00:02:24,128
+Not sure I think you would have sound manager as well
+
+47
+00:02:24,384 --> 00:02:25,920
+That is for sermon distributor
+
+48
+00:02:26,688 --> 00:02:30,528
+And in PHP Excel which is the use for the exporting
+
+49
+00:02:30,784 --> 00:02:32,320
+of data to spreadsheet and
+
+50
+00:02:32,576 --> 00:02:34,880
+Importing a from spreadsheet we using this
+
+51
+00:02:35,136 --> 00:02:35,904
+This library
+
+52
+00:02:36,416 --> 00:02:38,720
+So all of that is in the custom tab
+
+53
+00:02:38,976 --> 00:02:41,792
+And then he will see a bunch of files as well now the
+
+54
+00:02:42,048 --> 00:02:45,120
+Component builder itself has its
+
+55
+00:02:45,376 --> 00:02:46,656
+Compiler view here
+
+56
+00:02:47,424 --> 00:02:49,984
+So as you can see it's basically just empty folders
+
+57
+00:02:51,776 --> 00:02:54,848
+And then I have the actual files
+
+58
+00:02:55,360 --> 00:02:58,432
+Here is well there's the default compiler file
+
+59
+00:02:58,688 --> 00:02:59,456
+Which is
+
+60
+00:02:59,712 --> 00:03:00,992
+Then if I open it up
+
+61
+00:03:01,504 --> 00:03:05,088
+It's basically the The Script that shows the
+
+62
+00:03:05,344 --> 00:03:07,136
+That little dropdown of items
+
+63
+00:03:07,904 --> 00:03:09,184
+And I have
+
+64
+00:03:09,952 --> 00:03:10,976
+That in there
+
+65
+00:03:11,488 --> 00:03:12,000
+And
+
+66
+00:03:13,536 --> 00:03:16,096
+I also have the controller somewhere
+
+67
+00:03:16,352 --> 00:03:17,120
+Let's Scroll down
+
+68
+00:03:18,912 --> 00:03:19,936
+Obviously it should
+
+69
+00:03:21,216 --> 00:03:23,264
+Compiler there's the controller
+
+70
+00:03:23,520 --> 00:03:24,544
+There's the model
+
+71
+00:03:25,312 --> 00:03:28,128
+There is the compiler as well
+
+72
+00:03:28,384 --> 00:03:29,920
+The helper
+
+73
+00:03:30,688 --> 00:03:31,200
+File
+
+74
+00:03:31,968 --> 00:03:34,016
+And so I am including that
+
+75
+00:03:34,272 --> 00:03:36,064
+Into my component
+
+76
+00:03:36,576 --> 00:03:37,344
+If we look here
+
+77
+00:03:39,392 --> 00:03:40,416
+Let me open
+
+78
+00:03:41,696 --> 00:03:43,232
+Component builder quickly
+
+79
+00:03:46,560 --> 00:03:47,584
+Go to settings
+
+80
+00:03:48,096 --> 00:03:50,144
+In files I'm including
+
+81
+00:03:50,400 --> 00:03:56,288
+A bunch of things adding and that also means I'm including that here it is the compiler
+
+82
+00:03:56,544 --> 00:03:58,592
+And I'm saying take this file
+
+83
+00:03:59,360 --> 00:04:01,920
+And put it in admin views compiler
+
+84
+00:04:02,176 --> 00:04:02,944
+And view
+
+85
+00:04:03,200 --> 00:04:04,480
+And rename it
+
+86
+00:04:04,736 --> 00:04:06,528
+See it's got the wrong name here
+
+87
+00:04:06,784 --> 00:04:09,600
+So if you add the right name at the end of the string
+
+88
+00:04:10,112 --> 00:04:12,928
+And click Yes it will rename that file to this
+
+89
+00:04:13,440 --> 00:04:15,744
+so that is adding custom
+
+90
+00:04:16,000 --> 00:04:17,024
+Files
+
+91
+00:04:17,280 --> 00:04:18,047
+And
+
+92
+00:04:18,559 --> 00:04:20,607
+As well as custom folders
+
+93
+00:04:21,631 --> 00:04:22,143
+So on
+
+94
+00:04:22,399 --> 00:04:25,727
+Grabbing the compiler views and I'm dumping it into views
+
+95
+00:04:25,983 --> 00:04:30,591
+And I'm also say rename it to compiler so compiler views becomes compiler
+
+96
+00:04:30,847 --> 00:04:32,127
+Inside of the views folder
+
+97
+00:04:32,383 --> 00:04:33,407
+And then
+
+98
+00:04:33,663 --> 00:04:37,247
+Obviously we first the system will first build the folders
+
+99
+00:04:37,503 --> 00:04:43,647
+And then move your data your files to those folders so you you you will put the files here
+
+100
+00:04:44,159 --> 00:04:48,255
+And then have the system do the folders and then it will move the files
+
+101
+00:04:48,767 --> 00:04:54,399
+Ok so that's adding custom files to any component and this custom admin menu
+
+102
+00:04:54,911 --> 00:04:56,703
+Is basically what I use
+
+103
+00:04:56,959 --> 00:05:00,287
+to the map the compiler menu so I would say
+
+104
+00:05:00,543 --> 00:05:03,359
+I wanna call it compiler the code is compiler
+
+105
+00:05:03,615 --> 00:05:09,759
+I'm not using a link because it's not another extension or another website or something like that
+
+106
+00:05:10,015 --> 00:05:11,551
+Which you can also do
+
+107
+00:05:11,807 --> 00:05:13,599
+And then I would select an icon
+
+108
+00:05:13,855 --> 00:05:15,135
+Here is the information
+
+109
+00:05:15,391 --> 00:05:17,695
+It's the same kind of switches
+
+110
+00:05:17,951 --> 00:05:22,047
+As you see with adding in custom admin sorry
+
+111
+00:05:22,303 --> 00:05:28,447
+A backend admin view you can tweak whether it should be an admin menu or be a dashboard
+
+112
+00:05:28,959 --> 00:05:29,983
+And be a sub menu
+
+113
+00:05:30,239 --> 00:05:31,775
+So you can tweak that
+
+114
+00:05:32,543 --> 00:05:38,687
+And then also in which order behind it says select before what admin View
+
+115
+00:05:38,943 --> 00:05:40,223
+This one
+
+116
+00:05:40,479 --> 00:05:41,503
+Should be placed
+
+117
+00:05:42,783 --> 00:05:43,295
+Now
+
+118
+00:05:44,831 --> 00:05:47,135
+That we are placing it before component
+
+119
+00:05:47,647 --> 00:05:49,183
+So that means it can
+
+120
+00:05:49,439 --> 00:05:49,951
+Go
+
+121
+00:05:50,207 --> 00:05:51,231
+at the very top
+
+122
+00:05:51,999 --> 00:05:54,047
+Ok so that is adding
+
+123
+00:05:54,303 --> 00:05:57,375
+An custom admin menu
+
+124
+00:05:57,631 --> 00:05:59,423
+Because of custom
+
+125
+00:05:59,679 --> 00:06:02,751
+Fields and files and folders that you have
+
+126
+00:06:03,263 --> 00:06:06,335
+Created by hand and are importing
+
+127
+00:06:06,591 --> 00:06:08,383
+Into your component when you
+
+128
+00:06:08,639 --> 00:06:09,407
+compile it
+
+129
+00:06:09,919 --> 00:06:16,063
+The same is done with the compiler of component builder I'm actually including it as files so
+
+130
+00:06:16,319 --> 00:06:17,855
+There is the compiler let me see
+
+131
+00:06:22,719 --> 00:06:24,511
+Oh you know what I am I took
+
+132
+00:06:24,767 --> 00:06:25,791
+All the compiler
+
+133
+00:06:26,047 --> 00:06:29,887
+Files and I put it in the folder called compiler there it is
+
+134
+00:06:30,655 --> 00:06:35,263
+And so it's a folder which moves all the files at once that obviously can also be done
+
+135
+00:06:35,519 --> 00:06:37,567
+Like for example as you see here
+
+136
+00:06:39,615 --> 00:06:40,639
+PHP
+
+137
+00:06:40,895 --> 00:06:41,663
+Excel
+
+138
+00:06:41,919 --> 00:06:43,199
+Which is a folder
+
+139
+00:06:43,455 --> 00:06:46,527
+Has a lot of content in it if we were to open it
+
+140
+00:06:48,575 --> 00:06:52,159
+You'd see all these files and folders and things
+
+141
+00:06:52,415 --> 00:06:53,951
+And so I put everything I wanted
+
+142
+00:06:54,207 --> 00:06:56,255
+To move Inside of this folder
+
+143
+00:06:56,511 --> 00:07:00,607
+And then in in my component I simply target that folder
+
+144
+00:07:00,863 --> 00:07:02,143
+And it pulls it in
+
+145
+00:07:02,655 --> 00:07:04,191
+Ok so that
+
+146
+00:07:04,447 --> 00:07:08,543
+That's simply showing you how I have added a whole lot of folders to
+
+147
+00:07:09,055 --> 00:07:10,847
+To component Builder
+
+148
+00:07:12,639 --> 00:07:13,919
+And then
+
+149
+00:07:14,175 --> 00:07:18,015
+When I need a backend admin view custom
+
+150
+00:07:18,271 --> 00:07:20,831
+Added this feature here does that for me
+
+151
+00:07:21,087 --> 00:07:25,183
+Now I also want to quickly cover the
+
+152
+00:07:25,695 --> 00:07:27,231
+The area called config
+
+153
+00:07:28,511 --> 00:07:32,095
+Is it this area deals with something that is actually
+
+154
+00:07:32,351 --> 00:07:33,375
+quite
+
+155
+00:07:33,631 --> 00:07:34,399
+Useful
+
+156
+00:07:35,167 --> 00:07:36,703
+And that is to set up your
+
+157
+00:07:37,215 --> 00:07:37,983
+Back end
+
+158
+00:07:39,007 --> 00:07:41,311
+Global fields
+
+159
+00:07:41,823 --> 00:07:42,335
+Now
+
+160
+00:07:42,591 --> 00:07:44,383
+It let me go out of this one
+
+161
+00:07:45,151 --> 00:07:49,247
+because it's definitely not the best in demonstration let me go to sermon distributor
+
+162
+00:07:49,503 --> 00:07:52,063
+There we've done some really amazing things
+
+163
+00:07:53,087 --> 00:07:54,367
+sermon distributor
+
+164
+00:08:01,791 --> 00:08:03,583
+Settings and then config
+
+165
+00:08:04,607 --> 00:08:09,215
+And as you can see it is a very long list of things
+
+166
+00:08:12,031 --> 00:08:13,823
+But then if we go to
+
+167
+00:08:16,127 --> 00:08:18,175
+The actual component
+
+168
+00:08:18,431 --> 00:08:19,199
+It me open it
+
+169
+00:08:19,967 --> 00:08:21,759
+And then I'll click on options
+
+170
+00:08:25,087 --> 00:08:28,927
+You see that has many many tabs
+
+171
+00:08:31,999 --> 00:08:34,559
+Ok all of these switches
+
+172
+00:08:35,327 --> 00:08:37,375
+Are done in the config area
+
+173
+00:08:39,679 --> 00:08:42,495
+All of them except some of these default switch
+
+174
+00:08:42,751 --> 00:08:44,031
+Is added by the
+
+175
+00:08:44,287 --> 00:08:46,079
+simple switches
+
+176
+00:08:46,335 --> 00:08:50,687
+For example the global timer remember we spoke about the check-in
+
+177
+00:08:50,943 --> 00:08:56,319
+here you can set it all whether it should be every 5 hours 12 hours once a day every second day once a week or never
+
+178
+00:08:56,575 --> 00:09:02,463
+Checking in your items automatically the version control buttons are added automatically as well
+
+179
+00:09:02,719 --> 00:09:06,559
+Which means the person can set the version control on or off
+
+180
+00:09:07,071 --> 00:09:09,631
+And also said how many
+
+181
+00:09:10,143 --> 00:09:11,679
+You know records should be set
+
+182
+00:09:12,191 --> 00:09:12,959
+if zero
+
+183
+00:09:13,215 --> 00:09:14,751
+Then all versions will be saved
+
+184
+00:09:15,775 --> 00:09:18,079
+So this is the version control
+
+185
+00:09:18,591 --> 00:09:20,127
+And then
+
+186
+00:09:20,639 --> 00:09:21,663
+The author
+
+187
+00:09:21,919 --> 00:09:24,223
+Areas also added automatically
+
+188
+00:09:24,735 --> 00:09:28,063
+And you can when you click in the component here
+
+189
+00:09:28,575 --> 00:09:30,623
+just close this thing
+
+190
+00:09:40,095 --> 00:09:46,239
+You see here is a contributing in area you can set whether you want add empty contributing level
+
+191
+00:09:46,751 --> 00:09:47,519
+The fields
+
+192
+00:09:47,775 --> 00:09:50,335
+Here you can add contributors as many as you like
+
+193
+00:09:50,591 --> 00:09:51,615
+Those involved in developing the component
+
+194
+00:09:54,175 --> 00:09:58,271
+And then the amount of empty ones you want to leave there
+
+195
+00:09:58,527 --> 00:09:59,551
+Is also
+
+196
+00:09:59,807 --> 00:10:00,575
+Tweak able
+
+197
+00:10:01,087 --> 00:10:02,367
+And that'll basically
+
+198
+00:10:02,879 --> 00:10:05,439
+Let me show you add this area here
+
+199
+00:10:05,951 --> 00:10:09,023
+Contributor 1234
+
+200
+00:10:09,279 --> 00:10:09,791
+And
+
+201
+00:10:10,303 --> 00:10:12,095
+When you use this witch
+
+202
+00:10:12,351 --> 00:10:17,471
+IT controls whether it's been shown in the back or the front of all these kind of features
+
+203
+00:10:17,727 --> 00:10:20,031
+Which I am not gonna go into much depth now
+
+204
+00:10:20,543 --> 00:10:26,175
+But they also added automatically on also the permissional and structure is added automatically
+
+205
+00:10:26,687 --> 00:10:28,735
+And if you have in the component
+
+206
+00:10:29,503 --> 00:10:30,783
+You can actually
+
+207
+00:10:31,807 --> 00:10:33,855
+Set that it includes UiKit
+
+208
+00:10:34,367 --> 00:10:35,647
+you can said to that: yes
+
+209
+00:10:35,903 --> 00:10:36,927
+If you do that
+
+210
+00:10:37,183 --> 00:10:39,743
+it automatically adds This feature
+
+211
+00:10:40,255 --> 00:10:42,303
+to your component
+
+212
+00:10:42,815 --> 00:10:44,863
+And every where where Uikid is used
+
+213
+00:10:45,631 --> 00:10:51,519
+Ok so everything else this Dropbox preachers preacher categories category
+
+214
+00:10:51,775 --> 00:10:55,103
+Series list and series and sermons
+
+215
+00:10:55,359 --> 00:10:57,407
+Is all done through that
+
+216
+00:10:57,663 --> 00:10:58,687
+Config
+
+217
+00:10:58,943 --> 00:10:59,711
+area here
+
+218
+00:11:00,223 --> 00:11:06,367
+Now to use to add Fields to the config area you first need to add that field
+
+219
+00:11:06,623 --> 00:11:07,391
+To fields
+
+220
+00:11:07,647 --> 00:11:10,719
+So you would you go to fields
+
+221
+00:11:11,231 --> 00:11:14,815
+And whatever field you wanna use there you need to create here
+
+222
+00:11:15,071 --> 00:11:16,863
+So you first create the fields
+
+223
+00:11:17,375 --> 00:11:21,983
+Then obviously you need to remember the system name that you're using
+
+224
+00:11:22,495 --> 00:11:24,543
+Because then when you open up this
+
+225
+00:11:25,055 --> 00:11:26,591
+You would be able to
+
+226
+00:11:26,847 --> 00:11:27,871
+Type in the name
+
+227
+00:11:28,127 --> 00:11:29,407
+And it will be selected
+
+228
+00:11:29,919 --> 00:11:33,247
+And then by Convention that tab name
+
+229
+00:11:33,759 --> 00:11:39,391
+As long as you use the same tab name it will be bundled in the order of which you said it here
+
+230
+00:11:40,159 --> 00:11:42,207
+So this is where the Dropbox
+
+231
+00:11:42,719 --> 00:11:43,487
+Area
+
+232
+00:11:43,743 --> 00:11:44,767
+All there
+
+233
+00:11:45,279 --> 00:11:46,559
+Fields are being set
+
+234
+00:11:47,583 --> 00:11:50,911
+Now the reason why we include this
+
+235
+00:11:51,423 --> 00:11:51,935
+Demo
+
+236
+00:11:52,191 --> 00:11:52,959
+Component
+
+237
+00:11:53,471 --> 00:11:54,751
+Into the
+
+238
+00:11:55,519 --> 00:11:57,311
+Application with the tutorial
+
+239
+00:11:57,567 --> 00:12:00,639
+Is that you can go and look and see ok well he's using
+
+240
+00:12:00,895 --> 00:12:02,943
+Dropbox update method
+
+241
+00:12:03,455 --> 00:12:03,967
+Here
+
+242
+00:12:04,735 --> 00:12:05,247
+And
+
+243
+00:12:05,503 --> 00:12:07,295
+Then you can go look at this file
+
+244
+00:12:07,807 --> 00:12:09,599
+And then you can go look at
+
+245
+00:12:11,135 --> 00:12:12,415
+And how it looks here
+
+246
+00:12:13,695 --> 00:12:15,231
+The Dropbox update method
+
+247
+00:12:15,999 --> 00:12:19,071
+And the files and the text and even
+
+248
+00:12:19,327 --> 00:12:22,143
+Some of this I mean here is a button
+
+249
+00:12:22,399 --> 00:12:23,423
+If I click it
+
+250
+00:12:23,935 --> 00:12:26,495
+It starts an update
+
+251
+00:12:28,287 --> 00:12:30,079
+And it even shows it here
+
+252
+00:12:31,103 --> 00:12:34,943
+Now how to do this is very tricky
+
+253
+00:12:35,199 --> 00:12:41,343
+It's not that simple to do that because we not inside of our component as you can see were actually in the config
+
+254
+00:12:41,599 --> 00:12:42,111
+Component
+
+255
+00:12:42,623 --> 00:12:45,183
+In the global if you have Global settings
+
+256
+00:12:45,439 --> 00:12:46,207
+So
+
+257
+00:12:46,463 --> 00:12:52,607
+This whole feature that is building into sermon distributor is so smart I would tell you
+
+258
+00:12:52,863 --> 00:12:55,935
+For you to be able to do that is just stunning
+
+259
+00:12:56,191 --> 00:12:56,703
+So
+
+260
+00:12:56,959 --> 00:13:00,799
+You can look at how I've done that by Simply going to the
+
+261
+00:13:01,055 --> 00:13:02,335
+To these fields
+
+262
+00:13:02,847 --> 00:13:03,871
+And you would find
+
+263
+00:13:05,919 --> 00:13:08,479
+The answer to how did he do that
+
+264
+00:13:09,503 --> 00:13:13,599
+And you can look at these things in this list View
+
+265
+00:13:14,111 --> 00:13:15,647
+All the Dropbox
+
+266
+00:13:15,903 --> 00:13:17,183
+Information is there
+
+267
+00:13:17,695 --> 00:13:19,231
+And then there is some Global
+
+268
+00:13:19,743 --> 00:13:22,047
+Like local folder download link
+
+269
+00:13:22,559 --> 00:13:24,607
+And then space hr
+
+270
+00:13:24,863 --> 00:13:31,007
+You can see that I have that Space HR quite often it's a It's a field that it will be included in
+
+271
+00:13:31,263 --> 00:13:33,311
+the Paid
+
+272
+00:13:33,567 --> 00:13:34,591
+version of
+
+273
+00:13:34,847 --> 00:13:36,895
+of component builder
+
+274
+00:13:37,151 --> 00:13:40,991
+It already has that spacer hr in it
+
+275
+00:13:41,247 --> 00:13:45,599
+And since Spacers you can use the same spacer
+
+276
+00:13:45,855 --> 00:13:51,743
+Over and over the system automatically increment it so it doesn't have conflict in name conventions
+
+277
+00:13:51,999 --> 00:13:58,143
+So I'm just using the Same Spacer so every where is putting spacers which is which is this
+
+278
+00:13:58,399 --> 00:13:58,911
+Little
+
+279
+00:14:00,191 --> 00:14:00,959
+Line
+
+280
+00:14:01,215 --> 00:14:02,495
+you see that line there
+
+281
+00:14:02,751 --> 00:14:03,519
+It's very
+
+282
+00:14:03,775 --> 00:14:04,287
+very
+
+283
+00:14:04,543 --> 00:14:08,639
+Very small but it gives a space between these areas
+
+284
+00:14:09,151 --> 00:14:11,455
+That is why I'm doing that
+
+285
+00:14:11,711 --> 00:14:17,855
+Then also he can put default values which will be used during
+
+286
+00:14:18,111 --> 00:14:19,647
+Installation of the component
+
+287
+00:14:19,903 --> 00:14:20,927
+So if you have
+
+288
+00:14:21,439 --> 00:14:23,231
+Switches in your config
+
+289
+00:14:23,487 --> 00:14:27,583
+That you want to populate with default values should just add those values here
+
+290
+00:14:27,839 --> 00:14:29,631
+And then during the install
+
+291
+00:14:29,887 --> 00:14:33,727
+Those values will be added to the database and
+
+292
+00:14:34,495 --> 00:14:36,543
+Component builder puts all that in place for you
+
+293
+00:14:37,055 --> 00:14:39,103
+So this is where you add the config
+
+294
+00:14:39,615 --> 00:14:40,383
+Fields
+
+295
+00:14:40,639 --> 00:14:43,199
+And there is another Convention which is maybe
+
+296
+00:14:43,455 --> 00:14:44,735
+Not
+
+297
+00:14:45,247 --> 00:14:45,759
+Is not
+
+298
+00:14:46,783 --> 00:14:47,295
+That
+
+299
+00:14:49,855 --> 00:14:51,391
+It's not that obvious
+
+300
+00:14:51,647 --> 00:14:52,159
+But
+
+301
+00:14:52,415 --> 00:14:55,743
+I added a convention that if you use a tab name
+
+302
+00:14:56,511 --> 00:14:58,303
+Which is exactly the same
+
+303
+00:14:58,815 --> 00:14:59,583
+As a
+
+304
+00:15:00,351 --> 00:15:02,399
+Front-end View
+
+305
+00:15:05,215 --> 00:15:05,983
+Then
+
+306
+00:15:06,495 --> 00:15:07,775
+I will add
+
+307
+00:15:08,031 --> 00:15:09,055
+This field
+
+308
+00:15:09,311 --> 00:15:11,615
+to that front-end views menu
+
+309
+00:15:12,127 --> 00:15:12,639
+Now
+
+310
+00:15:13,919 --> 00:15:18,527
+If you can see it if you think about component sorry of Joomla's
+
+311
+00:15:18,783 --> 00:15:19,295
+Content
+
+312
+00:15:20,063 --> 00:15:21,855
+Manager manager
+
+313
+00:15:22,111 --> 00:15:23,647
+It does the same thing
+
+314
+00:15:24,159 --> 00:15:30,303
+In the global setting of your article manager you can set features for categories and for articles
+
+315
+00:15:30,815 --> 00:15:34,143
+But if you create a new article in a menu item
+
+316
+00:15:34,655 --> 00:15:40,799
+Then you can overwrite those you can say use global or you can overwrite them now this feature
+
+317
+00:15:41,055 --> 00:15:43,103
+Of using the same tab name
+
+318
+00:15:43,871 --> 00:15:45,663
+So let's look at this
+
+319
+00:15:46,687 --> 00:15:48,479
+The features name is
+
+320
+00:15:48,735 --> 00:15:49,503
+Preacher
+
+321
+00:15:50,015 --> 00:15:50,783
+Switch
+
+322
+00:15:51,551 --> 00:15:53,855
+Whether should be a table or a grid
+
+323
+00:15:54,623 --> 00:15:56,671
+Ok and we set the default 2
+
+324
+00:15:56,927 --> 00:15:59,231
+And we called it preachers plural
+
+325
+00:15:59,487 --> 00:16:00,767
+That's quite important
+
+326
+00:16:01,279 --> 00:16:02,047
+Now
+
+327
+00:16:02,559 --> 00:16:04,095
+Let's look at the front
+
+328
+00:16:05,375 --> 00:16:06,655
+Close this out
+
+329
+00:16:07,423 --> 00:16:09,215
+here Do I have a bunch of menus
+
+330
+00:16:09,727 --> 00:16:13,311
+I'm gonna go to a menu that I've already created called preachers
+
+331
+00:16:16,895 --> 00:16:19,711
+And then I'm also gonna go to this components backend
+
+332
+00:16:20,223 --> 00:16:21,247
+called preachers
+
+333
+00:16:21,759 --> 00:16:27,135
+So you see there is a list of items now all I did in the component Builder
+
+334
+00:16:27,391 --> 00:16:29,439
+Is I simply added
+
+335
+00:16:31,999 --> 00:16:34,303
+The name preacher as a tab name
+
+336
+00:16:34,559 --> 00:16:35,583
+That's all I did
+
+337
+00:16:36,095 --> 00:16:37,375
+And then the fields
+
+338
+00:16:37,631 --> 00:16:39,935
+So there is the list of the fields from there
+
+339
+00:16:40,191 --> 00:16:40,703
+to there
+
+340
+00:16:41,215 --> 00:16:44,031
+These are the fields you can see them here
+
+341
+00:16:44,287 --> 00:16:47,103
+These Fields I simply created in the field
+
+342
+00:16:47,615 --> 00:16:48,127
+Area
+
+343
+00:16:48,383 --> 00:16:51,199
+With field type so is basically some radio buttons
+
+344
+00:16:51,455 --> 00:16:52,479
+A drop down list
+
+345
+00:16:52,991 --> 00:16:55,295
+Another dropdown list and again some radio button
+
+346
+00:16:55,807 --> 00:16:57,343
+Ok so these are the fields
+
+347
+00:16:57,855 --> 00:17:01,951
+And then in the view if you click on sermon distributor
+
+348
+00:17:02,463 --> 00:17:06,047
+You see those exact same Fields and it has the option of using
+
+349
+00:17:06,303 --> 00:17:07,071
+The global
+
+350
+00:17:07,839 --> 00:17:11,423
+Instead so there's used global or you can overwrite it
+
+351
+00:17:11,935 --> 00:17:16,287
+So you can decide ok this specific admin view I want to use grid and not the global
+
+352
+00:17:16,543 --> 00:17:17,055
+option
+
+353
+00:17:17,311 --> 00:17:19,359
+So that whole system
+
+354
+00:17:21,151 --> 00:17:22,175
+Of adding
+
+355
+00:17:22,687 --> 00:17:27,295
+This extra features to every item view of the front end
+
+356
+00:17:27,551 --> 00:17:31,135
+Is integrated simply by a convention
+
+357
+00:17:31,647 --> 00:17:35,231
+If the front end is called preachers which this case it is
+
+358
+00:17:35,999 --> 00:17:40,607
+As you can see there it's called preacher see I just selected a menu item called preachers
+
+359
+00:17:41,375 --> 00:17:47,007
+Now we haven't dealt with setting up your site views and all that so this might be
+
+360
+00:17:47,263 --> 00:17:49,823
+How did you get that item name right in everything
+
+361
+00:17:50,335 --> 00:17:50,847
+But
+
+362
+00:17:51,103 --> 00:17:52,383
+I'm trying to
+
+363
+00:17:53,407 --> 00:17:58,271
+Sketch a picture which we will revisit when we eventually get to this area
+
+364
+00:17:58,783 --> 00:18:03,391
+But just that you know from where it comes it's simply in the config
+
+365
+00:18:03,647 --> 00:18:06,975
+I added the files and used to convention of the actual
+
+366
+00:18:07,231 --> 00:18:07,999
+Front-end
+
+367
+00:18:08,511 --> 00:18:11,071
+Page that has a name called preachers
+
+368
+00:18:11,583 --> 00:18:12,095
+And
+
+369
+00:18:12,351 --> 00:18:15,167
+So there is as well for preacher which is single
+
+370
+00:18:15,935 --> 00:18:17,983
+So if I closed out select
+
+371
+00:18:21,823 --> 00:18:25,151
+sermon distributor and then select preacher
+
+372
+00:18:25,663 --> 00:18:27,199
+Which is another View
+
+373
+00:18:27,711 --> 00:18:31,039
+And then I clicked here you see all these switches
+
+374
+00:18:31,551 --> 00:18:32,575
+They also
+
+375
+00:18:33,087 --> 00:18:34,111
+Mapped in here
+
+376
+00:18:34,367 --> 00:18:35,135
+From there
+
+377
+00:18:35,903 --> 00:18:36,927
+All the way
+
+378
+00:18:37,951 --> 00:18:38,463
+to there
+
+379
+00:18:38,975 --> 00:18:42,303
+And they have some default values in there there there are there
+
+380
+00:18:43,839 --> 00:18:44,607
+Fields
+
+381
+00:18:45,887 --> 00:18:49,471
+And in the back end of the component if I click on preacher
+
+382
+00:18:49,983 --> 00:18:53,055
+Here is the same Fields so you can set Global settings
+
+383
+00:18:53,311 --> 00:18:56,639
+And then you can overwrite them sorry in the menu itself
+
+384
+00:18:57,151 --> 00:18:58,431
+Why not using Global
+
+385
+00:18:59,199 --> 00:19:01,247
+So that this whole feature
+
+386
+00:19:01,503 --> 00:19:02,527
+Is possible
+
+387
+00:19:02,783 --> 00:19:04,063
+Through this config
+
+388
+00:19:04,319 --> 00:19:06,111
+Little tab sorry it looks
+
+389
+00:19:06,367 --> 00:19:08,159
+Insignificant I suppose
+
+390
+00:19:08,415 --> 00:19:14,047
+And you might not expect it like I said it's not that obvious that it does this
+
+391
+00:19:14,815 --> 00:19:16,607
+But that is what it is doing
+
+392
+00:19:16,863 --> 00:19:22,495
+And so as you can see all of those certain areas I just mapped it in config
+
+393
+00:19:23,007 --> 00:19:28,383
+And because of the name of the tab let me stress that
+
+394
+00:19:28,895 --> 00:19:30,943
+Because of the name of the tab
+
+395
+00:19:31,455 --> 00:19:35,807
+The system knows oh so this is related to any front end menus as well
+
+396
+00:19:36,319 --> 00:19:39,391
+Therefore it will automatically create those front end
+
+397
+00:19:39,647 --> 00:19:40,927
+Things for you
+
+398
+00:19:41,695 --> 00:19:44,511
+Now to show you how it is done it's quite
+
+399
+00:19:44,767 --> 00:19:45,535
+Simple
+
+400
+00:19:47,327 --> 00:19:49,631
+Not that I want to teach you how
+
+401
+00:19:49,887 --> 00:19:52,959
+The Joomla API works but I want you to at least know
+
+402
+00:19:53,215 --> 00:19:57,311
+What is doing so I'm gonna go to the front of this component here it is
+
+403
+00:19:58,079 --> 00:20:01,407
+And I'm gonna open that view preachers
+
+404
+00:20:02,175 --> 00:20:06,527
+And you'd see in template there is a extra file called
+
+405
+00:20:06,783 --> 00:20:08,063
+Default XML
+
+406
+00:20:08,831 --> 00:20:10,879
+And then I'll open that default XML
+
+407
+00:20:11,135 --> 00:20:13,439
+Basically all component builder is doing
+
+408
+00:20:13,695 --> 00:20:15,487
+it is adding
+
+409
+00:20:15,743 --> 00:20:17,791
+The convention to this file
+
+410
+00:20:18,047 --> 00:20:21,631
+So if you're running into troubles and it's not working as you expected
+
+411
+00:20:22,143 --> 00:20:24,191
+This is the file in which you can come and look
+
+412
+00:20:24,703 --> 00:20:25,727
+To see what's happening
+
+413
+00:20:26,239 --> 00:20:27,775
+That is in the front end
+
+414
+00:20:28,543 --> 00:20:29,567
+In views
+
+415
+00:20:29,823 --> 00:20:33,919
+In the specific view that you have to it must be this view must be the
+
+416
+00:20:34,687 --> 00:20:35,711
+The tab name
+
+417
+00:20:36,479 --> 00:20:36,991
+And then
+
+418
+00:20:37,247 --> 00:20:39,551
+In that file called default XML
+
+419
+00:20:40,575 --> 00:20:41,343
+Obviously
+
+420
+00:20:41,599 --> 00:20:42,879
+This is important
+
+421
+00:20:43,135 --> 00:20:45,951
+Since we haven't dealt with adding site views
+
+422
+00:20:48,511 --> 00:20:49,791
+The site views here
+
+423
+00:20:50,303 --> 00:20:54,143
+I need to quickly touch on it so did you at least know
+
+424
+00:20:54,399 --> 00:20:56,447
+Something that relates to this
+
+425
+00:20:56,703 --> 00:21:00,031
+That is if you didn't click on add as a menu
+
+426
+00:21:01,311 --> 00:21:02,847
+You sets its to no
+
+427
+00:21:03,359 --> 00:21:05,151
+Then that file will not exist
+
+428
+00:21:05,919 --> 00:21:09,247
+Ok so that file only exist if this is set to yes
+
+429
+00:21:09,759 --> 00:21:11,551
+So setting it to yes
+
+430
+00:21:11,807 --> 00:21:15,903
+Tells component builder to build this default XML file
+
+431
+00:21:16,416 --> 00:21:20,256
+And setting the tabs to the same name as this view
+
+432
+00:21:20,512 --> 00:21:23,072
+Tells component builder to add those fields
+
+433
+00:21:23,584 --> 00:21:24,352
+To this
+
+434
+00:21:24,608 --> 00:21:26,656
+Few and make it so that
+
+435
+00:21:26,912 --> 00:21:28,192
+your user can then
+
+436
+00:21:28,448 --> 00:21:28,960
+Have
+
+437
+00:21:29,216 --> 00:21:29,728
+Unique
+
+438
+00:21:31,008 --> 00:21:33,056
+Implementation obviously
+
+439
+00:21:33,312 --> 00:21:34,592
+And this is important
+
+440
+00:21:34,848 --> 00:21:36,384
+It doesn't make use
+
+441
+00:21:36,896 --> 00:21:37,408
+Of
+
+442
+00:21:37,664 --> 00:21:41,504
+This information necessary inside of your site
+
+443
+00:21:42,272 --> 00:21:42,784
+View
+
+444
+00:21:43,296 --> 00:21:44,064
+You need to
+
+445
+00:21:44,320 --> 00:21:47,136
+Make use of this information in your site view
+
+446
+00:21:47,904 --> 00:21:50,976
+Now If you're a developer you would expect that right you would know
+
+447
+00:21:51,232 --> 00:21:54,048
+Oh yeah ok so inside of your
+
+448
+00:21:54,304 --> 00:21:55,072
+Component
+
+449
+00:21:55,328 --> 00:21:56,352
+You have
+
+450
+00:21:56,608 --> 00:21:58,400
+A place where you check
+
+451
+00:21:58,912 --> 00:21:59,936
+params header
+
+452
+00:22:00,704 --> 00:22:06,080
+Should it show then it shows it and it basically you getting it from the parameters
+
+453
+00:22:06,336 --> 00:22:12,480
+The parameters are set inside of the view.html.php
+
+454
+00:22:12,992 --> 00:22:15,040
+You see here we set the parameters
+
+455
+00:22:15,552 --> 00:22:16,064
+We get
+
+456
+00:22:16,320 --> 00:22:22,464
+We do on this app get parameters now this actually gets all the parameters in relation to this view
+
+457
+00:22:23,488 --> 00:22:28,864
+The gets that component parameters it gets the menu parameters and it automatically
+
+458
+00:22:29,120 --> 00:22:30,400
+If it has the
+
+459
+00:22:30,656 --> 00:22:31,168
+custom
+
+460
+00:22:33,472 --> 00:22:33,984
+So
+
+461
+00:22:34,752 --> 00:22:35,520
+I feel like I'm
+
+462
+00:22:36,032 --> 00:22:39,872
+maybe going Beyond the scope but if they've used Global
+
+463
+00:22:40,640 --> 00:22:45,248
+It will automatically fall back on what the set here which is excellent
+
+464
+00:22:45,504 --> 00:22:47,296
+So you're using the same name
+
+465
+00:22:47,552 --> 00:22:48,576
+Display
+
+466
+00:22:49,344 --> 00:22:51,392
+And display where is it
+
+467
+00:22:52,416 --> 00:22:53,696
+It's the same name
+
+468
+00:22:54,464 --> 00:22:58,816
+And so if you are using Global basically what parameters does
+
+469
+00:22:59,072 --> 00:23:01,888
+Is it getting this place parameter
+
+470
+00:23:02,144 --> 00:23:04,960
+The display field it's getting that parameter
+
+471
+00:23:05,472 --> 00:23:07,520
+And it first looks at the menus
+
+472
+00:23:07,776 --> 00:23:13,152
+Settings and that one is set to Global it automatically Falls back to the global settings
+
+473
+00:23:13,408 --> 00:23:19,552
+That is done by Joomla itself it's not really something I build it's just the way Joomla works which is excellent
+
+474
+00:23:20,064 --> 00:23:20,576
+And
+
+475
+00:23:20,832 --> 00:23:22,880
+That means that you immediately
+
+476
+00:23:23,648 --> 00:23:26,208
+By using params
+
+477
+00:23:26,976 --> 00:23:29,024
+And then doing a check-up
+
+478
+00:23:29,536 --> 00:23:31,840
+So remember now this value
+
+479
+00:23:32,096 --> 00:23:33,888
+Is inside of this params
+
+480
+00:23:34,400 --> 00:23:36,192
+And if I didn't go to the default View
+
+481
+00:23:37,216 --> 00:23:40,544
+And let's see where am I implementing some of that
+
+482
+00:23:42,080 --> 00:23:43,104
+Let's go to
+
+483
+00:23:49,504 --> 00:23:51,296
+Here the preacher display
+
+484
+00:23:52,320 --> 00:23:52,832
+Ok
+
+485
+00:23:53,088 --> 00:23:57,696
+So the field name wasn't just display I'm sorry it was called preachers display
+
+486
+00:23:58,464 --> 00:23:59,232
+That's the
+
+487
+00:23:59,488 --> 00:24:00,512
+The field name
+
+488
+00:24:00,768 --> 00:24:01,536
+In the global
+
+489
+00:24:01,792 --> 00:24:02,816
+Configurations
+
+490
+00:24:03,072 --> 00:24:03,584
+So
+
+491
+00:24:04,096 --> 00:24:05,120
+You're not with me
+
+492
+00:24:06,144 --> 00:24:06,656
+It is what we
+
+493
+00:24:09,216 --> 00:24:10,752
+Used for this field
+
+494
+00:24:15,616 --> 00:24:16,640
+Switch preacher
+
+495
+00:24:16,896 --> 00:24:17,664
+Table grid
+
+496
+00:24:18,176 --> 00:24:20,480
+It's called preacher display
+
+497
+00:24:20,736 --> 00:24:25,344
+If I was to go and open this field in fact if you do that so if you see the whole picture
+
+498
+00:24:25,856 --> 00:24:28,672
+Switch preachers table grid let me just remember that
+
+499
+00:24:32,512 --> 00:24:37,120
+Ok here is the list of the switch preachers
+
+500
+00:24:37,888 --> 00:24:40,192
+Fields as you can see I'm in the fields
+
+501
+00:24:40,448 --> 00:24:40,960
+Tab
+
+502
+00:24:41,216 --> 00:24:42,496
+And I'll open that
+
+503
+00:24:42,752 --> 00:24:43,264
+Specific
+
+504
+00:24:45,312 --> 00:24:45,824
+Field
+
+505
+00:24:46,080 --> 00:24:47,616
+And you'd see that the name
+
+506
+00:24:47,872 --> 00:24:48,640
+Of that
+
+507
+00:24:50,432 --> 00:24:51,456
+The name
+
+508
+00:24:51,968 --> 00:24:54,016
+Of this field is preachers
+
+509
+00:24:54,272 --> 00:24:55,296
+Underscore display
+
+510
+00:24:56,320 --> 00:24:56,832
+Now
+
+511
+00:24:57,088 --> 00:25:00,672
+You need to make sure that none of the fields have the same name
+
+512
+00:25:01,440 --> 00:25:03,232
+That is quite important
+
+513
+00:25:03,488 --> 00:25:05,536
+What I mean by none of the fields I mean
+
+514
+00:25:05,792 --> 00:25:08,608
+This field must not be the same name is that field
+
+515
+00:25:09,120 --> 00:25:12,704
+Every field in this Global area must be unique
+
+516
+00:25:13,216 --> 00:25:14,752
+It should never overlap
+
+517
+00:25:15,264 --> 00:25:21,408
+So that is why I use the convention of preachers display so that I can also use preacher
+
+518
+00:25:21,664 --> 00:25:23,456
+Without the s display and I can use
+
+519
+00:25:23,712 --> 00:25:25,248
+Category
+
+520
+00:25:25,504 --> 00:25:30,624
+Underscore display in you see so that I have that site of convention of implementation
+
+521
+00:25:31,136 --> 00:25:35,488
+Is it all around as you develop think about conventions using sort of
+
+522
+00:25:35,744 --> 00:25:38,816
+Logical repetitive scalable concepts
+
+523
+00:25:39,072 --> 00:25:42,144
+And so this is one of them that I've done
+
+524
+00:25:42,656 --> 00:25:45,216
+And then I just added it here
+
+525
+00:25:45,472 --> 00:25:47,520
+It's that specific item
+
+526
+00:25:48,032 --> 00:25:49,056
+And then in the
+
+527
+00:25:51,104 --> 00:25:55,456
+Global area you go to preachers it is basically this view here
+
+528
+00:25:56,736 --> 00:25:57,504
+Sorry field
+
+529
+00:25:58,016 --> 00:25:59,040
+This field here
+
+530
+00:25:59,552 --> 00:26:00,832
+And in the code
+
+531
+00:26:01,600 --> 00:26:02,112
+On
+
+532
+00:26:02,368 --> 00:26:03,392
+I'm simply saying
+
+533
+00:26:03,904 --> 00:26:05,696
+If preacher = 1
+
+534
+00:26:06,464 --> 00:26:08,000
+Then show the table
+
+535
+00:26:08,768 --> 00:26:09,280
+If
+
+536
+00:26:09,536 --> 00:26:12,864
+Preacher display = 2 then show the grid
+
+537
+00:26:13,632 --> 00:26:16,192
+And if non is selected and show the list
+
+538
+00:26:16,448 --> 00:26:19,008
+Which is the three options if you look at the button
+
+539
+00:26:19,264 --> 00:26:21,056
+The button has Table grid list
+
+540
+00:26:21,824 --> 00:26:22,336
+And
+
+541
+00:26:22,592 --> 00:26:23,360
+So
+
+542
+00:26:23,872 --> 00:26:30,016
+I'm not asking does the global have this or that none of that I'm just calling the field directly
+
+543
+00:26:30,272 --> 00:26:35,136
+Because the way that Joomla gets that initial data like I showed you here
+
+544
+00:26:35,648 --> 00:26:39,744
+Is they sort that out for you and that's quite nice
+
+545
+00:26:40,000 --> 00:26:42,560
+And I've obviously test it and made sure that my
+
+546
+00:26:42,816 --> 00:26:46,144
+My explanation is the truth
+
+547
+00:26:46,400 --> 00:26:49,472
+And so goes with the colours you can see here I
+
+548
+00:26:49,728 --> 00:26:52,288
+I again just do params get colors
+
+549
+00:26:52,544 --> 00:26:55,104
+But this is actually knowledge that you would have
+
+550
+00:26:55,360 --> 00:26:57,920
+If you have developed a component for Joomla
+
+551
+00:26:58,176 --> 00:27:00,992
+You would know about these tricks I suppose
+
+552
+00:27:01,248 --> 00:27:07,136
+And I'm just showing to you how of component Build It makes it easy to implement these kind of things
+
+553
+00:27:07,392 --> 00:27:09,696
+which otherwise would take so much time
+
+554
+00:27:09,952 --> 00:27:10,464
+to
+
+555
+00:27:10,720 --> 00:27:16,864
+Write this up and then make sure it's exactly the same inside of the XML folder menu and so forth
+
+556
+00:27:17,376 --> 00:27:19,424
+So component builder does all of that
+
+557
+00:27:19,936 --> 00:27:21,728
+Out of this config file
+
+558
+00:27:21,984 --> 00:27:23,008
+Simply with a
+
+559
+00:27:23,264 --> 00:27:25,824
+Convention that relates to the actual front-end
+
+560
+00:27:26,592 --> 00:27:28,384
+And that is as simple as that
+
+561
+00:27:28,896 --> 00:27:29,920
+Ok so
+
+562
+00:27:30,176 --> 00:27:31,712
+I think we have covered that
+
+563
+00:27:32,224 --> 00:27:33,248
+Thoroughly enough
+
+564
+00:27:34,272 --> 00:27:34,784
+And
+
+565
+00:27:35,296 --> 00:27:37,088
+That will be all for this tutorial
+
+566
+00:27:37,344 --> 00:27:39,904
+I will continue looking at more
+
+567
+00:27:40,160 --> 00:27:42,208
+Concepts of the component
+
+568
+00:27:42,720 --> 00:27:44,000
+And it's features
+
+569
+00:27:45,024 --> 00:27:47,584
+Possibly it might be ideal for us to
+
+570
+00:27:48,096 --> 00:27:48,864
+Stop here
+
+571
+00:27:49,120 --> 00:27:50,400
+With the component
+
+572
+00:27:50,656 --> 00:27:53,472
+And go look at setting up a custom admin View
+
+573
+00:27:55,008 --> 00:27:56,544
+Or setting up a site view
+
+574
+00:27:57,568 --> 00:28:00,128
+And yet I'm thinking you know if we go that route
+
+575
+00:28:00,384 --> 00:28:02,176
+It's gonna take us on a very long
+
+576
+00:28:02,432 --> 00:28:03,456
+Road so
+
+577
+00:28:04,992 --> 00:28:07,040
+The ideal with me let me sort of
+
+578
+00:28:07,552 --> 00:28:10,624
+Dealt with some of this component features First
+
+579
+00:28:11,392 --> 00:28:12,160
+And finish that
+
+580
+00:28:12,416 --> 00:28:14,208
+And then as soon as we've finished it
+
+581
+00:28:14,464 --> 00:28:17,280
+We'll jump into the custom very
+
+582
+00:28:18,816 --> 00:28:23,424
+Nice area of your front-end development and custom admin development
+
+583
+00:28:23,936 --> 00:28:28,544
+And then we will obviously be relating back to what we have discussed here
+
+584
+00:28:28,800 --> 00:28:29,568
+As we go
+
+585
+00:28:29,824 --> 00:28:33,152
+So I've now looked at the setting tab
+
+586
+00:28:33,408 --> 00:28:36,480
+And try to cover as much of this area as I can
+
+587
+00:28:36,992 --> 00:28:39,808
+I didn't talk much about mySQL  tweak
+
+588
+00:28:40,576 --> 00:28:42,624
+This is a very advanced feature
+
+589
+00:28:42,880 --> 00:28:43,648
+And
+
+590
+00:28:44,160 --> 00:28:48,256
+You can know that what it really does if we have dummy data
+
+591
+00:28:48,512 --> 00:28:49,792
+You're able to
+
+592
+00:28:50,304 --> 00:28:51,584
+Exclude them
+
+593
+00:28:52,096 --> 00:28:55,168
+Through this area so that if you have different versions
+
+594
+00:28:55,424 --> 00:28:59,008
+You will through this MySQL tweak
+
+595
+00:28:59,264 --> 00:29:01,824
+Be able to exclude certain information
+
+596
+00:29:02,080 --> 00:29:07,712
+Which I realise it's a little bit advance and so for most cases people will just not use this
+
+597
+00:29:07,968 --> 00:29:12,064
+It's only when you start having multiple versions of the same extension
+
+598
+00:29:12,320 --> 00:29:14,880
+And you selling them at different pricing and
+
+599
+00:29:15,136 --> 00:29:16,928
+Want to be able to
+
+600
+00:29:17,696 --> 00:29:21,024
+From Within component builder just export the different versions
+
+601
+00:29:21,280 --> 00:29:23,072
+Then you start using this feature
+
+602
+00:29:23,584 --> 00:29:24,096
+And
+
+603
+00:29:24,608 --> 00:29:29,728
+I think we possibly deal with it with when we start looking at more advanced implementations
+
+604
+00:29:30,240 --> 00:29:32,288
+Ok thank you for watching
+
+605
+00:29:32,800 --> 00:29:35,104
+We'll start in the next run with scripts
+

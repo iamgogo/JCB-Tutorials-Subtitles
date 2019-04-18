@@ -1,0 +1,1148 @@
+1
+00:00:02,048 --> 00:00:02,560
+Hi
+
+2
+00:00:03,328 --> 00:00:05,376
+I would like to demonstrate to you
+
+3
+00:00:05,888 --> 00:00:09,472
+How to upgrade to version 2.6 of JCB
+
+4
+00:00:11,264 --> 00:00:13,312
+The upgrade is quite a major upgrade
+
+5
+00:00:13,824 --> 00:00:18,688
+Because we are removing all repeatable fields in the Joomla component area
+
+6
+00:00:19,968 --> 00:00:21,248
+Joomla component area
+
+7
+00:00:21,504 --> 00:00:22,784
+Has quite a lot of
+
+8
+00:00:23,040 --> 00:00:24,064
+repeatable fields
+
+9
+00:00:25,088 --> 00:00:26,112
+If you were to open
+
+10
+00:00:26,368 --> 00:00:27,392
+A component
+
+11
+00:00:27,904 --> 00:00:28,928
+You'll see that
+
+12
+00:00:29,184 --> 00:00:30,208
+Repeatable fields
+
+13
+00:00:32,256 --> 00:00:33,536
+are basically
+
+14
+00:00:33,792 --> 00:00:35,328
+Little models that pop-up
+
+15
+00:00:36,096 --> 00:00:37,376
+With values
+
+16
+00:00:38,144 --> 00:00:41,472
+And as been used quite excessively in this view
+
+17
+00:00:43,520 --> 00:00:47,104
+The reason why we did that is because it's really a very smart field
+
+18
+00:00:47,616 --> 00:00:51,712
+Because it combines these values into one value
+
+19
+00:00:52,480 --> 00:00:54,784
+Basically the JavaScript on the page
+
+20
+00:00:55,040 --> 00:00:58,624
+Grabs these values and converts it into one value
+
+21
+00:00:59,136 --> 00:01:00,928
+Which on submission
+
+22
+00:01:01,184 --> 00:01:02,720
+The form
+
+23
+00:01:02,976 --> 00:01:05,024
+Only submits one string
+
+24
+00:01:05,536 --> 00:01:06,816
+And not actually
+
+25
+00:01:07,072 --> 00:01:08,096
+Several fields
+
+26
+00:01:09,120 --> 00:01:10,400
+So to me it's
+
+27
+00:01:10,912 --> 00:01:13,216
+Feels like we going a few steps back
+
+28
+00:01:13,472 --> 00:01:15,776
+But I suppose there are some conventional
+
+29
+00:01:16,032 --> 00:01:18,592
+Reasons which
+
+30
+00:01:18,848 --> 00:01:19,360
+Makes
+
+31
+00:01:19,616 --> 00:01:20,640
+The repeatable field
+
+32
+00:01:21,408 --> 00:01:23,200
+On a subform level
+
+33
+00:01:23,456 --> 00:01:24,224
+More
+
+34
+00:01:25,760 --> 00:01:27,552
+desirable because of its
+
+35
+00:01:27,808 --> 00:01:30,368
+Ability to actually validate the data more
+
+36
+00:01:30,624 --> 00:01:31,392
+Correctly
+
+37
+00:01:32,928 --> 00:01:33,696
+None the less
+
+38
+00:01:34,720 --> 00:01:39,072
+We have to remove these Fields because in Joomla 4 they no longer are supported
+
+39
+00:01:41,376 --> 00:01:42,400
+In doing so
+
+40
+00:01:42,912 --> 00:01:45,216
+I had to decouple a number of these fields
+
+41
+00:01:45,472 --> 00:01:47,264
+Into their own tables
+
+42
+00:01:48,288 --> 00:01:50,080
+Because of the size that we would
+
+43
+00:01:50,592 --> 00:01:52,896
+Of values that will have on the page
+
+44
+00:01:53,152 --> 00:01:55,200
+The page becomes immensely heavy
+
+45
+00:01:55,712 --> 00:01:58,784
+And so they're about 9 new tables
+
+46
+00:01:59,808 --> 00:02:01,600
+Being added to JCB
+
+47
+00:02:01,856 --> 00:02:02,880
+To accommodate this
+
+48
+00:02:03,904 --> 00:02:04,672
+So the real
+
+49
+00:02:05,952 --> 00:02:10,048
+Change Is Gonna effect only the components area
+
+50
+00:02:10,816 --> 00:02:14,400
+But because JCB is very Dynamic component
+
+51
+00:02:14,656 --> 00:02:20,032
+That actually integrates with various levels of this data structures
+
+52
+00:02:20,800 --> 00:02:23,104
+I had to also upgrade the compiler
+
+53
+00:02:23,616 --> 00:02:26,432
+As well as the import and export of JCB packages
+
+54
+00:02:27,968 --> 00:02:34,112
+We have tested this and it's for the most part those involved into testing
+
+55
+00:02:34,368 --> 00:02:34,880
+Have found
+
+56
+00:02:35,136 --> 00:02:35,648
+That
+
+57
+00:02:35,904 --> 00:02:37,952
+This transition is actually
+
+58
+00:02:38,464 --> 00:02:41,024
+Major improvement to JCB
+
+59
+00:02:41,536 --> 00:02:43,072
+And should be very
+
+60
+00:02:43,328 --> 00:02:46,144
+easy and you shouldn't have any issues
+
+61
+00:02:47,168 --> 00:02:49,216
+Those of you that might run into
+
+62
+00:02:49,472 --> 00:02:50,240
+Little
+
+63
+00:02:51,008 --> 00:02:53,568
+Glitches that doesn't work as you expect
+
+64
+00:02:54,080 --> 00:02:59,200
+We would suggest that you clean your browsers cache as well as memory
+
+65
+00:03:00,224 --> 00:03:01,248
+We found it
+
+66
+00:03:01,504 --> 00:03:04,576
+Traces of the old repeatable field structure and
+
+67
+00:03:04,832 --> 00:03:06,624
+JavaScript surrounding that
+
+68
+00:03:07,136 --> 00:03:10,720
+Might clash with the new changes in JavaScript
+
+69
+00:03:10,976 --> 00:03:12,768
+Within the new update
+
+70
+00:03:13,536 --> 00:03:19,680
+So to clear your browser memory not just the cache is quite important only after you've
+
+71
+00:03:19,936 --> 00:03:20,704
+On the upgrade
+
+72
+00:03:21,216 --> 00:03:23,776
+And you started working in different views
+
+73
+00:03:24,288 --> 00:03:25,568
+You should see that
+
+74
+00:03:25,824 --> 00:03:26,592
+Everything
+
+75
+00:03:26,848 --> 00:03:28,128
+Works as expected
+
+76
+00:03:28,896 --> 00:03:29,408
+Now
+
+77
+00:03:29,664 --> 00:03:33,504
+An area which even at this stage has been
+
+78
+00:03:34,272 --> 00:03:37,600
+Been reported in giving some conflicts
+
+79
+00:03:37,856 --> 00:03:39,648
+Is the dynamic get area
+
+80
+00:03:40,416 --> 00:03:41,952
+The dynamic get area
+
+81
+00:03:42,208 --> 00:03:44,768
+Basically returns values
+
+82
+00:03:45,280 --> 00:03:45,792
+From
+
+83
+00:03:46,048 --> 00:03:47,840
+The admin area
+
+84
+00:03:48,096 --> 00:03:50,912
+Where if we target let's say backend View
+
+85
+00:03:51,168 --> 00:03:52,192
+And we grab
+
+86
+00:03:52,448 --> 00:03:52,960
+You know
+
+87
+00:03:53,728 --> 00:03:55,008
+Some information
+
+88
+00:03:55,264 --> 00:03:58,080
+These values are returned from the admin area
+
+89
+00:03:58,336 --> 00:04:01,152
+Where it basically goes to this Admin View
+
+90
+00:04:01,920 --> 00:04:02,688
+And
+
+91
+00:04:02,944 --> 00:04:04,224
+Builds this structure
+
+92
+00:04:04,992 --> 00:04:08,064
+Now as you can see with my demonstration here
+
+93
+00:04:08,576 --> 00:04:10,112
+Everything is really working
+
+94
+00:04:10,624 --> 00:04:11,904
+As expected
+
+95
+00:04:12,928 --> 00:04:14,720
+If if you at this stage
+
+96
+00:04:14,976 --> 00:04:17,791
+Would test this area before the upgrade
+
+97
+00:04:20,351 --> 00:04:22,399
+You should find that it works
+
+98
+00:04:23,167 --> 00:04:24,959
+Without any problems
+
+99
+00:04:25,471 --> 00:04:26,495
+If it doesn't
+
+100
+00:04:27,007 --> 00:04:31,871
+I would suggest clearing your browser memory and trying again
+
+101
+00:04:32,127 --> 00:04:34,943
+Until you can find that this is working
+
+102
+00:04:35,455 --> 00:04:37,503
+As you see mine working here
+
+103
+00:04:38,527 --> 00:04:39,039
+And
+
+104
+00:04:39,295 --> 00:04:42,879
+The reality is the only thing I've done is I've cleared my browser memory
+
+105
+00:04:43,647 --> 00:04:46,975
+So that there's no all traces of JavaScript
+
+106
+00:04:47,487 --> 00:04:53,119
+And what I say clear I mean literally going here to to history and just wiping everything
+
+107
+00:04:53,631 --> 00:04:55,679
+For this domain if you don't wanna clear
+
+108
+00:04:56,703 --> 00:05:01,055
+You know all of your history and it specifically targeting this domain
+
+109
+00:05:01,567 --> 00:05:03,359
+That you are loading your
+
+110
+00:05:04,895 --> 00:05:06,175
+JCB component in
+
+111
+00:05:06,943 --> 00:05:10,527
+Ok so that is just few heads up for
+
+112
+00:05:10,783 --> 00:05:11,551
+The current
+
+113
+00:05:11,807 --> 00:05:13,087
+2.5.8
+
+114
+00:05:13,855 --> 00:05:15,903
+The upgrade should be quite simple
+
+115
+00:05:16,415 --> 00:05:19,743
+The release I've just released it like 8 minutes ago
+
+116
+00:05:21,279 --> 00:05:26,143
+So you should just be able to go to you know updates in your managing area
+
+117
+00:05:26,655 --> 00:05:29,215
+See that the upgrade is there and ready
+
+118
+00:05:29,983 --> 00:05:31,007
+Click
+
+119
+00:05:31,263 --> 00:05:33,311
+on it and click update
+
+120
+00:05:37,663 --> 00:05:38,431
+There we go
+
+121
+00:05:38,943 --> 00:05:40,223
+The upgrade is been done
+
+122
+00:05:41,247 --> 00:05:43,039
+If we now go back to
+
+123
+00:05:43,295 --> 00:05:44,831
+Joomla component Builder
+
+124
+00:05:45,599 --> 00:05:46,623
+We should see
+
+125
+00:05:46,879 --> 00:05:47,391
+That
+
+126
+00:05:47,903 --> 00:05:48,671
+It's up-to-date
+
+127
+00:05:49,439 --> 00:05:51,487
+And everything is
+
+128
+00:05:51,743 --> 00:05:54,047
+Been done without any errors
+
+129
+00:05:54,559 --> 00:05:56,607
+If we now go to the
+
+130
+00:05:56,863 --> 00:05:58,399
+Joomla components area
+
+131
+00:05:58,911 --> 00:06:00,191
+You should see
+
+132
+00:06:00,447 --> 00:06:01,983
+A view similar to this
+
+133
+00:06:02,239 --> 00:06:04,287
+With a lot of new shortcuts
+
+134
+00:06:04,799 --> 00:06:07,103
+To these different decoupled
+
+135
+00:06:07,615 --> 00:06:08,895
+Areas that I mentioned
+
+136
+00:06:09,407 --> 00:06:11,967
+And if you open the component
+
+137
+00:06:13,503 --> 00:06:17,855
+Not much has changed in regards to where what is located
+
+138
+00:06:18,367 --> 00:06:23,487
+But how to interact with it is actually been moved so for example the component updates
+
+139
+00:06:23,999 --> 00:06:26,303
+If you see it as what as a button here if
+
+140
+00:06:26,559 --> 00:06:27,071
+you click its gonna
+
+141
+00:06:27,327 --> 00:06:30,143
+Ask you first save everything before you continue
+
+142
+00:06:30,655 --> 00:06:31,679
+If you've done so
+
+143
+00:06:32,191 --> 00:06:37,311
+Then click ok and it opens the area where you then would do your updates
+
+144
+00:06:37,823 --> 00:06:40,127
+Usually it was in a you know in a module
+
+145
+00:06:40,383 --> 00:06:42,431
+Sorry a model that popped up
+
+146
+00:06:42,943 --> 00:06:46,015
+And you could change it right there on the same page
+
+147
+00:06:46,271 --> 00:06:50,623
+Now you simply go to another view and is basically doing the same
+
+148
+00:06:50,879 --> 00:06:51,903
+So
+
+149
+00:06:52,159 --> 00:06:57,279
+You just do that the same goes with your admin view custom view site view
+
+150
+00:06:57,791 --> 00:06:59,583
+And basically everything else
+
+151
+00:07:00,095 --> 00:07:02,655
+The contributor is we've moved down here so you could
+
+152
+00:07:03,167 --> 00:07:04,703
+Do them on the page
+
+153
+00:07:05,215 --> 00:07:10,591
+But for most of the other repeatable Fields we've moved them to their own tables
+
+154
+00:07:11,103 --> 00:07:13,919
+The Fields and the folders we've moved
+
+155
+00:07:14,175 --> 00:07:15,455
+To a joint table
+
+156
+00:07:15,967 --> 00:07:17,247
+So if you were to click on that
+
+157
+00:07:18,015 --> 00:07:19,807
+You should be able to
+
+158
+00:07:20,575 --> 00:07:21,599
+Easily add
+
+159
+00:07:22,111 --> 00:07:23,903
+Some files to your
+
+160
+00:07:24,415 --> 00:07:26,719
+Component or folders
+
+161
+00:07:26,975 --> 00:07:28,767
+All found within this
+
+162
+00:07:29,279 --> 00:07:30,047
+Structure
+
+163
+00:07:30,815 --> 00:07:32,607
+As it's explained here in the
+
+164
+00:07:33,375 --> 00:07:33,887
+Note
+
+165
+00:07:36,191 --> 00:07:38,751
+The same is true of all the other
+
+166
+00:07:39,263 --> 00:07:41,567
+Areas it's basically
+
+167
+00:07:42,591 --> 00:07:43,359
+We've moved
+
+168
+00:07:43,871 --> 00:07:44,639
+The
+
+169
+00:07:45,151 --> 00:07:46,431
+Admin views to
+
+170
+00:07:46,687 --> 00:07:47,967
+It's Town tab
+
+171
+00:07:48,479 --> 00:07:53,343
+So you could access them via this button or via this one
+
+172
+00:07:54,879 --> 00:07:59,743
+And so here you would see your changes you could also actually from here directly edit
+
+173
+00:07:59,999 --> 00:08:01,023
+The admin View
+
+174
+00:08:01,279 --> 00:08:02,047
+That you've linked
+
+175
+00:08:02,815 --> 00:08:03,327
+So
+
+176
+00:08:04,863 --> 00:08:05,887
+It will be able to
+
+177
+00:08:06,143 --> 00:08:09,471
+Edit the admin view directly out of your component area
+
+178
+00:08:10,239 --> 00:08:10,751
+And
+
+179
+00:08:11,007 --> 00:08:11,519
+So
+
+180
+00:08:11,775 --> 00:08:13,823
+That That's a nice new feature
+
+181
+00:08:14,079 --> 00:08:14,847
+Which
+
+182
+00:08:15,359 --> 00:08:17,151
+I suppose will come in very handy
+
+183
+00:08:21,247 --> 00:08:25,343
+Ok so that is really the new upgrade
+
+184
+00:08:25,599 --> 00:08:27,647
+As really targets
+
+185
+00:08:27,903 --> 00:08:31,999
+The majority of the changes is in the Joomla component area
+
+186
+00:08:32,255 --> 00:08:33,535
+We do
+
+187
+00:08:34,047 --> 00:08:37,887
+Have a lot of data checks all around JCB at this stage
+
+188
+00:08:38,399 --> 00:08:41,215
+That if during the upgrade we might have missed a
+
+189
+00:08:41,471 --> 00:08:45,567
+Field in not converting it to the new subform layout
+
+190
+00:08:46,079 --> 00:08:52,223
+Then even when just opening a view it actually runs through all those fields
+
+191
+00:08:52,479 --> 00:08:54,015
+And make sure that it's been
+
+192
+00:08:54,271 --> 00:08:56,319
+You know changed and converted
+
+193
+00:08:56,575 --> 00:09:02,719
+If by any means you didn't get around to opening the views and you just go here
+
+194
+00:09:02,975 --> 00:09:04,255
+To the compiler
+
+195
+00:09:04,511 --> 00:09:07,071
+And would click compile
+
+196
+00:09:07,327 --> 00:09:08,351
+It actually
+
+197
+00:09:08,607 --> 00:09:11,935
+Does that again it runs through all the fields
+
+198
+00:09:12,191 --> 00:09:15,007
+And it makes sure that it's in the right format
+
+199
+00:09:15,263 --> 00:09:18,335
+And therefore you're compiling should work just as before
+
+200
+00:09:19,103 --> 00:09:19,615
+Now
+
+201
+00:09:19,871 --> 00:09:22,943
+What are the new features we've added is this
+
+202
+00:09:23,455 --> 00:09:24,991
+Translation checker
+
+203
+00:09:25,503 --> 00:09:30,367
+Which basically checks how many strings there is within your component
+
+204
+00:09:30,623 --> 00:09:34,463
+And how many you've translated for this specific version
+
+205
+00:09:34,975 --> 00:09:37,535
+New language available
+
+206
+00:09:37,791 --> 00:09:39,839
+For both the front
+
+207
+00:09:40,863 --> 00:09:44,191
+You know sorry the admin view the admin system view the site view
+
+208
+00:09:44,703 --> 00:09:49,311
+And again for the another language Admin view admin system view in the site view
+
+209
+00:09:49,823 --> 00:09:51,359
+So basically giving you
+
+210
+00:09:52,639 --> 00:09:55,199
+A little feedback on your progress
+
+211
+00:09:55,711 --> 00:09:59,295
+Because we realised that this area of JCB is not
+
+212
+00:09:59,551 --> 00:10:02,367
+May be utilised as much as it
+
+213
+00:10:02,623 --> 00:10:03,391
+Can be
+
+214
+00:10:03,647 --> 00:10:04,415
+So we bakes
+
+215
+00:10:04,671 --> 00:10:06,207
+Making some awareness here
+
+216
+00:10:06,463 --> 00:10:07,999
+But this area is available
+
+217
+00:10:08,511 --> 00:10:14,655
+It only comes and becomes Active if you've actually got some language translation as sorry some languages
+
+218
+00:10:14,911 --> 00:10:15,423
+set up
+
+219
+00:10:15,679 --> 00:10:18,495
+So you need to have some languages in your
+
+220
+00:10:18,751 --> 00:10:20,543
+Languages area
+
+221
+00:10:21,055 --> 00:10:25,919
+And you need to have have compiled that component at least once before
+
+222
+00:10:26,175 --> 00:10:29,503
+Because like you know by now that the
+
+223
+00:10:30,271 --> 00:10:35,135
+The the language string stored in JCB found on the language translations
+
+224
+00:10:35,647 --> 00:10:39,743
+Is only generated once you've compiled at least your component once
+
+225
+00:10:40,255 --> 00:10:44,351
+Then it links the component language strings to JCB
+
+226
+00:10:44,863 --> 00:10:47,935
+And you can translate them into those languages that you created
+
+227
+00:10:48,191 --> 00:10:54,335
+The other problem which you now saw their with which regarding to The Back-up folder
+
+228
+00:10:54,591 --> 00:10:59,455
+Because I haven't setup a backup folder for this JCB install
+
+229
+00:10:59,711 --> 00:11:05,855
+It'll tell me if I leave the set to yes and I compile he'll tell me that it couldn't move that
+
+230
+00:11:06,111 --> 00:11:08,159
+Backup file
+
+231
+00:11:08,415 --> 00:11:10,975
+Because the temporary folder and the backup
+
+232
+00:11:11,231 --> 00:11:12,767
+Folder is now the same place
+
+233
+00:11:13,535 --> 00:11:15,583
+So basically it's saying it couldn't move
+
+234
+00:11:15,839 --> 00:11:17,887
+The file to the same location
+
+235
+00:11:19,423 --> 00:11:21,727
+And that means this is not really an error
+
+236
+00:11:21,983 --> 00:11:24,031
+It's just a mis configuration
+
+237
+00:11:24,287 --> 00:11:28,895
+Because we haven't setup The Back-up folder to be a separate folder from the temporary folder
+
+238
+00:11:29,151 --> 00:11:34,015
+And then if you need some more help regarding the translation manager
+
+239
+00:11:34,271 --> 00:11:36,063
+And please go watch this tutorial
+
+240
+00:11:36,831 --> 00:11:38,879
+Here we do give you a notice the
+
+241
+00:11:39,135 --> 00:11:41,951
+that you can even in the options area of JCB
+
+242
+00:11:42,463 --> 00:11:46,047
+You can change the percentage of translation required
+
+243
+00:11:46,303 --> 00:11:48,351
+Before a translation is added
+
+244
+00:11:48,863 --> 00:11:50,655
+Currently it's set to 50%
+
+245
+00:11:51,935 --> 00:11:53,727
+Which is actually not
+
+246
+00:11:55,519 --> 00:11:59,871
+You know set in stone you can change that to any percentage that you like
+
+247
+00:12:00,127 --> 00:12:06,015
+Ok so that is creating a component now with the new upgraded JCB
+
+248
+00:12:06,527 --> 00:12:08,575
+And having just compiled that
+
+249
+00:12:09,087 --> 00:12:10,367
+We can go back here
+
+250
+00:12:10,879 --> 00:12:12,927
+We can see that the component was built
+
+251
+00:12:14,719 --> 00:12:17,279
+And everything is working as expected
+
+252
+00:12:18,815 --> 00:12:21,631
+Yeah so thank you for watching this tutorial
+
+253
+00:12:22,143 --> 00:12:27,263
+If you run into any issues that you think is related to this upgrade
+
+254
+00:12:28,031 --> 00:12:31,103
+And you have already cleared your browser memory
+
+255
+00:12:31,615 --> 00:12:34,687
+Also note that I'm I'm using
+
+256
+00:12:34,943 --> 00:12:36,223
+Firefox here
+
+257
+00:12:36,735 --> 00:12:37,503
+Let see
+
+258
+00:12:38,783 --> 00:12:40,319
+Firefox
+
+259
+00:12:40,831 --> 00:12:41,599
+64-bit
+
+260
+00:12:44,159 --> 00:12:44,927
+Here we go
+
+261
+00:12:47,743 --> 00:12:48,767
+Then please
+
+262
+00:12:49,279 --> 00:12:54,911
+Open an issue on GitHub and we'll try to get back to you and see if we can get this resolved
+
+263
+00:12:56,703 --> 00:12:59,519
+So far my experience is that this upgrade
+
+264
+00:13:00,031 --> 00:13:02,335
+Is taken JCB into
+
+265
+00:13:02,591 --> 00:13:03,615
+A very
+
+266
+00:13:03,871 --> 00:13:05,407
+Powerful position
+
+267
+00:13:05,663 --> 00:13:09,503
+Where it is now having No repeatable Fields anywhere
+
+268
+00:13:09,759 --> 00:13:11,295
+In the in the component
+
+269
+00:13:11,807 --> 00:13:14,367
+All is repeatable Fields have been converted
+
+270
+00:13:14,623 --> 00:13:16,671
+And is now only subforms
+
+271
+00:13:17,183 --> 00:13:18,463
+And
+
+272
+00:13:19,231 --> 00:13:21,791
+We've added some nice shortcuts like you seen
+
+273
+00:13:22,303 --> 00:13:28,447
+To these decoupled areas which means you can actually access them directly without going through
+
+274
+00:13:28,703 --> 00:13:30,239
+The component view itself
+
+275
+00:13:30,495 --> 00:13:31,775
+If you wanted to
+
+276
+00:13:32,031 --> 00:13:33,567
+Work on for example
+
+277
+00:13:38,943 --> 00:13:40,479
+The component dashboard
+
+278
+00:13:40,735 --> 00:13:43,039
+You know you wanna make some changes to the dashboard
+
+279
+00:13:43,551 --> 00:13:46,623
+Or you wanna just work on the admin views
+
+280
+00:13:46,879 --> 00:13:48,927
+You can click on that link right here
+
+281
+00:13:49,439 --> 00:13:53,535
+And work on the admin views without going to the component directly
+
+282
+00:13:54,303 --> 00:13:55,583
+Which I think is
+
+283
+00:13:55,839 --> 00:13:58,143
+Very nice Convenience shortcut
+
+284
+00:13:58,399 --> 00:14:02,495
+Which I suppose we'll make our life a little easier
+
+285
+00:14:03,263 --> 00:14:03,775
+Ok
+
+286
+00:14:04,287 --> 00:14:04,799
+Well
+
+287
+00:14:05,055 --> 00:14:06,335
+Again thank you for watching
+

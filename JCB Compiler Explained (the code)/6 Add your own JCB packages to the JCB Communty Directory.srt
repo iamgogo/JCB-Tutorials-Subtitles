@@ -1,0 +1,2064 @@
+1
+00:00:01,280 --> 00:00:02,048
+I want to
+
+2
+00:00:02,816 --> 00:00:03,584
+Demonstrate
+
+3
+00:00:03,840 --> 00:00:07,424
+The way to add JCB packages to the community
+
+4
+00:00:08,192 --> 00:00:08,960
+Directory
+
+5
+00:00:09,984 --> 00:00:14,592
+The moment if you go to import JCB packages this now in new tab called community package
+
+6
+00:00:14,848 --> 00:00:15,360
+
+
+7
+00:00:16,128 --> 00:00:19,968
+Where we would like to encourage all of you to start sharing packages
+
+8
+00:00:21,504 --> 00:00:24,064
+Main focus or purpose for it would become
+
+9
+00:00:24,576 --> 00:00:25,856
+To be quick start
+
+10
+00:00:26,112 --> 00:00:27,136
+For developing
+
+11
+00:00:27,648 --> 00:00:28,160
+Components
+
+12
+00:00:28,416 --> 00:00:29,184
+You could serve
+
+13
+00:00:30,720 --> 00:00:32,768
+As a back up for yourself to easily
+
+14
+00:00:33,280 --> 00:00:34,560
+Pull on old
+
+15
+00:00:34,816 --> 00:00:37,888
+Packages that you've developed
+
+16
+00:00:38,400 --> 00:00:41,472
+To maybe have a specific feature for example
+
+17
+00:00:41,728 --> 00:00:44,032
+Linking your Joomla users
+
+18
+00:00:44,544 --> 00:00:45,824
+Yeah into your component
+
+19
+00:00:46,080 --> 00:00:48,896
+I know I have some components that does that
+
+20
+00:00:49,408 --> 00:00:51,456
+And I often want to re-use that
+
+21
+00:00:51,712 --> 00:00:52,224
+So
+
+22
+00:00:52,480 --> 00:00:54,016
+You can now with this new
+
+23
+00:00:54,272 --> 00:00:55,040
+Idea
+
+24
+00:00:55,296 --> 00:00:58,624
+Be able to import that component over and over
+
+25
+00:00:59,136 --> 00:01:01,184
+without merging it with
+
+26
+00:01:01,440 --> 00:01:02,464
+The old version
+
+27
+00:01:02,720 --> 00:01:04,256
+But actually creating a new
+
+28
+00:01:04,512 --> 00:01:07,328
+Component including Fields and everything else
+
+29
+00:01:07,840 --> 00:01:09,888
+And so that way
+
+30
+00:01:10,656 --> 00:01:12,704
+You are able to quickly start a new project
+
+31
+00:01:12,960 --> 00:01:16,544
+And you don't need to really do all that over again and again
+
+32
+00:01:17,568 --> 00:01:23,712
+It's sort of similar as the Clone feature that now has become available so they JCB components now
+
+33
+00:01:23,968 --> 00:01:24,992
+Clone feature
+
+34
+00:01:25,760 --> 00:01:27,296
+You could select a component
+
+35
+00:01:28,064 --> 00:01:29,088
+And you can clone it
+
+36
+00:01:29,856 --> 00:01:30,880
+And in cloning it
+
+37
+00:01:31,392 --> 00:01:32,928
+It basically creates
+
+38
+00:01:33,184 --> 00:01:35,488
+A Exact Copy of the component
+
+39
+00:01:35,744 --> 00:01:37,024
+But not linked
+
+40
+00:01:37,280 --> 00:01:40,096
+To the components so even the admin to use
+
+41
+00:01:41,632 --> 00:01:43,936
+You'll see it actually create a new admin view
+
+42
+00:01:44,192 --> 00:01:46,496
+And the same goes for the fields
+
+43
+00:01:47,008 --> 00:01:48,288
+You actually created
+
+44
+00:01:48,800 --> 00:01:50,080
+Holding you
+
+45
+00:01:50,592 --> 00:01:51,616
+Set of fields
+
+46
+00:01:51,872 --> 00:01:52,896
+Specifically
+
+47
+00:01:53,408 --> 00:01:55,712
+For this component you see it's got the same
+
+48
+00:01:56,224 --> 00:01:57,248
+Suffix
+
+49
+00:01:57,760 --> 00:01:58,272
+IO
+
+50
+00:01:59,040 --> 00:01:59,808
+Ok so
+
+51
+00:02:00,064 --> 00:02:04,672
+That is the Clone feature now the import feature has the same functionality
+
+52
+00:02:05,184 --> 00:02:08,000
+So if I was to go and say that's a import
+
+53
+00:02:08,256 --> 00:02:09,280
+The demo component
+
+54
+00:02:11,072 --> 00:02:11,584
+Then
+
+55
+00:02:12,096 --> 00:02:13,632
+Once it's
+
+56
+00:02:14,144 --> 00:02:16,960
+gotten the component from GitHub
+
+57
+00:02:19,008 --> 00:02:20,288
+We will see
+
+58
+00:02:20,544 --> 00:02:25,152
+That it has this merge option or no don't merge now
+
+59
+00:02:25,664 --> 00:02:26,176
+Remember
+
+60
+00:02:26,432 --> 00:02:30,528
+We ready have the demo component here and it is exactly the same component
+
+61
+00:02:31,040 --> 00:02:33,600
+But I don't want it to update this one
+
+62
+00:02:33,856 --> 00:02:35,136
+I wanted to really
+
+63
+00:02:35,648 --> 00:02:37,952
+Bring it in as a new component and then I will
+
+64
+00:02:38,464 --> 00:02:44,608
+Take this to know and it does give you a little explanation here and also tells you that the paradation  rules
+
+65
+00:02:45,120 --> 00:02:47,424
+Field types snippet languages and language strings
+
+66
+00:02:47,936 --> 00:02:50,240
+These things will still be merged
+
+67
+00:02:50,496 --> 00:02:52,032
+And that simply is unavoidable
+
+68
+00:02:52,544 --> 00:02:55,104
+Ok and then if you wanna see
+
+69
+00:02:55,616 --> 00:02:57,152
+You know what happens on the hood
+
+70
+00:02:57,920 --> 00:03:00,224
+And then you click on continue
+
+71
+00:03:00,480 --> 00:03:02,784
+And what will do now
+
+72
+00:03:03,808 --> 00:03:06,624
+Obviously give you a whole lot of information of the import
+
+73
+00:03:07,392 --> 00:03:09,952
+And also whatever files it moved
+
+74
+00:03:10,208 --> 00:03:12,512
+But it actually created a new component
+
+75
+00:03:13,280 --> 00:03:15,072
+It didn't update the old one
+
+76
+00:03:15,840 --> 00:03:18,912
+And that is a very nice option because now
+
+77
+00:03:19,168 --> 00:03:22,752
+You can quickly start with this component without affecting this one
+
+78
+00:03:24,544 --> 00:03:26,080
+Now you'll see that
+
+79
+00:03:26,336 --> 00:03:27,872
+Even the admin view is
+
+80
+00:03:28,128 --> 00:03:30,688
+Dislocated it's not the same admin view
+
+81
+00:03:31,200 --> 00:03:36,320
+The same again with the fields so if we look at the fields you'll see it also has there RA
+
+82
+00:03:36,576 --> 00:03:37,856
+Suffix
+
+83
+00:03:38,112 --> 00:03:39,648
+to it RA RA
+
+84
+00:03:39,904 --> 00:03:43,232
+This name doesn't anywhere appear
+
+85
+00:03:43,488 --> 00:03:46,816
+In the compiled version of the components all system names
+
+86
+00:03:47,584 --> 00:03:50,400
+So that RA will just be for your own
+
+87
+00:03:50,656 --> 00:03:51,680
+to know that this
+
+88
+00:03:51,936 --> 00:03:53,984
+Field belongs to this component and so on
+
+89
+00:03:54,752 --> 00:04:00,896
+So that's sort of what the new JCB package import option is sort of been improved to to manage
+
+90
+00:04:01,920 --> 00:04:04,224
+Now with the community option
+
+91
+00:04:04,480 --> 00:04:06,784
+You can actually do what we wanna call
+
+92
+00:04:07,040 --> 00:04:08,832
+Well obviously share
+
+93
+00:04:09,088 --> 00:04:10,112
+Like I've been doing
+
+94
+00:04:10,368 --> 00:04:10,880
+Sharing
+
+95
+00:04:11,136 --> 00:04:13,952
+So many in a lot of information with all of you
+
+96
+00:04:14,464 --> 00:04:16,000
+Components tools
+
+97
+00:04:16,512 --> 00:04:19,839
+And so the idea that all of you would have this attitude off
+
+98
+00:04:20,095 --> 00:04:21,887
+Giving back to the community
+
+99
+00:04:22,399 --> 00:04:26,495
+And the other option is that if you want to distribute a package
+
+100
+00:04:27,007 --> 00:04:29,823
+And the same time maybe get some marketing
+
+101
+00:04:30,079 --> 00:04:31,871
+This is also gonna be doing that
+
+102
+00:04:33,151 --> 00:04:39,039
+Ok so let me illustrate to you the process of getting a package into the community
+
+103
+00:04:39,295 --> 00:04:40,063
+Packages
+
+104
+00:04:40,319 --> 00:04:41,855
+We are going to use
+
+105
+00:04:42,111 --> 00:04:42,623
+Github
+
+106
+00:04:43,135 --> 00:04:47,231
+Basically this repository JCB community packages
+
+107
+00:04:47,743 --> 00:04:48,767
+This is the URL
+
+108
+00:04:49,023 --> 00:04:50,559
+VDM Dash
+
+109
+00:04:51,071 --> 00:04:51,839
+IO
+
+110
+00:04:52,095 --> 00:04:52,863
+Ford slash
+
+111
+00:04:53,119 --> 00:04:55,935
+JCB - community - packages
+
+112
+00:04:57,471 --> 00:04:59,775
+You will need to forked this package
+
+113
+00:05:00,799 --> 00:05:03,615
+I'm not gonna teach you how to use GitHub
+
+114
+00:05:04,127 --> 00:05:05,919
+Neigther I don't gonna teach you how to use git
+
+115
+00:05:06,175 --> 00:05:08,479
+I'm gonna illustrate it just by doing it
+
+116
+00:05:11,295 --> 00:05:12,575
+Doing what you need to do
+
+117
+00:05:13,087 --> 00:05:14,111
+Demonstrating to you
+
+118
+00:05:14,367 --> 00:05:16,671
+But I'm not gonna teach you how to do this
+
+119
+00:05:17,695 --> 00:05:18,463
+More thorough way
+
+120
+00:05:18,975 --> 00:05:19,999
+So you need to
+
+121
+00:05:20,255 --> 00:05:21,791
+Go and study up GitHub
+
+122
+00:05:22,047 --> 00:05:22,559
+And Git
+
+123
+00:05:23,071 --> 00:05:25,375
+Specifically to be able to manage this
+
+124
+00:05:26,143 --> 00:05:31,007
+And what will happen is anyone who wants to add a package must start by forking
+
+125
+00:05:31,519 --> 00:05:33,055
+The repository
+
+126
+00:05:34,079 --> 00:05:35,871
+And then once it's been forked
+
+127
+00:05:37,151 --> 00:05:40,479
+They need to clone it down to their the developing environment
+
+128
+00:05:41,247 --> 00:05:42,527
+Where they have JCB
+
+129
+00:05:42,783 --> 00:05:45,599
+Or to where they can move a JCB package
+
+130
+00:05:46,111 --> 00:05:50,463
+Because in the end of the day they need to add their package which they want to contribute
+
+131
+00:05:50,719 --> 00:05:52,511
+To their forked version
+
+132
+00:05:53,023 --> 00:05:53,535
+Of
+
+133
+00:05:53,791 --> 00:05:54,303
+This
+
+134
+00:05:54,559 --> 00:05:56,095
+JCB community packages
+
+135
+00:05:56,863 --> 00:06:01,215
+And then once they done all that and it pushed up the changes to their repository
+
+136
+00:06:01,727 --> 00:06:03,263
+Then they'll make a pull request
+
+137
+00:06:03,775 --> 00:06:05,567
+To add the change
+
+138
+00:06:05,823 --> 00:06:07,103
+Into the community
+
+139
+00:06:07,359 --> 00:06:09,919
+Version of this repository now
+
+140
+00:06:10,175 --> 00:06:11,967
+Hope that all makes sense to you
+
+141
+00:06:12,223 --> 00:06:14,015
+You'll get URL here
+
+142
+00:06:14,527 --> 00:06:16,063
+On your own repository
+
+143
+00:06:16,319 --> 00:06:17,087
+you Copy that
+
+144
+00:06:17,855 --> 00:06:19,391
+And then you'll go to
+
+145
+00:06:19,903 --> 00:06:21,695
+To your developing environment
+
+146
+00:06:22,207 --> 00:06:22,719
+Hopefully
+
+147
+00:06:23,231 --> 00:06:24,767
+It will be Linux
+
+148
+00:06:25,279 --> 00:06:26,815
+Because you need to
+
+149
+00:06:27,071 --> 00:06:28,607
+Run a bash script
+
+150
+00:06:29,119 --> 00:06:30,655
+so it Needs to be a bash environment
+
+151
+00:06:32,191 --> 00:06:32,703
+And
+
+152
+00:06:32,959 --> 00:06:35,775
+Yeah so you could run it in the VM where ever you want
+
+153
+00:06:36,287 --> 00:06:39,359
+Just get it going so I'm gonna open a terminal now
+
+154
+00:06:40,895 --> 00:06:43,711
+And then in the terminal I'm simply gonna clone
+
+155
+00:06:44,223 --> 00:06:45,503
+You know this repository
+
+156
+00:06:52,159 --> 00:06:56,767
+Then once it's finished cloning it will gonna change to that directory
+
+157
+00:07:02,911 --> 00:07:04,191
+Now if we list out
+
+158
+00:07:04,447 --> 00:07:05,215
+The items
+
+159
+00:07:06,495 --> 00:07:10,079
+You see that it is exactly the same as what we have here and GitHub
+
+160
+00:07:10,335 --> 00:07:11,871
+It is in literally the same
+
+161
+00:07:12,639 --> 00:07:13,151
+Information
+
+162
+00:07:13,663 --> 00:07:17,759
+And so it is actually a folder a folder on your computer
+
+163
+00:07:18,271 --> 00:07:22,111
+And we will then now need to go to JCB
+
+164
+00:07:22,367 --> 00:07:24,671
+Extract the package you want to share
+
+165
+00:07:24,927 --> 00:07:26,975
+And simply place it into this folder
+
+166
+00:07:27,743 --> 00:07:28,767
+And then Run
+
+167
+00:07:29,023 --> 00:07:30,815
+This sh script
+
+168
+00:07:31,583 --> 00:07:32,351
+Ok
+
+169
+00:07:32,607 --> 00:07:33,631
+So let me do that
+
+170
+00:07:34,655 --> 00:07:36,703
+So here we are in our
+
+171
+00:07:37,215 --> 00:07:39,007
+JCB program
+
+172
+00:07:39,519 --> 00:07:42,591
+And I want to share this question and answers
+
+173
+00:07:43,871 --> 00:07:48,991
+you know component and I would ask that you won't share things that do not work
+
+174
+00:07:49,247 --> 00:07:53,855
+If you still busy developing the thing then you know so time to share it yet
+
+175
+00:07:54,623 --> 00:07:55,647
+But when it's ready
+
+176
+00:07:55,903 --> 00:08:00,511
+And you know that it works that means you've compiled it and tested it and you know it stable
+
+177
+00:08:01,023 --> 00:08:02,559
+And you wanna share it
+
+178
+00:08:02,815 --> 00:08:06,143
+and it Doesn't need to be a big component it could have just one View
+
+179
+00:08:06,399 --> 00:08:07,679
+It doesn't matter
+
+180
+00:08:07,935 --> 00:08:11,007
+But it needs to be something other than already what exist
+
+181
+00:08:12,031 --> 00:08:14,079
+So no more new demo components
+
+182
+00:08:15,359 --> 00:08:16,639
+You need to be something else
+
+183
+00:08:17,151 --> 00:08:17,663
+So
+
+184
+00:08:17,919 --> 00:08:20,735
+Always please check that if you wanna contribute something
+
+185
+00:08:20,991 --> 00:08:22,783
+Be something that's already there
+
+186
+00:08:23,039 --> 00:08:24,831
+If there is already one
+
+187
+00:08:25,087 --> 00:08:28,927
+And you want to improve it sure then you can do that you can
+
+188
+00:08:29,183 --> 00:08:32,767
+Pull it in make it better and make it pull request to improve it
+
+189
+00:08:33,791 --> 00:08:36,607
+But just know that will have to be able to test it
+
+190
+00:08:36,863 --> 00:08:38,399
+So if you're using a key
+
+191
+00:08:38,911 --> 00:08:41,983
+Then then the person that you get it from
+
+192
+00:08:42,239 --> 00:08:42,751
+You can't
+
+193
+00:08:43,007 --> 00:08:44,799
+Contributed without a key
+
+194
+00:08:45,055 --> 00:08:46,335
+Back and in fact
+
+195
+00:08:46,591 --> 00:08:48,639
+If someone places
+
+196
+00:08:48,895 --> 00:08:49,919
+A package in the
+
+197
+00:08:50,175 --> 00:08:50,943
+Community
+
+198
+00:08:51,199 --> 00:08:52,223
+And has a key
+
+199
+00:08:52,735 --> 00:08:53,247
+Then
+
+200
+00:08:53,759 --> 00:08:55,551
+it sort of lock out everybody else
+
+201
+00:08:56,831 --> 00:08:58,623
+Because then only they can improve it
+
+202
+00:08:59,647 --> 00:09:01,439
+But as soon as I take the key away
+
+203
+00:09:01,695 --> 00:09:05,023
+Then everybody else can improved it because there is no key
+
+204
+00:09:05,535 --> 00:09:07,583
+And doesn't matter we all can't a cut out
+
+205
+00:09:08,095 --> 00:09:08,607
+Ok
+
+206
+00:09:08,863 --> 00:09:09,375
+So
+
+207
+00:09:09,631 --> 00:09:12,191
+I'm not exactly sure how all this is gonna workout
+
+208
+00:09:12,703 --> 00:09:17,311
+I am very open to all of you to just give me feedback input how you think this should be done
+
+209
+00:09:18,847 --> 00:09:20,639
+The idea is not to
+
+210
+00:09:20,895 --> 00:09:22,943
+Infringe on each other's projects
+
+211
+00:09:23,455 --> 00:09:26,527
+But to help each other get projects going quite quickly
+
+212
+00:09:26,783 --> 00:09:28,319
+That's really the agenda
+
+213
+00:09:29,855 --> 00:09:34,719
+The the idea is if you wanna build a project let's get something that can sort of service at base
+
+214
+00:09:34,975 --> 00:09:37,279
+From which to start so this question and answers
+
+215
+00:09:37,535 --> 00:09:41,119
+Program is there is a very nice base it's got just
+
+216
+00:09:41,375 --> 00:09:42,911
+Few views a few fields
+
+217
+00:09:43,167 --> 00:09:45,983
+And it's got a very simple straight forward implementation
+
+218
+00:09:46,239 --> 00:09:48,543
+Q&A for your front in of your website
+
+219
+00:09:48,799 --> 00:09:52,383
+And so I thought well this is a nice thing to
+
+220
+00:09:52,639 --> 00:09:53,663
+sort of use
+
+221
+00:09:53,919 --> 00:09:55,711
+As a demonstration
+
+222
+00:09:55,967 --> 00:09:57,503
+So I'm gonna export this
+
+223
+00:09:59,807 --> 00:10:02,623
+Wait a minute let me just show you something else before we do that
+
+224
+00:10:03,135 --> 00:10:04,415
+Is going to the component
+
+225
+00:10:05,695 --> 00:10:06,207
+And
+
+226
+00:10:06,975 --> 00:10:10,047
+Those if you want to maybe give away the component
+
+227
+00:10:10,303 --> 00:10:11,839
+But you want to sort of
+
+228
+00:10:12,095 --> 00:10:14,911
+have people visit
+
+229
+00:10:15,167 --> 00:10:16,703
+Maybe a video that you've made
+
+230
+00:10:17,215 --> 00:10:18,239
+The way you could do this
+
+231
+00:10:19,007 --> 00:10:23,103
+Is by this buy link here you'll basically make that link
+
+232
+00:10:23,359 --> 00:10:24,895
+Direct to your video
+
+233
+00:10:25,151 --> 00:10:28,223
+So that when they click on the Buy link they go to the video
+
+234
+00:10:28,479 --> 00:10:30,527
+Were you gonna give them the key for free
+
+235
+00:10:30,783 --> 00:10:31,807
+And they can
+
+236
+00:10:32,063 --> 00:10:35,135
+Watch the video get the key come back and open the package
+
+237
+00:10:35,647 --> 00:10:37,183
+I'm when I currently
+
+238
+00:10:37,439 --> 00:10:38,975
+Already implementing package link
+
+239
+00:10:39,487 --> 00:10:41,279
+The bucket link should be
+
+240
+00:10:41,535 --> 00:10:42,815
+Where the package is
+
+241
+00:10:43,071 --> 00:10:45,375
+Which most of the time will be there depository
+
+242
+00:10:45,631 --> 00:10:51,519
+Which is why we not fully implementing this because it's sort of yeah we don't need it
+
+243
+00:10:51,775 --> 00:10:54,847
+So we left it here maybe for future purposes
+
+244
+00:10:55,359 --> 00:10:59,711
+But at the moment we don't need it the way we setup things
+
+245
+00:10:59,967 --> 00:11:03,551
+You can sort of just use the report you're also
+
+246
+00:11:04,063 --> 00:11:07,135
+So there's only the Buy link that's really important
+
+247
+00:11:07,391 --> 00:11:12,511
+If it's a free pair if it's not a free package or if it's a free packet with your giving the key away
+
+248
+00:11:12,767 --> 00:11:15,839
+So the other idea is not a daycare at all
+
+249
+00:11:16,095 --> 00:11:16,607
+So
+
+250
+00:11:16,863 --> 00:11:18,399
+If you don't have a key here
+
+251
+00:11:18,655 --> 00:11:21,215
+Then it will be a free package
+
+252
+00:11:21,471 --> 00:11:24,287
+This is how you make something every package it's just
+
+253
+00:11:24,543 --> 00:11:25,567
+Leaving the key out
+
+254
+00:11:25,823 --> 00:11:26,847
+That's simple as that
+
+255
+00:11:27,359 --> 00:11:28,639
+And
+
+256
+00:11:28,895 --> 00:11:30,175
+Then will be a free package
+
+257
+00:11:30,431 --> 00:11:31,967
+Worse if you leave the key in
+
+258
+00:11:32,223 --> 00:11:34,271
+M People will have to get the key from you
+
+259
+00:11:34,527 --> 00:11:37,087
+And if you've got a contributor to the community
+
+260
+00:11:38,111 --> 00:11:38,623
+Then
+
+261
+00:11:38,879 --> 00:11:43,743
+You you need to share the key with the admin of Depository
+
+262
+00:11:43,999 --> 00:11:47,839
+So that they can validate the component and check that it's safe for distribution
+
+263
+00:11:48,351 --> 00:11:51,679
+We will put some things in place maybe a form
+
+264
+00:11:51,935 --> 00:11:53,983
+Procedure on how to do this
+
+265
+00:11:55,519 --> 00:11:58,335
+Inside of JCB or maybe just in there
+
+266
+00:11:58,591 --> 00:12:00,383
+In the read more of the repository
+
+267
+00:12:00,895 --> 00:12:04,479
+But a yeah we'll We'll give you a heads up when that happens
+
+268
+00:12:04,735 --> 00:12:09,599
+For now their explanations simple if you want to have people get the key from you
+
+269
+00:12:09,855 --> 00:12:12,415
+Where ever they need to get it where the free or paid
+
+270
+00:12:12,671 --> 00:12:14,207
+Needs to be this link here
+
+271
+00:12:14,719 --> 00:12:15,487
+And
+
+272
+00:12:15,743 --> 00:12:16,511
+The key
+
+273
+00:12:16,767 --> 00:12:20,351
+This here is what we used to build the key it's not the actual key
+
+274
+00:12:20,863 --> 00:12:23,679
+It's just used to build a key so you can put in anything here really
+
+275
+00:12:24,191 --> 00:12:24,703
+Ok
+
+276
+00:12:24,959 --> 00:12:27,263
+Now what you got all that in place
+
+277
+00:12:27,519 --> 00:12:29,823
+You will compile your component
+
+278
+00:12:30,591 --> 00:12:33,919
+Or export the JCB package really that's the right name
+
+279
+00:12:35,711 --> 00:12:37,247
+So once you got the component
+
+280
+00:12:37,759 --> 00:12:38,527
+Exported
+
+281
+00:12:38,783 --> 00:12:40,831
+Then the package is available
+
+282
+00:12:41,343 --> 00:12:42,111
+in a specific
+
+283
+00:12:42,623 --> 00:12:45,951
+Directory to call temporal directory in your
+
+284
+00:12:46,207 --> 00:12:47,231
+Developing environment
+
+285
+00:12:47,743 --> 00:12:48,767
+And this is the package
+
+286
+00:12:49,023 --> 00:12:51,071
+That you wanna add to the repository
+
+287
+00:12:52,095 --> 00:12:55,167
+This is the key that you now need to give to everybody
+
+288
+00:12:55,423 --> 00:12:57,471
+That wants to use the package
+
+289
+00:12:57,727 --> 00:12:59,007
+So this key
+
+290
+00:12:59,263 --> 00:13:00,799
+Go nowhere to be found
+
+291
+00:13:01,055 --> 00:13:02,335
+unless on this page
+
+292
+00:13:02,591 --> 00:13:04,639
+on which now where you compiled it
+
+293
+00:13:04,895 --> 00:13:07,455
+so store this key in a safe place
+
+294
+00:13:07,711 --> 00:13:09,503
+Or use it in your video
+
+295
+00:13:09,759 --> 00:13:11,807
+And give it to the people in the right playtime
+
+296
+00:13:12,319 --> 00:13:15,135
+however you like to to do this
+
+297
+00:13:16,671 --> 00:13:21,279
+The Next Step would be to now move this package into
+
+298
+00:13:21,535 --> 00:13:22,047
+The
+
+299
+00:13:22,303 --> 00:13:26,143
+Repository with we cloned down to your local developing environment
+
+300
+00:13:27,679 --> 00:13:32,287
+so here I got the folder open where the package is so you see there
+
+301
+00:13:32,799 --> 00:13:35,103
+Is following that path which we found
+
+302
+00:13:35,359 --> 00:13:37,407
+When we look at this it's same path
+
+303
+00:13:39,455 --> 00:13:41,247
+So basically we gonna just drag
+
+304
+00:13:41,759 --> 00:13:42,527
+And drop
+
+305
+00:13:42,783 --> 00:13:46,111
+The file into the other folder which is where that
+
+306
+00:13:46,367 --> 00:13:48,415
+Cloned repository is at the moment
+
+307
+00:13:48,927 --> 00:13:50,207
+In my home folder
+
+308
+00:13:50,463 --> 00:13:51,487
+So here we have
+
+309
+00:13:51,999 --> 00:13:53,279
+The package been added
+
+310
+00:13:53,791 --> 00:13:54,303
+And
+
+311
+00:13:54,559 --> 00:13:55,583
+We basically done
+
+312
+00:13:56,095 --> 00:13:58,143
+And we can close this one out
+
+313
+00:13:58,399 --> 00:13:59,679
+And go back to the terminal
+
+314
+00:14:02,495 --> 00:14:04,287
+Once in a terminal if you say get
+
+315
+00:14:04,799 --> 00:14:05,567
+Status
+
+316
+00:14:09,151 --> 00:14:11,455
+You see that it tells you that is one file
+
+317
+00:14:11,711 --> 00:14:12,479
+That isn't
+
+318
+00:14:12,735 --> 00:14:13,759
+Have been tracked
+
+319
+00:14:14,783 --> 00:14:16,831
+Now before you add the file
+
+320
+00:14:17,087 --> 00:14:18,367
+You first need to run
+
+321
+00:14:18,879 --> 00:14:19,647
+The Hash
+
+322
+00:14:20,159 --> 00:14:20,927
+Sha
+
+323
+00:14:21,695 --> 00:14:22,975
+Program
+
+324
+00:14:23,231 --> 00:14:24,511
+Which is a battle script
+
+325
+00:14:25,023 --> 00:14:29,375
+So you need bash to run it and a few other two other programs actually
+
+326
+00:14:29,631 --> 00:14:32,191
+let me quickly show  you that
+
+327
+00:14:32,959 --> 00:14:33,471
+It's this
+
+328
+00:14:34,751 --> 00:14:37,055
+JQ and Sha one shan
+
+329
+00:14:37,823 --> 00:14:39,871
+These two programs is also required
+
+330
+00:14:40,383 --> 00:14:43,455
+And that the script will actually shout at you
+
+331
+00:14:43,711 --> 00:14:47,551
+and will say, hey ok, you need to get these
+
+332
+00:14:48,063 --> 00:14:48,575
+Save you
+
+333
+00:14:48,831 --> 00:14:49,855
+You can just
+
+334
+00:14:50,111 --> 00:14:51,391
+Google JQ
+
+335
+00:14:51,647 --> 00:14:52,159
+Bash
+
+336
+00:14:52,415 --> 00:14:53,439
+Install and
+
+337
+00:14:53,695 --> 00:14:54,975
+Give you information
+
+338
+00:14:55,231 --> 00:14:57,535
+And adding these two programs to your
+
+339
+00:14:57,791 --> 00:14:58,815
+Developing environment
+
+340
+00:14:59,071 --> 00:15:00,351
+And then run that script
+
+341
+00:15:01,375 --> 00:15:02,655
+What that script will do
+
+342
+00:15:02,911 --> 00:15:03,679
+Very simple
+
+343
+00:15:03,935 --> 00:15:08,031
+Ill go to the files in the repository that are zip files that's what it does here
+
+344
+00:15:08,287 --> 00:15:09,311
+A greater sum
+
+345
+00:15:09,823 --> 00:15:11,615
+And then place the sum
+
+346
+00:15:11,871 --> 00:15:14,431
+In a file with the same name except
+
+347
+00:15:14,687 --> 00:15:16,735
+Added the Sha to the file name
+
+348
+00:15:17,247 --> 00:15:18,271
+So there it adds it
+
+349
+00:15:18,783 --> 00:15:21,599
+Then it will crab information
+
+350
+00:15:23,135 --> 00:15:25,951
+Oh sorry get a short file name then unzip
+
+351
+00:15:26,463 --> 00:15:28,511
+The file to get the info dot
+
+352
+00:15:28,767 --> 00:15:30,815
+VDM file from zip package
+
+353
+00:15:31,583 --> 00:15:33,375
+Then change that to the shop filename
+
+354
+00:15:33,631 --> 00:15:37,471
+Which should be the same as your package name just with info as your prerogative
+
+355
+00:15:38,239 --> 00:15:42,847
+Which is what we need to show the people what your package name is and who owns it in these things
+
+356
+00:15:43,103 --> 00:15:44,639
+So that's where that info comes from
+
+357
+00:15:45,151 --> 00:15:47,711
+Then it takes that information and
+
+358
+00:15:47,967 --> 00:15:50,015
+It adds it to an array
+
+359
+00:15:50,271 --> 00:15:51,039
+Which
+
+360
+00:15:51,295 --> 00:15:54,111
+Then later gets written to the checks on dot Jason
+
+361
+00:15:54,367 --> 00:15:55,647
+That's all this does
+
+362
+00:15:55,903 --> 00:15:56,415
+Nothing
+
+363
+00:15:56,671 --> 00:15:59,743
+Not not no not smart really it's just straight forward
+
+364
+00:15:59,999 --> 00:16:01,023
+its on a little bash
+
+365
+00:16:01,279 --> 00:16:04,095
+Do to get the information from the file
+
+366
+00:16:04,351 --> 00:16:06,911
+For you without your having any issues
+
+367
+00:16:07,423 --> 00:16:07,935
+And that it
+
+368
+00:16:08,191 --> 00:16:09,471
+Just follow convention
+
+369
+00:16:11,263 --> 00:16:13,823
+So I'm gonna go run the file now and you can see what it does
+
+370
+00:16:15,359 --> 00:16:20,223
+So basically you add the the Dot here make sure in the repository then the Dot
+
+371
+00:16:20,479 --> 00:16:20,991
+And then
+
+372
+00:16:21,503 --> 00:16:23,295
+The hash Dot SH
+
+373
+00:16:23,551 --> 00:16:26,623
+And enter and it should just do that simple as that
+
+374
+00:16:26,879 --> 00:16:29,439
+Shouldn't take long and if it did
+
+375
+00:16:29,695 --> 00:16:30,719
+Then something is wrong
+
+376
+00:16:31,231 --> 00:16:32,511
+This is all it should do
+
+377
+00:16:33,023 --> 00:16:36,351
+Now if you again do the get status
+
+378
+00:16:37,375 --> 00:16:39,935
+You see that now there are actually 3 files
+
+379
+00:16:40,191 --> 00:16:43,519
+That off not be tracked and tricks some file
+
+380
+00:16:43,775 --> 00:16:45,311
+Has been modified
+
+381
+00:16:45,823 --> 00:16:49,407
+And why because there is now a new line been added
+
+382
+00:16:49,919 --> 00:16:51,455
+To detect some so if we do
+
+383
+00:16:51,711 --> 00:16:52,223
+Get
+
+384
+00:16:52,991 --> 00:16:53,503
+Dove
+
+385
+00:16:54,271 --> 00:16:57,599
+You see that your component the one that you are adding
+
+386
+00:17:02,207 --> 00:17:02,719
+This one
+
+387
+00:17:03,743 --> 00:17:05,023
+Is being added
+
+388
+00:17:06,559 --> 00:17:08,863
+And so that line was changed because it got a comma
+
+389
+00:17:09,631 --> 00:17:11,423
+But this is the new line that it is added
+
+390
+00:17:12,191 --> 00:17:14,239
+So basically just added your component
+
+391
+00:17:14,495 --> 00:17:15,263
+To the text song
+
+392
+00:17:15,519 --> 00:17:17,823
+And that is all that should change
+
+393
+00:17:18,335 --> 00:17:20,639
+You shouldn't change any out of files
+
+394
+00:17:20,895 --> 00:17:21,919
+In the repository
+
+395
+00:17:22,175 --> 00:17:24,223
+Only the ones that you are contributing
+
+396
+00:17:24,479 --> 00:17:26,015
+Are the ones that you must change
+
+397
+00:17:27,807 --> 00:17:28,575
+Ok so
+
+398
+00:17:28,831 --> 00:17:29,343
+There we go
+
+399
+00:17:29,855 --> 00:17:31,135
+The next thing is to get
+
+400
+00:17:31,647 --> 00:17:32,159
+Add
+
+401
+00:17:32,415 --> 00:17:33,183
+Those files
+
+402
+00:17:34,207 --> 00:17:35,231
+So if you do get
+
+403
+00:17:35,487 --> 00:17:36,255
+Status
+
+404
+00:17:38,047 --> 00:17:39,071
+The Angel tree
+
+405
+00:17:39,839 --> 00:17:41,375
+Download the come up the comment
+
+406
+00:17:41,631 --> 00:17:42,399
+The comment
+
+407
+00:17:42,655 --> 00:17:43,423
+I think
+
+408
+00:17:43,935 --> 00:17:45,983
+We there's alot Convention out there
+
+409
+00:17:46,495 --> 00:17:48,287
+I'm not so cute up all that
+
+410
+00:17:48,543 --> 00:17:50,847
+So the moment I think we can do
+
+411
+00:17:51,103 --> 00:17:52,127
+Get
+
+412
+00:17:53,407 --> 00:17:53,919
+Then
+
+413
+00:17:54,431 --> 00:17:55,199
+Add it
+
+414
+00:17:59,039 --> 00:18:02,111
+Questions and answers package I think that's simple enough
+
+415
+00:18:02,879 --> 00:18:03,647
+And then
+
+416
+00:18:03,903 --> 00:18:04,927
+Press enter
+
+417
+00:18:06,207 --> 00:18:09,023
+Oops I left out something and it's to commit word
+
+418
+00:18:10,047 --> 00:18:11,327
+So she say get commit
+
+419
+00:18:11,839 --> 00:18:12,863
+Then a.m.
+
+420
+00:18:13,375 --> 00:18:16,959
+The m is for the message in the as for pushing it all into the branch
+
+421
+00:18:17,471 --> 00:18:20,543
+So there we go and then you have if you have a pass phrase
+
+422
+00:18:21,055 --> 00:18:21,567
+The new
+
+423
+00:18:22,079 --> 00:18:23,359
+Which I should actually have
+
+424
+00:18:24,383 --> 00:18:28,479
+Then there you have your commit signed
+
+425
+00:18:28,991 --> 00:18:34,879
+You don't know how to sign commits and get them please Google that and get your keys and place
+
+426
+00:18:35,391 --> 00:18:38,463
+We would expect that all commits to this report
+
+427
+00:18:38,719 --> 00:18:39,487
+Be signed
+
+428
+00:18:39,999 --> 00:18:42,303
+Especially since we need to be sure
+
+429
+00:18:42,559 --> 00:18:43,583
+That it is you
+
+430
+00:18:43,839 --> 00:18:45,887
+That I am I adore making the commit
+
+431
+00:18:46,143 --> 00:18:48,959
+Now when you've done all that you do can get
+
+432
+00:18:49,471 --> 00:18:51,263
+And you push it up
+
+433
+00:18:51,519 --> 00:18:53,823
+To your repository on GitHub
+
+434
+00:18:54,079 --> 00:18:58,431
+At this point you are still not affecting the community repository
+
+435
+00:18:58,687 --> 00:18:59,967
+It is just affecting
+
+436
+00:19:00,479 --> 00:19:02,271
+The the repository that you fart
+
+437
+00:19:03,039 --> 00:19:04,063
+And
+
+438
+00:19:04,319 --> 00:19:05,087
+That is
+
+439
+00:19:05,855 --> 00:19:08,159
+This is a very secure way of dealing with this
+
+440
+00:19:08,671 --> 00:19:10,207
+So if when I go back to get it
+
+441
+00:19:10,463 --> 00:19:10,975
+How
+
+442
+00:19:11,999 --> 00:19:14,303
+And you know we were fetch the page
+
+443
+00:19:15,071 --> 00:19:18,911
+You see that it'll say this branch is one commit ahead of EDM
+
+444
+00:19:19,167 --> 00:19:21,727
+And then there is this make a pull request
+
+445
+00:19:23,007 --> 00:19:24,799
+So you make a pull request there
+
+446
+00:19:26,335 --> 00:19:28,127
+And it will basically take you
+
+447
+00:19:28,383 --> 00:19:29,663
+To the main repository
+
+448
+00:19:30,175 --> 00:19:36,063
+And all explain to you which one is being pulled where and it will tell you that it is able to be merged
+
+449
+00:19:36,575 --> 00:19:37,087
+And
+
+450
+00:19:37,343 --> 00:19:39,391
+The Disney information that's being added
+
+451
+00:19:39,647 --> 00:19:40,671
+For the info
+
+452
+00:19:40,927 --> 00:19:41,695
+For the shower
+
+453
+00:19:42,975 --> 00:19:46,303
+And obviously for the package which it doesn't show because it's too big
+
+454
+00:19:47,071 --> 00:19:49,119
+MCC binary file not shown
+
+455
+00:19:49,375 --> 00:19:49,887
+Parodies
+
+456
+00:19:51,167 --> 00:19:53,983
+And so there is also the changes to the checksum
+
+457
+00:19:54,495 --> 00:19:55,519
+Now at this point
+
+458
+00:19:55,775 --> 00:19:56,799
+You need to
+
+459
+00:19:57,055 --> 00:20:00,127
+Create a pull request to click on create pull request
+
+460
+00:20:00,895 --> 00:20:01,407
+And
+
+461
+00:20:01,919 --> 00:20:02,431
+This
+
+462
+00:20:02,687 --> 00:20:07,551
+Comment that you made in your repository when you you know
+
+463
+00:20:08,063 --> 00:20:11,391
+Contributed the package would usually be added as the title
+
+464
+00:20:11,647 --> 00:20:17,535
+You wanna give a little explanation of things that we as the admin team need to have dissipate
+
+465
+00:20:17,791 --> 00:20:20,095
+Because we got obviously have to test this now
+
+466
+00:20:20,607 --> 00:20:25,983
+We can't add packages to the community packets branch without being able to test it
+
+467
+00:20:26,751 --> 00:20:29,055
+So if you have a key for the package
+
+468
+00:20:29,311 --> 00:20:30,847
+Then
+
+469
+00:20:31,359 --> 00:20:32,127
+Yes
+
+470
+00:20:32,383 --> 00:20:34,431
+I think we will create a form
+
+471
+00:20:34,687 --> 00:20:35,711
+Eventually
+
+472
+00:20:35,967 --> 00:20:38,015
+Where you will be able to submit that
+
+473
+00:20:38,271 --> 00:20:44,415
+And we'll put that in the information because the moment this area doesn't even have a pull request template
+
+474
+00:20:44,927 --> 00:20:47,231
+So we will add a pull request template
+
+475
+00:20:47,487 --> 00:20:50,815
+So that when you create a pull request that tells you where to send the key
+
+476
+00:20:51,071 --> 00:20:56,447
+Set the moment if there's a pull request maybe just keep the package is coming that are free at the moment
+
+477
+00:20:56,703 --> 00:21:00,287
+Sinister the templates in place then then you can use it
+
+478
+00:21:00,799 --> 00:21:02,847
+And then make a pull request
+
+479
+00:21:03,359 --> 00:21:03,871
+And
+
+480
+00:21:04,127 --> 00:21:04,895
+Then
+
+481
+00:21:05,151 --> 00:21:07,199
+I'm at the moment the only one that
+
+482
+00:21:07,455 --> 00:21:10,271
+Manage this but I hope that others would get involved
+
+483
+00:21:10,783 --> 00:21:13,343
+There are some other developers already
+
+484
+00:21:13,599 --> 00:21:15,647
+Quad involved on the JCB
+
+485
+00:21:16,928 --> 00:21:17,696
+Repository
+
+486
+00:21:18,208 --> 00:21:21,536
+But I would like to also encourage them to get involved here
+
+487
+00:21:21,792 --> 00:21:24,608
+And be able to sort of help me
+
+488
+00:21:24,864 --> 00:21:26,144
+Testies packages
+
+489
+00:21:26,400 --> 00:21:27,936
+Make sure that only valid in
+
+490
+00:21:28,192 --> 00:21:29,472
+Stable packages gets
+
+491
+00:21:29,728 --> 00:21:30,240
+Added
+
+492
+00:21:30,752 --> 00:21:31,520
+And so
+
+493
+00:21:31,776 --> 00:21:36,384
+That's really it yeah you up now click create pull request now gonna do this
+
+494
+00:21:36,896 --> 00:21:38,432
+Because it's all premature
+
+495
+00:21:38,688 --> 00:21:39,712
+I I want to
+
+496
+00:21:42,528 --> 00:21:44,832
+I don't wanna pull this into the
+
+497
+00:21:45,600 --> 00:21:47,648
+The repository at the state
+
+498
+00:21:48,160 --> 00:21:49,440
+I'm gonna do so later
+
+499
+00:21:49,696 --> 00:21:51,232
+But the point is
+
+500
+00:21:51,488 --> 00:21:54,816
+This is the procedure that you need to follow
+
+501
+00:21:55,072 --> 00:21:58,144
+To actually get a package into the community packages
+
+502
+00:21:58,656 --> 00:22:01,472
+Because once it's get merged into the master branch
+
+503
+00:22:01,984 --> 00:22:04,288
+It will also become available on this page
+
+504
+00:22:04,544 --> 00:22:05,312
+Automatically
+
+505
+00:22:05,824 --> 00:22:08,384
+Automatically in all show up in this dropdown
+
+506
+00:22:10,176 --> 00:22:10,688
+In fact
+
+507
+00:22:11,200 --> 00:22:13,248
+That is a simple as it is
+
+508
+00:22:13,760 --> 00:22:19,648
+Well thanks for watching and if you have any questions please open a issue
+
+509
+00:22:20,160 --> 00:22:21,696
+At the correct place
+
+510
+00:22:21,952 --> 00:22:25,280
+So if you wanna talk about the packages for the community
+
+511
+00:22:25,536 --> 00:22:27,072
+Open issue here
+
+512
+00:22:27,328 --> 00:22:32,192
+Please don't make a open issues at kcbs repository regarding this issue
+
+513
+00:22:32,448 --> 00:22:34,496
+So that we'll have you know clear
+
+514
+00:22:34,752 --> 00:22:35,520
+Separation
+
+515
+00:22:36,032 --> 00:22:37,056
+Between these two concepts
+
+516
+00:22:37,824 --> 00:22:39,104
+Ok thanks for watching
+

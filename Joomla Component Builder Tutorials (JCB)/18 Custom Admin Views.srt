@@ -1,0 +1,700 @@
+1
+00:00:01,280 --> 00:00:04,352
+We need to have a quick look at custom admin views
+
+2
+00:00:04,864 --> 00:00:07,936
+They do have some nice ways of doing things
+
+3
+00:00:08,192 --> 00:00:09,984
+Very similar to sight views
+
+4
+00:00:10,240 --> 00:00:11,264
+But some
+
+5
+00:00:11,520 --> 00:00:14,848
+Aspects and adding it to component builder is different
+
+6
+00:00:15,360 --> 00:00:21,504
+And so in the next video We will look at adding site views  as well as component
+
+7
+00:00:21,760 --> 00:00:22,784
+Custom admin
+
+8
+00:00:23,040 --> 00:00:23,552
+Views
+
+9
+00:00:23,808 --> 00:00:25,088
+To the component
+
+10
+00:00:25,600 --> 00:00:31,232
+The reason I didn't speak much about the custom admin views is simply because
+
+11
+00:00:31,488 --> 00:00:33,024
+Summon distributor is not
+
+12
+00:00:33,280 --> 00:00:33,792
+Using
+
+13
+00:00:34,048 --> 00:00:35,584
+Custom admin views yet
+
+14
+00:00:37,120 --> 00:00:40,704
+Where is I have another component here I can use as a example
+
+15
+00:00:41,216 --> 00:00:43,264
+Called component
+
+16
+00:00:43,520 --> 00:00:44,800
+Is called
+
+17
+00:00:45,824 --> 00:00:46,592
+
+
+18
+00:00:49,920 --> 00:00:51,456
+Cost-benefit projection
+
+19
+00:00:52,224 --> 00:00:57,344
+It's a It's a tool that is used to show companies the cost benefits
+
+20
+00:00:57,856 --> 00:01:02,464
+Of intervening on certain diseases and causes in the company
+
+21
+00:01:02,976 --> 00:01:03,744
+Anyway
+
+22
+00:01:04,256 --> 00:01:06,816
+In it we have what we call a company results
+
+23
+00:01:07,072 --> 00:01:08,864
+And combined results
+
+24
+00:01:09,120 --> 00:01:11,168
+Respectively used
+
+25
+00:01:11,424 --> 00:01:13,984
+To display custom data
+
+26
+00:01:14,240 --> 00:01:16,032
+In the back end of the component
+
+27
+00:01:16,288 --> 00:01:19,616
+ to the certain different
+
+28
+00:01:20,128 --> 00:01:22,944
+ people who has permission to view those data
+
+29
+00:01:23,456 --> 00:01:25,504
+Now in the component itself
+
+30
+00:01:25,760 --> 00:01:27,552
+If we clicked on companies
+
+31
+00:01:29,856 --> 00:01:34,464
+You would see there is an icon underneath each of these
+
+32
+00:01:36,000 --> 00:01:37,536
+Names of the Companies
+
+33
+00:01:38,048 --> 00:01:41,888
+And there is a new button here the top called combine
+
+34
+00:01:42,144 --> 00:01:42,912
+Results
+
+35
+00:01:43,424 --> 00:01:43,936
+Now
+
+36
+00:01:44,192 --> 00:01:46,496
+This button as well as those buttons
+
+37
+00:01:46,752 --> 00:01:49,568
+Are dynamically added by component Builder
+
+38
+00:01:50,080 --> 00:01:53,408
+And in the next tutorial I'll show you exactly how that is done
+
+39
+00:01:53,920 --> 00:01:55,456
+What I want to show you here is
+
+40
+00:01:55,712 --> 00:01:59,296
+Simply how a custom admin view will look
+
+41
+00:01:59,808 --> 00:02:05,952
+So I'm gonna click on one of these,  this is all dumb information so
+
+42
+00:02:07,488 --> 00:02:09,792
+So you'll see me
+
+43
+00:02:10,048 --> 00:02:12,096
+Let's open this one
+
+44
+00:02:17,216 --> 00:02:22,592
+Now basically you have this big area where you could put a lot of HTML and PHP
+
+45
+00:02:23,104 --> 00:02:26,688
+And you have some custom buttons that you can add on show you that
+
+46
+00:02:27,456 --> 00:02:28,736
+And then
+
+47
+00:02:29,760 --> 00:02:33,856
+So all of this in this white area is simply done in the custom View
+
+48
+00:02:34,624 --> 00:02:36,160
+So if I was to click around
+
+49
+00:02:36,416 --> 00:02:38,464
+I've got a menu here at the side
+
+50
+00:02:39,232 --> 00:02:42,304
+All of this is done inside of the custom
+
+51
+00:02:42,816 --> 00:02:43,328
+Area
+
+52
+00:02:44,352 --> 00:02:46,144
+Of the component
+
+53
+00:02:47,680 --> 00:02:48,704
+Which is now the
+
+54
+00:02:50,240 --> 00:02:51,776
+Custom admin View
+
+55
+00:02:52,288 --> 00:02:53,312
+And
+
+56
+00:02:54,336 --> 00:02:56,384
+That is basically how it will look
+
+57
+00:02:56,896 --> 00:02:57,664
+It has Different
+
+58
+00:02:58,176 --> 00:02:59,200
+Value sets
+
+59
+00:02:59,968 --> 00:03:02,784
+And you can from here add an edit button
+
+60
+00:03:03,552 --> 00:03:06,624
+Since we've linked it to a specific client
+
+61
+00:03:07,392 --> 00:03:10,208
+Or company or one item in that list
+
+62
+00:03:10,464 --> 00:03:12,256
+We can actually click on edit
+
+63
+00:03:12,512 --> 00:03:15,584
+From here we go right into the company's data
+
+64
+00:03:16,096 --> 00:03:17,632
+And edit it
+
+65
+00:03:18,400 --> 00:03:18,912
+And
+
+66
+00:03:19,168 --> 00:03:21,472
+What is nice if we were to click close here
+
+67
+00:03:22,496 --> 00:03:24,032
+You actually take us back to that
+
+68
+00:03:24,288 --> 00:03:25,568
+Exact result page
+
+69
+00:03:29,664 --> 00:03:31,712
+And you can then go and look at
+
+70
+00:03:31,968 --> 00:03:32,992
+The implementation
+
+71
+00:03:33,248 --> 00:03:34,272
+What you've done
+
+72
+00:03:35,040 --> 00:03:39,648
+Is it that is just simply showing you how a custom admin view could look
+
+73
+00:03:40,928 --> 00:03:44,256
+Let's go back to the company's list or we could go back to dashboard
+
+74
+00:03:44,768 --> 00:03:46,816
+now look at component Builder
+
+75
+00:03:47,072 --> 00:03:52,960
+And we looked at this company results we open that one
+
+76
+00:03:53,216 --> 00:03:56,800
+And here is all PHP and HTML
+
+77
+00:03:57,056 --> 00:03:57,824
+On my page
+
+78
+00:03:58,336 --> 00:03:59,360
+Doing all the work
+
+79
+00:03:59,872 --> 00:04:00,896
+And of course
+
+80
+00:04:01,152 --> 00:04:02,432
+As you might expect
+
+81
+00:04:02,688 --> 00:04:04,736
+I'm loading in a lot of templates here
+
+82
+00:04:05,760 --> 00:04:07,040
+So I'm loading in templates
+
+83
+00:04:07,296 --> 00:04:08,064
+Directly
+
+84
+00:04:09,344 --> 00:04:09,856
+From here
+
+85
+00:04:10,624 --> 00:04:11,392
+And
+
+86
+00:04:12,416 --> 00:04:14,464
+Then I have a custom button area
+
+87
+00:04:14,976 --> 00:04:18,303
+Where I can I can say yes I want to add custom buttons
+
+88
+00:04:18,559 --> 00:04:19,839
+Then I click on
+
+89
+00:04:20,095 --> 00:04:22,655
+Custom buttons here and you see I have
+
+90
+00:04:22,911 --> 00:04:24,447
+Icons I can select
+
+91
+00:04:24,703 --> 00:04:25,471
+Call it
+
+92
+00:04:25,983 --> 00:04:27,263
+The name of the button
+
+93
+00:04:27,519 --> 00:04:29,567
+And a controller method
+
+94
+00:04:29,823 --> 00:04:35,967
+Which I would like to use to actually make the button work so in this one I'm saying go to company
+
+95
+00:04:36,223 --> 00:04:38,271
+This one is edit company
+
+96
+00:04:38,783 --> 00:04:39,295
+And
+
+97
+00:04:39,551 --> 00:04:41,599
+here I should say
+
+98
+00:04:41,855 --> 00:04:43,647
+Is this gonna
+
+99
+00:04:43,903 --> 00:04:46,719
+What kind of Target are we think looking at
+
+100
+00:04:46,975 --> 00:04:48,255
+Is this a
+
+101
+00:04:49,791 --> 00:04:51,839
+A single a list or both
+
+102
+00:04:52,351 --> 00:04:54,143
+And you said that respectively
+
+103
+00:04:54,655 --> 00:04:55,167
+And
+
+104
+00:04:55,423 --> 00:04:59,519
+Then you click save this only saves it to the form not to the database
+
+105
+00:05:00,031 --> 00:05:01,567
+We should have made that done
+
+106
+00:05:02,079 --> 00:05:04,895
+But this is the Joomla's way of implementing it
+
+107
+00:05:05,407 --> 00:05:08,735
+And now you have to add
+
+108
+00:05:08,991 --> 00:05:10,783
+In the PHP controller method
+
+109
+00:05:11,295 --> 00:05:12,319
+Add scripting
+
+110
+00:05:12,831 --> 00:05:15,647
+to respectively implement the buttons click
+
+111
+00:05:15,903 --> 00:05:16,415
+Method
+
+112
+00:05:16,927 --> 00:05:19,231
+You can also to the model
+
+113
+00:05:19,743 --> 00:05:21,279
+So in the controller
+
+114
+00:05:21,535 --> 00:05:23,839
+You can add script and then in the model
+
+115
+00:05:24,607 --> 00:05:29,215
+Add scripting which is called from the controller if you want to separate your code a bit
+
+116
+00:05:29,727 --> 00:05:32,287
+In the in the and if you're not gonna be adding
+
+117
+00:05:32,543 --> 00:05:35,103
+Any script to the model Just add none
+
+118
+00:05:35,359 --> 00:05:36,383
+with this two
+
+119
+00:05:36,639 --> 00:05:39,711
+Spaces in front otherwise it might scream at you that you
+
+120
+00:05:40,991 --> 00:05:43,039
+did not add Script there
+
+121
+00:05:43,295 --> 00:05:47,647
+And as you can see the go to companies is simply
+
+122
+00:05:47,903 --> 00:05:50,463
+Take me back to the company's View
+
+123
+00:05:50,719 --> 00:05:51,743
+Where as the
+
+124
+00:05:52,767 --> 00:05:54,303
+Edit company
+
+125
+00:05:54,559 --> 00:05:58,655
+Implements the Joomla's convention of opening an item to edit it
+
+126
+00:05:59,167 --> 00:06:01,983
+By the correct channels so this is just
+
+127
+00:06:02,239 --> 00:06:04,031
+Joomla knowledge At work here
+
+128
+00:06:04,543 --> 00:06:07,103
+And we are checking a token and all that
+
+129
+00:06:07,359 --> 00:06:08,383
+So do Component
+
+130
+00:06:08,639 --> 00:06:11,455
+Builders sets of all the tokens and everything
+
+131
+00:06:11,967 --> 00:06:12,735
+So you
+
+132
+00:06:13,247 --> 00:06:16,319
+The snippet you can reuse for your purposes if you want
+
+133
+00:06:17,087 --> 00:06:22,207
+And obviously we have an area for custom scripting and as you can expect
+
+134
+00:06:22,719 --> 00:06:24,767
+There's a lot of custom scripting
+
+135
+00:06:25,023 --> 00:06:25,791
+Going on
+
+136
+00:06:26,815 --> 00:06:27,839
+In in that View
+
+137
+00:06:30,655 --> 00:06:36,543
+And it has its respective places again if you wanna know where what's happening at some snippet here
+
+138
+00:06:36,799 --> 00:06:40,383
+Compiler components search for that snippet and you'll see where this comes up
+
+139
+00:06:40,895 --> 00:06:43,711
+If you're not certain by the naming conventions we have used
+
+140
+00:06:44,223 --> 00:06:47,295
+And that is really how you setup a
+
+141
+00:06:47,551 --> 00:06:49,343
+ admin custom admin View
+
+142
+00:06:51,135 --> 00:06:52,671
+To look at the other one
+
+143
+00:06:52,927 --> 00:06:54,207
+Let's close out here
+
+144
+00:06:55,231 --> 00:06:57,535
+That is the combined results View
+
+145
+00:06:58,303 --> 00:07:04,447
+Now the combined results is this one up here if you click it now I will tell you this in we need to have some item selected
+
+146
+00:07:05,215 --> 00:07:07,263
+And then you select the items and click
+
+147
+00:07:07,519 --> 00:07:08,287
+There again
+
+148
+00:07:08,543 --> 00:07:11,615
+And it will do a combined resolve
+
+149
+00:07:12,127 --> 00:07:13,407
+Taking both companies
+
+150
+00:07:13,919 --> 00:07:14,431
+And
+
+151
+00:07:14,687 --> 00:07:16,223
+Adding it's data together
+
+152
+00:07:16,479 --> 00:07:18,783
+And giving you a nice layout structure
+
+153
+00:07:19,295 --> 00:07:20,831
+Of it's data sets
+
+154
+00:07:21,343 --> 00:07:22,623
+Ok
+
+155
+00:07:22,879 --> 00:07:24,671
+That is really the combined concept
+
+156
+00:07:25,183 --> 00:07:26,207
+If we go back
+
+157
+00:07:26,463 --> 00:07:28,255
+To the implementation of it
+
+158
+00:07:28,767 --> 00:07:31,071
+It looks very similar as the other
+
+159
+00:07:31,327 --> 00:07:34,655
+Again just a lot of HTML PHP here
+
+160
+00:07:35,935 --> 00:07:36,959
+And then
+
+161
+00:07:37,215 --> 00:07:41,055
+Also some custom button is again just going back to companies
+
+162
+00:07:41,567 --> 00:07:45,919
+And it's really just same implementation V card companies go back single
+
+163
+00:07:46,431 --> 00:07:48,735
+And then some custom scripting
+
+164
+00:07:49,503 --> 00:07:52,319
+And that's how I set up both of those custom views
+
+165
+00:07:53,087 --> 00:07:54,111
+quite simply
+
+166
+00:07:54,879 --> 00:07:56,671
+Adding that the data here
+
+167
+00:07:56,927 --> 00:08:02,047
+And then making use of the templates as well as layout implementation in both of these
+
+168
+00:08:02,559 --> 00:08:05,119
+So you can set up layouts and templates and
+
+169
+00:08:05,375 --> 00:08:07,167
+Only use them and site views
+
+170
+00:08:07,679 --> 00:08:09,471
+But you can also use them in admin views
+
+171
+00:08:10,239 --> 00:08:11,007
+Now
+
+172
+00:08:11,263 --> 00:08:12,543
+In our next tutorial
+
+173
+00:08:12,799 --> 00:08:16,895
+We look at how to add site views and admin views to your component
+
+174
+00:08:17,407 --> 00:08:19,199
+Since there are some differences
+
+175
+00:08:19,711 --> 00:08:21,503
+And you need to be aware of them
+

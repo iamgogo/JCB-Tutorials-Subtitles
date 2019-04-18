@@ -1,0 +1,1228 @@
+1
+00:00:01,024 --> 00:00:01,536
+Hi
+
+2
+00:00:01,792 --> 00:00:07,936
+Recent question came up that was asking about help menu integration
+
+3
+00:00:08,192 --> 00:00:09,984
+For JCB components
+
+4
+00:00:11,008 --> 00:00:13,056
+You will see the JCB itself
+
+5
+00:00:13,312 --> 00:00:14,592
+Has this
+
+6
+00:00:15,360 --> 00:00:17,408
+Help document area
+
+7
+00:00:17,664 --> 00:00:22,528
+Now I have not actually had the time to
+
+8
+00:00:22,784 --> 00:00:28,928
+Expand upon this help document area as much as I would like to and maybe in the future
+
+9
+00:00:29,184 --> 00:00:29,696
+We would
+
+10
+00:00:29,952 --> 00:00:33,280
+Still expand on it but it is a feature
+
+11
+00:00:33,536 --> 00:00:39,168
+That actually is very easily added to any other JCB component
+
+12
+00:00:39,424 --> 00:00:41,984
+If you have purchased
+
+13
+00:00:42,240 --> 00:00:45,568
+The Sermon distributor package
+
+14
+00:00:46,080 --> 00:00:47,360
+Let me show you what I mean
+
+15
+00:00:48,640 --> 00:00:49,920
+There is a place
+
+16
+00:00:50,688 --> 00:00:56,576
+One of the repositories on the VDM data I called JCB packages
+
+17
+00:00:59,392 --> 00:01:02,464
+So you go to VDM - io
+
+18
+00:01:02,720 --> 00:01:05,024
+And then JCB -Packages on GitHub
+
+19
+00:01:05,792 --> 00:01:08,864
+And one of the package is here is Sermon distributor
+
+20
+00:01:09,632 --> 00:01:10,400
+You can
+
+21
+00:01:10,912 --> 00:01:12,448
+Download this package
+
+22
+00:01:13,216 --> 00:01:13,728
+But
+
+23
+00:01:13,984 --> 00:01:17,824
+Before you haven't purchased a key for it you can't really use it
+
+24
+00:01:18,592 --> 00:01:22,176
+So to get a key you would basically click on this link here
+
+25
+00:01:22,944 --> 00:01:25,248
+Which is vdm.bz
+
+26
+00:01:25,760 --> 00:01:27,552
+/jcb
+
+27
+00:01:27,808 --> 00:01:29,344
+-packages
+
+28
+00:01:31,648 --> 00:01:33,696
+This will take you to a
+
+29
+00:01:33,952 --> 00:01:36,000
+Place on our website
+
+30
+00:01:36,512 --> 00:01:38,048
+Where you can purchase
+
+31
+00:01:38,304 --> 00:01:40,864
+The purchase the Sermon distributor package
+
+32
+00:01:42,400 --> 00:01:43,424
+Here is the
+
+33
+00:01:43,936 --> 00:01:45,728
+Link that you would need to get to
+
+34
+00:01:46,496 --> 00:01:49,056
+You can also go to VDM dot IO
+
+35
+00:01:50,336 --> 00:01:51,872
+Which is
+
+36
+00:01:52,640 --> 00:01:53,920
+Our website
+
+37
+00:01:55,456 --> 00:01:58,528
+Some just open that and then under services
+
+38
+00:01:58,784 --> 00:02:00,064
+You can also find
+
+39
+00:02:00,320 --> 00:02:01,088
+Joomla
+
+40
+00:02:01,856 --> 00:02:04,160
+Sorry JCB packages
+
+41
+00:02:04,672 --> 00:02:07,232
+You just click on that it will take you to the same place
+
+42
+00:02:07,488 --> 00:02:10,304
+So there are a few packages already available
+
+43
+00:02:10,816 --> 00:02:13,632
+Which basically is a fully mapped component
+
+44
+00:02:13,888 --> 00:02:15,424
+Inside of JCB
+
+45
+00:02:15,680 --> 00:02:21,824
+So if you purchase this you would get information and a code and everything which will help
+
+46
+00:02:22,080 --> 00:02:25,408
+you install the Sermon Distributor package
+
+47
+00:02:26,432 --> 00:02:26,944
+So
+
+48
+00:02:27,200 --> 00:02:30,016
+I'm gonna quickly install the Sermon Distributor package
+
+49
+00:02:30,528 --> 00:02:33,856
+On this demo website that I am using
+
+50
+00:02:35,392 --> 00:02:41,536
+I'm not gonna demonstrate how I did that because if you purchase the package you would have all the instructions
+
+51
+00:02:41,792 --> 00:02:47,936
+And how to do this once you have installed the Sermon Distributor package you can go to the admin
+
+52
+00:02:48,192 --> 00:02:48,704
+views
+
+53
+00:02:49,216 --> 00:02:53,568
+And you will find that the admin views now has this
+
+54
+00:02:53,824 --> 00:02:55,616
+New admin view called
+
+55
+00:02:55,872 --> 00:02:57,408
+Help document
+
+56
+00:02:57,920 --> 00:03:00,992
+It's just As one admin view called help document
+
+57
+00:03:01,248 --> 00:03:03,808
+Now you by Default
+
+58
+00:03:04,064 --> 00:03:08,672
+With JCB have this demo component
+
+59
+00:03:08,928 --> 00:03:15,072
+So let's open the demo component and let's add the helper structure to it to demonstrate
+
+60
+00:03:15,328 --> 00:03:16,608
+To you how it works
+
+61
+00:03:17,632 --> 00:03:18,400
+Now
+
+62
+00:03:19,168 --> 00:03:25,312
+At the moment it doesn't have any helper structure at all it is just a demo
+
+63
+00:03:25,568 --> 00:03:28,384
+Component with only a few
+
+64
+00:03:28,640 --> 00:03:34,784
+Structures actually I think it only has that see admin view it has one view called look
+
+65
+00:03:35,040 --> 00:03:39,648
+And got no custom views but it got a site view called looks and looking
+
+66
+00:03:39,904 --> 00:03:44,768
+So what we'll do first is we gonna go to the admin views
+
+67
+00:03:45,280 --> 00:03:48,096
+I'm gonna click here to add another row
+
+68
+00:03:48,352 --> 00:03:51,168
+And we are gonna add the help documents
+
+69
+00:03:52,704 --> 00:03:55,008
+The support icon
+
+70
+00:03:55,264 --> 00:04:01,408
+Oh yes we can have this unticked problem I'm sorry about this while we are
+
+71
+00:04:01,664 --> 00:04:07,808
+Busy phasing out the repeatable fields so you'll end up working with Sub fields in the future sub forms
+
+72
+00:04:08,064 --> 00:04:14,208
+But to fix this in the meanwhile you just closed that and open it again and now you'll have all those
+
+73
+00:04:14,464 --> 00:04:17,791
+Tick boxes in place so I'm just gonna add that
+
+74
+00:04:19,071 --> 00:04:20,607
+view again
+
+75
+00:04:20,863 --> 00:04:25,215
+We gonna use the support icon and we gonna leave
+
+76
+00:04:25,471 --> 00:04:31,615
+Most of this to defaults except it doesn't have meta we don't
+
+77
+00:04:31,871 --> 00:04:33,151
+Don't use access
+
+78
+00:04:33,407 --> 00:04:37,503
+We can do the import but it doesn't have a front end editing
+
+79
+00:04:38,271 --> 00:04:40,831
+We don't want it to have one and
+
+80
+00:04:41,087 --> 00:04:43,903
+We would have it in the 2nd position
+
+81
+00:04:44,159 --> 00:04:47,231
+And maybe not part of the main menu
+
+82
+00:04:47,999 --> 00:04:50,303
+I think that's good enough now
+
+83
+00:04:50,559 --> 00:04:51,839
+We'll play
+
+84
+00:04:52,095 --> 00:04:53,119
+Save this
+
+85
+00:04:54,143 --> 00:04:58,495
+And we'll save and close that's really all it takes
+
+86
+00:04:58,751 --> 00:05:04,895
+So you've just install the Sermon distributor package into your JCB that
+
+87
+00:05:05,151 --> 00:05:11,295
+Added the helper document menu sorry the admin view and I've just linked
+
+88
+00:05:11,551 --> 00:05:16,415
+That view to the demo component then I'll go to the compiler
+
+89
+00:05:17,695 --> 00:05:21,535
+And I'm basically just gonna compile that demo component
+
+90
+00:05:22,815 --> 00:05:28,959
+And as you can see here it isn't here yet installed on my website this is quite important
+
+91
+00:05:29,215 --> 00:05:32,543
+Not to have it in installed on the website
+
+92
+00:05:32,799 --> 00:05:36,127
+Then I'm gonna compile it
+
+93
+00:05:36,895 --> 00:05:39,199
+Then I'm just gonna install it
+
+94
+00:05:43,807 --> 00:05:47,391
+Now if I go to demo
+
+95
+00:05:47,647 --> 00:05:48,671
+We will see
+
+96
+00:05:48,927 --> 00:05:51,999
+That it has this new helper documents area
+
+97
+00:05:52,511 --> 00:05:56,095
+Now at the moment it doesn't have any helper documents
+
+98
+00:05:56,351 --> 00:06:02,495
+What we can do to change that is we can then go to the helper documents click new
+
+99
+00:06:05,823 --> 00:06:09,663
+And when it's opened we'll select which group you want to Target
+
+100
+00:06:11,455 --> 00:06:13,503
+So I'm just gonna select all
+
+101
+00:06:14,015 --> 00:06:18,367
+Then I'm gonna select the I wanna target a view in the admin area
+
+102
+00:06:18,623 --> 00:06:21,951
+The demo will be basically the desk dashboard
+
+103
+00:06:22,207 --> 00:06:23,743
+Then there is help documents
+
+104
+00:06:23,999 --> 00:06:28,607
+This import I'm gonna take looks I'm on a target looks area
+
+105
+00:06:28,863 --> 00:06:30,911
+Then I can give it a title
+
+106
+00:06:32,703 --> 00:06:38,847
+And I can say what type of help do I want, I want a link to an Joomla article
+
+107
+00:06:39,103 --> 00:06:41,407
+Want to put in my own custom text
+
+108
+00:06:41,919 --> 00:06:48,063
+Or I want a link to an external URL This is usually what we will use when we ship a component
+
+109
+00:06:48,575 --> 00:06:54,719
+Since this will then give us the opportunity to link it to an external URL which
+
+110
+00:06:54,975 --> 00:07:01,119
+We can update an edit without sending an update or you know and upgrade
+
+111
+00:07:01,375 --> 00:07:07,519
+To the component we can just change the help menu itself sorry the the help pages which
+
+112
+00:07:07,775 --> 00:07:13,919
+We linked them to and this is how JCB is been setup JCB is linking to an external
+
+113
+00:07:14,175 --> 00:07:20,319
+Help structure but you can decide whatever you wanna do with this component you could say text for
+
+114
+00:07:20,575 --> 00:07:21,343
+Example
+
+115
+00:07:21,599 --> 00:07:22,623
+And you could say
+
+116
+00:07:23,391 --> 00:07:24,159
+This
+
+117
+00:07:24,415 --> 00:07:25,695
+Is the help
+
+118
+00:07:26,719 --> 00:07:27,999
+You need
+
+119
+00:07:28,511 --> 00:07:30,047
+And whatever
+
+120
+00:07:30,303 --> 00:07:31,583
+And save and close
+
+121
+00:07:35,423 --> 00:07:37,471
+Now if we go to looks
+
+122
+00:07:38,751 --> 00:07:43,871
+We'll see that then automatically there is a new button here called help and if we click on it
+
+123
+00:07:45,151 --> 00:07:47,199
+It actually opens that help
+
+124
+00:07:47,711 --> 00:07:51,039
+And so you can now even going back to
+
+125
+00:07:51,551 --> 00:07:56,415
+If you now click on new then that help menu won't show anymore
+
+126
+00:07:56,927 --> 00:07:59,231
+But you can close out here
+
+127
+00:08:01,279 --> 00:08:05,119
+And you can then go back to the help documents
+
+128
+00:08:05,887 --> 00:08:07,167
+create another one
+
+129
+00:08:13,055 --> 00:08:16,127
+Again select or you could target a specific group
+
+130
+00:08:16,895 --> 00:08:18,943
+Or you can just target all groups
+
+131
+00:08:19,199 --> 00:08:24,319
+Again admin area you can also target the site area and be able to actually
+
+132
+00:08:24,831 --> 00:08:27,135
+Link it to any of the front end
+
+133
+00:08:27,647 --> 00:08:32,511
+Areas then we can say now we are wanna not
+
+134
+00:08:32,767 --> 00:08:36,095
+Target the list but the edit area which is singular
+
+135
+00:08:36,607 --> 00:08:37,887
+And again we can say
+
+136
+00:08:38,143 --> 00:08:39,167
+Give it a title
+
+137
+00:08:39,423 --> 00:08:43,263
+And again this time let me link it to an URL
+
+138
+00:08:46,591 --> 00:08:47,615
+And then
+
+139
+00:08:47,871 --> 00:08:49,151
+Save and close
+
+140
+00:08:56,063 --> 00:08:58,623
+And then let's go to that area
+
+141
+00:09:00,927 --> 00:09:01,951
+And new
+
+142
+00:09:05,279 --> 00:09:09,887
+And now we'd see that area also has a help button if we click on it
+
+143
+00:09:10,655 --> 00:09:12,703
+It opens that URL
+
+144
+00:09:13,471 --> 00:09:17,055
+In a pop-up and as you see I just selected
+
+145
+00:09:17,311 --> 00:09:17,823
+A video
+
+146
+00:09:19,359 --> 00:09:20,383
+And so
+
+147
+00:09:21,151 --> 00:09:23,199
+That is how you can actually
+
+148
+00:09:23,711 --> 00:09:24,223
+Link
+
+149
+00:09:24,735 --> 00:09:29,343
+To other external sources to be giving the help
+
+150
+00:09:29,599 --> 00:09:33,951
+To the specific page in the instructions that is necessary
+
+151
+00:09:34,207 --> 00:09:35,999
+And you can then
+
+152
+00:09:36,255 --> 00:09:42,399
+Having set up a few help menus for the component you can go back to component Builder
+
+153
+00:09:43,167 --> 00:09:44,703
+And to the admin View
+
+154
+00:09:46,239 --> 00:09:47,263
+Area
+
+155
+00:09:47,775 --> 00:09:48,799
+And
+
+156
+00:09:49,055 --> 00:09:53,407
+Let's say you have a help document linked to component
+
+157
+00:09:53,663 --> 00:09:56,223
+Demo but it is
+
+158
+00:09:56,479 --> 00:10:02,623
+You want to ship it with the information that you've Now created as help
+
+159
+00:10:02,879 --> 00:10:09,023
+Inside of the component then what I would usually do is I would actually
+
+160
+00:10:09,279 --> 00:10:11,327
+Open this component
+
+161
+00:10:13,887 --> 00:10:15,679
+Sorry this admin View
+
+162
+00:10:22,079 --> 00:10:25,919
+And I'll give it a system name of demo
+
+163
+00:10:28,479 --> 00:10:30,527
+And I'll go to the MySQL
+
+164
+00:10:31,039 --> 00:10:33,599
+Say yes I wanted to link it I'll select
+
+165
+00:10:33,855 --> 00:10:34,367
+Table
+
+166
+00:10:35,135 --> 00:10:38,207
+And then I would go to the demo table
+
+167
+00:10:39,743 --> 00:10:43,583
+Help document you see demo help document click on that
+
+168
+00:10:44,095 --> 00:10:47,167
+And I'll just remove some of the
+
+169
+00:10:47,423 --> 00:10:48,959
+Values that I know
+
+170
+00:10:49,215 --> 00:10:50,495
+Is not necessary
+
+171
+00:10:57,407 --> 00:10:58,943
+Ok I think that's fine
+
+172
+00:11:00,223 --> 00:11:02,527
+Created modified can stay
+
+173
+00:11:03,551 --> 00:11:05,599
+I wouldn't even take the version out but
+
+174
+00:11:05,855 --> 00:11:07,391
+Doesn't even matter
+
+175
+00:11:08,159 --> 00:11:10,207
+We can most certainly take that one out
+
+176
+00:11:11,999 --> 00:11:14,559
+And there we go those seems to be fine
+
+177
+00:11:15,071 --> 00:11:16,863
+And save and close
+
+178
+00:11:18,143 --> 00:11:18,911
+Now
+
+179
+00:11:19,423 --> 00:11:20,703
+I can save this
+
+180
+00:11:21,983 --> 00:11:25,055
+Or save as copy
+
+181
+00:11:25,311 --> 00:11:29,151
+And if I have another component I'll just copy this one
+
+182
+00:11:29,407 --> 00:11:32,223
+And link it to that components data base
+
+183
+00:11:34,015 --> 00:11:36,319
+The only thing to remember when you've done this
+
+184
+00:11:36,575 --> 00:11:42,719
+Is it you must first compile the component before you uninstall the local component
+
+185
+00:11:45,023 --> 00:11:48,607
+So you would first come here and compile that component
+
+186
+00:11:57,823 --> 00:12:01,151
+Now let me quickly show you in the code what is happened
+
+187
+00:12:01,663 --> 00:12:03,711
+Basically I've
+
+188
+00:12:03,967 --> 00:12:10,111
+Opened this zipped package of a component gone to admin area then to
+
+189
+00:12:10,367 --> 00:12:10,879
+sql
+
+190
+00:12:11,135 --> 00:12:13,951
+And then if I go to the install MySQL
+
+191
+00:12:15,487 --> 00:12:16,255
+Document
+
+192
+00:12:18,559 --> 00:12:20,095
+I'm just double clicked on that
+
+193
+00:12:20,863 --> 00:12:25,727
+And it's open this document I'll now see that they obviously has this
+
+194
+00:12:25,983 --> 00:12:27,007
+Insert table
+
+195
+00:12:27,263 --> 00:12:29,311
+But it also has
+
+196
+00:12:30,079 --> 00:12:30,847
+Insert
+
+197
+00:12:31,103 --> 00:12:31,871
+Data
+
+198
+00:12:32,383 --> 00:12:34,687
+That we created see there is
+
+199
+00:12:34,943 --> 00:12:35,967
+This is the help
+
+200
+00:12:36,991 --> 00:12:39,551
+You need there's a URL I added
+
+201
+00:12:42,367 --> 00:12:45,439
+And it will basically insert this data
+
+202
+00:12:45,951 --> 00:12:47,487
+Into the database
+
+203
+00:12:47,743 --> 00:12:49,791
+When this component is installed
+
+204
+00:12:50,815 --> 00:12:51,583
+So
+
+205
+00:12:52,095 --> 00:12:58,239
+Having done those changes and linking the table to the component
+
+206
+00:12:58,495 --> 00:13:04,639
+It actually goes to the database in the extract these values and places it
+
+207
+00:13:04,895 --> 00:13:08,223
+Into the dump file of the
+
+208
+00:13:08,479 --> 00:13:09,247
+Component
+
+209
+00:13:09,503 --> 00:13:15,647
+It does not place it into the update file just that you know and that means that
+
+210
+00:13:15,903 --> 00:13:21,023
+If users already have your component installed and they install this
+
+211
+00:13:21,279 --> 00:13:27,167
+It will not add these helper structures you'll have to use
+
+212
+00:13:27,423 --> 00:13:33,567
+Custom scripting in the Joomla component area in the PHP tab there is
+
+213
+00:13:33,823 --> 00:13:39,967
+a place for update and uninstalled and installed
+
+214
+00:13:40,223 --> 00:13:46,367
+To add custom PHP script where why you can insert this data into the
+
+215
+00:13:46,623 --> 00:13:48,159
+Database
+
+216
+00:13:48,415 --> 00:13:54,559
+Ok now I'm gonna show you what happens if the component is no longer installed
+
+217
+00:13:54,815 --> 00:13:56,607
+And you try to compile it
+
+218
+00:13:58,143 --> 00:14:01,727
+The first thing is I'm gonna quickly uninstalled the demo component
+
+219
+00:14:05,567 --> 00:14:07,359
+Now I'm gonna go to the compiler
+
+220
+00:14:12,991 --> 00:14:15,551
+And I'm gonna try and compile this component
+
+221
+00:14:17,087 --> 00:14:18,623
+It will give me this error
+
+222
+00:14:19,135 --> 00:14:22,463
+And basically it's telling you that it couldn't find
+
+223
+00:14:22,975 --> 00:14:23,743
+This table
+
+224
+00:14:24,767 --> 00:14:28,351
+It couldn't find that table and it's because you uninstalled it
+
+225
+00:14:28,863 --> 00:14:31,935
+And the only way then to compile this component
+
+226
+00:14:32,703 --> 00:14:35,007
+Would be to go back to the admin view
+
+227
+00:14:35,775 --> 00:14:38,847
+And deLink the component from the table
+
+228
+00:14:39,359 --> 00:14:42,687
+So like I said make sure to compile the component
+
+229
+00:14:43,199 --> 00:14:44,991
+Before you uninstall
+
+230
+00:14:45,247 --> 00:14:48,063
+The component which you are linking to
+
+231
+00:14:48,575 --> 00:14:49,599
+So we linked
+
+232
+00:14:49,855 --> 00:14:52,671
+To the installed components table
+
+233
+00:14:52,927 --> 00:14:55,487
+The other way to try and avoid this
+
+234
+00:14:55,743 --> 00:14:58,815
+Is to actually instead of linking to the table
+
+235
+00:15:00,095 --> 00:15:03,423
+Like we did here is to instead use a dump file
+
+236
+00:15:03,679 --> 00:15:05,983
+So I would say you click on dump
+
+237
+00:15:07,263 --> 00:15:09,311
+You open your sql
+
+238
+00:15:09,567 --> 00:15:11,615
+File that it created
+
+239
+00:15:12,127 --> 00:15:13,151
+And you copy
+
+240
+00:15:13,663 --> 00:15:16,223
+The the values from that file
+
+241
+00:15:16,479 --> 00:15:17,759
+or cut whatever
+
+242
+00:15:20,831 --> 00:15:23,135
+And paste as values in here
+
+243
+00:15:23,647 --> 00:15:24,415
+Like that
+
+244
+00:15:28,767 --> 00:15:32,351
+You could leave the comment or even leave a comment out
+
+245
+00:15:33,375 --> 00:15:35,935
+And this way if we save and close
+
+246
+00:15:36,703 --> 00:15:37,727
+We will now
+
+247
+00:15:38,239 --> 00:15:42,591
+Even if the component is uninstalled be able to compile
+
+248
+00:15:42,847 --> 00:15:44,895
+And still have this demo
+
+249
+00:15:45,151 --> 00:15:45,919
+Or
+
+250
+00:15:46,175 --> 00:15:47,711
+Shipping values
+
+251
+00:15:48,223 --> 00:15:50,015
+Of the component in place
+
+252
+00:15:50,783 --> 00:15:53,087
+So let's try compiling it again
+
+253
+00:16:01,535 --> 00:16:04,095
+This time it compiled without any errors
+
+254
+00:16:04,607 --> 00:16:06,655
+And if we go open the ZIP package
+
+255
+00:16:13,055 --> 00:16:15,871
+And then open this install MySQL
+
+256
+00:16:16,639 --> 00:16:19,967
+.utf8.sql file
+
+257
+00:16:22,271 --> 00:16:24,575
+We will see that it added that dump
+
+258
+00:16:24,831 --> 00:16:30,975
+Values right back into the file and that's exactly what you would like it to do
+
+259
+00:16:31,743 --> 00:16:32,255
+Anyway
+
+260
+00:16:32,767 --> 00:16:35,327
+This was just to demonstrate actually
+
+261
+00:16:35,839 --> 00:16:36,863
+How to add
+
+262
+00:16:39,423 --> 00:16:41,727
+A help menu structure
+
+263
+00:16:41,983 --> 00:16:43,775
+To any JCB component
+
+264
+00:16:45,055 --> 00:16:50,431
+Basically you could do that without purchasing the Sermon distributor component
+
+265
+00:16:50,687 --> 00:16:54,015
+The only part that really is necessary
+
+266
+00:16:54,271 --> 00:16:56,575
+Is for you to create a helper document
+
+267
+00:16:56,831 --> 00:16:58,367
+And of course
+
+268
+00:16:58,623 --> 00:17:00,159
+This helper document
+
+269
+00:17:00,415 --> 00:17:06,559
+That we are using from the Sermon distributor package has custom scripting in it
+
+270
+00:17:06,815 --> 00:17:11,423
+And it's this custom scripting that makes it a adaptable to any other component
+
+271
+00:17:12,447 --> 00:17:13,215
+I can
+
+272
+00:17:13,471 --> 00:17:14,239
+Quickly
+
+273
+00:17:14,495 --> 00:17:18,335
+Show you which areas this custom scripting must go
+
+274
+00:17:18,847 --> 00:17:22,943
+But obviously I would rather wanted to buy the components package
+
+275
+00:17:23,967 --> 00:17:26,527
+It's really only in a relation
+
+276
+00:17:26,783 --> 00:17:28,319
+To the articles
+
+277
+00:17:28,575 --> 00:17:30,879
+And to the site views
+
+278
+00:17:31,135 --> 00:17:32,415
+And the admin View
+
+279
+00:17:33,183 --> 00:17:34,719
+That we have custom
+
+280
+00:17:34,975 --> 00:17:36,255
+Fields
+
+281
+00:17:36,767 --> 00:17:38,815
+That are a little tricky
+
+282
+00:17:39,071 --> 00:17:40,607
+As well as the user group
+
+283
+00:17:41,119 --> 00:17:41,887
+You need to
+
+284
+00:17:42,143 --> 00:17:45,727
+Have a little perspective on how to setup user groups
+
+285
+00:17:46,239 --> 00:17:51,359
+So these are the two areas that are difficult the articles one as well
+
+286
+00:17:51,615 --> 00:17:53,919
+Because JCB when it has
+
+287
+00:17:54,175 --> 00:18:00,319
+When it detects that this is a help helper document and it detects those specific field
+
+288
+00:18:00,575 --> 00:18:04,927
+Values that are set up correctly then it automatically
+
+289
+00:18:05,439 --> 00:18:11,583
+Build some of the front-end necessary concepts as well as adding
+
+290
+00:18:11,839 --> 00:18:16,191
+This dynamic behaviour in the backend
+
+291
+00:18:16,447 --> 00:18:18,495
+I hope this helps
+
+292
+00:18:19,775 --> 00:18:20,543
+to
+
+293
+00:18:20,799 --> 00:18:25,663
+To at least show you that it is very doable the adding and help
+
+294
+00:18:25,919 --> 00:18:27,711
+Structure to a component
+
+295
+00:18:27,967 --> 00:18:30,527
+What I think makes this quite unique
+
+296
+00:18:31,039 --> 00:18:31,551
+Is that
+
+297
+00:18:32,063 --> 00:18:34,111
+The component then ships with this
+
+298
+00:18:34,367 --> 00:18:39,999
+Pre built in help structure but the user that uses your component
+
+299
+00:18:40,255 --> 00:18:46,399
+He might want to give extra help or little different kind of help to the front end users of his
+
+300
+00:18:46,655 --> 00:18:47,167
+Website
+
+301
+00:18:47,423 --> 00:18:53,567
+And he will be having access to this helper area and editing it and changing it to
+
+302
+00:18:53,823 --> 00:18:58,175
+To the correct wording and expectations that he might have
+
+303
+00:18:58,431 --> 00:18:58,943
+Or she
+
+304
+00:18:59,199 --> 00:18:59,967
+Might have
+
+305
+00:19:00,223 --> 00:19:05,855
+And so that is the way that you could add helper structures
+
+306
+00:19:06,111 --> 00:19:07,903
+To your JCB components
+
+307
+00:19:08,671 --> 00:19:10,207
+Thank you for watching
+

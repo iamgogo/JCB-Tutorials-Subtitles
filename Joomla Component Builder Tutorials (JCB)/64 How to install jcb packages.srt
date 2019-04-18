@@ -1,0 +1,1332 @@
+1
+00:00:01,024 --> 00:00:04,608
+I would like to give you a quick tutorial on how to install
+
+2
+00:00:05,120 --> 00:00:06,400
+A JCB package
+
+3
+00:00:07,168 --> 00:00:08,192
+Or import
+
+4
+00:00:08,448 --> 00:00:09,472
+Is the right word really
+
+5
+00:00:10,240 --> 00:00:10,752
+Now
+
+6
+00:00:11,776 --> 00:00:12,800
+At the end of day
+
+7
+00:00:13,824 --> 00:00:15,616
+You already have JCB on your
+
+8
+00:00:15,872 --> 00:00:16,384
+System
+
+9
+00:00:16,640 --> 00:00:19,200
+So I'm not gonna explain how we got to this point
+
+10
+00:00:19,968 --> 00:00:21,248
+But from here on further
+
+11
+00:00:21,504 --> 00:00:22,272
+There are two ways to
+
+12
+00:00:22,528 --> 00:00:23,296
+To get to the in
+
+13
+00:00:23,552 --> 00:00:24,064
+Installing
+
+14
+00:00:25,088 --> 00:00:25,600
+View
+
+15
+00:00:26,112 --> 00:00:28,672
+One is by clicking on this icon
+
+16
+00:00:28,928 --> 00:00:29,696
+It'll take you there
+
+17
+00:00:30,208 --> 00:00:32,512
+The other one is going to Joomla components
+
+18
+00:00:33,024 --> 00:00:34,560
+And there is a button
+
+19
+00:00:35,328 --> 00:00:37,120
+Up here this is import JCB
+
+20
+00:00:37,376 --> 00:00:37,888
+Packages
+
+21
+00:00:38,400 --> 00:00:40,704
+And that will take you to the same place
+
+22
+00:00:41,984 --> 00:00:44,288
+You'll see that there is a number of tabs here
+
+23
+00:00:45,312 --> 00:00:46,848
+And you can actually
+
+24
+00:00:47,104 --> 00:00:48,640
+If you don't If you're not interested in these
+
+25
+00:00:48,896 --> 00:00:49,408
+Two tabs
+
+26
+00:00:49,920 --> 00:00:52,224
+There's action option in the global options
+
+27
+00:00:53,248 --> 00:00:56,064
+Where at this point we are controlling those tabs
+
+28
+00:00:56,832 --> 00:00:57,344
+Through this
+
+29
+00:00:57,600 --> 00:01:01,184
+Global switch that says manage JCB package the directories
+
+30
+00:01:01,952 --> 00:01:02,976
+You can say show all
+
+31
+00:01:03,232 --> 00:01:03,744
+Show none
+
+32
+00:01:04,256 --> 00:01:05,536
+Or manually select
+
+33
+00:01:06,048 --> 00:01:09,376
+The repositories that you want the show at the moment they are the least two
+
+34
+00:01:09,888 --> 00:01:11,168
+But they are
+
+35
+00:01:11,424 --> 00:01:14,496
+Reasons to expect that they might become more
+
+36
+00:01:15,008 --> 00:01:16,032
+as
+
+37
+00:01:16,288 --> 00:01:16,800
+We see
+
+38
+00:01:17,056 --> 00:01:17,568
+You know
+
+39
+00:01:17,824 --> 00:01:19,616
+This area becoming more active
+
+40
+00:01:20,896 --> 00:01:21,664
+Ok so
+
+41
+00:01:21,920 --> 00:01:23,200
+Once you're on this page
+
+42
+00:01:23,712 --> 00:01:29,344
+And you have yourself exported a JCB package then this is where you can select it from your
+
+43
+00:01:29,600 --> 00:01:30,112
+Computer
+
+44
+00:01:30,624 --> 00:01:32,160
+Or from a directory
+
+45
+00:01:32,416 --> 00:01:33,952
+Or from a URL
+
+46
+00:01:34,464 --> 00:01:36,768
+And with these import methods
+
+47
+00:01:37,024 --> 00:01:40,352
+There is not a checksum validation feature in place
+
+48
+00:01:40,864 --> 00:01:43,680
+So you need to be sure of the Integrity of that package
+
+49
+00:01:44,192 --> 00:01:46,752
+We cannot validate that package integrity
+
+50
+00:01:47,008 --> 00:01:49,056
+And since if it's being
+
+51
+00:01:49,568 --> 00:01:53,920
+Selected from your desktop and you are in a your local development environment
+
+52
+00:01:54,432 --> 00:01:56,224
+There should be no reasons for concern
+
+53
+00:01:56,992 --> 00:01:59,552
+If you're pulling it from an external source
+
+54
+00:01:59,808 --> 00:02:00,832
+Then possibly
+
+55
+00:02:01,088 --> 00:02:01,856
+You need to be more cautious
+
+56
+00:02:03,136 --> 00:02:07,744
+Where is it when it comes to the VDM packages and the JCB community packages
+
+57
+00:02:08,256 --> 00:02:11,840
+These are the areas where we are trying to add some layer of
+
+58
+00:02:12,096 --> 00:02:12,608
+Security
+
+59
+00:02:13,120 --> 00:02:14,912
+To try and protect you
+
+60
+00:02:16,192 --> 00:02:18,240
+And to ensure that
+
+61
+00:02:18,496 --> 00:02:21,312
+The package area remains as stable as possible
+
+62
+00:02:21,824 --> 00:02:25,408
+And so there is ways for you to add your own JCB package
+
+63
+00:02:25,920 --> 00:02:27,200
+To the community repository
+
+64
+00:02:27,712 --> 00:02:30,272
+Here is a tutorial to show you how to do that
+
+65
+00:02:30,784 --> 00:02:31,808
+And
+
+66
+00:02:32,064 --> 00:02:32,832
+Also
+
+67
+00:02:33,088 --> 00:02:33,856
+Explaining
+
+68
+00:02:34,112 --> 00:02:34,624
+Why
+
+69
+00:02:34,880 --> 00:02:36,160
+We will do things
+
+70
+00:02:36,416 --> 00:02:37,184
+The way we do them
+
+71
+00:02:37,696 --> 00:02:38,720
+Because of
+
+72
+00:02:38,976 --> 00:02:41,792
+The fact that everybody will then have access to that package
+
+73
+00:02:42,304 --> 00:02:43,072
+In this area
+
+74
+00:02:44,352 --> 00:02:46,400
+You can then also also
+
+75
+00:02:46,912 --> 00:02:48,448
+Now get free keys
+
+76
+00:02:48,960 --> 00:02:50,496
+For the VDM packages
+
+77
+00:02:51,008 --> 00:02:52,800
+In the past you have to pay for them
+
+78
+00:02:53,056 --> 00:02:55,104
+And we have decided in
+
+79
+00:02:55,360 --> 00:02:56,896
+In a initiative to
+
+80
+00:02:57,152 --> 00:02:57,664
+Sort of
+
+81
+00:02:58,176 --> 00:03:02,784
+Show all of you exactly how JCB can work and function
+
+82
+00:03:03,296 --> 00:03:06,112
+We have decided to give these packages way
+
+83
+00:03:06,624 --> 00:03:09,184
+Asking you to follow few steps
+
+84
+00:03:09,440 --> 00:03:11,232
+In supporting Us by
+
+85
+00:03:11,488 --> 00:03:13,536
+Forking starring or
+
+86
+00:03:13,792 --> 00:03:15,328
+watching
+
+87
+00:03:15,584 --> 00:03:19,168
+These packages in their specific repositories on GitHub
+
+88
+00:03:19,424 --> 00:03:21,984
+needing more guidance about this
+
+89
+00:03:22,240 --> 00:03:23,776
+You can just click on that link
+
+90
+00:03:24,288 --> 00:03:25,824
+And they'll show you exactly what you need to
+
+91
+00:03:26,080 --> 00:03:26,592
+Do
+
+92
+00:03:26,848 --> 00:03:27,360
+and once you've
+
+93
+00:03:27,616 --> 00:03:28,896
+Got the key for that
+
+94
+00:03:29,408 --> 00:03:29,920
+specific package
+
+95
+00:03:30,432 --> 00:03:32,480
+You can come and select that package here
+
+96
+00:03:32,736 --> 00:03:33,248
+Obviously
+
+97
+00:03:33,504 --> 00:03:36,064
+It's only related to some of the packages at this point
+
+98
+00:03:36,576 --> 00:03:37,856
+Which the first being
+
+99
+00:03:38,368 --> 00:03:39,136
+Most prominent
+
+100
+00:03:39,392 --> 00:03:40,672
+Component builder itself
+
+101
+00:03:41,440 --> 00:03:42,208
+And so I would 
+
+102
+00:03:42,464 --> 00:03:42,976
+Suspect that would
+
+103
+00:03:43,232 --> 00:03:44,512
+Would be your First Choice as
+
+104
+00:03:44,768 --> 00:03:45,280
+Well
+
+105
+00:03:45,792 --> 00:03:49,888
+and once you've selected the package you simply can click on
+
+106
+00:03:50,144 --> 00:03:50,656
+Get
+
+107
+00:03:50,912 --> 00:03:51,936
+to
+
+108
+00:03:52,192 --> 00:03:53,216
+Have the package be
+
+109
+00:03:53,728 --> 00:03:54,240
+Taken
+
+110
+00:03:54,496 --> 00:03:55,264
+From GitHub
+
+111
+00:03:55,520 --> 00:03:56,032
+And Brought
+
+112
+00:03:56,288 --> 00:03:57,056
+To your
+
+113
+00:03:57,312 --> 00:03:58,848
+Developing environment
+
+114
+00:03:59,360 --> 00:04:00,640
+And in doing so
+
+115
+00:04:01,152 --> 00:04:04,992
+It will actually run a validation on the Integrity of the package
+
+116
+00:04:05,504 --> 00:04:06,784
+Because they are checksums
+
+117
+00:04:07,040 --> 00:04:07,552
+In place
+
+118
+00:04:08,064 --> 00:04:08,576
+But
+
+119
+00:04:09,088 --> 00:04:10,880
+You need to validate the check some
+
+120
+00:04:11,648 --> 00:04:12,160
+Manually
+
+121
+00:04:12,416 --> 00:04:13,440
+And the way you do that
+
+122
+00:04:13,696 --> 00:04:16,000
+Is it'll show you the checksum that was used
+
+123
+00:04:16,256 --> 00:04:16,768
+to evaluate
+
+124
+00:04:17,024 --> 00:04:17,536
+The
+
+125
+00:04:17,791 --> 00:04:19,071
+Package integrity
+
+126
+00:04:19,327 --> 00:04:21,631
+And since it's past the validation
+
+127
+00:04:21,887 --> 00:04:25,215
+You know this checksum is the one that you need to see
+
+128
+00:04:25,471 --> 00:04:26,495
+If you're open
+
+129
+00:04:26,751 --> 00:04:27,263
+This link
+
+130
+00:04:28,031 --> 00:04:31,359
+So opening this link will also reveal a checksum
+
+131
+00:04:31,615 --> 00:04:35,455
+But at this time you will be seeing a verification
+
+132
+00:04:36,991 --> 00:04:37,503
+By
+
+133
+00:04:38,015 --> 00:04:38,527
+Digi
+
+134
+00:04:38,783 --> 00:04:39,295
+Cert
+
+135
+00:04:39,807 --> 00:04:40,319
+And
+
+136
+00:04:40,575 --> 00:04:41,855
+It must be at least
+
+137
+00:04:42,367 --> 00:04:44,159
+This part of the URL
+
+138
+00:04:44,415 --> 00:04:45,439
+Must be correct
+
+139
+00:04:46,719 --> 00:04:47,231
+Up There
+
+140
+00:04:47,487 --> 00:04:48,767
+This will vary from package to package
+
+141
+00:04:49,791 --> 00:04:52,095
+But it should have the package name here
+
+142
+00:04:52,607 --> 00:04:54,911
+And this should correspond
+
+143
+00:04:55,167 --> 00:04:55,935
+To the value you to
+
+144
+00:04:56,447 --> 00:04:56,959
+See here
+
+145
+00:04:57,215 --> 00:04:59,007
+And that little bit of manual effort
+
+146
+00:04:59,263 --> 00:05:00,287
+Is all you need to do
+
+147
+00:05:00,543 --> 00:05:03,615
+To be sure that the package that you have now got
+
+148
+00:05:03,871 --> 00:05:04,639
+In your position
+
+149
+00:05:04,895 --> 00:05:07,711
+Is the original authentic package that we have
+
+150
+00:05:08,223 --> 00:05:08,735
+distributed
+
+151
+00:05:09,247 --> 00:05:12,319
+So at this point you're all good to go all you need now
+
+152
+00:05:12,575 --> 00:05:14,367
+Is to take the key that we have sent you
+
+153
+00:05:14,623 --> 00:05:16,415
+And to add it here
+
+154
+00:05:16,671 --> 00:05:17,695
+To the key area
+
+155
+00:05:18,463 --> 00:05:19,231
+like so
+
+156
+00:05:19,743 --> 00:05:21,279
+Now you need to make a choice
+
+157
+00:05:21,535 --> 00:05:27,679
+Whether you want to if the JCB already is installed on your system maybe it's the second time you doing this
+
+158
+00:05:28,703 --> 00:05:33,055
+Then you might not want to merge you might want to have it be like a clone
+
+159
+00:05:33,567 --> 00:05:37,151
+I like a second instance of JCB it will literally
+
+160
+00:05:37,407 --> 00:05:39,711
+Then create all the fields and all the views
+
+161
+00:05:39,967 --> 00:05:40,991
+And all the linked
+
+162
+00:05:41,503 --> 00:05:42,015
+Concepts
+
+163
+00:05:42,527 --> 00:05:43,039
+Again
+
+164
+00:05:43,295 --> 00:05:44,831
+Where is if you choose merge
+
+165
+00:05:45,599 --> 00:05:46,111
+And
+
+166
+00:05:46,623 --> 00:05:49,439
+There is a change in the package which is newer
+
+167
+00:05:49,695 --> 00:05:51,743
+Then the version you have it will
+
+168
+00:05:51,999 --> 00:05:53,023
+Actually update
+
+169
+00:05:53,279 --> 00:05:54,047
+That version
+
+170
+00:05:54,559 --> 00:05:55,839
+If you wanna force it
+
+171
+00:05:56,095 --> 00:05:57,119
+To update it
+
+172
+00:05:57,375 --> 00:05:59,423
+You will say yes up here
+
+173
+00:05:59,679 --> 00:06:02,751
+The force local update really Only Works
+
+174
+00:06:03,007 --> 00:06:04,543
+If you selected merge
+
+175
+00:06:05,311 --> 00:06:09,151
+Then there's also show all import information
+
+176
+00:06:09,407 --> 00:06:12,223
+Which if it is the first time that you're importing package
+
+177
+00:06:12,735 --> 00:06:14,527
+It might be ideal to to check this yes
+
+178
+00:06:15,551 --> 00:06:20,415
+Because it'll show you literally everything that it does every field it adds
+
+179
+00:06:20,671 --> 00:06:25,791
+But it will not show your names or shows your IDs a lot of it will be like ok that doesn't make sense
+
+180
+00:06:26,047 --> 00:06:26,815
+To see anyway
+
+181
+00:06:27,327 --> 00:06:28,863
+But at the very bottom of the list
+
+182
+00:06:29,375 --> 00:06:30,399
+It shows you that
+
+183
+00:06:30,655 --> 00:06:33,471
+Files that is moved and this is what you need to see
+
+184
+00:06:33,727 --> 00:06:36,031
+You need to see the files that is moved 
+
+185
+00:06:36,287 --> 00:06:37,055
+Into your system
+
+186
+00:06:37,567 --> 00:06:40,127
+Specially if it's not a package that we are providing
+
+187
+00:06:40,383 --> 00:06:41,919
+Or someone else that is being
+
+188
+00:06:42,175 --> 00:06:44,479
+Sort of validated through the community
+
+189
+00:06:44,735 --> 00:06:46,015
+But it's someone that you've
+
+190
+00:06:46,271 --> 00:06:47,807
+Imported through a URL
+
+191
+00:06:48,063 --> 00:06:49,087
+Or through a package from you
+
+192
+00:06:49,343 --> 00:06:51,135
+Distributor package you received
+
+193
+00:06:51,391 --> 00:06:52,927
+Or from a directory
+
+194
+00:06:53,183 --> 00:06:54,719
+Then you most certainly wanna
+
+195
+00:06:54,975 --> 00:06:56,511
+see all import info
+
+196
+00:06:56,767 --> 00:07:02,911
+Because you wanna make sure that what they told you is what you get and that's what that little feature is all there
+
+197
+00:07:03,167 --> 00:07:03,679
+About
+
+198
+00:07:04,191 --> 00:07:08,031
+Then there is also the component that is being imported should show
+
+199
+00:07:08,287 --> 00:07:11,103
+Here the same as the one you saw before we got the package
+
+200
+00:07:11,871 --> 00:07:14,943
+Now those of you that have used this area multiple times
+
+201
+00:07:15,199 --> 00:07:15,967
+You will know
+
+202
+00:07:16,223 --> 00:07:17,759
+That you're actually able to add
+
+203
+00:07:18,015 --> 00:07:19,807
+Multiple components into one package
+
+204
+00:07:20,063 --> 00:07:22,367
+It's just because we at VBM
+
+205
+00:07:22,623 --> 00:07:24,927
+Are distributing one component at a time
+
+206
+00:07:25,183 --> 00:07:27,487
+That's why there's only one component in the package
+
+207
+00:07:28,255 --> 00:07:29,535
+But in in
+
+208
+00:07:29,791 --> 00:07:31,327
+Integrated perspective
+
+209
+00:07:32,607 --> 00:07:34,911
+You can actually import a backup package
+
+210
+00:07:35,167 --> 00:07:36,191
+Right here
+
+211
+00:07:36,447 --> 00:07:37,215
+And that would be
+
+212
+00:07:37,471 --> 00:07:38,495
+Then everything
+
+213
+00:07:38,751 --> 00:07:39,519
+That you have done
+
+214
+00:07:40,031 --> 00:07:45,919
+So in my case all the components I've build are actually zipped in a backup patch package
+
+215
+00:07:46,175 --> 00:07:50,271
+And I can import all of those into JCB at once at the moment
+
+216
+00:07:50,527 --> 00:07:54,367
+I've tested it up to at least 20 components which is
+
+217
+00:07:54,879 --> 00:07:57,183
+It takes a while but it and actually gets there
+
+218
+00:07:57,439 --> 00:07:58,975
+Ok so at this point
+
+219
+00:07:59,231 --> 00:08:00,255
+Everything looks fine
+
+220
+00:08:00,511 --> 00:08:01,791
+And you can click continue
+
+221
+00:08:03,071 --> 00:08:05,375
+This depending on the size of the component
+
+222
+00:08:05,887 --> 00:08:07,423
+All the size of package
+
+223
+00:08:07,679 --> 00:08:09,471
+Might take longer and shorter
+
+224
+00:08:10,495 --> 00:08:12,799
+And I would just suggest that you wait it out
+
+225
+00:08:13,311 --> 00:08:14,079
+Take a sip
+
+226
+00:08:14,335 --> 00:08:15,359
+Coffee or something
+
+227
+00:08:15,615 --> 00:08:18,943
+It it does take a while because literally at this point
+
+228
+00:08:19,455 --> 00:08:20,991
+It is updating the IDs
+
+229
+00:08:21,247 --> 00:08:22,015
+Everyone
+
+230
+00:08:22,271 --> 00:08:23,039
+One at a time
+
+231
+00:08:23,295 --> 00:08:26,111
+So with every field the IDs are being updated with
+
+232
+00:08:26,367 --> 00:08:32,255
+Every view and everywhere that ID in any other ID is being used anywhere across the component
+
+233
+00:08:32,511 --> 00:08:34,559
+Everything is dynamically being updated
+
+234
+00:08:34,815 --> 00:08:35,839
+During this process
+
+235
+00:08:36,351 --> 00:08:36,863
+And
+
+236
+00:08:37,119 --> 00:08:39,167
+So as you can expect it is a lot of
+
+237
+00:08:39,679 --> 00:08:40,447
+Compilation
+
+238
+00:08:40,703 --> 00:08:41,471
+Lot of algorithm
+
+239
+00:08:41,727 --> 00:08:43,519
+Lot of things happening under the hood
+
+240
+00:08:44,031 --> 00:08:46,591
+And therefore does take a little bit longer than
+
+241
+00:08:46,847 --> 00:08:47,615
+You might expect
+
+242
+00:08:48,127 --> 00:08:49,663
+Because the ID is changed
+
+243
+00:08:50,175 --> 00:08:52,223
+And the way we in export the package
+
+244
+00:08:52,479 --> 00:08:53,247
+Is literally
+
+245
+00:08:53,503 --> 00:08:57,599
+Just taking a photocopy of the package as it is in the JCB where it was
+
+246
+00:08:57,855 --> 00:08:58,367
+Develop
+
+247
+00:08:58,623 --> 00:08:59,903
+Or when it resides
+
+248
+00:09:00,415 --> 00:09:05,023
+And when you imported we now recreate and remap every ID
+
+249
+00:09:05,535 --> 00:09:10,655
+To ensure that it remains functional although basically all it's identifiers
+
+250
+00:09:10,911 --> 00:09:11,423
+have changed
+
+251
+00:09:12,191 --> 00:09:16,543
+Ok so just wait and in the moment it will show you that it's been successful
+
+252
+00:09:18,079 --> 00:09:19,615
+But it does take a while
+
+253
+00:09:20,895 --> 00:09:21,919
+Once it's done
+
+254
+00:09:22,175 --> 00:09:22,687
+You get this
+
+255
+00:09:22,943 --> 00:09:25,247
+Longest especially if it was JCB
+
+256
+00:09:25,503 --> 00:09:26,527
+Which you've imported
+
+257
+00:09:26,783 --> 00:09:29,087
+I mean it's a long list
+
+258
+00:09:29,599 --> 00:09:32,415
+It has over 1000 field so
+
+259
+00:09:32,927 --> 00:09:34,975
+You can anticipate a long scroll
+
+260
+00:09:35,231 --> 00:09:36,255
+I'm gonna grab this
+
+261
+00:09:36,511 --> 00:09:37,023
+thing here
+
+262
+00:09:37,279 --> 00:09:38,303
+and drag it
+
+263
+00:09:38,815 --> 00:09:40,863
+And it goes and goes and goes
+
+264
+00:09:41,119 --> 00:09:41,631
+And it's
+
+265
+00:09:41,887 --> 00:09:42,399
+Huge
+
+266
+00:09:43,167 --> 00:09:47,007
+But they're very much at the bottom you start seeing different things
+
+267
+00:09:47,263 --> 00:09:49,823
+Like the files every little file that has been
+
+268
+00:09:50,079 --> 00:09:50,591
+Imported
+
+269
+00:09:50,847 --> 00:09:52,383
+And that's really helpful
+
+270
+00:09:52,639 --> 00:09:54,431
+If you are importing a package
+
+271
+00:09:54,687 --> 00:09:56,735
+From a developer which you do not
+
+272
+00:09:56,991 --> 00:09:57,759
+No or
+
+273
+00:09:58,015 --> 00:09:59,295
+You're not absolutely sure you can
+
+274
+00:09:59,551 --> 00:10:00,063
+Trust
+
+275
+00:10:00,319 --> 00:10:01,599
+The now you must check
+
+276
+00:10:01,855 --> 00:10:05,695
+Every one of these Fields that they are legitimately related to this component
+
+277
+00:10:06,207 --> 00:10:08,255
+And that it is actually what you
+
+278
+00:10:08,511 --> 00:10:09,023
+anticipated
+
+279
+00:10:09,279 --> 00:10:10,047
+Or expected
+
+280
+00:10:10,815 --> 00:10:14,399
+And you can also Therefore go look at these folders
+
+281
+00:10:14,655 --> 00:10:16,191
+They are all related
+
+282
+00:10:16,447 --> 00:10:17,471
+The custom folder
+
+283
+00:10:17,727 --> 00:10:20,031
+At the moment as we scroll and now here
+
+284
+00:10:20,287 --> 00:10:20,799
+Are some
+
+285
+00:10:21,055 --> 00:10:24,383
+Folders that are related to the administrator
+
+286
+00:10:25,407 --> 00:10:26,687
+VDM compiler
+
+287
+00:10:27,199 --> 00:10:27,711
+Yes
+
+288
+00:10:28,223 --> 00:10:30,783
+This is in the compiler so there's a lot of files for the 
+
+289
+00:10:31,039 --> 00:10:31,551
+compiler
+
+290
+00:10:32,063 --> 00:10:33,087
+Joomla 3
+
+291
+00:10:33,343 --> 00:10:34,623
+Then for the helper this
+
+292
+00:10:34,879 --> 00:10:37,183
+This little thing here is just like a
+
+293
+00:10:37,439 --> 00:10:38,719
+Spacer really
+
+294
+00:10:38,975 --> 00:10:40,255
+By which we sort of
+
+295
+00:10:40,767 --> 00:10:42,047
+Create the string
+
+296
+00:10:42,559 --> 00:10:47,167
+And so there you get all the files that have been moved into place and low and behold
+
+297
+00:10:47,423 --> 00:10:50,239
+There is component builder the fully mapped
+
+298
+00:10:50,495 --> 00:10:51,007
+Package
+
+299
+00:10:51,263 --> 00:10:51,775
+In your system
+
+300
+00:10:52,799 --> 00:10:55,359
+And that's really as simple as it is to get
+
+301
+00:10:55,615 --> 00:10:56,895
+The component that
+
+302
+00:10:57,151 --> 00:10:57,663
+You need
+
+303
+00:10:58,175 --> 00:10:59,199
+Fully mapped
+
+304
+00:10:59,455 --> 00:11:00,223
+Into your system
+
+305
+00:11:00,479 --> 00:11:01,503
+And as you can see
+
+306
+00:11:01,759 --> 00:11:02,271
+All it's
+
+307
+00:11:02,527 --> 00:11:04,575
+Views are correctly mapped in here
+
+308
+00:11:04,831 --> 00:11:07,135
+And if you open any of those views
+
+309
+00:11:07,647 --> 00:11:09,951
+you'll again see that all it's fields
+
+310
+00:11:10,463 --> 00:11:11,487
+Are also
+
+311
+00:11:11,743 --> 00:11:12,511
+Correctly
+
+312
+00:11:12,767 --> 00:11:13,279
+Mapped
+
+313
+00:11:14,303 --> 00:11:14,815
+And
+
+314
+00:11:15,071 --> 00:11:18,143
+You do realize that every one of these Fields their IDs have changed
+
+315
+00:11:18,655 --> 00:11:19,935
+And even
+
+316
+00:11:20,191 --> 00:11:20,703
+The fields
+
+317
+00:11:20,959 --> 00:11:21,983
+They again
+
+318
+00:11:22,239 --> 00:11:23,263
+Have field types
+
+319
+00:11:23,775 --> 00:11:25,055
+And even those
+
+320
+00:11:25,311 --> 00:11:26,079
+Might have changed
+
+321
+00:11:26,591 --> 00:11:27,103
+The field types
+
+322
+00:11:27,359 --> 00:11:27,871
+Itself
+
+323
+00:11:28,127 --> 00:11:28,895
+And so
+
+324
+00:11:29,151 --> 00:11:30,175
+Down to the very
+
+325
+00:11:30,431 --> 00:11:32,223
+Smallest detail we've tried
+
+326
+00:11:32,479 --> 00:11:34,527
+To make sure that every little thing
+
+327
+00:11:34,783 --> 00:11:36,063
+All across the board
+
+328
+00:11:36,575 --> 00:11:37,343
+is remapped
+
+329
+00:11:37,599 --> 00:11:38,111
+And
+
+330
+00:11:38,367 --> 00:11:38,879
+You know
+
+331
+00:11:39,391 --> 00:11:41,695
+Fixed so that your component is again
+
+332
+00:11:42,207 --> 00:11:44,767
+Fully Active and stable ready for further development
+
+333
+00:11:45,791 --> 00:11:51,935
+Ok so that is the quick tutorial on how to import a JCB package into JCB. Ok thanks for watching.
+

@@ -1,0 +1,1416 @@
+1
+00:00:01,280 --> 00:00:04,352
+I would like to demonstrate to you the new implementation
+
+2
+00:00:04,608 --> 00:00:06,912
+Which isn't such a major thing but
+
+3
+00:00:07,680 --> 00:00:09,728
+Something we've done to try and
+
+4
+00:00:10,752 --> 00:00:13,312
+Help along some of the router complexity
+
+5
+00:00:13,824 --> 00:00:15,616
+So when you build a component
+
+6
+00:00:15,872 --> 00:00:17,408
+And you have a front end
+
+7
+00:00:17,920 --> 00:00:20,480
+For your component so you've got site views
+
+8
+00:00:20,992 --> 00:00:24,832
+Your site views usually are getting it's data from a dynamic get
+
+9
+00:00:25,344 --> 00:00:27,136
+Which you link up to the site View
+
+10
+00:00:27,392 --> 00:00:33,536
+and this dynamic get basically returns a
+
+11
+00:00:33,792 --> 00:00:34,560
+Resultset
+
+12
+00:00:35,072 --> 00:00:36,608
+and it is from this result set
+
+13
+00:00:36,864 --> 00:00:38,912
+That we should get information
+
+14
+00:00:39,680 --> 00:00:40,704
+By which we
+
+15
+00:00:40,960 --> 00:00:43,520
+Combined with the view name
+
+16
+00:00:44,544 --> 00:00:46,336
+Build what is called a
+
+17
+00:00:46,592 --> 00:00:48,896
+Search engine friendly URL
+
+18
+00:00:49,408 --> 00:00:53,248
+ your search engine friendly URL is basically done with the router
+
+19
+00:00:53,760 --> 00:00:56,064
+So JCB also builds the router
+
+20
+00:00:56,320 --> 00:00:59,136
+And it sort of guesses what should be these values
+
+21
+00:00:59,904 --> 00:01:01,696
+So let me compile a component
+
+22
+00:01:02,208 --> 00:01:03,488
+And show you what it guessed
+
+23
+00:01:03,744 --> 00:01:06,816
+And then see how we would need to change it
+
+24
+00:01:08,352 --> 00:01:11,424
+the component that we're working with here is Sermon Distributer
+
+25
+00:01:11,936 --> 00:01:13,216
+So I'm gonna compile it
+
+26
+00:01:14,496 --> 00:01:16,032
+And install it to this website
+
+27
+00:01:16,800 --> 00:01:21,408
+as now the router doesn't really work I'm not gonna demonstrate
+
+28
+00:01:21,664 --> 00:01:22,176
+the
+
+29
+00:01:23,968 --> 00:01:26,016
+ actual front-end
+
+30
+00:01:26,272 --> 00:01:28,064
+I'm just gonna show you the code
+
+31
+00:01:28,576 --> 00:01:29,856
+And
+
+32
+00:01:30,112 --> 00:01:31,392
+And let's take it from there
+
+33
+00:01:33,184 --> 00:01:37,536
+So when you look at the website you've got your root directory admin
+
+34
+00:01:37,792 --> 00:01:38,816
+And then components
+
+35
+00:01:39,328 --> 00:01:42,400
+And then in here we've got Sermon Distributer
+
+36
+00:01:42,656 --> 00:01:44,448
+And there's a file called router
+
+37
+00:01:44,704 --> 00:01:45,984
+I'm gonna open this
+
+38
+00:01:47,008 --> 00:01:49,568
+And you'll see there's got a function called build
+
+39
+00:01:50,080 --> 00:01:51,360
+I'm a class method
+
+40
+00:01:51,872 --> 00:01:55,200
+As well as a function called parse
+
+41
+00:01:55,712 --> 00:01:56,736
+and in this function
+
+42
+00:01:57,248 --> 00:01:58,016
+called parse
+
+43
+00:01:58,528 --> 00:01:59,808
+There is a switch
+
+44
+00:02:00,576 --> 00:02:01,600
+Which basically
+
+45
+00:02:02,112 --> 00:02:05,696
+Makes decisions based on the segment's
+
+46
+00:02:05,952 --> 00:02:07,232
+First value
+
+47
+00:02:08,000 --> 00:02:10,816
+And if that segment's value is
+
+48
+00:02:11,328 --> 00:02:13,376
+Because usually that would be the view name
+
+49
+00:02:13,888 --> 00:02:14,656
+In this first
+
+50
+00:02:14,912 --> 00:02:15,424
+Value
+
+51
+00:02:15,936 --> 00:02:17,472
+it determines 
+
+52
+00:02:17,728 --> 00:02:20,288
+which view are we looking at is it preacher
+
+53
+00:02:20,544 --> 00:02:22,336
+And so we going through the list
+
+54
+00:02:23,104 --> 00:02:25,920
+Now by Default without us
+
+55
+00:02:27,712 --> 00:02:29,504
+You know making any changes
+
+56
+00:02:29,760 --> 00:02:31,296
+JCB Builders for us
+
+57
+00:02:31,808 --> 00:02:32,320
+All of it
+
+58
+00:02:32,576 --> 00:02:33,088
+So
+
+59
+00:02:33,856 --> 00:02:35,392
+If we look at preachers
+
+60
+00:02:35,648 --> 00:02:36,672
+Which is a
+
+61
+00:02:40,000 --> 00:02:41,536
+Basically a listview
+
+62
+00:02:42,048 --> 00:02:43,584
+Let's open the preacher model
+
+63
+00:02:44,864 --> 00:02:46,144
+So here is preachers
+
+64
+00:02:46,912 --> 00:02:48,192
+We can scroll down
+
+65
+00:02:48,960 --> 00:02:50,240
+And we'll see that
+
+66
+00:02:50,496 --> 00:02:51,264
+In its
+
+67
+00:02:51,520 --> 00:02:52,544
+Query
+
+68
+00:02:54,080 --> 00:02:57,664
+It basically has a get items and here it got a list query
+
+69
+00:02:58,176 --> 00:03:02,272
+And it really is just getting all the items from Database
+
+70
+00:03:02,784 --> 00:03:05,344
+With no input from the URL whatsoever
+
+71
+00:03:06,624 --> 00:03:07,392
+Let's see
+
+72
+00:03:07,648 --> 00:03:10,464
+Yeah it doesn't do any of that and then it just
+
+73
+00:03:10,976 --> 00:03:11,744
+Gives back
+
+74
+00:03:12,512 --> 00:03:13,792
+So it's a simple as that
+
+75
+00:03:14,048 --> 00:03:15,840
+It does not
+
+76
+00:03:16,608 --> 00:03:18,400
+Need a URL value
+
+77
+00:03:18,912 --> 00:03:22,240
+So that means it most probably will only
+
+78
+00:03:23,264 --> 00:03:24,544
+Set this verse
+
+79
+00:03:25,568 --> 00:03:26,080
+Value
+
+80
+00:03:26,336 --> 00:03:30,176
+And all of this will really be redundant, it won't be used
+
+81
+00:03:30,688 --> 00:03:32,224
+Because it's a listview
+
+82
+00:03:32,736 --> 00:03:34,272
+So there isn't an alias
+
+83
+00:03:34,528 --> 00:03:38,624
+We not looking at an individual item so there isn't an ID
+
+84
+00:03:39,904 --> 00:03:40,672
+So we could
+
+85
+00:03:41,184 --> 00:03:42,976
+Actually remove this here
+
+86
+00:03:43,232 --> 00:03:43,744
+This code
+
+87
+00:03:44,000 --> 00:03:45,024
+It's not doing anything
+
+88
+00:03:45,792 --> 00:03:46,304
+Now
+
+89
+00:03:46,560 --> 00:03:48,608
+It is also not gonna really
+
+90
+00:03:48,864 --> 00:03:50,400
+Slow your site down that
+
+91
+00:03:50,912 --> 00:03:53,984
+Dramatically it's fact it's it's hardly noticeable
+
+92
+00:03:54,496 --> 00:03:56,288
+It's it's just that this is default
+
+93
+00:03:56,544 --> 00:03:57,312
+Being generated
+
+94
+00:03:58,080 --> 00:04:00,640
+Where us if we look at for example
+
+95
+00:04:01,920 --> 00:04:07,040
+Preachers is the list view but then there is a view called preacher we see it here
+
+96
+00:04:08,064 --> 00:04:09,344
+And it is saying that
+
+97
+00:04:09,600 --> 00:04:11,392
+It needs to get the ID from
+
+98
+00:04:11,648 --> 00:04:13,184
+Discernment table
+
+99
+00:04:13,952 --> 00:04:15,488
+Which is actually in error
+
+100
+00:04:16,512 --> 00:04:18,047
+So if I open the preacher
+
+101
+00:04:19,071 --> 00:04:20,351
+And I look at the list query
+
+102
+00:04:21,119 --> 00:04:24,447
+Then I see that in the list query about here
+
+103
+00:04:25,471 --> 00:04:26,751
+It is getting an ID
+
+104
+00:04:27,007 --> 00:04:27,775
+From the URL
+
+105
+00:04:28,543 --> 00:04:32,895
+And it is asking that it should be equal to preacher
+
+106
+00:04:33,151 --> 00:04:33,663
+So
+
+107
+00:04:34,175 --> 00:04:37,503
+It is the main table is
+
+108
+00:04:39,551 --> 00:04:40,831
+Is the Sermon table
+
+109
+00:04:41,087 --> 00:04:43,903
+But it's not looking for the Sermon ID
+
+110
+00:04:44,415 --> 00:04:46,207
+It is looking for the preacher
+
+111
+00:04:46,719 --> 00:04:49,791
+Value in the Sermon table and that's why
+
+112
+00:04:50,047 --> 00:04:52,607
+JCB be fell back onto the table name
+
+113
+00:04:53,119 --> 00:04:54,143
+And yet
+
+114
+00:04:54,399 --> 00:04:56,447
+It should actually go to the preacher
+
+115
+00:04:56,703 --> 00:04:57,727
+Table and
+
+116
+00:04:57,983 --> 00:04:58,751
+See weather
+
+117
+00:04:59,007 --> 00:05:02,079
+That preacher value is equal to this ID
+
+118
+00:05:02,847 --> 00:05:04,639
+So it is actually
+
+119
+00:05:04,895 --> 00:05:06,175
+Making an error
+
+120
+00:05:07,967 --> 00:05:14,111
+Now you wrote the code or you set up the get so you should understand the logic of what you see in the code here
+
+121
+00:05:14,879 --> 00:05:15,647
+If you do not
+
+122
+00:05:15,903 --> 00:05:16,415
+Then
+
+123
+00:05:16,671 --> 00:05:22,047
+This is a feature with JCB has with you possibly won't be able to you know make use of
+
+124
+00:05:22,559 --> 00:05:23,839
+Like we've said many times
+
+125
+00:05:24,351 --> 00:05:26,655
+JCB is for those who know PHP
+
+126
+00:05:26,911 --> 00:05:28,959
+And can actually write their own components
+
+127
+00:05:29,471 --> 00:05:30,495
+Now
+
+128
+00:05:31,519 --> 00:05:36,383
+I know that this is an error because we want to actually get the value the ID
+
+129
+00:05:36,639 --> 00:05:37,663
+Of the preacher
+
+130
+00:05:37,919 --> 00:05:38,943
+Is the one we need to check
+
+131
+00:05:39,455 --> 00:05:42,271
+And it is is doing it wrong it should
+
+132
+00:05:42,527 --> 00:05:45,343
+This value here should be preacher not sermon
+
+133
+00:05:45,855 --> 00:05:49,439
+You can look at the getVar class here at the bottom
+
+134
+00:05:49,695 --> 00:05:50,975
+Here is the getVar class
+
+135
+00:05:51,231 --> 00:05:53,791
+And here you can see what it's going to do
+
+136
+00:05:54,303 --> 00:05:56,607
+And how it's going to actually get the values
+
+137
+00:05:56,863 --> 00:05:59,679
+So you can also use the getVar class
+
+138
+00:05:59,935 --> 00:06:01,727
+ for your own purposes
+
+139
+00:06:02,239 --> 00:06:02,751
+So
+
+140
+00:06:03,263 --> 00:06:06,591
+At this point we see at least one of the
+
+141
+00:06:07,103 --> 00:06:08,383
+Router case
+
+142
+00:06:08,895 --> 00:06:10,687
+Within the parse method
+
+143
+00:06:10,943 --> 00:06:13,759
+In the case loop there's at least one
+
+144
+00:06:14,015 --> 00:06:16,319
+ router area that needs to be changed
+
+145
+00:06:17,343 --> 00:06:20,671
+I know by having looked at this before
+
+146
+00:06:21,183 --> 00:06:24,767
+That there is actually more than one it's also this categories
+
+147
+00:06:25,023 --> 00:06:26,303
+Down here
+
+148
+00:06:26,559 --> 00:06:27,071
+This one
+
+149
+00:06:27,327 --> 00:06:28,351
+Should also change
+
+150
+00:06:28,863 --> 00:06:30,143
+This should also become
+
+151
+00:06:31,167 --> 00:06:33,471
+Well actually it should just get a true
+
+152
+00:06:33,727 --> 00:06:34,239
+Here
+
+153
+00:06:34,495 --> 00:06:37,055
+there should be true because this is a category
+
+154
+00:06:37,311 --> 00:06:37,823
+Look up
+
+155
+00:06:38,335 --> 00:06:41,663
+Now the other place it also need to change is this one
+
+156
+00:06:41,919 --> 00:06:43,711
+There should also be serious
+
+157
+00:06:43,967 --> 00:06:47,551
+So this is where the guessing which JCB does
+
+158
+00:06:47,807 --> 00:06:48,575
+Dynamically
+
+159
+00:06:49,087 --> 00:06:52,671
+Did not match the complexity of our Dynamic get
+
+160
+00:06:53,439 --> 00:06:57,535
+And I'm sure that as time goes on we might
+
+161
+00:06:58,047 --> 00:06:59,327
+Improve it's
+
+162
+00:06:59,583 --> 00:07:03,679
+Guessing Ok we might get better ways of guessing correctly
+
+163
+00:07:03,935 --> 00:07:04,447
+And
+
+164
+00:07:05,471 --> 00:07:08,543
+Within the dynamics of the dynamic get
+
+165
+00:07:08,799 --> 00:07:14,431
+Be able to actually build this case more effectively but
+
+166
+00:07:14,687 --> 00:07:17,247
+Since we have not done that yet
+
+167
+00:07:17,759 --> 00:07:23,391
+The quickest way for us to resolve this and which most probably be the most Dynamic option
+
+168
+00:07:23,647 --> 00:07:28,255
+Is actually adding a way that you can replace the snippet of code
+
+169
+00:07:29,023 --> 00:07:30,559
+Targeting the specific
+
+170
+00:07:30,815 --> 00:07:31,327
+View
+
+171
+00:07:31,839 --> 00:07:35,423
+So you will never need to really know what is the view
+
+172
+00:07:35,679 --> 00:07:37,983
+When you do this because they are placeholders
+
+173
+00:07:39,007 --> 00:07:41,567
+And you need only remember where you at your dynamic
+
+174
+00:07:41,823 --> 00:07:42,335
+Get
+
+175
+00:07:42,847 --> 00:07:46,431
+So let me go and illustrate this within the JCB interface
+
+176
+00:07:46,943 --> 00:07:53,087
+So all I wanted to show you here is that we are actually targeting with this new Dynamic implementation
+
+177
+00:07:53,343 --> 00:07:54,879
+This little snippet
+
+178
+00:07:55,391 --> 00:07:56,671
+This area here
+
+179
+00:07:56,927 --> 00:07:58,975
+We not replacing the whole method
+
+180
+00:07:59,231 --> 00:08:03,071
+Because really it is it is standard there's not much to do in
+
+181
+00:08:03,583 --> 00:08:07,423
+Improving that and if we do it will be just improving it for everyone
+
+182
+00:08:08,703 --> 00:08:12,799
+And the built function it really works well I haven't seen any issues with that
+
+183
+00:08:13,311 --> 00:08:13,823
+So
+
+184
+00:08:14,079 --> 00:08:16,895
+At the end of the day it seems like only the parse method
+
+185
+00:08:17,151 --> 00:08:18,687
+Needed a bit of an improvement
+
+186
+00:08:19,199 --> 00:08:22,271
+So let's go back to the interface and let me let me show you
+
+187
+00:08:22,527 --> 00:08:24,575
+Where we can make the changes
+
+188
+00:08:24,831 --> 00:08:28,415
+To have the the category render correctly
+
+189
+00:08:28,671 --> 00:08:30,719
+As well as the preacher
+
+190
+00:08:30,975 --> 00:08:36,095
+This one here as well as the series 
+
+191
+00:08:36,607 --> 00:08:37,119
+...........
+
+192
+00:08:37,631 --> 00:08:38,399
+............
+
+193
+00:08:38,655 --> 00:08:41,471
+Basically make the changes so that this will say
+
+194
+00:08:41,983 --> 00:08:43,007
+Series
+
+195
+00:08:44,543 --> 00:08:45,055
+And
+
+196
+00:08:46,079 --> 00:08:48,383
+That this one will say true
+
+197
+00:08:48,895 --> 00:08:50,431
+And this one
+
+198
+00:08:50,687 --> 00:08:52,479
+This preacher would also say
+
+199
+00:08:52,991 --> 00:08:53,503
+Preacher
+
+200
+00:08:54,015 --> 00:08:56,831
+That's basically all we need to do and then this router
+
+201
+00:08:57,087 --> 00:08:57,599
+Will work
+
+202
+00:08:58,111 --> 00:08:59,391
+Without any errors
+
+203
+00:09:00,159 --> 00:09:00,671
+Ok
+
+204
+00:09:02,719 --> 00:09:05,535
+So here in the interface you have site views
+
+205
+00:09:06,047 --> 00:09:10,143
+Now the site views the ones who wanna make changes to his this preacher
+
+206
+00:09:10,655 --> 00:09:15,519
+The series and the category now I'm gonna show this to you little bit
+
+207
+00:09:15,775 --> 00:09:16,799
+Long winded but
+
+208
+00:09:17,311 --> 00:09:18,079
+Bear with me
+
+209
+00:09:18,335 --> 00:09:20,639
+It's just make sure everybody is on the same page
+
+210
+00:09:21,151 --> 00:09:22,431
+If you open preacher
+
+211
+00:09:22,687 --> 00:09:24,479
+You would see that it has a dynamic
+
+212
+00:09:24,735 --> 00:09:25,759
+Get called
+
+213
+00:09:26,015 --> 00:09:29,343
+Sermons preacher ID and it say get list query
+
+214
+00:09:30,623 --> 00:09:31,391
+Ok so
+
+215
+00:09:31,903 --> 00:09:32,671
+This is the one
+
+216
+00:09:32,927 --> 00:09:34,463
+We want to change
+
+217
+00:09:35,487 --> 00:09:36,511
+The get
+
+218
+00:09:36,767 --> 00:09:37,791
+the dynamic get
+
+219
+00:09:38,047 --> 00:09:40,607
+As well as speaking about serieses
+
+220
+00:09:40,863 --> 00:09:42,655
+The same is true of that
+
+221
+00:09:43,167 --> 00:09:43,935
+We have this
+
+222
+00:09:44,191 --> 00:09:46,239
+List query get series ID
+
+223
+00:09:46,495 --> 00:09:48,543
+Sermons that we also want to change
+
+224
+00:09:49,311 --> 00:09:51,359
+And so we not changing it in the view
+
+225
+00:09:52,127 --> 00:09:53,151
+The idea was
+
+226
+00:09:53,407 --> 00:09:57,247
+That if we change it in the dynamic get it automatically
+
+227
+00:09:57,503 --> 00:10:02,111
+Right to correct code to whatever view you add it because we've added some custom
+
+228
+00:10:02,623 --> 00:10:03,647
+Scripting
+
+229
+00:10:03,903 --> 00:10:06,207
+Sorry placeholders within the script
+
+230
+00:10:06,719 --> 00:10:09,535
+So let's take the first one is this sermon
+
+231
+00:10:09,791 --> 00:10:10,815
+Where is it
+
+232
+00:10:12,351 --> 00:10:13,375
+Sermon series
+
+233
+00:10:17,983 --> 00:10:21,567
+So in custom script we scroll down to the bottom there is now a new
+
+234
+00:10:21,823 --> 00:10:24,127
+Tab here option here
+
+235
+00:10:24,383 --> 00:10:25,663
+Add PHP
+
+236
+00:10:25,919 --> 00:10:28,991
+Parse method in router little bit of explanation there
+
+237
+00:10:29,247 --> 00:10:30,015
+click yes
+
+238
+00:10:30,271 --> 00:10:32,063
+And it will Dynamically load
+
+239
+00:10:32,575 --> 00:10:36,927
+What is what I can consider the most basic implementation of that little snippet
+
+240
+00:10:37,439 --> 00:10:40,511
+So you see it looks very familiar it's got his place holders
+
+241
+00:10:40,767 --> 00:10:42,303
+And it has a specific
+
+242
+00:10:42,815 --> 00:10:44,095
+It has a specific
+
+243
+00:10:44,607 --> 00:10:46,655
+S View placeholder
+
+244
+00:10:47,167 --> 00:10:49,471
+That's because we're dealing with the site View
+
+245
+00:10:49,727 --> 00:10:51,775
+And it has to have this s in it
+
+246
+00:10:52,287 --> 00:10:54,847
+To replace it with the site view name
+
+247
+00:10:55,615 --> 00:10:59,967
+So wherever this is gonna be used this this Dynamic get
+
+248
+00:11:00,479 --> 00:11:00,991
+This
+
+249
+00:11:01,247 --> 00:11:04,831
+Would be replaced with that specific site view's  value
+
+250
+00:11:05,599 --> 00:11:07,391
+Ok that's just to give you a heads up
+
+251
+00:11:07,903 --> 00:11:10,719
+About the place holder and that's what makes it dynamic
+
+252
+00:11:10,975 --> 00:11:15,071
+So that you can use it in any site view and it will automatically write this
+
+253
+00:11:15,327 --> 00:11:20,959
+Because really the the display of the page is actually based on the database request 
+
+254
+00:11:22,239 --> 00:11:25,311
+Which is built in the URL by the name of the view
+
+255
+00:11:25,567 --> 00:11:27,615
+As well as the ID of the element
+
+256
+00:11:28,127 --> 00:11:31,711
+And if there are multiple variables being passed
+
+257
+00:11:32,223 --> 00:11:33,759
+To the
+
+258
+00:11:34,527 --> 00:11:36,063
+URL
+
+259
+00:11:36,319 --> 00:11:38,879
+You can obviously update that and
+
+260
+00:11:39,135 --> 00:11:40,927
+Replace multiple values
+
+261
+00:11:41,439 --> 00:11:41,951
+So
+
+262
+00:11:42,719 --> 00:11:45,023
+Here we want to within this one
+
+263
+00:11:45,279 --> 00:11:49,119
+Did the default option here will actually resolve our issue because
+
+264
+00:11:49,631 --> 00:11:51,679
+Remember these two values were not the same
+
+265
+00:11:52,447 --> 00:11:56,287
+JCB's Dynamic build actually changed this value to
+
+266
+00:11:56,543 --> 00:11:57,567
+Sermon instead of
+
+267
+00:11:57,823 --> 00:11:58,591
+Leaving it
+
+268
+00:11:58,847 --> 00:11:59,359
+The same
+
+269
+00:11:59,615 --> 00:12:01,919
+And there is a very good reason
+
+270
+00:12:02,175 --> 00:12:02,687
+For that
+
+271
+00:12:02,943 --> 00:12:08,575
+Usually this would be the correct response but in this case because of complexity I'm not gonna explain
+
+272
+00:12:08,831 --> 00:12:12,671
+It isn't the correct response and so you want these two values to be the same
+
+273
+00:12:12,927 --> 00:12:15,487
+And it is basically the site view's name
+
+274
+00:12:16,255 --> 00:12:18,047
+So we could just save it close this
+
+275
+00:12:19,583 --> 00:12:22,399
+The next one we wanna do is this sermon preacher
+
+276
+00:12:23,167 --> 00:12:24,703
+And it was also
+
+277
+00:12:25,983 --> 00:12:27,775
+Having the same issue basically
+
+278
+00:12:28,031 --> 00:12:28,543
+So we
+
+279
+00:12:28,799 --> 00:12:31,359
+We gonna do the the same kind of
+
+280
+00:12:31,615 --> 00:12:34,431
+Just add the the custom
+
+281
+00:12:34,687 --> 00:12:35,455
+Option
+
+282
+00:12:35,711 --> 00:12:38,271
+To ensure that these two values remain the same
+
+283
+00:12:39,551 --> 00:12:42,367
+And then the last but not least was this category 
+
+284
+00:12:42,623 --> 00:12:44,159
+It is also behaving
+
+285
+00:12:44,415 --> 00:12:45,183
+Incorrectly
+
+286
+00:12:45,439 --> 00:12:47,487
+And really it's only because it
+
+287
+00:12:47,743 --> 00:12:48,767
+Didn't detect
+
+288
+00:12:49,023 --> 00:12:51,071
+That this is actually category
+
+289
+00:12:51,327 --> 00:12:55,935
+And that is primarily because it is using the Sermon table
+
+290
+00:12:56,447 --> 00:12:58,751
+To to start instead
+
+291
+00:12:59,007 --> 00:13:00,543
+In the Sermon table
+
+292
+00:13:01,823 --> 00:13:03,871
+We have a joint here
+
+293
+00:13:04,639 --> 00:13:05,663
+too
+
+294
+00:13:06,431 --> 00:13:07,199
+ category
+
+295
+00:13:07,455 --> 00:13:08,479
+If you can see there
+
+296
+00:13:09,247 --> 00:13:12,063
+And so it does load the category and
+
+297
+00:13:12,575 --> 00:13:13,087
+ the tweak
+
+298
+00:13:13,599 --> 00:13:16,159
+You see that we are actually using
+
+299
+00:13:18,463 --> 00:13:19,231
+This ID
+
+300
+00:13:19,743 --> 00:13:21,535
+And this is a category ID
+
+301
+00:13:22,303 --> 00:13:24,863
+So it should actually go look for the category
+
+302
+00:13:25,119 --> 00:13:25,631
+And
+
+303
+00:13:25,887 --> 00:13:28,959
+build the parse method based on the category
+
+304
+00:13:29,215 --> 00:13:29,983
+And so
+
+305
+00:13:30,239 --> 00:13:30,751
+here
+
+306
+00:13:31,007 --> 00:13:32,543
+We also gonna Just Add
+
+307
+00:13:33,055 --> 00:13:34,079
+A true
+
+308
+00:13:34,335 --> 00:13:35,359
+To this getVar
+
+309
+00:13:35,871 --> 00:13:37,407
+Which tells the getVar
+
+310
+00:13:37,919 --> 00:13:40,735
+ method that this is actually a category
+
+311
+00:13:41,247 --> 00:13:42,527
+This this name
+
+312
+00:13:43,551 --> 00:13:45,599
+In effect is actually gonna be ignored
+
+313
+00:13:46,111 --> 00:13:51,231
+Because it's gonna not be looking for this tables value is gonna go to the category table
+
+314
+00:13:51,487 --> 00:13:53,023
+And look for the value there
+
+315
+00:13:53,535 --> 00:13:56,607
+Ok so this will resolve this this issue
+
+316
+00:13:57,631 --> 00:13:59,167
+We can save and close this one
+
+317
+00:13:59,935 --> 00:14:00,959
+So now we have
+
+318
+00:14:01,215 --> 00:14:04,031
+Done some customisation to our router
+
+319
+00:14:04,543 --> 00:14:05,823
+Just by adding those
+
+320
+00:14:06,079 --> 00:14:07,871
+Values to the dynamic get
+
+321
+00:14:08,127 --> 00:14:10,431
+If we compile our components now
+
+322
+00:14:10,687 --> 00:14:13,247
+It will automatically fall back
+
+323
+00:14:14,783 --> 00:14:15,807
+Unto those
+
+324
+00:14:16,063 --> 00:14:16,575
+Values
+
+325
+00:14:19,391 --> 00:14:19,903
+Just
+
+326
+00:14:20,159 --> 00:14:20,927
+install again
+
+327
+00:14:21,183 --> 00:14:22,719
+And now let's go look at the code
+
+328
+00:14:23,743 --> 00:14:25,023
+So we see here
+
+329
+00:14:25,279 --> 00:14:29,375
+That it did exactly what he wanted it added preacher preacher there
+
+330
+00:14:29,631 --> 00:14:30,655
+And this is now
+
+331
+00:14:30,911 --> 00:14:32,959
+Categories is true
+
+332
+00:14:33,471 --> 00:14:34,239
+And
+
+333
+00:14:34,495 --> 00:14:36,543
+We see the series is series
+
+334
+00:14:36,799 --> 00:14:40,127
+And so now at least we know that this actual
+
+335
+00:14:41,663 --> 00:14:43,967
+The router will behave correctly
+
+336
+00:14:44,479 --> 00:14:48,575
+This is the first step of our improvement to the router
+
+337
+00:14:49,855 --> 00:14:52,671
+It seems to me that we already have a very workable
+
+338
+00:14:53,183 --> 00:14:57,791
+Situation and this is really gonna make it too much better
+
+339
+00:14:58,047 --> 00:15:01,887
+There was also the idea of adding some custom scripting into the built
+
+340
+00:15:02,143 --> 00:15:02,655
+Method
+
+341
+00:15:03,935 --> 00:15:05,471
+And we will look at that
+
+342
+00:15:06,495 --> 00:15:07,519
+And I invite
+
+343
+00:15:07,775 --> 00:15:09,567
+You and anyone else too
+
+344
+00:15:09,823 --> 00:15:10,591
+To get involved
+
+345
+00:15:10,847 --> 00:15:14,943
+On this on GitHub just if you know how to improve his even more
+
+346
+00:15:15,455 --> 00:15:16,223
+Then please
+
+347
+00:15:16,479 --> 00:15:19,807
+I get in contact with me and let's let's work together
+
+348
+00:15:20,063 --> 00:15:22,111
+This is so what we've done so far
+
+349
+00:15:22,623 --> 00:15:26,463
+But like an all iterative developing concepts
+
+350
+00:15:26,719 --> 00:15:27,999
+Will continue improving
+
+351
+00:15:28,255 --> 00:15:28,767
+ this
+
+352
+00:15:29,279 --> 00:15:32,095
+To the point where it really serves as well
+
+353
+00:15:32,351 --> 00:15:35,935
+And holds up with changes also happening in Joomla itself
+
+354
+00:15:36,703 --> 00:15:38,239
+Ok well thanks for watching
+

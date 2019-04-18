@@ -1,0 +1,404 @@
+1
+00:00:01,536 --> 00:00:03,072
+This is a quick
+
+2
+00:00:03,328 --> 00:00:06,400
+Sort of tip on how to add a language string
+
+3
+00:00:06,912 --> 00:00:07,936
+To your component
+
+4
+00:00:09,216 --> 00:00:10,752
+Without a language string
+
+5
+00:00:11,776 --> 00:00:13,568
+Being immediately
+
+6
+00:00:14,592 --> 00:00:16,640
+Added to the J text
+
+7
+00:00:17,152 --> 00:00:18,688
+Object function
+
+8
+00:00:19,200 --> 00:00:21,248
+Which translates it of course
+
+9
+00:00:24,320 --> 00:00:25,600
+So let me demonstrate
+
+10
+00:00:26,880 --> 00:00:30,464
+So normal language string you use this J text
+
+11
+00:00:31,232 --> 00:00:32,000
+And you'd
+
+12
+00:00:32,256 --> 00:00:34,048
+Add your string in there
+
+13
+00:00:34,560 --> 00:00:36,864
+And then JCB when it compiles
+
+14
+00:00:37,376 --> 00:00:38,400
+It
+
+15
+00:00:38,656 --> 00:00:40,960
+Actually adds that string to your language file
+
+16
+00:00:41,728 --> 00:00:46,336
+And then when your component runs that string is translated
+
+17
+00:00:46,592 --> 00:00:47,872
+because it has a
+
+18
+00:00:48,128 --> 00:00:49,664
+Placeholder in its place
+
+19
+00:00:50,688 --> 00:00:54,272
+And you can then have multiple places where the string is used
+
+20
+00:00:54,784 --> 00:00:55,552
+So that's
+
+21
+00:00:55,808 --> 00:00:58,880
+Already there and works well the new feature
+
+22
+00:00:59,392 --> 00:00:59,904
+Is
+
+23
+00:01:00,416 --> 00:01:03,488
+Mostly used when you are dealing with a class
+
+24
+00:01:03,744 --> 00:01:05,024
+And you working with a
+
+25
+00:01:05,280 --> 00:01:06,048
+Array
+
+26
+00:01:06,560 --> 00:01:07,584
+In the class
+
+27
+00:01:07,840 --> 00:01:09,120
+And If
+
+28
+00:01:09,376 --> 00:01:12,448
+You want to have class method or rather
+
+29
+00:01:12,704 --> 00:01:13,984
+Fields
+
+30
+00:01:14,752 --> 00:01:16,544
+That is an array of
+
+31
+00:01:16,800 --> 00:01:19,872
+Strings but you can't of course use this
+
+32
+00:01:20,384 --> 00:01:22,432
+In the array of a class
+
+33
+00:01:24,480 --> 00:01:25,504
+Value so
+
+34
+00:01:27,040 --> 00:01:29,344
+That is one place but there are many places
+
+35
+00:01:30,368 --> 00:01:32,928
+Where you could see this in action
+
+36
+00:01:33,184 --> 00:01:37,792
+So what you would wanna do is you want the placeholder to be generated
+
+37
+00:01:38,304 --> 00:01:40,096
+You want the
+
+38
+00:01:40,608 --> 00:01:42,656
+String to be added to the language file
+
+39
+00:01:43,168 --> 00:01:47,776
+But you only want a placeholder as a string to be added to your
+
+40
+00:01:48,032 --> 00:01:48,544
+Script
+
+41
+00:01:49,056 --> 00:01:52,384
+Because only later in the script you're going to add it 
+
+42
+00:01:52,896 --> 00:01:56,224
+ to the Jtext
+
+43
+00:01:57,760 --> 00:02:00,320
+Option to translate this place holder
+
+44
+00:02:00,832 --> 00:02:05,440
+And so often you we would run into such a case well I have in anyway so
+
+45
+00:02:05,696 --> 00:02:06,720
+The way we've
+
+46
+00:02:06,976 --> 00:02:08,768
+ addressed this
+
+47
+00:02:09,280 --> 00:02:10,560
+Is with a new
+
+48
+00:02:11,072 --> 00:02:13,120
+Basically a new name
+
+49
+00:02:13,632 --> 00:02:14,656
+Just text
+
+50
+00:02:14,912 --> 00:02:15,424
+Like that
+
+51
+00:02:15,680 --> 00:02:16,192
+so
+
+52
+00:02:16,448 --> 00:02:19,776
+This part looks exactly the same as the J text
+
+53
+00:02:20,288 --> 00:02:24,640
+So this almost seems like this is a class but it's not really it's just
+
+54
+00:02:24,896 --> 00:02:28,224
+Something that the JCB compiler will pick up
+
+55
+00:02:28,736 --> 00:02:32,320
+And it'll convert this let me show you how it will look when it
+
+56
+00:02:32,576 --> 00:02:33,856
+has converted it
+
+57
+00:02:34,368 --> 00:02:39,488
+And you'll see why it makes sense you see I've got this extra field Properties
+
+58
+00:02:40,000 --> 00:02:41,024
+And it's got these
+
+59
+00:02:41,280 --> 00:02:42,048
+Keys
+
+60
+00:02:42,560 --> 00:02:45,376
+And I want to use the key to get the string
+
+61
+00:02:45,888 --> 00:02:48,192
+So if we go a little lower in the script
+
+62
+00:02:49,216 --> 00:02:51,520
+You see I'm here I'm looping through that
+
+63
+00:02:51,776 --> 00:02:52,544
+array
+
+64
+00:02:53,312 --> 00:02:53,824
+And
+
+65
+00:02:54,080 --> 00:02:55,616
+The value description
+
+66
+00:02:55,872 --> 00:02:59,200
+I'm only here passing it to the J text
+
+67
+00:02:59,712 --> 00:03:00,736
+To translate it
+
+68
+00:03:00,992 --> 00:03:02,016
+So that means
+
+69
+00:03:02,272 --> 00:03:05,344
+I wanna do the this translating later
+
+70
+00:03:05,600 --> 00:03:10,720
+And I actually all I want in this array above here is actually the placeholder string
+
+71
+00:03:11,488 --> 00:03:14,560
+So let me show you that in the code how it actually comes out
+
+72
+00:03:16,352 --> 00:03:21,216
+So in the code here you see the extra field properties and you see it's simply a
+
+73
+00:03:21,472 --> 00:03:23,008
+ a string
+
+74
+00:03:23,520 --> 00:03:26,080
+It actually took away the bracket here
+
+75
+00:03:26,848 --> 00:03:29,152
+ if you look at the way it was
+
+76
+00:03:29,408 --> 00:03:31,200
+So I'm going to paste in the
+
+77
+00:03:31,456 --> 00:03:33,248
+The one from the code
+
+78
+00:03:33,760 --> 00:03:34,784
+Just so that you can
+
+79
+00:03:35,040 --> 00:03:35,552
+see
+
+80
+00:03:35,808 --> 00:03:36,832
+What it's done
+
+81
+00:03:38,112 --> 00:03:39,392
+So here you can see
+
+82
+00:03:40,160 --> 00:03:43,232
+This is what we added in JCB
+
+83
+00:03:43,744 --> 00:03:45,280
+And this is what it did
+
+84
+00:03:45,536 --> 00:03:46,560
+In compilation
+
+85
+00:03:46,816 --> 00:03:49,376
+It added the placeholder string
+
+86
+00:03:49,888 --> 00:03:52,704
+Which we can then use
+
+87
+00:03:52,960 --> 00:03:53,728
+Down here
+
+88
+00:03:54,496 --> 00:03:56,544
+In our Jtext
+
+89
+00:03:57,312 --> 00:03:59,104
+To translate it to get the
+
+90
+00:03:59,616 --> 00:04:00,896
+Specific translated string
+
+91
+00:04:01,408 --> 00:04:07,552
+So that's a way to get the placeholder and to get obviously the string into your language file
+
+92
+00:04:09,344 --> 00:04:12,672
+That's just a little tip I know that
+
+93
+00:04:12,928 --> 00:04:13,952
+It's not very obvious
+
+94
+00:04:14,208 --> 00:04:18,815
+So I hope it will come in handy to those of you who want to add language strings
+
+95
+00:04:19,071 --> 00:04:20,095
+To JCB
+
+96
+00:04:20,607 --> 00:04:23,679
+But you don't want to have it immediately be
+
+97
+00:04:23,935 --> 00:04:27,263
+Part of the  Jtext object
+
+98
+00:04:27,775 --> 00:04:31,871
+Call you want to just have the actual placeholder available
+
+99
+00:04:32,383 --> 00:04:33,919
+for use dynamically
+
+100
+00:04:34,431 --> 00:04:35,967
+This is the way you can do that
+
+101
+00:04:36,223 --> 00:04:38,783
+Thanks for watching enjoy
+

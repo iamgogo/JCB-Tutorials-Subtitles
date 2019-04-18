@@ -1,0 +1,1508 @@
+1
+00:00:01,536 --> 00:00:06,656
+I would like to give you a tutorial on the new snippet manager and how it works
+
+2
+00:00:07,936 --> 00:00:09,984
+We are very excited to announce that
+
+3
+00:00:10,496 --> 00:00:12,544
+We have added a community concept
+
+4
+00:00:12,800 --> 00:00:13,312
+To the Snippets
+
+5
+00:00:13,568 --> 00:00:14,336
+In JCB
+
+6
+00:00:16,128 --> 00:00:16,896
+Previously
+
+7
+00:00:17,152 --> 00:00:18,688
+You could create your own Snippets
+
+8
+00:00:18,944 --> 00:00:19,456
+And then
+
+9
+00:00:19,712 --> 00:00:22,272
+If you would to create a custom admin View
+
+10
+00:00:22,528 --> 00:00:23,808
+A site view a template
+
+11
+00:00:24,064 --> 00:00:24,832
+Or a layout
+
+12
+00:00:25,344 --> 00:00:27,648
+You could access the snippets
+
+13
+00:00:27,904 --> 00:00:28,672
+Through a drop down
+
+14
+00:00:28,928 --> 00:00:30,464
+Let me demonstrate that quickly
+
+15
+00:00:32,256 --> 00:00:33,536
+So now in a site view
+
+16
+00:00:33,792 --> 00:00:35,840
+If I were to click on one of these Snippets
+
+17
+00:00:36,352 --> 00:00:37,376
+You see it loads
+
+18
+00:00:37,632 --> 00:00:38,656
+The snippet here
+
+19
+00:00:38,912 --> 00:00:40,192
+You can copy it from here
+
+20
+00:00:40,960 --> 00:00:41,472
+And
+
+21
+00:00:41,728 --> 00:00:43,264
+You can then place it in your code
+
+22
+00:00:44,544 --> 00:00:45,824
+And so
+
+23
+00:00:46,336 --> 00:00:49,408
+It is possible to actually load many Snippets
+
+24
+00:00:50,688 --> 00:00:51,456
+Now currently
+
+25
+00:00:51,712 --> 00:00:54,784
+We already looking here at the new Snippets
+
+26
+00:00:55,296 --> 00:00:55,808
+Area
+
+27
+00:00:56,320 --> 00:00:57,600
+You see that now
+
+28
+00:00:58,112 --> 00:01:00,160
+We have the type of the snippet
+
+29
+00:01:00,416 --> 00:01:00,928
+First
+
+30
+00:01:01,184 --> 00:01:02,464
+Then the name of the snippet
+
+31
+00:01:02,976 --> 00:01:04,256
+And then the library
+
+32
+00:01:04,512 --> 00:01:05,536
+The snippet belongs to
+
+33
+00:01:06,560 --> 00:01:09,888
+Once you've selected the snippet again and updates here
+
+34
+00:01:10,144 --> 00:01:11,168
+The name of the snippet
+
+35
+00:01:11,680 --> 00:01:12,704
+The type of snippet
+
+36
+00:01:13,216 --> 00:01:14,752
+And the library it belongs to
+
+37
+00:01:15,264 --> 00:01:17,312
+And usually this library is a link
+
+38
+00:01:17,824 --> 00:01:23,200
+It'll open you to the actual documentation on that library's website of the specific snippet
+
+39
+00:01:23,968 --> 00:01:29,088
+So that's all as it used to be nothing fancy nothing much different
+
+40
+00:01:29,856 --> 00:01:30,368
+Yet
+
+41
+00:01:30,624 --> 00:01:32,160
+There is a major change
+
+42
+00:01:32,416 --> 00:01:33,440
+Taken place
+
+43
+00:01:33,696 --> 00:01:34,720
+Because now
+
+44
+00:01:34,976 --> 00:01:37,536
+We have what is known as local Snippets
+
+45
+00:01:38,304 --> 00:01:39,584
+And then community snippets
+
+46
+00:01:40,864 --> 00:01:41,376
+We have
+
+47
+00:01:41,632 --> 00:01:44,448
+Actually enlarge the Snippets area
+
+48
+00:01:44,704 --> 00:01:48,032
+So that you can contribute to the community Snippets
+
+49
+00:01:48,800 --> 00:01:50,848
+And also import
+
+50
+00:01:51,360 --> 00:01:54,432
+From those Snippets that is been added to the community
+
+51
+00:01:54,688 --> 00:01:55,456
+By others
+
+52
+00:01:56,992 --> 00:01:58,784
+Now how does that exactly work
+
+53
+00:01:59,040 --> 00:01:59,552
+Well
+
+54
+00:02:00,832 --> 00:02:02,368
+Snippets that already exist
+
+55
+00:02:02,880 --> 00:02:06,464
+Are usually Snippets that either I made or
+
+56
+00:02:06,720 --> 00:02:08,000
+Someone else and
+
+57
+00:02:08,256 --> 00:02:09,536
+They already have
+
+58
+00:02:09,792 --> 00:02:12,352
+What is known as a contributor
+
+59
+00:02:12,864 --> 00:02:15,424
+The name of the contributor it's email address
+
+60
+00:02:15,680 --> 00:02:16,448
+web adress and so forth
+
+61
+00:02:17,728 --> 00:02:19,264
+So when you create a snippet
+
+62
+00:02:19,776 --> 00:02:21,568
+We will use your details
+
+63
+00:02:22,080 --> 00:02:24,640
+To actually create this contribution
+
+64
+00:02:25,152 --> 00:02:27,200
+So if we open an existing snippet
+
+65
+00:02:28,736 --> 00:02:32,832
+And you go to the contribution area you'd see that there is names in these
+
+66
+00:02:33,088 --> 00:02:33,600
+Fields
+
+67
+00:02:33,856 --> 00:02:35,392
+If there aren't any names
+
+68
+00:02:36,160 --> 00:02:36,928
+Then
+
+69
+00:02:37,440 --> 00:02:41,536
+Well that means the update didn't do exactly what it should have done
+
+70
+00:02:42,048 --> 00:02:43,584
+And when you
+
+71
+00:02:44,096 --> 00:02:45,888
+Go to the Snippets area
+
+72
+00:02:46,656 --> 00:02:49,216
+Where you get Snippets I'll show you that in a moment
+
+73
+00:02:49,728 --> 00:02:53,824
+There is a place for you to actually update all the contributor names
+
+74
+00:02:54,336 --> 00:02:57,408
+And so be sure to have their names actually in the database
+
+75
+00:02:59,200 --> 00:03:03,040
+The reality is these details should actually be in there already
+
+76
+00:03:03,552 --> 00:03:04,576
+If they are not
+
+77
+00:03:04,832 --> 00:03:08,672
+Well it's not a snippet you made so you don't need to really worry about it
+
+78
+00:03:09,184 --> 00:03:12,768
+These details only really apply when you wanna share a snippet
+
+79
+00:03:13,280 --> 00:03:18,400
+And all when you wanna improve a snippet and then we will add the correct details in any way
+
+80
+00:03:18,656 --> 00:03:20,960
+So really it's not to be worried about
+
+81
+00:03:21,728 --> 00:03:25,568
+But here you'll see how the contributed details
+
+82
+00:03:25,824 --> 00:03:26,848
+Are
+
+83
+00:03:27,104 --> 00:03:27,616
+Dealt with
+
+84
+00:03:28,128 --> 00:03:34,016
+We are using your company details that is set in the global options you could click this button to get there
+
+85
+00:03:34,528 --> 00:03:38,368
+Under the company tab of the JCB for the new Snippets you create
+
+86
+00:03:39,136 --> 00:03:41,696
+You cannot change the contributed details after snippet
+
+87
+00:03:41,952 --> 00:03:42,976
+That already exist
+
+88
+00:03:43,488 --> 00:03:45,536
+At this time via this area
+
+89
+00:03:45,792 --> 00:03:47,328
+So that is a simple heads Up
+
+90
+00:03:47,840 --> 00:03:49,888
+This area is really only for
+
+91
+00:03:50,144 --> 00:03:52,192
+The management of the community Snippets
+
+92
+00:03:52,960 --> 00:03:57,312
+If you're not gonna be contributing then this doesn't even matter at all
+
+93
+00:03:58,080 --> 00:03:59,360
+What is important though
+
+94
+00:03:59,616 --> 00:04:00,640
+Is that your snippet
+
+95
+00:04:00,896 --> 00:04:01,408
+be
+
+96
+00:04:01,664 --> 00:04:03,200
+Mapped the same way
+
+97
+00:04:03,456 --> 00:04:05,760
+As the Snippets in the community
+
+98
+00:04:06,272 --> 00:04:08,064
+For example if the grid
+
+99
+00:04:08,832 --> 00:04:11,648
+UI kit version 2 is called layout
+
+100
+00:04:11,904 --> 00:04:12,672
+Then don't change it
+
+101
+00:04:12,928 --> 00:04:17,280
+Because it will then behave like a new snippet and not like an existing one
+
+102
+00:04:17,791 --> 00:04:19,327
+You see because the community
+
+103
+00:04:19,583 --> 00:04:20,607
+Uses the name
+
+104
+00:04:21,119 --> 00:04:23,167
+The library and the type
+
+105
+00:04:23,423 --> 00:04:24,191
+To build
+
+106
+00:04:24,447 --> 00:04:25,727
+The filename
+
+107
+00:04:26,239 --> 00:04:27,263
+The file names
+
+108
+00:04:27,775 --> 00:04:30,591
+Well we'll look at that also as we go along
+
+109
+00:04:31,103 --> 00:04:32,383
+What I mean by file name
+
+110
+00:04:33,151 --> 00:04:34,943
+For now all you really need to know
+
+111
+00:04:35,199 --> 00:04:38,271
+Is it there are a bunch of Snippets already in your component
+
+112
+00:04:38,527 --> 00:04:40,575
+These snippets were shipped with Joomla
+
+113
+00:04:40,831 --> 00:04:41,855
+Component Builder
+
+114
+00:04:42,111 --> 00:04:43,135
+You know
+
+115
+00:04:43,391 --> 00:04:44,159
+So it
+
+116
+00:04:44,415 --> 00:04:45,183
+It means that
+
+117
+00:04:45,439 --> 00:04:46,975
+Really this is how it was
+
+118
+00:04:47,231 --> 00:04:47,743
+By Default
+
+119
+00:04:48,511 --> 00:04:51,583
+But we now have an area called Get Snippets
+
+120
+00:04:52,863 --> 00:04:53,375
+Now
+
+121
+00:04:53,887 --> 00:04:57,983
+If you are one of those who like to get your name out there and want to
+
+122
+00:04:58,495 --> 00:05:02,591
+Become you know involved in the JCB community and have others
+
+123
+00:05:02,847 --> 00:05:04,639
+know about you and so forth
+
+124
+00:05:04,895 --> 00:05:07,455
+Well this is the ideal time to do that
+
+125
+00:05:08,735 --> 00:05:10,015
+If you share a snippet
+
+126
+00:05:10,271 --> 00:05:12,831
+So let say you created this snippet for example
+
+127
+00:05:14,111 --> 00:05:19,231
+Then you would click on Share Snippets or you could take more than one doesn't need to be only one
+
+128
+00:05:19,743 --> 00:05:21,279
+You take and you Clicks share Snippets
+
+129
+00:05:21,535 --> 00:05:23,583
+This will then create a package let me show you
+
+130
+00:05:26,655 --> 00:05:29,727
+So we see that it's created a package it's placed it
+
+131
+00:05:30,239 --> 00:05:31,263
+In this folder
+
+132
+00:05:33,567 --> 00:05:37,407
+And you got a few helper tutorials here to actually get you going
+
+133
+00:05:38,175 --> 00:05:41,759
+So if you wanna learn well this tutorial I'm making now will be
+
+134
+00:05:42,015 --> 00:05:42,783
+This link here
+
+135
+00:05:43,295 --> 00:05:44,575
+And if you wanna learn
+
+136
+00:05:44,831 --> 00:05:45,599
+More about Git
+
+137
+00:05:45,855 --> 00:05:46,623
+It's this one here
+
+138
+00:05:47,135 --> 00:05:48,415
+And if you
+
+139
+00:05:48,671 --> 00:05:51,743
+Want to know how the forking is gonna work then it's this
+
+140
+00:05:51,999 --> 00:05:54,303
+And if you wanna know how to do pull request it
+
+141
+00:05:54,559 --> 00:05:55,327
+It will be this one
+
+142
+00:05:55,839 --> 00:05:58,911
+And if there's any issues you can open an issue on GitHub
+
+143
+00:05:59,679 --> 00:06:02,751
+So this really gives you a sort of a few links and shortcuts
+
+144
+00:06:03,263 --> 00:06:04,287
+To actually get
+
+145
+00:06:04,799 --> 00:06:06,335
+Involved in sharing
+
+146
+00:06:06,847 --> 00:06:07,359
+Snippets
+
+147
+00:06:07,871 --> 00:06:10,431
+What happens when you've share the snippet
+
+148
+00:06:10,687 --> 00:06:13,247
+If someone Clicks on Get Snippets
+
+149
+00:06:13,503 --> 00:06:15,295
+Then they will see your name
+
+150
+00:06:15,807 --> 00:06:16,319
+If that
+
+151
+00:06:16,575 --> 00:06:17,855
+That specific snippet
+
+152
+00:06:18,111 --> 00:06:18,623
+Comes up
+
+153
+00:06:19,135 --> 00:06:20,415
+So let me illustrate that
+
+154
+00:06:20,927 --> 00:06:22,719
+If we click on Get
+
+155
+00:06:22,975 --> 00:06:23,487
+Snippets
+
+156
+00:06:25,279 --> 00:06:26,303
+It might take a moment
+
+157
+00:06:26,559 --> 00:06:29,631
+Depending on how many Snippets are in the repository at this stage
+
+158
+00:06:30,143 --> 00:06:33,471
+Because it buy Ajax it's getting all the Snippets
+
+159
+00:06:33,727 --> 00:06:34,751
+From GitHub
+
+160
+00:06:35,263 --> 00:06:37,055
+And it's building a little page for you
+
+161
+00:06:37,311 --> 00:06:37,823
+There we go
+
+162
+00:06:38,079 --> 00:06:40,383
+It's just loaded the whole bunch of Snippets
+
+163
+00:06:40,895 --> 00:06:43,455
+The first view shows you all the current Snippets
+
+164
+00:06:43,711 --> 00:06:46,783
+In the JCB community Snippets
+
+165
+00:06:47,039 --> 00:06:48,063
+Repository
+
+166
+00:06:48,575 --> 00:06:52,927
+You can go to this repository by Simply clicking on this GitHub link here
+
+167
+00:06:53,439 --> 00:06:54,207
+It will take you there
+
+168
+00:06:55,231 --> 00:06:58,815
+You can see which of these Snippets are ready in sync
+
+169
+00:06:59,071 --> 00:07:00,351
+It's called EQUAL
+
+170
+00:07:00,607 --> 00:07:01,631
+You click on this here
+
+171
+00:07:01,887 --> 00:07:03,423
+It show you what EQUAL means
+
+172
+00:07:05,215 --> 00:07:10,591
+In sync with your local Snippets so it has little Mark here saying it's a local snippet
+
+173
+00:07:10,847 --> 00:07:12,383
+And it is in sync
+
+174
+00:07:12,895 --> 00:07:15,455
+If you don't want to know more about when is a snippet
+
+175
+00:07:15,967 --> 00:07:17,247
+Considered equal
+
+176
+00:07:17,503 --> 00:07:19,807
+Then click on this little button here
+
+177
+00:07:20,063 --> 00:07:21,599
+And also you that like I've said
+
+178
+00:07:22,111 --> 00:07:25,439
+Then if there is a snippet out of date let's say someone
+
+179
+00:07:25,695 --> 00:07:30,559
+Contributed to the community on a specific snippet let's say it this snippet here
+
+180
+00:07:31,071 --> 00:07:34,655
+Someone saw ok if we If we open the snippet
+
+181
+00:07:34,911 --> 00:07:39,519
+They they saw this little snippet and they thought you know we could do better and they improved on it
+
+182
+00:07:41,055 --> 00:07:43,103
+And then shared it with the community
+
+183
+00:07:43,615 --> 00:07:46,687
+Then that snippet will end up in the out-of-date tab
+
+184
+00:07:46,943 --> 00:07:50,271
+If there is no out of date Snippets then all be blank like now
+
+185
+00:07:50,783 --> 00:07:51,807
+But if there is
+
+186
+00:07:52,063 --> 00:07:53,599
+Snippets that are out of date
+
+187
+00:07:53,855 --> 00:07:55,135
+They all show up here
+
+188
+00:07:55,903 --> 00:07:57,439
+Then there is the new tab
+
+189
+00:07:57,695 --> 00:07:58,463
+Now the new tab
+
+190
+00:07:58,719 --> 00:07:59,999
+Well that could be
+
+191
+00:08:00,255 --> 00:08:01,535
+a little bit misleading
+
+192
+00:08:01,791 --> 00:08:07,679
+Because in this example that I'm giving you I went and I deleted a snippet from my Database
+
+193
+00:08:08,447 --> 00:08:11,775
+And since that snippet already exists in the community
+
+194
+00:08:12,031 --> 00:08:13,567
+It realize the system
+
+195
+00:08:13,823 --> 00:08:17,663
+Then detects ok well that snippet isn't here so it must be new
+
+196
+00:08:17,919 --> 00:08:20,223
+That's how it basically worked out that little
+
+197
+00:08:20,479 --> 00:08:21,503
+Some
+
+198
+00:08:21,759 --> 00:08:22,783
+Now you could click on this
+
+199
+00:08:23,039 --> 00:08:24,063
+Get snippet
+
+200
+00:08:24,319 --> 00:08:26,623
+And it will automatically
+
+201
+00:08:27,391 --> 00:08:28,671
+It says here
+
+202
+00:08:28,927 --> 00:08:34,047
+Are you sure would like to add this new JCB community snippet to your local Snippets you says yeah ok
+
+203
+00:08:34,303 --> 00:08:36,351
+And then it goes to GitHub
+
+204
+00:08:36,607 --> 00:08:39,167
+Gets the snippet and moves it to your Database
+
+205
+00:08:39,935 --> 00:08:40,959
+And Boom
+
+206
+00:08:41,215 --> 00:08:41,727
+You done
+
+207
+00:08:41,983 --> 00:08:46,591
+So now this snippet is no longer new if you click here you'll see its oh no new snippets
+
+208
+00:08:46,847 --> 00:08:49,151
+It is now also been added locally
+
+209
+00:08:49,663 --> 00:08:52,479
+Then diverged Snippets is where
+
+210
+00:08:52,735 --> 00:08:57,343
+There is a discrepancy in both the creation date as well as the
+
+211
+00:08:57,599 --> 00:08:58,367
+Modified date
+
+212
+00:08:58,879 --> 00:09:02,975
+And then those snippets will show up here and they can be updated in the same way
+
+213
+00:09:03,487 --> 00:09:07,583
+If you have made a change to a snippet in your local environment
+
+214
+00:09:08,095 --> 00:09:08,863
+And then
+
+215
+00:09:09,119 --> 00:09:12,959
+You've realized oh that changes hasn't been good there's been a better
+
+216
+00:09:13,215 --> 00:09:14,239
+You know
+
+217
+00:09:14,495 --> 00:09:16,543
+Just to return back to the old
+
+218
+00:09:16,799 --> 00:09:18,335
+Community version
+
+219
+00:09:18,591 --> 00:09:20,127
+Then you would come here to the head
+
+220
+00:09:20,383 --> 00:09:21,919
+I made a little change to this
+
+221
+00:09:22,431 --> 00:09:23,199
+Pacific snippet
+
+222
+00:09:23,711 --> 00:09:26,783
+And they'll tell you that the snippet is ahead and if you click on it
+
+223
+00:09:27,039 --> 00:09:27,807
+They'll show you
+
+224
+00:09:28,063 --> 00:09:29,087
+What that would mean
+
+225
+00:09:30,367 --> 00:09:32,415
+You can then click on get snippet
+
+226
+00:09:33,183 --> 00:09:34,975
+To really revert
+
+227
+00:09:35,231 --> 00:09:37,535
+Back to the old one and that's what it will tell you
+
+228
+00:09:37,791 --> 00:09:41,887
+Oh sure you would like to update your local snippet with the older
+
+229
+00:09:42,143 --> 00:09:43,423
+JCB community snippet
+
+230
+00:09:43,935 --> 00:09:48,287
+So you can say no I like my new snippet I don't want to update in just ignore it
+
+231
+00:09:48,799 --> 00:09:51,615
+But if you wanna go back then that there is this option
+
+232
+00:09:51,871 --> 00:09:52,383
+To do so
+
+233
+00:09:52,639 --> 00:09:54,175
+If this is a good snippet
+
+234
+00:09:54,431 --> 00:09:56,991
+You might wanna consider sharing it with the rest of us
+
+235
+00:09:57,503 --> 00:09:59,551
+An and that would be to actually
+
+236
+00:10:00,063 --> 00:10:01,599
+Be to actually do the sharing snippet
+
+237
+00:10:01,855 --> 00:10:04,927
+And go through those tutorials in knowing how that works
+
+238
+00:10:05,951 --> 00:10:08,767
+There is sometimes a situation where a specific
+
+239
+00:10:09,279 --> 00:10:10,303
+one of
+
+240
+00:10:10,559 --> 00:10:11,327
+The community
+
+241
+00:10:11,583 --> 00:10:13,119
+Might be very enthusiastic
+
+242
+00:10:13,375 --> 00:10:17,471
+And he contributes let's say 300 new Snippets to the community Snippets
+
+243
+00:10:17,727 --> 00:10:18,751
+Repository
+
+244
+00:10:19,519 --> 00:10:25,663
+Now that would mean that you know you wanna click on every one of those snippets get snippet get snippet that might be very
+
+245
+00:10:25,919 --> 00:10:26,431
+Tedious
+
+246
+00:10:26,943 --> 00:10:28,991
+So we added this little bulk tool
+
+247
+00:10:29,759 --> 00:10:32,063
+Now the bulk tool is able to
+
+248
+00:10:32,575 --> 00:10:34,367
+Detect whether there are new Snippets
+
+249
+00:10:34,879 --> 00:10:36,671
+And whether they are ahead Snippets
+
+250
+00:10:37,183 --> 00:10:38,463
+Or whether you just wanted
+
+251
+00:10:38,719 --> 00:10:42,047
+Just update all of them with this this just get all Snippets
+
+252
+00:10:42,815 --> 00:10:43,327
+And so
+
+253
+00:10:43,839 --> 00:10:49,215
+If there isn't any diverged or any outdated Snippets it will also not be able to do that
+
+254
+00:10:49,471 --> 00:10:55,103
+So here instead of clicking it one at a time you could just click on this and I'll just update all of them for you
+
+255
+00:10:55,615 --> 00:10:56,895
+And you're done
+
+256
+00:10:57,151 --> 00:11:00,479
+But if you like me and you wanna know exactly what's going on
+
+257
+00:11:00,991 --> 00:11:04,319
+You could go here you could read the description Ok there's no 
+
+258
+00:11:04,575 --> 00:11:05,087
+description
+
+259
+00:11:05,343 --> 00:11:06,367
+See the usage
+
+260
+00:11:07,647 --> 00:11:09,951
+See how the snippet itself looks like
+
+261
+00:11:10,463 --> 00:11:11,999
+And if you really like what you see
+
+262
+00:11:12,255 --> 00:11:15,071
+You might even want to look at who contributed the snippet
+
+263
+00:11:15,583 --> 00:11:18,399
+That brings up an important and yet interesting
+
+264
+00:11:18,911 --> 00:11:19,423
+Concept
+
+265
+00:11:20,191 --> 00:11:25,823
+We have decided that when you contribute a new snippet your name and details will end up here
+
+266
+00:11:26,335 --> 00:11:29,663
+Like I explained earlier when we looked at the contributor area
+
+267
+00:11:31,199 --> 00:11:34,527
+Yet when someone makes minor contributions to the snippet
+
+268
+00:11:34,783 --> 00:11:39,391
+We will not necessarily change or you know place this contribution
+
+269
+00:11:39,647 --> 00:11:41,183
+Contributor's name
+
+270
+00:11:41,695 --> 00:11:42,207
+Instead
+
+271
+00:11:42,463 --> 00:11:46,047
+We will let them show up in the blame view so there is a view
+
+272
+00:11:46,303 --> 00:11:47,839
+Which is called the blame View
+
+273
+00:11:48,351 --> 00:11:51,423
+The blame view shows you who changed what part of the code
+
+274
+00:11:51,935 --> 00:11:52,703
+And when
+
+275
+00:11:52,959 --> 00:11:55,775
+So whenever there is an improvement on any of the Snippets
+
+276
+00:11:56,287 --> 00:12:01,151
+The GitHub repository tools will help us sort of show you
+
+277
+00:12:01,407 --> 00:12:02,431
+Who made those changes
+
+278
+00:12:02,943 --> 00:12:07,039
+So that's how they will be recognised for their contributions is via the blame
+
+279
+00:12:07,551 --> 00:12:11,135
+Where is if you contribute new Snippets to the JCB community
+
+280
+00:12:11,391 --> 00:12:14,207
+You will actually end up having your details show up here
+
+281
+00:12:14,719 --> 00:12:17,023
+And have people be able to click on this link
+
+282
+00:12:17,279 --> 00:12:20,863
+And actually go to the website you put up as your website
+
+283
+00:12:21,119 --> 00:12:25,471
+So it's an ideal way of getting yourself out there in the JCB community
+
+284
+00:12:25,727 --> 00:12:31,871
+And at the same time sharing good snippets with the rest of us and make make our life easier I suppose
+
+285
+00:12:32,383 --> 00:12:33,919
+Anyway and so
+
+286
+00:12:34,175 --> 00:12:37,247
+That is the really looking at the Get Snippets
+
+287
+00:12:37,503 --> 00:12:38,783
+Community area
+
+288
+00:12:39,551 --> 00:12:44,159
+And we're excited about this we hope that this will really faster a lot of
+
+289
+00:12:45,183 --> 00:12:46,207
+Participation
+
+290
+00:12:46,719 --> 00:12:48,511
+And that it will
+
+291
+00:12:49,023 --> 00:12:52,095
+Improve JCB constantly because as you know
+
+292
+00:12:52,351 --> 00:12:54,143
+Snippets are used in these
+
+293
+00:12:54,399 --> 00:12:56,703
+Four key areas custom admin views
+
+294
+00:12:56,959 --> 00:12:58,751
+Site view templates layouts
+
+295
+00:12:59,263 --> 00:12:59,775
+And
+
+296
+00:13:00,031 --> 00:13:01,055
+These areas
+
+297
+00:13:01,567 --> 00:13:05,663
+Are what really the customer sees right the one that uses the component
+
+298
+00:13:06,175 --> 00:13:08,991
+So we wanna always be sure to have the latest and
+
+299
+00:13:09,247 --> 00:13:10,271
+Most
+
+300
+00:13:10,783 --> 00:13:12,831
+Stable Snippets ready in available
+
+301
+00:13:13,087 --> 00:13:14,879
+For everyone using JCB
+
+302
+00:13:16,415 --> 00:13:18,463
+So once you have actually
+
+303
+00:13:19,487 --> 00:13:20,767
+Imported
+
+304
+00:13:21,023 --> 00:13:24,607
+The new snippet you were able to see it at the end of your Snippets
+
+305
+00:13:24,863 --> 00:13:27,423
+So this one is now the latest one we've actually
+
+306
+00:13:27,679 --> 00:13:28,447
+Imported
+
+307
+00:13:28,703 --> 00:13:29,983
+If you open the snippet
+
+308
+00:13:30,239 --> 00:13:33,311
+You see that contributed details are already in place
+
+309
+00:13:34,079 --> 00:13:38,175
+And so these contributed details will be updated as you add new Snippets
+
+310
+00:13:38,943 --> 00:13:40,223
+If for some reason these
+
+311
+00:13:40,479 --> 00:13:41,503
+Details are not
+
+312
+00:13:41,759 --> 00:13:45,087
+In place it will say Dynamic value let me show you there
+
+313
+00:13:45,599 --> 00:13:46,623
+Please create a new one
+
+314
+00:13:47,903 --> 00:13:48,415
+Like this
+
+315
+00:13:49,439 --> 00:13:49,951
+So
+
+316
+00:13:50,207 --> 00:13:51,487
+It says Dynamic field
+
+317
+00:13:52,255 --> 00:13:55,071
+When you have created your snippet I'm just gonna do a
+
+318
+00:13:55,839 --> 00:13:56,351
+Simple
+
+319
+00:13:56,607 --> 00:13:57,375
+Test here
+
+320
+00:13:58,143 --> 00:13:59,167
+to illustrate this
+
+321
+00:14:01,471 --> 00:14:02,751
+Ok so it's obviously
+
+322
+00:14:03,263 --> 00:14:03,775
+A test
+
+323
+00:14:04,287 --> 00:14:05,823
+And you click save
+
+324
+00:14:06,079 --> 00:14:06,591
+oh missed a value
+
+325
+00:14:11,711 --> 00:14:12,735
+And you click save
+
+326
+00:14:13,247 --> 00:14:14,271
+It will first
+
+327
+00:14:14,783 --> 00:14:16,063
+Search the
+
+328
+00:14:17,343 --> 00:14:23,231
+JCB snippet repository to see if there really is a snippet with this kind of a relationship
+
+329
+00:14:23,487 --> 00:14:25,535
+Between the name the type and the library
+
+330
+00:14:26,047 --> 00:14:27,327
+If it doesn't exist
+
+331
+00:14:27,583 --> 00:14:30,911
+It will go to your Global area like explained
+
+332
+00:14:31,167 --> 00:14:32,959
+And they will get your details
+
+333
+00:14:33,471 --> 00:14:35,519
+And dynamically added in
+
+334
+00:14:35,775 --> 00:14:36,287
+to
+
+335
+00:14:36,543 --> 00:14:37,823
+The the snippet
+
+336
+00:14:39,871 --> 00:14:40,639
+So there we go
+
+337
+00:14:40,895 --> 00:14:42,687
+Its obviously found my details
+
+338
+00:14:42,943 --> 00:14:43,711
+and put it in there
+
+339
+00:14:44,223 --> 00:14:46,783
+So that is how this details get set
+
+340
+00:14:47,039 --> 00:14:49,087
+When you create a snippet a new one
+
+341
+00:14:49,343 --> 00:14:51,391
+It will fall back to your details
+
+342
+00:14:51,647 --> 00:14:53,183
+If that snippets name
+
+343
+00:14:53,439 --> 00:14:58,303
+Type and library relationship doesn't already exist in the JCB
+
+344
+00:14:58,559 --> 00:14:59,583
+Community
+
+345
+00:15:00,095 --> 00:15:01,631
+Now if for some reason
+
+346
+00:15:02,143 --> 00:15:03,167
+It does exist
+
+347
+00:15:03,423 --> 00:15:04,447
+It will actually
+
+348
+00:15:04,703 --> 00:15:08,543
+Take the initial contributors details and add that in there
+
+349
+00:15:09,311 --> 00:15:12,639
+That's how it works at this stage maybe there is better ways but
+
+350
+00:15:12,895 --> 00:15:15,455
+For now this is how we will start at least
+
+351
+00:15:15,711 --> 00:15:21,855
+And I'm sure it will evolve and change as we go along until we are able to actually
+
+352
+00:15:22,111 --> 00:15:23,903
+satisfy all and everyone's needs
+
+353
+00:15:25,439 --> 00:15:27,231
+I think that's enough of an overview
+
+354
+00:15:27,487 --> 00:15:29,023
+Of how everything works
+
+355
+00:15:29,535 --> 00:15:30,303
+So you've
+
+356
+00:15:30,559 --> 00:15:33,887
+Seen how to use the Snippets in your components
+
+357
+00:15:34,399 --> 00:15:35,679
+You've seen how to
+
+358
+00:15:35,935 --> 00:15:38,751
+Start initial steps of sharing a snippet
+
+359
+00:15:39,263 --> 00:15:41,311
+You simply select them like I showed you
+
+360
+00:15:41,823 --> 00:15:42,847
+Obviously
+
+361
+00:15:43,103 --> 00:15:47,711
+Only when you have improved on it or whether you've created new ones will you ever wanna do that
+
+362
+00:15:48,479 --> 00:15:51,295
+And then you click on Share snippet and gives you a package
+
+363
+00:15:51,807 --> 00:15:52,319
+And
+
+364
+00:15:52,575 --> 00:15:53,855
+Then on that it
+
+365
+00:15:54,111 --> 00:15:55,391
+Let me just show you again
+
+366
+00:15:58,975 --> 00:16:00,767
+On that it has a
+
+367
+00:16:01,023 --> 00:16:02,303
+Few tutorials like
+
+368
+00:16:02,815 --> 00:16:05,119
+Tutorials I'm forking the JCB Snippets
+
+369
+00:16:05,887 --> 00:16:06,399
+And
+
+370
+00:16:06,911 --> 00:16:08,959
+Tutorial making a pull request
+
+371
+00:16:09,471 --> 00:16:11,519
+These two tutorials would be quite key
+
+372
+00:16:11,775 --> 00:16:14,079
+For you to understand what would be this next steps
+
+373
+00:16:14,591 --> 00:16:15,871
+And getting your Snippets
+
+374
+00:16:16,127 --> 00:16:17,663
+Into the JCB community
+
+375
+00:16:18,431 --> 00:16:19,967
+Well thank you for watching
+
+376
+00:16:20,479 --> 00:16:21,247
+And
+
+377
+00:16:21,503 --> 00:16:23,039
+Yeah Until next time
+

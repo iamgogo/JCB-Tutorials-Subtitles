@@ -1,0 +1,1880 @@
+1
+00:00:01,024 --> 00:00:01,536
+Hi
+
+2
+00:00:02,816 --> 00:00:05,632
+We've looked at setting up admin views we've looked at
+
+3
+00:00:06,144 --> 00:00:08,448
+Creating fields for admin views
+
+4
+00:00:08,960 --> 00:00:14,336
+We've looked at setting up field types and how to use field types to create fields
+
+5
+00:00:15,104 --> 00:00:16,896
+Now we would like to look at
+
+6
+00:00:17,152 --> 00:00:20,224
+Setting the admin views to the component
+
+7
+00:00:21,248 --> 00:00:26,112
+Obviously the component itself has so much things that you can do
+
+8
+00:00:26,368 --> 00:00:27,648
+I'm gonna try and
+
+9
+00:00:27,904 --> 00:00:28,672
+Deal with it
+
+10
+00:00:28,928 --> 00:00:29,952
+Little at a time
+
+11
+00:00:30,464 --> 00:00:33,536
+So I'm first gonna just look at adding
+
+12
+00:00:34,304 --> 00:00:34,816
+The
+
+13
+00:00:35,328 --> 00:00:37,376
+Admin views to a component
+
+14
+00:00:38,144 --> 00:00:39,168
+Ok so
+
+15
+00:00:39,424 --> 00:00:40,704
+We'll go to components
+
+16
+00:00:42,496 --> 00:00:44,544
+And will go to sermon distributor
+
+17
+00:00:52,736 --> 00:00:54,272
+And you would go to settings
+
+18
+00:00:54,784 --> 00:00:56,064
+Here you'd see
+
+19
+00:00:56,832 --> 00:00:57,856
+Admin views
+
+20
+00:00:59,648 --> 00:01:05,792
+So to connect admin views to your component and you need to go to settings and open this button here
+
+21
+00:01:07,840 --> 00:01:10,400
+Usually when you start it will look like this
+
+22
+00:01:14,240 --> 00:01:16,032
+So very straight forward
+
+23
+00:01:16,288 --> 00:01:17,568
+You have a drop down here
+
+24
+00:01:18,080 --> 00:01:20,128
+And you make a selection selection
+
+25
+00:01:20,896 --> 00:01:22,176
+And then click next
+
+26
+00:01:22,944 --> 00:01:24,224
+And you do the next one
+
+27
+00:01:24,992 --> 00:01:28,832
+And if you have a lot of Admin views like I Do here
+
+28
+00:01:29,088 --> 00:01:29,600
+You would
+
+29
+00:01:30,112 --> 00:01:32,672
+Type in the name of the admin View
+
+30
+00:01:33,184 --> 00:01:35,488
+And there you have it
+
+31
+00:01:36,256 --> 00:01:39,328
+So I'm gonna type in the name here sermon
+
+32
+00:01:41,120 --> 00:01:44,448
+Now these icons here I spoken about them previously
+
+33
+00:01:45,216 --> 00:01:47,520
+They are the icons from Joomla
+
+34
+00:01:48,800 --> 00:01:50,592
+Which is called I think I let me just look
+
+35
+00:01:54,432 --> 00:01:55,200
+Standard
+
+36
+00:01:55,456 --> 00:01:57,248
+Icomoon font
+
+37
+00:01:58,016 --> 00:01:59,296
+Ok so it's this
+
+38
+00:01:59,552 --> 00:02:00,576
+This font here
+
+39
+00:02:01,600 --> 00:02:02,112
+Now
+
+40
+00:02:02,368 --> 00:02:03,904
+If you select a
+
+41
+00:02:05,440 --> 00:02:06,720
+an icon here
+
+42
+00:02:06,976 --> 00:02:11,072
+It'll show you that little icon but only during the selection face
+
+43
+00:02:11,584 --> 00:02:12,352
+So
+
+44
+00:02:12,864 --> 00:02:14,144
+That is the icon
+
+45
+00:02:14,656 --> 00:02:15,936
+That is gonna be used
+
+46
+00:02:17,472 --> 00:02:18,496
+For the view
+
+47
+00:02:19,264 --> 00:02:20,288
+Here in the right
+
+48
+00:02:20,544 --> 00:02:22,080
+See this icon there
+
+49
+00:02:22,336 --> 00:02:23,616
+As we click through
+
+50
+00:02:24,384 --> 00:02:25,664
+Component Builder
+
+51
+00:02:25,920 --> 00:02:27,456
+It updates that icon
+
+52
+00:02:28,224 --> 00:02:29,504
+Ok so this icon
+
+53
+00:02:30,016 --> 00:02:31,552
+Is what is being set here
+
+54
+00:02:33,088 --> 00:02:35,136
+Now you can select the icons to
+
+55
+00:02:35,392 --> 00:02:35,904
+Reflect
+
+56
+00:02:36,416 --> 00:02:38,976
+to the admin view of your choice
+
+57
+00:02:39,488 --> 00:02:42,816
+Now we have a bunch of switches here and I'll look at them one at a time
+
+58
+00:02:43,840 --> 00:02:45,120
+Now admin menu
+
+59
+00:02:45,632 --> 00:02:47,424
+Is basically this menu
+
+60
+00:02:49,216 --> 00:02:54,080
+So the question is do you want that View to show up next to your main
+
+61
+00:02:54,592 --> 00:02:55,360
+View
+
+62
+00:02:56,384 --> 00:02:57,408
+I'll be the first
+
+63
+00:02:57,920 --> 00:02:58,688
+Tick box
+
+64
+00:02:58,944 --> 00:03:00,224
+So we would say yes
+
+65
+00:03:00,736 --> 00:03:01,248
+Then
+
+66
+00:03:01,760 --> 00:03:04,064
+Do you want to have an add record
+
+67
+00:03:04,576 --> 00:03:05,344
+Icon
+
+68
+00:03:05,600 --> 00:03:06,624
+For this view
+
+69
+00:03:06,880 --> 00:03:09,696
+Now the add record icon if you go to the dashboard
+
+70
+00:03:10,720 --> 00:03:11,488
+Is this
+
+71
+00:03:11,744 --> 00:03:12,768
+This icon here
+
+72
+00:03:13,536 --> 00:03:16,864
+Basically a shortcut to creating an admin View
+
+73
+00:03:17,120 --> 00:03:18,144
+From the dashboard
+
+74
+00:03:19,168 --> 00:03:19,680
+So
+
+75
+00:03:20,192 --> 00:03:21,216
+Will say yes
+
+76
+00:03:22,752 --> 00:03:23,520
+Then
+
+77
+00:03:24,032 --> 00:03:27,872
+A dashboard list of records icon
+
+78
+00:03:28,128 --> 00:03:31,968
+So maybe you don't want this icon just a Add new
+
+79
+00:03:32,224 --> 00:03:33,248
+Then you can tick that as no
+
+80
+00:03:35,808 --> 00:03:37,600
+But again here we would like yes
+
+81
+00:03:38,112 --> 00:03:39,392
+Then a submenu
+
+82
+00:03:39,648 --> 00:03:41,440
+Now the submenu if you've opened
+
+83
+00:03:42,208 --> 00:03:43,488
+Your
+
+84
+00:03:43,744 --> 00:03:47,328
+View that has a submenu here that can collapse away
+
+85
+00:03:48,352 --> 00:03:49,632
+Now this submenu
+
+86
+00:03:50,144 --> 00:03:52,704
+You can add this view
+
+87
+00:03:53,472 --> 00:03:55,008
+To the sub menu or not
+
+88
+00:03:56,032 --> 00:03:57,056
+Then
+
+89
+00:03:57,568 --> 00:03:58,848
+auto check-in
+
+90
+00:03:59,104 --> 00:03:59,872
+Is a
+
+91
+00:04:00,896 --> 00:04:06,784
+Little tweak that I've added to to my Joomla components and I'm possibly gonna
+
+92
+00:04:07,296 --> 00:04:10,112
+Make a pull request to add it to Joomla itself
+
+93
+00:04:10,880 --> 00:04:11,392
+What
+
+94
+00:04:11,648 --> 00:04:13,184
+auto check-in does
+
+95
+00:04:13,696 --> 00:04:16,000
+Is it Adds a feature to your component
+
+96
+00:04:16,512 --> 00:04:18,815
+Since you see I have clients that complaint
+
+97
+00:04:19,071 --> 00:04:21,375
+That some people will open an item
+
+98
+00:04:21,887 --> 00:04:25,471
+And then in the browser click back instead of clicking clothes
+
+99
+00:04:26,239 --> 00:04:28,287
+And that will keep the item locked out
+
+100
+00:04:28,543 --> 00:04:29,311
+to that
+
+101
+00:04:29,823 --> 00:04:30,591
+Individual
+
+102
+00:04:31,103 --> 00:04:34,943
+And so others cannot access it on less they have admin rights to check it back in
+
+103
+00:04:35,967 --> 00:04:37,759
+So we created an auto check-in
+
+104
+00:04:38,015 --> 00:04:39,295
+Now auto check-in checks
+
+105
+00:04:39,551 --> 00:04:43,391
+Whether this item has been checked out longer than a set period
+
+106
+00:04:44,159 --> 00:04:48,767
+and ever it has been it checks it in automatically know that set period Is
+
+107
+00:04:49,279 --> 00:04:54,399
+Something that the administrative sets in the global settings of the component
+
+108
+00:04:54,655 --> 00:04:56,191
+I'll show you that later
+
+109
+00:04:56,447 --> 00:04:57,471
+Just that you know
+
+110
+00:04:57,727 --> 00:05:00,031
+You can add auto check-in to a view
+
+111
+00:05:00,543 --> 00:05:02,335
+By either saying yes or no here
+
+112
+00:05:03,359 --> 00:05:06,431
+Then keeping history of a
+
+113
+00:05:07,711 --> 00:05:08,735
+Backend view
+
+114
+00:05:09,247 --> 00:05:15,135
+Now the history component I must tell you is maybe one of them most exciting things that I could integrate
+
+115
+00:05:16,159 --> 00:05:19,743
+You see what it does is it keeps track of every change you make
+
+116
+00:05:20,255 --> 00:05:23,583
+In any article or any item in your application
+
+117
+00:05:24,351 --> 00:05:25,375
+So for example
+
+118
+00:05:26,143 --> 00:05:28,447
+If I was to go to
+
+119
+00:05:28,959 --> 00:05:30,495
+Let's just look at just a moment
+
+120
+00:05:33,823 --> 00:05:35,103
+To a Preacher
+
+121
+00:05:36,639 --> 00:05:39,199
+And I would open up this acapella music
+
+122
+00:05:43,551 --> 00:05:46,367
+You'd see that it has that version button here at the top
+
+123
+00:05:47,903 --> 00:05:51,743
+No if I was gonna make a change here let's say I typed in
+
+124
+00:05:53,279 --> 00:05:55,583
+Info@vdm
+
+125
+00:05:56,095 --> 00:05:57,375
+And I set
+
+126
+00:05:57,631 --> 00:06:00,447
+Some text here
+
+127
+00:06:01,983 --> 00:06:03,263
+And I clicked save
+
+128
+00:06:06,335 --> 00:06:08,127
+And then I clicked on version
+
+129
+00:06:09,407 --> 00:06:12,223
+You see that it's now locked a new version
+
+130
+00:06:13,759 --> 00:06:15,039
+And there are the old ones
+
+131
+00:06:15,551 --> 00:06:19,135
+And I could click on one of the old ones and click Well
+
+132
+00:06:19,391 --> 00:06:22,463
+First let me say I could take the one I'm on currently
+
+133
+00:06:22,975 --> 00:06:24,255
+And I get say keep
+
+134
+00:06:25,023 --> 00:06:27,583
+That would sort of lock it in because
+
+135
+00:06:27,839 --> 00:06:32,959
+You can also set how long How long How long amount of History should the system keep
+
+136
+00:06:33,471 --> 00:06:39,615
+The default is 10, 10 changes so I can click on the previous version and say restore
+
+137
+00:06:40,639 --> 00:06:43,967
+And this will restore it and you see there
+
+138
+00:06:44,223 --> 00:06:47,039
+Email address is gone and this description is gone
+
+139
+00:06:47,807 --> 00:06:51,903
+If I want to go back to the one I have done I could just click there on version again
+
+140
+00:06:52,415 --> 00:06:54,719
+I then click there and also restore
+
+141
+00:06:55,743 --> 00:06:56,511
+And
+
+142
+00:06:56,767 --> 00:06:57,279
+Now
+
+143
+00:06:57,535 --> 00:06:58,815
+We would see wow
+
+144
+00:06:59,071 --> 00:07:00,863
+The details are Back Again
+
+145
+00:07:01,375 --> 00:07:06,495
+That is the feature of history now history component is actually a Joomla extension
+
+146
+00:07:07,007 --> 00:07:07,519
+Which
+
+147
+00:07:07,775 --> 00:07:11,103
+You're able as a application to the component developer
+
+148
+00:07:11,359 --> 00:07:12,895
+Integrate into your own
+
+149
+00:07:13,407 --> 00:07:14,687
+Components
+
+150
+00:07:14,943 --> 00:07:17,759
+And it's not that easy in fact it's maybe very
+
+151
+00:07:18,015 --> 00:07:18,527
+Difficult
+
+152
+00:07:19,039 --> 00:07:22,367
+If I was to show you the amount of code let me do that
+
+153
+00:07:23,647 --> 00:07:24,671
+That you need to write
+
+154
+00:07:26,463 --> 00:07:29,023
+First of all you need to add
+
+155
+00:07:29,279 --> 00:07:32,351
+An asset ID to all your
+
+156
+00:07:32,607 --> 00:07:34,911
+Backend view database tables
+
+157
+00:07:35,679 --> 00:07:37,215
+So if we were to go to
+
+158
+00:07:37,727 --> 00:07:39,263
+sermon distributor
+
+159
+00:07:39,775 --> 00:07:40,287
+And check our wait this is the
+
+160
+00:07:42,335 --> 00:07:44,127
+Frontend let's go to the backend
+
+161
+00:07:48,735 --> 00:07:50,783
+And we check out it's sql table so we'll click on that
+
+162
+00:07:53,855 --> 00:07:56,671
+You'd see that all of them have asset_ids
+
+163
+00:07:59,231 --> 00:07:59,999
+Now
+
+164
+00:08:00,767 --> 00:08:01,535
+That is
+
+165
+00:08:02,047 --> 00:08:03,839
+Really not as easy as it is
+
+166
+00:08:04,607 --> 00:08:06,399
+Once you've got the asset_id
+
+167
+00:08:06,655 --> 00:08:07,935
+Then in your model
+
+168
+00:08:09,727 --> 00:08:12,031
+When you basically save
+
+169
+00:08:15,871 --> 00:08:17,151
+Sorry not in the model
+
+170
+00:08:17,919 --> 00:08:18,943
+I think it is in table
+
+171
+00:08:23,039 --> 00:08:25,855
+When you start your table you should set up observers
+
+172
+00:08:27,135 --> 00:08:28,671
+The check
+
+173
+00:08:28,927 --> 00:08:29,951
+The specific
+
+174
+00:08:30,975 --> 00:08:33,023
+Item to add history options
+
+175
+00:08:33,279 --> 00:08:33,791
+to
+
+176
+00:08:34,047 --> 00:08:34,559
+to that
+
+177
+00:08:35,839 --> 00:08:36,863
+Asset_id
+
+178
+00:08:38,399 --> 00:08:40,703
+So this is this is part of the whole
+
+179
+00:08:41,215 --> 00:08:45,311
+Part of the script that is being add this is being added on the right place
+
+180
+00:08:45,567 --> 00:08:47,359
+As well as in the store method
+
+181
+00:08:49,151 --> 00:08:50,431
+There is another
+
+182
+00:08:50,943 --> 00:08:51,967
+Tweak which I
+
+183
+00:08:52,479 --> 00:08:54,527
+might take too long to look at all of that
+
+184
+00:08:54,783 --> 00:08:58,367
+Will go into more detail in the advanced courses I suppose
+
+185
+00:08:58,879 --> 00:09:00,159
+But just let you know
+
+186
+00:09:00,927 --> 00:09:03,231
+I create an import export method
+
+187
+00:09:03,743 --> 00:09:06,815
+And even in the import and export of data actually
+
+188
+00:09:07,071 --> 00:09:09,631
+Primarily in importing of data
+
+189
+00:09:09,887 --> 00:09:11,167
+You need to again
+
+190
+00:09:12,191 --> 00:09:17,567
+Do a quite advanced trick to ensure that the history of that I can will still be tracked
+
+191
+00:09:18,335 --> 00:09:23,455
+and these kind of features I just added dynamically to your component because of that switch
+
+192
+00:09:24,223 --> 00:09:28,575
+No that's not the only code the code that really throws people out I suppose
+
+193
+00:09:28,831 --> 00:09:30,367
+Is this script code
+
+194
+00:09:31,135 --> 00:09:32,927
+and this is if Script that is used
+
+195
+00:09:33,183 --> 00:09:34,719
+When the component installs
+
+196
+00:09:35,487 --> 00:09:36,767
+So if you look at this
+
+197
+00:09:37,279 --> 00:09:40,607
+This is the uninstall area in the script code
+
+198
+00:09:40,863 --> 00:09:47,007
+Which runs when you uninstall the component and it's looking in many places it's looking in content-type it's
+
+199
+00:09:47,263 --> 00:09:48,287
+Looking in the content
+
+200
+00:09:48,543 --> 00:09:49,311
+Tag map
+
+201
+00:09:49,567 --> 00:09:51,871
+Is looking in the ucm base
+
+202
+00:09:52,127 --> 00:09:55,711
+Looking in the content types again and per view I mean
+
+203
+00:09:56,223 --> 00:09:56,991
+This is not just
+
+204
+00:09:57,503 --> 00:10:02,879
+Once off per view these checks are done and we are removing any items
+
+205
+00:10:03,135 --> 00:10:04,671
+That might remain there
+
+206
+00:10:04,927 --> 00:10:06,975
+Because when you uninstall a component
+
+207
+00:10:07,487 --> 00:10:09,023
+What you don't realize
+
+208
+00:10:09,279 --> 00:10:15,423
+Is it so integrated into the Joomla system that just removing it's on tables actually doesn't do the job
+
+209
+00:10:15,935 --> 00:10:22,079
+So we added the feature that if you uninstall it actually cleans the Joomla system of that extension
+
+210
+00:10:22,335 --> 00:10:28,479
+Completely which is ideal because you won't want any traces left you you would like to uninstall something
+
+211
+00:10:28,735 --> 00:10:30,015
+You want it gone
+
+212
+00:10:30,271 --> 00:10:34,367
+And so this uninstall method does exactly that
+
+213
+00:10:34,623 --> 00:10:37,439
+And then with the installing of this component we
+
+214
+00:10:39,743 --> 00:10:42,303
+get here which is the postflight install
+
+215
+00:10:42,559 --> 00:10:44,095
+We actually add
+
+216
+00:10:44,351 --> 00:10:45,887
+Many records to
+
+217
+00:10:46,143 --> 00:10:49,471
+Areas inside of Joomla so for example
+
+218
+00:10:49,983 --> 00:10:52,799
+Inside of the let me see
+
+219
+00:10:54,591 --> 00:10:55,871
+the contents type
+
+220
+00:10:57,151 --> 00:10:59,711
+We we need to add this information
+
+221
+00:11:01,503 --> 00:11:04,575
+And we have to do it for every view which you've selected
+
+222
+00:11:04,831 --> 00:11:06,623
+either tags or
+
+223
+00:11:07,903 --> 00:11:08,415
+History
+
+224
+00:11:10,463 --> 00:11:13,279
+We'll look at the tags in the category concept
+
+225
+00:11:13,535 --> 00:11:14,303
+Just a little bit
+
+226
+00:11:14,559 --> 00:11:15,327
+Later
+
+227
+00:11:16,095 --> 00:11:18,399
+Just to get a heads up and I realize this is not the place for it
+
+228
+00:11:18,655 --> 00:11:20,959
+But let me just say we will look at that OK so let me continue
+
+229
+00:11:21,215 --> 00:11:27,359
+Ok content types as you see we are adding it for the
+
+230
+00:11:27,615 --> 00:11:32,223
+Sermons we adding it for the series's we're adding it for the statistics and for the help documents
+
+231
+00:11:32,479 --> 00:11:36,319
+And that is when we install their component we are needs to add
+
+232
+00:11:36,575 --> 00:11:39,647
+You not seeing the whole picture let me scroll a bit look at that
+
+233
+00:11:39,903 --> 00:11:41,695
+String that needs to be
+
+234
+00:11:42,719 --> 00:11:43,743
+Written and
+
+235
+00:11:44,255 --> 00:11:45,791
+Added to the database
+
+236
+00:11:46,047 --> 00:11:47,839
+Of these specific areas
+
+237
+00:11:48,095 --> 00:11:53,471
+To create that integration where it will track the object change and just do it automatically
+
+238
+00:11:54,239 --> 00:11:57,311
+So all this is generated by component Builder
+
+239
+00:11:57,823 --> 00:12:00,639
+And then when you do an update now here is the issue
+
+240
+00:12:00,895 --> 00:12:03,711
+When you do an update and you're adding a new
+
+241
+00:12:04,735 --> 00:12:05,503
+Field
+
+242
+00:12:05,759 --> 00:12:06,527
+to I view
+
+243
+00:12:08,063 --> 00:12:12,927
+This update will make sure that that specific field also will get tracked
+
+244
+00:12:13,183 --> 00:12:14,719
+So what it first does
+
+245
+00:12:14,975 --> 00:12:20,863
+Is it gets the data it tries to see whether it already exists if it exists
+
+246
+00:12:21,375 --> 00:12:22,399
+It means it's here
+
+247
+00:12:22,655 --> 00:12:24,191
+It just updates it
+
+248
+00:12:24,703 --> 00:12:27,263
+If it's been for some reason removed
+
+249
+00:12:27,519 --> 00:12:28,799
+It then inserts it
+
+250
+00:12:29,311 --> 00:12:30,847
+So that is the update method
+
+251
+00:12:31,359 --> 00:12:35,711
+The update method also takes care of the little lot of discrepancies
+
+252
+00:12:37,503 --> 00:12:40,575
+Because as you develop your extension now
+
+253
+00:12:41,087 --> 00:12:43,135
+These two faces to development
+
+254
+00:12:43,647 --> 00:12:47,231
+The one fase when you're busy building it and no one else in the world that has it
+
+255
+00:12:47,743 --> 00:12:52,863
+That's very easy face in fact then you don't really use this nice feature
+
+256
+00:12:53,119 --> 00:12:57,727
+You just uninstall it and reinstall it every time until you happy with what you see
+
+257
+00:12:58,495 --> 00:13:04,639
+But then once you put it out in the public you can't just step up your database structure without
+
+258
+00:13:04,895 --> 00:13:07,967
+The needed scripting for others to do a easy upgrade
+
+259
+00:13:08,223 --> 00:13:13,599
+Because they already got data in the database there can't just uninstall and install
+
+260
+00:13:13,855 --> 00:13:15,391
+That's that's ridiculous
+
+261
+00:13:15,647 --> 00:13:19,231
+No component builder has a way for you to actually address that
+
+262
+00:13:20,255 --> 00:13:24,095
+Well obviously because I have to deal with it and I don't wanna have my clients complain
+
+263
+00:13:24,351 --> 00:13:30,239
+So I added a feature which will look at it inside of component Builders component area
+
+264
+00:13:32,287 --> 00:13:38,431
+and I'll explain it in detail but just that you know this part of the update feature you making use of
+
+265
+00:13:39,455 --> 00:13:43,807
+You're a specific integration to keep track of your
+
+266
+00:13:44,063 --> 00:13:45,599
+Backend view changes
+
+267
+00:13:46,111 --> 00:13:49,183
+To items is in Place already
+
+268
+00:13:49,439 --> 00:13:52,511
+Written by component Builders telling you here
+
+269
+00:13:52,767 --> 00:13:54,559
+On which line it was done
+
+270
+00:13:55,071 --> 00:13:56,607
+If you have that switch trip
+
+271
+00:13:57,119 --> 00:14:00,447
+Ok so that is just giving you a quick glimpse into the code
+
+272
+00:14:00,959 --> 00:14:01,471
+Of
+
+273
+00:14:01,983 --> 00:14:03,263
+A little switch
+
+274
+00:14:06,079 --> 00:14:07,103
+Sorry
+
+275
+00:14:08,639 --> 00:14:09,919
+a Little switch called
+
+276
+00:14:10,175 --> 00:14:10,943
+Keep history
+
+277
+00:14:11,967 --> 00:14:15,551
+So this weeks does all that for you for this specific View
+
+278
+00:14:16,063 --> 00:14:17,087
+Then
+
+279
+00:14:17,343 --> 00:14:23,487
+Depending on whether you gonna use this views information on the front end as your main base for your
+
+280
+00:14:23,743 --> 00:14:26,559
+For your page you might wanna add
+
+281
+00:14:26,815 --> 00:14:27,583
+Metadata
+
+282
+00:14:28,095 --> 00:14:30,655
+The metadata is I know isn't that
+
+283
+00:14:31,167 --> 00:14:33,215
+Useful anymore but you know what
+
+284
+00:14:33,727 --> 00:14:37,311
+Although Google and others are maybe ignoring it
+
+285
+00:14:38,847 --> 00:14:41,919
+It still plays a role to making a page
+
+286
+00:14:42,175 --> 00:14:44,479
+Very search engine optimised
+
+287
+00:14:44,735 --> 00:14:46,527
+Component Builder
+
+288
+00:14:47,039 --> 00:14:47,551
+If
+
+289
+00:14:47,807 --> 00:14:50,879
+If you do your homework and you do things right
+
+290
+00:14:51,391 --> 00:14:55,487
+In relationship to implementation of your metadata
+
+291
+00:14:56,511 --> 00:15:01,631
+You'd see that it actually adds tremendous good features to
+
+292
+00:15:01,887 --> 00:15:03,423
+Do your front end of your site
+
+293
+00:15:04,447 --> 00:15:07,263
+So I would suggest that you add
+
+294
+00:15:07,519 --> 00:15:13,663
+Metadata when you are gonna use a specific area to the front and when we start looking at us setting up the site
+
+295
+00:15:13,919 --> 00:15:14,431
+Views
+
+296
+00:15:14,943 --> 00:15:16,223
+You'll see this
+
+297
+00:15:16,479 --> 00:15:18,015
+Coming up again and
+
+298
+00:15:18,271 --> 00:15:19,807
+The necessity of using it
+
+299
+00:15:20,575 --> 00:15:26,719
+Obviously you'll be remodeling the data because you can get relationship from many databases but
+
+300
+00:15:26,975 --> 00:15:29,791
+You need the area in the backend to get the data right
+
+301
+00:15:30,559 --> 00:15:32,863
+Ok then this access switch
+
+302
+00:15:33,631 --> 00:15:34,655
+Might throw you out
+
+303
+00:15:34,911 --> 00:15:36,191
+This simply adds
+
+304
+00:15:36,447 --> 00:15:37,727
+The following feature
+
+305
+00:15:37,983 --> 00:15:41,311
+If you open an article in the open publish
+
+306
+00:15:41,567 --> 00:15:43,359
+It says here access
+
+307
+00:15:43,615 --> 00:15:45,663
+Public super registered
+
+308
+00:15:45,919 --> 00:15:48,223
+Which is relating to your user
+
+309
+00:15:49,759 --> 00:15:51,039
+Let me just close this
+
+310
+00:15:52,319 --> 00:15:54,111
+you user access levels
+
+311
+00:15:55,135 --> 00:16:00,511
+And as you know user access levels can target multiple groups into one user access level
+
+312
+00:16:01,023 --> 00:16:04,351
+And so this again is only a feature that will really be
+
+313
+00:16:05,119 --> 00:16:11,263
+Extremely useful when you look at your front end of your component and the backend you can also make use of it
+
+314
+00:16:11,519 --> 00:16:12,287
+Of course
+
+315
+00:16:12,543 --> 00:16:18,687
+You can change the access of a specific item but since we also have such a intense permissional
+
+316
+00:16:19,199 --> 00:16:19,967
+Switches
+
+317
+00:16:20,223 --> 00:16:25,855
+I hardly ever make use of it but it's there and I mostly use it for front end
+
+318
+00:16:26,111 --> 00:16:31,743
+When I want a certain area in the front of sorry set an item not to be accessible to the front
+
+319
+00:16:31,999 --> 00:16:38,143
+Ok then do you want to add to import export function again this is a
+
+320
+00:16:38,399 --> 00:16:44,543
+Extended area which component builder dynamically just adds so you don't need to do anything is to 
+
+321
+00:16:44,799 --> 00:16:47,103
+relation to scripting at this stage
+
+322
+00:16:47,359 --> 00:16:50,431
+You could just click yes or no to import export
+
+323
+00:16:50,687 --> 00:16:52,735
+Feature at the top of the page
+
+324
+00:16:54,015 --> 00:16:55,295
+Of every View
+
+325
+00:16:55,551 --> 00:16:56,831
+So every View
+
+326
+00:16:57,087 --> 00:17:03,231
+Will have an import export at the moment it's a direct relationship import export what I mean by that
+
+327
+00:17:03,487 --> 00:17:04,511
+Is
+
+328
+00:17:05,023 --> 00:17:06,047
+You need to follow
+
+329
+00:17:06,815 --> 00:17:12,447
+If you export this then you'd see the the way it should look to do import
+
+330
+00:17:13,215 --> 00:17:18,591
+And the import is really nice you can map the headers to their specific database tables
+
+331
+00:17:19,103 --> 00:17:23,711
+Obviously there's work needed especially when you're dealing with
+
+332
+00:17:24,223 --> 00:17:30,367
+Information that was encrypted if you export it it will decrypt it if you have the permissions
+
+333
+00:17:30,623 --> 00:17:36,767
+To access that item of course but the problem is because it's decrypting yet
+
+334
+00:17:37,023 --> 00:17:43,167
+When you imported it doesn't know that it should encrypted so there is a little discrepancy with the advance
+
+335
+00:17:43,423 --> 00:17:49,567
+Storing methods so as long as you are having a data backend database table that at
+
+336
+00:17:49,823 --> 00:17:55,967
+Actually doesn't require these advance storing methods it's just your normal defaults like me explain before then
+
+337
+00:17:56,223 --> 00:17:58,527
+Import export method will then works seemingly
+
+338
+00:17:58,783 --> 00:18:00,319
+Without any problems
+
+339
+00:18:00,831 --> 00:18:06,719
+I'm so I'm still working on this area but it's already working well enough that I felt I could leave it in there
+
+340
+00:18:07,743 --> 00:18:12,095
+Ok that is the switch here and obviously if you don't like the feature just click no
+
+341
+00:18:13,631 --> 00:18:17,471
+Then here is a feature which I think I'm most excited about
+
+342
+00:18:17,727 --> 00:18:18,495
+And that is
+
+343
+00:18:18,751 --> 00:18:20,287
+Every backend view
+
+344
+00:18:21,055 --> 00:18:25,151
+Has of course and edit area right if you've selected that
+
+345
+00:18:26,687 --> 00:18:32,831
+Read write option then the edit area you can change the values of that backend listview right
+
+346
+00:18:33,343 --> 00:18:34,367
+So
+
+347
+00:18:34,879 --> 00:18:36,927
+The admin create site View
+
+348
+00:18:37,439 --> 00:18:40,255
+Means that the system
+
+349
+00:18:40,767 --> 00:18:42,559
+Is gonna dynamically build
+
+350
+00:18:42,815 --> 00:18:43,839
+The front
+
+351
+00:18:44,863 --> 00:18:45,887
+Area
+
+352
+00:18:46,143 --> 00:18:48,191
+Which you can access
+
+353
+00:18:48,703 --> 00:18:51,775
+To edit the data at the front of the website
+
+354
+00:18:52,287 --> 00:18:58,431
+Now Yahoo this is the hurray whatever that's excellent tool
+
+355
+00:18:58,687 --> 00:19:02,783
+So it takes exactly this if I was to use this and as an example
+
+356
+00:19:04,319 --> 00:19:05,343
+It takes
+
+357
+00:19:05,855 --> 00:19:09,439
+This editing area and place it on the front
+
+358
+00:19:10,207 --> 00:19:10,975
+Of your website
+
+359
+00:19:11,743 --> 00:19:12,767
+Now obviously
+
+360
+00:19:13,023 --> 00:19:19,167
+You are controlling in the permissional structures who has access to edit this who access to edit this
+
+361
+00:19:19,423 --> 00:19:23,519
+The status was access to edit specific fields
+
+362
+00:19:23,775 --> 00:19:27,359
+We looked at adding the fields to your admin views and you could tick
+
+363
+00:19:27,615 --> 00:19:30,687
+Whether this field should have permissional structure
+
+364
+00:19:30,943 --> 00:19:31,455
+Now
+
+365
+00:19:31,711 --> 00:19:32,735
+That means that
+
+366
+00:19:32,991 --> 00:19:35,551
+If you have those things set up in the back in the
+
+367
+00:19:35,807 --> 00:19:37,599
+Global professional tab
+
+368
+00:19:38,111 --> 00:19:40,671
+Then it will be implemented in the
+
+369
+00:19:40,927 --> 00:19:43,999
+Front if a certain user is in the in the correct group
+
+370
+00:19:44,255 --> 00:19:50,399
+They wont be able to access this then if they have access but they don't have the right to for example update
+
+371
+00:19:50,655 --> 00:19:52,447
+Maybe the modified date or
+
+372
+00:19:52,703 --> 00:19:57,311
+The status is then in the front there also will not be able to do that so you have
+
+373
+00:19:57,567 --> 00:20:00,127
+Immense control over who can do what
+
+374
+00:20:00,895 --> 00:20:07,039
+But at the same time you have the ability to actually edit items on the front I think that is
+
+375
+00:20:07,295 --> 00:20:07,807
+Excellent
+
+376
+00:20:08,063 --> 00:20:13,439
+To be able to do that and that all of that just possible by saying yes
+
+377
+00:20:13,695 --> 00:20:14,207
+But
+
+378
+00:20:14,463 --> 00:20:15,487
+Realize this
+
+379
+00:20:16,255 --> 00:20:18,303
+The fact that it creates the
+
+380
+00:20:19,839 --> 00:20:22,143
+The view if I could says so
+
+381
+00:20:22,655 --> 00:20:24,447
+And places it on the front
+
+382
+00:20:25,215 --> 00:20:28,031
+Doesn't mean that there is a link somewhere to it
+
+383
+00:20:28,287 --> 00:20:32,895
+That is something you need to add to your site front custom site
+
+384
+00:20:33,407 --> 00:20:34,687
+As you develop it
+
+385
+00:20:35,199 --> 00:20:41,087
+And this is partly a feature therefore which is you don't know PHP and if you're not that familiar with
+
+386
+00:20:41,599 --> 00:20:45,439
+How to setup your links on the front of the component
+
+387
+00:20:45,695 --> 00:20:48,255
+You would possibly would find this difficult to implement
+
+388
+00:20:48,767 --> 00:20:51,071
+But I will show you
+
+389
+00:20:51,327 --> 00:20:54,655
+What it builds in fact I can show you that now
+
+390
+00:20:54,911 --> 00:20:58,495
+I have a component which I'm using that feature quite a lot
+
+391
+00:20:59,775 --> 00:21:00,799
+And it's called
+
+392
+00:21:03,871 --> 00:21:06,943
+Costbenefitprojection this is the backend
+
+393
+00:21:07,199 --> 00:21:09,759
+So if we look at the views we have here
+
+394
+00:21:10,015 --> 00:21:11,039
+called company
+
+395
+00:21:11,807 --> 00:21:12,831
+And we have
+
+396
+00:21:13,599 --> 00:21:14,879
+One called
+
+397
+00:21:15,391 --> 00:21:19,232
+Scaling factor and intervention
+
+398
+00:21:19,744 --> 00:21:24,096
+Now these are editing views as you can see those other list views those are the editing views
+
+399
+00:21:24,608 --> 00:21:27,680
+If I go to the front of the of the the website
+
+400
+00:21:28,192 --> 00:21:29,728
+and I open that component
+
+401
+00:21:31,008 --> 00:21:32,288
+And I click on View
+
+402
+00:21:32,800 --> 00:21:34,336
+You see that there is company
+
+403
+00:21:34,848 --> 00:21:38,944
+There is intervention and there is scaling factors
+
+404
+00:21:40,480 --> 00:21:40,992
+they
+
+405
+00:21:41,248 --> 00:21:43,808
+Are basically being extended here
+
+406
+00:21:44,064 --> 00:21:48,160
+So what the component build does is as is it adds this view
+
+407
+00:21:48,672 --> 00:21:50,976
+It also adds the module for it
+
+408
+00:21:51,488 --> 00:21:53,536
+And I'm also adds the controller for it
+
+409
+00:21:54,304 --> 00:22:00,448
+So basically it puts all the script in place so that all you need to do is inside of for example
+
+410
+00:22:00,704 --> 00:22:01,728
+I have here a
+
+411
+00:22:01,984 --> 00:22:06,336
+I have here an area called cpanel now let me show you this component briefly
+
+412
+00:22:10,176 --> 00:22:12,992
+Ok so this is just some dummy data that I
+
+413
+00:22:13,248 --> 00:22:15,296
+Placed in here none of them is real
+
+414
+00:22:15,808 --> 00:22:17,600
+And so here
+
+415
+00:22:17,856 --> 00:22:20,160
+You can open multiple items
+
+416
+00:22:22,208 --> 00:22:28,096
+This is all stuff that I built in component in fact none of this was built outside of component builder
+
+417
+00:22:28,608 --> 00:22:30,400
+It all was done in component builder
+
+418
+00:22:30,912 --> 00:22:33,472
+And you can click on edit advance profile
+
+419
+00:22:34,496 --> 00:22:36,800
+And it will open the editing area
+
+420
+00:22:37,824 --> 00:22:43,968
+As you can see and now this is the backend editing area of that now let me show you sorry this is the front end
+
+421
+00:22:44,992 --> 00:22:46,016
+Editing area
+
+422
+00:22:46,784 --> 00:22:49,088
+And as you can see there are all the
+
+423
+00:22:49,344 --> 00:22:50,368
+Tabs
+
+424
+00:22:51,392 --> 00:22:53,184
+Now let me show you the backend
+
+425
+00:22:54,720 --> 00:22:56,000
+Here's the backend area
+
+426
+00:22:56,768 --> 00:23:00,864
+So it's basically a showing up the same information in the front
+
+427
+00:23:01,120 --> 00:23:03,424
+Is only dumps the permission and
+
+428
+00:23:04,960 --> 00:23:06,240
+Publishing features
+
+429
+00:23:06,496 --> 00:23:10,080
+But that is because of access permissions is done automatically
+
+430
+00:23:10,336 --> 00:23:13,920
+Because that front-end user didn't have permissions to edit things
+
+431
+00:23:14,176 --> 00:23:16,736
+In most of the things in here in fact
+
+432
+00:23:16,992 --> 00:23:19,040
+You didn't have the right to edit any of these
+
+433
+00:23:19,552 --> 00:23:25,696
+Therefore it didn't need to see it and so the system just remove that tab same goes with the permissions
+
+434
+00:23:25,952 --> 00:23:29,536
+And if you didn't have the right to do scaling factors on interventions
+
+435
+00:23:29,792 --> 00:23:32,352
+You also have dumped that it won't show it up
+
+436
+00:23:32,608 --> 00:23:33,632
+In the front
+
+437
+00:23:33,888 --> 00:23:37,472
+And so this is the back end of that same dummy company
+
+438
+00:23:37,984 --> 00:23:39,264
+That I've set up
+
+439
+00:23:39,520 --> 00:23:42,336
+And you can see that it basically
+
+440
+00:23:42,592 --> 00:23:43,872
+Moved it to the front
+
+441
+00:23:46,176 --> 00:23:51,040
+Not only did it make it possible to edit data but also to create new companies
+
+442
+00:23:51,296 --> 00:23:52,832
+So if you click on that
+
+443
+00:23:55,648 --> 00:24:00,768
+You see it opens up in the area for you to start fresh so you can create a company from scratch
+
+444
+00:24:01,280 --> 00:24:02,048
+Now
+
+445
+00:24:02,304 --> 00:24:06,656
+In this specific example you see that it cannot actually add a user
+
+446
+00:24:06,912 --> 00:24:10,496
+So what the system is done through some custom scripting that I've added
+
+447
+00:24:10,752 --> 00:24:13,312
+If you click save it adds his ID in here
+
+448
+00:24:13,824 --> 00:24:15,872
+And he doesn't need to select that
+
+449
+00:24:16,640 --> 00:24:19,456
+Ok so that's just a quick look at
+
+450
+00:24:19,712 --> 00:24:20,992
+That specific button
+
+451
+00:24:23,040 --> 00:24:27,904
+Called edit create site view it adds the whole codebase to the front
+
+452
+00:24:28,416 --> 00:24:30,720
+And integrates it to the
+
+453
+00:24:30,976 --> 00:24:32,000
+Way that the front
+
+454
+00:24:32,256 --> 00:24:35,072
+Needs to be able to control the permissions
+
+455
+00:24:35,840 --> 00:24:41,472
+Then the order of of the items are Simply the way in which it will be displayed anywhere
+
+456
+00:24:41,728 --> 00:24:44,032
+So if we think about the order
+
+457
+00:24:44,544 --> 00:24:45,568
+For a moment here
+
+458
+00:24:45,824 --> 00:24:46,336
+Of
+
+459
+00:24:46,848 --> 00:24:48,384
+Example component builder
+
+460
+00:24:48,640 --> 00:24:53,760
+The order of which these icons are laid out and even if you opened one of them
+
+461
+00:24:54,016 --> 00:24:55,808
+The order in which this is done
+
+462
+00:24:56,064 --> 00:24:58,368
+And also for the sub menu
+
+463
+00:24:58,880 --> 00:25:01,440
+All of that is controlled with this order
+
+464
+00:25:01,952 --> 00:25:02,976
+Number here
+
+465
+00:25:04,256 --> 00:25:05,280
+Ok so
+
+466
+00:25:05,536 --> 00:25:07,584
+That's a quick look at adding
+
+467
+00:25:08,096 --> 00:25:10,144
+Admin views to your component
+
+468
+00:25:10,656 --> 00:25:15,008
+I hope that is insightful enough for you to understand how to do that
+
+469
+00:25:15,520 --> 00:25:19,616
+If you have any questions please you're welcome to send me a mail
+
+470
+00:25:22,944 --> 00:25:23,968
+Thanks for watching
+

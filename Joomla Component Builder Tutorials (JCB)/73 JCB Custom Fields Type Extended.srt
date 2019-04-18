@@ -1,0 +1,4932 @@
+1
+00:00:01,280 --> 00:00:02,816
+I would like to give a
+
+2
+00:00:04,096 --> 00:00:10,240
+And demonstration and maybe some explanation around how the functionality of a
+
+3
+00:00:10,496 --> 00:00:15,872
+Custom field works I think we've had some tutorials about this in the past
+
+4
+00:00:16,128 --> 00:00:17,920
+But it
+
+5
+00:00:18,688 --> 00:00:20,992
+JCB has improved
+
+6
+00:00:21,248 --> 00:00:22,528
+And there is
+
+7
+00:00:22,784 --> 00:00:25,344
+a little bit of a different look
+
+8
+00:00:25,600 --> 00:00:26,624
+to that area
+
+9
+00:00:27,136 --> 00:00:28,672
+So let me
+
+10
+00:00:28,928 --> 00:00:31,744
+Let me do this again and maybe I'll even try and
+
+11
+00:00:32,000 --> 00:00:32,768
+give some code
+
+12
+00:00:33,536 --> 00:00:34,304
+I mean
+
+13
+00:00:34,560 --> 00:00:36,096
+Show you in the compiler
+
+14
+00:00:36,608 --> 00:00:38,144
+What what is actually doing
+
+15
+00:00:39,680 --> 00:00:43,776
+And then we take it from there let's see
+
+16
+00:00:44,032 --> 00:00:44,800
+We have
+
+17
+00:00:45,312 --> 00:00:46,592
+a few views here
+
+18
+00:00:46,848 --> 00:00:50,176
+I've imported Sermon distributor
+
+19
+00:00:50,944 --> 00:00:53,760
+Which is the most common demo component
+
+20
+00:00:54,016 --> 00:00:54,784
+that I have used
+
+21
+00:00:56,832 --> 00:00:57,600
+And
+
+22
+00:00:58,624 --> 00:01:02,208
+It has a few custom Fields so I could
+
+23
+00:01:02,464 --> 00:01:04,768
+I could actually change this where's it
+
+24
+00:01:05,536 --> 00:01:06,304
+This one
+
+25
+00:01:06,816 --> 00:01:08,096
+Is changed to custom
+
+26
+00:01:08,608 --> 00:01:11,680
+And we see that we've got a few custom Fields here
+
+27
+00:01:12,192 --> 00:01:14,496
+The idea was that you would
+
+28
+00:01:15,008 --> 00:01:17,568
+Use the demo components and then
+
+29
+00:01:18,080 --> 00:01:19,104
+Figure out
+
+30
+00:01:19,360 --> 00:01:21,664
+How their custom Fields work
+
+31
+00:01:21,920 --> 00:01:23,712
+And it's doing so
+
+32
+00:01:25,504 --> 00:01:27,808
+know help us and fields work but ok
+
+33
+00:01:29,344 --> 00:01:30,112
+I'm gonna
+
+34
+00:01:30,624 --> 00:01:31,904
+Well first of all
+
+35
+00:01:32,160 --> 00:01:34,720
+Custom fields is a way
+
+36
+00:01:34,976 --> 00:01:35,744
+To connect
+
+37
+00:01:37,024 --> 00:01:37,792
+a table
+
+38
+00:01:40,352 --> 00:01:42,912
+From another view of course
+
+39
+00:01:44,448 --> 00:01:49,568
+Into another view so it's it's a way to build relationships then you can
+
+40
+00:01:49,824 --> 00:01:52,128
+Have more than one custom field
+
+41
+00:01:52,384 --> 00:01:53,408
+In a table
+
+42
+00:01:53,664 --> 00:01:54,688
+And
+
+43
+00:01:54,944 --> 00:01:57,760
+You can do that to build relationships
+
+44
+00:01:58,784 --> 00:02:00,064
+You could even
+
+45
+00:02:00,320 --> 00:02:00,832
+Take
+
+46
+00:02:01,856 --> 00:02:03,648
+Different tables
+
+47
+00:02:03,904 --> 00:02:04,672
+And
+
+48
+00:02:04,928 --> 00:02:05,696
+Create
+
+49
+00:02:05,952 --> 00:02:09,792
+A different combined list of values
+
+50
+00:02:10,304 --> 00:02:12,864
+You can't really do anything with
+
+51
+00:02:14,656 --> 00:02:16,960
+Custom Fields it is
+
+52
+00:02:17,216 --> 00:02:19,776
+Maybe one of the most powerful
+
+53
+00:02:21,056 --> 00:02:23,104
+Field types in JCB
+
+54
+00:02:24,128 --> 00:02:28,480
+Now if we If we open let's say editor let me just do that
+
+55
+00:02:29,760 --> 00:02:31,296
+I wanna show you that
+
+56
+00:02:31,552 --> 00:02:35,648
+Custom fields are basically a Joomla implemented
+
+57
+00:02:35,904 --> 00:02:36,672
+Concept
+
+58
+00:02:36,928 --> 00:02:38,976
+Implementation or how can I say that
+
+59
+00:02:39,232 --> 00:02:43,840
+So you have in models you have well let's open the
+
+60
+00:02:44,864 --> 00:02:46,144
+Correct folder here
+
+61
+00:02:47,424 --> 00:02:48,448
+not this one
+
+62
+00:02:49,984 --> 00:02:53,824
+This one we wanna go to sermon distributor
+
+63
+00:02:54,336 --> 00:02:58,688
+You have in your models folder you have a folder called fields
+
+64
+00:02:59,712 --> 00:03:03,808
+Now and Joomla 4 this is changing the folder structure but
+
+65
+00:03:04,064 --> 00:03:07,136
+in for now you'll you'll know it's it's here
+
+66
+00:03:07,648 --> 00:03:13,792
+and so here is our custom fields is basically a field that you create
+
+67
+00:03:14,048 --> 00:03:17,376
+By creating a file in this folder and then
+
+68
+00:03:17,888 --> 00:03:19,424
+Using the field name
+
+69
+00:03:19,936 --> 00:03:22,752
+In your XML so if you look at your form
+
+70
+00:03:23,264 --> 00:03:25,568
+And let's say we use
+
+71
+00:03:26,080 --> 00:03:26,592
+Sermon
+
+72
+00:03:27,872 --> 00:03:31,200
+You will see that in the XML
+
+73
+00:03:31,968 --> 00:03:35,552
+At the top we have add file a field path
+
+74
+00:03:35,808 --> 00:03:37,856
+And you see that it edits in the model
+
+75
+00:03:38,112 --> 00:03:38,624
+So
+
+76
+00:03:38,880 --> 00:03:41,440
+Because of how we do it it
+
+77
+00:03:41,952 --> 00:03:43,744
+Expects it to be here
+
+78
+00:03:44,256 --> 00:03:46,560
+So even yeah anyway
+
+79
+00:03:46,816 --> 00:03:48,352
+So
+
+80
+00:03:48,608 --> 00:03:51,168
+That's why it knows to go look for the field here
+
+81
+00:03:51,680 --> 00:03:53,472
+Now if you scroll down
+
+82
+00:03:53,728 --> 00:03:55,520
+You'll see that we have a normal
+
+83
+00:03:55,776 --> 00:03:57,824
+And wherever it says Joomla
+
+84
+00:03:58,080 --> 00:04:00,128
+It means it's a normal field
+
+85
+00:04:00,896 --> 00:04:02,432
+At the moment it says custom
+
+86
+00:04:02,688 --> 00:04:08,832
+It means that this is not a normal field this field was made custom for this component
+
+87
+00:04:09,088 --> 00:04:10,624
+Now this is just a
+
+88
+00:04:11,136 --> 00:04:14,464
+Note it's like the comment doesn't do anything
+
+89
+00:04:14,720 --> 00:04:16,000
+It's just is for you
+
+90
+00:04:17,280 --> 00:04:19,839
+So this so you can come here
+
+91
+00:04:20,351 --> 00:04:21,887
+In the fields area
+
+92
+00:04:22,655 --> 00:04:24,447
+And there's preachers this is the
+
+93
+00:04:24,703 --> 00:04:27,519
+File that makes this work
+
+94
+00:04:28,031 --> 00:04:28,543
+So
+
+95
+00:04:28,799 --> 00:04:30,847
+That's basically what JCB builds
+
+96
+00:04:31,359 --> 00:04:34,943
+He puts this in place and then builds this file and that's it
+
+97
+00:04:35,455 --> 00:04:36,735
+And so
+
+98
+00:04:36,991 --> 00:04:38,271
+In these files
+
+99
+00:04:38,527 --> 00:04:44,671
+Depending on what type of file we are extending so now we are extending here the list
+
+100
+00:04:44,927 --> 00:04:51,071
+Option now to know what is all the available extending options we go to
+
+101
+00:04:51,327 --> 00:04:53,119
+Joomla component builders File
+
+102
+00:04:53,631 --> 00:04:55,423
+We go to the compiler
+
+103
+00:04:55,935 --> 00:04:58,239
+We go to Joomla 3
+
+104
+00:04:58,751 --> 00:05:00,799
+we scroll down we'll see there is
+
+105
+00:05:01,055 --> 00:05:02,335
+the checkboxes
+
+106
+00:05:02,847 --> 00:05:03,615
+Option
+
+107
+00:05:04,127 --> 00:05:06,687
+There is the field list the field radio
+
+108
+00:05:08,479 --> 00:05:14,623
+And the field user but the field user we actually made a whole custom field to just target the field user
+
+109
+00:05:14,879 --> 00:05:21,023
+But the checkboxes and the radio if you if you go back to JCB
+
+110
+00:05:21,279 --> 00:05:22,559
+And create new
+
+111
+00:05:23,839 --> 00:05:25,631
+And you select
+
+112
+00:05:26,143 --> 00:05:27,423
+Custom
+
+113
+00:05:28,959 --> 00:05:29,983
+you'd see
+
+114
+00:05:30,239 --> 00:05:32,031
+That it
+
+115
+00:05:32,799 --> 00:05:34,847
+At some point where is it
+
+116
+00:05:35,359 --> 00:05:37,151
+Let's see
+
+117
+00:05:38,687 --> 00:05:40,991
+It asked here what do you extend
+
+118
+00:05:41,759 --> 00:05:47,647
+And you have these three options you can extend that a list as a radio button or a check
+
+119
+00:05:47,903 --> 00:05:48,671
+Checkboxes
+
+120
+00:05:48,927 --> 00:05:50,975
+That is what this
+
+121
+00:05:51,231 --> 00:05:53,023
+Extend is for
+
+122
+00:05:53,791 --> 00:05:54,303
+So
+
+123
+00:05:54,815 --> 00:05:57,887
+That's currently the only 3 that is
+
+124
+00:05:58,911 --> 00:06:05,055
+Ready to go in JCB there there are of course others
+
+125
+00:06:05,311 --> 00:06:09,919
+But then we'll have to expand JCB it doesn't reach those yet
+
+126
+00:06:11,711 --> 00:06:14,015
+Ok so getting back to this
+
+127
+00:06:14,271 --> 00:06:20,415
+If you are using a form list which is the most common one because you wanted have a list of things in
+
+128
+00:06:20,671 --> 00:06:21,695
+Another table
+
+129
+00:06:22,207 --> 00:06:22,975
+Then
+
+130
+00:06:23,231 --> 00:06:25,279
+You're gonna have to populate
+
+131
+00:06:25,535 --> 00:06:28,095
+The get options function
+
+132
+00:06:28,607 --> 00:06:30,911
+Now the get options function
+
+133
+00:06:32,447 --> 00:06:33,471
+Or method
+
+134
+00:06:33,983 --> 00:06:34,495
+Is
+
+135
+00:06:35,263 --> 00:06:37,567
+Requiring this chunk of code
+
+136
+00:06:39,103 --> 00:06:39,871
+Now
+
+137
+00:06:40,127 --> 00:06:44,223
+Instead of making it that you need to write out this whole thing
+
+138
+00:06:45,503 --> 00:06:48,831
+In JCB you are just adding this part
+
+139
+00:06:49,599 --> 00:06:50,367
+For the
+
+140
+00:06:50,623 --> 00:06:51,135
+List
+
+141
+00:06:51,391 --> 00:06:52,415
+For the radio
+
+142
+00:06:52,671 --> 00:06:54,463
+It's also just
+
+143
+00:06:54,719 --> 00:06:55,487
+The
+
+144
+00:06:55,743 --> 00:06:56,767
+Get options
+
+145
+00:06:57,279 --> 00:07:01,631
+For the checkboxes again also just get options
+
+146
+00:07:01,887 --> 00:07:02,399
+So
+
+147
+00:07:02,655 --> 00:07:08,031
+It is basically the only code we need to have it's only with the user one
+
+148
+00:07:08,287 --> 00:07:08,799
+Which
+
+149
+00:07:09,055 --> 00:07:10,847
+We have a get groups
+
+150
+00:07:11,103 --> 00:07:12,383
+And exclude
+
+151
+00:07:12,639 --> 00:07:13,151
+And
+
+152
+00:07:13,407 --> 00:07:15,455
+If you create in JCB
+
+153
+00:07:16,479 --> 00:07:19,039
+Excuse me if you
+
+154
+00:07:19,295 --> 00:07:21,855
+Here select custom user
+
+155
+00:07:22,879 --> 00:07:27,487
+You'd see that that is exactly what you get you get exclude area
+
+156
+00:07:27,999 --> 00:07:32,351
+and you get get group area and these two chunks of code
+
+157
+00:07:33,119 --> 00:07:34,911
+Is What is going to be placed
+
+158
+00:07:36,191 --> 00:07:37,983
+In in this area here
+
+159
+00:07:38,495 --> 00:07:40,543
+That's basically what is gonna happen
+
+160
+00:07:41,055 --> 00:07:43,359
+So you could at any time
+
+161
+00:07:43,615 --> 00:07:49,759
+Coming here fiddle around with this I mean it in the PHP in when the file is created
+
+162
+00:07:50,015 --> 00:07:51,295
+Like like over
+
+163
+00:07:51,551 --> 00:07:52,319
+over here
+
+164
+00:07:52,575 --> 00:07:54,367
+I've got this preacher open right
+
+165
+00:07:54,623 --> 00:08:00,767
+You can come in here and fill with us and then take your changes just back to the view to JCB
+
+166
+00:08:01,279 --> 00:08:02,559
+And just place it in here
+
+167
+00:08:02,815 --> 00:08:05,631
+not well not in this one this is the user
+
+168
+00:08:05,887 --> 00:08:06,911
+But in a custom
+
+169
+00:08:07,167 --> 00:08:08,191
+Ok so
+
+170
+00:08:08,959 --> 00:08:14,591
+Basically that means that this did the type is movable
+
+171
+00:08:14,847 --> 00:08:19,711
+Because it's new but it must be something that doesn't already exist in Joomla
+
+172
+00:08:19,967 --> 00:08:25,343
+And if you don't know what all the field types are that exist in Joomla then
+
+173
+00:08:25,599 --> 00:08:28,671
+A good place to start is to go to field types
+
+174
+00:08:29,439 --> 00:08:31,487
+And check out all these
+
+175
+00:08:31,743 --> 00:08:35,583
+And if that still isn't clear you can go to this place
+
+176
+00:08:37,375 --> 00:08:38,399
+This URL here
+
+177
+00:08:39,935 --> 00:08:43,263
+This has a list of all Joomlas field types so you could
+
+178
+00:08:43,519 --> 00:08:45,055
+You could open that
+
+179
+00:08:47,359 --> 00:08:48,383
+Scroll down
+
+180
+00:08:49,407 --> 00:08:54,271
+And here is a list of all the field type names that you can't use again
+
+181
+00:08:54,527 --> 00:08:55,295
+You can't
+
+182
+00:08:55,551 --> 00:08:57,087
+Well it will be conflicting
+
+183
+00:08:57,343 --> 00:08:59,647
+Because it will break that name in that form
+
+184
+00:08:59,903 --> 00:09:00,927
+So
+
+185
+00:09:01,695 --> 00:09:03,999
+Best use names that are not used by Joomla
+
+186
+00:09:05,023 --> 00:09:06,559
+Ok so that is that
+
+187
+00:09:08,351 --> 00:09:10,911
+Going back to creating a custom field
+
+188
+00:09:12,447 --> 00:09:15,775
+We could start with sermon preacher which is the one we looking at
+
+189
+00:09:16,031 --> 00:09:17,055
+So
+
+190
+00:09:17,311 --> 00:09:23,455
+Again the name up here is just for the interface for you it's just that you can see what is the field
+
+191
+00:09:23,711 --> 00:09:24,991
+You can call this anything
+
+192
+00:09:25,247 --> 00:09:28,063
+It only fall back onto this name
+
+193
+00:09:28,575 --> 00:09:29,343
+If
+
+194
+00:09:29,599 --> 00:09:32,159
+If there isn't a
+
+195
+00:09:32,927 --> 00:09:34,207
+A label
+
+196
+00:09:34,975 --> 00:09:35,743
+Set here
+
+197
+00:09:36,511 --> 00:09:39,071
+Then it will fall back onto this name
+
+198
+00:09:39,583 --> 00:09:42,143
+But the ideal is just set the label you know
+
+199
+00:09:42,655 --> 00:09:45,983
+Then the name here
+
+200
+00:09:46,239 --> 00:09:48,543
+This name again is actually the code right
+
+201
+00:09:48,799 --> 00:09:51,871
+That we know this is the type this is what is going to be
+
+202
+00:09:52,127 --> 00:09:53,151
+To be new unique
+
+203
+00:09:55,455 --> 00:09:58,527
+the rest is sort of the same as everything else multiple
+
+204
+00:09:58,783 --> 00:10:02,367
+the default value because it's dynamic
+
+205
+00:10:03,647 --> 00:10:05,439
+It's not really practical
+
+206
+00:10:05,695 --> 00:10:10,303
+But it's really gonna be whatever you choose to be the ID of this
+
+207
+00:10:10,559 --> 00:10:11,327
+Memory right
+
+208
+00:10:11,583 --> 00:10:17,727
+Required read only this is all &&&&&ok extend here you make your choice what kind of
+
+209
+00:10:17,983 --> 00:10:19,775
+Field do you want to create
+
+210
+00:10:20,799 --> 00:10:25,151
+Then button the button feature is one of the
+
+211
+00:10:25,407 --> 00:10:27,967
+Features that are actually quite exciting
+
+212
+00:10:28,223 --> 00:10:30,271
+Let me show you some of that
+
+213
+00:10:31,039 --> 00:10:35,903
+So I was seeing a strange behaviour here I was seeing that the button says true
+
+214
+00:10:36,159 --> 00:10:37,951
+And then when I go to the code
+
+215
+00:10:38,463 --> 00:10:40,767
+I don't see the button code in here
+
+216
+00:10:41,535 --> 00:10:46,143
+And I was wondering ok what's going on here and then I remembered
+
+217
+00:10:46,655 --> 00:10:48,703
+ when JCB detects that
+
+218
+00:10:48,959 --> 00:10:50,239
+There is
+
+219
+00:10:52,031 --> 00:10:52,799
+Two
+
+220
+00:10:53,311 --> 00:10:54,335
+Custom
+
+221
+00:10:54,847 --> 00:10:56,895
+Fields with the same type
+
+222
+00:10:57,919 --> 00:10:59,455
+It only uses one
+
+223
+00:11:00,479 --> 00:11:02,271
+For this area
+
+224
+00:11:03,295 --> 00:11:04,319
+And for the button
+
+225
+00:11:06,111 --> 00:11:07,903
+Because one of them
+
+226
+00:11:09,183 --> 00:11:10,463
+Is going to be there
+
+227
+00:11:11,487 --> 00:11:12,511
+Dominant one
+
+228
+00:11:12,767 --> 00:11:18,911
+You can decide which one it is so you want to share the field type among multiple 
+
+229
+00:11:19,167 --> 00:11:20,191
+Custom
+
+230
+00:11:20,447 --> 00:11:20,959
+Fields
+
+231
+00:11:21,471 --> 00:11:24,031
+so you want to reuse that field type you can
+
+232
+00:11:24,543 --> 00:11:26,591
+But you want to make sure that
+
+233
+00:11:27,103 --> 00:11:29,407
+One of them is the one which you know
+
+234
+00:11:29,919 --> 00:11:32,223
+Is going to be the leader if you will
+
+235
+00:11:32,735 --> 00:11:35,295
+The one who decides how things happen
+
+236
+00:11:36,063 --> 00:11:42,207
+So that if you change that one the field type updates where is if you change the wrong one it doesn't do anything
+
+237
+00:11:43,231 --> 00:11:46,815
+So just one of those will be the
+
+238
+00:11:47,839 --> 00:11:52,191
+The dominant one so you could do that by making it the prime
+
+239
+00:11:53,215 --> 00:11:57,567
+prime  PHP and make that one so here is a little explanation of that
+
+240
+00:11:58,591 --> 00:12:01,151
+So you wanna be sure this field
+
+241
+00:12:01,663 --> 00:12:03,455
+Called preachers
+
+242
+00:12:03,711 --> 00:12:08,831
+Should be the dominant and you wanna say I want the buttons to be true
+
+243
+00:12:09,343 --> 00:12:11,903
+And now you save and compile
+
+244
+00:12:12,415 --> 00:12:14,719
+You you will get what you expect
+
+245
+00:12:15,231 --> 00:12:19,071
+And so that's another feature of custom
+
+246
+00:12:20,095 --> 00:12:23,935
+ fields that 
+
+247
+00:12:24,191 --> 00:12:29,055
+ people are not aware of this feature but it's it makes it very useful
+
+248
+00:12:29,567 --> 00:12:31,871
+So if we now go back to the code
+
+249
+00:12:32,383 --> 00:12:36,479
+We see now a new set of a script here called get input
+
+250
+00:12:36,735 --> 00:12:42,879
+And that's really how the button gets added so basically asks
+
+251
+00:12:43,135 --> 00:12:44,671
+Get the attribute button
+
+252
+00:12:45,439 --> 00:12:47,487
+it checks if button is true
+
+253
+00:12:48,255 --> 00:12:49,791
+If button is true
+
+254
+00:12:51,071 --> 00:12:55,679
+Then it already got the parent HTML which is what
+
+255
+00:12:55,935 --> 00:12:58,751
+The button the whole field is in this HTML
+
+256
+00:13:00,543 --> 00:13:01,823
+Then we do some
+
+257
+00:13:02,079 --> 00:13:07,199
+Because if you have a button and someone Clicks on it you might want them to
+
+258
+00:13:07,711 --> 00:13:13,087
+Be Redirected back to this page where the field is once they done on the other page
+
+259
+00:13:13,343 --> 00:13:17,951
+So this is what it does here it checks if there is a
+
+260
+00:13:18,207 --> 00:13:18,975
+Referral
+
+261
+00:13:19,487 --> 00:13:23,327
+And also we've added the return value
+
+262
+00:13:23,583 --> 00:13:26,399
+As well so if there is a return value
+
+263
+00:13:26,655 --> 00:13:29,471
+We are going to detect it
+
+264
+00:13:29,983 --> 00:13:31,263
+oh no, wait, sorry
+
+265
+00:13:31,519 --> 00:13:35,103
+We are building a return value as well that's right
+
+266
+00:13:35,615 --> 00:13:37,663
+Ok so we come down here
+
+267
+00:13:38,431 --> 00:13:42,527
+And we're starting to build the button so there is the the button being built
+
+268
+00:13:44,319 --> 00:13:46,111
+And that is to create
+
+269
+00:13:47,391 --> 00:13:49,951
+And then there's also one now
+
+270
+00:13:51,999 --> 00:13:54,303
+You see that if the button name
+
+271
+00:13:54,815 --> 00:13:55,583
+Preacher
+
+272
+00:13:56,607 --> 00:13:58,143
+Or preachers
+
+273
+00:13:59,423 --> 00:14:00,191
+Is
+
+274
+00:14:01,215 --> 00:14:05,055
+Is the same as the area to which you are
+
+275
+00:14:06,847 --> 00:14:11,967
+The preacher..... OK because this this inputs name is preacher right
+
+276
+00:14:12,223 --> 00:14:13,247
+If we
+
+277
+00:14:13,503 --> 00:14:15,807
+go back here
+
+278
+00:14:17,599 --> 00:14:20,671
+This is called preachers right and down here
+
+279
+00:14:20,927 --> 00:14:24,511
+We have a view called preacher and preachers
+
+280
+00:14:24,767 --> 00:14:27,839
+So that is the Single View
+
+281
+00:14:28,095 --> 00:14:28,607
+Right
+
+282
+00:14:29,119 --> 00:14:32,191
+Single View name of the place the field is added
+
+283
+00:14:33,983 --> 00:14:40,127
+And this is the listview so we are grabbing the field data from the preacher
+
+284
+00:14:40,639 --> 00:14:44,479
+View and it's list name is preachers so
+
+285
+00:14:44,991 --> 00:14:48,831
+It's the table where the data is being captured from
+
+286
+00:14:49,087 --> 00:14:52,159
+Not the table where you gonna show the field but
+
+287
+00:14:52,415 --> 00:14:55,743
+The table where you are taking the information from
+
+288
+00:14:55,999 --> 00:15:02,143
+Now you taking it from multiple tables then he must choose a dominant table 
+
+289
+00:15:02,399 --> 00:15:04,191
+The one that you want to be
+
+290
+00:15:04,447 --> 00:15:05,983
+Always available
+
+291
+00:15:06,239 --> 00:15:10,591
+So that's what this is as well as this as you can see
+
+292
+00:15:11,103 --> 00:15:15,967
+It is obviously usually the case that this and this values the same
+
+293
+00:15:16,223 --> 00:15:18,527
+But I decided to just give us
+
+294
+00:15:18,783 --> 00:15:23,135
+The option to change the table name anyway
+
+295
+00:15:23,391 --> 00:15:23,903
+Ok so we
+
+296
+00:15:24,671 --> 00:15:26,207
+Will get to these again
+
+297
+00:15:26,463 --> 00:15:28,255
+Just wanted you to see you
+
+298
+00:15:28,511 --> 00:15:31,071
+Sorry show you that if those two
+
+299
+00:15:31,583 --> 00:15:33,119
+Actually line-up
+
+300
+00:15:33,631 --> 00:15:37,215
+The button name lines up with those two
+
+301
+00:15:37,727 --> 00:15:38,751
+Then
+
+302
+00:15:39,007 --> 00:15:44,895
+it checks whether this is current user has authority to actually edit buttons
+
+303
+00:15:49,503 --> 00:15:51,551
+We come down here
+
+304
+00:15:51,807 --> 00:15:55,135
+And we create and edit button
+
+305
+00:15:55,391 --> 00:15:56,671
+So
+
+306
+00:15:56,927 --> 00:15:59,487
+And we also write JavaScript
+
+307
+00:16:00,255 --> 00:16:01,023
+to
+
+308
+00:16:01,279 --> 00:16:02,303
+Give that
+
+309
+00:16:02,559 --> 00:16:04,607
+Button behaviour when you click
+
+310
+00:16:05,119 --> 00:16:07,935
+Change the field it checks ok
+
+311
+00:16:08,191 --> 00:16:10,239
+Is that value and then it
+
+312
+00:16:10,495 --> 00:16:16,639
+Updates that you can check out this JavaScript here.
+
+313
+00:16:16,895 --> 00:16:22,271
+This one up here is used to generate the create button and it also validates
+
+314
+00:16:22,527 --> 00:16:23,807
+Whether
+
+315
+00:16:24,575 --> 00:16:25,599
+This user
+
+316
+00:16:26,111 --> 00:16:27,135
+Has create
+
+317
+00:16:27,391 --> 00:16:28,159
+Options
+
+318
+00:16:30,719 --> 00:16:36,863
+And is there is a user in the admin area currently this feature is
+
+319
+00:16:37,119 --> 00:16:40,447
+Is not available to the site area and
+
+320
+00:16:40,703 --> 00:16:46,847
+It's because of many conventions in the site area is so custom it'll probably
+
+321
+00:16:47,103 --> 00:16:48,895
+Break this button so
+
+322
+00:16:49,151 --> 00:16:55,295
+We'll have to work at this but this is where we are at we were able to Target the admin area with this kind of button
+
+323
+00:16:55,807 --> 00:16:58,623
+And then if we have a button
+
+324
+00:16:59,647 --> 00:17:03,231
+We actually add the button declaration
+
+325
+00:17:03,999 --> 00:17:05,279
+To the document
+
+326
+00:17:05,535 --> 00:17:07,583
+And then we add the buttons
+
+327
+00:17:08,095 --> 00:17:09,887
+To the field with this
+
+328
+00:17:10,399 --> 00:17:13,215
+Input append this class here
+
+329
+00:17:13,471 --> 00:17:15,519
+Is a Joomla
+
+330
+00:17:15,775 --> 00:17:17,311
+Class
+
+331
+00:17:17,567 --> 00:17:23,711
+Which means we falling back on their implementation on how to add a little tweak to the button sorry to the field
+
+332
+00:17:23,967 --> 00:17:30,111
+So we just add this and that is how the button gets added and how it works
+
+333
+00:17:30,623 --> 00:17:34,207
+You mean you can come through this I mean this is quite simple
+
+334
+00:17:34,463 --> 00:17:35,999
+It's very easy code here
+
+335
+00:17:36,511 --> 00:17:41,375
+This this implementation here is just to make sure that the button name follows the convention
+
+336
+00:17:41,631 --> 00:17:44,447
+And naming convention
+
+337
+00:17:45,983 --> 00:17:46,495
+And
+
+338
+00:17:46,751 --> 00:17:52,895
+Yeah so that's that's the HTML and JavaScript that sets up the button and
+
+339
+00:17:53,151 --> 00:17:59,295
+The reason why you would sometimes see the edit button there and sometimes not is about this relationship here
+
+340
+00:17:59,807 --> 00:18:01,599
+The 
+
+341
+00:18:01,855 --> 00:18:02,879
+Button name
+
+342
+00:18:03,647 --> 00:18:05,183
+Must match one of these
+
+343
+00:18:06,207 --> 00:18:07,743
+So if it doesn't
+
+344
+00:18:07,999 --> 00:18:09,023
+It won't add it
+
+345
+00:18:10,047 --> 00:18:11,583
+It's sort of
+
+346
+00:18:12,607 --> 00:18:16,191
+It's necessary for that to be like that because of
+
+347
+00:18:16,703 --> 00:18:17,983
+You wanna have a
+
+348
+00:18:18,495 --> 00:18:21,311
+Button that already knows where we going right
+
+349
+00:18:21,567 --> 00:18:26,431
+And how can I know those values at the moment the only values we have here
+
+350
+00:18:26,943 --> 00:18:30,015
+Are these values it's come up here
+
+351
+00:18:31,551 --> 00:18:32,575
+These values
+
+352
+00:18:33,599 --> 00:18:35,391
+We don't have
+
+353
+00:18:37,439 --> 00:18:38,719
+Other values
+
+354
+00:18:38,975 --> 00:18:41,279
+This is the values we have the view ID
+
+355
+00:18:41,535 --> 00:18:45,887
+So That's what we have to work with and so if there's no relationship
+
+356
+00:18:46,143 --> 00:18:52,287
+Then how can we How can we set the edit button the relationship must be set so this is the way we
+
+357
+00:18:52,543 --> 00:18:58,687
+Set a relationship that's quite simple right you just make sure that the name of the
+
+358
+00:18:58,943 --> 00:19:00,735
+The button this one won't work
+
+359
+00:19:01,247 --> 00:19:04,319
+So although we said the button here to be true
+
+360
+00:19:05,343 --> 00:19:11,487
+It will check the name and see how this doesn't match and it won't add a button and that's good because we don't want that
+
+361
+00:19:11,743 --> 00:19:15,327
+Actually a button here we want a button to show up in this one
+
+362
+00:19:16,607 --> 00:19:18,911
+And so when it loads this button
+
+363
+00:19:19,167 --> 00:19:24,543
+It will check the name it'll say ah yeah this one matches and it will add a button
+
+364
+00:19:24,799 --> 00:19:25,567
+So
+
+365
+00:19:26,335 --> 00:19:30,687
+That's the right behaviour That's what we want so if we compile it now
+
+366
+00:19:32,735 --> 00:19:34,783
+&&&&&&&&&&&@@@
+
+367
+00:19:35,039 --> 00:19:36,319
+We can just come here
+
+368
+00:19:36,831 --> 00:19:38,367
+And go to
+
+369
+00:19:39,135 --> 00:19:40,415
+ sermons
+
+370
+00:19:41,439 --> 00:19:42,207
+Click here
+
+371
+00:19:44,511 --> 00:19:46,559
+We'll see it now has an edit option
+
+372
+00:19:46,815 --> 00:19:49,119
+If we select none and has a great option
+
+373
+00:19:49,631 --> 00:19:51,935
+Select this it has a edit option
+
+374
+00:19:52,191 --> 00:19:56,031
+That is sort of how that relationship comes together
+
+375
+00:19:58,591 --> 00:20:00,383
+So were are we
+
+376
+00:20:01,663 --> 00:20:02,687
+go back
+
+377
+00:20:03,199 --> 00:20:03,967
+To the field
+
+378
+00:20:07,807 --> 00:20:08,319
+Ok
+
+379
+00:20:09,343 --> 00:20:10,111
+So
+
+380
+00:20:10,367 --> 00:20:11,647
+Oh this is a wrong one
+
+381
+00:20:15,743 --> 00:20:17,791
+So now we have the buttons set
+
+382
+00:20:18,047 --> 00:20:20,351
+That's really the whole discussion
+
+383
+00:20:21,887 --> 00:20:24,959
+And you could if you don't want the button set
+
+384
+00:20:25,215 --> 00:20:27,263
+But you want the button on the page
+
+385
+00:20:27,519 --> 00:20:28,799
+Set this to false
+
+386
+00:20:31,359 --> 00:20:35,455
+Or just leave it out yeah it will take the button away completely
+
+387
+00:20:36,223 --> 00:20:40,063
+Now this table value is a mandatory value
+
+388
+00:20:40,575 --> 00:20:46,719
+Because it gives us a dynamic value which we can use in
+
+389
+00:20:46,975 --> 00:20:49,535
+In many places including here
+
+390
+00:20:49,791 --> 00:20:55,935
+You see a list button gets added to a page as well if we
+
+391
+00:20:56,191 --> 00:21:02,335
+If we look back here at this implementation we see that here is a list
+
+392
+00:21:02,591 --> 00:21:03,103
+Again
+
+393
+00:21:03,359 --> 00:21:04,895
+But this isn't even in the view
+
+394
+00:21:05,151 --> 00:21:07,455
+This is in the list View
+
+395
+00:21:07,711 --> 00:21:08,735
+So you can
+
+396
+00:21:08,991 --> 00:21:10,271
+Have a filter
+
+397
+00:21:10,527 --> 00:21:15,903
+Dynamically in place for this again in the batch as well if you if you select batch
+
+398
+00:21:16,928 --> 00:21:23,072
+There is also one available to select so all of these fields
+
+399
+00:21:23,584 --> 00:21:27,424
+Are still using the information that we give here
+
+400
+00:21:28,192 --> 00:21:33,312
+So if you don't have this information then some of these Fields functions will just
+
+401
+00:21:33,568 --> 00:21:34,336
+Disappear
+
+402
+00:21:34,592 --> 00:21:35,104
+It will
+
+403
+00:21:35,360 --> 00:21:36,896
+Most probably not break
+
+404
+00:21:37,152 --> 00:21:43,296
+But it will not be there so if you to see the fields filtering option is not working then it's because of
+
+405
+00:21:43,552 --> 00:21:46,112
+ these settings that are not right
+
+406
+00:21:47,136 --> 00:21:51,744
+Now to give you a perspective on how it adds that
+
+407
+00:21:52,256 --> 00:21:53,024
+This little
+
+408
+00:21:53,536 --> 00:21:55,840
+Drop down here how does it do that
+
+409
+00:21:56,352 --> 00:22:00,448
+Well in the code again if we go to that View
+
+410
+00:22:01,984 --> 00:22:03,264
+Which is the
+
+411
+00:22:03,520 --> 00:22:05,312
+plural preachers
+
+412
+00:22:05,568 --> 00:22:07,360
+And we scroll down
+
+413
+00:22:08,384 --> 00:22:09,664
+We have a
+
+414
+00:22:09,920 --> 00:22:10,688
+Function
+
+415
+00:22:11,456 --> 00:22:11,968
+Called
+
+416
+00:22:17,600 --> 00:22:18,368
+here it is
+
+417
+00:22:18,880 --> 00:22:19,904
+Filter
+
+418
+00:22:20,416 --> 00:22:22,208
+Ok so we go up
+
+419
+00:22:22,976 --> 00:22:24,256
+And we see
+
+420
+00:22:28,608 --> 00:22:30,400
+There's a preachers one
+
+421
+00:22:30,912 --> 00:22:33,984
+Import data
+
+422
+00:22:34,496 --> 00:22:36,032
+What is the buttons
+
+423
+00:22:36,800 --> 00:22:37,568
+filters
+
+424
+00:23:30,048 --> 00:23:31,584
+Looking at the wrong one
+
+425
+00:23:32,096 --> 00:23:33,376
+I should be looking at
+
+426
+00:23:34,144 --> 00:23:34,912
+Sermons
+
+427
+00:23:39,520 --> 00:23:43,104
+So here we have a load field type
+
+428
+00:23:43,360 --> 00:23:44,128
+Preachers
+
+429
+00:23:45,920 --> 00:23:48,480
+And it basically gets options
+
+430
+00:23:49,504 --> 00:23:50,016
+see
+
+431
+00:23:50,528 --> 00:23:52,832
+So this is really targeting
+
+432
+00:23:53,344 --> 00:23:53,856
+This
+
+433
+00:23:55,648 --> 00:23:59,232
+Options area this get options it's calling that function
+
+434
+00:23:59,488 --> 00:24:00,256
+And
+
+435
+00:24:00,512 --> 00:24:05,120
+Then if we have values it actually adds them into the filter
+
+436
+00:24:05,376 --> 00:24:11,520
+And it checks are we doing badge and if this can create can edit validates
+
+437
+00:24:11,776 --> 00:24:14,592
+Yes then it adds it to the batch as well
+
+438
+00:24:15,104 --> 00:24:15,872
+So
+
+439
+00:24:16,384 --> 00:24:21,760
+We are falling back onto the field type get options even in your filter
+
+440
+00:24:22,272 --> 00:24:24,576
+And so
+
+441
+00:24:25,088 --> 00:24:31,232
+That's why we have the filters easily integrated and it's the value is still use
+
+442
+00:24:31,488 --> 00:24:32,000
+Using
+
+443
+00:24:32,256 --> 00:24:33,536
+The
+
+444
+00:24:34,048 --> 00:24:36,352
+Values that you placed in the field
+
+445
+00:24:37,120 --> 00:24:37,632
+So
+
+446
+00:24:38,144 --> 00:24:41,472
+That's how we get this value that's how we get that value
+
+447
+00:24:44,288 --> 00:24:46,080
+Yeah that's basically it
+
+448
+00:24:46,592 --> 00:24:47,616
+Ok next
+
+449
+00:24:49,664 --> 00:24:54,528
+We have the components name now the reason why these can be dynamic
+
+450
+00:24:55,040 --> 00:24:56,064
+Is because
+
+451
+00:24:56,320 --> 00:24:58,624
+The table as well as the component name
+
+452
+00:24:58,880 --> 00:24:59,392
+It
+
+453
+00:24:59,648 --> 00:25:05,792
+ is possible for you to reuse fields in different admin views and different components
+
+454
+00:25:06,048 --> 00:25:09,888
+ and then that can be dynamically update it
+
+455
+00:25:10,400 --> 00:25:16,544
+And it should just work when you want to have a relationship from one
+
+456
+00:25:16,800 --> 00:25:19,616
+Table into another component altogether
+
+457
+00:25:19,872 --> 00:25:21,408
+Then you have to hard code
+
+458
+00:25:21,664 --> 00:25:22,688
+Component a
+
+459
+00:25:23,200 --> 00:25:26,784
+So let's say you have component a where you have a view
+
+460
+00:25:27,040 --> 00:25:29,600
+adminView where this field is used
+
+461
+00:25:29,856 --> 00:25:31,648
+And you want to take the data
+
+462
+00:25:33,440 --> 00:25:34,464
+From
+
+463
+00:25:34,720 --> 00:25:36,256
+That View
+
+464
+00:25:37,280 --> 00:25:38,560
+Into another
+
+465
+00:25:39,328 --> 00:25:41,632
+Component altogether
+
+466
+00:25:41,888 --> 00:25:44,448
+Then you have to add component a's
+
+467
+00:25:44,704 --> 00:25:50,848
+Static name in here and not the placeholder ok that's enough of that there has been discussions on 
+
+468
+00:25:51,104 --> 00:25:54,432
+forums about this so you could search up and find answers I suppose
+
+469
+00:25:54,688 --> 00:25:58,528
+Then we have a field value and a key field
+
+470
+00:25:59,040 --> 00:26:01,088
+Value field and key field
+
+471
+00:26:01,600 --> 00:26:05,952
+I should have maybe given this different names I suppose because
+
+472
+00:26:06,720 --> 00:26:09,792
+Basically the key field is the ID field
+
+473
+00:26:10,816 --> 00:26:16,704
+Down here that place holder is the same as here and I'm actually saying it over there
+
+474
+00:26:16,960 --> 00:26:19,008
+The field value
+
+475
+00:26:19,264 --> 00:26:21,056
+Is the text value
+
+476
+00:26:22,848 --> 00:26:23,616
+Over there
+
+477
+00:26:24,384 --> 00:26:25,152
+Now
+
+478
+00:26:25,664 --> 00:26:27,200
+The code text
+
+479
+00:26:27,456 --> 00:26:28,736
+Is basically
+
+480
+00:26:32,064 --> 00:26:33,856
+This text value again
+
+481
+00:26:34,624 --> 00:26:40,768
+But it didn't gets placed over here so this and that value is basically the same value this is
+
+482
+00:26:41,024 --> 00:26:43,328
+just the one that gets taken to the code
+
+483
+00:26:43,840 --> 00:26:46,912
+Well it's what becomes available in the item
+
+484
+00:26:47,168 --> 00:26:47,680
+So
+
+485
+00:26:47,936 --> 00:26:48,960
+You could
+
+486
+00:26:49,216 --> 00:26:54,848
+Change this to whatever you like this place holders are there only to make your life easier
+
+487
+00:26:55,104 --> 00:26:58,688
+If it doesn't help then just replace them with static values
+
+488
+00:27:00,224 --> 00:27:06,368
+But the advantage of them being like this is you can come up here and decide I no longer want to store the ID
+
+489
+00:27:06,880 --> 00:27:11,744
+Because this is the value that get stored right it is the value that is over on this side
+
+490
+00:27:12,000 --> 00:27:16,864
+J HTML method setting up an option
+
+491
+00:27:17,888 --> 00:27:24,032
+Takes the second value which is this one has the value that get stored in the database and the third the
+
+492
+00:27:24,288 --> 00:27:27,360
+Value as the value that gets shown in the drop down list
+
+493
+00:27:27,616 --> 00:27:30,688
+So these are the two values that you're working with
+
+494
+00:27:31,456 --> 00:27:33,504
+Now you can add here any
+
+495
+00:27:33,760 --> 00:27:35,040
+PHP you like
+
+496
+00:27:35,808 --> 00:27:41,952
+I mean you could you could grab from any other table you could do a very complicated query here and
+
+497
+00:27:42,208 --> 00:27:44,000
+Generate a whole different list
+
+498
+00:27:44,256 --> 00:27:48,864
+And just make sure that the ideas are not going to Clash
+
+499
+00:27:49,120 --> 00:27:50,400
+And if you expect
+
+500
+00:27:50,912 --> 00:27:53,984
+ID clashing then if you need to add
+
+501
+00:27:54,240 --> 00:27:58,336
+Maybe ID underscore something for one
+
+502
+00:27:58,592 --> 00:28:04,736
+Place's information ID underscore something else for another place's information you could do that because
+
+503
+00:28:04,992 --> 00:28:07,296
+Because this this selection concept
+
+504
+00:28:07,808 --> 00:28:11,136
+We'll keep on using this pattern all across JCB
+
+505
+00:28:11,648 --> 00:28:12,928
+This is where you set
+
+506
+00:28:13,440 --> 00:28:13,952
+The
+
+507
+00:28:14,208 --> 00:28:15,232
+Relationship
+
+508
+00:28:15,488 --> 00:28:21,632
+Inheritance structure everything this is just this area and it affects everything across JCB
+
+509
+00:28:21,888 --> 00:28:24,448
+Wherever this field is going to be used
+
+510
+00:28:24,704 --> 00:28:27,520
+This is going to be available
+
+511
+00:28:28,800 --> 00:28:30,592
+So it always
+
+512
+00:28:31,360 --> 00:28:34,432
+It means that you have a lot of Freedom in this little
+
+513
+00:28:34,688 --> 00:28:38,784
+Block because that's what's gonna be at the end of day end up being placed here
+
+514
+00:28:39,296 --> 00:28:40,832
+And
+
+515
+00:28:41,088 --> 00:28:41,856
+You can
+
+516
+00:28:42,112 --> 00:28:47,744
+Get from other tables you can do other and you know interesting relationships here
+
+517
+00:28:48,000 --> 00:28:48,768
+But
+
+518
+00:28:49,280 --> 00:28:50,560
+That is 
+
+519
+00:28:51,072 --> 00:28:53,888
+Important that at least the main table
+
+520
+00:28:54,912 --> 00:28:56,704
+Is the one that you mentioned here
+
+521
+00:28:56,960 --> 00:29:00,288
+And the main component is the one you mentioned here
+
+522
+00:29:00,800 --> 00:29:02,336
+And it
+
+523
+00:29:02,592 --> 00:29:03,104
+That
+
+524
+00:29:03,360 --> 00:29:04,384
+Tables
+
+525
+00:29:04,896 --> 00:29:10,016
+View and list views names are used here and then the value
+
+526
+00:29:10,272 --> 00:29:13,088
+I mean in this table this one here
+
+527
+00:29:14,112 --> 00:29:18,976
+You are grabbing two values you're grabbing a value to show to the user
+
+528
+00:29:19,488 --> 00:29:25,632
+And value to save in the database that's the key value the key field that is the value
+
+529
+00:29:25,888 --> 00:29:29,472
+Get stored in the database if you're using
+
+530
+00:29:29,984 --> 00:29:31,520
+This implementation
+
+531
+00:29:32,288 --> 00:29:35,872
+If you're not then this doesn't really
+
+532
+00:29:36,384 --> 00:29:41,248
+Yeah you can just leave it out if you if you're not gonna use this
+
+533
+00:29:42,528 --> 00:29:48,416
+You can hardcode whatever values you want down here it'll still work infact I would
+
+534
+00:29:48,672 --> 00:29:51,232
+Encourage you to test it
+
+535
+00:29:51,488 --> 00:29:52,000
+You know
+
+536
+00:29:52,512 --> 00:29:56,608
+I have built Fields custom Fields which I left out
+
+537
+00:29:57,120 --> 00:29:58,912
+All of this information
+
+538
+00:29:59,680 --> 00:30:01,472
+And only did everything in here
+
+539
+00:30:01,984 --> 00:30:03,008
+And
+
+540
+00:30:03,264 --> 00:30:04,544
+It still worked
+
+541
+00:30:05,056 --> 00:30:11,200
+Because I was actually having such Dynamic value retrieval based on so many other concepts
+
+542
+00:30:11,456 --> 00:30:17,600
+Of the current view I even grab the ID from the from the input to determine the
+
+543
+00:30:17,856 --> 00:30:19,904
+Get relationship so
+
+544
+00:30:20,672 --> 00:30:22,464
+They are very nice
+
+545
+00:30:22,720 --> 00:30:25,280
+Options let me show you one of those fields
+
+546
+00:30:26,048 --> 00:30:32,192
+Here is the field it's called member it's an external I'm using it in a
+
+547
+00:30:32,448 --> 00:30:33,728
+external component
+
+548
+00:30:34,240 --> 00:30:36,032
+The field type is member
+
+549
+00:30:36,544 --> 00:30:40,896
+Ok so I hard coded the table and the component names
+
+550
+00:30:41,408 --> 00:30:45,248
+But down here in the option the get option
+
+551
+00:30:45,504 --> 00:30:49,344
+You see I have a whole different set of PHP script
+
+552
+00:30:50,880 --> 00:30:51,648
+Which
+
+553
+00:30:51,904 --> 00:30:52,928
+Is using
+
+554
+00:30:54,464 --> 00:30:58,816
+Custom help methods to check access
+
+555
+00:30:59,072 --> 00:31:00,608
+It's also up here
+
+556
+00:31:00,864 --> 00:31:02,656
+We were basically where is it
+
+557
+00:31:02,912 --> 00:31:09,056
+Yeah I'm getting the input and I'm checking is there referral values to a field ID value and if
+
+558
+00:31:09,312 --> 00:31:11,616
+ there is it I'm using this
+
+559
+00:31:11,872 --> 00:31:13,152
+This values
+
+560
+00:31:13,408 --> 00:31:18,272
+Down into the searching and getting here it says
+
+561
+00:31:18,528 --> 00:31:20,576
+Load the main member only
+
+562
+00:31:20,832 --> 00:31:22,368
+You know there's all kinds of
+
+563
+00:31:22,624 --> 00:31:26,464
+Tricks I'm doing and it's all happening in the PHP and I know
+
+564
+00:31:26,720 --> 00:31:28,256
+That this PHP
+
+565
+00:31:28,512 --> 00:31:29,536
+Is getting dumped
+
+566
+00:31:30,048 --> 00:31:31,584
+Into this area here
+
+567
+00:31:32,864 --> 00:31:38,752
+So the get options is what is being used across JCB for the field
+
+568
+00:31:39,008 --> 00:31:45,152
+And so I'm able to do anything that you can with PHP in here
+
+569
+00:31:45,664 --> 00:31:49,504
+To determine what the options must be for the custom field
+
+570
+00:31:50,016 --> 00:31:53,856
+Always remembering that there needs to be in 
+
+571
+00:31:54,368 --> 00:32:00,512
+This area here the needs to be a value which I want to be placed in the database and a
+
+572
+00:32:00,768 --> 00:32:04,096
+Value I want my user to see these values can
+
+573
+00:32:04,864 --> 00:32:06,656
+Theoretically be exactly the same
+
+574
+00:32:07,680 --> 00:32:08,192
+Like that
+
+575
+00:32:09,472 --> 00:32:10,752
+I didn't have to be
+
+576
+00:32:11,264 --> 00:32:13,312
+really
+
+577
+00:32:14,848 --> 00:32:15,616
+doesn't matter
+
+578
+00:32:15,872 --> 00:32:22,016
+You decide the only reality is if that's the value you place in the database that's the type of value
+
+579
+00:32:22,272 --> 00:32:23,296
+You need to set up
+
+580
+00:32:23,808 --> 00:32:25,856
+So if this is going to be a string
+
+581
+00:32:26,880 --> 00:32:28,160
+This value here
+
+582
+00:32:28,928 --> 00:32:30,976
+Then you need to come back
+
+583
+00:32:31,232 --> 00:32:32,256
+And you need to
+
+584
+00:32:32,512 --> 00:32:33,024
+Check
+
+585
+00:32:34,304 --> 00:32:36,864
+That your database is not an integer
+
+586
+00:32:37,120 --> 00:32:42,240
+Because if you saving a string you want at least have a Varchar
+
+587
+00:32:42,496 --> 00:32:44,288
+about 250
+
+588
+00:32:44,544 --> 00:32:45,824
+Now that'll work
+
+589
+00:32:46,336 --> 00:32:49,664
+But if you change the
+
+590
+00:32:49,920 --> 00:32:50,944
+Multiple
+
+591
+00:32:51,200 --> 00:32:51,968
+That means
+
+592
+00:32:52,224 --> 00:32:56,320
+Can a user a select more than one value if you change that true
+
+593
+00:32:56,576 --> 00:33:02,208
+Again you need to change your database to at least text
+
+594
+00:33:02,720 --> 00:33:03,232
+to
+
+595
+00:33:03,488 --> 00:33:09,632
+Be able to store or a very big Varchar which is also possible
+
+596
+00:33:09,888 --> 00:33:11,936
+To store these values
+
+597
+00:33:12,448 --> 00:33:17,568
+if they are gonna be strings then I usually just use text I just like it
+
+598
+00:33:18,336 --> 00:33:18,848
+Easy enough
+
+599
+00:33:19,104 --> 00:33:25,248
+And if it's going to be lots of options you can go
+
+600
+00:33:25,504 --> 00:33:27,552
+bulk ,there is even
+
+601
+00:33:27,808 --> 00:33:33,184
+ way more than I think you would ever need but ok so
+
+602
+00:33:33,952 --> 00:33:37,024
+The reality is we can
+
+603
+00:33:37,280 --> 00:33:43,424
+determine what these values are so here I'm making sure that the member value is an ID
+
+604
+00:33:44,704 --> 00:33:47,264
+But I'm using a helper method
+
+605
+00:33:47,776 --> 00:33:49,312
+To take this ID
+
+606
+00:33:49,568 --> 00:33:51,104
+And get the members name
+
+607
+00:33:51,616 --> 00:33:57,760
+Why because the member's name is difficult to know because it could be different values based on the
+
+608
+00:33:58,016 --> 00:34:04,160
+Different member types some members there having their name in the user table some members they have in there
+
+609
+00:34:04,416 --> 00:34:05,696
+ names in the members table
+
+610
+00:34:05,952 --> 00:34:10,048
+So that's different places the members name can actually live
+
+611
+00:34:10,304 --> 00:34:14,144
+So with this little function I wrote in the helper class
+
+612
+00:34:14,400 --> 00:34:17,984
+I can determine the members name by simply the ID
+
+613
+00:34:19,520 --> 00:34:25,664
+Or I could add the user and the name and it makes it quicker to for the function so this function has
+
+614
+00:34:25,920 --> 00:34:32,064
+Little bit of a speed up if I have these values available but like over here I don't so I only pass the ID and
+
+615
+00:34:32,320 --> 00:34:33,600
+It still works
+
+616
+00:34:33,856 --> 00:34:35,904
+And so
+
+617
+00:34:37,440 --> 00:34:43,584
+This is the  maneuverability of a selection
+
+618
+00:34:44,096 --> 00:34:50,240
+You can adapt this to whatever you want the only reality is that the moment you set
+
+619
+00:34:50,496 --> 00:34:52,544
+Your I would call it convention
+
+620
+00:34:53,568 --> 00:34:55,616
+Of this field type
+
+621
+00:34:55,872 --> 00:34:59,456
+Then you need to honour that Convention across your component
+
+622
+00:34:59,712 --> 00:35:02,784
+If you decide that you're saving a string in that field
+
+623
+00:35:03,296 --> 00:35:05,856
+Then you need to everywhere now you dealing with the string
+
+624
+00:35:06,624 --> 00:35:11,744
+If you're saying you're saving a multiple select then you might wanna
+
+625
+00:35:12,000 --> 00:35:13,024
+Do
+
+626
+00:35:13,280 --> 00:35:17,376
+You know the default storing method usually works
+
+627
+00:35:17,632 --> 00:35:18,656
+Out of the box
+
+628
+00:35:19,424 --> 00:35:22,240
+If it doesn't you can come and try Json
+
+629
+00:35:22,496 --> 00:35:28,640
+Especially when you have multiple values but usually it does it out of the box and I can show you why
+
+630
+00:35:29,408 --> 00:35:31,456
+If we go to the compiler
+
+631
+00:35:32,992 --> 00:35:35,040
+We go to the fields
+
+632
+00:35:36,832 --> 00:35:40,672
+Class in the compiler it has a function called set Builder
+
+633
+00:35:40,928 --> 00:35:47,072
+Now the set builder function is really a little oversized at the moment it started out
+
+634
+00:35:47,328 --> 00:35:48,096
+Small believe me
+
+635
+00:35:48,352 --> 00:35:50,400
+And I could
+
+636
+00:35:50,656 --> 00:35:55,776
+See the option of decoupling some of this out into its own separate methods but
+
+637
+00:35:56,032 --> 00:35:59,616
+It works very well and it's easy to understand so
+
+638
+00:36:00,384 --> 00:36:02,688
+If I just collapse this here we can see more
+
+639
+00:36:03,968 --> 00:36:08,832
+So now we come down here we ask what is the data type
+
+640
+00:36:09,600 --> 00:36:10,624
+Is it set
+
+641
+00:36:10,880 --> 00:36:13,184
+And if it's set we determine
+
+642
+00:36:14,208 --> 00:36:16,000
+Through various methods ok
+
+643
+00:36:16,512 --> 00:36:22,656
+This is what we have and we go ahead and we set database keys and all kinds of database relationship
+
+644
+00:36:22,912 --> 00:36:28,032
+ information query builder gets updated with a lot of information and stuff
+
+645
+00:36:28,288 --> 00:36:31,360
+So the database information gets used up here
+
+646
+00:36:34,688 --> 00:36:35,968
+If we have
+
+647
+00:36:36,224 --> 00:36:39,296
+....... it is a different concept
+
+648
+00:36:39,808 --> 00:36:41,088
+if we scroll down
+
+649
+00:36:42,624 --> 00:36:45,184
+We wanna look at the storage switches
+
+650
+00:36:45,696 --> 00:36:47,488
+So coming down here
+
+651
+00:36:53,632 --> 00:36:58,240
+Where we get to setup checkbox and other joint items for this view
+
+652
+00:36:59,008 --> 00:37:00,288
+We are basically
+
+653
+00:37:00,800 --> 00:37:01,824
+Going to check
+
+654
+00:37:02,080 --> 00:37:03,872
+What type of field is this
+
+655
+00:37:04,128 --> 00:37:06,944
+If it's a subform if it's check boxes
+
+656
+00:37:07,456 --> 00:37:13,600
+Or if the store method is not zero which is default
+
+657
+00:37:13,856 --> 00:37:15,904
+If we have a database switch
+
+658
+00:37:17,184 --> 00:37:17,952
+And
+
+659
+00:37:18,208 --> 00:37:20,256
+That it's not a tag the type name
+
+660
+00:37:20,768 --> 00:37:25,376
+Ok now we coming here if it's any of these fields
+
+661
+00:37:25,632 --> 00:37:28,704
+It will check if you set your own storage
+
+662
+00:37:29,216 --> 00:37:29,728
+Switch
+
+663
+00:37:29,984 --> 00:37:33,568
+Obviously if none is set it will fall back onto the Json
+
+664
+00:37:34,592 --> 00:37:36,128
+It needs to be Json
+
+665
+00:37:36,384 --> 00:37:37,664
+If it one of those fields
+
+666
+00:37:37,920 --> 00:37:44,064
+So it automatically builds it so that means the default will be Json then if you select Json it
+
+667
+00:37:44,320 --> 00:37:45,344
+It will still be Json
+
+668
+00:37:45,856 --> 00:37:52,000
+So that's just how this catch works if you don't know it should be we will
+
+669
+00:37:52,256 --> 00:37:54,816
+In the compiler sort of help you
+
+670
+00:37:55,328 --> 00:37:56,608
+Get to the same place
+
+671
+00:37:57,120 --> 00:37:58,912
+Now
+
+672
+00:38:00,448 --> 00:38:02,496
+That also means that sometimes
+
+673
+00:38:03,264 --> 00:38:09,408
+You might have a multiple select option in a list field which is not a subform not
+
+674
+00:38:09,664 --> 00:38:10,432
+check Boxes
+
+675
+00:38:10,688 --> 00:38:12,224
+But it's multiple
+
+676
+00:38:13,760 --> 00:38:19,392
+The multiple gets triggered the multiple switch so it will still come in here
+
+677
+00:38:20,416 --> 00:38:22,208
+So what even if you set
+
+678
+00:38:22,464 --> 00:38:23,744
+it to be Json
+
+679
+00:38:24,000 --> 00:38:26,816
+Where in the compiler have the multiple
+
+680
+00:38:27,072 --> 00:38:30,656
+Switch to check is this field having multiple selection
+
+681
+00:38:30,912 --> 00:38:34,240
+Yes well then we need to save save it as a json
+
+682
+00:38:35,008 --> 00:38:41,152
+That is what this does so takes care of the fact that it's Json but
+
+683
+00:38:44,736 --> 00:38:50,880
+It mustn't be a tag and it must have a database switch and database which just means the data
+
+684
+00:38:51,136 --> 00:38:57,280
+Must be going to be stored into the database if there's no storing of the data in the
+
+685
+00:38:57,536 --> 00:39:02,400
+Database we obviously don't need any of this. So the multiple switch
+
+686
+00:39:02,656 --> 00:39:04,448
+If we search it up
+
+687
+00:39:04,704 --> 00:39:07,264
+We'll see that it actually gets passed
+
+688
+00:39:07,520 --> 00:39:11,104
+To the builder right there one of the it's
+
+689
+00:39:11,616 --> 00:39:13,408
+parameters
+
+690
+00:39:13,664 --> 00:39:15,712
+We go and search
+
+691
+00:39:15,968 --> 00:39:22,112
+Where the Builder all is used will see that the multiple switch is also in a variable
+
+692
+00:39:23,136 --> 00:39:26,208
+So we can go up and you can search
+
+693
+00:39:26,720 --> 00:39:29,792
+You can search for this where does multiple get set
+
+694
+00:39:30,560 --> 00:39:32,864
+Ok so we started of
+
+695
+00:39:33,120 --> 00:39:34,656
+This this method
+
+696
+00:39:35,424 --> 00:39:39,264
+Didn't start with multiple so that scroll down let's see
+
+697
+00:39:40,288 --> 00:39:41,824
+Where is multiple come from
+
+698
+00:39:43,616 --> 00:39:45,152
+There's multiple
+
+699
+00:39:45,408 --> 00:39:48,224
+And it's set to False to start with
+
+700
+00:39:48,480 --> 00:39:48,992
+Ok
+
+701
+00:39:49,504 --> 00:39:51,808
+So we're in the beginning of set the dynamic field
+
+702
+00:39:52,320 --> 00:39:58,464
+We check multiple is false then we get set field attributes and multiple gets passed to it
+
+703
+00:39:58,720 --> 00:40:03,584
+Let's check field attributes we go let's go to the actual function
+
+704
+00:40:03,840 --> 00:40:09,984
+We see here comes multiple but it's passed with a reference that means he whatever we do to this value
+
+705
+00:40:10,240 --> 00:40:11,264
+In this method
+
+706
+00:40:11,520 --> 00:40:13,312
+We'll go back to where it started
+
+707
+00:40:13,824 --> 00:40:15,616
+So over here
+
+708
+00:40:15,872 --> 00:40:17,408
+We doing a check
+
+709
+00:40:18,176 --> 00:40:21,760
+At some point Let's see we got Properties
+
+710
+00:40:22,528 --> 00:40:25,344
+Validate
+
+711
+00:40:26,880 --> 00:40:29,952
+Let's search that the variable multiple
+
+712
+00:40:30,208 --> 00:40:31,232
+That's go ha
+
+713
+00:40:31,488 --> 00:40:37,376
+Here we found the property name which is multiple
+
+714
+00:40:37,888 --> 00:40:40,448
+We retrieve the value
+
+715
+00:40:40,960 --> 00:40:42,240
+From the XML
+
+716
+00:40:42,752 --> 00:40:48,896
+Check that the value gets added here and we check is that value true and if it's true we
+
+717
+00:40:49,152 --> 00:40:50,176
+trip the switch
+
+718
+00:40:50,944 --> 00:40:56,064
+To multiple so that literally gets down the through what you put into the JCB
+
+719
+00:40:56,320 --> 00:40:57,344
+Interface
+
+720
+00:40:57,600 --> 00:40:58,624
+This little
+
+721
+00:41:00,160 --> 00:41:00,672
+Field
+
+722
+00:41:01,184 --> 00:41:02,208
+Where is it
+
+723
+00:41:05,536 --> 00:41:06,304
+If you
+
+724
+00:41:06,816 --> 00:41:10,656
+Set this to True it will trip that behaviour
+
+725
+00:41:11,936 --> 00:41:13,728
+So that's how that works
+
+726
+00:41:15,008 --> 00:41:18,592
+So the multiple switch is a powerful switch and it
+
+727
+00:41:18,848 --> 00:41:21,664
+Really helps you even if you miss
+
+728
+00:41:21,920 --> 00:41:23,456
+The the storage
+
+729
+00:41:23,712 --> 00:41:26,784
+Obviously it doesn't update the database
+
+730
+00:41:27,040 --> 00:41:30,368
+Selection but if you miss the storage thing
+
+731
+00:41:30,880 --> 00:41:32,416
+The default will work
+
+732
+00:41:32,928 --> 00:41:33,440
+Ok
+
+733
+00:41:33,696 --> 00:41:39,840
+But if you did that it will still work even if you select one of the encryption options it will
+
+734
+00:41:40,096 --> 00:41:40,608
+Still work
+
+735
+00:41:40,864 --> 00:41:45,216
+Because it actually is a little bit intelligent
+
+736
+00:41:45,984 --> 00:41:48,800
+Ok so if we go back here
+
+737
+00:41:49,568 --> 00:41:51,616
+And we go back to the
+
+738
+00:41:52,640 --> 00:41:53,663
+Set Builder
+
+739
+00:41:54,175 --> 00:42:00,319
+The set builder function is one of those places where you could figure out a whole lot of things
+
+740
+00:42:00,831 --> 00:42:02,879
+About how they JCB compiles
+
+741
+00:42:03,135 --> 00:42:04,159
+Custom fields
+
+742
+00:42:05,951 --> 00:42:09,279
+So this is a good place to start you know your search
+
+743
+00:42:09,791 --> 00:42:13,887
+The other one that we already looked at is the set attribute
+
+744
+00:42:14,911 --> 00:42:15,935
+This one here
+
+745
+00:42:16,703 --> 00:42:22,847
+The set attributes is where we actually work with the original values that we get from the database the properties
+
+746
+00:42:23,103 --> 00:42:26,431
+As well as the actual field
+
+747
+00:42:26,943 --> 00:42:27,967
+So
+
+748
+00:42:28,991 --> 00:42:33,087
+We use the field value to determine many things
+
+749
+00:42:33,599 --> 00:42:39,743
+And we parse every value, the reason why we remapped this is to make sure we can 
+
+750
+00:42:39,999 --> 00:42:42,559
+Sort of fix things if you made a mistake
+
+751
+00:42:42,815 --> 00:42:46,399
+So there is some some things here to try and catch
+
+752
+00:42:47,935 --> 00:42:48,447
+Any
+
+753
+00:42:48,703 --> 00:42:54,079
+Human error on the side of JCB that also means you could be doing something wrong
+
+754
+00:42:54,335 --> 00:42:55,359
+and things still work
+
+755
+00:42:55,615 --> 00:42:56,639
+That happens
+
+756
+00:42:58,175 --> 00:43:04,319
+And then someday maybe someone decides no they don't want to catch that fix anymore
+
+757
+00:43:04,575 --> 00:43:06,623
+You know which I'm trying to
+
+758
+00:43:07,135 --> 00:43:09,183
+You know prevent I wanna keep the
+
+759
+00:43:09,439 --> 00:43:10,463
+The fixing place
+
+760
+00:43:11,231 --> 00:43:13,023
+And then suddenly your
+
+761
+00:43:13,279 --> 00:43:13,791
+Project
+
+762
+00:43:14,047 --> 00:43:14,815
+Doesn't work
+
+763
+00:43:15,071 --> 00:43:17,119
+I'm trying to avoid that
+
+764
+00:43:17,631 --> 00:43:20,191
+But it's good to know how it must be done
+
+765
+00:43:20,447 --> 00:43:21,215
+Right
+
+766
+00:43:21,471 --> 00:43:23,263
+So you just do it that way
+
+767
+00:43:23,519 --> 00:43:24,287
+To start with
+
+768
+00:43:25,823 --> 00:43:26,335
+Ok
+
+769
+00:43:26,847 --> 00:43:27,615
+So
+
+770
+00:43:28,383 --> 00:43:29,407
+That is
+
+771
+00:43:30,175 --> 00:43:32,735
+Basically a little bit of that, let's go back to the field
+
+772
+00:43:33,247 --> 00:43:34,527
+Suggest in conclusion
+
+773
+00:43:35,039 --> 00:43:38,367
+You could add any kind of code here
+
+774
+00:43:38,879 --> 00:43:41,183
+Basically it is what gets
+
+775
+00:43:41,439 --> 00:43:45,023
+The list and it's with this string here
+
+776
+00:43:45,535 --> 00:43:51,167
+That you are adding options to the list so basically in this little chunk here
+
+777
+00:43:51,935 --> 00:43:58,079
+Basically you check do I have the items if yes you can decide if you want to put a placeholder you 
+
+778
+00:43:58,335 --> 00:44:01,151
+See there select a Preacher if we go to sermon
+
+779
+00:44:01,663 --> 00:44:02,175
+And
+
+780
+00:44:02,687 --> 00:44:03,199
+We
+
+781
+00:44:04,479 --> 00:44:07,807
+We see that it's first option is select a Preacher
+
+782
+00:44:08,575 --> 00:44:13,951
+And it is basically this little snippet here that does that
+
+783
+00:44:15,231 --> 00:44:16,511
+So you could
+
+784
+00:44:16,767 --> 00:44:18,303
+You could do that now
+
+785
+00:44:18,559 --> 00:44:19,327
+The
+
+786
+00:44:20,351 --> 00:44:21,887
+When you do multiple select
+
+787
+00:44:22,655 --> 00:44:23,423
+Then this
+
+788
+00:44:23,679 --> 00:44:24,703
+Doesn't work well
+
+789
+00:44:25,471 --> 00:44:26,495
+just take it from me
+
+790
+00:44:26,751 --> 00:44:28,031
+If you up here
+
+791
+00:44:28,287 --> 00:44:29,055
+Chose
+
+792
+00:44:29,311 --> 00:44:31,103
+To allow multiple
+
+793
+00:44:31,359 --> 00:44:31,871
+Where is it
+
+794
+00:44:32,127 --> 00:44:32,639
+here
+
+795
+00:44:32,895 --> 00:44:33,407
+True
+
+796
+00:44:33,919 --> 00:44:34,687
+Then
+
+797
+00:44:35,199 --> 00:44:37,247
+I would suggest you take this option now
+
+798
+00:44:37,503 --> 00:44:41,343
+Because it will be look like an option to select it won't
+
+799
+00:44:41,855 --> 00:44:43,647
+Behave the same as now
+
+800
+00:44:43,903 --> 00:44:48,767
+Where you actually click away and it's gone it will be an option and
+
+801
+00:44:49,023 --> 00:44:52,351
+The option is a blank there's like a no string
+
+802
+00:44:52,863 --> 00:44:54,143
+That is how
+
+803
+00:44:54,399 --> 00:44:55,167
+We detect
+
+804
+00:44:55,423 --> 00:44:56,447
+That it's empty
+
+805
+00:44:56,703 --> 00:44:58,751
+It's this no string value here
+
+806
+00:44:59,263 --> 00:45:01,055
+Ok so
+
+807
+00:45:01,567 --> 00:45:07,711
+That is what that is up there and then you start looping this t forward slash is basically
+
+808
+00:45:07,967 --> 00:45:11,295
+A tab so you could put an actual tab in there
+
+809
+00:45:11,807 --> 00:45:14,879
+The way I do that is I would go to
+
+810
+00:45:15,135 --> 00:45:18,207
+you copy a tag from here copy go back
+
+811
+00:45:19,743 --> 00:45:20,767
+And paste it in
+
+812
+00:45:21,535 --> 00:45:22,047
+And
+
+813
+00:45:22,303 --> 00:45:23,327
+You could do this
+
+814
+00:45:25,375 --> 00:45:26,143
+In fact
+
+815
+00:45:26,399 --> 00:45:29,215
+Most of the time this is the better way
+
+816
+00:45:29,471 --> 00:45:29,983
+to
+
+817
+00:45:30,495 --> 00:45:31,775
+To make the code look
+
+818
+00:45:32,287 --> 00:45:33,055
+Beautiful
+
+819
+00:45:33,567 --> 00:45:34,335
+And
+
+820
+00:45:34,591 --> 00:45:38,175
+Correctly spaced This is This is often what I do
+
+821
+00:45:38,687 --> 00:45:40,479
+Is I move all the code
+
+822
+00:45:40,991 --> 00:45:42,783
+Just one little knots
+
+823
+00:45:43,039 --> 00:45:45,087
+In fact I think I needs to be two
+
+824
+00:45:47,647 --> 00:45:48,927
+So I move it all
+
+825
+00:45:49,183 --> 00:45:51,231
+Like this and I know it sounds
+
+826
+00:45:51,487 --> 00:45:52,255
+Crazy
+
+827
+00:45:52,767 --> 00:45:55,327
+But that is what I do
+
+828
+00:45:56,863 --> 00:46:02,239
+So now the code will look very nice and good in the display
+
+829
+00:46:02,751 --> 00:46:03,519
+If I save it
+
+830
+00:46:03,775 --> 00:46:04,287
+Let's
+
+831
+00:46:04,543 --> 00:46:06,847
+Let's make a little comment here
+
+832
+00:46:07,103 --> 00:46:07,615
+Hi there
+
+833
+00:46:09,663 --> 00:46:10,431
+and then
+
+834
+00:46:11,199 --> 00:46:14,271
+This is set to be the prime so save and close
+
+835
+00:46:14,527 --> 00:46:16,831
+And now we can
+
+836
+00:46:17,087 --> 00:46:18,879
+Go and compile this
+
+837
+00:46:25,279 --> 00:46:26,047
+Install
+
+838
+00:46:28,095 --> 00:46:31,423
+And in our preacher table we have that little hi there
+
+839
+00:46:32,703 --> 00:46:36,799
+And unfortunately the first value should not have a space
+
+840
+00:46:39,871 --> 00:46:41,919
+Yeah the spacing of
+
+841
+00:46:42,431 --> 00:46:47,039
+Of field types is still well many areas actually in JCB
+
+842
+00:46:47,295 --> 00:46:53,183
+It's like where we're at a place where I don't know how we will be able to fix this
+
+843
+00:46:53,439 --> 00:46:59,583
+So that it always behaves sort of better like that is now with you I need to do to get that space in just right
+
+844
+00:46:59,839 --> 00:47:02,911
+And I I know that feels a little
+
+845
+00:47:03,167 --> 00:47:04,191
+Wrong place
+
+846
+00:47:04,447 --> 00:47:05,983
+That feels a little
+
+847
+00:47:06,495 --> 00:47:08,031
+Uncomfortable
+
+848
+00:47:10,079 --> 00:47:11,103
+But it's really
+
+849
+00:47:11,359 --> 00:47:14,431
+It's difficult to catch it correctly for every
+
+850
+00:47:14,687 --> 00:47:15,455
+Implementation
+
+851
+00:47:16,735 --> 00:47:17,247
+So
+
+852
+00:47:17,759 --> 00:47:18,527
+Currently
+
+853
+00:47:18,783 --> 00:47:20,063
+That's the work around
+
+854
+00:47:24,415 --> 00:47:25,695
+so if we compile it
+
+855
+00:47:27,999 --> 00:47:29,023
+and we go back
+
+856
+00:47:29,791 --> 00:47:31,583
+We check it's Now it's correct
+
+857
+00:47:32,607 --> 00:47:33,887
+And there's our little note
+
+858
+00:47:34,655 --> 00:47:36,447
+So our spacing is working out
+
+859
+00:47:37,983 --> 00:47:39,775
+If you didn't add the space
+
+860
+00:47:40,031 --> 00:47:40,543
+it will
+
+861
+00:47:40,799 --> 00:47:42,847
+Sometimes work out something like that
+
+862
+00:47:44,127 --> 00:47:45,151
+That's how it look
+
+863
+00:47:46,175 --> 00:47:46,687
+Ok
+
+864
+00:47:47,711 --> 00:47:50,527
+Which still will work it just doesn't look nice
+
+865
+00:47:52,319 --> 00:47:57,695
+So on this view we have this as a custom field this is a custom field
+
+866
+00:47:57,951 --> 00:48:01,023
+This is category field the tag field
+
+867
+00:48:02,559 --> 00:48:04,863
+And this is a custom field
+
+868
+00:48:07,423 --> 00:48:08,191
+So we have
+
+869
+00:48:08,703 --> 00:48:10,239
+Many different
+
+870
+00:48:10,751 --> 00:48:12,287
+Custom fields
+
+871
+00:48:13,567 --> 00:48:15,359
+Which is quite nice
+
+872
+00:48:16,383 --> 00:48:19,711
+List folder this is a custom field a multiple select
+
+873
+00:48:20,223 --> 00:48:21,247
+Custom field
+
+874
+00:48:21,759 --> 00:48:22,783
+External
+
+875
+00:48:23,295 --> 00:48:25,599
+This is a custom field
+
+876
+00:48:26,623 --> 00:48:28,159
+This is a custom field
+
+877
+00:48:28,927 --> 00:48:29,695
+So
+
+878
+00:48:29,951 --> 00:48:32,511
+There are many custom fields on this page
+
+879
+00:48:33,279 --> 00:48:35,327
+And you can actually
+
+880
+00:48:35,583 --> 00:48:37,631
+In JCB when you've imported
+
+881
+00:48:38,143 --> 00:48:40,191
+sermon distributor
+
+882
+00:48:40,959 --> 00:48:42,495
+If you don't know how to do that
+
+883
+00:48:43,007 --> 00:48:44,287
+There are tutorials
+
+884
+00:48:45,311 --> 00:48:50,175
+Maybe the best quickest path to showing you that it's just JCB import
+
+885
+00:48:50,431 --> 00:48:51,967
+Then VDM packages
+
+886
+00:48:52,223 --> 00:48:52,991
+How to get
+
+887
+00:48:53,759 --> 00:48:55,551
+Free keys from VBM
+
+888
+00:48:56,063 --> 00:48:58,623
+Because sermon distributor
+
+889
+00:48:59,391 --> 00:49:00,927
+Is one of the three packages
+
+890
+00:49:01,439 --> 00:49:04,255
+There are many free packages not all of them are
+
+891
+00:49:04,511 --> 00:49:06,303
+Free like these are not free
+
+892
+00:49:07,839 --> 00:49:08,351
+But
+
+893
+00:49:08,863 --> 00:49:14,239
+They are even component builder is one of the free packages that you can get a key for
+
+894
+00:49:14,495 --> 00:49:16,543
+So you could click here go get a key
+
+895
+00:49:17,055 --> 00:49:19,103
+I tell you the the
+
+896
+00:49:19,359 --> 00:49:21,919
+The way that we have
+
+897
+00:49:22,175 --> 00:49:23,711
+Build components
+
+898
+00:49:23,967 --> 00:49:24,991
+In JCB
+
+899
+00:49:25,247 --> 00:49:27,295
+And all the fields that we've used
+
+900
+00:49:27,551 --> 00:49:29,855
+I mean you can come here you can go to
+
+901
+00:49:30,111 --> 00:49:30,623
+Preacher
+
+902
+00:49:32,415 --> 00:49:35,231
+And all those custom Fields that I just clicked
+
+903
+00:49:37,279 --> 00:49:38,047
+They are here
+
+904
+00:49:38,303 --> 00:49:40,607
+Wait this is not the right one sermon
+
+905
+00:49:40,863 --> 00:49:42,399
+This the one had so many
+
+906
+00:49:43,167 --> 00:49:44,447
+So it's this one
+
+907
+00:49:46,751 --> 00:49:50,079
+To come to Fields and here they are that's custom
+
+908
+00:49:50,847 --> 00:49:52,383
+That one is custom
+
+909
+00:49:54,687 --> 00:49:55,199
+This one
+
+910
+00:49:55,455 --> 00:49:56,223
+This one
+
+911
+00:49:56,479 --> 00:49:58,783
+You could click this local file list
+
+912
+00:49:59,039 --> 00:50:01,599
+Wanna see how to list and local file list
+
+913
+00:50:02,111 --> 00:50:03,391
+With a custom field
+
+914
+00:50:03,903 --> 00:50:06,719
+Well this is how I did it I don't even have look here
+
+915
+00:50:06,975 --> 00:50:08,255
+There isn't even
+
+916
+00:50:08,511 --> 00:50:09,279
+Any
+
+917
+00:50:09,791 --> 00:50:10,559
+Table here
+
+918
+00:50:12,351 --> 00:50:14,399
+There's even the button is false
+
+919
+00:50:14,911 --> 00:50:16,959
+Extend list yes
+
+920
+00:50:17,471 --> 00:50:21,567
+I doesn't have a table doesn't have a component none of that I just dumped it
+
+921
+00:50:21,823 --> 00:50:22,847
+And
+
+922
+00:50:23,359 --> 00:50:25,151
+I you see the first one is
+
+923
+00:50:25,663 --> 00:50:26,431
+Back there
+
+924
+00:50:27,199 --> 00:50:33,343
+Now I get parameters I first get the folder path from the global so if you want to see for
+
+925
+00:50:34,367 --> 00:50:40,255
+Example oh how did he set this how to get this setting while let's go out of this would come back here again
+
+926
+00:50:42,815 --> 00:50:44,095
+And out of this
+
+927
+00:50:44,863 --> 00:50:46,399
+Then let's go to the component
+
+928
+00:50:47,167 --> 00:50:51,775
+And you'll see that there is a component config area we open that
+
+929
+00:50:52,287 --> 00:50:56,383
+Going of the path a bit but just bear with me
+
+930
+00:50:56,639 --> 00:50:58,431
+And one of those
+
+931
+00:50:58,943 --> 00:51:00,223
+Fields
+
+932
+00:51:01,759 --> 00:51:04,319
+Let's see set up here no
+
+933
+00:51:04,575 --> 00:51:07,647
+it's sermon s
+
+934
+00:51:07,903 --> 00:51:09,951
+there's obviously many in this one
+
+935
+00:51:13,023 --> 00:51:13,791
+Sermon
+
+936
+00:51:16,863 --> 00:51:20,447
+Let's see Sermon menu sermon panel box
+
+937
+00:51:21,983 --> 00:51:23,263
+Sermon media
+
+938
+00:51:27,871 --> 00:51:28,895
+Sermon
+
+939
+00:51:30,431 --> 00:51:31,967
+Ok it's not down here
+
+940
+00:51:32,735 --> 00:51:33,503
+execution time
+
+941
+00:51:33,759 --> 00:51:34,527
+Download
+
+942
+00:51:37,087 --> 00:51:37,599
+So
+
+943
+00:51:39,903 --> 00:51:41,695
+It was up here all along
+
+944
+00:51:41,951 --> 00:51:43,743
+Local folder path
+
+945
+00:51:44,511 --> 00:51:46,815
+So it's a It's a text area
+
+946
+00:51:48,351 --> 00:51:53,215
+Which is in sermon tab so if we go here and we click options
+
+947
+00:51:55,519 --> 00:52:01,663
+There is a sermon tab and there it is local folder path so you can set the local folder path for this
+
+948
+00:52:01,919 --> 00:52:04,991
+Where the local files are going to be placed
+
+949
+00:52:05,247 --> 00:52:06,271
+And
+
+950
+00:52:06,783 --> 00:52:08,575
+It is because of this file here
+
+951
+00:52:09,087 --> 00:52:09,599
+This field
+
+952
+00:52:10,111 --> 00:52:14,463
+Now if you wanna check the fields check the spelling local folder path close it out
+
+953
+00:52:15,231 --> 00:52:17,023
+And go to fields
+
+954
+00:52:17,279 --> 00:52:18,303
+And type in
+
+955
+00:52:20,095 --> 00:52:21,631
+Local
+
+956
+00:52:29,311 --> 00:52:30,335
+Local
+
+957
+00:52:34,431 --> 00:52:34,943
+ok
+
+958
+00:52:35,455 --> 00:52:35,967
+Oops
+
+959
+00:52:40,063 --> 00:52:42,879
+So there it is this a text one we select that
+
+960
+00:52:43,647 --> 00:52:45,439
+Are you can see how I built that
+
+961
+00:52:45,695 --> 00:52:46,975
+Simple field type
+
+962
+00:52:47,487 --> 00:52:47,999
+For the hint
+
+963
+00:52:48,511 --> 00:52:49,791
+Nothing fancy
+
+964
+00:52:51,583 --> 00:52:53,631
+Now I'm going back to our field
+
+965
+00:52:54,655 --> 00:52:55,423
+If we
+
+966
+00:52:55,679 --> 00:52:57,727
+Go back to the field we were looking at
+
+967
+00:52:58,239 --> 00:53:00,287
+We go back to admin View
+
+968
+00:53:02,847 --> 00:53:05,151
+We don't need to go into the sermons
+
+969
+00:53:05,407 --> 00:53:10,015
+But ok that that is a easier way right so we go in here
+
+970
+00:53:10,783 --> 00:53:13,087
+Now we go get into local file
+
+971
+00:53:13,855 --> 00:53:14,623
+Open that
+
+972
+00:53:16,415 --> 00:53:18,975
+So basically in our component
+
+973
+00:53:19,487 --> 00:53:25,631
+We checking this components value for local folder and if it hasn't got one we fall back unto images
+
+974
+00:53:26,143 --> 00:53:26,911
+The image path
+
+975
+00:53:27,167 --> 00:53:28,959
+And that's where we start
+
+976
+00:53:29,215 --> 00:53:30,495
+Now
+
+977
+00:53:30,751 --> 00:53:32,799
+We do a first option
+
+978
+00:53:33,055 --> 00:53:38,687
+Which is please add files and we take the local folder path result
+
+979
+00:53:39,455 --> 00:53:40,991
+And we pass it into here
+
+980
+00:53:41,503 --> 00:53:42,271
+into options
+
+981
+00:53:43,039 --> 00:53:44,063
+Now
+
+982
+00:53:44,575 --> 00:53:49,439
+Then we load the file import Ops classes
+
+983
+00:53:49,695 --> 00:53:53,023
+And we check does the folder exist
+
+984
+00:53:53,791 --> 00:53:55,583
+If it doesn't we create the folder
+
+985
+00:53:56,351 --> 00:53:58,911
+Now check if there is files in the folder
+
+986
+00:53:59,167 --> 00:54:02,239
+So we do get files This is the
+
+987
+00:54:02,751 --> 00:54:04,287
+Function in Jfolder
+
+988
+00:54:04,543 --> 00:54:05,055
+And
+
+989
+00:54:05,311 --> 00:54:06,335
+If it's true
+
+990
+00:54:06,591 --> 00:54:08,895
+We actually take the files and we
+
+991
+00:54:09,407 --> 00:54:12,479
+Reset the get options because remember up here we
+
+992
+00:54:12,735 --> 00:54:18,879
+told it to add files but now here with this we reset basically the
+
+993
+00:54:19,135 --> 00:54:19,903
+Options variable
+
+994
+00:54:20,159 --> 00:54:23,999
+And now we start loading the files and then we give it back
+
+995
+00:54:24,255 --> 00:54:27,839
+And so we used both value here see file and file
+
+996
+00:54:28,095 --> 00:54:32,447
+Which is actually very easy way to
+
+997
+00:54:32,703 --> 00:54:36,543
+To do a local folder setup
+
+998
+00:54:36,799 --> 00:54:41,407
+And make people select now again we just looking at demo
+
+999
+00:54:41,919 --> 00:54:42,687
+Component
+
+1000
+00:54:43,455 --> 00:54:44,479
+we just looking at it
+
+1001
+00:54:44,735 --> 00:54:49,343
+external source manual file is also custom how am I doing this
+
+1002
+00:54:49,599 --> 00:54:54,719
+Well it's quite complicated thing so it is a
+
+1003
+00:54:55,231 --> 00:55:00,351
+Basically I'm using a helper class get external source link
+
+1004
+00:55:00,863 --> 00:55:04,447
+And I don't again look at that there is no table
+
+1005
+00:55:04,703 --> 00:55:06,751
+There's no no external component
+
+1006
+00:55:07,263 --> 00:55:08,031
+There's nothing
+
+1007
+00:55:08,543 --> 00:55:09,055
+Just
+
+1008
+00:55:10,847 --> 00:55:16,991
+Just these values go look at it if that's all it is there and it's working that should tell you that you could do the same
+
+1009
+00:55:17,247 --> 00:55:22,879
+And get it to go because this is the actual issue this result
+
+1010
+00:55:23,391 --> 00:55:24,927
+That's what we need to have correct
+
+1011
+00:55:25,951 --> 00:55:31,839
+So having looked at this or get external links source while that's an helper
+
+1012
+00:55:32,095 --> 00:55:34,655
+Class how is that close that out
+
+1013
+00:55:35,167 --> 00:55:38,751
+Helper classes are stored in the component area
+
+1014
+00:55:39,007 --> 00:55:41,055
+So you go to Joomla components
+
+1015
+00:55:41,567 --> 00:55:43,103
+Go into the component
+
+1016
+00:55:43,871 --> 00:55:46,175
+And you go to libs helpers
+
+1017
+00:55:46,687 --> 00:55:48,479
+And here you can scroll down
+
+1018
+00:55:49,503 --> 00:55:51,551
+And get download links
+
+1019
+00:55:53,087 --> 00:55:55,135
+is a big method
+
+1020
+00:55:55,391 --> 00:55:56,671
+get
+
+1021
+00:55:57,183 --> 00:55:57,695
+We should have
+
+1022
+00:55:57,951 --> 00:55:58,719
+Copy that
+
+1023
+00:56:00,767 --> 00:56:05,375
+So here is a function get external source length and has a few arguments
+
+1024
+00:56:05,887 --> 00:56:11,263
+And it does a few other get externals listing
+
+1025
+00:56:11,519 --> 00:56:14,079
+And does a few trip switches here
+
+1026
+00:56:14,335 --> 00:56:15,615
+And
+
+1027
+00:56:15,871 --> 00:56:18,431
+That's how I eventually return
+
+1028
+00:56:18,687 --> 00:56:20,735
+Something to that function
+
+1029
+00:56:20,991 --> 00:56:21,503
+And
+
+1030
+00:56:21,759 --> 00:56:22,783
+We get that list
+
+1031
+00:56:23,039 --> 00:56:24,319
+Ok so
+
+1032
+00:56:24,831 --> 00:56:27,903
+That's how you should take demo components and
+
+1033
+00:56:28,159 --> 00:56:34,303
+Sort of decipher it's implementation structures and don't think it's more complicated than
+
+1034
+00:56:34,559 --> 00:56:36,863
+That it isn't it's really simple
+
+1035
+00:56:37,375 --> 00:56:40,447
+JCB is very 
+
+1036
+00:56:40,959 --> 00:56:41,727
+Resilient
+
+1037
+00:56:41,983 --> 00:56:42,751
+It can
+
+1038
+00:56:43,007 --> 00:56:45,055
+Adapt itself to
+
+1039
+00:56:45,311 --> 00:56:46,591
+Specific implementations
+
+1040
+00:56:46,847 --> 00:56:48,639
+So the custom field
+
+1041
+00:56:48,895 --> 00:56:51,455
+Is my opinion one of the fields I
+
+1042
+00:56:51,967 --> 00:56:53,247
+Have enjoyed
+
+1043
+00:56:53,503 --> 00:56:55,039
+Extremely very much
+
+1044
+00:56:55,551 --> 00:56:58,879
+And I'm using it all the time everywhere
+
+1045
+00:56:59,391 --> 00:56:59,903
+And
+
+1046
+00:57:00,159 --> 00:57:05,279
+I am constantly making sure trying to ensure that it's behaviour
+
+1047
+00:57:05,535 --> 00:57:07,071
+Remains
+
+1048
+00:57:07,839 --> 00:57:09,631
+Yeah remains stable
+
+1049
+00:57:10,143 --> 00:57:13,471
+But also becomes sort of surprising like
+
+1050
+00:57:14,239 --> 00:57:17,567
+Just adding this value request ID
+
+1051
+00:57:18,591 --> 00:57:21,919
+If you if you look at Sermon distributor
+
+1052
+00:57:22,175 --> 00:57:22,943
+And
+
+1053
+00:57:23,199 --> 00:57:24,735
+Let's close out here
+
+1054
+00:57:24,991 --> 00:57:26,015
+This is again
+
+1055
+00:57:27,295 --> 00:57:29,087
+This is not only for custom fields
+
+1056
+00:57:29,343 --> 00:57:30,623
+But since we are on
+
+1057
+00:57:30,879 --> 00:57:37,023
+This explore process if we go to main menu
+
+1058
+00:57:37,535 --> 00:57:39,583
+And let's say we wanna create a
+
+1059
+00:57:41,375 --> 00:57:46,239
+Field for the sermon menu sorry and let's say we gonna do
+
+1060
+00:57:46,751 --> 00:57:48,287
+Series
+
+1061
+00:57:50,335 --> 00:57:54,687
+now you see that there is a whole bunch of values here
+
+1062
+00:57:54,943 --> 00:57:55,711
+Look at that
+
+1063
+00:57:56,991 --> 00:57:58,527
+Whole bunch of values
+
+1064
+00:57:58,783 --> 00:58:00,319
+From sermon distributor
+
+1065
+00:58:00,575 --> 00:58:02,623
+In relation to the series
+
+1066
+00:58:03,647 --> 00:58:09,791
+And they all said Global Panel Box I mean this is a stunning feature right and it's
+
+1067
+00:58:10,047 --> 00:58:11,071
+Very easy to do
+
+1068
+00:58:11,839 --> 00:58:17,983
+Because all that I had to do to get those features there is to take this list query ID
+
+1069
+00:58:20,543 --> 00:58:21,567
+This value
+
+1070
+00:58:23,359 --> 00:58:27,455
+Is what actually makes this a selectable item
+
+1071
+00:58:27,967 --> 00:58:29,503
+In the menu so if I
+
+1072
+00:58:29,759 --> 00:58:31,039
+Go back here
+
+1073
+00:58:31,295 --> 00:58:34,879
+You see I have a series and you can select
+
+1074
+00:58:35,135 --> 00:58:35,647
+Test
+
+1075
+00:58:36,415 --> 00:58:39,999
+The way that JCB set this selection option up
+
+1076
+00:58:40,511 --> 00:58:43,071
+Is just by me adding this
+
+1077
+00:58:43,327 --> 00:58:44,607
+Request ID
+
+1078
+00:58:45,375 --> 00:58:45,887
+to
+
+1079
+00:58:46,143 --> 00:58:47,423
+To this field name
+
+1080
+00:58:48,191 --> 00:58:49,727
+Ok that's how that happened
+
+1081
+00:58:50,239 --> 00:58:52,799
+Now how did I get all the rest of the values
+
+1082
+00:58:53,055 --> 00:58:55,103
+These on the page as well
+
+1083
+00:58:55,871 --> 00:58:56,639
+Let me show you
+
+1084
+00:58:57,151 --> 00:58:58,175
+the way to get
+
+1085
+00:58:58,431 --> 00:59:01,247
+All the fields that you add to the config
+
+1086
+00:59:01,503 --> 00:59:03,551
+for example this
+
+1087
+00:59:03,807 --> 00:59:07,391
+We were looking at which one were we looking at the series
+
+1088
+00:59:08,927 --> 00:59:10,975
+The way to get all the series
+
+1089
+00:59:11,231 --> 00:59:11,999
+Fields
+
+1090
+00:59:12,255 --> 00:59:13,279
+That your add here
+
+1091
+00:59:14,303 --> 00:59:19,167
+To show at the menu is the fact that this name matches the site name
+
+1092
+00:59:20,191 --> 00:59:21,471
+That's how it works
+
+1093
+00:59:21,727 --> 00:59:23,775
+And if there is a field here
+
+1094
+00:59:24,031 --> 00:59:28,127
+That you do not want to actually have load here
+
+1095
+00:59:28,895 --> 00:59:32,223
+There is a way to do that so I'm gonna demonstrate that quickly
+
+1096
+00:59:32,991 --> 00:59:35,295
+As part of custom fields in a way
+
+1097
+00:59:35,807 --> 00:59:40,159
+So let's say I don't want them to set the default icon here anymore
+
+1098
+00:59:40,927 --> 00:59:45,023
+Then I want it always just fall back on the global
+
+1099
+00:59:46,047 --> 00:59:48,607
+Then I can actually
+
+1100
+00:59:49,375 --> 00:59:50,399
+Go to
+
+1101
+00:59:51,167 --> 00:59:53,215
+Let's see close out here
+
+1102
+00:59:54,751 --> 00:59:57,567
+Here is the series default icon
+
+1103
+00:59:59,615 --> 01:00:01,919
+I can scroll down and there is this
+
+1104
+01:00:02,175 --> 01:00:03,455
+Extra properties
+
+1105
+01:00:03,967 --> 01:00:05,503
+I can say add
+
+1106
+01:00:06,015 --> 01:00:08,319
+I can select display
+
+1107
+01:00:09,087 --> 01:00:15,231
+Now display switch for dynamic placement in relation to use of the field in menu and global
+
+1108
+01:00:15,487 --> 01:00:16,767
+configuration options
+
+1109
+01:00:17,023 --> 01:00:22,911
+So the config option will only add the field to the global configuration area
+
+1110
+01:00:23,167 --> 01:00:29,311
+Many will add the field only to the menu area and if you don't add this it will add to both
+
+1111
+01:00:29,567 --> 01:00:32,895
+So if we only want it to be in the config area
+
+1112
+01:00:33,151 --> 01:00:35,711
+We basically just add this value here
+
+1113
+01:00:36,223 --> 01:00:37,247
+Now
+
+1114
+01:00:37,503 --> 01:00:41,087
+Let's save and close and compile to show you
+
+1115
+01:00:41,599 --> 01:00:42,111
+How it 
+
+1116
+01:00:42,367 --> 01:00:43,135
+Took it out
+
+1117
+01:00:55,423 --> 01:00:58,239
+and now let's go back there and let's create
+
+1118
+01:00:58,495 --> 01:00:59,263
+a new menu
+
+1119
+01:01:00,031 --> 01:01:01,823
+That's again look at
+
+1120
+01:01:02,335 --> 01:01:04,639
+sermon Distributors series
+
+1121
+01:01:05,919 --> 01:01:07,967
+And now we see that the
+
+1122
+01:01:08,479 --> 01:01:11,295
+Icon is missing here no longer showing up
+
+1123
+01:01:14,367 --> 01:01:15,391
+Where are we
+
+1124
+01:01:16,415 --> 01:01:19,743
+If we go to the sermon distributor global area
+
+1125
+01:01:19,999 --> 01:01:21,279
+And to series
+
+1126
+01:01:21,535 --> 01:01:23,583
+We'd see that the icon is still there
+
+1127
+01:01:24,351 --> 01:01:26,399
+So all the rest of these values
+
+1128
+01:01:26,911 --> 01:01:27,679
+are
+
+1129
+01:01:27,935 --> 01:01:30,495
+Showing except this one and this one
+
+1130
+01:01:31,007 --> 01:01:32,799
+Ok so
+
+1131
+01:01:33,055 --> 01:01:35,615
+Now let's Tweak A Little More
+
+1132
+01:01:37,151 --> 01:01:39,455
+Let's instead of config
+
+1133
+01:01:39,711 --> 01:01:44,063
+Let's say only menu I want value only in menu save
+
+1134
+01:01:44,831 --> 01:01:46,623
+And then compile
+
+1135
+01:01:47,391 --> 01:01:50,463
+It install then go here refresh
+
+1136
+01:01:51,743 --> 01:01:52,767
+And there we have it
+
+1137
+01:01:53,023 --> 01:01:54,047
+Now it's here
+
+1138
+01:01:54,303 --> 01:01:57,375
+And if we go back to sermon distributor and refresh
+
+1139
+01:02:01,983 --> 01:02:03,263
+It's no longer here
+
+1140
+01:02:03,775 --> 01:02:06,335
+So that's how you can control
+
+1141
+01:02:06,591 --> 01:02:12,735
+The reason why all these buttons are here is because it's under this tab the reason why all these buttons are here it's because
+
+1142
+01:02:12,991 --> 01:02:19,135
+It is this this view name series's is the same as this tab name series's
+
+1143
+01:02:19,391 --> 01:02:25,535
+That is how the connection is made that's how the buttons gets move and if you
+
+1144
+01:02:25,791 --> 01:02:27,839
+Don't want a button here
+
+1145
+01:02:28,095 --> 01:02:28,607
+Then
+
+1146
+01:02:28,863 --> 01:02:29,887
+This extra
+
+1147
+01:02:30,655 --> 01:02:31,679
+Display
+
+1148
+01:02:31,935 --> 01:02:35,775
+Option here can toggle where you want that button to show up
+
+1149
+01:02:36,543 --> 01:02:40,639
+And is to say none will let the button show up on both
+
+1150
+01:02:41,407 --> 01:02:44,991
+Ok well we're almost over an hour now
+
+1151
+01:02:45,247 --> 01:02:51,391
+I've said quite a lot of things I don't know hopefully this will help you understand little more about custom 
+
+1152
+01:02:51,647 --> 01:02:54,207
+Fields and it's amazing
+
+1153
+01:02:55,231 --> 01:02:57,535
+Agility and ability
+
+1154
+01:02:58,303 --> 01:03:00,863
+To bring relationships together
+
+1155
+01:03:03,167 --> 01:03:05,215
+Let me think is there something else
+
+1156
+01:03:05,727 --> 01:03:09,055
+Yeah there is one more thing let me do that
+
+1157
+01:03:09,823 --> 01:03:12,383
+In the components admin
+
+1158
+01:03:12,639 --> 01:03:13,151
+View
+
+1159
+01:03:14,687 --> 01:03:18,527
+You can add what we call a linked view
+
+1160
+01:03:19,807 --> 01:03:20,319
+Right
+
+1161
+01:03:21,087 --> 01:03:22,879
+So I am doing that here
+
+1162
+01:03:24,415 --> 01:03:26,463
+In the sermons
+
+1163
+01:03:26,975 --> 01:03:31,327
+Basically in the preacher Admin View I am linking the sermon
+
+1164
+01:03:31,583 --> 01:03:34,143
+On tap 2 so I'm giving it the name
+
+1165
+01:03:34,655 --> 01:03:35,423
+And
+
+1166
+01:03:35,935 --> 01:03:37,727
+Did the child key
+
+1167
+01:03:38,751 --> 01:03:41,823
+That means the place where we getting the data
+
+1168
+01:03:43,359 --> 01:03:45,407
+No no wait a minute
+
+1169
+01:03:47,711 --> 01:03:49,247
+The the one who
+
+1170
+01:03:54,879 --> 01:03:55,391
+The
+
+1171
+01:03:55,647 --> 01:03:57,439
+View is sermon
+
+1172
+01:03:58,207 --> 01:04:02,303
+And in the Sermon table there is a column called preacher
+
+1173
+01:04:03,327 --> 01:04:05,375
+And that column preacher
+
+1174
+01:04:06,911 --> 01:04:09,471
+Is a custom field right
+
+1175
+01:04:09,727 --> 01:04:14,079
+And we decided that that custom Fields save the ID
+
+1176
+01:04:14,335 --> 01:04:18,431
+Of the preacher so the field name is
+
+1177
+01:04:18,687 --> 01:04:22,783
+Therefore preacher where is the value in the current
+
+1178
+01:04:23,039 --> 01:04:23,551
+Table
+
+1179
+01:04:23,807 --> 01:04:25,343
+Which is again here
+
+1180
+01:04:25,855 --> 01:04:26,367
+Preacher
+
+1181
+01:04:27,135 --> 01:04:29,439
+Is going to be the ID right
+
+1182
+01:04:29,695 --> 01:04:33,023
+This is the relationship between these two areas
+
+1183
+01:04:33,791 --> 01:04:36,095
+And then the placement
+
+1184
+01:04:36,351 --> 01:04:38,399
+Whether is going to have what kind of button
+
+1185
+01:04:38,911 --> 01:04:45,055
+Add new new and close button or add new or close button or just a new button
+
+1186
+01:04:45,311 --> 01:04:48,383
+These are some of the features that is available
+
+1187
+01:04:48,639 --> 01:04:50,943
+So
+
+1188
+01:04:52,223 --> 01:04:58,367
+Now sometimes it happens that you have a multiple selection and you still want to
+
+1189
+01:04:58,623 --> 01:05:00,671
+Set this relationship
+
+1190
+01:05:00,927 --> 01:05:07,071
+So there is a way to do that if it's a multiple selection so let's say this sermon could belong to more than one
+
+1191
+01:05:07,327 --> 01:05:11,423
+Preacher which in this case is not but let's just for a moment say it can
+
+1192
+01:05:11,679 --> 01:05:13,727
+Then you could do this. Wait.
+
+1193
+01:05:20,127 --> 01:05:20,895
+That
+
+1194
+01:05:23,199 --> 01:05:29,343
+Just that without anything else that will mean that it will now check whether
+
+1195
+01:05:29,599 --> 01:05:33,183
+This ID is in the array of this value
+
+1196
+01:05:33,439 --> 01:05:35,743
+If this array is a
+
+1197
+01:05:36,767 --> 01:05:42,911
+Associative array so let's say you have the value but it's in an associative array
+
+1198
+01:05:43,167 --> 01:05:43,935
+And
+
+1199
+01:05:44,191 --> 01:05:46,495
+Dissociation is maybe
+
+1200
+01:05:48,543 --> 01:05:53,919
+Key then you do that so if the array looks like this
+
+1201
+01:05:54,943 --> 01:05:56,223
+So if it looks like that
+
+1202
+01:05:56,735 --> 01:05:57,503
+Then
+
+1203
+01:05:57,759 --> 01:05:59,295
+You wanna target that area
+
+1204
+01:05:59,807 --> 01:06:00,575
+Then you would do
+
+1205
+01:06:00,831 --> 01:06:01,599
+The key
+
+1206
+01:06:02,879 --> 01:06:05,439
+If you are targeting a 
+
+1207
+01:06:09,279 --> 01:06:11,327
+More than one
+
+1208
+01:06:12,095 --> 01:06:15,167
+Value so if it's this or that one
+
+1209
+01:06:15,423 --> 01:06:17,727
+We have an one called or
+
+1210
+01:06:18,751 --> 01:06:20,031
+So it could be
+
+1211
+01:06:20,799 --> 01:06:24,383
+Preacher or
+
+1212
+01:06:24,639 --> 01:06:26,431
+Let's say maybe have a teacher
+
+1213
+01:06:27,711 --> 01:06:29,759
+You can say or
+
+1214
+01:06:34,111 --> 01:06:34,879
+Servant
+
+1215
+01:06:35,391 --> 01:06:37,439
+Maybe these are the columns
+
+1216
+01:06:37,951 --> 01:06:39,743
+That mapped to this ID
+
+1217
+01:06:40,255 --> 01:06:41,535
+You can have the or
+
+1218
+01:06:41,791 --> 01:06:42,559
+In there
+
+1219
+01:06:42,815 --> 01:06:45,375
+And it can link multiple values
+
+1220
+01:06:46,399 --> 01:06:52,543
+But ok I think I'm going way over the edge here it's not really custom code
+
+1221
+01:06:52,799 --> 01:06:55,359
+The custom Fields so much there but
+
+1222
+01:06:55,871 --> 01:07:00,223
+Because custom fields are the majority of the time used
+
+1223
+01:07:00,479 --> 01:07:02,527
+To set up this relationship right
+
+1224
+01:07:02,783 --> 01:07:05,599
+You you set up these relationships
+
+1225
+01:07:06,111 --> 01:07:07,391
+With custom fields
+
+1226
+01:07:07,903 --> 01:07:10,463
+That is where that
+
+1227
+01:07:10,719 --> 01:07:12,511
+Livability comes in
+
+1228
+01:07:12,767 --> 01:07:13,791
+And
+
+1229
+01:07:14,047 --> 01:07:17,119
+The linking of a table into another one
+
+1230
+01:07:17,375 --> 01:07:18,655
+Ok
+
+1231
+01:07:19,167 --> 01:07:20,447
+Well thanks for watching
+
+1232
+01:07:22,495 --> 01:07:25,055
+In an hour of your time hope it's been worth it
+
+1233
+01:07:25,567 --> 01:07:26,079
+Thank you. Ok bye.
+

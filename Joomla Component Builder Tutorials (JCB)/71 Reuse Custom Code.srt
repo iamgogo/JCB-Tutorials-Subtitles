@@ -1,0 +1,776 @@
+1
+00:00:00,256 --> 00:00:01,792
+Would like to
+
+2
+00:00:02,304 --> 00:00:04,096
+Show you how to
+
+3
+00:00:04,864 --> 00:00:07,680
+Use code across JCB
+
+4
+00:00:08,192 --> 00:00:10,496
+In a very inherent kind of way
+
+5
+00:00:11,776 --> 00:00:17,664
+By taking the advantages of a few features that JCB has
+
+6
+00:00:18,176 --> 00:00:23,296
+Features that most may not know is there or maybe they do but they not seen it's advantage
+
+7
+00:00:23,808 --> 00:00:27,136
+And then recently there actually came up a question
+
+8
+00:00:27,392 --> 00:00:28,416
+On the Forum
+
+9
+00:00:30,976 --> 00:00:33,280
+By Alex Tings asking
+
+10
+00:00:33,536 --> 00:00:34,048
+About
+
+11
+00:00:34,816 --> 00:00:36,864
+You know he ask admin views but
+
+12
+00:00:37,120 --> 00:00:38,656
+Generic code that runs in
+
+13
+00:00:38,912 --> 00:00:42,752
+Multiple admin views and then some of it runs only in specific admin views
+
+14
+00:00:43,264 --> 00:00:47,616
+And how I could how I could speed up the maintenance of this kind of thing
+
+15
+00:00:48,384 --> 00:00:54,528
+So his first question is is the helper admin class the best way to put this code and then is there a way
+
+16
+00:00:54,784 --> 00:00:59,648
+Keep the direct admin forms functions I wrote separate from these specific ones
+
+17
+00:00:59,904 --> 00:01:00,928
+Ok
+
+18
+00:01:01,440 --> 00:01:06,304
+I'm sure some of your might even be listening here and I'll understand exactly what we trying to do
+
+19
+00:01:06,560 --> 00:01:11,680
+And I'm not even sure if I'm exactly going to answer this you know
+
+20
+00:01:12,960 --> 00:01:16,800
+So I'm gonna quickly pull up a docker image of Joomla
+
+21
+00:01:19,360 --> 00:01:22,944
+I have a docker file there just quickly gonna pull it up
+
+22
+00:01:23,200 --> 00:01:24,992
+And then we gonna go and use it
+
+23
+00:01:26,016 --> 00:01:26,528
+Ok
+
+24
+00:01:27,040 --> 00:01:28,832
+Ok so I've got it up running
+
+25
+00:01:30,368 --> 00:01:32,160
+I think it's default is user
+
+26
+00:01:33,184 --> 00:01:38,560
+Ok so where in here I'm gonna go to extensions and install
+
+27
+00:01:40,096 --> 00:01:41,120
+And
+
+28
+00:01:42,912 --> 00:01:44,704
+Basically add the web tab
+
+29
+00:01:44,960 --> 00:01:45,984
+The JED
+
+30
+00:01:46,496 --> 00:01:47,264
+JED
+
+31
+00:01:47,776 --> 00:01:51,360
+Then type JCB
+
+32
+00:01:53,152 --> 00:01:54,432
+and here we have
+
+33
+00:01:54,688 --> 00:01:56,736
+Description can look at that
+
+34
+00:02:03,648 --> 00:02:04,928
+And install
+
+35
+00:02:06,464 --> 00:02:08,000
+Sort of getting the
+
+36
+00:02:09,024 --> 00:02:10,816
+JCB install from GitHub
+
+37
+00:02:15,680 --> 00:02:16,704
+Ok we're done
+
+38
+00:02:17,216 --> 00:02:19,776
+Go Joomla component builder we're almost there
+
+39
+00:02:21,568 --> 00:02:22,336
+Then
+
+40
+00:02:22,848 --> 00:02:23,360
+We could
+
+41
+00:02:23,616 --> 00:02:25,408
+Grab a demo component
+
+42
+00:02:27,712 --> 00:02:31,552
+If you don't know how to get access to these components just follow this link and
+
+43
+00:02:32,064 --> 00:02:33,600
+Follow the tutorials
+
+44
+00:02:33,856 --> 00:02:35,904
+So I'm just gonna get the JCB package
+
+45
+00:02:39,232 --> 00:02:40,768
+And then the key that
+
+46
+00:02:41,024 --> 00:02:43,072
+You were send you will add here
+
+47
+00:02:44,096 --> 00:02:45,888
+Maybe force and update
+
+48
+00:02:46,144 --> 00:02:46,912
+ is always good sort of 
+
+49
+00:02:47,168 --> 00:02:49,216
+get all your Fields updated
+
+50
+00:02:52,032 --> 00:02:53,056
+OK now
+
+51
+00:02:53,312 --> 00:02:54,080
+Continue
+
+52
+00:02:55,104 --> 00:02:57,408
+And within moments we have
+
+53
+00:02:57,664 --> 00:02:58,432
+JCB
+
+54
+00:02:58,688 --> 00:03:00,224
+Installed on JCB
+
+55
+00:03:00,992 --> 00:03:04,064
+Now we can start looking at the examples
+
+56
+00:03:04,576 --> 00:03:06,112
+That's really what I wanted to get to
+
+57
+00:03:06,624 --> 00:03:09,952
+Because the question is being answered by the demo data
+
+58
+00:03:10,208 --> 00:03:10,720
+Already
+
+59
+00:03:11,744 --> 00:03:12,256
+So
+
+60
+00:03:12,512 --> 00:03:16,352
+In JCB there we already doing a lot of this multi
+
+61
+00:03:17,120 --> 00:03:20,448
+Inheritance structure kind of relationships
+
+62
+00:03:20,960 --> 00:03:21,728
+And
+
+63
+00:03:21,984 --> 00:03:27,360
+So the best way to sort of demonstrate this is to actually look at JCB itself
+
+64
+00:03:28,128 --> 00:03:29,152
+OK we're almost there
+
+65
+00:03:30,176 --> 00:03:31,968
+OK we got JCB
+
+66
+00:03:32,224 --> 00:03:32,736
+Here
+
+67
+00:03:33,248 --> 00:03:35,296
+Now if we go to custom code
+
+68
+00:03:36,320 --> 00:03:38,368
+We'll see there's a whole lot of custom code
+
+69
+00:03:39,136 --> 00:03:39,648
+And
+
+70
+00:03:40,160 --> 00:03:41,696
+Many of them is this hash
+
+71
+00:03:41,952 --> 00:03:42,720
+Automation
+
+72
+00:03:42,976 --> 00:03:46,304
+Now we wanna look at this JCB manual option
+
+73
+00:03:46,816 --> 00:03:50,144
+For example let's look at the getviewID
+
+74
+00:03:50,656 --> 00:03:51,936
+Which is a custom code
+
+75
+00:03:52,704 --> 00:03:55,264
+Basically that is its name
+
+76
+00:03:55,520 --> 00:03:57,312
+This is how you use it
+
+77
+00:03:57,824 --> 00:03:58,336
+And
+
+78
+00:03:58,592 --> 00:03:59,104
+Here
+
+79
+00:03:59,360 --> 00:04:00,896
+We are having a view
+
+80
+00:04:01,152 --> 00:04:02,176
+Called admin View
+
+81
+00:04:02,944 --> 00:04:03,968
+That is using it
+
+82
+00:04:04,480 --> 00:04:05,760
+So if we click on that
+
+83
+00:04:06,528 --> 00:04:08,576
+Is going to open for us the admin View
+
+84
+00:04:09,600 --> 00:04:13,696
+And when we get here we'll see there is the the code now
+
+85
+00:04:14,720 --> 00:04:20,095
+This actually is the I'm using this specific get view ID
+
+86
+00:04:20,351 --> 00:04:23,167
+All across my components is just
+
+87
+00:04:23,679 --> 00:04:25,727
+It's also being used in JCB
+
+88
+00:04:26,495 --> 00:04:28,543
+But it's it's powerful
+
+89
+00:04:28,799 --> 00:04:31,615
+So I'm using it everywhere
+
+90
+00:04:31,871 --> 00:04:33,151
+So that's one way
+
+91
+00:04:33,407 --> 00:04:34,943
+To use
+
+92
+00:04:35,199 --> 00:04:37,247
+A a specific snippet
+
+93
+00:04:38,015 --> 00:04:41,087
+Which you add here use the JCB manual
+
+94
+00:04:42,879 --> 00:04:44,159
+Give the function and name
+
+95
+00:04:44,927 --> 00:04:48,255
+You could pass values to the function like this
+
+96
+00:04:49,023 --> 00:04:49,535
+And
+
+97
+00:04:49,791 --> 00:04:51,839
+Please read the explanation here
+
+98
+00:04:52,095 --> 00:04:53,375
+To how that is done
+
+99
+00:04:53,887 --> 00:04:55,423
+And the end of the day
+
+100
+00:04:55,679 --> 00:04:59,775
+You can then adapted the value structure for example if
+
+101
+00:05:00,287 --> 00:05:06,175
+If this value here needs to change from instance to instance you can pass it by
+
+102
+00:05:07,711 --> 00:05:08,479
+This value one
+
+103
+00:05:08,991 --> 00:05:10,527
+Which that will be arg0
+
+104
+00:05:11,295 --> 00:05:16,159
+And then you can just actually replace this here with
+
+105
+00:05:17,695 --> 00:05:18,463
+3
+
+106
+00:05:18,975 --> 00:05:20,511
+Then arg0
+
+107
+00:05:20,767 --> 00:05:23,327
+and 3 again like that
+
+108
+00:05:23,583 --> 00:05:25,631
+And then you just remember to pass
+
+109
+00:05:25,887 --> 00:05:27,167
+At least one value
+
+110
+00:05:27,423 --> 00:05:28,447
+To update
+
+111
+00:05:28,703 --> 00:05:29,471
+This value
+
+112
+00:05:29,727 --> 00:05:30,751
+Where ever you using it
+
+113
+00:05:31,519 --> 00:05:34,847
+That's one way to use the reuse the scripting
+
+114
+00:05:35,103 --> 00:05:36,127
+Now the other way
+
+115
+00:05:36,383 --> 00:05:41,247
+Which is the one that actually gets used in the helper class
+
+116
+00:05:41,503 --> 00:05:44,319
+It's like here I got one called get file path
+
+117
+00:05:45,087 --> 00:05:48,159
+To get file path is also a function
+
+118
+00:05:48,671 --> 00:05:51,743
+Which I am using across my components
+
+119
+00:05:51,999 --> 00:05:55,583
+It is just also being included in JCB
+
+120
+00:05:55,839 --> 00:05:59,167
+But many of my components is using get file path
+
+121
+00:05:59,679 --> 00:06:00,959
+And basically
+
+122
+00:06:01,215 --> 00:06:03,007
+It is a little function
+
+123
+00:06:03,263 --> 00:06:09,407
+That I can pass a few parameters to and can consistently give me back a path of where I want to place or get 
+
+124
+00:06:09,663 --> 00:06:10,175
+files from
+
+125
+00:06:10,943 --> 00:06:12,223
+Now in the
+
+126
+00:06:12,479 --> 00:06:14,783
+PHP helper there is a function
+
+127
+00:06:15,807 --> 00:06:17,599
+And the component itself
+
+128
+00:06:17,855 --> 00:06:18,879
+That's me here
+
+129
+00:06:19,135 --> 00:06:20,671
+There is a function called
+
+130
+00:06:20,927 --> 00:06:23,743
+Helper classes for both admin and site
+
+131
+00:06:24,255 --> 00:06:30,399
+So anything you put in here will be not only added to the admin helper class but also to the site
+
+132
+00:06:30,655 --> 00:06:32,447
+Helper class sort of a way to
+
+133
+00:06:32,703 --> 00:06:34,751
+Avoid doing it twice
+
+134
+00:06:35,007 --> 00:06:35,775
+And
+
+135
+00:06:36,031 --> 00:06:37,055
+As you can see
+
+136
+00:06:37,311 --> 00:06:39,871
+There is one to just put it in the admin
+
+137
+00:06:40,127 --> 00:06:43,455
+So you could just take care and just target the admin helper
+
+138
+00:06:43,711 --> 00:06:47,039
+Or you could just target the site class helper
+
+139
+00:06:47,551 --> 00:06:51,903
+But in this case most of this code I wanted to be everywhere
+
+140
+00:06:52,415 --> 00:06:53,951
+And if we were to
+
+141
+00:06:54,463 --> 00:06:56,767
+Go down to the very bottom suppose
+
+142
+00:06:57,279 --> 00:06:57,791
+here
+
+143
+00:06:58,047 --> 00:06:59,071
+Is the
+
+144
+00:06:59,327 --> 00:07:00,351
+Get file
+
+145
+00:07:00,607 --> 00:07:01,119
+Path
+
+146
+00:07:01,887 --> 00:07:07,519
+So it is forming part of a whole bunch of code that I'm adding to the helper class of this component
+
+147
+00:07:07,775 --> 00:07:11,359
+And which I'm also using another components so
+
+148
+00:07:11,615 --> 00:07:17,503
+I don't need to redo this code anytime soon unless in in sorry
+
+149
+00:07:17,759 --> 00:07:20,063
+I don't need to come and open the
+
+150
+00:07:20,319 --> 00:07:22,879
+Component when I want to change this code
+
+151
+00:07:23,135 --> 00:07:24,927
+I can just change the code
+
+152
+00:07:25,183 --> 00:07:26,207
+Right there
+
+153
+00:07:26,463 --> 00:07:27,231
+In the
+
+154
+00:07:27,487 --> 00:07:29,535
+Place that it's in the custom area
+
+155
+00:07:30,815 --> 00:07:34,143
+So that means if we close out here
+
+156
+00:07:34,399 --> 00:07:36,447
+And we go back to the custom code
+
+157
+00:07:37,215 --> 00:07:43,359
+You can see that the function is being used in component builder and in what field there PHP helper both
+
+158
+00:07:43,615 --> 00:07:44,639
+It's where it's added
+
+159
+00:07:45,151 --> 00:07:45,663
+And
+
+160
+00:07:45,919 --> 00:07:51,295
+If you'll need improving the code you can always at the bottom see in which areas is being used
+
+161
+00:07:51,807 --> 00:07:56,927
+So that is the option for multiple reuse of custom scripting
+
+162
+00:07:57,439 --> 00:08:03,583
+So you could put it anywhere you like in JCB either in the component helper class or in the component
+
+163
+00:08:03,839 --> 00:08:04,607
+View
+
+164
+00:08:05,119 --> 00:08:07,423
+You know PHP areas
+
+165
+00:08:07,679 --> 00:08:13,823
+And by doing so it gets reused it gets placed into that code on compilation
+
+166
+00:08:15,103 --> 00:08:18,431
+And that's really the answer I suppose
+
+167
+00:08:18,687 --> 00:08:20,991
+To the power of the customer code area
+
+168
+00:08:21,503 --> 00:08:27,647
+I realize it could be confusing because we are mixing it with the IDE custom code which 
+
+169
+00:08:27,903 --> 00:08:28,415
+These are
+
+170
+00:08:28,671 --> 00:08:29,439
+This hash
+
+171
+00:08:29,695 --> 00:08:30,463
+Automation
+
+172
+00:08:30,975 --> 00:08:32,255
+Is basically where you
+
+173
+00:08:32,511 --> 00:08:35,839
+Edited your code in the IDE like I did here
+
+174
+00:08:36,351 --> 00:08:38,399
+And the JCB is keeping track of it
+
+175
+00:08:38,655 --> 00:08:43,519
+And it's saying ok this is for the admin views template default body php file
+
+176
+00:08:44,031 --> 00:08:47,359
+And on the on this starting hash
+
+177
+00:08:47,615 --> 00:08:48,127
+Value
+
+178
+00:08:48,383 --> 00:08:52,735
+We are doing an insert of this code and you cannot maintain the code here
+
+179
+00:08:53,247 --> 00:08:57,343
+But it's only for one file one location one place
+
+180
+00:08:57,599 --> 00:09:00,671
+Then there's the JCB manual and the JCB manual
+
+181
+00:09:00,927 --> 00:09:05,535
+Is the implementation or the mutated implementation
+
+182
+00:09:05,791 --> 00:09:08,863
+Of using custom code snippets this snippet
+
+183
+00:09:09,119 --> 00:09:11,679
+All across in custom code areas
+
+184
+00:09:12,447 --> 00:09:13,471
+So that means
+
+185
+00:09:13,727 --> 00:09:16,287
+I'm using the same word custom code
+
+186
+00:09:16,543 --> 00:09:18,335
+For different implementation
+
+187
+00:09:18,847 --> 00:09:19,359
+And
+
+188
+00:09:19,615 --> 00:09:21,407
+That might have been a mistake because
+
+189
+00:09:21,663 --> 00:09:24,991
+You could miss it's possible differences
+
+190
+00:09:25,247 --> 00:09:31,391
+But there is most certainly a difference this doesn't target a file but a actual area
+
+191
+00:09:31,647 --> 00:09:35,231
+Somewhere in that JCB compilation
+
+192
+00:09:35,743 --> 00:09:36,255
+So
+
+193
+00:09:36,511 --> 00:09:38,047
+Yeah I hope that helps
+
+194
+00:09:38,559 --> 00:09:40,095
+Let me know.
+

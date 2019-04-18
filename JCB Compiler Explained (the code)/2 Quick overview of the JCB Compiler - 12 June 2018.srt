@@ -1,0 +1,2216 @@
+1
+00:00:01,024 --> 00:00:03,584
+Ok we would like to look at
+
+2
+00:00:04,096 --> 00:00:05,888
+The JCB compiler
+
+3
+00:00:06,144 --> 00:00:07,168
+Quick overview
+
+4
+00:00:07,424 --> 00:00:08,704
+Of how the works
+
+5
+00:00:08,960 --> 00:00:10,240
+And what it does
+
+6
+00:00:11,264 --> 00:00:15,872
+Really there must be better ways to do this I've often looked at
+
+7
+00:00:16,128 --> 00:00:17,664
+Are the projects even like
+
+8
+00:00:17,920 --> 00:00:20,480
+Joomla itself and I can see
+
+9
+00:00:20,736 --> 00:00:23,040
+There are conventions that I have not
+
+10
+00:00:23,296 --> 00:00:23,808
+Followed
+
+11
+00:00:24,064 --> 00:00:27,392
+Especially with some of the files being so huge
+
+12
+00:00:27,648 --> 00:00:28,160
+It's almost like it
+
+13
+00:00:28,416 --> 00:00:29,440
+The procedural Script
+
+14
+00:00:30,976 --> 00:00:31,488
+And yet
+
+15
+00:00:31,744 --> 00:00:35,072
+The refactoring and the remodeling of these
+
+16
+00:00:35,584 --> 00:00:37,632
+Project this project area that
+
+17
+00:00:37,888 --> 00:00:38,400
+Compiler
+
+18
+00:00:38,656 --> 00:00:39,936
+Is a ongoing project
+
+19
+00:00:40,704 --> 00:00:44,032
+And constantly I'm working on it as from time to time
+
+20
+00:00:45,056 --> 00:00:49,408
+Reality is that it works and it works actually quite well quite stable
+
+21
+00:00:50,944 --> 00:00:55,296
+And we are keeping our finger on it so that it wouldn't suddenly become
+
+22
+00:00:56,064 --> 00:00:57,344
+Useless
+
+23
+00:00:58,368 --> 00:00:59,904
+Now having said that
+
+24
+00:01:00,416 --> 00:01:02,720
+It's really one massive class
+
+25
+00:01:04,000 --> 00:01:05,280
+Unfortunately
+
+26
+00:01:05,536 --> 00:01:11,680
+Because one inherits The Other inherits The Other inherits  the other and so it keeps on stacking previous functions
+
+27
+00:01:11,936 --> 00:01:12,960
+Upon each other
+
+28
+00:01:13,472 --> 00:01:15,008
+Which then ends up being
+
+29
+00:01:15,264 --> 00:01:18,336
+A huge huge class and you can call
+
+30
+00:01:18,592 --> 00:01:22,944
+Any of the functions and anytime after a certain layer
+
+31
+00:01:23,712 --> 00:01:25,504
+So that's the the quick
+
+32
+00:01:26,016 --> 00:01:26,528
+Overview
+
+33
+00:01:28,320 --> 00:01:29,088
+But now
+
+34
+00:01:29,344 --> 00:01:30,880
+Going to those files
+
+35
+00:01:31,136 --> 00:01:33,440
+There are two ways we could do this we can
+
+36
+00:01:33,952 --> 00:01:35,488
+You can actually go to
+
+37
+00:01:37,280 --> 00:01:38,048
+To get up
+
+38
+00:01:38,560 --> 00:01:39,328
+And
+
+39
+00:01:39,584 --> 00:01:41,120
+We can look at
+
+40
+00:01:41,888 --> 00:01:43,168
+Those files there
+
+41
+00:01:43,680 --> 00:01:46,496
+But you can also do this on your own system
+
+42
+00:01:47,264 --> 00:01:48,032
+So
+
+43
+00:01:48,800 --> 00:01:52,896
+Our system when the package or the component is installed
+
+44
+00:01:54,688 --> 00:01:55,968
+The what is in the admin
+
+45
+00:01:56,224 --> 00:01:59,808
+Folder should be in the administrator component area
+
+46
+00:02:00,320 --> 00:02:02,624
+What's in the site folder should be in the
+
+47
+00:02:03,904 --> 00:02:05,952
+Roots component area
+
+48
+00:02:06,464 --> 00:02:08,256
+And this be the media
+
+49
+00:02:08,512 --> 00:02:09,024
+And
+
+50
+00:02:09,536 --> 00:02:10,816
+Libraries
+
+51
+00:02:11,840 --> 00:02:15,168
+So that's were all these packages move to so
+
+52
+00:02:15,424 --> 00:02:17,472
+If you look at it here on get up
+
+53
+00:02:19,264 --> 00:02:25,408
+And you see basically it says admin and then suddenly these files were as if you look at it on your
+
+54
+00:02:25,664 --> 00:02:26,432
+Install
+
+55
+00:02:27,712 --> 00:02:32,576
+You would see that it's component as the root folder administrator components
+
+56
+00:02:33,088 --> 00:02:34,368
+Component Builder
+
+57
+00:02:34,624 --> 00:02:35,648
+And then the same
+
+58
+00:02:35,904 --> 00:02:37,440
+Files except these two
+
+59
+00:02:37,696 --> 00:02:38,208
+Automatic
+
+60
+00:02:38,464 --> 00:02:39,488
+Generated from
+
+61
+00:02:39,744 --> 00:02:40,256
+Notices
+
+62
+00:02:41,024 --> 00:02:41,792
+Ok so
+
+63
+00:02:42,048 --> 00:02:44,608
+Basically the files we see here
+
+64
+00:02:44,864 --> 00:02:46,912
+Is the same files we are going to look at
+
+65
+00:02:47,168 --> 00:02:47,936
+On get help
+
+66
+00:02:48,960 --> 00:02:54,080
+So there are three areas where the compiler lives
+
+67
+00:02:54,592 --> 00:02:56,896
+One is in the actual compiler folder
+
+68
+00:02:57,408 --> 00:02:59,712
+And the other one is in the helpers folder
+
+69
+00:03:00,480 --> 00:03:05,344
+Now I said three because in the helpers folder it again has two
+
+70
+00:03:06,624 --> 00:03:07,648
+File structures
+
+71
+00:03:08,416 --> 00:03:11,232
+The compiler folder is where
+
+72
+00:03:11,488 --> 00:03:13,024
+Basically the templates are
+
+73
+00:03:13,792 --> 00:03:19,680
+So there's a Joomla 3 template area now when we start with Joomla 4 they will basically be a new one called Joomla 4
+
+74
+00:03:22,752 --> 00:03:24,800
+And we will update this templates
+
+75
+00:03:25,056 --> 00:03:26,848
+Too match the Joomla 4
+
+76
+00:03:27,360 --> 00:03:30,688
+And many of them might fall away and new ones will be added
+
+77
+00:03:30,944 --> 00:03:35,552
+And the file that controls the majority of the work of keeping track of what
+
+78
+00:03:35,808 --> 00:03:36,832
+Belongs where
+
+79
+00:03:37,088 --> 00:03:38,624
+Is this setting Dot
+
+80
+00:03:38,880 --> 00:03:39,392
+Jason
+
+81
+00:03:40,416 --> 00:03:43,488
+Settings are Jason again is just a Jason file
+
+82
+00:03:44,000 --> 00:03:44,512
+Which
+
+83
+00:03:44,768 --> 00:03:45,792
+Basically
+
+84
+00:03:46,304 --> 00:03:50,912
+Has all these files mapped in it with various settings
+
+85
+00:03:51,680 --> 00:03:57,568
+So it has a create area which basically creates the file folders for the admin area
+
+86
+00:03:58,080 --> 00:03:59,360
+And the site area
+
+87
+00:03:59,872 --> 00:04:01,920
+And then it has a move area
+
+88
+00:04:02,176 --> 00:04:03,968
+Which basically has a static
+
+89
+00:04:04,224 --> 00:04:04,992
+Values which
+
+90
+00:04:05,248 --> 00:04:06,016
+Every component
+
+91
+00:04:06,528 --> 00:04:07,296
+Should have
+
+92
+00:04:07,808 --> 00:04:10,112
+And then Dynamic values
+
+93
+00:04:10,368 --> 00:04:13,440
+Which every component gets based on its
+
+94
+00:04:13,696 --> 00:04:14,208
+Built
+
+95
+00:04:14,720 --> 00:04:15,488
+Perspective or
+
+96
+00:04:15,744 --> 00:04:17,280
+Whatever the developer wants
+
+97
+00:04:17,791 --> 00:04:22,399
+And there again in The Dynamics area you have an admin area
+
+98
+00:04:22,911 --> 00:04:25,215
+And you have a
+
+99
+00:04:26,751 --> 00:04:27,263
+Site
+
+100
+00:04:27,775 --> 00:04:28,543
+Site area
+
+101
+00:04:29,567 --> 00:04:31,359
+And you have a custom
+
+102
+00:04:33,151 --> 00:04:34,687
+Custom admin area
+
+103
+00:04:35,199 --> 00:04:38,527
+And these are the 3 areas in the dynamic in each of them
+
+104
+00:04:39,039 --> 00:04:41,855
+Have certain values and things which are used
+
+105
+00:04:42,111 --> 00:04:42,879
+To actually
+
+106
+00:04:43,391 --> 00:04:47,231
+When we call the built on any of these function or
+
+107
+00:04:47,487 --> 00:04:48,767
+areas then
+
+108
+00:04:49,023 --> 00:04:51,583
+Switches are what is being used
+
+109
+00:04:52,351 --> 00:04:55,167
+So this file is what
+
+110
+00:04:55,423 --> 00:04:57,215
+Really gets called
+
+111
+00:04:57,727 --> 00:04:58,239
+And
+
+112
+00:04:58,495 --> 00:04:59,519
+Which is used
+
+113
+00:04:59,775 --> 00:05:00,287
+to then
+
+114
+00:05:00,543 --> 00:05:01,055
+Built
+
+115
+00:05:01,311 --> 00:05:02,847
+The Joomla 3
+
+116
+00:05:03,103 --> 00:05:03,871
+Templates
+
+117
+00:05:04,383 --> 00:05:10,527
+So you are you have a whole lot of templates some of them have code in some of them majoritly
+
+118
+00:05:10,783 --> 00:05:13,087
+have only place holders in them
+
+119
+00:05:13,599 --> 00:05:14,879
+You can look through these
+
+120
+00:05:15,391 --> 00:05:15,903
+And
+
+121
+00:05:16,671 --> 00:05:17,183
+Yes
+
+122
+00:05:17,439 --> 00:05:18,463
+We are
+
+123
+00:05:19,231 --> 00:05:24,863
+Moving more and more that every little bit of the file is actually becoming dynamic
+
+124
+00:05:25,631 --> 00:05:31,007
+So in some files you get lot of code still and yet and others you might find none
+
+125
+00:05:31,519 --> 00:05:35,359
+And that means all the code was moved to the actual compiler
+
+126
+00:05:35,615 --> 00:05:37,919
+This means that this is just a template the area
+
+127
+00:05:38,687 --> 00:05:39,967
+And yes
+
+128
+00:05:40,223 --> 00:05:46,367
+Still it's good to know about this area because you might wonder where is that code I don't see it anywhere in the compiler
+
+129
+00:05:46,623 --> 00:05:48,671
+Well then it's in the template
+
+130
+00:05:49,439 --> 00:05:51,231
+No really that's what that's all about
+
+131
+00:05:51,999 --> 00:05:53,023
+Ok then
+
+132
+00:05:53,279 --> 00:05:58,143
+The compiler itself the thing the whether real code is that does the work
+
+133
+00:05:58,399 --> 00:06:00,191
+Is actually in the helpers folder
+
+134
+00:06:00,959 --> 00:06:06,847
+And it has two areas here it's the actual trigger which is this one here compiler
+
+135
+00:06:07,359 --> 00:06:09,407
+And then it has these folders
+
+136
+00:06:09,919 --> 00:06:11,711
+In the compiler again
+
+137
+00:06:12,223 --> 00:06:12,991
+Folder
+
+138
+00:06:13,247 --> 00:06:13,759
+Which
+
+139
+00:06:14,015 --> 00:06:16,063
+Is alphabetically organised
+
+140
+00:06:16,831 --> 00:06:20,927
+So that when we include those files they get added correct
+
+141
+00:06:21,439 --> 00:06:22,463
+And in the correct
+
+142
+00:06:23,231 --> 00:06:23,743
+Order
+
+143
+00:06:24,255 --> 00:06:26,815
+Which being get is first then structure
+
+144
+00:06:27,071 --> 00:06:30,143
+Then fields, then interpritation and then infusion
+
+145
+00:06:30,911 --> 00:06:31,423
+And
+
+146
+00:06:31,679 --> 00:06:32,959
+Then only
+
+147
+00:06:33,727 --> 00:06:35,519
+You would see that
+
+148
+00:06:36,799 --> 00:06:41,919
+The file called compiler which is in the root of helpers folder
+
+149
+00:06:42,687 --> 00:06:44,479
+Is the one that inherits
+
+150
+00:06:44,735 --> 00:06:45,247
+infusion
+
+151
+00:06:46,271 --> 00:06:47,551
+So if we open it
+
+152
+00:06:48,063 --> 00:06:49,599
+in fact we will open all of those
+
+153
+00:06:50,623 --> 00:06:51,647
+So we open the
+
+154
+00:06:52,159 --> 00:06:53,439
+then we open get
+
+155
+00:06:54,207 --> 00:06:54,975
+Structure
+
+156
+00:06:56,255 --> 00:06:57,023
+Fields
+
+157
+00:06:58,815 --> 00:06:59,839
+Interpretation
+
+158
+00:07:00,607 --> 00:07:01,119
+And
+
+159
+00:07:01,375 --> 00:07:01,887
+infusion
+
+160
+00:07:03,679 --> 00:07:04,191
+So
+
+161
+00:07:04,447 --> 00:07:04,959
+Let's see
+
+162
+00:07:05,983 --> 00:07:08,543
+The here's the compiler the actual
+
+163
+00:07:09,055 --> 00:07:10,591
+Class that gets
+
+164
+00:07:10,847 --> 00:07:11,871
+Executed
+
+165
+00:07:12,383 --> 00:07:14,687
+On the start of the compiler
+
+166
+00:07:14,943 --> 00:07:18,527
+And you can see if it actually extends then infusion class
+
+167
+00:07:19,039 --> 00:07:22,111
+So that means everything that has been done before
+
+168
+00:07:22,367 --> 00:07:26,207
+This class was triggered by the constructor in every class
+
+169
+00:07:26,975 --> 00:07:30,303
+So the constructor in every class kicks of a whole bunch of functions
+
+170
+00:07:31,071 --> 00:07:36,191
+Methods and loads a lot of data into the class method values
+
+171
+00:07:37,471 --> 00:07:39,007
+And this autoloader
+
+172
+00:07:39,263 --> 00:07:40,543
+Loads those files
+
+173
+00:07:41,311 --> 00:07:42,591
+Ok so that's just
+
+174
+00:07:42,847 --> 00:07:45,151
+A quick structural explanation
+
+175
+00:07:45,663 --> 00:07:48,991
+Then we go and the first one Look Out Here is
+
+176
+00:07:50,783 --> 00:07:51,551
+wait over here this one
+
+177
+00:07:52,319 --> 00:07:58,463
+So here we have the infusion and it inherits the interpretation and here we have the interpretation
+
+178
+00:07:58,719 --> 00:07:59,487
+and inherits
+
+179
+00:07:59,743 --> 00:08:01,023
+The Fields and here we have
+
+180
+00:08:01,279 --> 00:08:01,791
+Fields
+
+181
+00:08:02,303 --> 00:08:04,095
+And it inherits the structure
+
+182
+00:08:04,351 --> 00:08:07,167
+Here we have the structure and it inherits the get
+
+183
+00:08:07,935 --> 00:08:09,471
+And here we have the get
+
+184
+00:08:09,983 --> 00:08:11,263
+so this is the base class
+
+185
+00:08:12,031 --> 00:08:14,079
+It's from this class that we build
+
+186
+00:08:14,335 --> 00:08:18,943
+And basically its name sort of gives you an idea of what's happening here
+
+187
+00:08:19,455 --> 00:08:20,223
+So in this
+
+188
+00:08:20,479 --> 00:08:22,527
+Class we really did doing the get
+
+189
+00:08:22,783 --> 00:08:24,319
+We getting all the information
+
+190
+00:08:24,831 --> 00:08:26,111
+From the database
+
+191
+00:08:26,623 --> 00:08:28,671
+And within his relationships
+
+192
+00:08:28,927 --> 00:08:29,951
+And so forth
+
+193
+00:08:30,207 --> 00:08:31,231
+And we are
+
+194
+00:08:31,487 --> 00:08:33,535
+Packing them and making them ready
+
+195
+00:08:33,791 --> 00:08:35,327
+Basically modelling them
+
+196
+00:08:35,583 --> 00:08:37,887
+For the next class and for the next step
+
+197
+00:08:39,423 --> 00:08:42,495
+I'm not sure how to draw a model of all this
+
+198
+00:08:43,007 --> 00:08:47,615
+I'm not even sure exactly how I got here except that it became
+
+199
+00:08:48,127 --> 00:08:49,663
+Like a practical Next Step
+
+200
+00:08:51,199 --> 00:08:52,479
+I
+
+201
+00:08:52,735 --> 00:08:58,367
+Will usually confronted with a problem and then trying to solve it is how this thing
+
+202
+00:08:58,623 --> 00:09:00,415
+Evolved into what it is today
+
+203
+00:09:02,463 --> 00:09:08,095
+So I didn't do the way we should do things and that is to sit down and first to
+
+204
+00:09:08,351 --> 00:09:09,375
+Use cases
+
+205
+00:09:10,143 --> 00:09:10,911
+All of the Prep
+
+206
+00:09:11,167 --> 00:09:13,215
+To get all your class names out and
+
+207
+00:09:13,471 --> 00:09:14,751
+Get all your yeah
+
+208
+00:09:15,007 --> 00:09:18,079
+Just to develop the structure in white paper
+
+209
+00:09:18,591 --> 00:09:19,615
+I didn't do any of that
+
+210
+00:09:20,127 --> 00:09:26,271
+I started in the longest way I just wanted to build a component with another component and be able to
+
+211
+00:09:26,527 --> 00:09:28,319
+To reuse that to do it again and again
+
+212
+00:09:28,831 --> 00:09:33,951
+That's really what I wanted to do and I know therefore that they could be better ways to do this
+
+213
+00:09:34,719 --> 00:09:37,791
+And I hope that wouldn't actually discourage  any of you
+
+214
+00:09:38,047 --> 00:09:40,863
+But in fact would encourage you to realise that
+
+215
+00:09:41,375 --> 00:09:43,935
+There is many ways to actually end up at a
+
+216
+00:09:44,191 --> 00:09:44,959
+You know
+
+217
+00:09:45,215 --> 00:09:45,983
+A result
+
+218
+00:09:46,495 --> 00:09:47,519
+Anyway
+
+219
+00:09:47,775 --> 00:09:48,287
+So
+
+220
+00:09:48,799 --> 00:09:50,591
+Without to much apology
+
+221
+00:09:50,847 --> 00:09:53,151
+This is there for the constructor
+
+222
+00:09:53,407 --> 00:09:54,943
+Of the get class
+
+223
+00:09:55,199 --> 00:09:58,015
+Which triggers a whole lot of things
+
+224
+00:09:58,783 --> 00:10:01,087
+And so just in there by inheritance
+
+225
+00:10:01,343 --> 00:10:05,439
+This constructor gets triggered and data gets added to the
+
+226
+00:10:05,951 --> 00:10:06,463
+Model
+
+227
+00:10:06,975 --> 00:10:09,023
+Class
+
+228
+00:10:09,279 --> 00:10:09,791
+Values
+
+229
+00:10:10,303 --> 00:10:13,119
+And then gets used in the classes to follow
+
+230
+00:10:13,631 --> 00:10:14,143
+And
+
+231
+00:10:14,655 --> 00:10:17,983
+There also some functions that also lives here
+
+232
+00:10:18,239 --> 00:10:19,263
+But which we
+
+233
+00:10:19,519 --> 00:10:20,287
+Called public
+
+234
+00:10:20,799 --> 00:10:22,847
+Which might be used again
+
+235
+00:10:24,383 --> 00:10:27,199
+But like this one actually doesn't need to be public
+
+236
+00:10:28,991 --> 00:10:29,503
+I think
+
+237
+00:10:30,783 --> 00:10:31,551
+So
+
+238
+00:10:31,807 --> 00:10:32,831
+It all gets triggered
+
+239
+00:10:33,087 --> 00:10:35,135
+And you can go through this
+
+240
+00:10:35,647 --> 00:10:37,183
+Get class and
+
+241
+00:10:37,439 --> 00:10:39,743
+Basically by the name of the methods
+
+242
+00:10:39,999 --> 00:10:43,839
+Be able to discover what is being done in this method
+
+243
+00:10:44,095 --> 00:10:44,607
+And
+
+244
+00:10:44,863 --> 00:10:45,887
+Then so forth
+
+245
+00:10:46,655 --> 00:10:49,727
+The next one is then the structure
+
+246
+00:10:49,983 --> 00:10:54,335
+And here we basically taking the template files
+
+247
+00:10:54,591 --> 00:10:56,127
+And we are
+
+248
+00:10:56,639 --> 00:10:57,919
+Starting to
+
+249
+00:10:59,711 --> 00:11:01,759
+Pull them out give them right names
+
+250
+00:11:02,015 --> 00:11:07,391
+And put them in the right place for preparation to add the code to them
+
+251
+00:11:07,903 --> 00:11:11,231
+So a lot of the templates are being
+
+252
+00:11:11,487 --> 00:11:14,303
+Built here again you got a constructor
+
+253
+00:11:14,559 --> 00:11:20,191
+And here it starts setting libraries and you can see in the constructor what happens First
+
+254
+00:11:20,703 --> 00:11:21,983
+So you can look at this
+
+255
+00:11:22,239 --> 00:11:24,031
+And see ok
+
+256
+00:11:24,799 --> 00:11:30,943
+Remove folders we physically now then set libraries then set dynamic, dashboard and set folders
+
+257
+00:11:31,711 --> 00:11:32,479
+and set stastic
+
+258
+00:11:34,271 --> 00:11:35,295
+Set dynamic
+
+259
+00:11:35,807 --> 00:11:41,695
+So you can check in the constructor how the functions or there is and then you can actually go
+
+260
+00:11:41,951 --> 00:11:43,743
+And look at those functions
+
+261
+00:11:44,255 --> 00:11:46,559
+Quickly and see what happens in them
+
+262
+00:11:46,815 --> 00:11:49,887
+All the functions that are running alongside of them
+
+263
+00:11:50,399 --> 00:11:51,167
+And
+
+264
+00:11:51,423 --> 00:11:54,751
+That's sort of how the structure class Works
+
+265
+00:11:55,007 --> 00:12:00,639
+And then there are obviously some functions here in the structure class that also again get used
+
+266
+00:12:00,895 --> 00:12:01,919
+In further classes
+
+267
+00:12:02,943 --> 00:12:05,247
+We then end up at the fields class
+
+268
+00:12:05,503 --> 00:12:06,783
+This is where we start
+
+269
+00:12:07,039 --> 00:12:09,599
+Actually realising the code
+
+270
+00:12:10,111 --> 00:12:12,671
+That needs to be added back to the files
+
+271
+00:12:12,927 --> 00:12:14,975
+And we start building the fields
+
+272
+00:12:15,487 --> 00:12:18,815
+The fields which actually in their relation to their views
+
+273
+00:12:19,327 --> 00:12:21,887
+Actually starts happening
+
+274
+00:12:23,679 --> 00:12:25,727
+Well will first check that the view have fields
+
+275
+00:12:25,983 --> 00:12:27,007
+And if it does
+
+276
+00:12:27,519 --> 00:12:28,543
+Then we start
+
+277
+00:12:28,799 --> 00:12:34,943
+Either by using the string method or the XML method there are two methods in which we build
+
+278
+00:12:35,199 --> 00:12:35,711
+The fields
+
+279
+00:12:36,223 --> 00:12:38,015
+If it said to use the strength
+
+280
+00:12:38,271 --> 00:12:39,551
+Fieldset
+
+281
+00:12:40,831 --> 00:12:41,343
+Then
+
+282
+00:12:41,855 --> 00:12:44,927
+This is how it will go about and over
+
+283
+00:12:45,439 --> 00:12:45,951
+About
+
+284
+00:12:47,231 --> 00:12:47,743
+Where is that almost
+
+285
+00:12:55,423 --> 00:12:56,191
+Are we here
+
+286
+00:12:56,703 --> 00:12:57,471
+It says
+
+287
+00:12:57,727 --> 00:13:02,079
+Well here at Loops over the fields and it uses a set Dynamic field
+
+288
+00:13:02,591 --> 00:13:05,407
+And it passes it a whole lot of values
+
+289
+00:13:05,919 --> 00:13:07,967
+And so you can then
+
+290
+00:13:08,223 --> 00:13:09,247
+Follow this
+
+291
+00:13:09,503 --> 00:13:10,015
+Get
+
+292
+00:13:10,271 --> 00:13:11,295
+Go to this
+
+293
+00:13:11,807 --> 00:13:12,575
+Class
+
+294
+00:13:12,831 --> 00:13:14,367
+Method and see
+
+295
+00:13:14,879 --> 00:13:16,927
+Here is the perimeters that it needs
+
+296
+00:13:17,183 --> 00:13:17,695
+And
+
+297
+00:13:18,463 --> 00:13:20,255
+Then see how it's being built
+
+298
+00:13:20,767 --> 00:13:21,279
+So
+
+299
+00:13:21,535 --> 00:13:24,095
+All the everything about Fields happens here
+
+300
+00:13:24,607 --> 00:13:25,631
+In this
+
+301
+00:13:25,887 --> 00:13:26,399
+Class
+
+302
+00:13:26,655 --> 00:13:30,239
+As much as possible I tried to do a lot of inheritance and
+
+303
+00:13:31,007 --> 00:13:33,823
+All morphism in all these things all of the time
+
+304
+00:13:34,335 --> 00:13:37,151
+I I like to not do it too much and you hear that some
+
+305
+00:13:37,663 --> 00:13:39,711
+Stages decoupling is necessary
+
+306
+00:13:39,967 --> 00:13:40,479
+for
+
+307
+00:13:40,991 --> 00:13:41,759
+For stability
+
+308
+00:13:43,039 --> 00:13:44,319
+And so you'll see that
+
+309
+00:13:44,575 --> 00:13:46,111
+All across the classes
+
+310
+00:13:46,367 --> 00:13:49,695
+That I'm trying to reuse things quite extensively
+
+311
+00:13:51,743 --> 00:13:53,791
+Ok now after the
+
+312
+00:13:54,047 --> 00:13:56,607
+Fields we are at the interpretation
+
+313
+00:13:56,863 --> 00:14:00,447
+Now the interpretation basically takes what the fields gave us
+
+314
+00:14:00,703 --> 00:14:03,007
+Including the structure including the gate
+
+315
+00:14:03,775 --> 00:14:06,847
+And it starts interpreting what is being
+
+316
+00:14:07,103 --> 00:14:08,383
+Expected here
+
+317
+00:14:08,895 --> 00:14:13,503
+And yes this is the class which is where I started
+
+318
+00:14:13,759 --> 00:14:15,551
+So you if you wanna know from where
+
+319
+00:14:16,063 --> 00:14:19,391
+What what what which ones are right first is actually this one
+
+320
+00:14:19,903 --> 00:14:20,927
+And Get and
+
+321
+00:14:21,183 --> 00:14:22,207
+Fields and
+
+322
+00:14:22,463 --> 00:14:23,999
+All of those code
+
+323
+00:14:24,511 --> 00:14:25,791
+Was in this class
+
+324
+00:14:26,047 --> 00:14:27,327
+So this used to be
+
+325
+00:14:27,839 --> 00:14:28,351
+Like
+
+326
+00:14:29,119 --> 00:14:30,655
+Huge I mean
+
+327
+00:14:30,911 --> 00:14:31,679
+I think it was
+
+328
+00:14:32,703 --> 00:14:34,751
+Over over 20000 lines
+
+329
+00:14:35,775 --> 00:14:36,543
+And now
+
+330
+00:14:36,799 --> 00:14:40,127
+After doing such a ridiculous
+
+331
+00:14:40,639 --> 00:14:43,199
+Amount of coding and realising ok it's
+
+332
+00:14:43,455 --> 00:14:45,247
+Absolutely not convention
+
+333
+00:14:46,015 --> 00:14:48,831
+I started the refactoring in this and breaking it up
+
+334
+00:14:50,367 --> 00:14:51,135
+And
+
+335
+00:14:51,391 --> 00:14:53,439
+This is How far I've got so
+
+336
+00:14:53,951 --> 00:14:54,975
+Please have mercy on me
+
+337
+00:14:57,023 --> 00:14:59,071
+We've started decoupling these
+
+338
+00:14:59,583 --> 00:15:02,911
+And yet we are still so far away from
+
+339
+00:15:03,167 --> 00:15:04,447
+Fully decoupling them
+
+340
+00:15:05,471 --> 00:15:08,031
+What advantages we've made is that
+
+341
+00:15:08,287 --> 00:15:14,431
+If you compile a component and you wanna see me where what is being built it actually JCB
+
+342
+00:15:14,687 --> 00:15:16,223
+Actually has such a feature
+
+343
+00:15:16,479 --> 00:15:21,087
+It is a feature which I'm sure all of you have used it's this line numbers
+
+344
+00:15:21,599 --> 00:15:24,159
+Which I could say to you now just yes
+
+345
+00:15:24,671 --> 00:15:29,279
+And that would basically mean that now in your components
+
+346
+00:15:29,535 --> 00:15:30,815
+Comments
+
+347
+00:15:31,327 --> 00:15:35,935
+You'll see references to where in the compiler the code was built
+
+348
+00:15:36,703 --> 00:15:41,311
+And that is sort of my way of making apology for this massive class
+
+349
+00:15:41,823 --> 00:15:45,663
+Because I know the objection to it is the difficulty of debugging
+
+350
+00:15:46,431 --> 00:15:50,015
+And well not necessarily debugging as much as
+
+351
+00:15:50,271 --> 00:15:51,295
+You not understanding
+
+352
+00:15:51,551 --> 00:15:52,575
+What's happening here
+
+353
+00:15:53,343 --> 00:15:54,367
+And so
+
+354
+00:15:54,623 --> 00:15:55,647
+I'm trying to
+
+355
+00:15:55,903 --> 00:15:57,183
+Do that at the moment
+
+356
+00:15:57,439 --> 00:15:59,231
+And yet I must tell you
+
+357
+00:16:00,767 --> 00:16:05,887
+I've never not been able to expand on this area and actually change it and fix it
+
+358
+00:16:06,399 --> 00:16:08,191
+Because the class names
+
+359
+00:16:08,703 --> 00:16:10,751
+And what is being done here
+
+360
+00:16:11,007 --> 00:16:13,311
+Is actually quite understandable
+
+361
+00:16:13,823 --> 00:16:19,199
+And easily to find if you in the code can find the line where the code is built
+
+362
+00:16:19,711 --> 00:16:22,527
+You can then go to that line and very quickly
+
+363
+00:16:22,783 --> 00:16:24,319
+Actually be able to follow
+
+364
+00:16:24,831 --> 00:16:25,343
+The path
+
+365
+00:16:25,599 --> 00:16:26,623
+In which things happens
+
+366
+00:16:27,391 --> 00:16:28,927
+And so
+
+367
+00:16:29,695 --> 00:16:32,767
+I would expect the future would hold in
+
+368
+00:16:33,023 --> 00:16:34,815
+That we do even more
+
+369
+00:16:35,071 --> 00:16:37,119
+Refactoring on this class
+
+370
+00:16:37,375 --> 00:16:38,143
+And have
+
+371
+00:16:38,399 --> 00:16:40,447
+More sub classes actually
+
+372
+00:16:40,959 --> 00:16:44,031
+And I'm very open for you too
+
+373
+00:16:44,543 --> 00:16:46,847
+To actually get involved in this area and help
+
+374
+00:16:47,359 --> 00:16:48,895
+To make it easier
+
+375
+00:16:49,919 --> 00:16:51,199
+But on the other side
+
+376
+00:16:52,479 --> 00:16:52,991
+The
+
+377
+00:16:53,247 --> 00:16:56,831
+The other term that also does stand out is if it works
+
+378
+00:16:57,855 --> 00:16:59,135
+Don't fix it
+
+379
+00:17:00,671 --> 00:17:04,511
+So I would say as we improve JCB
+
+380
+00:17:04,767 --> 00:17:06,047
+And as we adapt it
+
+381
+00:17:06,303 --> 00:17:07,327
+To do better
+
+382
+00:17:07,583 --> 00:17:09,887
+This is where most of the refractory will
+
+383
+00:17:10,143 --> 00:17:10,655
+Usually take
+
+384
+00:17:10,911 --> 00:17:11,423
+Place
+
+385
+00:17:12,703 --> 00:17:18,079
+And so every time there is a feature request and a specific area is having to change
+
+386
+00:17:18,591 --> 00:17:21,407
+I usually come in and refactor that whole area
+
+387
+00:17:21,919 --> 00:17:23,967
+That I'm currently working at this
+
+388
+00:17:25,247 --> 00:17:28,831
+It is a lot of code but it's really simple I didn't
+
+389
+00:17:29,599 --> 00:17:35,743
+I didn't purposefully didn't wanna build something so complicated that if you would read it you have no idea
+
+390
+00:17:35,999 --> 00:17:36,767
+of following it
+
+391
+00:17:38,303 --> 00:17:39,583
+I tried to make it
+
+392
+00:17:39,839 --> 00:17:40,863
+Quite simple
+
+393
+00:17:41,119 --> 00:17:42,399
+An easy to follow
+
+394
+00:17:42,911 --> 00:17:46,239
+And hoping that others would easily come in here and
+
+395
+00:17:47,007 --> 00:17:47,775
+Be able to see you
+
+396
+00:17:48,031 --> 00:17:49,055
+How things work
+
+397
+00:17:49,567 --> 00:17:51,615
+I'm in the interpretation class
+
+398
+00:17:52,127 --> 00:17:53,407
+And be able to
+
+399
+00:17:53,663 --> 00:17:54,175
+You know
+
+400
+00:17:55,199 --> 00:17:55,711
+Improve it
+
+401
+00:17:56,223 --> 00:17:57,503
+Make bull request
+
+402
+00:17:58,271 --> 00:18:04,415
+The next one is then the infusion the Fusion class is actually where the interpretation
+
+403
+00:18:04,671 --> 00:18:05,951
+Class gets fired
+
+404
+00:18:06,463 --> 00:18:09,535
+Most of their interpretation class functions
+
+405
+00:18:10,047 --> 00:18:11,839
+Actually gets fired here
+
+406
+00:18:12,095 --> 00:18:12,607
+So
+
+407
+00:18:12,863 --> 00:18:14,911
+We have a whole bunch
+
+408
+00:18:15,167 --> 00:18:21,311
+You know placeholders the way JCP works is really the strength of BHP and that is stream manipulation
+
+409
+00:18:22,335 --> 00:18:24,639
+And so we have placeholders which
+
+410
+00:18:25,151 --> 00:18:31,295
+Are in those files that we spoke of those template files and those templates files
+
+411
+00:18:31,551 --> 00:18:33,343
+Are having to be updated
+
+412
+00:18:33,855 --> 00:18:36,671
+I'm so first we need to load the
+
+413
+00:18:36,927 --> 00:18:37,695
+Code
+
+414
+00:18:37,951 --> 00:18:40,255
+Which actually gets built in the
+
+415
+00:18:40,767 --> 00:18:42,559
+ interpretation class
+
+416
+00:18:42,815 --> 00:18:45,375
+We need to load those into place holders
+
+417
+00:18:46,399 --> 00:18:48,447
+And then does placeholders in turn
+
+418
+00:18:48,703 --> 00:18:49,215
+Will be
+
+419
+00:18:49,727 --> 00:18:51,519
+Take into the files and merge
+
+420
+00:18:52,287 --> 00:18:53,823
+And so it is in there
+
+421
+00:18:55,103 --> 00:18:56,383
+Infusion class
+
+422
+00:18:56,895 --> 00:18:57,663
+That this happens
+
+423
+00:18:58,431 --> 00:19:00,479
+And so a lot of functions
+
+424
+00:19:01,759 --> 00:19:04,319
+That are in the interpretation class
+
+425
+00:19:04,831 --> 00:19:06,111
+Are actually fired
+
+426
+00:19:06,367 --> 00:19:07,647
+From this class
+
+427
+00:19:08,415 --> 00:19:10,207
+So sort of sort of looking back
+
+428
+00:19:10,719 --> 00:19:12,255
+And getting the work done
+
+429
+00:19:14,047 --> 00:19:16,095
+And so it's like now
+
+430
+00:19:16,351 --> 00:19:19,423
+The work is getting less so the majority of the code
+
+431
+00:19:19,679 --> 00:19:22,495
+Which we need to do the work is behind us
+
+432
+00:19:23,007 --> 00:19:25,311
+And really now it's just sort of organising
+
+433
+00:19:25,823 --> 00:19:27,359
+the Logic and
+
+434
+00:19:27,871 --> 00:19:28,383
+This
+
+435
+00:19:28,639 --> 00:19:29,919
+is really what's happening here
+
+436
+00:19:30,175 --> 00:19:32,479
+You're so the Massive
+
+437
+00:19:32,735 --> 00:19:33,247
+Method
+
+438
+00:19:33,759 --> 00:19:34,271
+Is just
+
+439
+00:19:34,783 --> 00:19:38,111
+This one class one massive method that loads
+
+440
+00:19:38,367 --> 00:19:41,439
+All the function values into
+
+441
+00:19:41,951 --> 00:19:42,975
+The place holding
+
+442
+00:19:43,231 --> 00:19:45,791
+And then there's a second things that are static
+
+443
+00:19:46,303 --> 00:19:48,351
+And then there is content that are dynamic 
+
+444
+00:19:48,863 --> 00:19:52,959
+And the dynamic content placeholders work a little different in that
+
+445
+00:19:53,215 --> 00:19:54,495
+It has to
+
+446
+00:19:54,751 --> 00:19:56,031
+The things here
+
+447
+00:19:56,287 --> 00:19:58,591
+What is the for what it is
+
+448
+00:19:58,847 --> 00:20:00,639
+And then for where it is
+
+449
+00:20:01,919 --> 00:20:04,991
+So for this one is for the dashboard but later you'd see
+
+450
+00:20:05,503 --> 00:20:07,295
+And it starts going to a Ajacks
+
+451
+00:20:09,087 --> 00:20:10,111
+And it has
+
+452
+00:20:10,623 --> 00:20:11,647
+Oh wait
+
+453
+00:20:12,159 --> 00:20:12,927
+We go up again
+
+454
+00:20:14,719 --> 00:20:15,743
+You see here
+
+455
+00:20:17,279 --> 00:20:19,071
+That it actually targets The View
+
+456
+00:20:19,327 --> 00:20:21,631
+The list view and actual
+
+457
+00:20:22,143 --> 00:20:23,679
+Edit view Single View
+
+458
+00:20:23,935 --> 00:20:24,447
+Here it is
+
+459
+00:20:24,959 --> 00:20:25,983
+So is
+
+460
+00:20:26,239 --> 00:20:27,519
+Doing a whole lot of
+
+461
+00:20:28,543 --> 00:20:30,335
+Building a one massive array
+
+462
+00:20:30,591 --> 00:20:31,359
+Of data
+
+463
+00:20:31,871 --> 00:20:32,895
+Which then
+
+464
+00:20:33,407 --> 00:20:37,759
+At some point it's going to get rid of by placing it into the files
+
+465
+00:20:39,295 --> 00:20:43,391
+And there are some other functions also in this class
+
+466
+00:20:43,903 --> 00:20:45,183
+Which are
+
+467
+00:20:45,695 --> 00:20:46,463
+Useful
+
+468
+00:20:46,719 --> 00:20:47,999
+To understand
+
+469
+00:20:49,535 --> 00:20:51,071
+So let's see what's the
+
+470
+00:20:52,095 --> 00:20:54,399
+OK we'll allmost at the end of this method
+
+471
+00:20:55,423 --> 00:21:01,567
+Ok so here we have set view placeholders with basically every view has its own set of names
+
+472
+00:21:02,079 --> 00:21:03,359
+Abbreviations
+
+473
+00:21:04,127 --> 00:21:06,943
+And then we also got language
+
+474
+00:21:07,455 --> 00:21:08,735
+Manipulation here
+
+475
+00:21:10,271 --> 00:21:11,295
+And that's it
+
+476
+00:21:12,063 --> 00:21:13,087
+Ok so
+
+477
+00:21:13,343 --> 00:21:18,464
+The next one is the one which is called compiler and it actually then
+
+478
+00:21:18,720 --> 00:21:21,280
+Extends then extends the infusion class
+
+479
+00:21:21,536 --> 00:21:23,072
+And it's in the compiler
+
+480
+00:21:23,584 --> 00:21:24,352
+Where we take
+
+481
+00:21:24,864 --> 00:21:25,888
+The templates
+
+482
+00:21:26,400 --> 00:21:27,936
+And the logic of
+
+483
+00:21:28,192 --> 00:21:29,728
+All the other classes
+
+484
+00:21:30,240 --> 00:21:32,544
+And we actually merge them with
+
+485
+00:21:32,800 --> 00:21:33,312
+Files
+
+486
+00:21:33,824 --> 00:21:35,616
+So we have a class here
+
+487
+00:21:36,128 --> 00:21:37,152
+Old update files
+
+488
+00:21:37,920 --> 00:21:39,200
+And really it takes
+
+489
+00:21:39,456 --> 00:21:41,248
+The new files which been built
+
+490
+00:21:41,760 --> 00:21:46,368
+And it adds the file Dynamics and the file statics
+
+491
+00:21:48,928 --> 00:21:50,208
+And updates
+
+492
+00:21:50,720 --> 00:21:53,280
+via the static values as well as the dynamic values
+
+493
+00:21:53,792 --> 00:21:56,608
+then places it back and then actually on
+
+494
+00:21:56,864 --> 00:21:58,400
+unsets the values
+
+495
+00:21:58,656 --> 00:22:01,984
+And then eventually we packaged this file
+
+496
+00:22:02,240 --> 00:22:05,312
+And move it to servers and said licences in
+
+497
+00:22:05,824 --> 00:22:07,616
+All kinds of nice need stuff
+
+498
+00:22:09,408 --> 00:22:09,920
+And
+
+499
+00:22:10,176 --> 00:22:13,248
+That is where it all comes to a conclusion
+
+500
+00:22:15,552 --> 00:22:21,184
+There's also some real fancy gymnastics here being done with a custom coding concepts
+
+501
+00:22:21,696 --> 00:22:24,000
+We we add code into those files
+
+502
+00:22:24,256 --> 00:22:25,536
+Really here
+
+503
+00:22:26,048 --> 00:22:27,328
+And update things
+
+504
+00:22:27,584 --> 00:22:28,096
+Which is
+
+505
+00:22:28,352 --> 00:22:30,400
+Quite exciting area this add custom code
+
+506
+00:22:30,656 --> 00:22:31,424
+Class
+
+507
+00:22:31,680 --> 00:22:32,704
+Sorry method
+
+508
+00:22:32,960 --> 00:22:33,728
+Is a
+
+509
+00:22:33,984 --> 00:22:34,496
+Very
+
+510
+00:22:35,008 --> 00:22:38,848
+Interesting method it actually ties into work that's been done
+
+511
+00:22:39,104 --> 00:22:40,640
+All across the other classes
+
+512
+00:22:41,664 --> 00:22:43,456
+So that's a quick overview
+
+513
+00:22:43,712 --> 00:22:45,504
+Of the compiler
+
+514
+00:22:46,016 --> 00:22:48,576
+It's really not that complicated
+
+515
+00:22:49,856 --> 00:22:55,744
+If you don't If you know PHP If you don't If you don't know programming that well I'm suppose that must be
+
+516
+00:22:56,000 --> 00:22:56,768
+So like ok
+
+517
+00:22:57,024 --> 00:22:57,792
+Over your head
+
+518
+00:22:58,304 --> 00:23:00,608
+But if you are
+
+519
+00:23:01,120 --> 00:23:01,888
+Fairly
+
+520
+00:23:02,400 --> 00:23:03,680
+Good developer
+
+521
+00:23:03,936 --> 00:23:09,056
+This shouldn't be any surprise I think Joomla's implimentations
+
+522
+00:23:09,312 --> 00:23:10,592
+are far beyond this
+
+523
+00:23:11,872 --> 00:23:14,176
+They really doing a excellent job
+
+524
+00:23:14,432 --> 00:23:18,272
+I'm still using old kind of implementations is here
+
+525
+00:23:18,528 --> 00:23:21,344
+And it's seems to at this stage do the work
+
+526
+00:23:22,112 --> 00:23:24,160
+But I also anticipate
+
+527
+00:23:24,672 --> 00:23:25,952
+That we will start
+
+528
+00:23:26,208 --> 00:23:28,768
+The implementing some of the better
+
+529
+00:23:29,280 --> 00:23:31,328
+Conventions as we continue
+
+530
+00:23:33,632 --> 00:23:34,912
+Well thanks for watching
+
+531
+00:23:35,424 --> 00:23:37,216
+If you have any questions please
+
+532
+00:23:37,984 --> 00:23:38,752
+You're welcome to
+
+533
+00:23:39,264 --> 00:23:40,288
+To contact me
+
+534
+00:23:40,800 --> 00:23:43,616
+either on Get up or on the Forum
+
+535
+00:23:45,408 --> 00:23:48,224
+I really would want to encourage other developers
+
+536
+00:23:48,736 --> 00:23:49,760
+Who understand
+
+537
+00:23:50,016 --> 00:23:51,552
+This what I've just explained
+
+538
+00:23:52,064 --> 00:23:54,112
+To actually help improve it
+
+539
+00:23:54,624 --> 00:23:56,928
+Because if you compile a component
+
+540
+00:23:57,440 --> 00:24:01,280
+And you can see ok this areas code comes from here
+
+541
+00:24:01,792 --> 00:24:04,864
+And you know that this is not the best way of doing it
+
+542
+00:24:05,120 --> 00:24:07,168
+And there are more Joomla
+
+543
+00:24:07,424 --> 00:24:09,472
+Convention better Joomla convention
+
+544
+00:24:09,728 --> 00:24:10,240
+To do this
+
+545
+00:24:10,752 --> 00:24:14,592
+I really want to to hear from you I really want to change it
+
+546
+00:24:14,848 --> 00:24:17,920
+Either myself or you yourself doing a commit
+
+547
+00:24:18,432 --> 00:24:19,968
+a bull request actually
+
+548
+00:24:20,480 --> 00:24:24,064
+And that's really how I see the way forward
+
+549
+00:24:25,600 --> 00:24:31,232
+I'm trying my very best to make this as appealing to the Open Source community
+
+550
+00:24:31,488 --> 00:24:34,816
+So that they wouldn't know that this is for real
+
+551
+00:24:35,328 --> 00:24:36,864
+And that they would actually
+
+552
+00:24:37,632 --> 00:24:38,144
+Yes
+
+553
+00:24:38,400 --> 00:24:39,424
+Make this their own
+
+554
+00:24:40,192 --> 00:24:40,704
+Thank you
+

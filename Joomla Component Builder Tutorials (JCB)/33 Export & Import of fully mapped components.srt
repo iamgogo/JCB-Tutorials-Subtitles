@@ -1,0 +1,1328 @@
+1
+00:00:00,768 --> 00:00:01,536
+Greetings
+
+2
+00:00:02,560 --> 00:00:05,632
+We're happy to announce a new feature
+
+3
+00:00:05,888 --> 00:00:06,912
+That's been added
+
+4
+00:00:07,168 --> 00:00:09,728
+To the advanced component builder for Joomla
+
+5
+00:00:10,752 --> 00:00:11,776
+This feature
+
+6
+00:00:12,544 --> 00:00:14,848
+Is a feature I suppose can
+
+7
+00:00:15,616 --> 00:00:16,640
+Can become very
+
+8
+00:00:17,408 --> 00:00:18,176
+Useful
+
+9
+00:00:18,432 --> 00:00:20,224
+In the future of JCB
+
+10
+00:00:21,504 --> 00:00:24,064
+It allows you to export
+
+11
+00:00:25,088 --> 00:00:26,112
+A component
+
+12
+00:00:26,880 --> 00:00:28,160
+Out of JCB
+
+13
+00:00:29,184 --> 00:00:30,464
+And not only
+
+14
+00:00:30,976 --> 00:00:34,304
+The component's information but everything attached to it
+
+15
+00:00:34,816 --> 00:00:35,584
+So
+
+16
+00:00:35,840 --> 00:00:37,376
+If the component has
+
+17
+00:00:39,936 --> 00:00:46,080
+Admin views linked to it and those admin views have Fields link to it and those Fields have field types linked
+
+18
+00:00:47,360 --> 00:00:47,872
+And
+
+19
+00:00:48,128 --> 00:00:49,152
+those
+
+20
+00:00:49,408 --> 00:00:52,736
+Component has site views and custom admin views
+
+21
+00:00:53,248 --> 00:00:58,368
+And those site views and custom admin views has templates and layouts
+
+22
+00:00:58,624 --> 00:01:00,160
+And dynamic gets
+
+23
+00:01:00,672 --> 00:01:06,048
+And all these various linked concepts to a component
+
+24
+00:01:06,816 --> 00:01:08,096
+Is exported
+
+25
+00:01:09,376 --> 00:01:09,888
+Now
+
+26
+00:01:10,912 --> 00:01:13,472
+The way that you will export a component
+
+27
+00:01:13,984 --> 00:01:15,776
+is you'd simply click on
+
+28
+00:01:16,032 --> 00:01:17,568
+this export component
+
+29
+00:01:17,824 --> 00:01:19,360
+And obviously you need to select
+
+30
+00:01:20,384 --> 00:01:24,224
+The component or components that you would like to export
+
+31
+00:01:25,504 --> 00:01:26,016
+Now
+
+32
+00:01:26,272 --> 00:01:28,320
+There's a few things to say when
+
+33
+00:01:28,576 --> 00:01:30,880
+When we want to export a component
+
+34
+00:01:31,904 --> 00:01:36,256
+There are two ways in which we export a component one is
+
+35
+00:01:36,768 --> 00:01:38,304
+An encrypted way
+
+36
+00:01:38,560 --> 00:01:40,352
+And the other is non encrypted
+
+37
+00:01:40,608 --> 00:01:42,400
+Let me show you that in the code
+
+38
+00:01:44,448 --> 00:01:47,776
+So I like you to understand exactly how it works
+
+39
+00:01:48,544 --> 00:01:51,872
+So we have a method here called smart export Builder
+
+40
+00:01:52,128 --> 00:01:53,152
+Now
+
+41
+00:01:53,920 --> 00:01:57,248
+Smart export builder gets fired at the very end
+
+42
+00:01:57,760 --> 00:01:58,528
+Of the
+
+43
+00:01:58,784 --> 00:02:00,832
+Compilation or rather the built
+
+44
+00:02:01,600 --> 00:02:05,696
+Where all the data has now been extracted from the database
+
+45
+00:02:05,952 --> 00:02:07,232
+And it's now one
+
+46
+00:02:07,488 --> 00:02:08,256
+Big array
+
+47
+00:02:09,024 --> 00:02:10,560
+Of objects
+
+48
+00:02:11,072 --> 00:02:11,584
+Now
+
+49
+00:02:12,096 --> 00:02:13,888
+Basically in this function
+
+50
+00:02:14,656 --> 00:02:15,168
+Called
+
+51
+00:02:15,424 --> 00:02:16,960
+Get Smart export
+
+52
+00:02:17,472 --> 00:02:20,288
+Is where this data extrusion takes place
+
+53
+00:02:21,312 --> 00:02:23,360
+During this process
+
+54
+00:02:23,872 --> 00:02:25,152
+We actually
+
+55
+00:02:25,408 --> 00:02:26,176
+Take
+
+56
+00:02:26,944 --> 00:02:27,712
+A
+
+57
+00:02:28,992 --> 00:02:31,552
+we take a Count of a specific value
+
+58
+00:02:32,832 --> 00:02:35,648
+And that value's name is export key
+
+59
+00:02:36,672 --> 00:02:38,464
+So in this for each
+
+60
+00:02:39,488 --> 00:02:40,512
+We are looping
+
+61
+00:02:40,768 --> 00:02:46,144
+Through the components that you've selected so if you selected more than one
+
+62
+00:02:46,656 --> 00:02:49,216
+Then it will check whether there is an export key
+
+63
+00:02:49,472 --> 00:02:54,080
+For that component now let me show you where that is a set in the user interface
+
+64
+00:02:55,104 --> 00:02:56,640
+When you open a component
+
+65
+00:03:00,992 --> 00:03:03,296
+It has a tab called settings
+
+66
+00:03:04,832 --> 00:03:05,600
+And
+
+67
+00:03:05,856 --> 00:03:09,952
+At the bottom of the right-hand column it has a new
+
+68
+00:03:10,720 --> 00:03:13,024
+A field called export key
+
+69
+00:03:14,048 --> 00:03:16,096
+How you can put any value in here
+
+70
+00:03:16,352 --> 00:03:18,912
+If you leave this value empty
+
+71
+00:03:19,680 --> 00:03:23,008
+And you export only this component
+
+72
+00:03:23,520 --> 00:03:25,824
+Then the component will not be encrypted
+
+73
+00:03:26,336 --> 00:03:28,384
+If you add
+
+74
+00:03:28,640 --> 00:03:30,688
+A value to this field
+
+75
+00:03:32,224 --> 00:03:35,296
+And you export this component it will encrypt
+
+76
+00:03:35,808 --> 00:03:37,600
+That component's
+
+77
+00:03:37,856 --> 00:03:38,368
+Data
+
+78
+00:03:38,624 --> 00:03:40,160
+The database values
+
+79
+00:03:40,416 --> 00:03:41,696
+It will not encrypt
+
+80
+00:03:42,208 --> 00:03:45,024
+Attached files or folders or images
+
+81
+00:03:45,536 --> 00:03:48,352
+That are part of this component it will only encrypt
+
+82
+00:03:48,608 --> 00:03:50,400
+The data from the database
+
+83
+00:03:51,168 --> 00:03:51,936
+Now
+
+84
+00:03:53,216 --> 00:03:54,240
+Having said that
+
+85
+00:03:54,496 --> 00:03:57,056
+If you select multiple components
+
+86
+00:03:57,824 --> 00:04:00,128
+And any one of them has a key
+
+87
+00:04:00,384 --> 00:04:01,408
+Then it will encrypt
+
+88
+00:04:01,664 --> 00:04:02,944
+All the components
+
+89
+00:04:03,200 --> 00:04:03,968
+Ok
+
+90
+00:04:04,224 --> 00:04:06,528
+And I'll explain again in the code how this
+
+91
+00:04:06,784 --> 00:04:07,296
+Is done
+
+92
+00:04:07,552 --> 00:04:08,832
+So we go back to the code
+
+93
+00:04:10,624 --> 00:04:11,648
+now in the code
+
+94
+00:04:11,904 --> 00:04:16,000
+Basically we are asking does this component have an export key
+
+95
+00:04:16,256 --> 00:04:18,559
+If it's true and it is a string
+
+96
+00:04:19,583 --> 00:04:20,607
+We actually
+
+97
+00:04:20,863 --> 00:04:23,679
+this key is encrypted in a database
+
+98
+00:04:23,935 --> 00:04:25,215
+So we first check
+
+99
+00:04:25,727 --> 00:04:28,031
+That it is able to be decrypted
+
+100
+00:04:28,287 --> 00:04:30,335
+And then we decrypt the key
+
+101
+00:04:31,359 --> 00:04:32,639
+And then we add it
+
+102
+00:04:32,895 --> 00:04:33,919
+To the key array
+
+103
+00:04:34,175 --> 00:04:37,247
+With the component's ID
+
+104
+00:04:38,271 --> 00:04:40,831
+So basically we are building up an array
+
+105
+00:04:41,343 --> 00:04:43,135
+Of each component's key
+
+106
+00:04:43,647 --> 00:04:46,207
+now if a component does not have a key
+
+107
+00:04:46,463 --> 00:04:51,327
+It simply ignores this little script and it continues building its data set
+
+108
+00:04:52,351 --> 00:04:52,863
+Then
+
+109
+00:04:53,119 --> 00:04:56,191
+Once all the data set of all components are finished
+
+110
+00:04:57,471 --> 00:05:02,335
+We basically get to the Smart export builder I set spoke of you know
+
+111
+00:05:02,591 --> 00:05:04,383
+When we started looking at the code
+
+112
+00:05:05,151 --> 00:05:06,175
+Now in this
+
+113
+00:05:06,431 --> 00:05:11,807
+Smart export builder we are simply asking have we found any keys
+
+114
+00:05:12,575 --> 00:05:15,135
+If we have found any keys
+
+115
+00:05:15,647 --> 00:05:17,183
+We are gonna explode
+
+116
+00:05:17,695 --> 00:05:18,463
+sorry, Implode
+
+117
+00:05:18,719 --> 00:05:19,487
+The array
+
+118
+00:05:20,255 --> 00:05:22,815
+And convert it to MD5 string
+
+119
+00:05:24,607 --> 00:05:25,375
+Very simple
+
+120
+00:05:26,143 --> 00:05:28,447
+We will then use this MD5 string
+
+121
+00:05:29,215 --> 00:05:29,727
+With
+
+122
+00:05:29,983 --> 00:05:32,543
+An AES
+
+123
+00:05:32,799 --> 00:05:34,335
+Encryption Cypher
+
+124
+00:05:35,359 --> 00:05:36,895
+To lock the data
+
+125
+00:05:37,407 --> 00:05:38,431
+So there is the data
+
+126
+00:05:38,943 --> 00:05:42,271
+Now above here we already changed the whole dataset
+
+127
+00:05:42,783 --> 00:05:44,575
+To a serialised string
+
+128
+00:05:45,343 --> 00:05:47,647
+So we have a string in this variable
+
+129
+00:05:48,415 --> 00:05:51,487
+And here we are basically encrypting the whole string
+
+130
+00:05:52,255 --> 00:05:53,535
+And now
+
+131
+00:05:53,791 --> 00:05:59,935
+In this variable we have the encrypted value If we don't have any keys
+
+132
+00:06:00,191 --> 00:06:03,519
+Even if that means if none of the components that was selected
+
+133
+00:06:04,031 --> 00:06:05,567
+Had any keys set
+
+134
+00:06:06,079 --> 00:06:08,895
+Then it will default to Simply
+
+135
+00:06:09,151 --> 00:06:11,199
+Do a base64 encode
+
+136
+00:06:12,735 --> 00:06:18,879
+And that is swell then gets written to the file
+
+137
+00:06:19,391 --> 00:06:20,671
+That's part of the package
+
+138
+00:06:21,951 --> 00:06:23,231
+So that is how
+
+139
+00:06:23,487 --> 00:06:29,631
+It exports the data I'm too much about the actual mechanics that's happening here
+
+140
+00:06:29,887 --> 00:06:30,911
+In the bottom of the file
+
+141
+00:06:31,167 --> 00:06:33,471
+You're welcome to obviously look through it
+
+142
+00:06:33,727 --> 00:06:36,543
+And if you see any room for improvements
+
+143
+00:06:36,799 --> 00:06:38,591
+You're welcome to make a pull request
+
+144
+00:06:40,127 --> 00:06:42,943
+This this is obviously the first try
+
+145
+00:06:43,455 --> 00:06:48,831
+Ok so it exports the data and then checks whether we have any keys
+
+146
+00:06:49,087 --> 00:06:50,111
+So if you have
+
+147
+00:06:50,367 --> 00:06:52,159
+For example exporting five
+
+148
+00:06:52,415 --> 00:06:53,695
+Components
+
+149
+00:06:54,207 --> 00:06:56,767
+And all five components have keys
+
+150
+00:06:57,279 --> 00:06:58,815
+In all five keys will
+
+151
+00:06:59,071 --> 00:07:00,863
+Basically create a very long
+
+152
+00:07:01,119 --> 00:07:01,631
+String
+
+153
+00:07:02,655 --> 00:07:08,543
+And then that whole string will be changed into an MD5 string which is 32 characters
+
+154
+00:07:08,799 --> 00:07:12,895
+And that 32 characters is then used to encrypt the data
+
+155
+00:07:13,407 --> 00:07:14,943
+Now not to worry
+
+156
+00:07:15,199 --> 00:07:16,735
+This actual key
+
+157
+00:07:17,503 --> 00:07:21,087
+Which we then end up using to do the encryption
+
+158
+00:07:21,855 --> 00:07:27,999
+Will be shown to you in the interface after the you know after the the data is being exported
+
+159
+00:07:29,279 --> 00:07:31,583
+Ok so let's go back to
+
+160
+00:07:31,839 --> 00:07:35,679
+To the to the user interface and let's export a component
+
+161
+00:07:40,031 --> 00:07:42,079
+Ok so I have this component
+
+162
+00:07:42,335 --> 00:07:44,127
+And it has a key
+
+163
+00:07:44,639 --> 00:07:47,967
+And I have other components that has no keys at this stage
+
+164
+00:07:48,735 --> 00:07:51,807
+So I'll select this one as a demonstration
+
+165
+00:07:52,319 --> 00:07:54,623
+And then I'll click export component
+
+166
+00:07:57,695 --> 00:07:59,231
+And as you can see
+
+167
+00:07:59,487 --> 00:08:01,023
+A generated a key for me
+
+168
+00:08:02,559 --> 00:08:04,095
+Which I can then use
+
+169
+00:08:04,607 --> 00:08:05,887
+To import
+
+170
+00:08:06,399 --> 00:08:09,215
+This package into another JCB
+
+171
+00:08:09,471 --> 00:08:12,287
+I can import it into the same JCB
+
+172
+00:08:12,543 --> 00:08:14,847
+But it's obviously not necessary
+
+173
+00:08:15,359 --> 00:08:17,151
+So I could use it as a backup
+
+174
+00:08:18,175 --> 00:08:18,943
+Now
+
+175
+00:08:19,455 --> 00:08:23,295
+It is storing the compiled package in
+
+176
+00:08:23,551 --> 00:08:25,599
+The temporary folder at this stage
+
+177
+00:08:26,367 --> 00:08:27,135
+I am
+
+178
+00:08:27,391 --> 00:08:28,671
+Working to
+
+179
+00:08:29,183 --> 00:08:35,327
+Determine whether we should actually make this placement of the file the dynamic
+
+180
+00:08:35,583 --> 00:08:36,863
+So that you could change it
+
+181
+00:08:37,119 --> 00:08:43,263
+Because I think it will be ideal if it automatically becomes a kind of backup method
+
+182
+00:08:44,031 --> 00:08:49,151
+So we're even thinking of setting up a timer that could run backups
+
+183
+00:08:49,407 --> 00:08:51,455
+Of your components using this method
+
+184
+00:08:51,711 --> 00:08:55,039
+Anyway that's future planning that's not
+
+185
+00:08:55,551 --> 00:08:57,087
+gonna be happening Soon though
+
+186
+00:08:58,879 --> 00:08:59,903
+Ok so
+
+187
+00:09:00,159 --> 00:09:01,951
+You have an exported component
+
+188
+00:09:02,207 --> 00:09:08,351
+At the moment if you if your data sets on not too big and your memory
+
+189
+00:09:08,607 --> 00:09:14,751
+Settings on your PHP and so forth is allowing this kind of compilation
+
+190
+00:09:15,263 --> 00:09:17,311
+You could select all components
+
+191
+00:09:17,567 --> 00:09:18,335
+And
+
+192
+00:09:18,591 --> 00:09:19,871
+Export them
+
+193
+00:09:21,151 --> 00:09:22,687
+The same will be the result
+
+194
+00:09:23,199 --> 00:09:26,271
+Since I have only one component set with a key
+
+195
+00:09:26,783 --> 00:09:28,063
+They all will be
+
+196
+00:09:28,319 --> 00:09:29,599
+Basically encrypted
+
+197
+00:09:29,855 --> 00:09:31,135
+With the same key
+
+198
+00:09:31,647 --> 00:09:34,975
+And they all be stored in this package so I have just now
+
+199
+00:09:35,231 --> 00:09:36,511
+While talking to you
+
+200
+00:09:36,767 --> 00:09:38,559
+Exported all my components
+
+201
+00:09:39,071 --> 00:09:40,607
+Into this one package
+
+202
+00:09:41,119 --> 00:09:45,471
+Now to demonstrate the importing of this data set
+
+203
+00:09:45,727 --> 00:09:47,007
+I have a
+
+204
+00:09:47,519 --> 00:09:49,055
+Blank website ready
+
+205
+00:09:49,567 --> 00:09:50,591
+So let's go there
+
+206
+00:09:52,127 --> 00:09:53,663
+So here's my blank website
+
+207
+00:09:54,175 --> 00:09:58,783
+Basically it has no special JCB components
+
+208
+00:09:59,295 --> 00:10:02,111
+The first thing I'll do is I'm gonna install
+
+209
+00:10:02,623 --> 00:10:03,903
+JCB
+
+210
+00:10:04,159 --> 00:10:05,951
+I'm gonna install it from
+
+211
+00:10:06,207 --> 00:10:06,975
+From github
+
+212
+00:10:08,255 --> 00:10:09,535
+So I'm going to git Hub
+
+213
+00:10:09,791 --> 00:10:11,583
+And then I will
+
+214
+00:10:11,839 --> 00:10:13,631
+Open the releases
+
+215
+00:10:14,655 --> 00:10:16,703
+And I'll just copy the link
+
+216
+00:10:19,263 --> 00:10:20,799
+To this latest release
+
+217
+00:10:22,335 --> 00:10:23,615
+And go back here
+
+218
+00:10:24,639 --> 00:10:25,919
+Paste that in here
+
+219
+00:10:26,687 --> 00:10:28,223
+And basically install it
+
+220
+00:10:28,479 --> 00:10:32,319
+Okay the installation was successful
+
+221
+00:10:33,087 --> 00:10:34,879
+Now I'm gonna go to
+
+222
+00:10:35,135 --> 00:10:36,159
+Component Builder
+
+223
+00:10:37,439 --> 00:10:39,743
+Then I'll open the components
+
+224
+00:10:41,023 --> 00:10:43,583
+And as you can see
+
+225
+00:10:43,839 --> 00:10:46,655
+I have only the demo component here
+
+226
+00:10:46,911 --> 00:10:49,727
+And I would like to basically
+
+227
+00:10:50,239 --> 00:10:52,799
+Move all these components that I have
+
+228
+00:10:53,055 --> 00:10:54,847
+Over to this new install
+
+229
+00:10:55,359 --> 00:10:55,871
+Ok
+
+230
+00:10:56,127 --> 00:10:58,431
+So I'm gonna click on import components
+
+231
+00:11:00,479 --> 00:11:02,527
+Then I'm gonna browse to that
+
+232
+00:11:03,807 --> 00:11:05,855
+That package that we've just exported
+
+233
+00:11:08,415 --> 00:11:10,207
+And then I'm gonna upload it
+
+234
+00:11:12,767 --> 00:11:13,279
+Now
+
+235
+00:11:13,535 --> 00:11:15,839
+We have two features here
+
+236
+00:11:16,607 --> 00:11:18,911
+This Force local update
+
+237
+00:11:19,167 --> 00:11:20,447
+Basically what it will do
+
+238
+00:11:21,215 --> 00:11:24,799
+Is on normal circumstances if you do a import
+
+239
+00:11:25,311 --> 00:11:26,591
+The
+
+240
+00:11:26,847 --> 00:11:30,943
+The import function looks at the data that are currently in this
+
+241
+00:11:31,455 --> 00:11:32,735
+In this current
+
+242
+00:11:32,991 --> 00:11:34,527
+JCB install
+
+243
+00:11:35,295 --> 00:11:36,575
+So for example
+
+244
+00:11:36,831 --> 00:11:42,207
+We're talking about field types we're talking about Fields we're talking about admin views and site views
+
+245
+00:11:42,463 --> 00:11:46,047
+If it finds a side view that is being installed
+
+246
+00:11:46,303 --> 00:11:48,863
+That it is already in the current Database
+
+247
+00:11:49,375 --> 00:11:51,935
+It looks at the last modified date
+
+248
+00:11:52,191 --> 00:11:54,495
+And then by that determines whether
+
+249
+00:11:54,751 --> 00:11:57,567
+The current installed version is newer
+
+250
+00:11:58,079 --> 00:11:59,103
+If it's newer
+
+251
+00:11:59,615 --> 00:12:03,967
+It will by Default ignore the new data and not install it
+
+252
+00:12:04,735 --> 00:12:10,879
+Now sometimes you might get a package where you would like to force that it updates
+
+253
+00:12:11,135 --> 00:12:14,463
+The current data even though it may be all the data
+
+254
+00:12:14,719 --> 00:12:19,839
+So this is why we have to switch you can then click yes to force the update
+
+255
+00:12:20,095 --> 00:12:21,375
+Now
+
+256
+00:12:21,887 --> 00:12:25,727
+We have a key for this package so we'll leave this to yes
+
+257
+00:12:25,983 --> 00:12:28,799
+I'll basically just come over here and copy that key
+
+258
+00:12:29,311 --> 00:12:33,663
+This key will then always be necessary if you're importing this package
+
+259
+00:12:34,431 --> 00:12:37,759
+And that will be it and we'll click continue
+
+260
+00:12:41,343 --> 00:12:45,439
+It might take a time since this is quite a huge dataset
+
+261
+00:12:45,695 --> 00:12:48,255
+So you could just patiently wait
+
+262
+00:12:49,791 --> 00:12:54,911
+And it last it is installed it tells us that the install is being successful
+
+263
+00:12:55,679 --> 00:12:57,727
+You might get these warnings
+
+264
+00:12:58,239 --> 00:13:00,799
+Now what these warnings is really telling you
+
+265
+00:13:01,311 --> 00:13:02,079
+Is that
+
+266
+00:13:02,591 --> 00:13:04,127
+During the install
+
+267
+00:13:04,639 --> 00:13:07,455
+Obviously you realise that Lots of IDs
+
+268
+00:13:07,711 --> 00:13:08,991
+Will change
+
+269
+00:13:10,271 --> 00:13:11,039
+I mean
+
+270
+00:13:11,295 --> 00:13:16,415
+We are working with a database that creates IDs as the new item is added
+
+271
+00:13:17,183 --> 00:13:23,327
+And since these are the IDs used to link into the various components and views and places
+
+272
+00:13:23,583 --> 00:13:26,399
+All these IDc must be remapped
+
+273
+00:13:26,911 --> 00:13:27,423
+Now
+
+274
+00:13:27,935 --> 00:13:29,983
+We have been able to actually
+
+275
+00:13:30,751 --> 00:13:34,591
+Find a very well formulated algorithm to
+
+276
+00:13:35,103 --> 00:13:36,639
+To resolve this problem
+
+277
+00:13:37,151 --> 00:13:39,455
+So it remaps all the IDs
+
+278
+00:13:39,711 --> 00:13:40,991
+But sometimes
+
+279
+00:13:41,247 --> 00:13:46,111
+There are certain IDs that hasn't you know it's not possible to remap
+
+280
+00:13:46,623 --> 00:13:49,951
+And so we are basically telling you here about them
+
+281
+00:13:50,719 --> 00:13:55,327
+And so you could see that the target field in the admin views
+
+282
+00:13:55,583 --> 00:13:57,631
+Has a mismatch in the field
+
+283
+00:13:57,887 --> 00:14:01,471
+With ID 244 now you can go back to the old install
+
+284
+00:14:01,983 --> 00:14:04,543
+And try and find out what happened there
+
+285
+00:14:04,799 --> 00:14:10,943
+And most the time when I have reviewed this usually it is because that specific field
+
+286
+00:14:11,455 --> 00:14:15,551
+Is no longer published or is no longer available or some reason
+
+287
+00:14:15,807 --> 00:14:21,183
+So this is just giving you a heads up of any changes that may have occurred
+
+288
+00:14:21,439 --> 00:14:25,791
+And then you can actually go to these various places and manually
+
+289
+00:14:26,047 --> 00:14:26,815
+Fix them
+
+290
+00:14:27,071 --> 00:14:31,935
+Most of the time these warnings will not show and everything will just say
+
+291
+00:14:32,191 --> 00:14:33,215
+All is ok
+
+292
+00:14:33,727 --> 00:14:39,871
+But if there is warnings and errors just Simply read the messages slowly and close
+
+293
+00:14:40,127 --> 00:14:40,639
+Closely
+
+294
+00:14:41,151 --> 00:14:43,199
+And I'm sure you'll be able to resolve it
+
+295
+00:14:43,455 --> 00:14:44,991
+Quite easily
+
+296
+00:14:45,247 --> 00:14:48,831
+Well that is a demonstration of the new feature
+
+297
+00:14:49,087 --> 00:14:55,231
+Now just to show you that it actually does work I'm didn't mention before but it actually
+
+298
+00:14:55,487 --> 00:15:00,607
+Removes all the customer files as well as custom folders
+
+299
+00:15:00,863 --> 00:15:04,959
+As well as all the images per admin view site view and
+
+300
+00:15:05,215 --> 00:15:06,239
+Wherever
+
+301
+00:15:06,751 --> 00:15:10,847
+To the new install so it move it into its right place
+
+302
+00:15:11,103 --> 00:15:14,943
+So if that is true we should be able to go to the compiler
+
+303
+00:15:15,455 --> 00:15:17,759
+Select any of the components
+
+304
+00:15:18,783 --> 00:15:19,295
+And
+
+305
+00:15:19,551 --> 00:15:22,367
+It should load that components image here
+
+306
+00:15:22,879 --> 00:15:25,183
+I should be able to just click
+
+307
+00:15:25,695 --> 00:15:26,719
+Ok compile
+
+308
+00:15:27,743 --> 00:15:30,815
+And it should be able to Simply compile that component
+
+309
+00:15:31,327 --> 00:15:35,679
+After compilation I could simply click installing the component
+
+310
+00:15:37,471 --> 00:15:40,031
+Obviously if this component was correctly mapped
+
+311
+00:15:40,287 --> 00:15:41,055
+Previously
+
+312
+00:15:41,567 --> 00:15:44,127
+And I were to go to that component now
+
+313
+00:15:44,639 --> 00:15:46,175
+I would see that
+
+314
+00:15:47,199 --> 00:15:51,039
+Everything about the component is right and it works well
+
+315
+00:15:51,551 --> 00:15:52,063
+And
+
+316
+00:15:52,575 --> 00:15:53,855
+That is really
+
+317
+00:15:55,135 --> 00:15:56,927
+This new feature in action
+
+318
+00:15:57,183 --> 00:16:01,791
+I really hope that it will be as useful to you as it's gonna be to me
+
+319
+00:16:02,559 --> 00:16:04,607
+And that you will have fun with it
+
+320
+00:16:05,375 --> 00:16:08,191
+I must tell you I suppose that at some point
+
+321
+00:16:08,447 --> 00:16:12,031
+We could even start looking at selling mapped components
+
+322
+00:16:12,543 --> 00:16:17,407
+I have a number of components that was made for specific
+
+323
+00:16:17,919 --> 00:16:18,687
+Purposes
+
+324
+00:16:18,943 --> 00:16:21,503
+But could be easily adapted for others
+
+325
+00:16:22,015 --> 00:16:27,135
+And so I'm starting to look at the idea of selling mapped components
+
+326
+00:16:27,647 --> 00:16:28,671
+Obviously
+
+327
+00:16:28,927 --> 00:16:32,255
+It's a little difficult because it's basically selling
+
+328
+00:16:33,023 --> 00:16:36,095
+The rights to it in a way that you could resell it
+
+329
+00:16:36,607 --> 00:16:39,167
+So I'm not sure what would be the price tag of that
+
+330
+00:16:39,679 --> 00:16:40,191
+Anyway
+
+331
+00:16:40,447 --> 00:16:41,215
+We'll see
+
+332
+00:16:41,727 --> 00:16:42,751
+Thank you for watching
+

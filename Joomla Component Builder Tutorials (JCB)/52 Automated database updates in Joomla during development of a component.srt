@@ -1,0 +1,816 @@
+1
+00:00:01,280 --> 00:00:03,840
+I would like to give you a explanation
+
+2
+00:00:04,096 --> 00:00:05,632
+As well as demonstration
+
+3
+00:00:06,144 --> 00:00:09,472
+Of how JCB deals with Joomla's
+
+4
+00:00:10,240 --> 00:00:11,264
+Implementation
+
+5
+00:00:11,520 --> 00:00:13,824
+when regards to creating of
+
+6
+00:00:14,080 --> 00:00:15,360
+Database tables
+
+7
+00:00:16,128 --> 00:00:19,712
+As well as updating them or even adding more
+
+8
+00:00:21,248 --> 00:00:24,576
+Joomla's way of doing this through specific file convention
+
+9
+00:00:24,832 --> 00:00:27,136
+Within your components file structure
+
+10
+00:00:27,648 --> 00:00:28,416
+Package
+
+11
+00:00:30,208 --> 00:00:31,744
+JCB is also been
+
+12
+00:00:32,256 --> 00:00:36,352
+Designed to actually detect changes in your component development
+
+13
+00:00:37,120 --> 00:00:38,656
+And create with files for you
+
+14
+00:00:40,448 --> 00:00:44,032
+The best way to illustrate this is well just let's compile a component
+
+15
+00:00:45,056 --> 00:00:46,080
+So we have
+
+16
+00:00:46,336 --> 00:00:48,128
+sermon distributer here
+
+17
+00:00:48,384 --> 00:00:50,176
+that's gonna compile that for us
+
+18
+00:00:51,456 --> 00:00:53,504
+And then we'll go to the zip file
+
+19
+00:00:53,760 --> 00:00:54,528
+Unzip it
+
+20
+00:00:55,040 --> 00:00:55,808
+Have a look at it
+
+21
+00:00:56,064 --> 00:00:58,112
+And see those files
+
+22
+00:00:59,904 --> 00:01:02,720
+ extracted here
+
+23
+00:01:04,000 --> 00:01:08,864
+And inside of this we have an admin folder and inside admin ,a SQL folder
+
+24
+00:01:09,376 --> 00:01:11,424
+And here is the first file of interest
+
+25
+00:01:11,936 --> 00:01:16,800
+that's what Joomla uses to actually build a database upon the first install of the component
+
+26
+00:01:17,568 --> 00:01:22,944
+Do take note that it runs this file only on a fresh install of the component
+
+27
+00:01:23,456 --> 00:01:27,040
+Thereafter it will not run it again even if that's file gets updated
+
+28
+00:01:27,552 --> 00:01:33,696
+Even if more values get added and usually it does JCB updates this file as you create new 
+
+29
+00:01:33,952 --> 00:01:35,488
+ views which in
+
+30
+00:01:36,000 --> 00:01:38,048
+Then it means a new table
+
+31
+00:01:38,304 --> 00:01:42,400
+And if you add Fields which means a new column or field in the database
+
+32
+00:01:42,912 --> 00:01:44,448
+And so
+
+33
+00:01:46,752 --> 00:01:49,568
+This file update but it is for those
+
+34
+00:01:49,824 --> 00:01:55,968
+Clients of yours that it couldn't install the component for the first time all those who already have the component installed
+
+35
+00:01:56,480 --> 00:01:58,272
+This file will mean nothing to them
+
+36
+00:01:59,040 --> 00:02:01,088
+All the files in this update folder
+
+37
+00:02:01,344 --> 00:02:03,136
+Is what would actually be relevant
+
+38
+00:02:03,904 --> 00:02:05,184
+If you have a client
+
+39
+00:02:05,440 --> 00:02:06,464
+Which has version
+
+40
+00:02:06,720 --> 00:02:09,280
+1.3.2 installed
+
+41
+00:02:09,536 --> 00:02:10,816
+on his system
+
+42
+00:02:11,072 --> 00:02:14,400
+Any gets this package from you this 2.0.0
+
+43
+00:02:14,912 --> 00:02:15,424
+Package
+
+44
+00:02:15,936 --> 00:02:16,960
+It will Actually
+
+45
+00:02:17,216 --> 00:02:18,240
+Start with
+
+46
+00:02:19,008 --> 00:02:20,032
+This file
+
+47
+00:02:20,288 --> 00:02:21,824
+Then that one and so forth
+
+48
+00:02:22,080 --> 00:02:23,360
+It will start with a
+
+49
+00:02:23,872 --> 00:02:25,920
+File which is the same
+
+50
+00:02:26,688 --> 00:02:30,784
+Version as the version that is currently installed on
+
+51
+00:02:31,040 --> 00:02:32,576
+The Joomla website
+
+52
+00:02:33,600 --> 00:02:34,112
+So
+
+53
+00:02:34,624 --> 00:02:35,392
+That means
+
+54
+00:02:37,952 --> 00:02:40,000
+JCB builds these files
+
+55
+00:02:40,256 --> 00:02:42,048
+In that expected way
+
+56
+00:02:43,072 --> 00:02:43,584
+Ok
+
+57
+00:02:44,096 --> 00:02:48,960
+Now let's go make a change to the component and see how JCB updates these files
+
+58
+00:02:53,056 --> 00:02:54,848
+Just gonna install the component
+
+59
+00:02:56,128 --> 00:02:57,664
+So we have it in the database
+
+60
+00:02:58,432 --> 00:03:00,224
+We can look at the database in the moment
+
+61
+00:03:01,248 --> 00:03:02,784
+To see how things change
+
+62
+00:03:03,552 --> 00:03:06,368
+Now I'm gonna open the admin views and I'm gonna add
+
+63
+00:03:07,136 --> 00:03:08,160
+A field
+
+64
+00:03:08,416 --> 00:03:10,464
+To the admin View called sermon
+
+65
+00:03:11,488 --> 00:03:13,280
+Is it gonna be any generic field
+
+66
+00:03:16,608 --> 00:03:19,424
+So that we can at least see it in action
+
+67
+00:03:19,936 --> 00:03:22,752
+I'm gonna call it mobile telephone
+
+68
+00:03:23,008 --> 00:03:24,288
+And
+
+69
+00:03:25,056 --> 00:03:27,104
+Just put in the fourth position
+
+70
+00:03:27,360 --> 00:03:30,432
+The left tab that's not really important but
+
+71
+00:03:30,688 --> 00:03:31,968
+Ok so there we go
+
+72
+00:03:32,224 --> 00:03:33,248
+We added a field
+
+73
+00:03:34,272 --> 00:03:39,904
+Now you could it disappoint also add a new view and JCB will detect both of them
+
+74
+00:03:40,160 --> 00:03:42,464
+And will add both of them to the update file
+
+75
+00:03:43,488 --> 00:03:44,000
+But
+
+76
+00:03:44,512 --> 00:03:45,792
+You could even do that
+
+77
+00:03:46,304 --> 00:03:47,584
+You know
+
+78
+00:03:48,096 --> 00:03:50,144
+Make this change run the compiler
+
+79
+00:03:51,424 --> 00:03:52,960
+Have this new update
+
+80
+00:03:53,472 --> 00:03:57,312
+Then make another change ,run the compiler and it'll follow along
+
+81
+00:03:57,568 --> 00:03:58,592
+Incrementally
+
+82
+00:03:59,104 --> 00:04:01,152
+Incrementing the the version
+
+83
+00:04:01,408 --> 00:04:02,688
+Value of the component
+
+84
+00:04:02,944 --> 00:04:03,712
+As you go
+
+85
+00:04:04,480 --> 00:04:06,272
+Just for our sake
+
+86
+00:04:07,296 --> 00:04:09,344
+Maybe let me add a view
+
+87
+00:04:09,600 --> 00:04:11,648
+Already in another View
+
+88
+00:04:11,904 --> 00:04:15,232
+And then you'll see how JCB combines to these values
+
+89
+00:04:15,744 --> 00:04:16,768
+in one update
+
+90
+00:04:17,536 --> 00:04:19,327
+So I'm going to grab a
+
+91
+00:04:20,351 --> 00:04:23,167
+view that isn't already part of this component
+
+92
+00:04:23,935 --> 00:04:25,471
+And just for illustration
+
+93
+00:04:26,751 --> 00:04:27,519
+Save and close
+
+94
+00:04:28,287 --> 00:04:31,615
+There we go we gotta view and it a new field
+
+95
+00:04:32,127 --> 00:04:34,431
+If we compile the component now
+
+96
+00:04:34,687 --> 00:04:35,455
+It will
+
+97
+00:04:35,967 --> 00:04:37,759
+Do all those things that I've explained
+
+98
+00:04:39,807 --> 00:04:44,415
+There you see it's incremented into 2.0.1
+
+99
+00:04:44,927 --> 00:04:46,975
+And if we go to the zip file
+
+100
+00:04:47,231 --> 00:04:50,303
+again extracted open it up admin
+
+101
+00:04:51,071 --> 00:04:51,839
+Sequel
+
+102
+00:04:52,351 --> 00:04:53,119
+Updates
+
+103
+00:04:53,631 --> 00:04:58,495
+we now see there is actually a new file. Let's open this file just
+
+104
+00:04:58,751 --> 00:05:00,031
+Investigate a little
+
+105
+00:05:00,287 --> 00:05:01,823
+So we see here's the
+
+106
+00:05:02,079 --> 00:05:04,639
+Command to actually add that new field
+
+107
+00:05:04,895 --> 00:05:06,175
+And here is another one
+
+108
+00:05:06,431 --> 00:05:07,199
+To create
+
+109
+00:05:07,455 --> 00:05:08,735
+That new table
+
+110
+00:05:08,991 --> 00:05:11,295
+And all of that is been placed into this
+
+111
+00:05:12,831 --> 00:05:13,599
+....
+
+112
+00:05:14,623 --> 00:05:15,903
+2.0.0
+
+113
+00:05:16,415 --> 00:05:16,927
+File
+
+114
+00:05:17,183 --> 00:05:19,487
+Which like I said is the current version
+
+115
+00:05:19,743 --> 00:05:21,023
+Of this installed
+
+116
+00:05:21,535 --> 00:05:22,559
+Component
+
+117
+00:05:22,815 --> 00:05:25,375
+If we look at the database at this point
+
+118
+00:05:25,631 --> 00:05:27,423
+You see there is no
+
+119
+00:05:27,679 --> 00:05:28,703
+Look table
+
+120
+00:05:28,959 --> 00:05:31,775
+And if we look at the Sermon table and structure
+
+121
+00:05:32,287 --> 00:05:34,591
+Then we see that there is you know
+
+122
+00:05:35,103 --> 00:05:35,871
+No
+
+123
+00:05:36,127 --> 00:05:37,919
+Mobile field here
+
+124
+00:05:38,943 --> 00:05:42,527
+Ok so that's install it now and see the change
+
+125
+00:05:46,623 --> 00:05:49,439
+Ok it's been successful go back to the table
+
+126
+00:05:49,951 --> 00:05:51,487
+Let's just refresh this
+
+127
+00:05:54,047 --> 00:05:54,815
+I know you have it
+
+128
+00:05:55,327 --> 00:05:56,607
+Got field added
+
+129
+00:05:57,375 --> 00:06:00,959
+if we go back to the new table that it had to create
+
+130
+00:06:02,239 --> 00:06:03,007
+Scroll down
+
+131
+00:06:03,263 --> 00:06:04,799
+And there is the new table
+
+132
+00:06:05,055 --> 00:06:08,127
+So it's done both of those as expected
+
+133
+00:06:09,663 --> 00:06:13,503
+Secondly let me show you where it made some changes in JCB
+
+134
+00:06:13,759 --> 00:06:15,551
+To relation to this component
+
+135
+00:06:16,831 --> 00:06:21,695
+so you'll see that the component has automatically incremented it's version number
+
+136
+00:06:22,207 --> 00:06:26,047
+If we open this component updates area
+
+137
+00:06:27,327 --> 00:06:29,631
+You'll see that it has dynamically
+
+138
+00:06:29,887 --> 00:06:36,031
+Stored that same values that we saw on the file here next to the correct version
+
+139
+00:06:36,543 --> 00:06:39,103
+And it is actually created a new
+
+140
+00:06:39,359 --> 00:06:40,639
+Version entry
+
+141
+00:06:41,151 --> 00:06:43,711
+You have to manually update this URL
+
+142
+00:06:44,479 --> 00:06:49,599
+As there are too many variations here we couldn't actually implement this dynamically
+
+143
+00:06:49,855 --> 00:06:54,719
+ this URL is what is being used in your updates server file
+
+144
+00:06:54,975 --> 00:06:59,071
+If your component is set to have an update server file
+
+145
+00:07:00,095 --> 00:07:00,863
+And so
+
+146
+00:07:01,375 --> 00:07:02,399
+At this point
+
+147
+00:07:03,167 --> 00:07:07,519
+You can now continue even adding another view or even another field
+
+148
+00:07:07,775 --> 00:07:13,919
+and it'll just the same it'll increment it and it will update your database upon installation
+
+149
+00:07:14,175 --> 00:07:17,247
+And really that is as simple as it is
+
+150
+00:07:18,271 --> 00:07:23,903
+There are some places where that behaviour may not function as expected
+
+151
+00:07:24,159 --> 00:07:30,047
+The only one I'm very much aware of is the one that happens when you
+
+152
+00:07:30,303 --> 00:07:31,839
+Actually import
+
+153
+00:07:32,351 --> 00:07:32,863
+Or
+
+154
+00:07:33,375 --> 00:07:37,215
+Export a component from one JCB to another
+
+155
+00:07:38,495 --> 00:07:42,847
+Those of you that have used this you can export a component and then Import it Again
+
+156
+00:07:43,359 --> 00:07:49,503
+That effectively creates all the data in the relation to JCB but it does'nt
+
+157
+00:07:49,759 --> 00:07:55,903
+Recreate the history and the asset IDs and everything else which is related to its
+
+158
+00:07:56,159 --> 00:07:56,671
+Integration
+
+159
+00:07:57,183 --> 00:07:59,231
+Within the Joomla
+
+160
+00:07:59,487 --> 00:08:02,047
+Interface or Database
+
+161
+00:08:02,303 --> 00:08:05,375
+So that means for example your
+
+162
+00:08:06,655 --> 00:08:07,935
+There is no history
+
+163
+00:08:08,191 --> 00:08:09,727
+Regarding the admin views
+
+164
+00:08:10,239 --> 00:08:13,311
+And the only way to start any history for that View
+
+165
+00:08:13,567 --> 00:08:14,847
+Would be to open it
+
+166
+00:08:16,639 --> 00:08:19,199
+And to save and close it
+
+167
+00:08:19,967 --> 00:08:20,991
+That's the only way
+
+168
+00:08:21,759 --> 00:08:24,831
+Now that specific area will have a history track
+
+169
+00:08:25,343 --> 00:08:28,159
+Same goes with the admin views
+
+170
+00:08:28,671 --> 00:08:30,719
+You have to open them and save them
+
+171
+00:08:30,975 --> 00:08:32,767
+This one not the admin
+
+172
+00:08:33,023 --> 00:08:36,607
+ view itself but the actual Fields of the admin view
+
+173
+00:08:36,863 --> 00:08:38,911
+Open them save them again
+
+174
+00:08:39,167 --> 00:08:44,543
+This will create its first entry and serve as a reference point
+
+175
+00:08:44,799 --> 00:08:47,871
+To last time to the which those values were changed
+
+176
+00:08:48,383 --> 00:08:52,223
+If you compile the component at that point it will actually
+
+177
+00:08:52,479 --> 00:08:55,551
+Add two component ID to that specific entries
+
+178
+00:08:55,807 --> 00:08:59,391
+And use it as a reference point like I've said
+
+179
+00:09:00,415 --> 00:09:05,535
+Then having after having compiled it so you first saved them then compile the component
+
+180
+00:09:05,791 --> 00:09:08,095
+And then only start making your changes
+
+181
+00:09:09,119 --> 00:09:11,423
+So that you'll basically
+
+182
+00:09:11,679 --> 00:09:16,031
+Bring the component into the motion of What would be the natural
+
+183
+00:09:16,287 --> 00:09:18,335
+Flow of development
+
+184
+00:09:18,847 --> 00:09:20,895
+This natural flow that you would
+
+185
+00:09:21,151 --> 00:09:26,783
+Create a component add views then add Fields to it all along saving closing saving
+
+186
+00:09:27,295 --> 00:09:31,647
+And that generates the history values that we actually need
+
+187
+00:09:31,903 --> 00:09:33,183
+To detect changes
+
+188
+00:09:33,695 --> 00:09:37,279
+If you import a component none of those values exist and so
+
+189
+00:09:37,535 --> 00:09:39,583
+It won't behave as expected
+
+190
+00:09:39,839 --> 00:09:45,727
+Well that's just a heads up I supposed many of you might not even have this issue but
+
+191
+00:09:45,983 --> 00:09:46,751
+If you do
+
+192
+00:09:47,007 --> 00:09:50,847
+You will know at least where to look and what to do to fix it
+
+193
+00:09:51,103 --> 00:09:53,151
+Anyway that is a
+
+194
+00:09:53,407 --> 00:09:56,735
+Quick overview of JCB's
+
+195
+00:09:56,991 --> 00:09:58,015
+Implementation
+
+196
+00:09:58,783 --> 00:10:02,623
+To correspond to Joomla's conventions
+
+197
+00:10:02,879 --> 00:10:05,183
+In creating tables
+
+198
+00:10:05,439 --> 00:10:06,719
+And updating them
+
+199
+00:10:06,975 --> 00:10:07,999
+Dynamically
+
+200
+00:10:08,255 --> 00:10:10,559
+Through The SQL Files
+
+201
+00:10:10,815 --> 00:10:12,351
+In the updates folder
+
+202
+00:10:12,607 --> 00:10:15,935
+And yes I hope that
+
+203
+00:10:16,191 --> 00:10:21,567
+This is gonna be helpful to to those who may not have understood this before
+
+204
+00:10:22,591 --> 00:10:24,639
+Thanks for watching
+

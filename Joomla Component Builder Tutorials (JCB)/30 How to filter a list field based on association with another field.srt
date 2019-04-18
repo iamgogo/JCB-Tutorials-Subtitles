@@ -1,0 +1,1696 @@
+1
+00:00:00,768 --> 00:00:01,280
+Hi
+
+2
+00:00:02,304 --> 00:00:04,608
+I don't know some of you also encountered
+
+3
+00:00:05,120 --> 00:00:07,168
+The reality of having to
+
+4
+00:00:07,936 --> 00:00:10,496
+Sort off limit the drop Downs
+
+5
+00:00:12,032 --> 00:00:13,568
+Of a list field
+
+6
+00:00:13,824 --> 00:00:15,360
+Based on
+
+7
+00:00:15,616 --> 00:00:18,176
+It's association with another table
+
+8
+00:00:19,712 --> 00:00:22,272
+A very common place where we find this
+
+9
+00:00:22,528 --> 00:00:23,552
+Is for example
+
+10
+00:00:23,808 --> 00:00:28,160
+When you want to load the regions of only one country
+
+11
+00:00:30,208 --> 00:00:32,768
+And so I'm gonna show you how I have achieved this
+
+12
+00:00:33,280 --> 00:00:36,352
+I realize there are many ways to do this and yet
+
+13
+00:00:36,608 --> 00:00:38,400
+This is how I've done it
+
+14
+00:00:39,936 --> 00:00:41,984
+Ok so to start off
+
+15
+00:00:42,240 --> 00:00:43,264
+I have a component
+
+16
+00:00:43,520 --> 00:00:45,568
+I could use as a illustration
+
+17
+00:00:46,592 --> 00:00:47,616
+or job tracking
+
+18
+00:00:48,640 --> 00:00:49,664
+Now in this component
+
+19
+00:00:50,176 --> 00:00:51,968
+Obviously I have a client area
+
+20
+00:00:52,992 --> 00:00:54,272
+And then I have
+
+21
+00:00:55,552 --> 00:00:56,576
+Already loaded
+
+22
+00:00:57,088 --> 00:01:00,672
+I go to admin views you would see there is country and regions
+
+23
+00:01:01,184 --> 00:01:01,696
+Now
+
+24
+00:01:01,952 --> 00:01:05,792
+I'm gonna illustrate it on the basis of country and regions but
+
+25
+00:01:08,096 --> 00:01:09,376
+You obviously can
+
+26
+00:01:10,144 --> 00:01:11,168
+Change the
+
+27
+00:01:11,680 --> 00:01:13,216
+Field Concepts and
+
+28
+00:01:13,728 --> 00:01:15,264
+Replace it with other tables
+
+29
+00:01:16,032 --> 00:01:16,544
+But
+
+30
+00:01:16,800 --> 00:01:19,104
+none the less this is what I'll be using
+
+31
+00:01:19,616 --> 00:01:24,224
+And I'm gonna show you how I implemented it in inside the the client's
+
+32
+00:01:24,480 --> 00:01:27,552
+View because that's basically where most of the work is done
+
+33
+00:01:28,320 --> 00:01:30,880
+Ok so I'm gonna open the client View
+
+34
+00:01:36,256 --> 00:01:40,352
+And then I'm gonna look in the two places we wanna look at
+
+35
+00:01:40,864 --> 00:01:41,632
+JavaScript
+
+36
+00:01:42,144 --> 00:01:44,448
+As well as the PHP area
+
+37
+00:01:45,216 --> 00:01:49,056
+Now I have in various previous tutorials explain some of the
+
+38
+00:01:49,312 --> 00:01:50,848
+Ajax functionality
+
+39
+00:01:51,616 --> 00:01:52,896
+In component Builder
+
+40
+00:01:54,688 --> 00:01:56,736
+But I realized not all of you
+
+41
+00:01:58,272 --> 00:02:01,600
+Might have watched all the tutorial so I'll explain some of that again
+
+42
+00:02:03,904 --> 00:02:04,416
+Briefly
+
+43
+00:02:04,928 --> 00:02:06,464
+But having said that
+
+44
+00:02:06,976 --> 00:02:08,000
+We first gonna look at
+
+45
+00:02:09,024 --> 00:02:10,816
+What we really wanna achieve
+
+46
+00:02:11,584 --> 00:02:12,352
+Like I have said
+
+47
+00:02:12,864 --> 00:02:13,888
+When you load
+
+48
+00:02:14,144 --> 00:02:16,704
+So let me go show you that
+
+49
+00:02:19,264 --> 00:02:20,032
+So when you
+
+50
+00:02:20,288 --> 00:02:21,824
+Start with a client
+
+51
+00:02:22,080 --> 00:02:24,384
+You would like to choose a country
+
+52
+00:02:25,152 --> 00:02:25,920
+And then
+
+53
+00:02:26,176 --> 00:02:29,504
+Have it load only that country's regions
+
+54
+00:02:30,272 --> 00:02:32,064
+That is basically what you want to do
+
+55
+00:02:32,832 --> 00:02:33,856
+Furthermore
+
+56
+00:02:34,112 --> 00:02:35,392
+You want to make sure
+
+57
+00:02:35,904 --> 00:02:37,184
+when it does that
+
+58
+00:02:38,720 --> 00:02:40,512
+And you unselect
+
+59
+00:02:41,280 --> 00:02:44,352
+the country it also unselects
+
+60
+00:02:44,864 --> 00:02:45,632
+The region
+
+61
+00:02:47,168 --> 00:02:47,936
+And so there are
+
+62
+00:02:48,192 --> 00:02:51,264
+Various things we wanna achieve here
+
+63
+00:02:52,032 --> 00:02:53,056
+So in JavaScript
+
+64
+00:02:53,312 --> 00:02:55,360
+I'm goining to show you how I've done that
+
+65
+00:02:55,872 --> 00:02:58,688
+I'm just illustrating at the moment one country
+
+66
+00:02:58,944 --> 00:03:02,784
+Maybe I should go put on a few more so just hold on for a second there ok
+
+67
+00:03:05,344 --> 00:03:08,160
+So now if I look it says Australia
+
+68
+00:03:08,672 --> 00:03:10,208
+If I click on Australia
+
+69
+00:03:10,464 --> 00:03:15,328
+You see that it doesn't load any regions in fact that says create a region
+
+70
+00:03:15,840 --> 00:03:17,376
+If I choose Namibia
+
+71
+00:03:17,632 --> 00:03:22,496
+It says select a region and so there's three regions two regions already created
+
+72
+00:03:23,008 --> 00:03:25,568
+Now as you know by now there is this button
+
+73
+00:03:25,824 --> 00:03:27,360
+In some of the
+
+74
+00:03:27,616 --> 00:03:31,712
+Dropdowns which are being added by saying true to the button
+
+75
+00:03:32,224 --> 00:03:34,272
+And so it's very helpful
+
+76
+00:03:34,784 --> 00:03:35,808
+For either
+
+77
+00:03:36,064 --> 00:03:38,880
+Creating or editing existing regions
+
+78
+00:03:39,392 --> 00:03:44,000
+So if you could sort of selecting a country where there isn't any regions set yet
+
+79
+00:03:44,512 --> 00:03:46,304
+It basically tells you to create one
+
+80
+00:03:46,560 --> 00:03:49,376
+And you can then create a region for this country
+
+81
+00:03:49,632 --> 00:03:51,680
+And what's nice if you click on this
+
+82
+00:03:51,936 --> 00:03:52,448
+Create
+
+83
+00:03:56,544 --> 00:03:59,104
+You can then simply create your region
+
+84
+00:03:59,360 --> 00:04:01,664
+Save and close so I don't know
+
+85
+00:04:01,920 --> 00:04:04,480
+any of Australia regions so I'm just gonna call it
+
+86
+00:04:04,992 --> 00:04:06,016
+Region for now
+
+87
+00:04:07,040 --> 00:04:08,832
+And save and close
+
+88
+00:04:12,928 --> 00:04:14,720
+Go back to creating a client
+
+89
+00:04:17,024 --> 00:04:17,791
+If I now
+
+90
+00:04:18,047 --> 00:04:21,375
+Select Australia you see that it's got regions
+
+91
+00:04:22,399 --> 00:04:23,167
+So there we go
+
+92
+00:04:24,703 --> 00:04:25,471
+Problem solved
+
+93
+00:04:26,239 --> 00:04:30,079
+And that's really what I'm gonna demonstrate how I did that
+
+94
+00:04:30,847 --> 00:04:32,127
+So let's get started
+
+95
+00:04:33,919 --> 00:04:35,711
+On a JavaScript side of things
+
+96
+00:04:36,735 --> 00:04:37,759
+I first have
+
+97
+00:04:38,015 --> 00:04:41,087
+Two variables I actually could call them both of var
+
+98
+00:04:41,599 --> 00:04:42,623
+Doesn't matter
+
+99
+00:04:42,879 --> 00:04:43,903
+One is an object
+
+100
+00:04:44,415 --> 00:04:50,559
+And one is simply where we are gonna Store if there is a value already set
+
+101
+00:04:51,327 --> 00:04:52,863
+We're gonna store that value
+
+102
+00:04:53,887 --> 00:04:55,935
+Then on document ready
+
+103
+00:04:56,703 --> 00:04:57,471
+I simply
+
+104
+00:04:58,751 --> 00:04:59,263
+Oh yes
+
+105
+00:04:59,519 --> 00:05:00,543
+Before I continue
+
+106
+00:05:01,567 --> 00:05:04,639
+Creating the fields
+
+107
+00:05:04,895 --> 00:05:08,735
+I obviously make it bring all the regions to the page
+
+108
+00:05:08,991 --> 00:05:11,039
+I don't want it to
+
+109
+00:05:11,295 --> 00:05:13,087
+Leave some regions on
+
+110
+00:05:13,599 --> 00:05:15,135
+Unloaded how can I say
+
+111
+00:05:15,391 --> 00:05:17,183
+Instead what I rather do
+
+112
+00:05:17,439 --> 00:05:19,743
+Is I parse those regions
+
+113
+00:05:19,999 --> 00:05:21,535
+Into this variable
+
+114
+00:05:23,071 --> 00:05:27,679
+And then only put those regions that are actually
+
+115
+00:05:27,935 --> 00:05:29,983
+Part of this country back
+
+116
+00:05:31,007 --> 00:05:36,383
+Into the list of dropdown options that's really what I'm doing so that's
+
+117
+00:05:36,639 --> 00:05:38,687
+What you also see happening here
+
+118
+00:05:39,199 --> 00:05:41,759
+Is first thing I'm doing is I am
+
+119
+00:05:43,039 --> 00:05:44,319
+Doing it for each
+
+120
+00:05:45,343 --> 00:05:47,647
+On the regions options
+
+121
+00:05:48,671 --> 00:05:50,463
+And then I'm getting the value
+
+122
+00:05:50,719 --> 00:05:51,999
+I putting it in key
+
+123
+00:05:52,511 --> 00:05:53,791
+I'm getting the text
+
+124
+00:05:54,047 --> 00:05:55,327
+I'm putting it in text
+
+125
+00:05:55,839 --> 00:05:57,887
+And then I'm adding it to Regions
+
+126
+00:05:58,143 --> 00:06:00,447
+Simply as you would load it in any
+
+127
+00:06:03,007 --> 00:06:04,799
+Any array there
+
+128
+00:06:05,311 --> 00:06:07,359
+And then I am also
+
+129
+00:06:08,383 --> 00:06:10,943
+Getting the value of the set region
+
+130
+00:06:11,711 --> 00:06:13,247
+And I'm adding that to Region
+
+131
+00:06:13,503 --> 00:06:15,295
+And then I'm setting the
+
+132
+00:06:15,551 --> 00:06:17,599
+The function getregion
+
+133
+00:06:18,623 --> 00:06:20,671
+The getregion function is down here
+
+134
+00:06:21,439 --> 00:06:22,207
+This area
+
+135
+00:06:23,743 --> 00:06:26,047
+The first thing we do is we load a little loading show
+
+136
+00:06:27,839 --> 00:06:29,887
+now the loading show or
+
+137
+00:06:30,655 --> 00:06:32,191
+Rather this class
+
+138
+00:06:32,703 --> 00:06:33,215
+ID
+
+139
+00:06:34,751 --> 00:06:37,311
+Is loaded on the page by Default
+
+140
+00:06:37,823 --> 00:06:38,591
+When you
+
+141
+00:06:38,847 --> 00:06:39,359
+Set
+
+142
+00:06:39,871 --> 00:06:41,151
+This fade effect
+
+143
+00:06:41,919 --> 00:06:42,687
+On ad
+
+144
+00:06:43,711 --> 00:06:46,527
+Then it by Default loads that class
+
+145
+00:06:46,783 --> 00:06:48,319
+With a nice spinner
+
+146
+00:06:48,831 --> 00:06:50,367
+And so I'm basically
+
+147
+00:06:50,623 --> 00:06:55,999
+If the loading process takes long I'm sort of stopping the user from doing anything
+
+148
+00:06:56,255 --> 00:06:57,791
+Waiting for that spinner
+
+149
+00:06:58,047 --> 00:06:59,327
+Don't need to add that
+
+150
+00:07:00,607 --> 00:07:02,143
+Then I am
+
+151
+00:07:02,399 --> 00:07:03,423
+Finding
+
+152
+00:07:03,679 --> 00:07:04,703
+Options
+
+153
+00:07:04,959 --> 00:07:05,983
+for the region
+
+154
+00:07:06,495 --> 00:07:08,031
+And I'm removing them
+
+155
+00:07:08,287 --> 00:07:09,055
+All of them
+
+156
+00:07:10,591 --> 00:07:11,871
+Then I'm triggering
+
+157
+00:07:12,127 --> 00:07:14,175
+An update now this is
+
+158
+00:07:14,687 --> 00:07:19,551
+This update that we are triggering here list zt is a Joomla function
+
+159
+00:07:19,807 --> 00:07:22,111
+And it's actually
+
+160
+00:07:22,367 --> 00:07:24,415
+Possibly gonna change in the future
+
+161
+00:07:24,671 --> 00:07:26,719
+So keep that in the back of your mind
+
+162
+00:07:27,231 --> 00:07:30,559
+It things break it possible is happening right here
+
+163
+00:07:31,071 --> 00:07:36,191
+Because this as you know the list the of is dynamically generated by Joomla
+
+164
+00:07:36,447 --> 00:07:37,983
+And so we literally telling it
+
+165
+00:07:38,239 --> 00:07:40,287
+Draw that list again
+
+166
+00:07:41,055 --> 00:07:43,871
+But after having removed everything
+
+167
+00:07:45,919 --> 00:07:46,687
+Now
+
+168
+00:07:47,967 --> 00:07:49,759
+We are looking at the country
+
+169
+00:07:51,295 --> 00:07:53,855
+So up to here we only touched the region
+
+170
+00:07:54,367 --> 00:07:57,183
+Now we get the country value the one that is selected
+
+171
+00:07:57,951 --> 00:07:59,487
+And we add it to country
+
+172
+00:08:00,511 --> 00:08:03,583
+We then call the server at this point
+
+173
+00:08:04,095 --> 00:08:07,167
+And the only thing we are giving the server is the country ID
+
+174
+00:08:07,679 --> 00:08:08,703
+up here
+
+175
+00:08:09,215 --> 00:08:10,751
+We have a country ID
+
+176
+00:08:11,519 --> 00:08:12,543
+We have our
+
+177
+00:08:12,799 --> 00:08:13,823
+Get URL
+
+178
+00:08:14,591 --> 00:08:16,639
+Our case is get region
+
+179
+00:08:16,895 --> 00:08:18,687
+Is the task
+
+180
+00:08:19,455 --> 00:08:21,503
+We checking that the token is on the page
+
+181
+00:08:22,015 --> 00:08:24,575
+Checking that a country ID is not zero
+
+182
+00:08:25,343 --> 00:08:25,855
+And
+
+183
+00:08:26,111 --> 00:08:28,415
+We then basically loading the request
+
+184
+00:08:28,927 --> 00:08:30,207
+Shooting of an Ajax
+
+185
+00:08:30,719 --> 00:08:32,767
+We doing it this way because obviously
+
+186
+00:08:33,023 --> 00:08:35,583
+You wanna do some things after we've got
+
+187
+00:08:35,839 --> 00:08:37,887
+The result which is this done
+
+188
+00:08:38,911 --> 00:08:39,679
+And then we
+
+189
+00:08:40,191 --> 00:08:41,215
+Set region
+
+190
+00:08:43,775 --> 00:08:46,335
+now We throw the result into setregion
+
+191
+00:08:47,103 --> 00:08:48,383
+We hide the load
+
+192
+00:08:49,151 --> 00:08:49,663
+And
+
+193
+00:08:49,919 --> 00:08:50,431
+Then
+
+194
+00:08:52,735 --> 00:08:54,783
+We do some house cleaning on the button
+
+195
+00:08:55,295 --> 00:08:57,087
+So that button also gets
+
+196
+00:08:57,343 --> 00:08:58,111
+Tampered with
+
+197
+00:08:58,367 --> 00:09:01,183
+And I'll show you the region button correct
+
+198
+00:09:01,951 --> 00:09:03,743
+Correction that we are doing down here
+
+199
+00:09:05,279 --> 00:09:07,071
+And you can copy this code
+
+200
+00:09:07,327 --> 00:09:11,423
+Test that out obviously you would update this to whatever field you trying to limit
+
+201
+00:09:11,935 --> 00:09:13,215
+only do that
+
+202
+00:09:13,471 --> 00:09:15,775
+After set region
+
+203
+00:09:16,543 --> 00:09:18,335
+Now we going to setregion
+
+204
+00:09:18,591 --> 00:09:20,639
+setregion is quite simple
+
+205
+00:09:22,943 --> 00:09:26,015
+Mainly because we already done most of the work
+
+206
+00:09:26,527 --> 00:09:32,159
+With the result being returned and so I'll show you the PHP that returns this result in the moment
+
+207
+00:09:32,927 --> 00:09:34,719
+so in setregion would get an array
+
+208
+00:09:35,487 --> 00:09:37,535
+we Check if the array is there
+
+209
+00:09:38,047 --> 00:09:39,327
+And then we append
+
+210
+00:09:39,839 --> 00:09:40,863
+Simply as you would
+
+211
+00:09:41,631 --> 00:09:43,679
+With any list selection
+
+212
+00:09:43,935 --> 00:09:45,215
+We append the value
+
+213
+00:09:45,983 --> 00:09:46,751
+But now
+
+214
+00:09:47,519 --> 00:09:48,799
+Since we are
+
+215
+00:09:49,055 --> 00:09:49,567
+Oh yes
+
+216
+00:09:50,079 --> 00:09:51,103
+another thing
+
+217
+00:09:51,359 --> 00:09:52,895
+I'm almost skipping it
+
+218
+00:09:53,407 --> 00:09:55,455
+This select region
+
+219
+00:09:55,967 --> 00:09:56,991
+Is a
+
+220
+00:10:01,087 --> 00:10:02,111
+JavaScript
+
+221
+00:10:02,879 --> 00:10:04,159
+Variable
+
+222
+00:10:04,415 --> 00:10:06,463
+That I'm setting through PHP
+
+223
+00:10:07,231 --> 00:10:09,279
+Which I'll show you in a later
+
+224
+00:10:09,535 --> 00:10:10,303
+Stage
+
+225
+00:10:10,815 --> 00:10:12,863
+And basically it's just a string
+
+226
+00:10:13,119 --> 00:10:15,423
+That says that you should select the region
+
+227
+00:10:15,679 --> 00:10:18,239
+And if there is no array returned
+
+228
+00:10:18,495 --> 00:10:21,567
+We basically just use the other variable
+
+229
+00:10:21,823 --> 00:10:24,127
+Create a region which is also just a string
+
+230
+00:10:26,943 --> 00:10:28,479
+So now over here
+
+231
+00:10:30,015 --> 00:10:31,551
+we are going to each over the array
+
+232
+00:10:32,575 --> 00:10:34,367
+And we are using the ID
+
+233
+00:10:35,135 --> 00:10:37,183
+And we checking whether the ID
+
+234
+00:10:37,439 --> 00:10:38,719
+In regions
+
+235
+00:10:40,255 --> 00:10:41,535
+If it's in regions
+
+236
+00:10:43,327 --> 00:10:45,887
+We append the ID as a value
+
+237
+00:10:46,399 --> 00:10:49,471
+And as you remember in regions we saved the text
+
+238
+00:10:49,727 --> 00:10:51,007
+As well as the ID
+
+239
+00:10:51,263 --> 00:10:53,311
+And so that is how we get the text
+
+240
+00:10:54,079 --> 00:10:55,615
+Simply adding it in there
+
+241
+00:10:56,383 --> 00:11:01,503
+I know we could have done that in the PHP but I felt a  let's let the
+
+242
+00:11:02,015 --> 00:11:04,063
+The browser help us with some of the lifting
+
+243
+00:11:04,575 --> 00:11:05,343
+So
+
+244
+00:11:05,599 --> 00:11:11,231
+We got the regions there if it's a huge table you might want it should approach this differently
+
+245
+00:11:11,743 --> 00:11:15,583
+Eventually we are checking whether the ID and the region =
+
+246
+00:11:16,095 --> 00:11:19,423
+Since if it does your mother ensure to set
+
+247
+00:11:21,471 --> 00:11:22,239
+Region
+
+248
+00:11:22,495 --> 00:11:25,311
+Value so as your member previously
+
+249
+00:11:25,567 --> 00:11:27,359
+We found the region value
+
+250
+00:11:28,127 --> 00:11:30,431
+And which store did into region
+
+251
+00:11:31,455 --> 00:11:32,735
+Just in case
+
+252
+00:11:33,247 --> 00:11:36,575
+The value was set before and saved
+
+253
+00:11:37,087 --> 00:11:40,415
+Now the person is looking through different countries
+
+254
+00:11:40,927 --> 00:11:43,999
+But when you can select the country that previously was saved
+
+255
+00:11:44,255 --> 00:11:49,119
+We want to make sure that his previous region is also shown as the selected value
+
+256
+00:11:49,631 --> 00:11:51,423
+That's simply what we doing here
+
+257
+00:11:52,191 --> 00:11:55,775
+Then after everything is done we again trigger this
+
+258
+00:11:56,287 --> 00:11:57,567
+List
+
+259
+00:11:58,079 --> 00:11:58,847
+Update
+
+260
+00:11:59,615 --> 00:12:01,663
+Which is the same as what was triggered there
+
+261
+00:12:02,943 --> 00:12:07,551
+And that basically sets the regions list again afresh
+
+262
+00:12:08,575 --> 00:12:09,599
+Then only
+
+263
+00:12:09,855 --> 00:12:12,159
+Do we run this little bit of housekeeping
+
+264
+00:12:12,927 --> 00:12:14,207
+Which does the Region button
+
+265
+00:12:15,487 --> 00:12:17,279
+Now the region button
+
+266
+00:12:17,791 --> 00:12:18,815
+It's actually
+
+267
+00:12:19,327 --> 00:12:20,095
+A
+
+268
+00:12:20,607 --> 00:12:21,887
+JavaScript
+
+269
+00:12:22,399 --> 00:12:23,423
+That is added
+
+270
+00:12:24,447 --> 00:12:26,239
+Because of the list
+
+271
+00:12:26,751 --> 00:12:31,871
+Field so if your specific list field was said to have no button
+
+272
+00:12:32,639 --> 00:12:34,175
+You could simply leave this out
+
+273
+00:12:34,687 --> 00:12:36,735
+If it was said to have a button
+
+274
+00:12:36,991 --> 00:12:42,111
+Then this is the usually the name of the button would be the
+
+275
+00:12:42,367 --> 00:12:44,927
+This area before the J form
+
+276
+00:12:45,183 --> 00:12:45,951
+Underscore
+
+277
+00:12:46,719 --> 00:12:48,255
+This part of the name
+
+278
+00:12:48,767 --> 00:12:54,143
+Would be the first part of the name of the button function and then the last part would be button
+
+279
+00:12:54,655 --> 00:12:58,239
+So that's how you know and you can obviously on the page
+
+280
+00:12:58,495 --> 00:13:01,823
+Let it execute and search for this function if you aren't sure
+
+281
+00:13:02,591 --> 00:13:03,871
+But that's how you would
+
+282
+00:13:05,151 --> 00:13:06,431
+Run
+
+283
+00:13:07,199 --> 00:13:08,991
+The button correction
+
+284
+00:13:09,759 --> 00:13:12,063
+And that's basically
+
+285
+00:13:12,575 --> 00:13:15,391
+How did JavaScript looks to achieve this
+
+286
+00:13:16,415 --> 00:13:16,927
+Ok
+
+287
+00:13:18,207 --> 00:13:22,047
+there is a little bit more housework necessary in that's what I said before
+
+288
+00:13:22,303 --> 00:13:25,375
+This area of JavaScript can actually include
+
+289
+00:13:25,887 --> 00:13:26,655
+PHP
+
+290
+00:13:27,423 --> 00:13:31,007
+that area can not because that's just pure JavaScript file
+
+291
+00:13:31,263 --> 00:13:34,591
+Where's this is JavaScript added to a PHP file
+
+292
+00:13:35,103 --> 00:13:41,247
+So here we can add some PHP and that's where we get the select region and create region
+
+293
+00:13:41,759 --> 00:13:47,903
+Now I know there is another way to do this in Javascript itself so forgive me for being so sloppy
+
+294
+00:13:48,159 --> 00:13:49,439
+Anyway
+
+295
+00:13:50,975 --> 00:13:52,767
+There's this function
+
+296
+00:13:53,535 --> 00:13:59,423
+Which basically when the admin form on change of the country field is
+
+297
+00:14:00,959 --> 00:14:02,495
+When that event occurs
+
+298
+00:14:03,007 --> 00:14:05,823
+We want to execute get region
+
+299
+00:14:06,591 --> 00:14:07,103
+so That
+
+300
+00:14:07,359 --> 00:14:08,895
+Every time
+
+301
+00:14:09,151 --> 00:14:10,431
+That is changed
+
+302
+00:14:10,943 --> 00:14:12,991
+What is the extra bit of
+
+303
+00:14:13,503 --> 00:14:15,807
+Script that you need to add these two
+
+304
+00:14:16,319 --> 00:14:17,343
+If you are gonna
+
+305
+00:14:17,855 --> 00:14:20,415
+Copy this down exactly the same
+
+306
+00:14:22,463 --> 00:14:23,743
+Just another note
+
+307
+00:14:27,071 --> 00:14:31,423
+We see then execute this function which is the same function
+
+308
+00:14:31,679 --> 00:14:33,471
+That we are executing
+
+309
+00:14:33,727 --> 00:14:34,751
+On the page load
+
+310
+00:14:35,519 --> 00:14:38,079
+We don't need to read execute this
+
+311
+00:14:38,591 --> 00:14:42,687
+Simply because that is already been done on the page load
+
+312
+00:14:43,455 --> 00:14:44,991
+that is all the JavaScript
+
+313
+00:14:45,247 --> 00:14:46,527
+But you need to add
+
+314
+00:14:46,783 --> 00:14:48,575
+Now let's go look at the PHP
+
+315
+00:14:50,623 --> 00:14:56,767
+Should know by now you do not need to add the PHP to the same admin View
+
+316
+00:14:57,023 --> 00:15:02,655
+Since all the ajax methods are all added to one file
+
+317
+00:15:03,167 --> 00:15:07,007
+In the component called Ajax the the model
+
+318
+00:15:07,263 --> 00:15:12,895
+As well as the controller is the Ajax model in controller so if you compile the component
+
+319
+00:15:13,151 --> 00:15:15,455
+You can unzip it and go to the model
+
+320
+00:15:15,711 --> 00:15:16,991
+To the controller
+
+321
+00:15:17,247 --> 00:15:19,551
+either in the backend or in the front end
+
+322
+00:15:19,807 --> 00:15:21,599
+Where is now it will be in the back end
+
+323
+00:15:21,855 --> 00:15:23,391
+And it's under models
+
+324
+00:15:23,647 --> 00:15:25,951
+Auc there's an Ajax model and
+
+325
+00:15:26,207 --> 00:15:27,743
+All of the backend
+
+326
+00:15:28,255 --> 00:15:29,791
+Ajax
+
+327
+00:15:30,303 --> 00:15:32,863
+Methods gets added to this one model
+
+328
+00:15:33,631 --> 00:15:36,959
+And so this area is what takes care of the model
+
+329
+00:15:37,471 --> 00:15:38,239
+And
+
+330
+00:15:40,799 --> 00:15:44,127
+And this area here takes care of the
+
+331
+00:15:44,383 --> 00:15:45,151
+Controller
+
+332
+00:15:45,663 --> 00:15:48,479
+So basically saying the values name is country
+
+333
+00:15:48,991 --> 00:15:52,319
+the task is get region if no values passed it's Null
+
+334
+00:15:53,343 --> 00:15:55,647
+And it must be an integer that is past
+
+335
+00:15:56,671 --> 00:15:58,975
+And the method name is get region
+
+336
+00:15:59,231 --> 00:16:03,327
+And it must be a logged in user that's a simple as that is
+
+337
+00:16:03,583 --> 00:16:05,887
+That takes care of the whole controller setup
+
+338
+00:16:06,911 --> 00:16:07,935
+Then here
+
+339
+00:16:08,447 --> 00:16:10,239
+we have The method
+
+340
+00:16:10,495 --> 00:16:12,543
+Called get region it gets the ID
+
+341
+00:16:13,055 --> 00:16:16,639
+It doesn't need to sanitize it again since the controller already did that
+
+342
+00:16:17,151 --> 00:16:20,991
+You can go look at the controller to see the implementation
+
+343
+00:16:21,503 --> 00:16:23,551
+So we simply getting the
+
+344
+00:16:24,063 --> 00:16:24,831
+factory
+
+345
+00:16:25,343 --> 00:16:28,671
+the data base factories passes us the database
+
+346
+00:16:28,927 --> 00:16:33,023
+We set up a query we say that we are looking for the IDs
+
+347
+00:16:33,279 --> 00:16:35,583
+ in the region
+
+348
+00:16:36,351 --> 00:16:37,887
+That are published
+
+349
+00:16:38,399 --> 00:16:40,191
+I'm basically where the country
+
+350
+00:16:40,703 --> 00:16:43,519
+Now this is again where you need to sort of
+
+351
+00:16:45,311 --> 00:16:47,103
+Make your changes
+
+352
+00:16:47,359 --> 00:16:52,223
+We want the names of the regions or the IDs instead sorry of the regions
+
+353
+00:16:53,247 --> 00:16:55,295
+on Their association with the country
+
+354
+00:16:55,807 --> 00:16:57,855
+so Obviously then in the region
+
+355
+00:16:58,367 --> 00:16:59,391
+Table
+
+356
+00:16:59,647 --> 00:17:02,719
+We have a a a field a column
+
+357
+00:17:03,231 --> 00:17:04,511
+That is called country
+
+358
+00:17:04,767 --> 00:17:06,047
+And it has an ID in it
+
+359
+00:17:06,559 --> 00:17:07,839
+So that each region
+
+360
+00:17:08,095 --> 00:17:10,655
+Is linked to a country so whatever
+
+361
+00:17:10,911 --> 00:17:12,447
+Table you're targeting
+
+362
+00:17:12,703 --> 00:17:15,775
+ this association would be than this country
+
+363
+00:17:16,287 --> 00:17:17,567
+And it's obviously
+
+364
+00:17:18,079 --> 00:17:21,663
+me being paranoid we just add the interger there again
+
+365
+00:17:22,175 --> 00:17:25,759
+Set the query executed check if you have a value
+
+366
+00:17:26,015 --> 00:17:30,111
+And if we do we simply return the load
+
+367
+00:17:30,367 --> 00:17:31,135
+Load column
+
+368
+00:17:31,391 --> 00:17:33,183
+Function
+
+369
+00:17:33,695 --> 00:17:35,999
+Which returns the ID is in an array
+
+370
+00:17:36,255 --> 00:17:37,791
+There we go done finished
+
+371
+00:17:38,047 --> 00:17:39,071
+And
+
+372
+00:17:39,327 --> 00:17:45,471
+There we return false if no value was found and it's simple as that that's all the PHP you
+
+373
+00:17:45,727 --> 00:17:46,239
+Need
+
+374
+00:17:46,495 --> 00:17:48,031
+And that returns
+
+375
+00:17:48,287 --> 00:17:50,591
+The the PHP to our
+
+376
+00:17:51,871 --> 00:17:52,895
+JavaScript
+
+377
+00:17:53,151 --> 00:17:55,199
+And the JavaScript does the rest
+
+378
+00:17:55,967 --> 00:17:56,991
+Ok well
+
+379
+00:17:57,247 --> 00:17:59,039
+I hope this will be very helpful
+
+380
+00:17:59,551 --> 00:18:05,695
+And help you to sort of sort your dropdowns I didn't spend
+
+381
+00:18:05,951 --> 00:18:09,023
+much time on explaining that maybe I should so let me
+
+382
+00:18:09,279 --> 00:18:10,047
+Give a Quik
+
+383
+00:18:10,559 --> 00:18:12,095
+Run over of that
+
+384
+00:18:13,631 --> 00:18:15,423
+The field that we are
+
+385
+00:18:16,191 --> 00:18:20,543
+Focusing on is this country in the region field and they are both custom right
+
+386
+00:18:21,055 --> 00:18:26,175
+So I've already done tutorials on how to set up a custom field I'm not gonna spend too much on this
+
+387
+00:18:26,687 --> 00:18:29,503
+But just for reminder let's open region
+
+388
+00:18:32,319 --> 00:18:34,623
+we Simply saying the button is true
+
+389
+00:18:34,879 --> 00:18:35,647
+And
+
+390
+00:18:35,903 --> 00:18:41,791
+We select the region you can obviously update the view name dynamically in the description
+
+391
+00:18:43,839 --> 00:18:45,887
+And here we doing some
+
+392
+00:18:46,399 --> 00:18:47,423
+PHP
+
+393
+00:18:47,679 --> 00:18:49,983
+you could Put all of this PHP
+
+394
+00:18:50,239 --> 00:18:51,007
+in just
+
+395
+00:18:51,519 --> 00:18:53,311
+PHP one
+
+396
+00:18:54,847 --> 00:18:56,895
+Without adding it to the 19th
+
+397
+00:18:58,431 --> 00:19:00,991
+ placement
+
+398
+00:19:01,503 --> 00:19:05,343
+But like I've done I've actually used every area
+
+399
+00:19:05,599 --> 00:19:07,391
+I like making the code look
+
+400
+00:19:07,903 --> 00:19:09,439
+It was written
+
+401
+00:19:09,695 --> 00:19:11,231
+and not computer-generated
+
+402
+00:19:11,743 --> 00:19:13,279
+And
+
+403
+00:19:13,791 --> 00:19:18,399
+Then I'm adding the options and so this is just a simple basic
+
+404
+00:19:21,983 --> 00:19:23,263
+simple custom field
+
+405
+00:19:23,775 --> 00:19:25,567
+there is'nt even any Java script in here
+
+406
+00:19:26,847 --> 00:19:29,919
+I've Done Everything basically in the model
+
+407
+00:19:30,431 --> 00:19:36,575
+Did the PHP as well as the Javascript sorry not in the model in the back end admin View
+
+408
+00:19:37,343 --> 00:19:43,231
+And I think that is because I wanna use this field maybe in other views with different
+
+409
+00:19:44,767 --> 00:19:46,559
+Different Association
+
+410
+00:19:46,815 --> 00:19:50,143
+So I don't tend to use the script area
+
+411
+00:19:50,399 --> 00:19:52,703
+Maybe as one might expect
+
+412
+00:19:52,959 --> 00:19:55,007
+So that's quickly looking
+
+413
+00:19:55,519 --> 00:19:56,031
+At
+
+414
+00:19:58,335 --> 00:20:02,943
+Filtering a dropdown list selection custom list selection
+
+415
+00:20:03,199 --> 00:20:04,991
+Via JavaScript
+
+416
+00:20:05,247 --> 00:20:07,039
+And Ajax therefore
+
+417
+00:20:07,295 --> 00:20:10,623
+If you are targeting a table of another
+
+418
+00:20:11,135 --> 00:20:15,231
+Component which you're not having the control over 
+
+419
+00:20:15,487 --> 00:20:21,631
+The actual field names it will it should work the same way as long as there is
+
+420
+00:20:21,887 --> 00:20:23,167
+A field of
+
+421
+00:20:23,679 --> 00:20:27,519
+Association within the table that you'd like to filter
+
+422
+00:20:27,775 --> 00:20:29,567
+you could write that PHP
+
+423
+00:20:29,823 --> 00:20:31,871
+Find the values and filter it
+
+424
+00:20:33,151 --> 00:20:34,431
+Thanks for watching
+

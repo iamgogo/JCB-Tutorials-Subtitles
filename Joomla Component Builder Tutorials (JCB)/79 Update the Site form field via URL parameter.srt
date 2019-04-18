@@ -1,0 +1,1644 @@
+1
+00:00:00,256 --> 00:00:06,400
+The option to update a form either admin or site
+
+2
+00:00:06,656 --> 00:00:09,728
+View with a selected given parameters
+
+3
+00:00:09,984 --> 00:00:12,032
+So that certain fields are
+
+4
+00:00:12,544 --> 00:00:14,336
+Adapted
+
+5
+00:00:14,848 --> 00:00:15,616
+Just by
+
+6
+00:00:15,872 --> 00:00:16,640
+Click of a button
+
+7
+00:00:17,152 --> 00:00:18,688
+That takes them to the form
+
+8
+00:00:19,200 --> 00:00:20,736
+Is a
+
+9
+00:00:20,992 --> 00:00:22,784
+Very valuable feature
+
+10
+00:00:23,296 --> 00:00:26,368
+And is also available in JCB
+
+11
+00:00:26,624 --> 00:00:27,648
+I'm gonna demonstrate to you
+
+12
+00:00:27,904 --> 00:00:29,440
+How to get this done
+
+13
+00:00:32,512 --> 00:00:34,048
+Before I do though
+
+14
+00:00:34,304 --> 00:00:35,328
+There are
+
+15
+00:00:35,584 --> 00:00:36,864
+2 things you need to know
+
+16
+00:00:37,120 --> 00:00:38,144
+One of them is
+
+17
+00:00:38,912 --> 00:00:41,216
+that there really is off the shelf
+
+18
+00:00:41,728 --> 00:00:42,496
+The option
+
+19
+00:00:43,008 --> 00:00:45,568
+To do this with at least one field
+
+20
+00:00:45,824 --> 00:00:47,872
+Without having to code anything
+
+21
+00:00:48,896 --> 00:00:50,432
+So if you have one field
+
+22
+00:00:50,688 --> 00:00:51,712
+Which is the list
+
+23
+00:00:51,968 --> 00:00:52,480
+Field
+
+24
+00:00:53,248 --> 00:00:54,272
+Or
+
+25
+00:00:54,528 --> 00:00:55,296
+If it's a
+
+26
+00:00:56,064 --> 00:00:57,600
+Text field
+
+27
+00:00:58,624 --> 00:01:00,416
+I think there are some limitations
+
+28
+00:01:00,672 --> 00:01:01,952
+What type of fields could be
+
+29
+00:01:02,208 --> 00:01:02,720
+Targeted
+
+30
+00:01:02,976 --> 00:01:03,488
+I haven't actually
+
+31
+00:01:03,744 --> 00:01:04,768
+Tried them all
+
+32
+00:01:05,280 --> 00:01:07,840
+But I'm sure that if you run into
+
+33
+00:01:08,352 --> 00:01:08,864
+Bugs or
+
+34
+00:01:09,120 --> 00:01:09,888
+limitations and
+
+35
+00:01:10,144 --> 00:01:12,192
+Open a issue on GitHub
+
+36
+00:01:12,448 --> 00:01:13,984
+We could fix that so
+
+37
+00:01:14,496 --> 00:01:15,264
+Just let me know
+
+38
+00:01:16,800 --> 00:01:21,664
+But to demonstrate the first of the shelf easy implementive
+
+39
+00:01:22,688 --> 00:01:23,456
+Option
+
+40
+00:01:23,968 --> 00:01:28,832
+Would be to first take you to the code and show you where all is happening
+
+41
+00:01:29,088 --> 00:01:29,600
+OK
+
+42
+00:01:30,112 --> 00:01:33,440
+So I'm gonna compile the demo component and then just go look to
+
+43
+00:01:33,696 --> 00:01:35,488
+The code here
+
+44
+00:01:37,536 --> 00:01:40,352
+Ok so now I see the code
+
+45
+00:01:40,864 --> 00:01:46,752
+Ok so going to demo component model and opening a look model
+
+46
+00:01:47,264 --> 00:01:48,032
+Which is the editing
+
+47
+00:01:48,544 --> 00:01:49,312
+View
+
+48
+00:01:49,568 --> 00:01:51,360
+of that look on the front end of this
+
+49
+00:01:51,460 --> 00:01:52,360
+component
+
+50
+00:01:53,152 --> 00:01:55,456
+We gonna scroll down to a place
+
+51
+00:01:55,712 --> 00:01:56,480
+Called
+
+52
+00:01:56,736 --> 00:01:57,248
+Why function
+
+53
+00:01:57,504 --> 00:01:58,016
+Actually
+
+54
+00:01:58,784 --> 00:02:00,064
+Call get form
+
+55
+00:02:00,832 --> 00:02:06,720
+Here it starts get form as in the get form function that a lot of things happen
+
+56
+00:02:07,232 --> 00:02:10,560
+Like validation the access to certain fields
+
+57
+00:02:10,816 --> 00:02:13,120
+So forth all of that is happening here
+
+58
+00:02:13,376 --> 00:02:16,704
+Because if the user doesn't have access we don't even need to you know
+
+59
+00:02:17,216 --> 00:02:20,032
+Do anything so we just dump the field right here
+
+60
+00:02:20,544 --> 00:02:21,312
+Now
+
+61
+00:02:21,568 --> 00:02:27,456
+You'll see at the very end of the method there is this only load these value If no ID is found
+
+62
+00:02:28,736 --> 00:02:33,344
+So that means when a field is for some you know if the
+
+63
+00:02:33,600 --> 00:02:38,464
+If there is a new look being created from the front
+
+64
+00:02:38,720 --> 00:02:40,000
+There is no ID
+
+65
+00:02:40,256 --> 00:02:42,304
+So there is a
+
+66
+00:02:43,328 --> 00:02:44,352
+Value ref
+
+67
+00:02:44,608 --> 00:02:50,240
+And ref ID that some of you may be familiar with which basically
+
+68
+00:02:50,752 --> 00:02:52,288
+Grabs a string
+
+69
+00:02:52,800 --> 00:02:53,568
+From the ref
+
+70
+00:02:54,336 --> 00:02:56,384
+And also grabs an integer
+
+71
+00:02:57,152 --> 00:02:59,456
+And these two values are
+
+72
+00:02:59,968 --> 00:03:02,784
+You know things that are busy
+
+73
+00:03:03,040 --> 00:03:06,624
+Passing away we are that whole
+
+74
+00:03:06,880 --> 00:03:08,928
+Referral structure
+
+75
+00:03:09,184 --> 00:03:10,208
+We've moved
+
+76
+00:03:10,464 --> 00:03:11,488
+JCB to
+
+77
+00:03:11,744 --> 00:03:13,280
+Instead use the return
+
+78
+00:03:14,816 --> 00:03:15,584
+Value
+
+79
+00:03:15,840 --> 00:03:21,984
+And so although this still exists all around it and it still active I would suggest that you don't use it
+
+80
+00:03:22,240 --> 00:03:28,384
+Because eventually I think we'll just drop it and the replacement is field and field ID
+
+81
+00:03:29,152 --> 00:03:32,480
+So you can actually tell JCB
+
+82
+00:03:32,736 --> 00:03:33,504
+of the bat
+
+83
+00:03:34,016 --> 00:03:39,392
+That this field and then that bat would basically mean a the fields name
+
+84
+00:03:40,928 --> 00:03:42,976
+So if the fields name is
+
+85
+00:03:43,488 --> 00:03:45,280
+Product or whatever
+
+86
+00:03:45,536 --> 00:03:46,304
+And then
+
+87
+00:03:46,560 --> 00:03:49,632
+What ID you want to have selected
+
+88
+00:03:49,888 --> 00:03:51,680
+Because this is targeting a list
+
+89
+00:03:51,936 --> 00:03:52,448
+Field
+
+90
+00:03:53,216 --> 00:03:55,520
+So there's a list of it say products
+
+91
+00:03:55,776 --> 00:03:57,312
+In a list field
+
+92
+00:03:57,568 --> 00:03:58,080
+And
+
+93
+00:03:58,336 --> 00:03:58,848
+So
+
+94
+00:03:59,360 --> 00:04:02,688
+The result in this value should then be
+
+95
+00:04:02,944 --> 00:04:04,480
+Basically
+
+96
+00:04:06,272 --> 00:04:08,064
+Product like that
+
+97
+00:04:08,576 --> 00:04:10,368
+And result in this
+
+98
+00:04:10,624 --> 00:04:12,928
+Field will eventually be something like
+
+99
+00:04:22,143 --> 00:04:23,935
+Already this feature
+
+100
+00:04:24,191 --> 00:04:25,983
+to
+
+101
+00:04:26,751 --> 00:04:29,567
+Change the actual
+
+102
+00:04:31,103 --> 00:04:31,615
+Field value
+
+103
+00:04:32,639 --> 00:04:36,479
+I don't know does that all make sense to you
+
+104
+00:04:36,735 --> 00:04:42,879
+So you can already in your URL because this is this information here is taken from a
+
+105
+00:04:43,135 --> 00:04:43,647
+URL
+
+106
+00:04:44,159 --> 00:04:47,487
+You can already add a value called field
+
+107
+00:04:47,743 --> 00:04:50,303
+Which then equals the field name
+
+108
+00:04:50,559 --> 00:04:53,119
+And then add a value called field ID
+
+109
+00:04:53,375 --> 00:04:56,191
+Which equals the ID you want selected
+
+110
+00:04:56,703 --> 00:04:58,495
+And that it automatically
+
+111
+00:04:58,751 --> 00:04:59,775
+Set the value
+
+112
+00:05:00,287 --> 00:05:02,847
+Now that's only for one field
+
+113
+00:05:03,103 --> 00:05:05,407
+So we realized ok well
+
+114
+00:05:05,919 --> 00:05:08,991
+We may want to do this for more than one field
+
+115
+00:05:09,503 --> 00:05:11,551
+So in the interface
+
+116
+00:05:12,319 --> 00:05:14,367
+We go to admin views
+
+117
+00:05:14,623 --> 00:05:15,903
+And we open the look
+
+118
+00:05:16,927 --> 00:05:23,071
+Which is where we may want to do more we can scroll down and we'll see a place
+
+119
+00:05:23,327 --> 00:05:23,839
+called
+
+120
+00:05:25,887 --> 00:05:26,911
+Get form
+
+121
+00:05:27,423 --> 00:05:28,703
+So we can say
+
+122
+00:05:29,215 --> 00:05:30,751
+We are here
+
+123
+00:05:32,543 --> 00:05:34,079
+And save this
+
+124
+00:05:34,335 --> 00:05:36,895
+Where you would then be able to add more
+
+125
+00:05:37,151 --> 00:05:40,479
+And the so tells you that the array data that load
+
+126
+00:05:41,503 --> 00:05:43,039
+the form and the ID
+
+127
+00:05:44,831 --> 00:05:47,135
+Is all here the how you access those
+
+128
+00:05:47,647 --> 00:05:52,767
+And you can add your own implementation of what I just shown you
+
+129
+00:05:53,279 --> 00:05:55,583
+So let's save this and compile so we can
+
+130
+00:05:55,839 --> 00:05:56,863
+Show you where this ends up
+
+131
+00:05:58,399 --> 00:06:01,727
+So you see we are here this is where that codes ends up
+
+132
+00:06:01,983 --> 00:06:05,311
+So you could literally come in here grab this
+
+133
+00:06:07,871 --> 00:06:08,383
+And
+
+134
+00:06:08,895 --> 00:06:10,687
+Basically copy it in here
+
+135
+00:06:11,455 --> 00:06:12,223
+just again
+
+136
+00:06:12,479 --> 00:06:14,783
+Make sure you you want the ID to be there
+
+137
+00:06:15,551 --> 00:06:18,367
+And add your own
+
+138
+00:06:18,879 --> 00:06:21,695
+And you can decide what this must be
+
+139
+00:06:21,951 --> 00:06:22,975
+You could say
+
+140
+00:06:23,487 --> 00:06:24,511
+Ok
+
+141
+00:06:24,767 --> 00:06:26,047
+Whatever you like
+
+142
+00:06:27,327 --> 00:06:28,607
+And obviously you don't need this
+
+143
+00:06:30,655 --> 00:06:33,471
+And that was just because we are
+
+144
+00:06:33,983 --> 00:06:34,495
+Actually
+
+145
+00:06:35,519 --> 00:06:38,847
+This obviously as the default so we will just make that
+
+146
+00:06:39,615 --> 00:06:40,127
+Null
+
+147
+00:06:41,407 --> 00:06:43,199
+And then here
+
+148
+00:06:43,711 --> 00:06:45,503
+We'll just say 0
+
+149
+00:06:46,271 --> 00:06:52,415
+And we changed this also to something that is generic now
+
+150
+00:06:52,671 --> 00:06:54,975
+With these values in your URL
+
+151
+00:06:55,487 --> 00:06:57,023
+You can update
+
+152
+00:06:57,791 --> 00:07:00,351
+This redirect
+
+153
+00:07:00,863 --> 00:07:03,167
+and you can change this from a string
+
+154
+00:07:03,679 --> 00:07:04,703
+to
+
+155
+00:07:04,959 --> 00:07:05,471
+Or you can
+
+156
+00:07:05,727 --> 00:07:11,103
+Make a comma separating I mean you know how to pass values through a URL
+
+157
+00:07:11,359 --> 00:07:12,127
+And
+
+158
+00:07:12,383 --> 00:07:13,663
+So doing this you can
+
+159
+00:07:13,919 --> 00:07:15,711
+Set the stage of the form
+
+160
+00:07:16,223 --> 00:07:16,735
+With
+
+161
+00:07:16,991 --> 00:07:19,039
+Predetermined selective
+
+162
+00:07:19,295 --> 00:07:23,391
+Options very easily
+
+163
+00:07:23,903 --> 00:07:25,695
+I hope this makes sense to you
+
+164
+00:07:26,463 --> 00:07:29,023
+If you have any questions please leave
+
+165
+00:07:29,279 --> 00:07:30,815
+Leave any comments in the
+
+166
+00:07:31,071 --> 00:07:31,839
+Video
+
+167
+00:07:32,095 --> 00:07:35,679
+comments area or go to the Forum and
+
+168
+00:07:35,935 --> 00:07:36,447
+Let me know
+
+169
+00:07:37,215 --> 00:07:39,519
+So that's how easy it is to
+
+170
+00:07:40,031 --> 00:07:40,799
+Target
+
+171
+00:07:41,055 --> 00:07:41,823
+Now
+
+172
+00:07:42,079 --> 00:07:42,591
+Maybe
+
+173
+00:07:42,847 --> 00:07:43,871
+Just for
+
+174
+00:07:44,895 --> 00:07:46,687
+Making sure we are on the same page
+
+175
+00:07:47,967 --> 00:07:52,575
+This one here needs to be the field name now how how do we know what is field name
+
+176
+00:07:53,087 --> 00:07:54,111
+If you open the form
+
+177
+00:07:54,623 --> 00:07:55,391
+And for this
+
+178
+00:07:55,647 --> 00:07:56,927
+We open look
+
+179
+00:07:57,183 --> 00:08:01,535
+XML which is where the form exists it's this value name
+
+180
+00:08:02,559 --> 00:08:03,071
+so
+
+181
+00:08:03,327 --> 00:08:04,095
+You can
+
+182
+00:08:04,863 --> 00:08:05,631
+Choose this name
+
+183
+00:08:05,887 --> 00:08:09,215
+I would suggest that you would be careful
+
+184
+00:08:09,471 --> 00:08:15,103
+In what type of fields you allowed to be edited through the URL
+
+185
+00:08:15,615 --> 00:08:16,383
+So that
+
+186
+00:08:16,639 --> 00:08:18,431
+Yeah your form doesn't become
+
+187
+00:08:19,199 --> 00:08:19,711
+Hackable
+
+188
+00:08:19,967 --> 00:08:20,479
+Somehow
+
+189
+00:08:20,991 --> 00:08:22,527
+Exposing data it shouldn't
+
+190
+00:08:22,783 --> 00:08:24,319
+Or overwriting data
+
+191
+00:08:25,343 --> 00:08:27,903
+Well that there are actually catches
+
+192
+00:08:28,159 --> 00:08:30,719
+To validate whether a form is allowed to be
+
+193
+00:08:30,975 --> 00:08:32,511
+Submitted by the specific
+
+194
+00:08:32,767 --> 00:08:36,351
+User that is in place in the controller
+
+195
+00:08:36,607 --> 00:08:42,751
+Does do a validation so if you for example here look in the controller
+
+196
+00:08:43,775 --> 00:08:45,311
+There is allow edit
+
+197
+00:08:46,079 --> 00:08:48,383
+Add sorry allowadd and a allowedit
+
+198
+00:08:48,639 --> 00:08:50,943
+And it does check whether this user
+
+199
+00:08:51,199 --> 00:08:52,479
+This current user
+
+200
+00:08:52,735 --> 00:08:54,015
+Has access
+
+201
+00:08:54,271 --> 00:08:55,807
+to the look area
+
+202
+00:08:56,063 --> 00:08:58,111
+And to this specific
+
+203
+00:08:58,367 --> 00:08:59,647
+ID of
+
+204
+00:08:59,903 --> 00:09:04,767
+course and then it continues to check whether it has edit
+
+205
+00:09:05,023 --> 00:09:07,583
+Access so all that is already in place
+
+206
+00:09:08,095 --> 00:09:09,887
+And so adding this
+
+207
+00:09:10,399 --> 00:09:11,167
+Dynamic
+
+208
+00:09:11,423 --> 00:09:11,935
+Updating
+
+209
+00:09:12,191 --> 00:09:16,543
+Of your value in the fields shouldn't be that risky
+
+210
+00:09:16,799 --> 00:09:22,943
+But I still like to be careful so I would think for example
+
+211
+00:09:23,455 --> 00:09:23,967
+If we want to
+
+212
+00:09:24,479 --> 00:09:26,015
+Change
+
+213
+00:09:26,783 --> 00:09:29,599
+Something here let's see what field could be done
+
+214
+00:09:30,623 --> 00:09:32,415
+Maybe this
+
+215
+00:09:32,671 --> 00:09:33,439
+Name field
+
+216
+00:09:33,951 --> 00:09:34,719
+So we could
+
+217
+00:09:34,975 --> 00:09:36,511
+Change that to name
+
+218
+00:09:38,559 --> 00:09:40,095
+So we know
+
+219
+00:09:40,351 --> 00:09:42,911
+That it should be name so over here
+
+220
+00:09:43,679 --> 00:09:44,191
+We could
+
+221
+00:09:45,471 --> 00:09:48,543
+Change this to field
+
+222
+00:09:49,055 --> 00:09:51,615
+Name like that
+
+223
+00:09:53,151 --> 00:09:55,455
+And so we could do some validation
+
+224
+00:09:59,807 --> 00:10:03,391
+If it's name then only should it actually continue
+
+225
+00:10:03,903 --> 00:10:10,047
+And then here because we also grabbing a string we can do some string sanitation
+
+226
+00:10:10,559 --> 00:10:12,095
+Make sure that this is
+
+227
+00:10:13,887 --> 00:10:14,911
+A string
+
+228
+00:10:15,679 --> 00:10:17,215
+Capitals
+
+229
+00:10:19,007 --> 00:10:22,591
+And we also doing null here
+
+230
+00:10:22,847 --> 00:10:26,431
+And then we can say
+
+231
+00:10:26,943 --> 00:10:27,711
+Field
+
+232
+00:10:29,247 --> 00:10:29,759
+Default
+
+233
+00:10:31,295 --> 00:10:32,831
+like that
+
+234
+00:10:34,111 --> 00:10:34,623
+And
+
+235
+00:10:38,975 --> 00:10:40,511
+We can also now
+
+236
+00:10:40,767 --> 00:10:41,791
+Validate this
+
+237
+00:10:43,071 --> 00:10:44,607
+To being a string
+
+238
+00:10:45,887 --> 00:10:48,703
+So we can grab the helper method
+
+239
+00:10:49,215 --> 00:10:49,727
+I mean
+
+240
+00:10:49,983 --> 00:10:51,775
+You do know that
+
+241
+00:10:52,031 --> 00:10:54,079
+Most components it has a helper
+
+242
+00:10:54,335 --> 00:10:54,847
+Class
+
+243
+00:10:55,615 --> 00:11:00,223
+And the helper class has a whole lot of methods that ships by Default
+
+244
+00:11:00,735 --> 00:11:01,247
+And
+
+245
+00:11:01,503 --> 00:11:02,783
+One of the very
+
+246
+00:11:03,295 --> 00:11:06,111
+Useful method that is here
+
+247
+00:11:06,879 --> 00:11:11,487
+besides many others is this
+
+248
+00:11:11,999 --> 00:11:12,767
+Check string
+
+249
+00:11:14,047 --> 00:11:15,071
+Is to check
+
+250
+00:11:15,327 --> 00:11:16,095
+Whether is a string
+
+251
+00:11:16,351 --> 00:11:19,167
+Is a string and it's actually got value in it
+
+252
+00:11:19,935 --> 00:11:22,239
+Now you could write this out every time
+
+253
+00:11:22,495 --> 00:11:23,263
+This little
+
+254
+00:11:23,519 --> 00:11:25,823
+Validation or you could just go
+
+255
+00:11:26,847 --> 00:11:27,615
+check
+
+256
+00:11:27,871 --> 00:11:28,383
+String
+
+257
+00:11:29,663 --> 00:11:30,175
+Like that
+
+258
+00:11:31,199 --> 00:11:32,991
+And obviously the helper class
+
+259
+00:11:34,527 --> 00:11:36,319
+Like that so demo helper
+
+260
+00:11:36,575 --> 00:11:40,927
+Check string so you can validate that this string has a value
+
+261
+00:11:41,439 --> 00:11:42,719
+And then only
+
+262
+00:11:42,975 --> 00:11:45,279
+Use these values
+
+263
+00:11:45,535 --> 00:11:47,071
+To to update your
+
+264
+00:11:48,607 --> 00:11:49,119
+field
+
+265
+00:11:50,143 --> 00:11:51,167
+That you are targeting
+
+266
+00:11:51,935 --> 00:11:56,031
+And so that way you can add a value to a field
+
+267
+00:11:56,799 --> 00:11:57,823
+Through the URL
+
+268
+00:11:58,335 --> 00:11:59,103
+Quite easily
+
+269
+00:11:59,871 --> 00:12:03,967
+Now I could demonstrate this on the front for you for just quick 
+
+270
+00:12:04,223 --> 00:12:04,735
+demonstration
+
+271
+00:12:06,783 --> 00:12:08,319
+So very quickly have a
+
+272
+00:12:10,111 --> 00:12:11,647
+A little
+
+273
+00:12:12,671 --> 00:12:14,207
+Look value I added one
+
+274
+00:12:15,743 --> 00:12:21,887
+here from the front end now we want to actually be able to create a
+
+275
+00:12:22,143 --> 00:12:22,655
+New one
+
+276
+00:12:23,167 --> 00:12:23,679
+from the front
+
+277
+00:12:24,447 --> 00:12:28,799
+So we're going to have to make a little change here
+
+278
+00:12:29,055 --> 00:12:30,591
+To the looks view
+
+279
+00:12:32,127 --> 00:12:34,175
+We'll have to add a
+
+280
+00:12:34,431 --> 00:12:36,991
+A link here to create or button
+
+281
+00:12:38,015 --> 00:12:38,783
+It says create
+
+282
+00:12:39,551 --> 00:12:41,087
+And we'll have to
+
+283
+00:12:41,343 --> 00:12:42,367
+Do that
+
+284
+00:12:42,623 --> 00:12:43,903
+With
+
+285
+00:12:47,743 --> 00:12:53,887
+So here we do a can do get actions we only need to check whether it can
+
+286
+00:12:54,143 --> 00:12:54,655
+Create
+
+287
+00:12:55,167 --> 00:12:56,959
+We then do
+
+288
+00:12:57,471 --> 00:12:58,495
+Look create
+
+289
+00:12:59,263 --> 00:12:59,775
+And
+
+290
+00:13:00,031 --> 00:13:01,055
+Also
+
+291
+00:13:04,127 --> 00:13:05,919
+You know what let's rather use 
+
+292
+00:13:06,175 --> 00:13:11,295
+The user object it is on the page we don't need to actually go through all the trouble
+
+293
+00:13:12,063 --> 00:13:14,367
+Checking the action because we not even working with
+
+294
+00:13:14,623 --> 00:13:15,135
+ID
+
+295
+00:13:15,903 --> 00:13:17,695
+We just wanna see if the user is allowed to
+
+296
+00:13:17,951 --> 00:13:21,023
+Create so we use the component name
+
+297
+00:13:21,279 --> 00:13:21,791
+And this
+
+298
+00:13:22,047 --> 00:13:22,559
+View
+
+299
+00:13:23,839 --> 00:13:24,351
+Look
+
+300
+00:13:24,607 --> 00:13:26,399
+Is the one where we gonna be creating see
+
+301
+00:13:27,167 --> 00:13:27,679
+it's there
+
+302
+00:13:27,935 --> 00:13:32,287
+So use that as the area to validate that create a look
+
+303
+00:13:32,799 --> 00:13:35,359
+And then we create our little button
+
+304
+00:13:36,383 --> 00:13:38,943
+And we we're using some
+
+305
+00:13:39,199 --> 00:13:39,711
+Uikit
+
+306
+00:13:39,967 --> 00:13:43,295
+Classes up here for our button you could obviously do your own thing
+
+307
+00:13:43,551 --> 00:13:46,623
+And if it can't create then just no string
+
+308
+00:13:47,135 --> 00:13:48,415
+Just a empty string
+
+309
+00:13:48,671 --> 00:13:49,695
+And then in the
+
+310
+00:13:50,207 --> 00:13:54,815
+Default View area we basically gonna just Echo the create link
+
+311
+00:13:56,095 --> 00:14:02,239
+Ok so this is just to get a create button on the page we haven't come to the field thing yet
+
+312
+00:14:02,495 --> 00:14:04,287
+we will do that in a moment
+
+313
+00:14:04,543 --> 00:14:06,591
+Let's just show you the button on the page
+
+314
+00:14:08,895 --> 00:14:13,247
+Ok so know having compiled and installed there is now create look
+
+315
+00:14:13,759 --> 00:14:16,319
+The pencil is not that ideal
+
+316
+00:14:16,575 --> 00:14:17,343
+you should change it to something else
+
+317
+00:14:17,599 --> 00:14:22,719
+So if you click on it it actually gives you the option to create a look
+
+318
+00:14:22,975 --> 00:14:24,511
+There we go
+
+319
+00:14:24,767 --> 00:14:25,279
+And
+
+320
+00:14:25,791 --> 00:14:27,071
+This is what we expect
+
+321
+00:14:27,583 --> 00:14:29,887
+Now what we wanna do is we wanna add a value
+
+322
+00:14:30,143 --> 00:14:31,423
+To this field here
+
+323
+00:14:31,935 --> 00:14:32,703
+By Default
+
+324
+00:14:33,215 --> 00:14:34,751
+So that if I click on that link
+
+325
+00:14:35,007 --> 00:14:38,847
+Automatic adds a value that's just a demonstration
+
+326
+00:14:39,359 --> 00:14:42,431
+We could do that with any text field and any list field
+
+327
+00:14:43,455 --> 00:14:49,087
+So going back to the admin view we gonna make sure we got everything set up right for for this catch
+
+328
+00:14:50,879 --> 00:14:52,671
+So in the get fom method
+
+329
+00:14:52,927 --> 00:14:59,071
+We now have a validation here to make sure it's a new item then we gotta use this
+
+330
+00:14:59,583 --> 00:15:00,607
+yhy
+
+331
+00:15:00,863 --> 00:15:02,143
+Just The generic we can
+
+332
+00:15:02,399 --> 00:15:03,167
+Anything
+
+333
+00:15:03,423 --> 00:15:07,007
+And we know that must be just a word no string there
+
+334
+00:15:07,519 --> 00:15:13,663
+Then we gonna do yhy value and this is gonna be a string and
+
+335
+00:15:13,919 --> 00:15:16,223
+And we gonna check this string like we said we doing
+
+336
+00:15:16,735 --> 00:15:18,527
+And we gonna check that the field name
+
+337
+00:15:18,783 --> 00:15:19,807
+Is not null
+
+338
+00:15:20,319 --> 00:15:22,111
+And then only
+
+339
+00:15:22,623 --> 00:15:24,671
+We gonna update that value
+
+340
+00:15:26,207 --> 00:15:28,255
+So we can just say now set
+
+341
+00:15:28,767 --> 00:15:30,815
+Field default value
+
+342
+00:15:31,583 --> 00:15:32,351
+Ok so
+
+343
+00:15:32,863 --> 00:15:33,887
+We gonna save this and
+
+344
+00:15:34,143 --> 00:15:34,655
+compile
+
+345
+00:15:35,423 --> 00:15:39,007
+And then run a few tests
+
+346
+00:15:39,263 --> 00:15:45,407
+Ok I've installed it so I'm gonna add now without adding it to the link just as a demonstration in the URL
+
+347
+00:15:45,663 --> 00:15:47,199
+I'm gonna type
+
+348
+00:15:47,711 --> 00:15:49,503
+Some value
+
+349
+00:15:50,015 --> 00:15:51,295
+And press enter
+
+350
+00:15:51,807 --> 00:15:56,927
+And now we see it loads up with that New value in place and
+
+351
+00:15:57,951 --> 00:15:59,487
+So it works
+
+352
+00:15:59,743 --> 00:16:01,535
+So we set the
+
+353
+00:16:01,791 --> 00:16:03,583
+y and y to name
+
+354
+00:16:04,095 --> 00:16:06,399
+And this value to James
+
+355
+00:16:06,911 --> 00:16:10,495
+If we left it empty like that and clicked
+
+356
+00:16:11,007 --> 00:16:13,311
+It'll just be empty so
+
+357
+00:16:13,567 --> 00:16:15,615
+It is giving us the expected result
+
+358
+00:16:16,383 --> 00:16:19,199
+Now we can go back to our site View
+
+359
+00:16:19,711 --> 00:16:20,735
+Where we have our link
+
+360
+00:16:21,247 --> 00:16:23,039
+And we can decide
+
+361
+00:16:23,807 --> 00:16:24,319
+Maybe
+
+362
+00:16:24,575 --> 00:16:25,855
+The user has a name
+
+363
+00:16:26,111 --> 00:16:30,719
+We want to add that name automatically if it Clicks the link
+
+364
+00:16:31,231 --> 00:16:33,023
+So let's do that
+
+365
+00:16:33,279 --> 00:16:37,887
+So we've added the field is name
+
+366
+00:16:38,143 --> 00:16:39,679
+The value will be based on the
+
+367
+00:16:39,935 --> 00:16:40,703
+Username
+
+368
+00:16:41,215 --> 00:16:42,495
+Or actually the name
+
+369
+00:16:43,007 --> 00:16:45,311
+And if there is none set it will just return empty
+
+370
+00:16:45,567 --> 00:16:46,079
+String
+
+371
+00:16:46,847 --> 00:16:47,615
+And so
+
+372
+00:16:47,871 --> 00:16:48,895
+we've got that setup
+
+373
+00:16:49,151 --> 00:16:49,919
+Let's save this and install
+
+374
+00:16:50,943 --> 00:16:57,087
+So now if I go over the button and I look here at the bottom of the screen it actually shows my name in there
+
+375
+00:16:57,343 --> 00:16:58,111
+do you see it
+
+376
+00:16:58,623 --> 00:17:00,415
+Now if I click the button
+
+377
+00:17:00,671 --> 00:17:03,487
+Now I ran into a little trouble here
+
+378
+00:17:04,255 --> 00:17:07,327
+And we'll have to maybe look at this
+
+379
+00:17:07,583 --> 00:17:12,959
+But if you remember I actually The Way We Built This URL in the backend
+
+380
+00:17:13,471 --> 00:17:15,519
+We passed it through a task
+
+381
+00:17:15,775 --> 00:17:20,383
+We didn't actually use this URL
+
+382
+00:17:21,407 --> 00:17:23,199
+We actually use the view look
+
+383
+00:17:23,711 --> 00:17:25,247
+And then task look edit
+
+384
+00:17:26,271 --> 00:17:28,063
+And that's how we
+
+385
+00:17:28,319 --> 00:17:31,903
+We passed it then this is because then we will have a well
+
+386
+00:17:32,415 --> 00:17:38,047
+A redirecting validation right here but doing that it was dumping
+
+387
+00:17:38,303 --> 00:17:40,351
+These values and it wasn't passing it
+
+388
+00:17:40,607 --> 00:17:41,375
+Through to the form
+
+389
+00:17:42,399 --> 00:17:48,543
+I went and then adapted this URL to actually use this URL
+
+390
+00:17:48,799 --> 00:17:53,407
+Instead so basically did this copy that
+
+391
+00:17:54,431 --> 00:18:00,575
+Come back here and just updated our URL like that
+
+392
+00:18:00,831 --> 00:18:05,183
+And it still worked and now it was passing the values through
+
+393
+00:18:05,695 --> 00:18:06,719
+Now
+
+394
+00:18:06,975 --> 00:18:13,119
+I'll need to test this a little more to be absolutely sure that this is not gonna cause some other
+
+395
+00:18:13,375 --> 00:18:13,887
+Headaches
+
+396
+00:18:15,423 --> 00:18:21,567
+But that is working I'm locked in in the backend at the moment of this
+
+397
+00:18:21,823 --> 00:18:22,847
+or in the front end
+
+398
+00:18:23,615 --> 00:18:25,407
+At the moment
+
+399
+00:18:26,175 --> 00:18:27,455
+As an administrator
+
+400
+00:18:27,711 --> 00:18:33,855
+So I'll have to login as a lesser permission individual and see how it behaves
+
+401
+00:18:34,111 --> 00:18:34,879
+then
+
+402
+00:18:35,135 --> 00:18:36,927
+But if we click look now
+
+403
+00:18:37,183 --> 00:18:41,535
+It passes the value right to the field like we've been anticipated
+
+404
+00:18:42,047 --> 00:18:45,375
+Based on these parameters that we've added
+
+405
+00:18:45,631 --> 00:18:47,167
+And it doesn't remove them
+
+406
+00:18:47,423 --> 00:18:49,727
+So this is what you would want
+
+407
+00:18:49,983 --> 00:18:51,263
+And this is working
+
+408
+00:18:51,775 --> 00:18:57,919
+I'm just not sure how this will relate down to those with less permission on the system
+
+409
+00:18:58,943 --> 00:19:05,087
+And this tutorial is getting too long to actually spend time on that now
+
+410
+00:19:05,343 --> 00:19:11,487
+So you'll have to play around with this if you run into something that's quite obviously a problem
+
+411
+00:19:11,743 --> 00:19:15,071
+Please let me know.  Well, thanks for watching.
+

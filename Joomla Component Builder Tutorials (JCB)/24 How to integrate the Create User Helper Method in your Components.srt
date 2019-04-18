@@ -1,0 +1,1520 @@
+1
+00:00:01,280 --> 00:00:01,792
+Hi
+
+2
+00:00:03,072 --> 00:00:06,912
+I would like to give you a quick tutorial or demonstration on how to use
+
+3
+00:00:07,168 --> 00:00:09,472
+user creation method or function
+
+4
+00:00:11,264 --> 00:00:12,544
+In your component
+
+5
+00:00:14,080 --> 00:00:15,360
+What is the user
+
+6
+00:00:16,128 --> 00:00:17,152
+Creation function
+
+7
+00:00:18,688 --> 00:00:24,832
+It is basically a part of code's helper function actually
+
+8
+00:00:25,088 --> 00:00:27,904
+That gets added to the helper class
+
+9
+00:00:28,160 --> 00:00:31,232
+If you don't know where the helper class is let me quickly show you
+
+10
+00:00:32,768 --> 00:00:34,304
+now if you go to your
+
+11
+00:00:34,816 --> 00:00:35,840
+repository where you
+
+12
+00:00:36,096 --> 00:00:39,168
+Find basically your Joomla install
+
+13
+00:00:39,936 --> 00:00:41,472
+you would go to administrator
+
+14
+00:00:41,984 --> 00:00:46,848
+Now there is a helper class for the front end of every component as well as for the back end
+
+15
+00:00:47,872 --> 00:00:49,152
+so looking in a backend
+
+16
+00:00:49,664 --> 00:00:51,200
+We go to component
+
+17
+00:00:55,040 --> 00:00:56,320
+Expert Database
+
+18
+00:00:56,576 --> 00:00:58,112
+Helpers
+
+19
+00:00:59,136 --> 00:01:01,696
+And it's basically that file there
+
+20
+00:01:01,952 --> 00:01:02,976
+that is the helper
+
+21
+00:01:03,232 --> 00:01:04,768
+Class if we open it we
+
+22
+00:01:05,280 --> 00:01:08,864
+See that it's the abstract expert database helper
+
+23
+00:01:09,120 --> 00:01:11,936
+Now that helper class gets included
+
+24
+00:01:12,192 --> 00:01:18,336
+Into your component on every page so if you to open the main backend file with that one
+
+25
+00:01:18,592 --> 00:01:24,736
+Which get loaded by Joomla first you'll see that it actually
+
+26
+00:01:24,992 --> 00:01:27,808
+includes that helper file in every page
+
+27
+00:01:28,064 --> 00:01:30,880
+So that means everything inside of that
+
+28
+00:01:31,904 --> 00:01:35,232
+Class is available to you everywhere in your component
+
+29
+00:01:36,256 --> 00:01:40,096
+When we actually go back to our
+
+30
+00:01:40,608 --> 00:01:41,888
+Interface
+
+31
+00:01:43,168 --> 00:01:44,704
+And we go to components
+
+32
+00:01:46,752 --> 00:01:48,544
+and the Expert Database
+
+33
+00:01:55,456 --> 00:02:01,600
+You would see that there is a libs or actually stand for library and helpers and you see
+
+34
+00:02:01,856 --> 00:02:08,000
+We have to switch Ticked yes add create user helper method
+
+35
+00:02:08,256 --> 00:02:09,536
+Set to yes
+
+36
+00:02:10,048 --> 00:02:11,328
+That is the
+
+37
+00:02:11,584 --> 00:02:14,144
+The switch that you need to trip
+
+38
+00:02:14,656 --> 00:02:18,752
+So that component builder and knows that you actually want the helper class
+
+39
+00:02:19,520 --> 00:02:21,056
+that Creates users to be
+
+40
+00:02:21,568 --> 00:02:25,920
+Added to the helper class of your front and backend of your
+
+41
+00:02:26,176 --> 00:02:26,688
+component
+
+42
+00:02:30,016 --> 00:02:31,552
+I'm gonna close out here
+
+43
+00:02:32,064 --> 00:02:33,088
+I am going to go back to the code
+
+44
+00:02:35,392 --> 00:02:36,160
+And then I am going to do a
+
+45
+00:02:36,416 --> 00:02:37,952
+Simple search
+
+46
+00:02:39,232 --> 00:02:41,024
+for user
+
+47
+00:02:44,864 --> 00:02:46,400
+.
+
+48
+00:02:51,776 --> 00:02:55,104
+Here is quite a few users
+
+49
+00:02:56,384 --> 00:02:58,176
+there it is
+
+50
+00:02:58,688 --> 00:02:59,712
+Create user
+
+51
+00:03:00,736 --> 00:03:03,808
+As you can see this is a public static function
+
+52
+00:03:04,576 --> 00:03:06,368
+So you would basically call it with that class name
+
+53
+00:03:13,536 --> 00:03:15,584
+Then colon colon
+
+54
+00:03:16,352 --> 00:03:18,656
+and the name of the function, right
+
+55
+00:03:20,192 --> 00:03:21,216
+which is create user
+
+56
+00:03:22,240 --> 00:03:24,800
+And you see that it is set to new
+
+57
+00:03:26,080 --> 00:03:26,848
+Now
+
+58
+00:03:27,616 --> 00:03:28,896
+New has in it
+
+59
+00:03:29,408 --> 00:03:32,224
+A few variables is basically an array
+
+60
+00:03:33,248 --> 00:03:39,392
+So you can go through this class and you'd see that it has a password one or is just password or password two, it has a user name
+
+61
+00:03:43,488 --> 00:03:44,512
+it has a name
+
+62
+00:03:45,024 --> 00:03:46,048
+aswell as a e-mail
+
+63
+00:03:47,328 --> 00:03:47,840
+And
+
+64
+00:03:49,120 --> 00:03:50,912
+it then creates the user
+
+65
+00:03:51,168 --> 00:03:55,776
+That's what this class does so it calls in the Joomla
+
+66
+00:03:58,336 --> 00:04:00,128
+Component users
+
+67
+00:04:00,384 --> 00:04:02,176
+It calles in it's registration model
+
+68
+00:04:03,712 --> 00:04:09,856
+And then it basically uses that model to create a user so that's what that switch does it
+
+69
+00:04:10,112 --> 00:04:16,256
+adds this class to your component you can then use it in your component it doesn't automatically
+
+70
+00:04:16,512 --> 00:04:22,655
+just sets everything else in place you still required to do as a developer to add to correct code
+
+71
+00:04:25,215 --> 00:04:26,495
+I'll show you what I have done and how I am using it
+
+72
+00:04:30,335 --> 00:04:32,383
+There is a admin View called experts it's in this view that I would actually like
+
+73
+00:04:35,967 --> 00:04:40,575
+Option for someone to create a user now let me first demonstrate how it works
+
+74
+00:04:41,343 --> 00:04:44,415
+So I would go to expert data base and click on experts
+
+75
+00:04:46,975 --> 00:04:49,279
+Let's click on new
+
+76
+00:04:52,607 --> 00:04:55,167
+So you would see there is a
+
+77
+00:04:55,935 --> 00:04:57,215
+field called Expert
+
+78
+00:04:57,727 --> 00:04:59,007
+With which you can select
+
+79
+00:05:00,031 --> 00:05:02,591
+Users within a specific group
+
+80
+00:05:03,359 --> 00:05:06,175
+I will also explain some of that more later
+
+81
+00:05:06,687 --> 00:05:09,503
+But underneath there is this button create user
+
+82
+00:05:10,527 --> 00:05:14,879
+If you Click on it it basically has a pop-up where in you enter a user name
+
+83
+00:05:15,647 --> 00:05:17,439
+I am just gonna say
+
+84
+00:05:18,719 --> 00:05:19,487
+Testing
+
+85
+00:05:20,511 --> 00:05:22,303
+123
+
+86
+00:05:24,607 --> 00:05:26,143
+Use that as the username
+
+87
+00:05:26,911 --> 00:05:28,191
+And as the password
+
+88
+00:05:35,103 --> 00:05:35,871
+There we go, got the user name
+
+89
+00:05:37,151 --> 00:05:38,943
+So everything is testing 123
+
+90
+00:05:40,991 --> 00:05:45,855
+And if I click create it basically has this nice effect
+
+91
+00:05:47,135 --> 00:05:48,671
+where it is busy creating it
+
+92
+00:05:49,183 --> 00:05:52,767
+Setting it up, sending out the email doing all of that for you
+
+93
+00:05:53,535 --> 00:05:54,559
+And once it's done
+
+94
+00:05:55,583 --> 00:05:58,911
+It lets you know that user was created successfully
+
+95
+00:05:59,167 --> 00:06:01,727
+and the login details was e-mailed to the user
+
+96
+00:06:03,007 --> 00:06:05,311
+And then it says here ready to select
+
+97
+00:06:05,823 --> 00:06:10,175
+You can now select testing 123 that you just created from the user list
+
+98
+00:06:10,943 --> 00:06:14,015
+In the above field simply click on the blue user icon
+
+99
+00:06:14,271 --> 00:06:15,295
+Click here
+
+100
+00:06:16,063 --> 00:06:19,903
+and you can type in that testing 123
+
+101
+00:06:20,415 --> 00:06:22,463
+click Search
+
+102
+00:06:22,719 --> 00:06:24,511
+And there is the user created
+
+103
+00:06:25,023 --> 00:06:26,815
+and we click enter
+
+104
+00:06:27,071 --> 00:06:31,935
+You see that it basically used a very strange conversion here
+
+105
+00:06:32,191 --> 00:06:37,055
+Basically converting the username away from the numbers now you can you can fix that
+
+106
+00:06:37,567 --> 00:06:40,383
+By clicking edit
+
+107
+00:06:40,895 --> 00:06:45,759
+And then changing it to 123 and say save the update
+
+108
+00:06:49,087 --> 00:06:50,879
+Does not want to allow that.
+
+109
+00:06:53,183 --> 00:06:56,767
+So clearly my little application doesn't wanna allow you to use
+
+110
+00:06:59,327 --> 00:07:01,119
+actually any numbers in the user name,.That's not the point
+
+111
+00:07:01,375 --> 00:07:04,959
+The point is that we have this integrated user now that is connected to an expert
+
+112
+00:07:05,471 --> 00:07:07,775
+And if you were to click there again
+
+113
+00:07:08,543 --> 00:07:14,687
+You can still selected ok but once you select it once you can't create a new expert
+
+114
+00:07:14,943 --> 00:07:16,735
+And select that user again
+
+115
+00:07:17,247 --> 00:07:21,087
+So it's basically one profile connecting to one user
+
+116
+00:07:21,599 --> 00:07:23,391
+To set up a expert
+
+117
+00:07:24,159 --> 00:07:30,303
+So that's the feature I'm using it for there is different ways that I have implemented this let me show you another one
+
+118
+00:07:31,071 --> 00:07:34,399
+Obviously you realise I'm using a lot of JavaScript on this page
+
+119
+00:07:34,655 --> 00:07:36,703
+I will show you some of that JavaScript but
+
+120
+00:07:36,959 --> 00:07:39,263
+That yourself
+
+121
+00:07:39,775 --> 00:07:42,591
+Ok let me just get out of here
+
+122
+00:07:43,871 --> 00:07:48,479
+for Example over here I wrote this job tracking Extension
+
+123
+00:07:48,735 --> 00:07:53,599
+And let's say we want to create a new job order
+
+124
+00:07:57,439 --> 00:07:59,743
+then I can say whether it's a new client or a existing
+
+125
+00:07:59,999 --> 00:08:02,047
+if it is an existing
+
+126
+00:08:02,303 --> 00:08:04,095
+I Simply select from this list
+
+127
+00:08:04,863 --> 00:08:06,911
+If it's new I click here
+
+128
+00:08:07,423 --> 00:08:11,007
+I can enter all the details of the user and when I click save
+
+129
+00:08:11,263 --> 00:08:12,799
+It Creates the user
+
+130
+00:08:13,567 --> 00:08:19,711
+Stores the data in the user table not in the job order table deletes all these values
+
+131
+00:08:19,967 --> 00:08:24,831
+So did the job order table never stores any user values in the relation of this job order of course
+
+132
+00:08:28,671 --> 00:08:34,047
+And so that's another way that I have implemented so if we were to close this out
+
+133
+00:08:35,583 --> 00:08:37,119
+And where to open a client
+
+134
+00:08:37,375 --> 00:08:38,143
+A new one
+
+135
+00:08:39,423 --> 00:08:41,471
+You would see it's basically it's the same values
+
+136
+00:08:41,983 --> 00:08:43,519
+And
+
+137
+00:08:44,287 --> 00:08:47,103
+Everything is the same
+
+138
+00:08:48,127 --> 00:08:51,199
+So that's another way that we integrated this whole
+
+139
+00:08:52,991 --> 00:08:54,527
+User integration
+
+140
+00:08:55,039 --> 00:08:57,087
+So there are really many different ways to this
+
+141
+00:08:58,367 --> 00:09:04,511
+The way I have done it I've just listen to my clients expectation
+
+142
+00:09:05,023 --> 00:09:08,863
+What I really would like to see and how they would like it to work
+
+143
+00:09:09,119 --> 00:09:11,679
+And then simply Make It Happen that way
+
+144
+00:09:11,935 --> 00:09:15,007
+I personally I prefer the Ajax Way much more
+
+145
+00:09:15,519 --> 00:09:18,335
+It's it's just seems to me easier
+
+146
+00:09:19,615 --> 00:09:23,967
+So let me illustrate some of or let me show you some of the code that I used to do that
+
+147
+00:09:26,271 --> 00:09:29,087
+Ok so we back in The Experts View
+
+148
+00:09:30,111 --> 00:09:36,255
+As I've done before I previously in other tutorials explained how to make use of the
+
+149
+00:09:36,511 --> 00:09:37,023
+Ajax concept
+
+150
+00:09:37,279 --> 00:09:38,815
+Within
+
+151
+00:09:39,327 --> 00:09:40,863
+Component Builder
+
+152
+00:09:41,119 --> 00:09:45,471
+Now for those of you that like to understand what's going on let me give you a quick runover
+
+153
+00:09:46,239 --> 00:09:48,287
+At the code level
+
+154
+00:09:50,335 --> 00:09:54,175
+Within every component that makes use of Ajax
+
+155
+00:09:54,431 --> 00:09:57,503
+A model and a controller is created
+
+156
+00:09:58,271 --> 00:10:04,415
+The controller is named Ajax.json.php and the model is named
+
+157
+00:10:04,671 --> 00:10:05,695
+Ajax
+
+158
+00:10:06,975 --> 00:10:08,767
+Ok let me open the model
+
+159
+00:10:09,535 --> 00:10:11,583
+And also let me open
+
+160
+00:10:11,839 --> 00:10:13,375
+The controller
+
+161
+00:10:13,887 --> 00:10:16,959
+As you can see the controller basic fires off
+
+162
+00:10:17,215 --> 00:10:19,775
+The register tasks within the construct method
+
+163
+00:10:21,311 --> 00:10:24,127
+And then it adds the tasks
+
+164
+00:10:24,639 --> 00:10:25,663
+Into a switch
+
+165
+00:10:26,431 --> 00:10:29,759
+And tries to run the task basically
+
+166
+00:10:30,271 --> 00:10:31,551
+Also in
+
+167
+00:10:31,807 --> 00:10:32,831
+The model it
+
+168
+00:10:34,111 --> 00:10:35,903
+It Gets the model Ajax
+
+169
+00:10:36,415 --> 00:10:41,535
+And then runs the method that basically corresponds to the task
+
+170
+00:10:43,583 --> 00:10:44,351
+And so that is how
+
+171
+00:10:46,399 --> 00:10:47,679
+It runs
+
+172
+00:10:47,935 --> 00:10:50,495
+It uses the Joomlas default
+
+173
+00:10:51,263 --> 00:10:52,543
+Filtering
+
+174
+00:10:53,055 --> 00:10:57,151
+Method in the way that it gets values that are being posted
+
+175
+00:10:58,687 --> 00:11:02,015
+And then value dates that those values actually are there
+
+176
+00:11:02,527 --> 00:11:04,831
+Then sends the values over to the model
+
+177
+00:11:05,599 --> 00:11:09,951
+Now that's looking at it from a code side so if you look at the model
+
+178
+00:11:10,207 --> 00:11:12,255
+It simply shows you
+
+179
+00:11:12,511 --> 00:11:13,791
+Various methods
+
+180
+00:11:14,047 --> 00:11:16,095
+Some of them are protected
+
+181
+00:11:16,607 --> 00:11:19,423
+And some of them are public and those are usually the ones
+
+182
+00:11:19,679 --> 00:11:20,191
+That
+
+183
+00:11:20,447 --> 00:11:25,567
+gets called from the controller once the Ajax gets the
+
+184
+00:11:25,823 --> 00:11:27,615
+Verification level and it's
+
+185
+00:11:28,127 --> 00:11:28,895
+Verified
+
+186
+00:11:29,407 --> 00:11:31,199
+So here is the create user class
+
+187
+00:11:31,711 --> 00:11:33,247
+Basically
+
+188
+00:11:33,503 --> 00:11:34,527
+We first check
+
+189
+00:11:35,039 --> 00:11:40,927
+Whether this user now this is custom script I mean this I wrote custom component build does not write this so
+
+190
+00:11:42,463 --> 00:11:45,535
+Basically when you go back to the user interface
+
+191
+00:11:46,303 --> 00:11:47,839
+You see that
+
+192
+00:11:48,095 --> 00:11:49,375
+If I scroll down here
+
+193
+00:11:55,775 --> 00:11:57,311
+create user fields
+
+194
+00:11:58,335 --> 00:11:59,871
+And then there's great user
+
+195
+00:12:00,127 --> 00:12:01,919
+You see that I wrote this right here
+
+196
+00:12:02,431 --> 00:12:04,991
+And that basically gets placed into the model
+
+197
+00:12:07,551 --> 00:12:09,087
+So that's the Ajax method here
+
+198
+00:12:10,367 --> 00:12:12,671
+I simply in that Ajax input
+
+199
+00:12:12,927 --> 00:12:15,487
+I annotate the specific tasks
+
+200
+00:12:15,743 --> 00:12:17,535
+The task name
+
+201
+00:12:18,047 --> 00:12:19,583
+And specific variables
+
+202
+00:12:20,095 --> 00:12:22,143
+And again the method name
+
+203
+00:12:22,399 --> 00:12:25,215
+You could have different method names from task names and
+
+204
+00:12:26,751 --> 00:12:30,847
+What should be validated whether it's integer, float or whatever
+
+205
+00:12:31,359 --> 00:12:34,175
+And if there's no value What is the value by Default
+
+206
+00:12:34,687 --> 00:12:39,039
+So this is where you set up there basically the controllers information
+
+207
+00:12:39,551 --> 00:12:45,695
+And then here your customised these write your script so basically
+
+208
+00:12:45,951 --> 00:12:48,767
+create user gets data and seems from what view is it
+
+209
+00:12:49,279 --> 00:12:50,559
+then validates with this
+
+210
+00:12:50,815 --> 00:12:53,375
+current login user has the permission
+
+211
+00:12:53,631 --> 00:12:55,423
+To actually
+
+212
+00:12:55,679 --> 00:12:57,983
+The Experts area
+
+213
+00:12:58,751 --> 00:13:00,031
+Then it
+
+214
+00:13:00,287 --> 00:13:04,895
+Converts the data because it's a json set of datasets that I'm sending across
+
+215
+00:13:05,407 --> 00:13:07,199
+So that we can see if it's an array does some other checks
+
+216
+00:13:14,623 --> 00:13:17,183
+So you can see I'm still here I'm using that
+
+217
+00:13:17,439 --> 00:13:18,719
+Global helper
+
+218
+00:13:19,231 --> 00:13:21,023
+Class and methods
+
+219
+00:13:21,279 --> 00:13:24,095
+Here are number of custom methods obviously that
+
+220
+00:13:24,607 --> 00:13:28,959
+That is available in that class to go through it we just added in there as freebies and
+
+221
+00:13:29,471 --> 00:13:32,543
+And you wanna always see the Need of them but I'm using them often
+
+222
+00:13:33,055 --> 00:13:34,847
+And even if you have with
+
+223
+00:13:35,359 --> 00:13:40,991
+Improvements on those methods please make a pull request and we'll make those changes
+
+224
+00:13:42,783 --> 00:13:44,319
+Then you over here once we've
+
+225
+00:13:45,599 --> 00:13:49,439
+Become very sure that we've got enough data on the right data
+
+226
+00:13:51,487 --> 00:13:54,815
+We basically get that same method and we need to create user
+
+227
+00:13:55,583 --> 00:13:56,863
+Get result
+
+228
+00:13:57,631 --> 00:13:58,655
+And if it's not
+
+229
+00:13:58,911 --> 00:14:00,703
+the correct result we deal with it
+
+230
+00:14:00,959 --> 00:14:01,983
+accordingly
+
+231
+00:14:02,751 --> 00:14:05,567
+And if it is the correct result we create
+
+232
+00:14:05,823 --> 00:14:07,359
+Add the user to the user group
+
+233
+00:14:07,871 --> 00:14:09,919
+That's something that the user does not
+
+234
+00:14:10,175 --> 00:14:12,223
+that you create user does not do
+
+235
+00:14:12,991 --> 00:14:13,759
+So we
+
+236
+00:14:14,015 --> 00:14:16,575
+Then have a user group setup
+
+237
+00:14:17,087 --> 00:14:18,367
+And
+
+238
+00:14:19,647 --> 00:14:21,183
+Basically in the component
+
+239
+00:14:21,951 --> 00:14:23,487
+And we get that user group
+
+240
+00:14:25,023 --> 00:14:26,815
+Set into the correct User Group
+
+241
+00:14:27,327 --> 00:14:28,863
+This is a return message
+
+242
+00:14:29,887 --> 00:14:31,423
+If it's an error
+
+243
+00:14:31,935 --> 00:14:33,983
+or whether it's a
+
+244
+00:14:34,239 --> 00:14:35,007
+Success
+
+245
+00:14:35,263 --> 00:14:38,591
+So down here is the error message
+
+246
+00:14:38,847 --> 00:14:44,991
+So if it's if it's successful this is what we do if it's unsuccessful this is what we do
+
+247
+00:14:45,247 --> 00:14:51,391
+And so that's just a quick look I mean obviously we can pause this video and
+
+248
+00:14:51,647 --> 00:14:52,415
+Look at
+
+249
+00:14:52,671 --> 00:14:53,439
+What I have done
+
+250
+00:14:53,695 --> 00:14:58,815
+And then here is getUser when the page loads initially
+
+251
+00:14:59,327 --> 00:15:01,375
+we get the id get the data
+
+252
+00:15:01,887 --> 00:15:02,911
+packs it into some html
+
+253
+00:15:04,703 --> 00:15:05,727
+And sends it off
+
+254
+00:15:06,495 --> 00:15:07,263
+So
+
+255
+00:15:07,519 --> 00:15:09,823
+This is the PHP side obviously
+
+256
+00:15:10,335 --> 00:15:16,479
+We we do this create user and then there is a ajax
+
+257
+00:15:16,735 --> 00:15:17,759
+Site right in Javascript
+
+258
+00:15:18,015 --> 00:15:20,063
+So
+
+259
+00:15:20,319 --> 00:15:22,623
+In the JavaScript when the page loads
+
+260
+00:15:23,391 --> 00:15:25,951
+Would you get user with the user ID
+
+261
+00:15:26,207 --> 00:15:28,767
+We get the user ID from the field
+
+262
+00:15:29,535 --> 00:15:32,095
+And then it loads that data that you saw
+
+263
+00:15:32,351 --> 00:15:34,911
+If you if you looked no this is the wrong place
+
+264
+00:15:43,359 --> 00:15:46,175
+Basically shows you that is the data it loads
+
+265
+00:15:46,687 --> 00:15:48,479
+And that data can be edited
+
+266
+00:15:48,735 --> 00:15:50,527
+Except over here
+
+267
+00:15:51,551 --> 00:15:54,367
+You cannot add numbers in the username but you can
+
+268
+00:15:55,903 --> 00:15:56,927
+do that and it will update it as you see
+
+269
+00:15:57,951 --> 00:15:59,231
+and will say that is updated it
+
+270
+00:15:59,743 --> 00:16:01,279
+Obviously if there is a
+
+271
+00:16:01,535 --> 00:16:05,375
+Error with the email already used or something it will also give you an error
+
+272
+00:16:05,631 --> 00:16:08,959
+And this is all part of how we basically have setup
+
+273
+00:16:11,007 --> 00:16:11,775
+the JavaScript
+
+274
+00:16:12,287 --> 00:16:15,103
+Ok we can scroll down to
+
+275
+00:16:15,871 --> 00:16:18,431
+So I've just added to Javascript to the view file
+
+276
+00:16:20,479 --> 00:16:24,319
+And here is get user the server side and there is the the function
+
+277
+00:16:24,831 --> 00:16:28,159
+I have two functions usually one that sort of deals with
+
+278
+00:16:28,671 --> 00:16:32,767
+Waiting and then eventually setting up the data into the The View
+
+279
+00:16:33,279 --> 00:16:38,399
+And here's one making the call so this is how you call structure would usually look
+
+280
+00:16:39,167 --> 00:16:40,959
+In index.
+
+281
+00:16:41,471 --> 00:16:42,495
+php
+
+282
+00:16:43,263 --> 00:16:45,823
+?option = your components name
+
+283
+00:16:46,847 --> 00:16:48,127
+And the task which
+
+284
+00:16:48,383 --> 00:16:49,407
+Must go to the
+
+285
+00:16:49,919 --> 00:16:51,455
+Ajax controller
+
+286
+00:16:52,223 --> 00:16:54,015
+And then this is the task
+
+287
+00:16:54,783 --> 00:16:59,647
+And you then here can stipulate what format you would like the result set returned in
+
+288
+00:17:00,415 --> 00:17:01,439
+if you
+
+289
+00:17:01,695 --> 00:17:07,071
+Want the result set returned the raw which in sometime sometimes is the case
+
+290
+00:17:07,583 --> 00:17:09,631
+There is if you look here
+
+291
+00:17:10,655 --> 00:17:12,703
+There is a raw
+
+292
+00:17:12,959 --> 00:17:13,727
+Variable
+
+293
+00:17:13,983 --> 00:17:15,519
+You can just set the raw variable to true
+
+294
+00:17:17,055 --> 00:17:18,847
+Then it will give you the results set
+
+295
+00:17:19,615 --> 00:17:21,407
+just Like that without
+
+296
+00:17:21,919 --> 00:17:23,711
+Braces around them
+
+297
+00:17:23,967 --> 00:17:24,991
+Or a call back or anything
+
+298
+00:17:26,527 --> 00:17:29,087
+You see when you make calls from JavaScript
+
+299
+00:17:29,343 --> 00:17:30,367
+It usually
+
+300
+00:17:30,623 --> 00:17:32,415
+Wants this call back to be added
+
+301
+00:17:33,183 --> 00:17:39,327
+If you make calls from other JavaScript libraries you might just want the braces around it
+
+302
+00:17:39,583 --> 00:17:42,911
+But if you want it raw which also is often the case
+
+303
+00:17:43,167 --> 00:17:47,263
+you just add the variable raw to the URL = true
+
+304
+00:17:47,519 --> 00:17:50,079
+and then end up passing it back to you with this
+
+305
+00:17:51,615 --> 00:17:53,151
+So that's a little heads up on
+
+306
+00:17:53,663 --> 00:17:54,943
+Ajax function so
+
+307
+00:17:56,735 --> 00:17:58,783
+the format must json
+
+308
+00:17:59,295 --> 00:18:00,063
+that's Important
+
+309
+00:18:01,087 --> 00:18:03,647
+Ok and always use a token
+
+310
+00:18:05,183 --> 00:18:09,023
+Have the token on the page this token is necessary
+
+311
+00:18:09,279 --> 00:18:11,839
+To prevent cross site scripting of course
+
+312
+00:18:12,351 --> 00:18:14,655
+I usually add the token to the page
+
+313
+00:18:15,679 --> 00:18:16,447
+Through the
+
+314
+00:18:16,703 --> 00:18:19,007
+Java oh sorry php
+
+315
+00:18:19,263 --> 00:18:20,799
+So there is a place down here if you scroll down where is it
+
+316
+00:18:26,175 --> 00:18:28,223
+I just remembered remembered
+
+317
+00:18:28,735 --> 00:18:30,271
+If you are working in a backend
+
+318
+00:18:30,527 --> 00:18:33,087
+The backend the backend and the admin area you
+
+319
+00:18:33,599 --> 00:18:37,695
+don't need to have the token its get added to the page dynamically
+
+320
+00:18:37,951 --> 00:18:40,767
+Since we Basically parsed the JavaScript
+
+321
+00:18:41,023 --> 00:18:41,791
+Areas
+
+322
+00:18:42,047 --> 00:18:47,679
+And if we see token we actually know oh token is to be there and we add the token for you
+
+323
+00:18:48,191 --> 00:18:52,031
+Where is the front end you must actually literally add the token
+
+324
+00:18:52,543 --> 00:18:54,335
+There was just too many reasons for us
+
+325
+00:18:54,591 --> 00:18:57,407
+Not to do the Automation in the front end so but you 
+
+326
+00:19:00,223 --> 00:19:03,551
+could literally change to the variable name as well
+
+327
+00:19:03,807 --> 00:19:05,343
+To something of your choice
+
+328
+00:19:05,855 --> 00:19:09,439
+Where is now it's just token it's backend it's more secure ok so
+
+329
+00:19:10,719 --> 00:19:12,767
+You need to always add a token
+
+330
+00:19:13,279 --> 00:19:14,303
+To the request
+
+331
+00:19:14,815 --> 00:19:19,679
+and check whether the token is there if it's not that it wouldn't make a request at all
+
+332
+00:19:19,935 --> 00:19:23,007
+Ok so I was looking at another function there
+
+333
+00:19:23,263 --> 00:19:27,615
+Ok so that's simply how we create a user
+
+334
+00:19:28,127 --> 00:19:32,479
+And integrate the user concept within this component
+
+335
+00:19:33,247 --> 00:19:39,391
+I hope that was helpful I realize if you not that fluent in programming in JavaScript
+
+336
+00:19:39,647 --> 00:19:41,695
+Or in jQuery
+
+337
+00:19:41,951 --> 00:19:43,487
+As well as in PHP
+
+338
+00:19:43,743 --> 00:19:46,303
+This might not fully resolved your questions
+
+339
+00:19:47,583 --> 00:19:50,399
+Like I said where the beginning of these tutorials
+
+340
+00:19:50,911 --> 00:19:53,471
+I wasn't planning on making a component that is
+
+341
+00:19:55,007 --> 00:19:56,543
+Very easy to use
+
+342
+00:19:57,055 --> 00:20:00,895
+but rather a Component that is very powerful to use
+
+343
+00:20:01,407 --> 00:20:07,295
+And leaving it up to you to decide how to implement This user integration
+
+344
+00:20:07,551 --> 00:20:10,879
+Is really the most powerful way of doing it
+
+345
+00:20:11,391 --> 00:20:15,999
+At least we are adding the the class with which you can create the user
+
+346
+00:20:16,511 --> 00:20:20,095
+And again even there you can go look at that class
+
+347
+00:20:20,351 --> 00:20:22,655
+If you feel my implementation is a little you know needs some
+
+348
+00:20:24,703 --> 00:20:25,983
+Inprovement
+
+349
+00:20:26,239 --> 00:20:28,799
+You can either shoot me a mail or you could
+
+350
+00:20:29,311 --> 00:20:30,591
+Take 
+
+351
+00:20:30,847 --> 00:20:33,151
+For this component Builder on GitHub
+
+352
+00:20:33,407 --> 00:20:36,223
+Pull down to your own repository
+
+353
+00:20:36,479 --> 00:20:38,527
+Make the changes push it back
+
+354
+00:20:38,783 --> 00:20:40,319
+And
+
+355
+00:20:40,575 --> 00:20:42,623
+The place inside
+
+356
+00:20:43,135 --> 00:20:46,975
+Of component builder where this class is constructed
+
+357
+00:20:47,487 --> 00:20:48,511
+is obviously
+
+358
+00:20:49,023 --> 00:20:50,559
+Within
+
+359
+00:20:50,815 --> 00:20:54,399
+The compilers files. Now the compiler
+
+360
+00:20:54,911 --> 00:20:55,935
+Has
+
+361
+00:20:56,447 --> 00:20:59,007
+Has quite a few files and you need to do do a search
+
+362
+00:20:59,519 --> 00:21:01,823
+So you basically go to component Builder
+
+363
+00:21:02,591 --> 00:21:03,615
+go to helper
+
+364
+00:21:04,127 --> 00:21:05,663
+and then Use the compiler
+
+365
+00:21:06,175 --> 00:21:07,455
+And here is all its files
+
+366
+00:21:07,711 --> 00:21:08,991
+So do a search in here
+
+367
+00:21:09,759 --> 00:21:10,271
+For
+
+368
+00:21:10,527 --> 00:21:11,551
+the function
+
+369
+00:21:11,807 --> 00:21:13,855
+Create user you could
+
+370
+00:21:14,111 --> 00:21:15,903
+you know just search for that
+
+371
+00:21:16,416 --> 00:21:17,952
+and I'm sure you're fine it
+
+372
+00:21:18,208 --> 00:21:24,352
+and it is in that area where you need to make the adaptation and the changes because it's dynamically added
+
+373
+00:21:24,608 --> 00:21:27,424
+It is not
+
+374
+00:21:28,448 --> 00:21:31,264
+it can't be edited like right
+
+375
+00:21:31,520 --> 00:21:34,592
+in the script it needs to be edit in the function where we add it
+
+376
+00:21:35,360 --> 00:21:37,920
+Just go search those functions
+
+377
+00:21:38,432 --> 00:21:39,968
+Thank you for watching
+
+378
+00:21:40,224 --> 00:21:46,368
+That's how you create users and connect them to your components
+
+379
+00:21:46,624 --> 00:21:52,768
+Obviously there is much more to say but I'm afraid this will get way too long like most of my tutorials get to long
+
+380
+00:21:53,024 --> 00:21:59,168
+I want to keep it this this way and trying to make it shorter hope you enjoyed that
+

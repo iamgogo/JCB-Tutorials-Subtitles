@@ -1,0 +1,1432 @@
+1
+00:00:02,304 --> 00:00:03,072
+Hi
+
+2
+00:00:03,584 --> 00:00:08,448
+I want to show you how to use the emailing helper class in your component
+
+3
+00:00:09,216 --> 00:00:14,592
+The email helper class is a class that gets added to your components helper area
+
+4
+00:00:15,104 --> 00:00:17,152
+And therefore available on every page
+
+5
+00:00:19,200 --> 00:00:21,248
+And with which you can then send emails
+
+6
+00:00:21,760 --> 00:00:25,600
+We could look at the helper Class by going to a component that has it
+
+7
+00:00:25,856 --> 00:00:26,624
+Included
+
+8
+00:00:27,136 --> 00:00:28,672
+And then into helpers and
+
+9
+00:00:28,928 --> 00:00:31,232
+The filename is usually the component name
+
+10
+00:00:32,000 --> 00:00:32,768
+Email
+
+11
+00:00:33,280 --> 00:00:34,816
+If've opened it already here
+
+12
+00:00:35,584 --> 00:00:38,656
+As you can see it's in just the basic abstract class
+
+13
+00:00:39,424 --> 00:00:39,936
+That
+
+14
+00:00:40,448 --> 00:00:42,752
+That takes Joomlas emailer
+
+15
+00:00:43,008 --> 00:00:44,800
+Which is this Jmail
+
+16
+00:00:45,824 --> 00:00:47,616
+And it gets an instance of it
+
+17
+00:00:48,384 --> 00:00:51,200
+And adds it to mail and then loads in
+
+18
+00:00:51,712 --> 00:00:54,528
+the variables that's required
+
+19
+00:00:55,296 --> 00:00:55,808
+Now
+
+20
+00:00:56,064 --> 00:00:57,600
+We'll come back to this in a moment
+
+21
+00:00:58,112 --> 00:00:59,648
+If you look at a component
+
+22
+00:00:59,904 --> 00:01:01,696
+What you need to do first
+
+23
+00:01:02,464 --> 00:01:06,304
+If you are gonna use this feature in any of your components
+
+24
+00:01:08,864 --> 00:01:10,400
+Let us open this
+
+25
+00:01:11,936 --> 00:01:12,960
+Learning manager
+
+26
+00:01:20,384 --> 00:01:22,688
+And then go to libraries and helpers
+
+27
+00:01:22,944 --> 00:01:26,784
+And you'll see that there add email helpers been set to on and that only
+
+28
+00:01:28,832 --> 00:01:32,928
+Places the helper class in your component that's all it does
+
+29
+00:01:33,696 --> 00:01:35,488
+It doesn't implemented anywhere else
+
+30
+00:01:36,256 --> 00:01:36,768
+So
+
+31
+00:01:37,024 --> 00:01:40,352
+At the moment that means that if you click yes here
+
+32
+00:01:40,864 --> 00:01:43,424
+You need to still create fields
+
+33
+00:01:44,704 --> 00:01:46,496
+That you are gonna load to your
+
+34
+00:01:46,752 --> 00:01:47,264
+config area
+
+35
+00:01:47,520 --> 00:01:51,616
+Now if you don't know about the config yet it means you've skipped some tutorials
+
+36
+00:01:53,152 --> 00:01:55,456
+But it's basically this area here
+
+37
+00:01:55,968 --> 00:01:59,040
+Which gives you the option to the ability to add
+
+38
+00:01:59,296 --> 00:02:02,880
+Configuration options to your components option area
+
+39
+00:02:03,648 --> 00:02:07,744
+So if we click here I scroll down you'll see that there is
+
+40
+00:02:08,000 --> 00:02:10,560
+Mail configuration and a whole lot of fields there
+
+41
+00:02:11,584 --> 00:02:16,192
+Now these Fields correspond to the Joomlas default Fields if you didn't know
+
+42
+00:02:16,960 --> 00:02:23,104
+So if you would like to create these Fields and you need some info on what there should be in what should be their names and
+
+43
+00:02:23,360 --> 00:02:23,872
+Everything
+
+44
+00:02:24,128 --> 00:02:29,504
+Then go look at the Joomla Global configuration XML
+
+45
+00:02:30,016 --> 00:02:34,112
+And you'll see all the settings in that file
+
+46
+00:02:35,648 --> 00:02:39,232
+For our purposes I'm simply gonna show you how the fields look like
+
+47
+00:02:39,488 --> 00:02:41,280
+We also have the dkim
+
+48
+00:02:41,536 --> 00:02:43,584
+implementation available
+
+49
+00:02:45,120 --> 00:02:50,496
+And even those Fields you will need to look at the code to know what their names should be
+
+50
+00:02:51,008 --> 00:02:54,592
+So there's a difference of course between name and label and description
+
+51
+00:02:54,848 --> 00:02:57,920
+When we refer to named and that is the
+
+52
+00:02:58,176 --> 00:03:00,480
+The value that will be used in the code
+
+53
+00:03:01,248 --> 00:03:02,528
+Ok I'll show you what I mean
+
+54
+00:03:03,040 --> 00:03:04,576
+I just close out here
+
+55
+00:03:06,112 --> 00:03:07,648
+Go back to the code
+
+56
+00:03:07,904 --> 00:03:10,976
+So for example that word mailer
+
+57
+00:03:13,536 --> 00:03:15,072
+Actually means
+
+58
+00:03:17,376 --> 00:03:20,192
+That the name of the field is called Mailer
+
+59
+00:03:20,704 --> 00:03:23,264
+The name of the field is called that and that
+
+60
+00:03:23,520 --> 00:03:24,288
+and so it goes on
+
+61
+00:03:25,056 --> 00:03:27,104
+So these are all the fields that needs to be set
+
+62
+00:03:27,616 --> 00:03:29,408
+If if if your component
+
+63
+00:03:29,664 --> 00:03:31,200
+If we go back to the component let me just
+
+64
+00:03:32,480 --> 00:03:33,248
+Close this
+
+65
+00:03:35,040 --> 00:03:38,368
+You would see  there is a options area so I'm gonna open that
+
+66
+00:03:40,672 --> 00:03:45,024
+once it open your see there is a mail configuration and a dkim area
+
+67
+00:03:45,280 --> 00:03:46,048
+Dkim
+
+68
+00:03:46,560 --> 00:03:48,096
+So let's open a mail
+
+69
+00:03:48,352 --> 00:03:50,400
+You see that it has the mailer status
+
+70
+00:03:50,656 --> 00:03:53,728
+So it's either set to off then no emails will go out
+
+71
+00:03:53,984 --> 00:03:54,496
+or to on
+
+72
+00:03:55,520 --> 00:04:00,128
+If it set to on you can decide whether you want to override the global function
+
+73
+00:04:00,896 --> 00:04:01,664
+The global
+
+74
+00:04:01,920 --> 00:04:02,432
+Variables
+
+75
+00:04:02,688 --> 00:04:06,784
+now the global variables are set in your Joomlas components
+
+76
+00:04:07,552 --> 00:04:08,832
+Global area
+
+77
+00:04:10,368 --> 00:04:12,672
+So you would go to Global configurations
+
+78
+00:04:16,768 --> 00:04:17,536
+And then
+
+79
+00:04:18,815 --> 00:04:20,351
+You'd go to
+
+80
+00:04:20,607 --> 00:04:21,375
+System
+
+81
+00:04:22,143 --> 00:04:22,911
+No sorry
+
+82
+00:04:24,447 --> 00:04:25,471
+It's server
+
+83
+00:04:25,983 --> 00:04:28,031
+And then there's this mail settings here
+
+84
+00:04:29,055 --> 00:04:29,567
+Ok
+
+85
+00:04:32,895 --> 00:04:39,039
+Now these are the main or the the global settings that will be used in the in any component that
+
+86
+00:04:39,295 --> 00:04:40,063
+Does not add
+
+87
+00:04:40,831 --> 00:04:43,391
+These settings in their config
+
+88
+00:04:43,647 --> 00:04:45,183
+So if you didn't create
+
+89
+00:04:45,439 --> 00:04:51,583
+Those Fields and added it to your component but you ticked the the button to sort of add the helper
+
+90
+00:04:51,839 --> 00:04:52,863
+Class to your component
+
+91
+00:04:53,631 --> 00:04:54,143
+Then
+
+92
+00:04:54,655 --> 00:05:00,287
+That means that it will basically fall back to these settings in your Joomla default
+
+93
+00:05:00,799 --> 00:05:01,311
+Area
+
+94
+00:05:02,079 --> 00:05:02,591
+So
+
+95
+00:05:03,103 --> 00:05:04,383
+Just that you know
+
+96
+00:05:04,639 --> 00:05:08,223
+And these are the values that you need to overwrite if you want your
+
+97
+00:05:08,479 --> 00:05:14,623
+Component into some way to use other PHP mail or other send mail or
+
+98
+00:05:14,879 --> 00:05:15,647
+Other
+
+99
+00:05:16,159 --> 00:05:18,463
+What's the other one SMTP
+
+100
+00:05:19,231 --> 00:05:22,303
+Values than that of the global you need to set it here
+
+101
+00:05:23,327 --> 00:05:24,351
+And
+
+102
+00:05:24,863 --> 00:05:27,167
+That is basically what this area can do
+
+103
+00:05:27,423 --> 00:05:30,751
+So you use Global it falls back to the Joomla Global
+
+104
+00:05:31,519 --> 00:05:34,335
+Otherwise you can overwrite it on this level
+
+105
+00:05:35,359 --> 00:05:36,383
+And send it out
+
+106
+00:05:36,895 --> 00:05:38,175
+In a way that is
+
+107
+00:05:38,431 --> 00:05:40,223
+What you would like
+
+108
+00:05:40,735 --> 00:05:43,039
+The DKIM area
+
+109
+00:05:43,551 --> 00:05:49,183
+Is there more advanced area which basically allows you to overwrite
+
+110
+00:05:49,695 --> 00:05:51,487
+Overwrite sorry not overwrite to encrypt
+
+111
+00:05:51,999 --> 00:05:58,143
+And secure email sent out from you to authenticate that it was really you that send it
+
+112
+00:05:58,399 --> 00:06:04,543
+This is very helpful to sort of show your the people that receive these emails that it's not
+
+113
+00:06:04,799 --> 00:06:10,943
+Spam and it's really comes from you it's more advanced I would encourage you to read up on it these are the values
+
+114
+00:06:11,199 --> 00:06:15,551
+Usually would be required to be added private key a public key
+
+115
+00:06:16,063 --> 00:06:18,623
+And obviously these type of areas here
+
+116
+00:06:19,135 --> 00:06:24,767
+If this is set to no obviously it will not be used if it set to yes please ensure to add the values
+
+117
+00:06:25,279 --> 00:06:27,071
+Otherwise it still will not be used
+
+118
+00:06:27,839 --> 00:06:28,351
+Ok
+
+119
+00:06:28,863 --> 00:06:32,191
+So that's basically the values that you needs to still create
+
+120
+00:06:32,447 --> 00:06:34,751
+Component does not do this for you
+
+121
+00:06:35,007 --> 00:06:36,031
+You need to do it
+
+122
+00:06:36,543 --> 00:06:39,615
+I could possibly foresee that
+
+123
+00:06:39,871 --> 00:06:41,919
+In the future we might add this
+
+124
+00:06:42,175 --> 00:06:44,991
+If you tick the helper class it adds these values for you
+
+125
+00:06:45,503 --> 00:06:48,575
+But even then if you have done it manually
+
+126
+00:06:48,831 --> 00:06:51,391
+We'll make sure that it doesn't add in twice
+
+127
+00:06:51,903 --> 00:06:53,183
+So as long as
+
+128
+00:06:53,695 --> 00:06:55,743
+These values obviously be the same
+
+129
+00:06:55,999 --> 00:06:57,791
+Names we will know actually a
+
+130
+00:06:58,303 --> 00:06:59,583
+Somehow identify that
+
+131
+00:06:59,839 --> 00:07:00,607
+And then not
+
+132
+00:07:00,863 --> 00:07:02,399
+Add them dynamically
+
+133
+00:07:02,911 --> 00:07:04,447
+So to avoid clashes
+
+134
+00:07:04,703 --> 00:07:10,335
+But for the meantime it's not automatically being added and so you need to do that manually if you want it
+
+135
+00:07:10,591 --> 00:07:13,407
+To be there if you don't like I've said before
+
+136
+00:07:13,663 --> 00:07:15,711
+It will fall back to the Joomla Global
+
+137
+00:07:15,967 --> 00:07:18,271
+So to explain that you on the code level
+
+138
+00:07:18,783 --> 00:07:21,599
+Basically it gets from the configuration
+
+139
+00:07:22,367 --> 00:07:24,159
+The mailer function
+
+140
+00:07:24,927 --> 00:07:27,231
+And then it checks whether it's global
+
+141
+00:07:27,743 --> 00:07:28,767
+If it is global
+
+142
+00:07:29,535 --> 00:07:30,303
+Then
+
+143
+00:07:30,559 --> 00:07:31,071
+It
+
+144
+00:07:31,327 --> 00:07:32,863
+Implements Joomlas
+
+145
+00:07:33,119 --> 00:07:33,887
+Values
+
+146
+00:07:34,143 --> 00:07:37,727
+If it's not Global it implements your components values
+
+147
+00:07:38,495 --> 00:07:39,263
+And
+
+148
+00:07:39,775 --> 00:07:41,567
+That is basically what it will do
+
+149
+00:07:42,335 --> 00:07:44,639
+Now you can read through the code
+
+150
+00:07:44,895 --> 00:07:47,711
+But the most important area really is this area
+
+151
+00:07:48,223 --> 00:07:51,295
+To know what is all the various
+
+152
+00:07:51,551 --> 00:07:54,111
+Options that you have in the signature
+
+153
+00:07:54,623 --> 00:07:55,647
+To send out Mail
+
+154
+00:07:56,415 --> 00:08:00,255
+So it's able to really send out a lot of mail but
+
+155
+00:08:00,511 --> 00:08:01,279
+Nonetheless
+
+156
+00:08:01,535 --> 00:08:04,095
+You're also need to consider
+
+157
+00:08:04,351 --> 00:08:04,863
+You know
+
+158
+00:08:05,119 --> 00:08:07,679
+Your servers own limitations
+
+159
+00:08:07,935 --> 00:08:10,239
+Since we obviously don't want you to spam people
+
+160
+00:08:11,007 --> 00:08:12,031
+We do not
+
+161
+00:08:12,799 --> 00:08:17,407
+Overwrite those values. We are simply using the Joomla default
+
+162
+00:08:17,919 --> 00:08:21,503
+Helper Joomla sorry jmailer
+
+163
+00:08:21,759 --> 00:08:25,855
+And it is been extended from another class
+
+164
+00:08:26,367 --> 00:08:28,927
+And so there are a lot of features and here
+
+165
+00:08:29,439 --> 00:08:31,999
+And if you wanna know more about them
+
+166
+00:08:32,255 --> 00:08:35,327
+you can read up on on obviously the jmailer
+
+167
+00:08:35,583 --> 00:08:36,863
+Class from Joomla
+
+168
+00:08:37,119 --> 00:08:40,447
+As well as read through this code here and see how we implemented
+
+169
+00:08:40,703 --> 00:08:43,519
+These are the dkim values that you would need
+
+170
+00:08:44,031 --> 00:08:45,823
+And in your
+
+171
+00:08:46,079 --> 00:08:47,359
+In your component
+
+172
+00:08:47,615 --> 00:08:51,455
+To be able to use the dkim encryption
+
+173
+00:08:51,967 --> 00:08:55,807
+But you could also read up on this and check out this function here
+
+174
+00:08:56,319 --> 00:08:57,087
+up till there
+
+175
+00:08:57,343 --> 00:08:59,903
+In its way that it's implementing these features
+
+176
+00:09:00,671 --> 00:09:05,279
+It obviously is adding it to the mailer and most of the work is done in the mailer
+
+177
+00:09:05,535 --> 00:09:09,375
+So it's basically adding the data to the mailer and the mailer takes care of the rest
+
+178
+00:09:10,399 --> 00:09:12,703
+Ok and so here it sends it off
+
+179
+00:09:12,959 --> 00:09:14,495
+And if there is an error
+
+180
+00:09:15,519 --> 00:09:18,079
+So let's say for some reason it didn't
+
+181
+00:09:18,847 --> 00:09:20,127
+you know work out well
+
+182
+00:09:20,895 --> 00:09:22,687
+Then it shakes whether
+
+183
+00:09:22,943 --> 00:09:23,711
+Your
+
+184
+00:09:23,967 --> 00:09:24,735
+Component
+
+185
+00:09:26,015 --> 00:09:27,039
+Helper class
+
+186
+00:09:27,551 --> 00:09:30,879
+So your component has a helper class it's just this file here
+
+187
+00:09:31,903 --> 00:09:33,695
+Even has a storemessage
+
+188
+00:09:34,207 --> 00:09:34,719
+Variable
+
+189
+00:09:35,999 --> 00:09:36,767
+or method
+
+190
+00:09:37,535 --> 00:09:39,839
+So if we were to go check this
+
+191
+00:09:42,911 --> 00:09:47,007
+You see that there is the storemessage method
+
+192
+00:09:47,519 --> 00:09:52,895
+In the helper class this is a custom method that I wrote now you can write it anywhere you like
+
+193
+00:09:53,151 --> 00:09:55,711
+But this signature should be the same
+
+194
+00:09:55,967 --> 00:09:56,735
+Ok so
+
+195
+00:09:57,247 --> 00:09:57,759
+here
+
+196
+00:09:58,271 --> 00:10:00,063
+Is the same signature you'll see it
+
+197
+00:10:00,575 --> 00:10:02,879
+So basically this area that
+
+198
+00:10:03,135 --> 00:10:06,207
+And that is dynamically updated to your component
+
+199
+00:10:06,719 --> 00:10:10,559
+So it uses your component name here and your component name there
+
+200
+00:10:10,815 --> 00:10:13,119
+But this store message
+
+201
+00:10:13,631 --> 00:10:14,911
+Is basically
+
+202
+00:10:15,167 --> 00:10:15,935
+Not
+
+203
+00:10:16,191 --> 00:10:22,335
+You cannot change that but it takes to send email the recipient the subject the body to text only in the mode and it's says
+
+204
+00:10:22,591 --> 00:10:23,615
+That it's email
+
+205
+00:10:24,383 --> 00:10:28,223
+So you can have different types so if you look at the the method
+
+206
+00:10:28,479 --> 00:10:30,015
+The type can be anything
+
+207
+00:10:30,271 --> 00:10:36,415
+We are obviously wanting to do different things on different type so if we send an SMS and we didn't
+
+208
+00:10:36,671 --> 00:10:37,183
+Fail
+
+209
+00:10:37,439 --> 00:10:39,743
+You wanna store the message if we did this or that
+
+210
+00:10:39,999 --> 00:10:42,815
+So this this kind of feature
+
+211
+00:10:44,607 --> 00:10:47,679
+Is it only used when something didn't work
+
+212
+00:10:48,191 --> 00:10:49,471
+But also if it worked
+
+213
+00:10:49,983 --> 00:10:51,007
+If it was sent
+
+214
+00:10:51,775 --> 00:10:52,799
+It's gonna store it
+
+215
+00:10:53,311 --> 00:10:56,127
+So it's a way to store the message
+
+216
+00:10:56,383 --> 00:10:57,151
+So that you can
+
+217
+00:10:57,407 --> 00:10:58,687
+Maybe let your user go
+
+218
+00:10:58,943 --> 00:10:59,711
+If they login
+
+219
+00:11:00,223 --> 00:11:02,527
+They can see messages sent to them and this kind of stuff
+
+220
+00:11:03,039 --> 00:11:07,647
+So this is what the store message does and as you see it's whole huge custom
+
+221
+00:11:09,439 --> 00:11:10,975
+Method that I wrote
+
+222
+00:11:11,231 --> 00:11:13,535
+And it does different things for different
+
+223
+00:11:13,791 --> 00:11:19,935
+You can update it in change it pause the video copy it down don't really matter
+
+224
+00:11:20,191 --> 00:11:26,335
+Just if you realize this is actually something you write up yourself you just need to make sure that that part is the same
+
+225
+00:11:26,591 --> 00:11:28,383
+The rest is up to you
+
+226
+00:11:28,639 --> 00:11:34,783
+Now you deal with it ok so that is really implementing the learning manager emailer
+
+227
+00:11:35,039 --> 00:11:37,855
+In your component
+
+228
+00:11:39,135 --> 00:11:41,695
+Maybe I should show you where I implemented at least
+
+229
+00:11:41,951 --> 00:11:42,719
+In one area ok let me do that
+
+230
+00:11:44,767 --> 00:11:50,911
+Ok so I have this component called job tracking system if I open it up
+
+231
+00:11:51,167 --> 00:11:57,311
+You'll see that it actually has that function
+
+232
+00:11:57,567 --> 00:12:03,711
+Adding the helper email it's got it selected you see there add helper
+
+233
+00:12:03,967 --> 00:12:09,087
+Set it to on
+
+234
+00:12:10,111 --> 00:12:14,975
+Then the view in which we are using the email method is the job or the view
+
+235
+00:12:16,255 --> 00:12:18,303
+Basically we want to email the client
+
+236
+00:12:19,839 --> 00:12:21,119
+I did job order
+
+237
+00:12:21,375 --> 00:12:22,911
+When when it's created
+
+238
+00:12:23,423 --> 00:12:26,751
+So let me show you how I implemented it there
+
+239
+00:12:28,287 --> 00:12:31,103
+So here is the job order
+
+240
+00:12:32,639 --> 00:12:33,407
+And
+
+241
+00:12:33,919 --> 00:12:35,199
+I would basically then
+
+242
+00:12:35,711 --> 00:12:36,479
+Click on
+
+243
+00:12:36,991 --> 00:12:40,831
+This area here email now I can update that
+
+244
+00:12:41,087 --> 00:12:42,623
+to whatever email I like
+
+245
+00:12:43,135 --> 00:12:43,903
+Testing
+
+246
+00:12:44,671 --> 00:12:45,183
+@
+
+247
+00:12:45,951 --> 00:12:47,999
+vdm.io or something
+
+248
+00:12:49,791 --> 00:12:50,815
+Just send it in to
+
+249
+00:12:51,071 --> 00:12:51,583
+Nothing
+
+250
+00:12:52,863 --> 00:12:53,375
+And
+
+251
+00:12:53,631 --> 00:12:55,679
+Then once the email has been sent
+
+252
+00:12:56,447 --> 00:12:57,727
+It actually let's me know
+
+253
+00:12:59,007 --> 00:13:01,823
+See there in the it says email was sent successfully
+
+254
+00:13:02,847 --> 00:13:03,359
+So
+
+255
+00:13:04,127 --> 00:13:08,479
+That's basically what the emailer does it just this button it sends this
+
+256
+00:13:08,735 --> 00:13:09,247
+Document
+
+257
+00:13:11,039 --> 00:13:11,807
+To my
+
+258
+00:13:12,831 --> 00:13:13,599
+Client
+
+259
+00:13:14,367 --> 00:13:17,439
+And also if I want to send it to my store
+
+260
+00:13:17,695 --> 00:13:19,231
+The people that does the job
+
+261
+00:13:19,743 --> 00:13:21,535
+I could also do that here
+
+262
+00:13:22,047 --> 00:13:24,095
+I'm not gonna explain to you
+
+263
+00:13:24,607 --> 00:13:29,983
+The reality of taking this content adding it to the email and sending it
+
+264
+00:13:30,239 --> 00:13:36,383
+That I would suspect you need to know and you need to learn or study to do that yourself
+
+265
+00:13:36,639 --> 00:13:40,735
+I'm I'm simply explaining to you how to use the email helper class
+
+266
+00:13:40,991 --> 00:13:45,087
+So we will go to the code and I'll show you how I do it and
+
+267
+00:13:45,343 --> 00:13:45,855
+Mostly
+
+268
+00:13:46,367 --> 00:13:49,951
+Maybe I'll give you some pointers but I won't go into detail
+
+269
+00:13:50,207 --> 00:13:51,743
+About how that is done
+
+270
+00:13:52,767 --> 00:13:55,327
+Ok so let's go to the to the code
+
+271
+00:13:56,863 --> 00:13:58,655
+So here we are in the job order
+
+272
+00:13:59,167 --> 00:14:02,495
+So first thing here is obviously some JavaScript
+
+273
+00:14:04,543 --> 00:14:07,615
+So there's the send email function
+
+274
+00:14:07,871 --> 00:14:10,175
+and Gets a set of values
+
+275
+00:14:10,431 --> 00:14:14,783
+And then it basically gives it over to the send
+
+276
+00:14:15,551 --> 00:14:19,391
+Email server function which sends it as a J object
+
+277
+00:14:20,415 --> 00:14:23,743
+Sorry  a json request to the server
+
+278
+00:14:24,255 --> 00:14:25,535
+The send
+
+279
+00:14:26,303 --> 00:14:27,839
+Email is the
+
+280
+00:14:29,119 --> 00:14:29,631
+Task
+
+281
+00:14:30,399 --> 00:14:33,471
+And when it gets a response that's when you get the notification
+
+282
+00:14:34,239 --> 00:14:36,543
+Ok so that's Simply the JavaScript of it
+
+283
+00:14:37,055 --> 00:14:39,359
+So now if we go to PHP
+
+284
+00:14:40,383 --> 00:14:41,151
+Previous
+
+285
+00:14:41,407 --> 00:14:44,991
+Tutorials we explain how to use the Ajax class
+
+286
+00:14:45,247 --> 00:14:47,039
+I'm gonna just touched on it briefly
+
+287
+00:14:47,551 --> 00:14:49,599
+You basically have your input here
+
+288
+00:14:49,855 --> 00:14:52,159
+This is where you put set up your controller
+
+289
+00:14:52,671 --> 00:14:54,207
+Let me show you that
+
+290
+00:14:55,487 --> 00:14:57,279
+So you'll see in your controller
+
+291
+00:14:57,535 --> 00:14:59,583
+There is this send email
+
+292
+00:14:59,839 --> 00:15:03,167
+Class that's what basically was defined
+
+293
+00:15:03,679 --> 00:15:04,959
+And this field here
+
+294
+00:15:06,751 --> 00:15:08,031
+And you see that there is
+
+295
+00:15:08,287 --> 00:15:10,079
+Basically three variables
+
+296
+00:15:11,103 --> 00:15:11,871
+And they are
+
+297
+00:15:12,639 --> 00:15:16,991
+Should be filtered in this way and they are fast over to these methods
+
+298
+00:15:17,247 --> 00:15:19,039
+And you should be logged in user
+
+299
+00:15:19,295 --> 00:15:25,439
+So if you look at the code again it basically this is the task down here it triggers the task
+
+300
+00:15:25,695 --> 00:15:31,839
+It checks for those values and then passes it over to
+
+301
+00:15:32,095 --> 00:15:33,887
+This method which is in the
+
+302
+00:15:34,143 --> 00:15:36,191
+Model is a model
+
+303
+00:15:36,703 --> 00:15:37,727
+So we go to models
+
+304
+00:15:38,495 --> 00:15:39,263
+Ajax
+
+305
+00:15:39,775 --> 00:15:44,383
+So here is the the model let's just scroll down to the send email
+
+306
+00:15:44,639 --> 00:15:47,199
+So here is the send email and this again
+
+307
+00:15:47,455 --> 00:15:48,735
+Is a custom
+
+308
+00:15:49,247 --> 00:15:49,759
+Script
+
+309
+00:15:50,527 --> 00:15:52,319
+So if I was to go back here
+
+310
+00:15:52,575 --> 00:15:53,599
+I Close this
+
+311
+00:15:55,391 --> 00:15:57,183
+You'd see there's the in this
+
+312
+00:15:57,439 --> 00:16:03,583
+Ajax method is a lot I mean look at that you can see that scroll down way down is a lot of other custom methods here
+
+313
+00:16:03,839 --> 00:16:06,911
+But this is another custom method I've written
+
+314
+00:16:07,423 --> 00:16:10,239
+Call send mail gets the mail the HTML to type
+
+315
+00:16:11,007 --> 00:16:12,799
+It it does the necessary
+
+316
+00:16:13,055 --> 00:16:14,335
+Cleansing and whatever
+
+317
+00:16:14,847 --> 00:16:15,615
+And then
+
+318
+00:16:16,127 --> 00:16:16,639
+It
+
+319
+00:16:17,407 --> 00:16:18,175
+Basically
+
+320
+00:16:19,455 --> 00:16:20,223
+Over
+
+321
+00:16:21,759 --> 00:16:22,271
+Here
+
+322
+00:16:24,319 --> 00:16:26,879
+We're calling the email helper
+
+323
+00:16:27,903 --> 00:16:29,183
+We using the send method
+
+324
+00:16:29,695 --> 00:16:32,255
+we Passing the valuables and we
+
+325
+00:16:32,511 --> 00:16:34,303
+Set the result in here
+
+326
+00:16:35,327 --> 00:16:37,887
+And if the results is obviously true
+
+327
+00:16:38,399 --> 00:16:43,775
+We will let the user know otherwise we give him the error
+
+328
+00:16:44,799 --> 00:16:45,567
+ok so that
+
+329
+00:16:45,823 --> 00:16:46,847
+That is the
+
+330
+00:16:47,359 --> 00:16:48,383
+The short end of it
+
+331
+00:16:49,151 --> 00:16:54,783
+I'm also using this email body to help me build the the email because I want to
+
+332
+00:16:55,039 --> 00:16:59,391
+Make sure that it's got all the necessary HTML and stuff so you can
+
+333
+00:16:59,903 --> 00:17:02,719
+Pause this video and type that out if you like
+
+334
+00:17:04,511 --> 00:17:10,399
+But this is the email body that I usually use and you can see you passing the HTML on the subject to it
+
+335
+00:17:10,911 --> 00:17:13,983
+And it simply adds the the subject to the
+
+336
+00:17:14,239 --> 00:17:15,007
+Email
+
+337
+00:17:15,263 --> 00:17:17,567
+The necessary places as well as the body
+
+338
+00:17:18,079 --> 00:17:19,359
+In the necessary place
+
+339
+00:17:19,871 --> 00:17:20,639
+Right there
+
+340
+00:17:21,407 --> 00:17:24,735
+So that it gets send in a way that's more appropriate
+
+341
+00:17:25,247 --> 00:17:26,015
+And then
+
+342
+00:17:26,783 --> 00:17:28,575
+That's all happening right here
+
+343
+00:17:29,599 --> 00:17:32,671
+Ok and that is what I'm passing in here
+
+344
+00:17:32,927 --> 00:17:39,071
+So a custom method which gets the data from
+
+345
+00:17:39,583 --> 00:17:41,119
+the Ajax
+
+346
+00:17:41,375 --> 00:17:42,399
+And then sends it off
+
+347
+00:17:43,423 --> 00:17:49,055
+So that's a quick tutorial on how to implement sending emails through your component
+
+348
+00:17:49,567 --> 00:17:51,871
+Using the email helper class
+
+349
+00:17:52,639 --> 00:17:54,687
+Obviously the email helper class
+
+350
+00:17:54,943 --> 00:17:55,967
+Is
+
+351
+00:17:57,503 --> 00:18:01,599
+Available on GitHub in in the component Builder
+
+352
+00:18:02,111 --> 00:18:06,719
+And if you feel that our implementation lacks some professional
+
+353
+00:18:07,487 --> 00:18:13,631
+Help then please do make a commit to Quest or send me an email
+
+354
+00:18:14,143 --> 00:18:17,471
+And we'll gladly update an improved this class
+
+355
+00:18:19,263 --> 00:18:20,799
+Although I think we are followed
+
+356
+00:18:21,311 --> 00:18:25,151
+All the necessary standard and requirements to make it useful to everyone
+
+357
+00:18:26,431 --> 00:18:27,711
+Ok thanks for watching
+
+358
+00:18:27,967 --> 00:18:28,991
+Until next time
+

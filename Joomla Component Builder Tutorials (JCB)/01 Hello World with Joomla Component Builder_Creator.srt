@@ -1,0 +1,2820 @@
+1
+00:00:00,768 --> 00:00:05,376
+Hi welcome to Joomla component Builder
+
+2
+00:00:05,632 --> 00:00:08,704
+Hello world tutorial
+
+3
+00:00:09,472 --> 00:00:12,032
+It's been asked that we give you
+
+4
+00:00:12,800 --> 00:00:16,128
+Some guidelines or quick instruction
+
+5
+00:00:16,896 --> 00:00:20,992
+On how to go from Zero to Hero
+
+6
+00:00:22,272 --> 00:00:26,112
+Obviously there is a hello world and then there is a hello world
+
+7
+00:00:27,904 --> 00:00:29,952
+Let me explain
+
+8
+00:00:30,720 --> 00:00:33,024
+When we go to Joomla's
+
+9
+00:00:34,304 --> 00:00:38,912
+Repository on GitHub they have a Hello world component here
+
+10
+00:00:39,168 --> 00:00:40,960
+And
+
+11
+00:00:41,216 --> 00:00:46,592
+It has a few files obviously it's been done quite some time ago
+
+12
+00:00:49,920 --> 00:00:50,688
+And
+
+13
+00:00:51,200 --> 00:00:53,504
+Even if you open these files
+
+14
+00:00:53,760 --> 00:00:56,576
+They really not populated with data
+
+15
+00:00:57,856 --> 00:01:01,440
+And So all it really does is it shows you
+
+16
+00:01:01,952 --> 00:01:08,096
+The very bare essentials of what's required to make an component work in Joomla
+
+17
+00:01:10,144 --> 00:01:12,192
+Now we obviously gonna do
+
+18
+00:01:12,448 --> 00:01:16,544
+Way much more than this I mean the
+
+19
+00:01:16,800 --> 00:01:18,080
+The reality is
+
+20
+00:01:18,336 --> 00:01:21,408
+This code here is hardly non-existent
+
+21
+00:01:22,688 --> 00:01:27,040
+When we are done we'll have an application with quite a lot of
+
+22
+00:01:27,296 --> 00:01:28,320
+Lines written
+
+23
+00:01:28,576 --> 00:01:34,720
+And quite a lot of structures added which it goes way beyond just a
+
+24
+00:01:35,232 --> 00:01:36,768
+Bare bone framework
+
+25
+00:01:38,048 --> 00:01:42,144
+So keep that in mind we're doing a Hello world component
+
+26
+00:01:42,400 --> 00:01:44,448
+But when we've done
+
+27
+00:01:44,704 --> 00:01:45,984
+It will actually be
+
+28
+00:01:46,240 --> 00:01:50,592
+Much more than just a wire frame component
+
+29
+00:01:52,128 --> 00:01:55,200
+So you can go over to GitHub
+
+30
+00:01:55,456 --> 00:01:58,784
+Forward slash VDM - IO
+
+31
+00:01:59,296 --> 00:02:03,904
+Fordward slash Joomla - component - Builder
+
+32
+00:02:04,160 --> 00:02:07,744
+And download the latest release
+
+33
+00:02:08,000 --> 00:02:09,792
+Just go to releases
+
+34
+00:02:10,048 --> 00:02:11,072
+And
+
+35
+00:02:12,352 --> 00:02:14,144
+Then download
+
+36
+00:02:14,912 --> 00:02:16,192
+Or copy the link
+
+37
+00:02:16,448 --> 00:02:18,496
+Do this JCB file
+
+38
+00:02:19,520 --> 00:02:22,080
+Then in a blank Joomla website
+
+39
+00:02:22,336 --> 00:02:24,384
+I'm gonna install this
+
+40
+00:02:25,408 --> 00:02:26,176
+File
+
+41
+00:02:26,944 --> 00:02:27,968
+And
+
+42
+00:02:28,224 --> 00:02:31,040
+Build This hello world component
+
+43
+00:02:33,088 --> 00:02:34,112
+There we go
+
+44
+00:02:34,368 --> 00:02:36,160
+We have the component installed
+
+45
+00:02:36,416 --> 00:02:38,208
+We can now open it
+
+46
+00:02:38,720 --> 00:02:40,000
+Component Builder
+
+47
+00:02:41,792 --> 00:02:43,328
+Is ready to start
+
+48
+00:02:45,120 --> 00:02:48,448
+First thing we'll do is we'll create a field
+
+49
+00:02:49,216 --> 00:02:55,360
+There are Fields But just that you can see just We're creating a simple basic custom text field
+
+50
+00:02:55,616 --> 00:02:56,128
+Field
+
+51
+00:02:57,408 --> 00:02:58,944
+And we're just gonna call it
+
+52
+00:02:59,456 --> 00:03:00,224
+greeting
+
+53
+00:03:03,808 --> 00:03:05,344
+We're gonna give it a name
+
+54
+00:03:06,880 --> 00:03:07,648
+Greeting
+
+55
+00:03:07,904 --> 00:03:09,440
+Now as you
+
+56
+00:03:09,696 --> 00:03:10,720
+will see is
+
+57
+00:03:10,976 --> 00:03:16,096
+It already had a lot of demo material here
+
+58
+00:03:16,352 --> 00:03:20,704
+I'm not gonna change any of that I'm just gonna remove a few things which
+
+59
+00:03:21,216 --> 00:03:23,520
+I know it's necessary
+
+60
+00:03:26,336 --> 00:03:27,360
+And actually
+
+61
+00:03:28,384 --> 00:03:30,944
+The field will work even though
+
+62
+00:03:31,456 --> 00:03:34,272
+These lines are removed
+
+63
+00:03:36,832 --> 00:03:37,600
+So
+
+64
+00:03:37,856 --> 00:03:39,904
+I think we'll do that and
+
+65
+00:03:40,672 --> 00:03:42,720
+Well here say
+
+66
+00:03:46,304 --> 00:03:48,096
+greeting
+
+67
+00:04:06,016 --> 00:04:06,528
+Ok
+
+68
+00:04:06,784 --> 00:04:10,368
+I think that should be enough we gonna change this to
+
+69
+00:04:10,880 --> 00:04:11,904
+Varchar
+
+70
+00:04:12,416 --> 00:04:14,976
+I think that's also good enough
+
+71
+00:04:15,488 --> 00:04:18,303
+And basically save and close
+
+72
+00:04:19,839 --> 00:04:21,631
+So there is our new field
+
+73
+00:04:21,887 --> 00:04:23,679
+Next thing to do
+
+74
+00:04:23,935 --> 00:04:26,495
+Is great in admin view
+
+75
+00:04:31,359 --> 00:04:34,175
+The admin view is really what links
+
+76
+00:04:34,431 --> 00:04:36,223
+Your Fields to the Database
+
+77
+00:04:37,247 --> 00:04:40,063
+So we gonna call it greeting
+
+78
+00:04:40,319 --> 00:04:43,903
+For single record and greetings for
+
+79
+00:04:44,415 --> 00:04:47,231
+a list of records and
+
+80
+00:04:48,255 --> 00:04:49,279
+Greetings
+
+81
+00:04:49,535 --> 00:04:51,327
+Just for a sister name
+
+82
+00:04:57,471 --> 00:05:00,287
+So that we can identify this
+
+83
+00:05:00,543 --> 00:05:05,151
+Across the system and I'm gonna add their greetings
+
+84
+00:05:06,175 --> 00:05:10,527
+We gonna add a few generic icons here
+
+85
+00:05:11,039 --> 00:05:14,111
+Then we're gonna link that field we made
+
+86
+00:05:17,439 --> 00:05:19,487
+You want it obviously to show
+
+87
+00:05:19,999 --> 00:05:25,119
+to be the first one act as a title be sort of all searchable
+
+88
+00:05:25,887 --> 00:05:28,703
+And be a link in the first tab
+
+89
+00:05:29,983 --> 00:05:32,799
+And first in that tab
+
+90
+00:05:33,567 --> 00:05:35,359
+And give it permissions
+
+91
+00:05:35,615 --> 00:05:36,639
+And save
+
+92
+00:05:38,175 --> 00:05:39,711
+The rest of the
+
+93
+00:05:39,967 --> 00:05:42,783
+The structure could be left as is
+
+94
+00:05:43,039 --> 00:05:44,063
+And actually
+
+95
+00:05:44,319 --> 00:05:46,623
+We will have a working component
+
+96
+00:05:46,879 --> 00:05:49,183
+With this as an admin View
+
+97
+00:05:49,951 --> 00:05:51,231
+So save and close
+
+98
+00:05:54,815 --> 00:05:56,863
+Now we need to create the component
+
+99
+00:06:00,191 --> 00:06:01,727
+So I clicked on new
+
+100
+00:06:02,239 --> 00:06:03,775
+and loads a
+
+101
+00:06:04,031 --> 00:06:06,079
+Add new Joomla component
+
+102
+00:06:06,591 --> 00:06:11,199
+I'm gonna call it Hello world
+
+103
+00:06:23,487 --> 00:06:25,023
+For the most part I'm just
+
+104
+00:06:25,279 --> 00:06:26,303
+Adding
+
+105
+00:06:26,559 --> 00:06:28,607
+It's some dummy data here
+
+106
+00:06:29,887 --> 00:06:31,423
+Can I select an icon
+
+107
+00:06:32,447 --> 00:06:33,727
+make the image which
+
+108
+00:06:33,983 --> 00:06:40,127
+Will be shown after installation of the component as well as in the back of the component
+
+109
+00:06:42,175 --> 00:06:43,711
+Ok so we have that set
+
+110
+00:06:45,247 --> 00:06:47,551
+The rest of the features
+
+111
+00:06:48,319 --> 00:06:52,415
+Besides in the settings we need to link the admin view for now
+
+112
+00:06:54,207 --> 00:06:55,999
+so just select greetings
+
+113
+00:06:56,511 --> 00:07:02,655
+One of the main menu want to add yes submenu autocheck in history
+
+114
+00:07:03,679 --> 00:07:05,215
+Has metadata
+
+115
+00:07:05,471 --> 00:07:07,263
+has access
+
+116
+00:07:07,519 --> 00:07:09,311
+allow Import export
+
+117
+00:07:09,567 --> 00:07:10,079
+And
+
+118
+00:07:10,335 --> 00:07:11,615
+This is important
+
+119
+00:07:12,127 --> 00:07:18,271
+Add a create site view so on the front end it will already create for us
+
+120
+00:07:18,527 --> 00:07:22,623
+The editing view it will not create a listview
+
+121
+00:07:23,135 --> 00:07:25,439
+Only to edit and create
+
+122
+00:07:25,951 --> 00:07:30,815
+Greetings on the front and we obviously want this to be the first
+
+123
+00:07:31,839 --> 00:07:32,351
+So
+
+124
+00:07:32,607 --> 00:07:35,935
+There we've linked our admin view and we click save
+
+125
+00:07:36,703 --> 00:07:37,727
+Save and close
+
+126
+00:07:39,007 --> 00:07:42,079
+Now we actually have our component set
+
+127
+00:07:42,335 --> 00:07:46,175
+Let's compile it there is obviously
+
+128
+00:07:46,431 --> 00:07:49,503
+Not a very workable front-end yet
+
+129
+00:07:49,759 --> 00:07:51,039
+So
+
+130
+00:07:51,295 --> 00:07:55,135
+I'm just gonna compile this and install it onto this Joomla install
+
+131
+00:07:56,159 --> 00:07:58,207
+We don't need that
+
+132
+00:07:58,719 --> 00:07:59,999
+Just select
+
+133
+00:08:00,511 --> 00:08:01,535
+Hello world
+
+134
+00:08:02,559 --> 00:08:04,095
+Also don't need that
+
+135
+00:08:04,863 --> 00:08:06,143
+And then compile
+
+136
+00:08:08,191 --> 00:08:13,055
+So just like that we have 8000 lines written
+
+137
+00:08:13,311 --> 00:08:16,639
+Spelled 160 pages A4 book
+
+138
+00:08:17,663 --> 00:08:18,175
+So
+
+139
+00:08:18,687 --> 00:08:24,831
+That's way more than the hello world component we just looked at
+
+140
+00:08:26,879 --> 00:08:28,671
+Now if we open the back end
+
+141
+00:08:29,951 --> 00:08:33,791
+Oh we haven't installed it. You could install it via the
+
+142
+00:08:34,303 --> 00:08:37,375
+Normal installer in fact let's
+
+143
+00:08:37,631 --> 00:08:40,703
+Let's see if we can get that going
+
+144
+00:08:41,215 --> 00:08:42,239
+So
+
+145
+00:08:42,495 --> 00:08:44,799
+I've pasted the URL here
+
+146
+00:08:45,311 --> 00:08:48,383
+That we find on this page here
+
+147
+00:08:49,151 --> 00:08:50,175
+And we'll click
+
+148
+00:08:51,199 --> 00:08:52,479
+Check and install
+
+149
+00:08:55,295 --> 00:08:58,623
+Ok so we have the Hello world component installed
+
+150
+00:08:59,135 --> 00:09:01,951
+We can open here and go to Hello world
+
+151
+00:09:02,207 --> 00:09:03,487
+And there's the component
+
+152
+00:09:04,767 --> 00:09:07,327
+We can go to the list and
+
+153
+00:09:07,583 --> 00:09:09,887
+This is where a list of greetings will show
+
+154
+00:09:10,143 --> 00:09:11,167
+Click new
+
+155
+00:09:11,935 --> 00:09:12,703
+And we can
+
+156
+00:09:12,959 --> 00:09:15,775
+add some text say hi there
+
+157
+00:09:16,799 --> 00:09:18,335
+James
+
+158
+00:09:19,103 --> 00:09:20,383
+Save and Close
+
+159
+00:09:21,151 --> 00:09:22,687
+And there is our first greeting
+
+160
+00:09:23,711 --> 00:09:25,247
+We can open it again
+
+161
+00:09:25,759 --> 00:09:31,391
+And there it is it has a publishing structure that has permissions
+
+162
+00:09:31,903 --> 00:09:33,439
+It has version control
+
+163
+00:09:34,207 --> 00:09:35,487
+So if we change this
+
+164
+00:09:37,279 --> 00:09:38,559
+To hi there Michael
+
+165
+00:09:39,071 --> 00:09:40,351
+and save and close
+
+166
+00:09:40,863 --> 00:09:43,423
+It will actually update we can open it
+
+167
+00:09:43,935 --> 00:09:49,823
+And if you go versions you see that all of that is working you can open the previous version
+
+168
+00:09:50,335 --> 00:09:53,151
+You can see it was James you can see who changed it
+
+169
+00:09:54,175 --> 00:09:57,247
+All of that was done in those few Clicks
+
+170
+00:09:57,503 --> 00:10:03,135
+I think that's worth noticing and in just a few Clicks we have a whole workable
+
+171
+00:10:03,391 --> 00:10:04,415
+Component
+
+172
+00:10:04,671 --> 00:10:08,511
+Which is installed now let's go look at the code just quickly
+
+173
+00:10:09,535 --> 00:10:13,631
+So here's the installer script of the Hello component
+
+174
+00:10:14,399 --> 00:10:15,167
+And
+
+175
+00:10:15,935 --> 00:10:16,959
+It actually
+
+176
+00:10:17,215 --> 00:10:22,079
+Adds the whole component into the content types and
+
+177
+00:10:22,335 --> 00:10:24,127
+Into all the relevant areas
+
+178
+00:10:25,151 --> 00:10:29,247
+It does a check to see that we're at least at Joomla 3.6
+
+179
+00:10:29,503 --> 00:10:30,527
+And
+
+180
+00:10:31,807 --> 00:10:32,831
+It also
+
+181
+00:10:33,343 --> 00:10:34,623
+Has created
+
+182
+00:10:35,135 --> 00:10:36,415
+The greeting table
+
+183
+00:10:36,671 --> 00:10:37,695
+Modules
+
+184
+00:10:39,231 --> 00:10:42,559
+It has created helper structures
+
+185
+00:10:45,119 --> 00:10:46,143
+There is a
+
+186
+00:10:47,423 --> 00:10:50,495
+Helper class been setup
+
+187
+00:10:51,263 --> 00:10:56,895
+Which has many features of functions methods
+
+188
+00:10:57,151 --> 00:11:00,991
+Wish you can come and browse through the helper class and
+
+189
+00:11:01,247 --> 00:11:01,759
+you know
+
+190
+00:11:02,015 --> 00:11:03,807
+If you know PHP you'll
+
+191
+00:11:04,063 --> 00:11:09,951
+See that this is a very helpful method just grabbing one value from the database and
+
+192
+00:11:10,463 --> 00:11:16,607
+So there are many functions in here which you can now use around your component
+
+193
+00:11:17,119 --> 00:11:18,911
+by simply calling the helper class
+
+194
+00:11:19,679 --> 00:11:22,495
+Ok so that's just quickly looking at the fact that
+
+195
+00:11:22,751 --> 00:11:27,103
+This all of this was built I remember when we looked at
+
+196
+00:11:27,359 --> 00:11:28,639
+the other
+
+197
+00:11:28,895 --> 00:11:30,431
+Hello world component
+
+198
+00:11:31,455 --> 00:11:34,271
+This is really all that there is in the app and area
+
+199
+00:11:34,527 --> 00:11:38,879
+Is a sequel folder with a few sequel files
+
+200
+00:11:39,135 --> 00:11:44,511
+1 php file and that's about it
+
+201
+00:11:44,767 --> 00:11:49,119
+Now I give you yes this is a wireframe but
+
+202
+00:11:50,143 --> 00:11:52,191
+JCB has built
+
+203
+00:11:52,447 --> 00:11:52,959
+a
+
+204
+00:11:53,471 --> 00:11:54,239
+Very
+
+205
+00:11:54,495 --> 00:11:55,775
+More
+
+206
+00:11:56,031 --> 00:11:57,823
+Populated
+
+207
+00:11:58,335 --> 00:12:04,479
+Hello world in a very short time and you can look through this back end
+
+208
+00:12:04,735 --> 00:12:10,879
+Folder and see the structure and exactly how you know you need to have the components structure
+
+209
+00:12:11,135 --> 00:12:11,647
+done
+
+210
+00:12:11,903 --> 00:12:13,439
+Ok so now
+
+211
+00:12:13,695 --> 00:12:19,839
+For the next part of the tutorial we will focus on adding a front end to this component
+
+212
+00:12:20,095 --> 00:12:23,167
+And you must remember that
+
+213
+00:12:23,423 --> 00:12:25,215
+We left the front end
+
+214
+00:12:25,471 --> 00:12:27,775
+Open ended really
+
+215
+00:12:28,031 --> 00:12:31,615
+Because we want to allow developers to
+
+216
+00:12:31,871 --> 00:12:36,735
+Actually be able to express themselves in unique ways
+
+217
+00:12:36,991 --> 00:12:41,599
+And not have a cookie cutter recipe you know that just
+
+218
+00:12:41,855 --> 00:12:43,391
+Gets used over and over
+
+219
+00:12:43,647 --> 00:12:49,791
+But that there could be such diversity and difference between components that are
+
+220
+00:12:50,047 --> 00:12:56,191
+Built with JCB that only the back end really look similar but the front end can always look
+
+221
+00:12:56,447 --> 00:13:00,799
+Completely different from anything else so to avoid you know
+
+222
+00:13:01,055 --> 00:13:07,199
+It always looking the same and that means a lot of custom coding is needed for the front end
+
+223
+00:13:07,711 --> 00:13:13,855
+And you need to know quite a bit of PHP and even how Joomla works to make this
+
+224
+00:13:14,111 --> 00:13:16,159
+work so I'm just gonna give you
+
+225
+00:13:16,415 --> 00:13:22,559
+The quickest shortest path to getting a front end which firstly can display
+
+226
+00:13:22,815 --> 00:13:26,143
+the items and secondly can
+
+227
+00:13:26,655 --> 00:13:27,679
+Edit them
+
+228
+00:13:27,935 --> 00:13:29,471
+So
+
+229
+00:13:29,727 --> 00:13:30,751
+Let's get started
+
+230
+00:13:31,263 --> 00:13:35,615
+First thing to build when we are setting up the front end
+
+231
+00:13:35,871 --> 00:13:37,919
+Would be a dynamic Git
+
+232
+00:13:38,943 --> 00:13:40,735
+Dynamic Git is
+
+233
+00:13:42,783 --> 00:13:44,063
+JCB's way
+
+234
+00:13:44,319 --> 00:13:46,111
+Of giving you
+
+235
+00:13:46,367 --> 00:13:47,903
+An easy way to
+
+236
+00:13:48,159 --> 00:13:52,767
+Grab various tables in combined datasets
+
+237
+00:13:53,023 --> 00:13:55,839
+And deliver them to the front end of any
+
+238
+00:13:56,607 --> 00:13:58,143
+Site View
+
+239
+00:13:58,399 --> 00:14:01,215
+You can reuse them
+
+240
+00:14:01,727 --> 00:14:04,287
+You can even add multiple ones of them
+
+241
+00:14:04,543 --> 00:14:10,687
+I'm not gonna go into those details I'm just gonna build a very simple one so let's get
+
+242
+00:14:10,943 --> 00:14:12,223
+Started with that first
+
+243
+00:14:15,295 --> 00:14:19,391
+I'm going to call it greeting list and I'm gonna make sure this is a list query
+
+244
+00:14:20,415 --> 00:14:21,951
+And I'm gonna
+
+245
+00:14:22,463 --> 00:14:23,999
+Link it to a
+
+246
+00:14:24,255 --> 00:14:25,279
+Back end view
+
+247
+00:14:26,303 --> 00:14:29,887
+Greetings I'm just gonna have it grab all the data
+
+248
+00:14:30,143 --> 00:14:32,447
+I'm going to say no I don't want  pignation
+
+249
+00:14:33,215 --> 00:14:35,519
+And I'm gonna just have one
+
+250
+00:14:36,287 --> 00:14:38,079
+Where filter
+
+251
+00:14:38,847 --> 00:14:39,871
+Basically
+
+252
+00:14:40,127 --> 00:14:41,919
+Gonna take published here
+
+253
+00:14:42,943 --> 00:14:43,711
+Copy that
+
+254
+00:14:44,735 --> 00:14:47,039
+And put it in here and say
+
+255
+00:14:47,295 --> 00:14:48,319
+When published
+
+256
+00:14:48,575 --> 00:14:49,599
+Equals 1
+
+257
+00:14:49,855 --> 00:14:53,951
+Just grab published items and nothing else
+
+258
+00:14:54,207 --> 00:14:55,999
+And there we go
+
+259
+00:14:56,255 --> 00:14:57,023
+We grabbing
+
+260
+00:14:57,279 --> 00:14:59,839
+All the data from this one table
+
+261
+00:15:00,095 --> 00:15:04,703
+And we are putting it on the front just filtering it with this where
+
+262
+00:15:05,983 --> 00:15:09,311
+Option now like I said you can join other tables
+
+263
+00:15:09,567 --> 00:15:12,127
+On relation with this data
+
+264
+00:15:13,151 --> 00:15:14,943
+But I'm not gonna go into depth
+
+265
+00:15:15,199 --> 00:15:16,735
+Just quickly and brief
+
+266
+00:15:16,991 --> 00:15:17,503
+Here we go
+
+267
+00:15:18,015 --> 00:15:19,295
+Greeting list is done
+
+268
+00:15:21,599 --> 00:15:23,135
+So there's our greeting list
+
+269
+00:15:24,159 --> 00:15:25,951
+Now we want to have
+
+270
+00:15:26,207 --> 00:15:26,975
+Another
+
+271
+00:15:27,231 --> 00:15:30,303
+Dynamic Git just to view One greeting
+
+272
+00:15:30,815 --> 00:15:32,607
+So let's create that
+
+273
+00:15:38,239 --> 00:15:41,567
+I'm gonna call it greeting leave it as a Git item
+
+274
+00:15:42,079 --> 00:15:42,847
+Again
+
+275
+00:15:43,103 --> 00:15:44,639
+use a back end View
+
+276
+00:15:45,919 --> 00:15:47,711
+And then select greeting
+
+277
+00:15:48,479 --> 00:15:50,783
+And this time I'm gonna use filter
+
+278
+00:15:51,807 --> 00:15:55,391
+And just add here ID and
+
+279
+00:15:56,159 --> 00:15:57,951
+A dot i d
+
+280
+00:15:59,487 --> 00:16:01,279
+So that should do it save
+
+281
+00:16:02,303 --> 00:16:04,351
+And save and close
+
+282
+00:16:05,119 --> 00:16:08,191
+So now we have our two Dynamic Gits in place
+
+283
+00:16:08,447 --> 00:16:11,263
+Second step Side views
+
+284
+00:16:12,031 --> 00:16:18,175
+So we'll create firstly a site view for the lists of items
+
+285
+00:16:18,431 --> 00:16:19,711
+We'll select
+
+286
+00:16:19,967 --> 00:16:23,551
+The get query for the list
+
+287
+00:16:24,319 --> 00:16:30,463
+If we wanna see how it possibly would look I mean the PHP we have a
+
+288
+00:16:30,719 --> 00:16:31,743
+snippet
+
+289
+00:16:31,999 --> 00:16:33,535
+You can select the same
+
+290
+00:16:34,815 --> 00:16:40,703
+Option and it'll give you a suggestive idea of how the PHP may look
+
+291
+00:16:40,959 --> 00:16:42,239
+This May differ
+
+292
+00:16:43,007 --> 00:16:45,567
+Depending on how you set up your
+
+293
+00:16:45,823 --> 00:16:47,359
+Dynamic get
+
+294
+00:16:47,615 --> 00:16:53,759
+But in reality most of the time it is correct and you can simply copy paste some of the
+
+295
+00:16:54,015 --> 00:16:56,063
+Snippets write into your code here
+
+296
+00:16:57,087 --> 00:16:57,599
+And
+
+297
+00:16:57,855 --> 00:17:02,975
+Immediately start using it so I'm just gonna
+
+298
+00:17:03,487 --> 00:17:04,255
+Add a little
+
+299
+00:17:05,279 --> 00:17:06,559
+unordered list here
+
+300
+00:17:07,327 --> 00:17:09,375
+So we will have a list item basically
+
+301
+00:17:10,143 --> 00:17:12,191
+And we'll just
+
+302
+00:17:13,471 --> 00:17:14,239
+Echo
+
+303
+00:17:18,335 --> 00:17:20,127
+Greeting as a text
+
+304
+00:17:22,943 --> 00:17:23,711
+And
+
+305
+00:17:24,479 --> 00:17:25,247
+Then
+
+306
+00:17:26,271 --> 00:17:27,039
+Grap that
+
+307
+00:17:27,807 --> 00:17:28,575
+Snippet
+
+308
+00:17:28,831 --> 00:17:29,855
+Paste that in there
+
+309
+00:17:30,879 --> 00:17:32,671
+Close the unordered list
+
+310
+00:17:33,439 --> 00:17:34,207
+Now we wanna
+
+311
+00:17:35,231 --> 00:17:37,791
+Use little nice unordered list here
+
+312
+00:17:38,559 --> 00:17:40,095
+So we gonna grab this
+
+313
+00:17:42,143 --> 00:17:43,935
+As this opening tag
+
+314
+00:17:46,751 --> 00:17:48,543
+And then
+
+315
+00:17:49,823 --> 00:17:50,847
+Close it
+
+316
+00:17:53,151 --> 00:17:54,687
+And we gonna call this
+
+317
+00:17:57,759 --> 00:17:58,783
+greeting
+
+318
+00:17:59,295 --> 00:18:01,343
+Greetings I think will be best
+
+319
+00:18:03,647 --> 00:18:04,927
+And greetings
+
+320
+00:18:05,951 --> 00:18:06,719
+Again
+
+321
+00:18:08,255 --> 00:18:09,279
+Greetings
+
+322
+00:18:11,071 --> 00:18:13,375
+Initial description
+
+323
+00:18:13,887 --> 00:18:15,679
+Ok so we're all set here
+
+324
+00:18:15,935 --> 00:18:17,215
+And
+
+325
+00:18:18,239 --> 00:18:21,311
+For now as you see there is no links here
+
+326
+00:18:21,823 --> 00:18:25,407
+We haven't we will actually have to come back and add some links
+
+327
+00:18:25,919 --> 00:18:27,199
+For now I'm just adding
+
+328
+00:18:27,455 --> 00:18:28,735
+An iteration over there
+
+329
+00:18:29,247 --> 00:18:31,551
+The items and displaying the greetings
+
+330
+00:18:33,087 --> 00:18:34,879
+So we're gonna save and close out of this
+
+331
+00:18:36,415 --> 00:18:37,951
+And now we gonna create one
+
+332
+00:18:38,463 --> 00:18:40,255
+Where we only look at 1
+
+333
+00:18:40,511 --> 00:18:41,791
+Greeting
+
+334
+00:18:42,047 --> 00:18:45,119
+So again we'll just select
+
+335
+00:18:45,375 --> 00:18:46,655
+That one greeting
+
+336
+00:18:47,935 --> 00:18:48,959
+Git method
+
+337
+00:18:49,727 --> 00:18:52,287
+And here as well and we see that the greeting
+
+338
+00:18:52,543 --> 00:18:54,079
+Possibly look like that
+
+339
+00:18:54,335 --> 00:18:56,639
+So we'll echo it out
+
+340
+00:18:56,895 --> 00:18:58,431
+And
+
+341
+00:18:58,687 --> 00:18:59,967
+we're gonna make it
+
+342
+00:19:00,223 --> 00:19:01,247
+an H2
+
+343
+00:19:03,807 --> 00:19:04,831
+Header tag
+
+344
+00:19:05,855 --> 00:19:06,367
+And then
+
+345
+00:19:06,623 --> 00:19:08,415
+We can't call it greeting
+
+346
+00:19:08,671 --> 00:19:09,695
+Because
+
+347
+00:19:10,463 --> 00:19:12,511
+We have an editing
+
+348
+00:19:14,047 --> 00:19:14,815
+View
+
+349
+00:19:15,327 --> 00:19:17,887
+That will be dynamically added to the front
+
+350
+00:19:18,399 --> 00:19:22,751
+Now because the editing view on the back is called greeting
+
+351
+00:19:23,007 --> 00:19:26,079
+We cannot call another front end
+
+352
+00:19:28,127 --> 00:19:29,663
+View
+
+353
+00:19:29,919 --> 00:19:33,759
+A greeting we have to call it something else otherwise it will conflict
+
+354
+00:19:34,015 --> 00:19:35,807
+So I'm just gonna call it
+
+355
+00:19:36,319 --> 00:19:37,087
+Greet
+
+356
+00:19:37,855 --> 00:19:39,903
+For now
+
+357
+00:19:40,671 --> 00:19:44,255
+We can call it here we could call it greeting but here we'll call it greet
+
+358
+00:19:45,279 --> 00:19:46,047
+And then
+
+359
+00:19:46,559 --> 00:19:48,095
+greeting and
+
+360
+00:19:50,143 --> 00:19:51,935
+Greeting on top here as well
+
+361
+00:19:52,447 --> 00:19:58,591
+So here we go we've got all the necessary components lined up for this
+
+362
+00:19:58,847 --> 00:19:59,615
+specific site view
+
+363
+00:19:59,871 --> 00:20:01,663
+To function as expected
+
+364
+00:20:01,919 --> 00:20:03,199
+So save and close
+
+365
+00:20:04,735 --> 00:20:06,783
+So now we have our two site views set
+
+366
+00:20:07,295 --> 00:20:11,903
+I'm gonna now go to the component to add them to the component
+
+367
+00:20:14,463 --> 00:20:16,255
+So again we go to settings
+
+368
+00:20:16,511 --> 00:20:18,303
+And we go to site views
+
+369
+00:20:19,583 --> 00:20:20,863
+And we will add
+
+370
+00:20:21,119 --> 00:20:22,143
+greeting
+
+371
+00:20:22,399 --> 00:20:24,447
+It doesn't have a menu
+
+372
+00:20:26,239 --> 00:20:29,311
+It has metadata it's not the default view
+
+373
+00:20:30,847 --> 00:20:31,615
+We can
+
+374
+00:20:31,871 --> 00:20:34,943
+Add access and then make the default public
+
+375
+00:20:36,223 --> 00:20:39,039
+The second one is greetings
+
+376
+00:20:39,551 --> 00:20:41,599
+This must have a menu
+
+377
+00:20:41,855 --> 00:20:43,647
+Also metadata
+
+378
+00:20:44,159 --> 00:20:45,951
+This is the default View
+
+379
+00:20:46,463 --> 00:20:47,487
+We can also
+
+380
+00:20:47,743 --> 00:20:49,023
+Give it access
+
+381
+00:20:49,535 --> 00:20:51,583
+And make it by Default public
+
+382
+00:20:52,351 --> 00:20:55,935
+There we go we got out two site views save and close
+
+383
+00:20:56,703 --> 00:20:57,727
+Save and close
+
+384
+00:20:59,775 --> 00:21:01,311
+So we go to the compiler
+
+385
+00:21:02,591 --> 00:21:06,431
+And we compile the Hello world component
+
+386
+00:21:07,967 --> 00:21:09,759
+For the second time
+
+387
+00:21:11,039 --> 00:21:13,087
+And then once compiled
+
+388
+00:21:14,879 --> 00:21:18,720
+You now see that we got nearly 13000 lines of code
+
+389
+00:21:19,232 --> 00:21:21,536
+And we can now
+
+390
+00:21:21,792 --> 00:21:27,424
+Just click here to install which is the easy way instead of going to the installer
+
+391
+00:21:27,936 --> 00:21:29,984
+Now if we go back to the code
+
+392
+00:21:31,520 --> 00:21:33,312
+And we scroll down
+
+393
+00:21:34,336 --> 00:21:36,896
+We'll see that there is now a component
+
+394
+00:21:37,152 --> 00:21:38,944
+in the front end called hello world
+
+395
+00:21:39,456 --> 00:21:44,576
+And it has the model's greet greeting and greetings
+
+396
+00:21:45,344 --> 00:21:51,488
+It has the views greet greeting and greetings this one is an edit View
+
+397
+00:21:51,744 --> 00:21:52,512
+This greeting
+
+398
+00:21:52,768 --> 00:21:56,352
+And this one is a display view this one
+
+399
+00:21:56,608 --> 00:22:02,752
+Is it where you can look at how it is getting the values from the database so that
+
+400
+00:22:03,008 --> 00:22:04,288
+Dynamic Get
+
+401
+00:22:04,544 --> 00:22:05,568
+It built
+
+402
+00:22:05,824 --> 00:22:08,896
+Basically this function for us
+
+403
+00:22:09,664 --> 00:22:12,480
+As well as parts inside of this function here
+
+404
+00:22:13,760 --> 00:22:14,272
+Now
+
+405
+00:22:14,784 --> 00:22:17,088
+You see that it added that little
+
+406
+00:22:17,856 --> 00:22:19,392
+Where filter for us
+
+407
+00:22:20,672 --> 00:22:21,440
+And
+
+408
+00:22:21,696 --> 00:22:23,744
+All the values are here as expected
+
+409
+00:22:25,024 --> 00:22:27,328
+Here it's having that permission check
+
+410
+00:22:28,352 --> 00:22:32,960
+So it is gonna check whether you have the correct permissions
+
+411
+00:22:33,984 --> 00:22:36,800
+Now because we have not
+
+412
+00:22:37,568 --> 00:22:39,360
+You know installed the component
+
+413
+00:22:39,616 --> 00:22:45,760
+As a blank component we installed it and then made changes install it again it will not be by
+
+414
+00:22:46,016 --> 00:22:47,808
+Default be set public
+
+415
+00:22:51,136 --> 00:22:53,696
+The way that it sets the view public
+
+416
+00:22:53,952 --> 00:22:54,976
+Is during
+
+417
+00:22:55,232 --> 00:22:56,256
+Post flight
+
+418
+00:22:56,768 --> 00:22:57,792
+Install
+
+419
+00:22:59,584 --> 00:23:00,608
+It actually
+
+420
+00:23:01,120 --> 00:23:02,400
+Set a rule
+
+421
+00:23:03,168 --> 00:23:08,800
+And adds the side greeting access to public which usually is the ID Group 1
+
+422
+00:23:10,080 --> 00:23:12,384
+And then it updates the asset table
+
+423
+00:23:12,896 --> 00:23:14,432
+And since
+
+424
+00:23:14,688 --> 00:23:16,736
+This isn't a new install
+
+425
+00:23:16,992 --> 00:23:18,528
+It actually doesn't do that
+
+426
+00:23:19,296 --> 00:23:25,440
+And so you won't have the expected result of the view being public simply because the component
+
+427
+00:23:25,696 --> 00:23:26,720
+Wasn't installed
+
+428
+00:23:27,232 --> 00:23:33,376
+As fresh so how to demonstrate to you how it will behave if a user install
+
+429
+00:23:33,632 --> 00:23:36,448
+This the first time fully
+
+430
+00:23:37,216 --> 00:23:38,752
+you know
+
+431
+00:23:39,008 --> 00:23:43,616
+Compiled as it is now I'll just simply uninstall a component quickly
+
+432
+00:23:43,872 --> 00:23:46,688
+And install it again
+
+433
+00:23:47,712 --> 00:23:50,784
+Which will then activate this feature
+
+434
+00:23:51,040 --> 00:23:55,904
+Now some you may not understand all I've just said that's ok
+
+435
+00:23:56,160 --> 00:23:57,696
+I would just suggest that
+
+436
+00:23:57,952 --> 00:24:01,792
+As you've developed the moment you add the front
+
+437
+00:24:02,816 --> 00:24:04,608
+Side views to the component
+
+438
+00:24:04,864 --> 00:24:09,472
+And you have actually tweaked its access and all those
+
+439
+00:24:09,984 --> 00:24:11,776
+Related parameters
+
+440
+00:24:12,032 --> 00:24:18,176
+It might be best to just uninstall the component and install it completely Fresh
+
+441
+00:24:18,432 --> 00:24:21,760
+To see the fool behaviour working as expected
+
+442
+00:24:22,272 --> 00:24:28,416
+you might say but I already created some demo data and now I need to put them punch them
+
+443
+00:24:28,672 --> 00:24:34,048
+Back in again well there is a way to sort of resolve that
+
+444
+00:24:34,304 --> 00:24:39,424
+And that is going to the admin View opening the greeting
+
+445
+00:24:46,848 --> 00:24:48,640
+Going to the MySQL tab
+
+446
+00:24:49,152 --> 00:24:50,176
+Select yes
+
+447
+00:24:50,688 --> 00:24:51,968
+Select Table
+
+448
+00:24:52,224 --> 00:24:52,992
+And then
+
+449
+00:24:53,248 --> 00:24:55,296
+Click add to select the table
+
+450
+00:24:56,064 --> 00:25:00,160
+Then scroll down to that specific table in your database
+
+451
+00:25:02,208 --> 00:25:03,232
+It should be
+
+452
+00:25:04,256 --> 00:25:05,280
+hello world
+
+453
+00:25:06,048 --> 00:25:07,328
+Greeting
+
+454
+00:25:07,584 --> 00:25:12,704
+Then you'll see it loads the specific values from the database
+
+455
+00:25:12,960 --> 00:25:15,776
+And how they will be named in your
+
+456
+00:25:16,032 --> 00:25:22,176
+Backup I usually remove this created by modified by because it
+
+457
+00:25:22,432 --> 00:25:28,576
+May cause conflicts if user ID is changed from one Joomla install to another
+
+458
+00:25:29,856 --> 00:25:33,184
+And I also sometimes remove
+
+459
+00:25:33,696 --> 00:25:34,976
+The access
+
+460
+00:25:35,232 --> 00:25:36,256
+Value
+
+461
+00:25:37,024 --> 00:25:39,840
+As this may also differ from system to system
+
+462
+00:25:40,352 --> 00:25:42,400
+And the acid ID
+
+463
+00:25:42,656 --> 00:25:47,520
+So I'm only exporting values which I think are consistent across
+
+464
+00:25:47,776 --> 00:25:48,544
+Systems
+
+465
+00:25:49,056 --> 00:25:49,824
+Ok
+
+466
+00:25:50,848 --> 00:25:52,128
+Obviously
+
+467
+00:25:52,896 --> 00:25:54,176
+This one is well
+
+468
+00:25:55,200 --> 00:25:56,480
+And this one
+
+469
+00:25:58,272 --> 00:25:59,296
+okay safe
+
+470
+00:26:00,320 --> 00:26:01,856
+Now save and close
+
+471
+00:26:02,112 --> 00:26:05,952
+Now this isn't enough just having have mapped the
+
+472
+00:26:06,464 --> 00:26:12,608
+Sequel table if you wanna retain the data now what what date am I talking about
+
+473
+00:26:12,864 --> 00:26:17,472
+well we installed it right and so if we open the component
+
+474
+00:26:17,728 --> 00:26:18,752
+We added
+
+475
+00:26:19,008 --> 00:26:25,152
+This greeting so the retained this greeting if you've created quite a few
+
+476
+00:26:25,408 --> 00:26:31,552
+Dummy greetings then to retain them so that they get installed again
+
+477
+00:26:31,808 --> 00:26:37,952
+Even if it's a fresh install that's the way you do that but you have to compile it
+
+478
+00:26:38,720 --> 00:26:42,560
+The component you have to compile the component before you uninstall it
+
+479
+00:26:42,816 --> 00:26:46,656
+Otherwise it will shout at you and say that it couldn't find the database
+
+480
+00:26:46,912 --> 00:26:49,728
+Because you obviously gonna remove it when you uninstall it
+
+481
+00:26:49,984 --> 00:26:52,288
+So I'm just gonna compile this again
+
+482
+00:26:53,312 --> 00:26:55,616
+And then after it been compiled
+
+483
+00:26:56,384 --> 00:26:59,200
+I'm gonna uninstall it as I said I would
+
+484
+00:27:01,504 --> 00:27:04,064
+So you're in the extension manager I'm gonna click
+
+485
+00:27:04,320 --> 00:27:05,344
+On the hello world
+
+486
+00:27:06,112 --> 00:27:08,160
+And uninstall
+
+487
+00:27:10,464 --> 00:27:13,024
+And it would have successfully uninstalled it
+
+488
+00:27:13,792 --> 00:27:16,352
+Then I'm gonna go back to the compiler page
+
+489
+00:27:16,864 --> 00:27:19,936
+and just click on the install
+
+490
+00:27:21,216 --> 00:27:23,264
+And then if I go back to the component
+
+491
+00:27:23,776 --> 00:27:26,336
+I see that it's added that greeting back in
+
+492
+00:27:26,592 --> 00:27:29,664
+And I haven't lost a beat ok
+
+493
+00:27:29,920 --> 00:27:32,992
+Now let's look at the front end
+
+494
+00:27:33,248 --> 00:27:36,064
+By linking it to a menu item
+
+495
+00:27:37,088 --> 00:27:40,416
+So have greeting selected as the menu item type
+
+496
+00:27:41,184 --> 00:27:44,512
+And I'm gonna just make this the the default page
+
+497
+00:27:45,280 --> 00:27:48,096
+The home page and save and close
+
+498
+00:27:48,608 --> 00:27:51,424
+Now I'm gonna open the homepage
+
+499
+00:27:51,936 --> 00:27:54,752
+There we see our greeting it says greeting
+
+500
+00:27:55,008 --> 00:27:56,032
+Hi there Michael
+
+501
+00:27:57,312 --> 00:27:59,616
+So it's actually worked as expected
+
+502
+00:28:00,384 --> 00:28:05,504
+Let's just add another one to see it how it will look when we have more than one greeting
+
+503
+00:28:21,120 --> 00:28:23,168
+Ok I think now we have enough
+
+504
+00:28:24,704 --> 00:28:26,496
+If we go back to the front end
+
+505
+00:28:27,008 --> 00:28:28,288
+And refresh
+
+506
+00:28:29,568 --> 00:28:35,712
+There we go there's our greetings now to make them clickable and editable
+
+507
+00:28:36,736 --> 00:28:41,088
+Let's do the opening it and just viewing it first
+
+508
+00:28:42,112 --> 00:28:45,696
+So in the site view area I'm gonna open greetings
+
+509
+00:28:46,976 --> 00:28:48,000
+Now around
+
+510
+00:28:48,512 --> 00:28:49,280
+This
+
+511
+00:28:50,048 --> 00:28:53,888
+Greeting Echo I'm gonna add an H ref
+
+512
+00:28:54,144 --> 00:29:00,288
+And a link we gonna build a link using some of the helper methods and
+
+513
+00:29:00,544 --> 00:29:03,104
+And also what is called The Slug
+
+514
+00:29:03,872 --> 00:29:08,992
+The Slug wouldn't necessarily this time function because we didn't add an alias to our table
+
+515
+00:29:09,248 --> 00:29:15,392
+But when there is an alias the slug will dynamically be used within search engine friendly URLs
+
+516
+00:29:16,672 --> 00:29:20,768
+I'm not gonna demonstrate or explain too much about this
+
+517
+00:29:21,280 --> 00:29:21,792
+But
+
+518
+00:29:22,048 --> 00:29:25,632
+I'm gonna just quickly at the link in here
+
+519
+00:29:26,144 --> 00:29:27,424
+Now I know
+
+520
+00:29:27,936 --> 00:29:30,752
+You may be wondering where is this
+
+521
+00:29:31,264 --> 00:29:36,128
+Items slug come from It's not showing here on the side
+
+522
+00:29:36,640 --> 00:29:37,664
+Well
+
+523
+00:29:38,432 --> 00:29:42,528
+Like with most of these developing components
+
+524
+00:29:42,784 --> 00:29:46,624
+You need to know a little bit about how
+
+525
+00:29:46,880 --> 00:29:52,000
+To read code and understand code and that's why you would compile the code
+
+526
+00:29:52,512 --> 00:29:58,656
+And then actually go look at the compiled code in your IDE so if you were to open the
+
+527
+00:29:58,912 --> 00:29:59,680
+Model
+
+528
+00:30:00,192 --> 00:30:00,960
+Which
+
+529
+00:30:01,216 --> 00:30:03,264
+Is using this Dynamic Git
+
+530
+00:30:03,776 --> 00:30:06,336
+You'll see that it actually builds a slug in the model
+
+531
+00:30:07,360 --> 00:30:09,920
+So here in the model here's the get items
+
+532
+00:30:10,432 --> 00:30:15,296
+So it's looping through them here and then it's checking with it as an alias
+
+533
+00:30:15,552 --> 00:30:19,904
+And then ID and if they are there sure then
+
+534
+00:30:20,160 --> 00:30:21,184
+It actually
+
+535
+00:30:21,696 --> 00:30:23,232
+Combines them with this
+
+536
+00:30:23,744 --> 00:30:24,512
+And
+
+537
+00:30:25,280 --> 00:30:29,632
+Creates a slug otherwise it just plays as the ID in The Slug
+
+538
+00:30:29,888 --> 00:30:31,168
+And
+
+539
+00:30:31,424 --> 00:30:36,288
+That's how you would know that the Slug is already created and you can just use it
+
+540
+00:30:37,056 --> 00:30:39,104
+And so it's always good to
+
+541
+00:30:39,360 --> 00:30:42,432
+While you're developing a component with JCB
+
+542
+00:30:42,688 --> 00:30:48,832
+Go into the code read the code look at what it's done and it'll help you see and understand
+
+543
+00:30:49,088 --> 00:30:50,880
+And how to extend it
+
+544
+00:30:51,392 --> 00:30:55,232
+We trying to follow the normal way of how
+
+545
+00:30:55,488 --> 00:31:00,608
+Joomla's able to you know develop and be used so
+
+546
+00:31:00,864 --> 00:31:01,888
+That you can
+
+547
+00:31:02,144 --> 00:31:06,240
+Easily follow along and that it wouldn't get
+
+548
+00:31:06,496 --> 00:31:12,640
+we're not trying to reinvent with the wheel but doing things the way that you would expect if you know
+
+549
+00:31:12,896 --> 00:31:15,200
+How to build Joomla components
+
+550
+00:31:15,456 --> 00:31:16,736
+you know by hand
+
+551
+00:31:17,248 --> 00:31:18,528
+Ok so
+
+552
+00:31:18,784 --> 00:31:20,320
+Now we created that link
+
+553
+00:31:21,088 --> 00:31:23,904
+You basically used j route which is a
+
+554
+00:31:24,160 --> 00:31:27,488
+A common class in building routes in
+
+555
+00:31:28,512 --> 00:31:33,120
+Joomla here is the helper out class you can look that up
+
+556
+00:31:33,376 --> 00:31:34,656
+It is in the
+
+557
+00:31:34,912 --> 00:31:41,056
+Site area of the component under the helper folder and it has a function called
+
+558
+00:31:41,312 --> 00:31:42,336
+Greed route
+
+559
+00:31:42,592 --> 00:31:47,712
+And we just passing it The Slug and that will crank out the whole URL for us
+
+560
+00:31:47,968 --> 00:31:50,272
+And so we gonna save and close here
+
+561
+00:31:50,784 --> 00:31:52,064
+I just save for now
+
+562
+00:31:54,112 --> 00:31:56,160
+Now we gonna just compile it again
+
+563
+00:31:56,416 --> 00:31:57,952
+and Install it back in
+
+564
+00:31:58,464 --> 00:32:04,608
+since we haven't made any changes to permissions or any of those things now the permissions just
+
+565
+00:32:04,864 --> 00:32:05,376
+A short
+
+566
+00:32:05,632 --> 00:32:11,776
+tip on that again it is only when the related to the site views that we need to maybe just reinstall
+
+567
+00:32:12,032 --> 00:32:12,544
+
+
+568
+00:32:13,056 --> 00:32:19,200
+The whole component do keep in mind that you could go into the backend and set the permissions
+
+569
+00:32:19,456 --> 00:32:25,600
+If that is what you would prefer so in the back end you can just go to options the back end
+
+570
+00:32:25,856 --> 00:32:26,880
+Of the component I mean
+
+571
+00:32:27,136 --> 00:32:28,928
+And there's the permission tab
+
+572
+00:32:29,184 --> 00:32:35,328
+And you can see this is a whole list of permissions just for the greetings and because we install
+
+573
+00:32:35,584 --> 00:32:41,728
+The component afresh it's set the greeting site view access to public
+
+574
+00:32:41,984 --> 00:32:48,128
+As well as the greetings site view access to public so that's really what we did
+
+575
+00:32:48,384 --> 00:32:48,896
+We just
+
+576
+00:32:49,152 --> 00:32:53,760
+had that done automatically but you could have come in here and just change that to allowed
+
+577
+00:32:54,016 --> 00:32:57,344
+And save and it will have achieved the same thing
+
+578
+00:32:57,600 --> 00:33:02,208
+You'll see that there is a whole lot of features here in allowing
+
+579
+00:33:02,464 --> 00:33:06,816
+You to edit certain parts of the values for specific groups
+
+580
+00:33:07,072 --> 00:33:08,864
+And so all of this
+
+581
+00:33:09,120 --> 00:33:10,656
+JCB is just placed
+
+582
+00:33:10,912 --> 00:33:13,472
+you know for you and ready to use
+
+583
+00:33:14,240 --> 00:33:18,080
+Now did we have installed the component let's refresh this homepage
+
+584
+00:33:18,336 --> 00:33:21,408
+and we will see that all of these links are now clickable
+
+585
+00:33:21,664 --> 00:33:24,480
+If we click on one of them
+
+586
+00:33:24,736 --> 00:33:27,808
+We see it only displays that specific
+
+587
+00:33:28,064 --> 00:33:30,624
+Greeting you can click back
+
+588
+00:33:31,136 --> 00:33:33,440
+And then click another one and it
+
+589
+00:33:33,696 --> 00:33:39,584
+And so it's working as expected it's generating for us the links and it is
+
+590
+00:33:39,840 --> 00:33:41,888
+Actually opening that View
+
+591
+00:33:42,144 --> 00:33:44,448
+And displaying the value as expected
+
+592
+00:33:44,704 --> 00:33:47,776
+Now to add an edit button
+
+593
+00:33:48,288 --> 00:33:51,616
+Which can then edit these
+
+594
+00:33:51,872 --> 00:33:53,920
+Items on the front end of the site
+
+595
+00:33:54,688 --> 00:34:00,832
+I would mind you noticed we just crossed the half an hour barrier so everything we've done now
+
+596
+00:34:01,088 --> 00:34:07,232
+Taking you half an hour to build a hello world component which is far more advanced and superior than
+
+597
+00:34:07,488 --> 00:34:11,072
+Any other Hello world component I've seen
+
+598
+00:34:11,328 --> 00:34:13,120
+And so
+
+599
+00:34:13,888 --> 00:34:20,032
+I think even just if we were to end here JCB is already proven to you that
+
+600
+00:34:20,544 --> 00:34:22,848
+It is actually able to build
+
+601
+00:34:23,104 --> 00:34:23,872
+Very
+
+602
+00:34:24,128 --> 00:34:30,272
+Dynamic and powerful components in a very quick and short amount of time
+
+603
+00:34:30,528 --> 00:34:32,064
+But now just to
+
+604
+00:34:32,832 --> 00:34:38,976
+Push the boundaries even little further let's link the editing options in for this
+
+605
+00:34:39,232 --> 00:34:40,000
+Items
+
+606
+00:34:41,024 --> 00:34:44,352
+Now you might want to have permission or checks here
+
+607
+00:34:45,120 --> 00:34:45,888
+When
+
+608
+00:34:46,144 --> 00:34:50,752
+The user isn't in the correct group that it wouldn't display the edit
+
+609
+00:34:51,008 --> 00:34:53,312
+item sorry the edit link
+
+610
+00:34:53,568 --> 00:34:54,592
+Now
+
+611
+00:34:55,360 --> 00:34:59,968
+If you do not know how to do that just a little heads up I can show you where to look
+
+612
+00:35:00,480 --> 00:35:06,624
+so in the back end again going into the code we open the Hello world component
+
+613
+00:35:07,648 --> 00:35:09,184
+We go into views
+
+614
+00:35:09,440 --> 00:35:12,256
+then into greetings
+
+615
+00:35:12,768 --> 00:35:16,608
+And then we open this view HTML dot php file
+
+616
+00:35:16,864 --> 00:35:19,936
+you will see that we are pulling a
+
+617
+00:35:20,192 --> 00:35:21,728
+Helper class here
+
+618
+00:35:21,984 --> 00:35:25,568
+And using the Git actions method
+
+619
+00:35:25,824 --> 00:35:31,968
+we're passing greeting to it as saying we want the permissions for the
+
+620
+00:35:32,224 --> 00:35:33,248
+Greeting
+
+621
+00:35:33,760 --> 00:35:36,576
+Now that delivers to us a
+
+622
+00:35:37,600 --> 00:35:40,672
+An object which we then can ask
+
+623
+00:35:40,928 --> 00:35:43,232
+Whether the user has edit rights
+
+624
+00:35:44,000 --> 00:35:50,144
+Whether the user can create delete whether he can say the state and so
+
+625
+00:35:50,656 --> 00:35:52,192
+That is how we can get
+
+626
+00:35:52,448 --> 00:35:53,472
+You know
+
+627
+00:35:53,728 --> 00:35:57,568
+Into the permissions you can look at this
+
+628
+00:35:57,824 --> 00:35:59,104
+Git actions
+
+629
+00:35:59,616 --> 00:36:05,760
+Method in the front you'd basically go to hello World helpers and
+
+630
+00:36:06,016 --> 00:36:06,784
+Open the
+
+631
+00:36:07,040 --> 00:36:08,576
+Helper class
+
+632
+00:36:08,832 --> 00:36:10,880
+And scroll down a little
+
+633
+00:36:11,392 --> 00:36:12,416
+And you'll get
+
+634
+00:36:16,256 --> 00:36:19,072
+The Git actions method is right here
+
+635
+00:36:19,328 --> 00:36:25,472
+So you're passing it the views name you could even pass it the record ID because we know
+
+636
+00:36:25,728 --> 00:36:29,824
+That you could set permissions not only per view but even per item
+
+637
+00:36:30,080 --> 00:36:31,616
+And so
+
+638
+00:36:31,872 --> 00:36:34,432
+Then this helps you
+
+639
+00:36:34,944 --> 00:36:41,088
+Actually determine the permissions and sends back the results now
+
+640
+00:36:41,344 --> 00:36:47,488
+We're always open to improving this this is what I've done so far in in
+
+641
+00:36:47,744 --> 00:36:53,120
+Helping us getting a quick answer on permissions from anywhere in the component
+
+642
+00:36:53,376 --> 00:36:59,520
+And so you could make use of this to determine some of the permissions for actually
+
+643
+00:36:59,776 --> 00:37:01,312
+Being able to edit the items
+
+644
+00:37:01,568 --> 00:37:02,848
+Yet
+
+645
+00:37:03,104 --> 00:37:06,944
+Even if you left out Those if you just dumped the button right on the page
+
+646
+00:37:07,968 --> 00:37:14,112
+The controller actually has a lot of these permissions already in place and
+
+647
+00:37:14,368 --> 00:37:20,256
+So it'll shout at you and tell you, you don't have permissions to edit this item and so that's what I'll demonstrate
+
+648
+00:37:21,280 --> 00:37:22,816
+So I'm just gonna add a little
+
+649
+00:37:23,072 --> 00:37:25,120
+Link here
+
+650
+00:37:25,376 --> 00:37:27,168
+To actually edit
+
+651
+00:37:28,192 --> 00:37:30,752
+The the item
+
+652
+00:37:32,288 --> 00:37:35,360
+Now again you might not know what that link should be
+
+653
+00:37:35,872 --> 00:37:39,200
+And you could go back to the back end of the component
+
+654
+00:37:39,456 --> 00:37:41,504
+To find the link
+
+655
+00:37:42,272 --> 00:37:43,552
+So here in the back end
+
+656
+00:37:44,576 --> 00:37:49,952
+I'm just simply opening the templates view and then I'm opening
+
+657
+00:37:51,488 --> 00:37:52,256
+The body
+
+658
+00:37:53,280 --> 00:37:59,424
+File and then here it has the link obviously it's in the back end it
+
+659
+00:37:59,680 --> 00:38:05,568
+Actually is related to the admin folder but in the front end it is related to the site's root
+
+660
+00:38:05,824 --> 00:38:08,128
+So you could just grab this
+
+661
+00:38:08,896 --> 00:38:10,176
+Snippet here
+
+662
+00:38:10,432 --> 00:38:11,456
+To build your link
+
+663
+00:38:11,968 --> 00:38:13,760
+Scroll down a little in the page
+
+664
+00:38:14,016 --> 00:38:16,832
+And basically search for this variable
+
+665
+00:38:19,136 --> 00:38:22,464
+And you'll see that we're using that edit variable
+
+666
+00:38:22,976 --> 00:38:27,584
+Adding and ID = and then just adding the ID
+
+667
+00:38:27,840 --> 00:38:30,400
+That's how we're building the link in the backend
+
+668
+00:38:30,912 --> 00:38:32,704
+And you could do similar in the front
+
+669
+00:38:33,472 --> 00:38:38,848
+The add some custom PHP to the front of the site there is a
+
+670
+00:38:39,360 --> 00:38:40,640
+PHP tab
+
+671
+00:38:41,408 --> 00:38:42,176
+And
+
+672
+00:38:42,944 --> 00:38:49,088
+Custom view script and it says here add custom PHP script to the head of the file so I'm just gonna
+
+673
+00:38:49,344 --> 00:38:50,624
+Paste that in there
+
+674
+00:38:50,880 --> 00:38:52,416
+Basically
+
+675
+00:38:52,672 --> 00:38:55,232
+We now have an edit variable on the page
+
+676
+00:38:56,000 --> 00:38:59,072
+And so in the default View area
+
+677
+00:38:59,328 --> 00:39:03,680
+I'm just gonna Echo that edit and then again to the add ID
+
+678
+00:39:04,192 --> 00:39:05,472
+Echo ID
+
+679
+00:39:06,240 --> 00:39:07,520
+Around the edit
+
+680
+00:39:07,776 --> 00:39:08,544
+Link
+
+681
+00:39:09,568 --> 00:39:11,360
+And how just click save
+
+682
+00:39:12,128 --> 00:39:14,176
+And then compile
+
+683
+00:39:15,456 --> 00:39:17,760
+This component again and install
+
+684
+00:39:22,624 --> 00:39:26,208
+And now go to the home page and refresh
+
+685
+00:39:27,232 --> 00:39:30,048
+Now we see there is a new edit link here
+
+686
+00:39:30,816 --> 00:39:32,352
+If we click it now
+
+687
+00:39:32,608 --> 00:39:38,752
+It's gonna shout at us and say no you don't have permit you're not permitted to edit this item so
+
+688
+00:39:39,008 --> 00:39:41,824
+I'm just gonna log in here as a user
+
+689
+00:39:42,080 --> 00:39:44,384
+That will have permissions
+
+690
+00:39:44,640 --> 00:39:49,248
+Ok I'm not logged in I'm gonna click on this edit link again
+
+691
+00:39:50,528 --> 00:39:56,672
+And as you can see it's opened and edit view where I can see the publish conserves the permissions
+
+692
+00:39:57,184 --> 00:39:57,952
+And
+
+693
+00:39:58,464 --> 00:40:00,000
+I can change
+
+694
+00:40:00,512 --> 00:40:01,792
+William
+
+695
+00:40:02,304 --> 00:40:04,352
+to Joomla and save and close
+
+696
+00:40:05,632 --> 00:40:08,192
+And it's edited that value
+
+697
+00:40:08,704 --> 00:40:11,008
+And that's it we have
+
+698
+00:40:11,264 --> 00:40:14,336
+Demonstrated the build of a hello world component
+
+699
+00:40:14,592 --> 00:40:15,616
+From scratch
+
+700
+00:40:15,872 --> 00:40:17,664
+And in just a few Clicks
+
+701
+00:40:18,432 --> 00:40:24,576
+We have successfully set up a component with tremendous advanced features already
+
+702
+00:40:24,832 --> 00:40:26,112
+At its fingertips
+
+703
+00:40:26,368 --> 00:40:27,648
+Ready to go
+
+704
+00:40:28,160 --> 00:40:32,768
+Well I hope this will be helpful to many if you're out there and
+
+705
+00:40:33,280 --> 00:40:34,048
+Enjoy
+

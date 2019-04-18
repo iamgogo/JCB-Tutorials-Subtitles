@@ -1,0 +1,4924 @@
+1
+00:00:00,256 --> 00:00:02,560
+Ok let's do this
+
+2
+00:00:03,840 --> 00:00:05,632
+We want to add a
+
+3
+00:00:05,888 --> 00:00:06,656
+File
+
+4
+00:00:06,912 --> 00:00:07,424
+Field
+
+5
+00:00:08,448 --> 00:00:09,472
+to a component
+
+6
+00:00:09,728 --> 00:00:12,288
+And upload a file
+
+7
+00:00:12,544 --> 00:00:13,312
+So
+
+8
+00:00:14,336 --> 00:00:15,104
+I
+
+9
+00:00:15,360 --> 00:00:17,152
+I'm gonna use this demo component
+
+10
+00:00:17,664 --> 00:00:20,992
+it got a few admin views who got the areas
+
+11
+00:00:21,248 --> 00:00:21,760
+Look
+
+12
+00:00:22,272 --> 00:00:23,552
+I got a site view looks
+
+13
+00:00:23,808 --> 00:00:24,320
+And looking
+
+14
+00:00:25,088 --> 00:00:27,136
+I'm gonna add this field to do look
+
+15
+00:00:27,648 --> 00:00:28,416
+Admin View
+
+16
+00:00:30,464 --> 00:00:32,000
+But I first need to create the field
+
+17
+00:00:32,768 --> 00:00:33,280
+And
+
+18
+00:00:33,536 --> 00:00:35,072
+We need to sort of look at
+
+19
+00:00:35,328 --> 00:00:37,888
+The steps that will need to implement
+
+20
+00:00:38,400 --> 00:00:41,472
+Currently JCB doesn't out of the box actually
+
+21
+00:00:41,984 --> 00:00:42,752
+Address this
+
+22
+00:00:44,032 --> 00:00:45,568
+We might think of doing this
+
+23
+00:00:46,080 --> 00:00:46,848
+Maybe in
+
+24
+00:00:47,360 --> 00:00:48,384
+The future but
+
+25
+00:00:48,896 --> 00:00:50,944
+Because of some of the security risks
+
+26
+00:00:51,456 --> 00:00:53,504
+It's actually best you do this yourself
+
+27
+00:00:54,272 --> 00:00:54,784
+Because then
+
+28
+00:00:55,296 --> 00:00:56,064
+At least you're under
+
+29
+00:00:56,320 --> 00:00:56,832
+Control
+
+30
+00:00:57,088 --> 00:00:58,368
+And the risk is
+
+31
+00:00:58,624 --> 00:00:59,904
+Really yours
+
+32
+00:01:00,672 --> 00:01:01,184
+And not
+
+33
+00:01:02,720 --> 00:01:04,512
+ put anyone else at risk
+
+34
+00:01:05,536 --> 00:01:06,048
+Ok
+
+35
+00:01:06,816 --> 00:01:08,608
+So you're uploading a file
+
+36
+00:01:09,632 --> 00:01:11,680
+The field you wanna use already exists
+
+37
+00:01:11,936 --> 00:01:12,448
+In 
+
+38
+00:01:12,704 --> 00:01:13,728
+field types
+
+39
+00:01:14,240 --> 00:01:16,288
+So if you go to field types
+
+40
+00:01:16,800 --> 00:01:18,592
+There is a field called
+
+41
+00:01:19,104 --> 00:01:19,616
+File
+
+42
+00:01:20,128 --> 00:01:20,640
+See where is it
+
+43
+00:01:24,480 --> 00:01:24,992
+Must be in the next one
+
+44
+00:01:28,064 --> 00:01:29,344
+Yeah we go
+
+45
+00:01:29,600 --> 00:01:30,112
+File
+
+46
+00:01:30,624 --> 00:01:31,648
+Now this
+
+47
+00:01:32,160 --> 00:01:32,928
+Obviously
+
+48
+00:01:33,952 --> 00:01:35,744
+Everything in here
+
+49
+00:01:36,000 --> 00:01:36,768
+Was taken
+
+50
+00:01:37,280 --> 00:01:37,792
+From
+
+51
+00:01:38,048 --> 00:01:39,584
+Joomla's documentation
+
+52
+00:01:40,352 --> 00:01:46,496
+So it shows you a whole lot of attributes their values some of the descriptions
+
+53
+00:01:47,776 --> 00:01:51,872
+But also shows you where to actually get more info on this
+
+54
+00:01:52,128 --> 00:01:53,920
+And so it's always good
+
+55
+00:01:54,176 --> 00:01:55,456
+To actually do that
+
+56
+00:01:57,760 --> 00:02:00,576
+Ok so here we are
+
+57
+00:02:00,832 --> 00:02:01,600
+Scroll down
+
+58
+00:02:02,368 --> 00:02:03,904
+And there is the file field
+
+59
+00:02:06,208 --> 00:02:06,720
+So
+
+60
+00:02:07,232 --> 00:02:09,792
+It actually now has this new except
+
+61
+00:02:10,560 --> 00:02:11,072
+Perimeter
+
+62
+00:02:12,352 --> 00:02:14,400
+Which is a nice little
+
+63
+00:02:14,912 --> 00:02:17,984
+Extra which wasn't available when I first set it up
+
+64
+00:02:18,240 --> 00:02:19,520
+So if yours doesn't have it
+
+65
+00:02:20,288 --> 00:02:21,312
+You see that I
+
+66
+00:02:22,080 --> 00:02:22,848
+Actually
+
+67
+00:02:23,104 --> 00:02:23,616
+Have
+
+68
+00:02:23,872 --> 00:02:25,152
+Since added it
+
+69
+00:02:27,200 --> 00:02:28,224
+It's not showing up here
+
+70
+00:02:29,760 --> 00:02:30,528
+Ok so
+
+71
+00:02:30,784 --> 00:02:31,296
+Might 
+
+72
+00:02:31,552 --> 00:02:32,832
+As well add it now then
+
+73
+00:02:33,344 --> 00:02:36,416
+So you're under size let's add that new attributes
+
+74
+00:02:37,440 --> 00:02:39,488
+So it's accept
+
+75
+00:02:41,024 --> 00:02:44,608
+The value I'm gonna leave it to be in image and can be changed
+
+76
+00:02:44,864 --> 00:02:45,888
+let's give it some information
+
+77
+00:02:46,400 --> 00:02:48,192
+as regarding
+
+78
+00:02:50,752 --> 00:02:53,312
+description that
+
+79
+00:02:54,336 --> 00:02:55,104
+just copy that
+
+80
+00:02:55,360 --> 00:02:57,152
+and place in here ok so
+
+81
+00:02:57,408 --> 00:02:59,200
+We got this new attribute set
+
+82
+00:03:00,224 --> 00:03:01,760
+Those of you running the latest
+
+83
+00:03:02,016 --> 00:03:03,552
+Release of JCB
+
+84
+00:03:04,320 --> 00:03:10,464
+Might already have this there it only gets added if you do a fish install
+
+85
+00:03:10,720 --> 00:03:12,000
+It doesn't update the database with these values
+
+86
+00:03:13,024 --> 00:03:15,328
+Ok great
+
+87
+00:03:15,584 --> 00:03:16,864
+save and close
+
+88
+00:03:17,376 --> 00:03:19,168
+So we got a file types set
+
+89
+00:03:19,424 --> 00:03:20,960
+If we go to files now
+
+90
+00:03:21,216 --> 00:03:22,240
+And we can
+
+91
+00:03:22,496 --> 00:03:23,520
+Create a new file
+
+92
+00:03:23,776 --> 00:03:24,544
+Sorry field
+
+93
+00:03:25,824 --> 00:03:27,616
+Files I mean
+
+94
+00:03:27,872 --> 00:03:28,640
+Field
+
+95
+00:03:29,152 --> 00:03:31,968
+And we select the file
+
+96
+00:03:32,224 --> 00:03:34,784
+Come on
+
+97
+00:03:35,040 --> 00:03:37,600
+You see that it gives you the
+
+98
+00:03:37,856 --> 00:03:38,624
+Information
+
+99
+00:03:38,880 --> 00:03:40,160
+And there is that new
+
+100
+00:03:40,416 --> 00:03:41,184
+Attribute
+
+101
+00:03:41,440 --> 00:03:42,208
+Available to us
+
+102
+00:03:43,232 --> 00:03:45,792
+And you'll see that it's also showing up here
+
+103
+00:03:48,352 --> 00:03:50,144
+And so this is the beginning
+
+104
+00:03:50,400 --> 00:03:51,936
+Of actually setting up
+
+105
+00:03:52,448 --> 00:03:52,960
+The
+
+106
+00:03:53,216 --> 00:03:54,496
+File field type
+
+107
+00:03:55,776 --> 00:03:56,544
+to your component
+
+108
+00:03:56,800 --> 00:04:01,408
+I'm just gonna call this file
+
+109
+00:04:01,664 --> 00:04:03,200
+And
+
+110
+00:04:03,712 --> 00:04:05,504
+Then here we can just say
+
+111
+00:04:07,296 --> 00:04:07,808
+File
+
+112
+00:04:09,088 --> 00:04:11,904
+Well let's call it image
+
+113
+00:04:15,232 --> 00:04:19,583
+Here we say, Choose an image from computer with maximum 100Kb
+
+114
+00:04:19,839 --> 00:04:25,727
+And most of these other values we could actually take away
+
+115
+00:04:28,543 --> 00:04:30,847
+we will come back to this
+
+116
+00:04:31,103 --> 00:04:34,431
+Once we've added to the component and started looking
+
+117
+00:04:34,687 --> 00:04:35,199
+at
+
+118
+00:04:35,711 --> 00:04:41,855
+some of the other things that must be done because this is only step A they are actually
+
+119
+00:04:42,111 --> 00:04:43,647
+3 steps to take
+
+120
+00:04:44,415 --> 00:04:46,463
+Of which this is the easiest
+
+121
+00:04:46,975 --> 00:04:49,791
+So we have here
+
+122
+00:04:50,303 --> 00:04:51,327
+Image
+
+123
+00:04:53,887 --> 00:04:54,655
+ don't need to say that just save and
+
+124
+00:04:54,911 --> 00:05:00,799
+Close ok now we go to our admin View
+
+125
+00:05:01,567 --> 00:05:02,079
+And that's this
+
+126
+00:05:02,335 --> 00:05:04,895
+Look I'm gonna go directly to it fields
+
+127
+00:05:05,407 --> 00:05:06,431
+So I could add that
+
+128
+00:05:06,687 --> 00:05:07,199
+File
+
+129
+00:05:07,967 --> 00:05:08,479
+Field type
+
+130
+00:05:09,759 --> 00:05:10,527
+I'm a little bit
+
+131
+00:05:10,783 --> 00:05:12,063
+chunt in here so I'm gonna
+
+132
+00:05:12,831 --> 00:05:14,367
+Zoom out a bit
+
+133
+00:05:14,879 --> 00:05:15,391
+Ok
+
+134
+00:05:17,183 --> 00:05:18,207
+Where will I place this
+
+135
+00:05:18,719 --> 00:05:19,743
+There are
+
+136
+00:05:19,999 --> 00:05:20,767
+Two tabs
+
+137
+00:05:21,791 --> 00:05:24,607
+I think let's do it in the more area
+
+138
+00:05:26,399 --> 00:05:28,447
+At the bottom here
+
+139
+00:05:28,959 --> 00:05:29,471
+More
+
+140
+00:05:30,495 --> 00:05:31,007
+And
+
+141
+00:05:31,263 --> 00:05:36,639
+Image and we'll see there are quite a few files here
+
+142
+00:05:39,455 --> 00:05:40,223
+Image
+
+143
+00:05:43,039 --> 00:05:43,551
+Think it should say
+
+144
+00:05:45,087 --> 00:05:46,623
+file ,here we go
+
+145
+00:05:46,879 --> 00:05:48,671
+And
+
+146
+00:05:48,927 --> 00:05:49,951
+That should do it
+
+147
+00:05:50,463 --> 00:05:51,999
+Let's make it full width
+
+148
+00:05:52,255 --> 00:05:53,023
+For now
+
+149
+00:05:53,279 --> 00:05:54,559
+And then one
+
+150
+00:05:55,839 --> 00:06:00,703
+there is just one and save and close so now
+
+151
+00:06:00,959 --> 00:06:01,983
+If we
+
+152
+00:06:02,239 --> 00:06:05,311
+should open the admin View
+
+153
+00:06:05,823 --> 00:06:07,615
+We should see the new
+
+154
+00:06:09,151 --> 00:06:10,175
+Field has been added
+
+155
+00:06:11,199 --> 00:06:13,759
+And it is said to being in the full view
+
+156
+00:06:14,015 --> 00:06:15,551
+Sorry full width of the
+
+157
+00:06:15,807 --> 00:06:16,319
+The tab
+
+158
+00:06:16,831 --> 00:06:17,599
+In the more tab
+
+159
+00:06:18,879 --> 00:06:19,391
+And
+
+160
+00:06:19,903 --> 00:06:21,695
+We could actually now compile the 
+
+161
+00:06:21,951 --> 00:06:22,463
+Component
+
+162
+00:06:23,231 --> 00:06:27,071
+As a beginning to see ok how it will work out
+
+163
+00:06:28,351 --> 00:06:28,863
+compile it
+
+164
+00:06:30,655 --> 00:06:31,679
+And then
+
+165
+00:06:33,471 --> 00:06:33,983
+Install it
+
+166
+00:06:36,543 --> 00:06:38,847
+Then have a look at it
+
+167
+00:06:39,103 --> 00:06:40,895
+It say create a new demo
+
+168
+00:06:41,151 --> 00:06:43,199
+Go to more
+
+169
+00:06:43,711 --> 00:06:44,735
+So here we see
+
+170
+00:06:45,247 --> 00:06:46,015
+The file
+
+171
+00:06:46,783 --> 00:06:47,807
+So it's telling us
+
+172
+00:06:51,391 --> 00:06:54,463
+File one Ok we have a problem here
+
+173
+00:06:57,023 --> 00:06:58,047
+We've got two
+
+174
+00:06:58,815 --> 00:06:59,583
+
+
+175
+00:07:00,095 --> 00:07:02,143
+Fields with the same name image
+
+176
+00:07:02,911 --> 00:07:04,191
+So I'll have to go change this
+
+177
+00:07:06,495 --> 00:07:07,007
+ go back
+
+178
+00:07:08,031 --> 00:07:09,567
+I'm gonna uninstall this
+
+179
+00:07:10,079 --> 00:07:13,407
+Is gonna be the easiest way to do that
+
+180
+00:07:22,623 --> 00:07:24,671
+And then go back
+
+181
+00:07:24,927 --> 00:07:28,255
+To the fields
+
+182
+00:07:28,767 --> 00:07:29,279
+because it's the
+
+183
+00:07:30,303 --> 00:07:31,583
+Last one I'm created
+
+184
+00:07:32,607 --> 00:07:33,119
+End
+
+185
+00:07:33,375 --> 00:07:34,911
+Image
+
+186
+00:07:35,167 --> 00:07:36,191
+And lets change this
+
+187
+00:07:36,447 --> 00:07:36,959
+to
+
+188
+00:07:38,239 --> 00:07:40,287
+Banner
+
+189
+00:07:41,823 --> 00:07:42,847
+Think that'll be ok
+
+190
+00:07:43,103 --> 00:07:47,455
+Not the type
+
+191
+00:07:49,247 --> 00:07:52,063
+Ok so I think we'll use banner
+
+192
+00:07:52,319 --> 00:07:58,463
+and we'll call this also banner so it stays the field type is file but will use the
+
+193
+00:07:58,719 --> 00:07:59,999
+Label banner
+
+194
+00:08:00,255 --> 00:08:01,791
+and save and close
+
+195
+00:08:02,559 --> 00:08:04,863
+Now let's try again
+
+196
+00:08:05,119 --> 00:08:06,143
+You know if you have
+
+197
+00:08:06,399 --> 00:08:07,935
+Two of the same fields
+
+198
+00:08:08,447 --> 00:08:10,495
+Meaning exactly the same name
+
+199
+00:08:10,751 --> 00:08:12,799
+JCB automatically calls the one
+
+200
+00:08:13,311 --> 00:08:17,407
+ image one the other one image two
+
+201
+00:08:18,175 --> 00:08:23,039
+And doing that is not good practice it usually doesn't come out right in
+
+202
+00:08:24,319 --> 00:08:25,087
+Events
+
+203
+00:08:25,343 --> 00:08:26,623
+especially with history
+
+204
+00:08:26,879 --> 00:08:28,927
+Because it is only tracking one field right
+
+205
+00:08:29,695 --> 00:08:30,719
+And
+
+206
+00:08:30,975 --> 00:08:34,559
+When it actually checks the history that field name doesn't match any field
+
+207
+00:08:34,815 --> 00:08:35,327
+So
+
+208
+00:08:35,583 --> 00:08:38,911
+So when it comes to the history and updating of the database
+
+209
+00:08:39,167 --> 00:08:41,215
+Automatically as you add new fields
+
+210
+00:08:41,727 --> 00:08:47,871
+Using the same field multiple times is not recommended ok
+
+211
+00:08:48,127 --> 00:08:51,967
+So let's try this again
+
+212
+00:08:53,503 --> 00:08:55,807
+And then install it
+
+213
+00:08:56,319 --> 00:08:59,647
+Now if we go and have a look
+
+214
+00:08:59,903 --> 00:09:03,743
+We should see a different
+
+215
+00:09:04,511 --> 00:09:05,791
+Reality here great
+
+216
+00:09:06,047 --> 00:09:06,559
+Banner
+
+217
+00:09:07,071 --> 00:09:09,119
+Its got all the necessary information
+
+218
+00:09:09,631 --> 00:09:11,167
+Obviously this is set
+
+219
+00:09:11,423 --> 00:09:12,447
+in your server
+
+220
+00:09:14,239 --> 00:09:15,263
+Tells you that
+
+221
+00:09:15,775 --> 00:09:18,335
+And now you can click here and select a
+
+222
+00:09:18,591 --> 00:09:19,103
+Image
+
+223
+00:09:19,871 --> 00:09:21,663
+So I'm gonna do that
+
+224
+00:09:21,919 --> 00:09:26,783
+So I got this autumn tree forest that I've selected
+
+225
+00:09:27,295 --> 00:09:27,807
+And
+
+226
+00:09:28,319 --> 00:09:33,439
+Need to add a name and some
+
+227
+00:09:33,695 --> 00:09:39,839
+That seems to be all I need to do and then save and we have a problem
+
+228
+00:09:42,143 --> 00:09:42,911
+Now as 
+
+229
+00:09:43,679 --> 00:09:44,703
+A little glitch that
+
+230
+00:09:45,215 --> 00:09:46,751
+None of you should have I
+
+231
+00:09:47,263 --> 00:09:48,543
+Tampered with some of the
+
+232
+00:09:49,055 --> 00:09:50,079
+Validations
+
+233
+00:09:50,591 --> 00:09:51,359
+In a previous 
+
+234
+00:09:51,615 --> 00:09:52,127
+tutorial
+
+235
+00:09:52,639 --> 00:09:53,151
+Anyway
+
+236
+00:09:53,663 --> 00:09:55,967
+Now I fixed it and
+
+237
+00:09:56,223 --> 00:09:56,991
+As you can see
+
+238
+00:09:57,759 --> 00:09:59,551
+When I saved the item
+
+239
+00:10:00,063 --> 00:10:01,087
+It actually
+
+240
+00:10:01,343 --> 00:10:02,367
+Didn't upload anything
+
+241
+00:10:03,135 --> 00:10:05,695
+So the file is not in my system
+
+242
+00:10:06,207 --> 00:10:07,743
+And that's where usually
+
+243
+00:10:07,999 --> 00:10:09,023
+All of you would sort of
+
+244
+00:10:09,279 --> 00:10:11,327
+End up ok so you've used file
+
+245
+00:10:11,583 --> 00:10:13,119
+you've
+
+246
+00:10:13,375 --> 00:10:14,143
+Selected the
+
+247
+00:10:14,399 --> 00:10:16,191
+Banner whatever you wanted to upload
+
+248
+00:10:16,959 --> 00:10:20,799
+And it just nothing happened and that's because
+
+249
+00:10:21,055 --> 00:10:23,359
+There needs to be a server side
+
+250
+00:10:23,615 --> 00:10:26,431
+Which needs to actually validate the file
+
+251
+00:10:26,687 --> 00:10:31,295
+Move the file and check the file and everything
+
+252
+00:10:31,551 --> 00:10:33,599
+Make sure that it's a correct file
+
+253
+00:10:33,855 --> 00:10:34,879
+Secure the file
+
+254
+00:10:35,647 --> 00:10:38,975
+And then place the files path back
+
+255
+00:10:39,231 --> 00:10:39,743
+Into this
+
+256
+00:10:40,255 --> 00:10:41,791
+Field
+
+257
+00:10:42,047 --> 00:10:44,095
+When it puts the value in the database
+
+258
+00:10:45,375 --> 00:10:49,215
+And it's that process which is to be custom coded
+
+259
+00:10:49,727 --> 00:10:54,079
+Ok so let's go back to our component and let's do it
+
+260
+00:10:54,591 --> 00:11:00,735
+One of the things I like to do before I actually start coding anything is really look
+
+261
+00:11:00,991 --> 00:11:07,135
+Under the hood look at what's going on especially if it's the first time I'm doing it so
+
+262
+00:11:07,391 --> 00:11:13,535
+So since many of you this might be your first time I'm gonna show you someone how this is done and it's
+
+263
+00:11:13,791 --> 00:11:19,935
+Like inspecting what's going on Under The Hood and how can I use it
+
+264
+00:11:20,191 --> 00:11:26,335
+So I'm gonna open this item again and I'm going to again select our
+
+265
+00:11:26,591 --> 00:11:27,359
+Image
+
+266
+00:11:27,871 --> 00:11:31,455
+And then having the image selected I'm gonna go to the code
+
+267
+00:11:31,711 --> 00:11:37,855
+So I know where the code is for this website right so I'm gonna go into my editor and I'm going to the
+
+268
+00:11:38,111 --> 00:11:41,695
+Admin area office component and of this
+
+269
+00:11:41,951 --> 00:11:42,463
+View
+
+270
+00:11:42,975 --> 00:11:44,255
+Model
+
+271
+00:11:44,511 --> 00:11:50,655
+Into where it actually saves the values so Follow Me Follow Me There
+
+272
+00:11:50,911 --> 00:11:57,055
+So here we have the component wait not this one that one the Joomla Mount
+
+273
+00:11:57,311 --> 00:12:01,663
+An administrator components demo
+
+274
+00:12:02,175 --> 00:12:04,735
+And then models and look
+
+275
+00:12:05,247 --> 00:12:06,271
+I wanna go there
+
+276
+00:12:06,783 --> 00:12:12,927
+Double click we gonna open and you could just go to almost the bottom of the file somewhere there
+
+277
+00:12:13,183 --> 00:12:15,999
+Look for the save
+
+278
+00:12:16,255 --> 00:12:17,535
+Method
+
+279
+00:12:17,791 --> 00:12:19,839
+Function really
+
+280
+00:12:20,095 --> 00:12:23,167
+That's where we wanna sort of poke because
+
+281
+00:12:23,423 --> 00:12:29,567
+It's at this point where all the data from the browser is available to us 
+
+282
+00:12:29,823 --> 00:12:35,967
+And we should be able to access it now you could write the helper class and put it in your helper function
+
+283
+00:12:36,223 --> 00:12:40,575
+And use the same uploading sort of
+
+284
+00:12:41,087 --> 00:12:47,231
+Class if you want to reuse it but you could also scripted writing here and
+
+285
+00:12:47,487 --> 00:12:49,023
+I'll show you how to do it that way
+
+286
+00:12:50,815 --> 00:12:56,959
+Obviously I like reusing scripts so the helper class Idea is more appealing because I put it there and everywhere I
+
+287
+00:12:57,215 --> 00:12:57,983
+use this field
+
+288
+00:12:58,751 --> 00:12:59,519
+Type
+
+289
+00:12:59,775 --> 00:13:00,799
+for file uploading
+
+290
+00:13:01,055 --> 00:13:06,175
+I just also use this helper class to deal with moving the data and using it
+
+291
+00:13:06,687 --> 00:13:07,711
+Ok so for now
+
+292
+00:13:07,967 --> 00:13:13,087
+What we gonna do is we gonna var dump some values just to the screen
+
+293
+00:13:13,343 --> 00:13:19,487
+When we click save in the UI to see what happened so
+
+294
+00:13:19,999 --> 00:13:21,023
+Let's do that
+
+295
+00:13:21,279 --> 00:13:23,071
+So basically two
+
+296
+00:13:23,327 --> 00:13:29,471
+One is the actual data that is available here and the other is this we getting the
+
+297
+00:13:29,727 --> 00:13:30,495
+Input
+
+298
+00:13:30,751 --> 00:13:31,775
+
+
+299
+00:13:32,287 --> 00:13:33,311
+And I'm gonna
+
+300
+00:13:33,567 --> 00:13:35,871
+Check in files what do we have there
+
+301
+00:13:36,639 --> 00:13:42,783
+In the input of the application and if so Ok we can save this changes then
+
+302
+00:13:43,039 --> 00:13:44,575
+Go back to the
+
+303
+00:13:44,831 --> 00:13:46,367
+The website
+
+304
+00:13:46,879 --> 00:13:49,695
+And basically just click save
+
+305
+00:13:50,463 --> 00:13:56,607
+Ok so now we got a a dump now if yours doesn't look like this it might be because you do not have
+
+306
+00:13:56,863 --> 00:13:58,655
+XdD bug install on your server
+
+307
+00:13:59,423 --> 00:14:03,007
+You would then want to add some sort of
+
+308
+00:14:03,775 --> 00:14:06,847
+Formatting
+
+309
+00:14:07,359 --> 00:14:08,383
+Something like this
+
+310
+00:14:09,663 --> 00:14:10,687
+Echo
+
+311
+00:14:10,943 --> 00:14:17,087
+pre some like that should do it
+
+312
+00:14:17,343 --> 00:14:23,487
+Just to sort of add some formatting that it doesn't bulge into one line
+
+313
+00:14:23,743 --> 00:14:27,583
+Ok I don't need that I've got XD bug so it does it for me
+
+314
+00:14:27,839 --> 00:14:33,983
+Ok so now we here we have the data and we see that our
+
+315
+00:14:36,031 --> 00:14:36,543
+Where is it
+
+316
+00:14:37,311 --> 00:14:43,455
+Banner B it's not even the data list but that's ok
+
+317
+00:14:43,711 --> 00:14:49,855
+Just crawled down you see we dumped a different set of data and it actually 
+
+318
+00:14:50,111 --> 00:14:50,879
+if we scroll a little
+
+319
+00:14:51,135 --> 00:14:57,279
+We'll see that has a protected value called  jform name type temporary
+
+320
+00:14:57,535 --> 00:14:59,583
+Name error size
+
+321
+00:15:00,863 --> 00:15:06,751
+All that information then in the temporal name and has
+
+322
+00:15:07,007 --> 00:15:08,543
+The actual file name
+
+323
+00:15:08,799 --> 00:15:14,943
+Banner with its temporal occation so it creates a temporal 
+
+324
+00:15:15,199 --> 00:15:16,223
+location for the file
+
+325
+00:15:16,991 --> 00:15:23,135
+It tells us type is image jpeg and also gives us the file name
+
+326
+00:15:23,391 --> 00:15:29,535
+And so this is the array would you want to actually get hold of and
+
+327
+00:15:29,791 --> 00:15:33,887
+With whom you would want to yes make changes
+
+328
+00:15:34,143 --> 00:15:35,679
+Move that image
+
+329
+00:15:35,935 --> 00:15:42,079
+Give it it correct name back after validating it and doing whatever sanitation is required
+
+330
+00:15:42,335 --> 00:15:48,223
+And then saving that value back into the banner data position
+
+331
+00:15:48,479 --> 00:15:52,319
+Which should be in this first array here but it is
+
+332
+00:15:52,575 --> 00:15:53,343
+It isn't there
+
+333
+00:15:53,599 --> 00:15:54,879
+But it should be here
+
+334
+00:15:55,135 --> 00:15:58,719
+So you should actually just create it
+
+335
+00:15:58,975 --> 00:16:03,071
+Ok so going back to the code let's do some of that
+
+336
+00:16:03,839 --> 00:16:05,631
+There is a nice
+
+337
+00:16:05,887 --> 00:16:07,423
+Get function here
+
+338
+00:16:07,935 --> 00:16:14,079
+We can just say  jform if you remember that was where the data is and if we want all the values back
+
+339
+00:16:14,335 --> 00:16:17,919
+as an array or that it should be null if there is none existing
+
+340
+00:16:18,175 --> 00:16:20,479
+So we gonna save that and then
+
+341
+00:16:20,735 --> 00:16:23,807
+Just upload the file again to see
+
+342
+00:16:24,063 --> 00:16:25,855
+You know how does it look now
+
+343
+00:16:27,135 --> 00:16:32,511
+Have to do it again because of previous values are actually gone
+
+344
+00:16:32,767 --> 00:16:38,911
+So we'll click save again and there we go we've get a little different array
+
+345
+00:16:39,167 --> 00:16:40,447
+But more useful
+
+346
+00:16:40,703 --> 00:16:41,983
+An easier to parse
+
+347
+00:16:42,751 --> 00:16:48,639
+And now we can take the next step to actually check the this array exist
+
+348
+00:16:49,663 --> 00:16:55,807
+There is a function already or a class in Joomla which already does
+
+349
+00:16:56,063 --> 00:16:57,599
+All of this for you
+
+350
+00:16:58,623 --> 00:17:03,487
+In fact I would say let's go look at that and let's just copy some of those functions
+
+351
+00:17:03,743 --> 00:17:09,887
+In fact that's copy the function and adapted to our needs and just put it into
+
+352
+00:17:10,143 --> 00:17:16,287
+Our our class so in components you go to the
+
+353
+00:17:16,543 --> 00:17:17,311
+The
+
+354
+00:17:18,079 --> 00:17:24,223
+Installer then the model and then uninstall
+
+355
+00:17:24,479 --> 00:17:28,575
+and scroll down till you see one that says get package from
+
+356
+00:17:28,831 --> 00:17:29,343
+upload
+
+357
+00:17:29,855 --> 00:17:34,207
+I think what it says yeah get package from upload
+
+358
+00:17:34,463 --> 00:17:38,303
+This is the function which is really ideal for the task
+
+359
+00:17:38,815 --> 00:17:44,959
+It takes care of a lot of sanitizing it has lot of error checks in it and it should
+
+360
+00:17:45,215 --> 00:17:45,727
+Should be
+
+361
+00:17:46,239 --> 00:17:52,383
+Yeah it should be useful for us in this case we'll obviously take some stuff
+
+362
+00:17:52,639 --> 00:17:58,783
+away and add our own little messages so we don't depend on the installer
+
+363
+00:17:59,039 --> 00:18:05,183
+Messages so we'll just copy this whole function all the way up there
+
+364
+00:18:05,695 --> 00:18:11,071
+just control copy it go to look our class
+
+365
+00:18:11,583 --> 00:18:16,703
+And for now I'm just gonna paste it in here above
+
+366
+00:18:16,959 --> 00:18:23,103
+So there are some key things I would like to change here for example
+
+367
+00:18:23,359 --> 00:18:27,711
+I'm thinking let's
+
+368
+00:18:28,479 --> 00:18:31,295
+Let's change a function name and we call it
+
+369
+00:18:32,063 --> 00:18:32,831
+My
+
+370
+00:18:35,391 --> 00:18:38,975
+Upload function
+
+371
+00:18:39,487 --> 00:18:39,999
+For now
+
+372
+00:18:41,535 --> 00:18:42,047
+And
+
+373
+00:18:42,559 --> 00:18:44,351
+We we gonna pass it the input
+
+374
+00:18:45,375 --> 00:18:46,655
+So we don't want that
+
+375
+00:18:47,423 --> 00:18:48,959
+To be done twice
+
+376
+00:18:49,215 --> 00:18:50,239
+And
+
+377
+00:18:50,495 --> 00:18:56,127
+We know the this is gonna to be jform and we definitely don't want to have raw
+
+378
+00:18:56,383 --> 00:18:59,711
+Because it's an image We want this to be array
+
+379
+00:18:59,967 --> 00:19:02,783
+So we can actually check the values
+
+380
+00:19:03,039 --> 00:19:04,575
+And then
+
+381
+00:19:04,831 --> 00:19:07,391
+This looks fine
+
+382
+00:19:09,695 --> 00:19:12,511
+We can say here
+
+383
+00:19:13,279 --> 00:19:14,047
+Upload
+
+384
+00:19:14,559 --> 00:19:16,095
+Sorry up
+
+385
+00:19:16,607 --> 00:19:17,375
+load
+
+386
+00:19:17,887 --> 00:19:18,399
+ing
+
+387
+00:19:19,167 --> 00:19:21,215
+of images
+
+388
+00:19:21,727 --> 00:19:22,239
+Not
+
+389
+00:19:22,495 --> 00:19:28,639
+Available no wait and set uploads are not enabled in PHP that seems fine
+
+390
+00:19:28,895 --> 00:19:35,039
+Ok we can actually take these messages and put them in here because JCB is gonna grab this
+
+391
+00:19:35,295 --> 00:19:37,087
+Once we put it into our component
+
+392
+00:19:37,599 --> 00:19:43,743
+ and gonna add it to all language files for all component in this is really wanna make sure that that happens
+
+393
+00:19:44,511 --> 00:19:50,655
+We don't need the Zlib because we not gonna unzip anything
+
+394
+00:19:51,679 --> 00:19:57,055
+So we could actually move this part
+
+395
+00:19:58,079 --> 00:20:04,223
+Now there is gonna check where we actually got a file set of files here so
+
+396
+00:20:04,479 --> 00:20:05,759
+It's got a check wither that
+
+397
+00:20:06,015 --> 00:20:08,063
+User file is an array
+
+398
+00:20:08,319 --> 00:20:14,463
+And if it's not it want to say no file was selected or 
+
+399
+00:20:14,719 --> 00:20:17,279
+a file was uploaded so we can just type that in
+
+400
+00:20:18,047 --> 00:20:24,191
+If at this point we detect any errors we basically want to
+
+401
+00:20:24,447 --> 00:20:30,591
+You know erase those errors and actually break out of this upload
+
+402
+00:20:30,847 --> 00:20:34,687
+So let's see
+
+403
+00:20:35,967 --> 00:20:40,831
+Upload error warning upload error
+
+404
+00:20:41,599 --> 00:20:47,743
+I suppose we need to go look at these language strings in the 
+
+405
+00:20:47,999 --> 00:20:53,375
+Language file of the installer to correctly translate these
+
+406
+00:20:54,143 --> 00:20:57,983
+For now I'm not gonna do that so I'm just gonna say error
+
+407
+00:20:59,007 --> 00:21:01,823
+You can you know do that on your own
+
+408
+00:21:02,079 --> 00:21:08,223
+Ok now what we wanna check here is our
+
+409
+00:21:08,479 --> 00:21:14,623
+Upload size you want to make sure that our upload size is what we expected
+
+410
+00:21:14,879 --> 00:21:21,024
+Is the maximum upload size too small in the php.ini and that's really
+
+411
+00:21:21,280 --> 00:21:27,424
+What happening here and so again it will give an error saying
+
+412
+00:21:27,680 --> 00:21:32,288
+File too large
+
+413
+00:21:34,848 --> 00:21:40,992
+there we go the same here
+
+414
+00:21:41,248 --> 00:21:47,392
+It's checking again this time it's first checked whether it's in the INI files here it actually check the file size
+
+415
+00:21:47,648 --> 00:21:50,464
+that there is a file size
+
+416
+00:21:50,720 --> 00:21:56,864
+And so we can again say
+
+417
+00:21:57,120 --> 00:22:03,264
+Upload error again you should just check what is the actual file language string
+
+418
+00:22:03,520 --> 00:22:07,104
+And replace that with the English version here
+
+419
+00:22:07,360 --> 00:22:08,384
+Ok then
+
+420
+00:22:08,640 --> 00:22:10,176
+We build appropriate path
+
+421
+00:22:10,944 --> 00:22:17,088
+We take the filename create the path we used create this temporal
+
+422
+00:22:17,344 --> 00:22:19,648
+SRC which is source path
+
+423
+00:22:20,416 --> 00:22:21,440
+And then we
+
+424
+00:22:21,696 --> 00:22:23,488
+Move the file with the
+
+425
+00:22:23,744 --> 00:22:25,536
+Jfile upload
+
+426
+00:22:27,072 --> 00:22:32,192
+Now at this point the file is being uploaded to the server
+
+427
+00:22:34,752 --> 00:22:38,848
+And they are still validation still to do in our
+
+428
+00:22:39,104 --> 00:22:40,896
+Script what we actually
+
+429
+00:22:41,152 --> 00:22:45,760
+Just grabbed from the uploader class
+
+430
+00:22:46,016 --> 00:22:52,160
+We do this unpack now we don't need unpack we wanna do some other things here
+
+431
+00:22:52,416 --> 00:22:53,440
+Which are
+
+432
+00:22:53,952 --> 00:22:55,744
+More appropriate for our purpose
+
+433
+00:22:57,280 --> 00:22:58,304
+First thing I'm gonna
+
+434
+00:22:58,560 --> 00:23:02,144
+Actually move the get classes function up a few lines
+
+435
+00:23:02,400 --> 00:23:06,496
+And also make sure to have the folder class actually available in case
+
+436
+00:23:07,008 --> 00:23:09,568
+Then I'm going to clean the name
+
+437
+00:23:10,080 --> 00:23:14,944
+So that it is everything is fine and well it anywhere later we might not have any issues
+
+438
+00:23:16,224 --> 00:23:19,808
+Ok so then we still have what we did here before
+
+439
+00:23:20,064 --> 00:23:23,392
+This actually is going to be replaced with little function
+
+440
+00:23:23,648 --> 00:23:26,720
+Which I sort of started writing called
+
+441
+00:23:26,976 --> 00:23:30,560
+Check upload I'm gonna change this function as one of my own
+
+442
+00:23:31,072 --> 00:23:33,120
+Sort of functions which I've already adapted
+
+443
+00:23:33,376 --> 00:23:34,144
+For other projects and
+
+444
+00:23:34,400 --> 00:23:34,912
+The past
+
+445
+00:23:35,168 --> 00:23:36,192
+Like you've seen
+
+446
+00:23:36,448 --> 00:23:37,984
+we already move this one out
+
+447
+00:23:38,496 --> 00:23:40,288
+That one can stay like that
+
+448
+00:23:40,800 --> 00:23:41,312
+So
+
+449
+00:23:41,568 --> 00:23:42,592
+over here
+
+450
+00:23:42,848 --> 00:23:47,456
+We are going to just do a little check-up to actually make sure that the package
+
+451
+00:23:47,712 --> 00:23:50,016
+Which we are actually going to
+
+452
+00:23:50,528 --> 00:23:56,672
+Give back and which were used to store in a database and all the rest is actually you know
+
+453
+00:23:56,928 --> 00:23:57,696
+Ok
+
+454
+00:23:59,488 --> 00:24:05,632
+So here we just gonna grab the result of this which basically gonna be true or false and we gonna check
+
+455
+00:24:05,888 --> 00:24:07,424
+If it's False we gonna say
+
+456
+00:24:09,216 --> 00:24:11,008
+No some that I did upload
+
+457
+00:24:12,544 --> 00:24:13,312
+Failed ok
+
+458
+00:24:16,128 --> 00:24:16,896
+And
+
+459
+00:24:17,408 --> 00:24:18,176
+Then
+
+460
+00:24:18,432 --> 00:24:19,968
+If we still going
+
+461
+00:24:20,224 --> 00:24:22,528
+We going to actually do this check
+
+462
+00:24:25,600 --> 00:24:28,672
+So now we've got this check upload in place
+
+463
+00:24:29,184 --> 00:24:32,000
+And we first gonna get the format from the file
+
+464
+00:24:32,512 --> 00:24:35,328
+And then we going to use a little
+
+465
+00:24:35,584 --> 00:24:38,656
+Custom script here to validate our format
+
+466
+00:24:39,168 --> 00:24:40,704
+I've got a
+
+467
+00:24:41,472 --> 00:24:45,568
+In my component I usually set formats that I allow
+
+468
+00:24:45,824 --> 00:24:47,616
+So it's a global
+
+469
+00:24:47,872 --> 00:24:48,384
+thing
+
+470
+00:24:48,896 --> 00:24:50,176
+That means
+
+471
+00:24:50,688 --> 00:24:56,576
+In your component you would have to actually go in and add config
+
+472
+00:24:58,112 --> 00:24:59,136
+Drop down
+
+473
+00:24:59,392 --> 00:25:00,928
+With a list of
+
+474
+00:25:01,440 --> 00:25:02,208
+Allowed
+
+475
+00:25:02,464 --> 00:25:04,512
+Formats now
+
+476
+00:25:04,768 --> 00:25:07,072
+To sort of sidestep that in
+
+477
+00:25:07,328 --> 00:25:08,608
+Instead of trying to
+
+478
+00:25:08,864 --> 00:25:09,632
+Explain all that
+
+479
+00:25:10,144 --> 00:25:12,448
+I'm just going to go and remove this
+
+480
+00:25:12,704 --> 00:25:13,984
+Function here you could
+
+481
+00:25:14,496 --> 00:25:18,080
+You know pause this and copy that down if you know what I'm talking about but then in
+
+482
+00:25:18,336 --> 00:25:19,104
+That case
+
+483
+00:25:19,360 --> 00:25:21,920
+You don't need to pause this you know how to type it
+
+484
+00:25:22,432 --> 00:25:24,480
+I'm so I'm gonna remove that
+
+485
+00:25:24,736 --> 00:25:25,760
+And just add
+
+486
+00:25:26,016 --> 00:25:30,112
+You know some format was I think ok I'm ok with this JPG
+
+487
+00:25:30,368 --> 00:25:35,488
+I'm ok with that format and I'm also gonna be ok with
+
+488
+00:25:36,256 --> 00:25:37,024
+jpeg
+
+489
+00:25:38,304 --> 00:25:38,816
+Ok obviously
+
+490
+00:25:39,328 --> 00:25:40,352
+Add the dot there
+
+491
+00:25:41,376 --> 00:25:41,888
+
+
+492
+00:25:42,656 --> 00:25:43,680
+And
+
+493
+00:25:44,448 --> 00:25:45,216
+Maybe gif let's see or wait
+
+494
+00:25:47,520 --> 00:25:48,800
+png
+
+495
+00:25:50,336 --> 00:25:52,640
+And then gif
+
+496
+00:25:54,176 --> 00:25:55,968
+So those are the formats that I'm
+
+497
+00:25:56,224 --> 00:25:56,992
+Gonna say yeah
+
+498
+00:25:57,248 --> 00:26:02,368
+Those are fine of course because it's really the file extension that we are checking here right
+
+499
+00:26:03,136 --> 00:26:08,512
+So we not gonna use a global value here we just going to use the file format
+
+500
+00:26:08,768 --> 00:26:10,304
+Allowed file formats
+
+501
+00:26:11,584 --> 00:26:14,656
+And then here would basically gonna check
+
+502
+00:26:14,912 --> 00:26:17,984
+Is this file format in this array
+
+503
+00:26:18,496 --> 00:26:19,520
+If it's not
+
+504
+00:26:19,776 --> 00:26:20,800
+We gonna say
+
+505
+00:26:22,080 --> 00:26:25,152
+Invalid file
+
+506
+00:26:25,408 --> 00:26:26,176
+Format
+
+507
+00:26:27,456 --> 00:26:33,600
+And there we go and is gonna error out but with this error out we will
+
+508
+00:26:33,856 --> 00:26:34,880
+Need to do some house cleaning
+
+509
+00:26:35,136 --> 00:26:36,416
+So
+
+510
+00:26:37,696 --> 00:26:39,488
+We will have to look at that at the moment
+
+511
+00:26:40,000 --> 00:26:46,144
+So what I think I'll do is I'm going there also passes the destination of where we've moved the file
+
+512
+00:26:46,656 --> 00:26:47,424
+And
+
+513
+00:26:47,680 --> 00:26:48,704
+Then
+
+514
+00:26:48,960 --> 00:26:51,520
+Because that's where the file currently is right
+
+515
+00:26:52,288 --> 00:26:56,128
+So here we got the temporal destination which is really
+
+516
+00:26:56,384 --> 00:27:02,528
+In the temporal path the temporal folder of the Joomla website it's not where we want to end up
+
+517
+00:27:02,784 --> 00:27:06,624
+It's just where we gonna keep the file until we happy that it's safe and so
+
+518
+00:27:07,904 --> 00:27:13,280
+Ok we got it in the temporal destination we moved it up there
+
+519
+00:27:13,536 --> 00:27:17,120
+And now we checked if something happened yet fine
+
+520
+00:27:17,376 --> 00:27:18,912
+Do check the upload
+
+521
+00:27:19,424 --> 00:27:19,936
+And
+
+522
+00:27:20,192 --> 00:27:20,704
+Here
+
+523
+00:27:20,960 --> 00:27:21,984
+If we now
+
+524
+00:27:22,240 --> 00:27:22,752
+Find
+
+525
+00:27:23,008 --> 00:27:23,776
+That this
+
+526
+00:27:24,288 --> 00:27:25,312
+Actual file
+
+527
+00:27:26,080 --> 00:27:27,104
+Is
+
+528
+00:27:27,360 --> 00:27:29,664
+Problematic we gonna have to remove it
+
+529
+00:27:29,920 --> 00:27:32,736
+So we gonna have a little new little class here
+
+530
+00:27:32,992 --> 00:27:35,808
+And then we gonna say remove 
+
+531
+00:27:37,344 --> 00:27:39,392
+let's say file
+
+532
+00:27:39,648 --> 00:27:40,416
+I think that's right
+
+533
+00:27:40,928 --> 00:27:45,280
+And we gonna write this little remove file in a moment
+
+534
+00:27:46,048 --> 00:27:49,376
+Ok so let's say for our reason you'll see here I've got a lot of
+
+535
+00:27:49,632 --> 00:27:54,496
+Validation whether the user actually has permission to upload stuff
+
+536
+00:27:54,752 --> 00:27:58,592
+Now that again I'm I'm gonna remove that from now because
+
+537
+00:27:58,848 --> 00:27:59,616
+Yeah
+
+538
+00:27:59,872 --> 00:28:02,688
+It's gonna be a little bit Beyond the scope of what we're explaining
+
+539
+00:28:05,248 --> 00:28:06,784
+Now
+
+540
+00:28:07,040 --> 00:28:09,856
+I want to pass a package back
+
+541
+00:28:10,112 --> 00:28:10,624
+Which
+
+542
+00:28:10,880 --> 00:28:12,416
+We are happy with
+
+543
+00:28:12,672 --> 00:28:13,184
+Saying
+
+544
+00:28:13,440 --> 00:28:17,024
+This is actually where our file is
+
+545
+00:28:17,280 --> 00:28:19,072
+And what its name is
+
+546
+00:28:19,840 --> 00:28:20,864
+And
+
+547
+00:28:21,120 --> 00:28:23,168
+So we gonna just do that
+
+548
+00:28:24,192 --> 00:28:25,472
+So that's the directory
+
+549
+00:28:26,240 --> 00:28:28,288
+And that is the package name
+
+550
+00:28:28,800 --> 00:28:29,568
+And we gonna
+
+551
+00:28:30,080 --> 00:28:31,616
+Pass that back
+
+552
+00:28:31,872 --> 00:28:32,640
+As the package
+
+553
+00:28:34,176 --> 00:28:34,944
+We could
+
+554
+00:28:35,456 --> 00:28:36,224
+Since we've got the
+
+555
+00:28:36,480 --> 00:28:36,992
+Format
+
+556
+00:28:38,272 --> 00:28:40,576
+And maybe you wanna store that
+
+557
+00:28:41,344 --> 00:28:43,648
+We could also add that to the array
+
+558
+00:28:54,144 --> 00:28:54,656
+So
+
+559
+00:28:56,448 --> 00:28:58,240
+There we go everything is good
+
+560
+00:28:58,752 --> 00:29:04,896
+The package name directory path as well as the format and will return that back
+
+561
+00:29:05,152 --> 00:29:05,920
+As the package
+
+562
+00:29:06,432 --> 00:29:08,224
+And we give that back
+
+563
+00:29:08,992 --> 00:29:11,040
+To the model
+
+564
+00:29:11,296 --> 00:29:12,576
+The save function
+
+565
+00:29:13,088 --> 00:29:16,416
+Is going to call this so in the save function we gonna call
+
+566
+00:29:16,672 --> 00:29:17,184
+This
+
+567
+00:29:17,696 --> 00:29:19,488
+here oh yes and we said
+
+568
+00:29:20,000 --> 00:29:21,280
+We are going to
+
+569
+00:29:21,792 --> 00:29:22,560
+Has it
+
+570
+00:29:22,816 --> 00:29:23,584
+The input
+
+571
+00:29:23,840 --> 00:29:25,120
+Field
+
+572
+00:29:25,632 --> 00:29:31,008
+The input value since we're really getting it why get it again so we gonna pass that over here
+
+573
+00:29:31,264 --> 00:29:33,312
+See something like
+
+574
+00:29:33,568 --> 00:29:35,872
+That ok
+
+575
+00:29:37,920 --> 00:29:38,944
+That looks good
+
+576
+00:29:41,760 --> 00:29:42,528
+So
+
+577
+00:29:44,064 --> 00:29:49,440
+Now all that needs to be done is over here instead of this
+
+578
+00:29:49,696 --> 00:29:50,208
+Function
+
+579
+00:29:50,464 --> 00:29:52,256
+We can now do
+
+580
+00:29:52,512 --> 00:29:53,280
+The following
+
+581
+00:29:54,304 --> 00:29:55,840
+This
+
+582
+00:29:56,352 --> 00:29:59,680
+My upload function
+
+583
+00:29:59,936 --> 00:30:00,448
+And the input
+
+584
+00:30:01,216 --> 00:30:03,008
+there we got
+
+585
+00:30:04,288 --> 00:30:05,056
+So
+
+586
+00:30:05,568 --> 00:30:07,616
+I will actually end up with that package
+
+587
+00:30:07,872 --> 00:30:09,664
+information right in this variable
+
+588
+00:30:09,920 --> 00:30:13,760
+And we can then just exit out to see how that will look
+
+589
+00:30:14,016 --> 00:30:16,320
+And even if we've got some typo errors here
+
+590
+00:30:16,832 --> 00:30:20,928
+Oh yes we still need to create remove file if we have a problem
+
+591
+00:30:22,976 --> 00:30:25,536
+Ok so why do we need to remove the file
+
+592
+00:30:27,072 --> 00:30:32,960
+Well all the way up till here the files is actually not on the server
+
+593
+00:30:33,728 --> 00:30:35,008
+It is somewhere in memory
+
+594
+00:30:35,520 --> 00:30:37,312
+Somewhere in limbo
+
+595
+00:30:37,568 --> 00:30:38,080
+And
+
+596
+00:30:38,336 --> 00:30:39,872
+If something happens
+
+597
+00:30:40,384 --> 00:30:46,528
+And we returned False here we don't need to do anything it's not really anywhere it's just gonna
+
+598
+00:30:46,784 --> 00:30:48,064
+Disappear
+
+599
+00:30:48,576 --> 00:30:49,088
+Same with it
+
+600
+00:30:49,344 --> 00:30:51,392
+Happening here or there
+
+601
+00:30:51,648 --> 00:30:53,952
+Or any of these other areas before here
+
+602
+00:30:54,464 --> 00:30:57,024
+But the moment we do this
+
+603
+00:30:57,536 --> 00:30:59,584
+We are actually moving the file to the server
+
+604
+00:31:00,096 --> 00:31:04,448
+And it is now if that is true it is on the server
+
+605
+00:31:04,960 --> 00:31:09,056
+And so when we pass the destination and the filename here to check upload
+
+606
+00:31:09,312 --> 00:31:11,104
+We ready have the file on the server
+
+607
+00:31:12,128 --> 00:31:18,272
+And so if we then discover that this file is not legit we don't want it we must remove it
+
+608
+00:31:18,528 --> 00:31:20,320
+Or any other checks we do
+
+609
+00:31:20,576 --> 00:31:23,648
+Even if it's something more complicated than this
+
+610
+00:31:23,904 --> 00:31:24,928
+You must remove it
+
+611
+00:31:25,184 --> 00:31:26,208
+Because it's on the server
+
+612
+00:31:26,720 --> 00:31:30,048
+And so our little remove function I'm trying to save a some
+
+613
+00:31:30,304 --> 00:31:31,072
+Some
+
+614
+00:31:31,328 --> 00:31:32,096
+Unnecessary
+
+615
+00:31:32,352 --> 00:31:32,864
+things
+
+616
+00:31:33,376 --> 00:31:36,448
+I'm gonna also snipper it up a bit because we're ready up here
+
+617
+00:31:36,960 --> 00:31:41,312
+We got the classes for the file in a folder so we don't need to load that again
+
+618
+00:31:41,568 --> 00:31:44,640
+We going to pass it the destination
+
+619
+00:31:44,896 --> 00:31:48,224
+Which is the folder
+
+620
+00:31:48,480 --> 00:31:48,992
+And
+
+621
+00:31:49,504 --> 00:31:50,016
+We gonna
+
+622
+00:31:50,528 --> 00:31:52,064
+That's gonna be fine
+
+623
+00:31:53,856 --> 00:31:54,368
+So
+
+624
+00:31:54,624 --> 00:31:56,928
+All of us we are able to
+
+625
+00:31:57,184 --> 00:31:57,952
+Actually
+
+626
+00:32:00,512 --> 00:32:03,840
+clear out the name we don't need this we just need to package name
+
+627
+00:32:04,864 --> 00:32:06,912
+So here we gonna ask is it a file
+
+628
+00:32:07,168 --> 00:32:13,312
+Then delete then if there's something not right we gonna do clean path and just check
+
+629
+00:32:13,568 --> 00:32:16,128
+Again and delete in this should remove
+
+630
+00:32:16,384 --> 00:32:17,152
+The file
+
+631
+00:32:17,408 --> 00:32:17,920
+From
+
+632
+00:32:18,176 --> 00:32:19,200
+The server
+
+633
+00:32:19,712 --> 00:32:23,040
+You can test that if something's wrong just Google it
+
+634
+00:32:23,296 --> 00:32:23,808
+And
+
+635
+00:32:24,064 --> 00:32:25,856
+Tweak it but this should be ok
+
+636
+00:32:27,392 --> 00:32:29,696
+So we gonna basically pass it
+
+637
+00:32:29,952 --> 00:32:32,000
+The destination path
+
+638
+00:32:32,256 --> 00:32:33,792
+Which is the one to where we moved it
+
+639
+00:32:34,048 --> 00:32:34,560
+Remember
+
+640
+00:32:35,072 --> 00:32:35,584
+up here
+
+641
+00:32:36,352 --> 00:32:40,704
+So that's the same path we are passing all the way down to the remove
+
+642
+00:32:41,216 --> 00:32:43,776
+Function and then
+
+643
+00:32:44,032 --> 00:32:45,312
+It will clear it out for us
+
+644
+00:32:45,824 --> 00:32:49,408
+And if everything is fine and it doesn't need to
+
+645
+00:32:49,664 --> 00:32:54,016
+We gonna continue on and then pass it back here
+
+646
+00:32:55,296 --> 00:32:56,576
+ to the package
+
+647
+00:32:56,832 --> 00:32:57,856
+Which will be returned
+
+648
+00:32:58,112 --> 00:32:58,624
+to our
+
+649
+00:32:58,880 --> 00:32:59,392
+Save
+
+650
+00:32:59,904 --> 00:33:00,672
+Method
+
+651
+00:33:00,928 --> 00:33:07,072
+So all of this code that I just wrote here now I'll take it and dump it on GitHub as a gist
+
+652
+00:33:07,328 --> 00:33:10,656
+So you could go there I'll give the
+
+653
+00:33:11,168 --> 00:33:16,032
+link to it but if this is Quickly coded I mean
+
+654
+00:33:16,288 --> 00:33:18,592
+I'm sure that you could improve it
+
+655
+00:33:18,848 --> 00:33:21,152
+We copy it and pasted stuff from other
+
+656
+00:33:21,408 --> 00:33:23,456
+You know other classes
+
+657
+00:33:23,712 --> 00:33:29,856
+To sort of get this working but there's nothing really to extravagant here the only thing
+
+658
+00:33:30,112 --> 00:33:36,256
+ that we didn't go into his exactly what does clean do and what does apply do and
+
+659
+00:33:36,512 --> 00:33:40,864
+Those kind of things but you can obviously go through the Joomla libraries and
+
+660
+00:33:41,120 --> 00:33:42,912
+Check exactly what does it do
+
+661
+00:33:44,448 --> 00:33:47,520
+But for the most part it's just generic
+
+662
+00:33:48,032 --> 00:33:49,056
+php
+
+663
+00:33:49,312 --> 00:33:50,592
+Functionality
+
+664
+00:33:50,848 --> 00:33:52,896
+And so yes
+
+665
+00:33:53,152 --> 00:33:54,688
+That it would be enough
+
+666
+00:33:54,944 --> 00:33:57,504
+To actually upload the file
+
+667
+00:33:57,760 --> 00:33:59,552
+So let's give it a spin
+
+668
+00:34:01,088 --> 00:34:02,880
+So we back over here if we
+
+669
+00:34:03,136 --> 00:34:06,464
+Click on this it will actually take us out of the
+
+670
+00:34:06,976 --> 00:34:11,072
+Item so we can just click the back there then name
+
+671
+00:34:12,608 --> 00:34:18,752
+And we would have again to select the actual image so there we have the the image
+
+672
+00:34:19,520 --> 00:34:21,568
+And we can click save
+
+673
+00:34:22,080 --> 00:34:25,152
+And see what happens oops we gotta bounce of errors here
+
+674
+00:34:25,920 --> 00:34:29,760
+Ok let's see undefined index undefined index we've got trouble
+
+675
+00:34:30,016 --> 00:34:31,808
+Let me go see why
+
+676
+00:34:33,856 --> 00:34:35,904
+Ok so I didn't pay close 
+
+677
+00:34:36,160 --> 00:34:38,720
+attention here I'm just gonna do another var dump
+
+678
+00:34:39,232 --> 00:34:45,376
+So I can get the exact way to sort of most possibly need to do a for each
+
+679
+00:34:46,912 --> 00:34:48,960
+It might want to upload more than one
+
+680
+00:34:49,472 --> 00:34:49,984
+But
+
+681
+00:34:50,240 --> 00:34:55,360
+Or we could force it to just use the first I think I wrote something about this
+
+682
+00:34:55,616 --> 00:34:57,152
+Already somewhere let me just check
+
+683
+00:34:58,176 --> 00:35:00,224
+Think this should do the trick
+
+684
+00:35:00,480 --> 00:35:05,600
+If it's an array we just wanna grab the first value out of the array
+
+685
+00:35:06,112 --> 00:35:07,904
+If you got multiple
+
+686
+00:35:08,416 --> 00:35:08,928
+Fields
+
+687
+00:35:09,696 --> 00:35:11,488
+That are uploading files
+
+688
+00:35:11,744 --> 00:35:15,328
+In the same view you gonna have to change this little chunk here
+
+689
+00:35:16,352 --> 00:35:18,656
+Because then you gonna have to deal with each of those
+
+690
+00:35:18,912 --> 00:35:20,192
+Files
+
+691
+00:35:20,704 --> 00:35:23,520
+In a for each loop inside of this function
+
+692
+00:35:25,056 --> 00:35:27,104
+Which basically would mean you could
+
+693
+00:35:27,360 --> 00:35:32,992
+Skip all these as they are Global to everyone of them and then from about
+
+694
+00:35:33,504 --> 00:35:35,552
+Yes from about here
+
+695
+00:35:35,808 --> 00:35:37,344
+You would add a for each loop
+
+696
+00:35:38,368 --> 00:35:39,136
+Because you would
+
+697
+00:35:39,648 --> 00:35:45,792
+Ok and then here you won't Echo well you won't break out you just grab the error into an array
+
+698
+00:35:46,304 --> 00:35:48,096
+Which you would have eventually then pass
+
+699
+00:35:49,632 --> 00:35:50,144
+More
+
+700
+00:35:51,424 --> 00:35:53,472
+Targeting each specific package
+
+701
+00:35:53,728 --> 00:35:55,008
+Really
+
+702
+00:35:55,264 --> 00:35:56,544
+And then return
+
+703
+00:35:57,056 --> 00:35:57,568
+Here
+
+704
+00:35:57,824 --> 00:36:02,432
+All the successes as well as the errors and handle it somewhere else
+
+705
+00:36:02,944 --> 00:36:06,016
+So since we just uploading one file I'm not gonna
+
+706
+00:36:06,272 --> 00:36:07,040
+You know
+
+707
+00:36:07,296 --> 00:36:09,344
+Do all that just gonna grab that
+
+708
+00:36:09,856 --> 00:36:11,136
+First
+
+709
+00:36:11,392 --> 00:36:16,000
+Value and we gonna work with that first value in that should do it
+
+710
+00:36:17,024 --> 00:36:19,584
+Ok let's go back and try again
+
+711
+00:36:21,888 --> 00:36:22,656
+Save
+
+712
+00:36:22,912 --> 00:36:24,448
+Again we have a problem
+
+713
+00:36:26,752 --> 00:36:27,776
+Not user files
+
+714
+00:36:28,544 --> 00:36:29,312
+User a file
+
+715
+00:36:30,336 --> 00:36:30,848
+Sorry
+
+716
+00:36:31,616 --> 00:36:32,128
+User a file
+
+717
+00:36:32,896 --> 00:36:33,664
+user a file
+
+718
+00:36:36,480 --> 00:36:36,992
+It become so
+
+719
+00:36:38,784 --> 00:36:39,296
+Little
+
+720
+00:36:39,808 --> 00:36:40,832
+Changes like that can
+
+721
+00:36:41,344 --> 00:36:42,624
+Throughout errors ok
+
+722
+00:36:42,880 --> 00:36:45,184
+And at last we actually have
+
+723
+00:36:45,440 --> 00:36:48,000
+The file on the server
+
+724
+00:36:48,512 --> 00:36:52,352
+What I had to do is had to take away these points here I had that one
+
+725
+00:36:52,608 --> 00:36:56,448
+part wrong so it won't need the actual point actually
+
+726
+00:36:56,704 --> 00:37:02,848
+be without it and you'll see that now there is our file in our temporal folder it is actually on
+
+727
+00:37:03,104 --> 00:37:06,176
+The server and and also we have the path
+
+728
+00:37:06,688 --> 00:37:08,224
+And we have the name
+
+729
+00:37:08,480 --> 00:37:10,016
+And all those things
+
+730
+00:37:10,784 --> 00:37:11,296
+In fact
+
+731
+00:37:11,808 --> 00:37:14,368
+Everything now is
+
+732
+00:37:14,880 --> 00:37:16,672
+Is good we can now move the
+
+733
+00:37:16,928 --> 00:37:17,440
+File
+
+734
+00:37:17,696 --> 00:37:23,328
+To its final location now we could deal with moving the file
+
+735
+00:37:23,584 --> 00:37:25,376
+To its final location
+
+736
+00:37:26,656 --> 00:37:27,936
+Here in our
+
+737
+00:37:28,448 --> 00:37:29,728
+Save class
+
+738
+00:37:30,496 --> 00:37:32,544
+Or we can again have another
+
+739
+00:37:32,800 --> 00:37:33,568
+Function
+
+740
+00:37:33,824 --> 00:37:35,360
+Which we passed this
+
+741
+00:37:35,872 --> 00:37:42,016
+Value to which then moves the file to where we would want every image
+
+742
+00:37:42,272 --> 00:37:43,040
+File to go
+
+743
+00:37:45,600 --> 00:37:50,464
+Ok let me quickly type that out. So here in our package
+
+744
+00:37:50,720 --> 00:37:52,256
+We've got the file name so that's
+
+745
+00:37:52,512 --> 00:37:53,536
+Really important
+
+746
+00:37:54,048 --> 00:37:58,144
+And we got the full path which is where the file currently is
+
+747
+00:37:58,400 --> 00:37:58,912
+And what
+
+748
+00:37:59,168 --> 00:37:59,680
+It's format is.
+
+749
+00:38:00,192 --> 00:38:06,336
+We could actually have more values in this if we wanted we could do something like this
+
+750
+00:38:07,872 --> 00:38:09,152
+Instead of just passing
+
+751
+00:38:09,664 --> 00:38:11,456
+That user a filename
+
+752
+00:38:11,968 --> 00:38:12,736
+And name
+
+753
+00:38:12,992 --> 00:38:15,296
+pass it the whole
+
+754
+00:38:16,064 --> 00:38:17,600
+The whole array
+
+755
+00:38:17,856 --> 00:38:21,952
+Like that and then here we change that to archive
+
+756
+00:38:22,464 --> 00:38:22,976
+And
+
+757
+00:38:23,232 --> 00:38:24,512
+Then here we do
+
+758
+00:38:24,768 --> 00:38:25,280
+that
+
+759
+00:38:26,048 --> 00:38:29,120
+Which actually means we've got this array
+
+760
+00:38:29,376 --> 00:38:30,144
+to our
+
+761
+00:38:30,656 --> 00:38:31,936
+You know it's available
+
+762
+00:38:32,192 --> 00:38:35,008
+So instead of doing check we can then do
+
+763
+00:38:35,264 --> 00:38:37,568
+Package name
+
+764
+00:38:37,824 --> 00:38:39,104
+And then
+
+765
+00:38:39,360 --> 00:38:39,872
+dir
+
+766
+00:38:41,664 --> 00:38:42,176
+And
+
+767
+00:38:42,688 --> 00:38:43,200
+Format
+
+768
+00:38:45,248 --> 00:38:46,016
+And
+
+769
+00:38:46,272 --> 00:38:48,320
+Return the archive package
+
+770
+00:38:48,832 --> 00:38:54,976
+Now we'll have all the information which we actually were using even up
+
+771
+00:38:55,232 --> 00:38:59,072
+Here will have all of that information to our disposal
+
+772
+00:39:01,888 --> 00:39:03,680
+Of coarse also need to
+
+773
+00:39:05,216 --> 00:39:06,240
+change this
+
+774
+00:39:06,752 --> 00:39:07,776
+to
+
+775
+00:39:08,288 --> 00:39:08,800
+that
+
+776
+00:39:10,592 --> 00:39:13,408
+Well you know what the name is already there
+
+777
+00:39:13,664 --> 00:39:14,944
+so instead of package name
+
+778
+00:39:15,200 --> 00:39:17,504
+We can just be satisfied with the name
+
+779
+00:39:18,016 --> 00:39:21,600
+Ok and then we could call this
+
+780
+00:39:21,856 --> 00:39:24,672
+full
+
+781
+00:39:26,720 --> 00:39:27,744
+Full
+
+782
+00:39:28,000 --> 00:39:29,024
+path
+
+783
+00:39:30,560 --> 00:39:31,072
+Yes
+
+784
+00:39:31,584 --> 00:39:37,728
+So that'll be there in any only information that we are adding which is really new with these two values
+
+785
+00:39:37,984 --> 00:39:39,776
+So we can just do that
+
+786
+00:39:40,032 --> 00:39:44,128
+And now our array looks full
+
+787
+00:39:44,384 --> 00:39:48,224
+It's got the type the temporal original temporal
+
+788
+00:39:48,480 --> 00:39:50,272
+obviously that's no longer there
+
+789
+00:39:51,296 --> 00:39:53,088
+Any errors that might have come up
+
+790
+00:39:53,344 --> 00:39:54,368
+The size of the
+
+791
+00:39:54,624 --> 00:39:56,672
+File the full path and the format
+
+792
+00:39:57,184 --> 00:40:03,328
+So we got all those information to to use now at the end of the day the only information we really gonna
+
+793
+00:40:03,584 --> 00:40:05,376
+Keep is up to us
+
+794
+00:40:05,632 --> 00:40:08,448
+We could decide to keep the size of the file
+
+795
+00:40:08,704 --> 00:40:12,800
+We could decide to keep it format it's really up to us
+
+796
+00:40:13,056 --> 00:40:14,080
+And really
+
+797
+00:40:14,592 --> 00:40:20,736
+I'm not gonna go into how to deal with all that we just have one
+
+798
+00:40:21,248 --> 00:40:21,760
+Name
+
+799
+00:40:22,016 --> 00:40:23,296
+Field
+
+800
+00:40:23,808 --> 00:40:25,344
+How will you say a column
+
+801
+00:40:25,856 --> 00:40:27,904
+In the database called Bana
+
+802
+00:40:28,160 --> 00:40:30,720
+In which we are to place our final
+
+803
+00:40:30,976 --> 00:40:34,560
+Information and that information should be a
+
+804
+00:40:34,816 --> 00:40:38,912
+You know the path in in relation to
+
+805
+00:40:39,168 --> 00:40:40,448
+The image folder
+
+806
+00:40:40,960 --> 00:40:42,240
+Where we have
+
+807
+00:40:42,496 --> 00:40:43,776
+Placed this
+
+808
+00:40:44,800 --> 00:40:46,336
+This file
+
+809
+00:40:47,360 --> 00:40:48,128
+So first
+
+810
+00:40:48,384 --> 00:40:54,528
+I'm going to get some constants to use I like
+
+811
+00:40:54,784 --> 00:40:55,552
+Using this route
+
+812
+00:40:56,064 --> 00:40:56,832
+As that is
+
+813
+00:40:57,088 --> 00:40:59,648
+Always going to be the root path
+
+814
+00:40:59,904 --> 00:41:01,952
+To our website
+
+815
+00:41:02,208 --> 00:41:04,768
+And then next actually add
+
+816
+00:41:05,024 --> 00:41:06,560
+Just the path to the images
+
+817
+00:41:07,072 --> 00:41:08,608
+It's where we going to place our image
+
+818
+00:41:08,864 --> 00:41:11,168
+So I'm gonna copy this
+
+819
+00:41:11,680 --> 00:41:13,216
+So we going to just
+
+820
+00:41:13,472 --> 00:41:13,984
+Add
+
+821
+00:41:14,496 --> 00:41:20,384
+The path the relation to the root folder to the banner
+
+822
+00:41:20,640 --> 00:41:21,408
+In the database
+
+823
+00:41:21,920 --> 00:41:22,688
+Now
+
+824
+00:41:22,944 --> 00:41:28,320
+You do realize that this is actually just for you it's so that you know where the file is later
+
+825
+00:41:28,576 --> 00:41:32,416
+You will then on the front end of the site where you gonna use this value
+
+826
+00:41:32,672 --> 00:41:33,696
+You have to
+
+827
+00:41:33,952 --> 00:41:37,536
+When you get the value from the database you'll still need to create
+
+828
+00:41:38,048 --> 00:41:38,560
+The
+
+829
+00:41:38,816 --> 00:41:41,888
+Actual image html tag
+
+830
+00:41:42,400 --> 00:41:45,472
+To actually load the image or whatever you gonna do with this file
+
+831
+00:41:45,728 --> 00:41:49,056
+You're gonna still have the code that nothing of that's gonna be done
+
+832
+00:41:49,568 --> 00:41:55,711
+you gonna just at least have the path to exactly where the file is because you're storing it that way in the
+
+833
+00:41:55,967 --> 00:41:56,479
+Banner
+
+834
+00:41:56,735 --> 00:41:58,271
+Column that's the field
+
+835
+00:41:58,527 --> 00:41:59,039
+Ok
+
+836
+00:41:59,295 --> 00:42:02,367
+And now here we taking the root path
+
+837
+00:42:02,623 --> 00:42:04,159
+And that exact value
+
+838
+00:42:04,927 --> 00:42:06,207
+And we are moving
+
+839
+00:42:07,999 --> 00:42:12,607
+The full path which we build-up here right which is the actual current destination
+
+840
+00:42:13,375 --> 00:42:16,959
+We are going to move it from the full path to the Final Destination
+
+841
+00:42:17,471 --> 00:42:19,007
+And that is really yet
+
+842
+00:42:19,775 --> 00:42:20,543
+At this point
+
+843
+00:42:20,799 --> 00:42:22,591
+We got the image on the server
+
+844
+00:42:23,103 --> 00:42:23,615
+And
+
+845
+00:42:23,871 --> 00:42:26,943
+We are moving it to the correct location
+
+846
+00:42:27,199 --> 00:42:28,735
+And we are storing the value
+
+847
+00:42:28,991 --> 00:42:29,759
+In the database
+
+848
+00:42:30,271 --> 00:42:34,367
+And we've done with saving and uploading the actual value
+
+849
+00:42:35,135 --> 00:42:35,647
+As
+
+850
+00:42:36,415 --> 00:42:38,719
+Yeah that would be all that's required
+
+851
+00:42:39,231 --> 00:42:39,743
+Now
+
+852
+00:42:39,999 --> 00:42:41,023
+In any of these steps
+
+853
+00:42:41,535 --> 00:42:43,327
+You might wanna be more
+
+854
+00:42:44,863 --> 00:42:48,959
+Do some more things be more secure be more validating
+
+855
+00:42:49,471 --> 00:42:54,079
+Because it's not only images your obviously going to be uploading if you uploading PDF
+
+856
+00:42:54,335 --> 00:42:56,383
+If you uploading other kind of content
+
+857
+00:42:56,895 --> 00:43:00,479
+You gonna have to do some Googling to anywhere in these steps
+
+858
+00:43:00,735 --> 00:43:03,295
+Especially in this check upload area
+
+859
+00:43:03,551 --> 00:43:07,903
+To do the correct validation because at this point the file is on your server
+
+860
+00:43:08,159 --> 00:43:10,463
+And you need to make sure that it's the right file
+
+861
+00:43:11,487 --> 00:43:12,767
+Now this isn't
+
+862
+00:43:13,791 --> 00:43:14,559
+Airtight
+
+863
+00:43:14,815 --> 00:43:16,607
+Because this really just
+
+864
+00:43:16,863 --> 00:43:18,655
+Checks that the files type
+
+865
+00:43:19,423 --> 00:43:20,703
+Is one of these
+
+866
+00:43:21,215 --> 00:43:22,495
+The extension
+
+867
+00:43:22,751 --> 00:43:24,543
+It doesn't actually valid data
+
+868
+00:43:24,799 --> 00:43:26,591
+File to really being an image
+
+869
+00:43:27,359 --> 00:43:28,639
+They are more
+
+870
+00:43:28,895 --> 00:43:29,407
+Secure ways to
+
+871
+00:43:29,663 --> 00:43:30,175
+To do that
+
+872
+00:43:30,687 --> 00:43:33,759
+But some of them are little bit more
+
+873
+00:43:34,015 --> 00:43:37,087
+Yeah if you do use them the server side
+
+874
+00:43:37,343 --> 00:43:37,855
+You know
+
+875
+00:43:38,623 --> 00:43:40,415
+If your application is gonna be running
+
+876
+00:43:40,671 --> 00:43:42,207
+And shared environments
+
+877
+00:43:42,719 --> 00:43:48,607
+Then it will cause problems because in some of those functions are not available in all
+
+878
+00:43:49,631 --> 00:43:50,399
+shared environments
+
+879
+00:43:51,167 --> 00:43:52,703
+But if you wanna be
+
+880
+00:43:52,959 --> 00:43:54,239
+Like very specific
+
+881
+00:43:54,495 --> 00:44:00,127
+You could actually help the user along to who uses your application to
+
+882
+00:44:00,383 --> 00:44:02,431
+Enable those functions on their server
+
+883
+00:44:02,687 --> 00:44:04,735
+And by that giving them extra
+
+884
+00:44:05,247 --> 00:44:07,295
+Security with uploading of files
+
+885
+00:44:07,807 --> 00:44:09,599
+This is obviously a very big topic
+
+886
+00:44:09,855 --> 00:44:13,951
+Which I don't think we have time to go into in that dept
+
+887
+00:44:14,463 --> 00:44:19,839
+But in general this sort of implementation is really how most are doing it
+
+888
+00:44:21,631 --> 00:44:22,143
+And yet
+
+889
+00:44:22,655 --> 00:44:23,167
+Yeah
+
+890
+00:44:23,423 --> 00:44:24,447
+Let me know 
+
+891
+00:44:25,215 --> 00:44:26,495
+Get you too concerned
+
+892
+00:44:26,751 --> 00:44:27,775
+This should be ok
+
+893
+00:44:29,311 --> 00:44:30,591
+Now
+
+894
+00:44:31,103 --> 00:44:35,199
+We have moved everything in place let's give her a trial run
+
+895
+00:44:35,967 --> 00:44:38,527
+So it says that it's been saved to excessively
+
+896
+00:44:38,783 --> 00:44:39,295
+But
+
+897
+00:44:39,551 --> 00:44:42,111
+No file selected is shown here
+
+898
+00:44:42,623 --> 00:44:44,927
+Now we might want to
+
+899
+00:44:45,439 --> 00:44:46,719
+Show
+
+900
+00:44:46,975 --> 00:44:49,535
+The file that is now currently in the database
+
+901
+00:44:50,047 --> 00:44:52,095
+Instead of this upload or
+
+902
+00:44:52,351 --> 00:44:58,495
+Show the upload still but let's say someone decides to upload another one that it
+
+903
+00:44:58,751 --> 00:45:00,287
+Actually changes it
+
+904
+00:45:00,543 --> 00:45:03,871
+And remove the old one and adds the new one
+
+905
+00:45:04,127 --> 00:45:06,431
+And displays the little image here
+
+906
+00:45:06,687 --> 00:45:11,295
+As it is in the database now let's first see is it in the database
+
+907
+00:45:12,831 --> 00:45:16,671
+Ok so here in the database we see there is our file
+
+908
+00:45:16,927 --> 00:45:22,559
+And it is actually set to be in images autumn trees forest
+
+909
+00:45:22,815 --> 00:45:23,839
+Building grass
+
+910
+00:45:24,095 --> 00:45:27,935
+Dot JPG that is where it is
+
+911
+00:45:28,191 --> 00:45:30,751
+Ok now let's see if it actually was moved
+
+912
+00:45:31,007 --> 00:45:31,519
+To that
+
+913
+00:45:31,775 --> 00:45:32,287
+Place
+
+914
+00:45:34,335 --> 00:45:40,223
+So here in the folder structure we gonna open images we gonna click here on images then
+
+915
+00:45:40,479 --> 00:45:41,247
+Scroll down
+
+916
+00:45:42,783 --> 00:45:43,295
+and see
+
+917
+00:45:46,623 --> 00:45:48,415
+there it is autumn tree
+
+918
+00:45:48,927 --> 00:45:49,695
+You can see it there
+
+919
+00:45:50,719 --> 00:45:52,255
+Yip it is in its place
+
+920
+00:45:52,511 --> 00:45:54,559
+So the actual image does now
+
+921
+00:45:54,815 --> 00:45:56,607
+Exist in the image folder
+
+922
+00:45:57,119 --> 00:46:02,751
+It is been uploaded and it actually is in the database although
+
+923
+00:46:03,007 --> 00:46:07,103
+Our little snippet there says that it can't see it
+
+924
+00:46:09,407 --> 00:46:14,783
+Before we continue with that kind of custom scripting we need to take what we have done so far
+
+925
+00:46:15,295 --> 00:46:16,831
+And actually added to JCB
+
+926
+00:46:17,343 --> 00:46:19,135
+We've done and in the IDE
+
+927
+00:46:19,647 --> 00:46:21,695
+And if we compile in install
+
+928
+00:46:21,951 --> 00:46:23,743
+Store this component now
+
+929
+00:46:23,999 --> 00:46:26,303
+You actually overwrite everything you've written
+
+930
+00:46:26,559 --> 00:46:27,583
+And boom it's gone
+
+931
+00:46:28,095 --> 00:46:29,631
+So what to do
+
+932
+00:46:29,887 --> 00:46:33,727
+Let's go grab that custom scripting and added to the component
+
+933
+00:46:34,239 --> 00:46:35,519
+In JCB
+
+934
+00:46:35,775 --> 00:46:37,823
+Ok so we wanna grab everything
+
+935
+00:46:38,079 --> 00:46:38,591
+From
+
+936
+00:46:38,847 --> 00:46:41,407
+Upload my uploads function
+
+937
+00:46:41,663 --> 00:46:43,967
+You wanna do check upload
+
+938
+00:46:44,479 --> 00:46:47,295
+And remove file all of that we want to get
+
+939
+00:46:48,063 --> 00:46:49,343
+So we gonna say cut
+
+940
+00:46:50,367 --> 00:46:50,879
+And
+
+941
+00:46:51,135 --> 00:46:52,159
+Got that in the
+
+942
+00:46:53,695 --> 00:46:54,207
+The clipboard
+
+943
+00:46:54,719 --> 00:46:56,255
+Then go to JCB
+
+944
+00:46:57,023 --> 00:47:02,911
+And in the look Admin view which is where all this is happening we can open up
+
+945
+00:47:03,167 --> 00:47:05,215
+Then there is a place called custom buttons
+
+946
+00:47:05,471 --> 00:47:07,007
+You gonna say yes here
+
+947
+00:47:07,263 --> 00:47:12,127
+And then there is the controller method we are not adding anything there
+
+948
+00:47:12,383 --> 00:47:14,175
+But here is the
+
+949
+00:47:14,687 --> 00:47:16,223
+The model method
+
+950
+00:47:16,479 --> 00:47:19,039
+And so this is a place for us to actually add
+
+951
+00:47:19,295 --> 00:47:20,831
+some script to the model
+
+952
+00:47:21,599 --> 00:47:23,903
+And we gonna just paste what we've cut
+
+953
+00:47:24,415 --> 00:47:24,927
+Out
+
+954
+00:47:25,439 --> 00:47:26,207
+right in here
+
+955
+00:47:26,975 --> 00:47:30,815
+And overhearing the list controller we're not adding anything and
+
+956
+00:47:31,071 --> 00:47:32,095
+Also in this list 
+
+957
+00:47:32,351 --> 00:47:33,887
+Controller we're not adding anything
+
+958
+00:47:34,655 --> 00:47:36,703
+So we basically just adding that
+
+959
+00:47:36,959 --> 00:47:43,103
+Which we written to the model method at your PHP here is gonna go into the model
+
+960
+00:47:43,359 --> 00:47:45,663
+As methods so
+
+961
+00:47:45,919 --> 00:47:46,943
+This is the methods
+
+962
+00:47:47,199 --> 00:47:48,223
+That's a method
+
+963
+00:47:51,551 --> 00:47:52,831
+That is obviously a method
+
+964
+00:47:53,087 --> 00:47:54,367
+So all of these are methods
+
+965
+00:47:54,623 --> 00:47:56,927
+We want it to be available to the class
+
+966
+00:47:57,183 --> 00:47:57,695
+from now on
+
+967
+00:47:59,743 --> 00:48:02,303
+We are not actually at this point dealing
+
+968
+00:48:02,559 --> 00:48:06,655
+With if you upload a new file that it removed the old one
+
+969
+00:48:06,911 --> 00:48:08,191
+That should still
+
+970
+00:48:08,447 --> 00:48:09,471
+Be further custom
+
+971
+00:48:09,727 --> 00:48:10,239
+Scripting
+
+972
+00:48:10,751 --> 00:48:13,823
+And so this point all Just add the new file it won't
+
+973
+00:48:14,335 --> 00:48:15,359
+Remove the old one
+
+974
+00:48:15,615 --> 00:48:21,759
+So could be that he's adding more files and more files and it just gets added to the image folder
+
+975
+00:48:22,015 --> 00:48:24,063
+But it's not being removed
+
+976
+00:48:24,575 --> 00:48:25,599
+You have the remove
+
+977
+00:48:26,111 --> 00:48:28,159
+file function already here
+
+978
+00:48:28,415 --> 00:48:34,047
+So you could actually yeah you could actually fix this quite easily
+
+979
+00:48:34,303 --> 00:48:36,351
+But I'm not gonna show you how to do that
+
+980
+00:48:36,863 --> 00:48:37,887
+I wanna encourage you to
+
+981
+00:48:38,399 --> 00:48:40,191
+Study up some of your
+
+982
+00:48:40,447 --> 00:48:41,727
+PHP as well
+
+983
+00:48:41,983 --> 00:48:42,751
+Now
+
+984
+00:48:43,263 --> 00:48:45,311
+Here we need to also add obviously
+
+985
+00:48:45,823 --> 00:48:51,967
+The Script that we are adding to the save method so here is the PHP save method
+
+986
+00:48:52,223 --> 00:48:56,575
+Before data modelling this is where we want to actually Jump In
+
+987
+00:48:56,831 --> 00:49:00,159
+And like it says there the value are in the data array
+
+988
+00:49:00,415 --> 00:49:02,975
+So we just gonna go back to the IDE
+
+989
+00:49:03,999 --> 00:49:06,047
+And scroll down to
+
+990
+00:49:06,303 --> 00:49:07,071
+Sorry this
+
+991
+00:49:07,327 --> 00:49:08,095
+time it's up
+
+992
+00:49:10,655 --> 00:49:11,935
+Just gonna scroll up
+
+993
+00:49:12,447 --> 00:49:14,751
+To this little snippet here
+
+994
+00:49:15,263 --> 00:49:17,055
+Because this is everything new
+
+995
+00:49:17,311 --> 00:49:17,823
+Right
+
+996
+00:49:19,103 --> 00:49:21,663
+I just copy that or let's just cut that as well
+
+997
+00:49:23,199 --> 00:49:23,967
+and go back to
+
+998
+00:49:24,223 --> 00:49:26,527
+The JCB interface
+
+999
+00:49:26,783 --> 00:49:28,831
+And paste it in there
+
+1000
+00:49:29,087 --> 00:49:31,903
+Ok so now we have our
+
+1001
+00:49:33,183 --> 00:49:34,207
+In the save
+
+1002
+00:49:34,463 --> 00:49:35,999
+Method before modelling
+
+1003
+00:49:36,255 --> 00:49:40,351
+We have this little snippet that will be executed
+
+1004
+00:49:40,863 --> 00:49:42,911
+And the same goes with
+
+1005
+00:49:43,423 --> 00:49:44,191
+In a custom buttons
+
+1006
+00:49:44,703 --> 00:49:45,471
+we've got in the
+
+1007
+00:49:45,727 --> 00:49:48,031
+Models we've got our classes that are being added
+
+1008
+00:49:50,079 --> 00:49:53,407
+Now we said If we open the item
+
+1009
+00:49:53,919 --> 00:49:55,967
+So that means after we've saved it
+
+1010
+00:49:56,479 --> 00:50:00,319
+We want to actually take the value in this banner
+
+1011
+00:50:00,575 --> 00:50:03,135
+And we want to display it in the page
+
+1012
+00:50:03,391 --> 00:50:05,951
+Now there are many ways to do this
+
+1013
+00:50:06,207 --> 00:50:08,255
+Since we already have this value
+
+1014
+00:50:08,511 --> 00:50:10,303
+It shouldn't be that hard
+
+1015
+00:50:11,071 --> 00:50:12,095
+So
+
+1016
+00:50:13,375 --> 00:50:15,167
+JavaScript to the rescue
+
+1017
+00:50:15,679 --> 00:50:17,727
+I'm gonna use JavaScript to do this
+
+1018
+00:50:18,495 --> 00:50:21,567
+So we have hands our script to the view file
+
+1019
+00:50:22,591 --> 00:50:28,735
+Or add JavaScript to the view footer so that means we can decide where to add the Javascript
+
+1020
+00:50:29,247 --> 00:50:34,623
+Do we want to add to JavaScript in a file that gets included in the header of the document
+
+1021
+00:50:35,135 --> 00:50:41,279
+Or do we wanna add it to the bottom of the view as a snippet ok that is really we were
+
+1022
+00:50:41,791 --> 00:50:42,303
+want to do it
+
+1023
+00:50:42,559 --> 00:50:44,351
+Because you wanna use PHP
+
+1024
+00:50:45,119 --> 00:50:45,631
+So
+
+1025
+00:50:45,887 --> 00:50:48,703
+We gonna actually do some PHP in this
+
+1026
+00:50:48,959 --> 00:50:49,727
+Area here
+
+1027
+00:50:50,239 --> 00:50:54,079
+Where as in this is file area we cannot do PHP
+
+1028
+00:50:56,127 --> 00:51:00,735
+So to show you exactly where this is gonna come out he's gonna just add a comment here
+
+1029
+00:51:00,991 --> 00:51:01,503
+Add
+
+1030
+00:51:02,783 --> 00:51:05,087
+Java
+
+1031
+00:51:08,159 --> 00:51:09,183
+Script
+
+1032
+00:51:09,439 --> 00:51:10,463
+Here
+
+1033
+00:51:11,231 --> 00:51:14,559
+And I'm gonna show you how we gonna do PHP
+
+1034
+00:51:14,815 --> 00:51:15,583
+P
+
+1035
+00:51:16,351 --> 00:51:17,119
+HP
+
+1036
+00:51:19,423 --> 00:51:19,935
+Also
+
+1037
+00:51:20,959 --> 00:51:21,727
+Works
+
+1038
+00:51:24,543 --> 00:51:25,823
+And
+
+1039
+00:51:26,847 --> 00:51:27,871
+We gonna save that
+
+1040
+00:51:32,479 --> 00:51:36,831
+Now we actually can go out of here and go compile this component
+
+1041
+00:51:37,343 --> 00:51:40,927
+And install and then go look at it code
+
+1042
+00:51:47,839 --> 00:51:50,143
+So here and our save class
+
+1043
+00:51:50,655 --> 00:51:51,935
+We have
+
+1044
+00:51:52,191 --> 00:51:52,959
+Upload image
+
+1045
+00:51:53,471 --> 00:51:54,495
+And that is all
+
+1046
+00:51:54,751 --> 00:51:55,775
+Good and right
+
+1047
+00:51:56,287 --> 00:51:59,103
+Now let's search for our function here
+
+1048
+00:51:59,359 --> 00:52:03,711
+And there is our function also in the same class been added
+
+1049
+00:52:04,223 --> 00:52:07,807
+Through JCB interface so it was not lost
+
+1050
+00:52:08,063 --> 00:52:10,879
+It's not exactly the same place we were originally
+
+1051
+00:52:11,135 --> 00:52:15,743
+Placed it but it is in the same class and it's what we want we want those
+
+1052
+00:52:15,999 --> 00:52:18,047
+Classes to be available to us here
+
+1053
+00:52:18,815 --> 00:52:20,863
+Ok so that part is still good
+
+1054
+00:52:22,143 --> 00:52:24,447
+Now we wanna go look at the view
+
+1055
+00:52:24,959 --> 00:52:28,287
+And see where that JavaScript going to be added
+
+1056
+00:52:28,799 --> 00:52:31,103
+So we'll just close images here
+
+1057
+00:52:31,871 --> 00:52:35,711
+Then go back up and open the view
+
+1058
+00:52:36,479 --> 00:52:37,503
+Then wait what
+
+1059
+00:52:37,759 --> 00:52:38,271
+Where are we
+
+1060
+00:52:39,295 --> 00:52:39,807
+this is the installer
+
+1061
+00:52:40,575 --> 00:52:42,623
+You wanna go to the demo that one
+
+1062
+00:52:47,231 --> 00:52:49,023
+View look
+
+1063
+00:52:49,279 --> 00:52:52,607
+And edit
+
+1064
+00:52:52,863 --> 00:52:55,679
+So we are looking at that specific View
+
+1065
+00:52:56,191 --> 00:52:57,983
+And you see here
+
+1066
+00:52:58,239 --> 00:52:58,751
+Is
+
+1067
+00:52:59,007 --> 00:53:00,287
+The JavaScript
+
+1068
+00:53:00,799 --> 00:53:01,567
+Ok
+
+1069
+00:53:02,335 --> 00:53:03,359
+So it's added it
+
+1070
+00:53:03,615 --> 00:53:04,639
+to our script
+
+1071
+00:53:04,895 --> 00:53:05,407
+Area
+
+1072
+00:53:05,663 --> 00:53:07,199
+And I actually am able to
+
+1073
+00:53:07,455 --> 00:53:08,991
+To do PHP Echo
+
+1074
+00:53:09,247 --> 00:53:10,527
+In the script area
+
+1075
+00:53:10,783 --> 00:53:11,551
+Which is what
+
+1076
+00:53:12,063 --> 00:53:13,599
+We are going to do
+
+1077
+00:53:14,111 --> 00:53:15,903
+We going to check whether that
+
+1078
+00:53:16,159 --> 00:53:16,927
+Banner
+
+1079
+00:53:17,183 --> 00:53:19,999
+Value is available to us on this page
+
+1080
+00:53:20,511 --> 00:53:22,303
+And then we are going to
+
+1081
+00:53:22,559 --> 00:53:27,935
+Use it to actually render the image
+
+1082
+00:53:28,191 --> 00:53:28,703
+in its
+
+1083
+00:53:28,959 --> 00:53:29,727
+Appropriate place
+
+1084
+00:53:30,495 --> 00:53:33,567
+Now to know where the values are
+
+1085
+00:53:33,823 --> 00:53:37,407
+We go back to its view HTML dot PHP
+
+1086
+00:53:37,919 --> 00:53:38,943
+Area
+
+1087
+00:53:39,199 --> 00:53:44,831
+And we see that here it gets the item and it places it in the item Global
+
+1088
+00:53:47,391 --> 00:53:49,183
+Class value
+
+1089
+00:53:49,439 --> 00:53:55,583
+So we have the value item we can therefore check if banner is in the item
+
+1090
+00:53:55,839 --> 00:53:56,863
+So what I will do
+
+1091
+00:53:57,119 --> 00:53:57,631
+Just
+
+1092
+00:53:57,887 --> 00:53:58,911
+So that you can
+
+1093
+00:53:59,167 --> 00:54:01,983
+Sort of see what's happening as well copy that
+
+1094
+00:54:02,495 --> 00:54:05,055
+And then I'm gonna go back to the edit View
+
+1095
+00:54:05,311 --> 00:54:06,079
+Where we put our html
+
+1096
+00:54:07,615 --> 00:54:08,639
+I'm gonna say
+
+1097
+00:54:09,151 --> 00:54:10,687
+I just var dump
+
+1098
+00:54:11,967 --> 00:54:15,807
+That specific value
+
+1099
+00:54:16,063 --> 00:54:16,831
+And save
+
+1100
+00:54:17,087 --> 00:54:23,231
+And so we can see all of that so let's go to the interface Ok we actually
+
+1101
+00:54:23,487 --> 00:54:24,511
+have to add the word
+
+1102
+00:54:25,279 --> 00:54:28,351
+Exit jexit is actually the correct way of doing it
+
+1103
+00:54:28,863 --> 00:54:29,887
+J exit
+
+1104
+00:54:34,239 --> 00:54:40,383
+To this and go little up because we got a little fader here it's gonna hide this and just
+
+1105
+00:54:40,895 --> 00:54:42,687
+Let's just take that out for now
+
+1106
+00:54:43,199 --> 00:54:44,223
+So we can see
+
+1107
+00:54:44,479 --> 00:54:45,247
+What's going on
+
+1108
+00:54:45,759 --> 00:54:47,295
+And then let's
+
+1109
+00:54:48,319 --> 00:54:50,111
+Refresh or page
+
+1110
+00:54:50,623 --> 00:54:53,183
+Ok so we got it all broken that's fine
+
+1111
+00:54:53,439 --> 00:54:54,463
+But here at the bottom
+
+1112
+00:54:54,719 --> 00:54:55,999
+ah still not showing
+
+1113
+00:54:57,791 --> 00:54:58,815
+Let's take it to the top
+
+1114
+00:54:59,327 --> 00:55:05,471
+So we've added it here above everything it should actually show now. So let's go see.
+
+1115
+00:55:08,287 --> 00:55:09,055
+Refresh
+
+1116
+00:55:09,567 --> 00:55:11,359
+There we go that's what you wanna see
+
+1117
+00:55:11,871 --> 00:55:18,015
+So we see that it is publicly accessible there's the banner value so we can check whether there
+
+1118
+00:55:18,271 --> 00:55:19,039
+Is actually
+
+1119
+00:55:19,295 --> 00:55:24,671
+A value in this whether it's a string and has a value because we know we controlling that value
+
+1120
+00:55:24,927 --> 00:55:26,975
+the user cannot actually manually
+
+1121
+00:55:27,231 --> 00:55:28,767
+Add that value there
+
+1122
+00:55:29,023 --> 00:55:30,815
+It needs to do it through the upload field
+
+1123
+00:55:31,327 --> 00:55:34,143
+So we can check whether that has a string
+
+1124
+00:55:34,399 --> 00:55:35,167
+And if it does
+
+1125
+00:55:35,423 --> 00:55:37,215
+We can just create a little
+
+1126
+00:55:38,239 --> 00:55:39,263
+Show the image
+
+1127
+00:55:39,519 --> 00:55:42,847
+Underneath it's appropriate placement
+
+1128
+00:55:43,359 --> 00:55:45,919
+Ok so that's how I get to see the value
+
+1129
+00:55:46,175 --> 00:55:50,015
+So if you are dealing with something similar
+
+1130
+00:55:50,271 --> 00:55:50,783
+You can
+
+1131
+00:55:51,039 --> 00:55:56,927
+Do these kind of poking into the result sets to exactly where is what
+
+1132
+00:55:57,183 --> 00:55:59,231
+How does it look and how do I get to it and
+
+1133
+00:55:59,743 --> 00:56:01,023
+Yeah that way
+
+1134
+00:56:02,047 --> 00:56:03,839
+You're not dependent on the way sort of
+
+1135
+00:56:04,095 --> 00:56:05,375
+Not knowing what's going on
+
+1136
+00:56:07,167 --> 00:56:11,263
+So now here back in JCB we going to say
+
+1137
+00:56:12,031 --> 00:56:13,311
+if
+
+1138
+00:56:17,407 --> 00:56:18,687
+We gonna say if
+
+1139
+00:56:19,199 --> 00:56:19,967
+It is
+
+1140
+00:56:20,479 --> 00:56:20,991
+Set
+
+1141
+00:56:21,759 --> 00:56:23,039
+And
+
+1142
+00:56:23,551 --> 00:56:24,319
+If
+
+1143
+00:56:25,343 --> 00:56:25,855
+It is a string
+
+1144
+00:56:26,879 --> 00:56:31,743
+I'm using the helper class here we've got a function in the helper class called check string
+
+1145
+00:56:31,999 --> 00:56:33,535
+To see whether it has a length
+
+1146
+00:56:34,303 --> 00:56:36,095
+And that it is a string
+
+1147
+00:56:36,607 --> 00:56:39,423
+Not an array or a Boolean or something like that
+
+1148
+00:56:39,935 --> 00:56:40,447
+Now
+
+1149
+00:56:41,215 --> 00:56:42,239
+This is the way you can
+
+1150
+00:56:42,751 --> 00:56:46,847
+Sort of use the helper class to use the brackets brackets brackets
+
+1151
+00:56:47,615 --> 00:56:52,223
+Component and then bracket bracket bracket helper colon colon
+
+1152
+00:56:52,991 --> 00:56:53,503
+and there you go
+
+1153
+00:56:54,783 --> 00:56:55,295
+And
+
+1154
+00:56:56,063 --> 00:56:57,343
+If that is true
+
+1155
+00:56:57,855 --> 00:56:59,135
+We want to
+
+1156
+00:56:59,903 --> 00:57:01,439
+Obviously load the image
+
+1157
+00:57:01,951 --> 00:57:02,975
+Because then it exists
+
+1158
+00:57:04,767 --> 00:57:10,399
+Now we wanna see where do we wanna add this image and it's actually underneath the the upload
+
+1159
+00:57:10,911 --> 00:57:17,055
+I'm just gonna have it show up like a normal image so we gonna just do some jQuery
+
+1160
+00:57:17,311 --> 00:57:17,823
+to 
+
+1161
+00:57:18,079 --> 00:57:18,847
+To do that
+
+1162
+00:57:19,359 --> 00:57:20,895
+Ok so we are doing
+
+1163
+00:57:21,151 --> 00:57:24,735
+This image source and we are echoing the item banner
+
+1164
+00:57:25,759 --> 00:57:26,527
+because we know it's a string
+
+1165
+00:57:27,039 --> 00:57:28,575
+We can add a class here
+
+1166
+00:57:28,831 --> 00:57:30,623
+Now you can target this class
+
+1167
+00:57:30,879 --> 00:57:34,207
+And make it nice with CSS Just add your CSS is here
+
+1168
+00:57:34,463 --> 00:57:35,231
+To view
+
+1169
+00:57:35,743 --> 00:57:41,887
+Just here you can add your CSS so here you just add the the class name that you gonna target with your
+
+1170
+00:57:42,143 --> 00:57:43,423
+CSS and you can do
+
+1171
+00:57:43,679 --> 00:57:44,959
+All kind of nice things with it
+
+1172
+00:57:45,727 --> 00:57:47,775
+you gonna have alt and banner
+
+1173
+00:57:48,031 --> 00:57:50,591
+And we gonna insert it after the banner
+
+1174
+00:57:50,847 --> 00:57:51,871
+Field so the
+
+1175
+00:57:52,127 --> 00:57:55,199
+You know is the way we know what this value is
+
+1176
+00:57:55,711 --> 00:57:57,247
+Is we open one of those views
+
+1177
+00:57:57,759 --> 00:57:58,783
+like so
+
+1178
+00:57:59,295 --> 00:58:00,575
+And we drill down
+
+1179
+00:58:01,087 --> 00:58:02,623
+Until we find
+
+1180
+00:58:03,135 --> 00:58:05,439
+That's so we use our inspector
+
+1181
+00:58:05,695 --> 00:58:06,463
+grab maybe
+
+1182
+00:58:06,719 --> 00:58:07,231
+The banner
+
+1183
+00:58:07,487 --> 00:58:07,999
+Label
+
+1184
+00:58:08,255 --> 00:58:11,327
+then drill until we find the ID J form banner
+
+1185
+00:58:11,583 --> 00:58:12,607
+That's how I get it
+
+1186
+00:58:12,863 --> 00:58:13,375
+ok
+
+1187
+00:58:13,631 --> 00:58:14,143
+And
+
+1188
+00:58:14,399 --> 00:58:14,911
+Then
+
+1189
+00:58:15,167 --> 00:58:17,215
+We just add this after
+
+1190
+00:58:17,471 --> 00:58:22,591
+It after the control group so that looks nice fits in with the layout and I think it's broken
+
+1191
+00:58:23,615 --> 00:58:24,639
+Ok so
+
+1192
+00:58:24,895 --> 00:58:27,199
+That should trigger it
+
+1193
+00:58:27,455 --> 00:58:32,063
+So we saying See if we have a banner if we do add this JavaScript we done
+
+1194
+00:58:32,831 --> 00:58:33,343
+Save
+
+1195
+00:58:34,367 --> 00:58:35,647
+Now let's compile and in
+
+1196
+00:58:35,903 --> 00:58:36,415
+Install
+
+1197
+00:58:37,951 --> 00:58:38,463
+So
+
+1198
+00:58:39,231 --> 00:58:39,743
+compile
+
+1199
+00:58:46,911 --> 00:58:47,423
+And 
+
+1200
+00:58:47,679 --> 00:58:48,191
+install
+
+1201
+00:58:49,215 --> 00:58:50,495
+Go back to our view
+
+1202
+00:58:51,007 --> 00:58:51,519
+And
+
+1203
+00:58:52,031 --> 00:58:54,079
+Obviously close this and refresh
+
+1204
+00:58:55,359 --> 00:58:58,943
+Now go to more and Walla there is our image
+
+1205
+00:58:59,967 --> 00:59:03,039
+Now to show you it in action we gotta change the image
+
+1206
+00:59:03,551 --> 00:59:05,087
+It won't remove the old one
+
+1207
+00:59:05,343 --> 00:59:09,439
+But it will immediately show you the new one once we click save
+
+1208
+00:59:09,695 --> 00:59:10,719
+So let's do that
+
+1209
+00:59:11,231 --> 00:59:15,071
+So I've selected to different image from my computer and then click save
+
+1210
+00:59:17,887 --> 00:59:23,775
+And go back and wow there is the new image so that is how you could implement
+
+1211
+00:59:24,031 --> 00:59:25,567
+The file
+
+1212
+00:59:26,079 --> 00:59:31,711
+Field type in JCB so as you can see there is some custom scripting needed
+
+1213
+00:59:32,223 --> 00:59:34,015
+I'm gonna quickly
+
+1214
+00:59:35,039 --> 00:59:39,135
+I show you a URL where you can go and get this custom script
+
+1215
+00:59:39,391 --> 00:59:41,183
+And use it in your own component
+
+1216
+00:59:41,951 --> 00:59:43,999
+And of course
+
+1217
+00:59:44,255 --> 00:59:45,791
+May be adapted to change it
+
+1218
+00:59:46,047 --> 00:59:48,351
+At least use it as a place to start with
+
+1219
+00:59:49,631 --> 00:59:50,143
+And
+
+1220
+00:59:50,399 --> 00:59:51,423
+Start using the
+
+1221
+00:59:51,679 --> 00:59:53,727
+Custom Joomla field type
+
+1222
+00:59:54,239 --> 00:59:55,519
+For uploading files
+
+1223
+00:59:56,543 --> 00:59:57,823
+Thanks for watching
+
+1224
+00:59:58,079 --> 00:59:59,615
+Is any questions or even
+
+1225
+01:00:00,127 --> 01:00:04,735
+Suggestions of how to do this easier or faster or safer
+
+1226
+01:00:05,247 --> 01:00:11,391
+Leave the commons in the area below the video I'll be happy to look at it and
+
+1227
+01:00:11,647 --> 01:00:14,207
+Make any necessary changes to our snippet ok
+
+1228
+01:00:15,231 --> 01:00:17,791
+Or even at the snippet itself that might be a better place
+
+1229
+01:00:18,303 --> 01:00:22,143
+And the gits where the URL I'm gonna show you now
+
+1230
+01:00:22,399 --> 01:00:28,543
+Are you can go there and make comments there and we will just make pull request in the whatever and we'll fix it up so
+
+1231
+01:00:28,799 --> 01:00:32,127
+So that works well for everyone thanks for watching
+

@@ -1,0 +1,304 @@
+1
+00:00:00,512 --> 00:00:04,608
+Ok well recently I was asked whether
+
+2
+00:00:04,864 --> 00:00:07,680
+I'm seriously saying that Hella World
+
+3
+00:00:07,936 --> 00:00:13,312
+Tutorial should be an hour long and I had to laugh because of course
+
+4
+00:00:13,568 --> 00:00:19,712
+That tutorial is doing way more than what a Hello World tutorial should do right so
+
+5
+00:00:19,968 --> 00:00:25,856
+Here it goes we gonna do the real quick Hello World tutorial we go to extensions
+
+6
+00:00:26,112 --> 00:00:27,392
+Install
+
+7
+00:00:27,648 --> 00:00:30,464
+We searched for JCB
+
+8
+00:00:33,792 --> 00:00:34,816
+We open it
+
+9
+00:00:35,072 --> 00:00:37,632
+And we click install
+
+10
+00:00:37,888 --> 00:00:39,680
+And again install
+
+11
+00:00:40,960 --> 00:00:44,032
+On success we go to component Builder
+
+12
+00:00:45,312 --> 00:00:46,592
+And we click on
+
+13
+00:00:47,360 --> 00:00:49,920
+Import JCB packages
+
+14
+00:00:50,944 --> 00:00:53,248
+We go to VDM packages we select
+
+15
+00:00:54,016 --> 00:00:54,528
+The
+
+16
+00:00:54,784 --> 00:00:55,552
+Hello World
+
+17
+00:00:56,064 --> 00:00:59,904
+Component for free with click get package
+
+18
+00:01:00,416 --> 00:01:04,768
+We'd see that it has a checksum validation 413
+
+19
+00:01:05,792 --> 00:01:06,304
+4
+
+20
+00:01:06,816 --> 00:01:08,352
+We click this a link here
+
+21
+00:01:08,864 --> 00:01:13,216
+To check and make sure that it is the same key as on GitHub
+
+22
+00:01:13,728 --> 00:01:15,776
+So we can check that that key
+
+23
+00:01:16,032 --> 00:01:17,312
+Matches this one
+
+24
+00:01:17,568 --> 00:01:18,336
+And it does
+
+25
+00:01:18,848 --> 00:01:20,896
+So we know it's a package
+
+26
+00:01:21,152 --> 00:01:21,664
+Still
+
+27
+00:01:21,920 --> 00:01:23,456
+Authentic and
+
+28
+00:01:23,968 --> 00:01:28,064
+Then we we can say yes Force update and click continue
+
+29
+00:01:29,344 --> 00:01:35,488
+Great import was successful and we go back to Joomla components we see that our Hello World component has
+
+30
+00:01:35,744 --> 00:01:36,768
+Been installed
+
+31
+00:01:37,280 --> 00:01:39,072
+We go to compiler
+
+32
+00:01:39,840 --> 00:01:41,632
+And we click Hello World
+
+33
+00:01:42,656 --> 00:01:43,680
+And compile
+
+34
+00:01:44,960 --> 00:01:47,776
+It successfully compiled so we click install
+
+35
+00:01:49,056 --> 00:01:49,824
+And
+
+36
+00:01:50,336 --> 00:01:52,384
+We look at the back end
+
+37
+00:01:53,920 --> 00:01:55,200
+We create a greeting
+
+38
+00:01:55,968 --> 00:01:58,272
+Say
+
+39
+00:02:00,576 --> 00:02:01,600
+Hi James
+
+40
+00:02:02,624 --> 00:02:05,440
+Save and close
+
+41
+00:02:06,208 --> 00:02:08,000
+And so our first greeting is set
+
+42
+00:02:09,536 --> 00:02:10,816
+We go to menu
+
+43
+00:02:11,584 --> 00:02:17,728
+Main menu we change the main menu to be a selection
+
+44
+00:02:17,984 --> 00:02:18,496
+type
+
+45
+00:02:19,264 --> 00:02:20,032
+Hello World
+
+46
+00:02:20,544 --> 00:02:21,312
+Greetings
+
+47
+00:02:23,616 --> 00:02:24,896
+And
+
+48
+00:02:25,664 --> 00:02:29,760
+That should be it we save and close
+
+49
+00:02:31,040 --> 00:02:37,184
+And we click on Joomla Mount we see there is a page 
+
+50
+00:02:37,440 --> 00:02:38,976
+Is not directing properly
+
+51
+00:02:39,488 --> 00:02:44,608
+So that might be a problem in the component we go back to hello world
+
+52
+00:02:44,864 --> 00:02:46,912
+And we click on the global options
+
+53
+00:02:47,168 --> 00:02:48,448
+And permissions
+
+54
+00:02:48,960 --> 00:02:51,008
+And we search for site
+
+55
+00:02:51,520 --> 00:02:55,616
+Because there are some site views that we need to allow
+
+56
+00:02:56,128 --> 00:02:57,152
+it to show
+
+57
+00:02:57,408 --> 00:02:57,920
+Public
+
+58
+00:02:58,176 --> 00:02:59,712
+That one and
+
+59
+00:03:01,248 --> 00:03:01,760
+That one
+
+60
+00:03:02,272 --> 00:03:05,600
+so those two will show and
+
+61
+00:03:05,856 --> 00:03:08,928
+yeah we save out of here we refresh to front
+
+62
+00:03:09,184 --> 00:03:10,208
+And there we have it
+
+63
+00:03:10,720 --> 00:03:11,744
+There is a greeting
+
+64
+00:03:12,000 --> 00:03:12,512
+Hi
+
+65
+00:03:14,048 --> 00:03:16,608
+James we can click on it
+
+66
+00:03:16,864 --> 00:03:20,448
+And it says hi James we can go back one
+
+67
+00:03:20,704 --> 00:03:21,984
+And then click on edit
+
+68
+00:03:23,264 --> 00:03:26,080
+It says I'm not allowed to edit I'm not in the edit group
+
+69
+00:03:26,848 --> 00:03:29,408
+We can go back to the backend click on options
+
+70
+00:03:29,664 --> 00:03:35,808
+And we could actually give me edit permissions as public but I think you get the point
+
+71
+00:03:36,832 --> 00:03:40,160
+Hello world in place functional and
+
+72
+00:03:40,416 --> 00:03:43,232
+It was really very quickly to do
+
+73
+00:03:43,488 --> 00:03:49,632
+And that is the quick or the real hello world how to set up a Hello world component in
+
+74
+00:03:50,144 --> 00:03:50,912
+Joomla
+
+75
+00:03:51,168 --> 00:03:54,496
+Component builder without
+
+76
+00:03:55,008 --> 00:03:58,336
+Waiting a whole hour thanks for watching
+

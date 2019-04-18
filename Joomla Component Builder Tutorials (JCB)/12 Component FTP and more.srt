@@ -1,0 +1,1392 @@
+1
+00:00:00,512 --> 00:00:06,656
+Next in the component view we are gonna add the ReadMe script to a component
+
+2
+00:00:06,912 --> 00:00:11,776
+The reapme script is commonly used as the components
+
+3
+00:00:12,032 --> 00:00:18,176
+Homepage sort of so if you were to go to gethub for
+
+4
+00:00:18,432 --> 00:00:24,576
+That's open we are on the demo components page for example
+
+5
+00:00:24,832 --> 00:00:30,976
+Let's open GetHub and you'll see that it has this nice image here and it has some
+
+6
+00:00:31,232 --> 00:00:34,816
+Details and some layout
+
+7
+00:00:35,072 --> 00:00:41,216
+Now this all is done with the ReadMe file so it's with this file here we can open
+
+8
+00:00:41,472 --> 00:00:44,544
+That and then look at the Raw
+
+9
+00:00:46,336 --> 00:00:52,480
+And here you can see the It's basically the same text this we looking at previously
+
+10
+00:00:53,760 --> 00:00:59,904
+So inside of component Builder you can add this read me and read me text and
+
+11
+00:01:00,160 --> 00:01:02,464
+This is basically placeholders
+
+12
+00:01:03,488 --> 00:01:04,000
+Now
+
+13
+00:01:04,512 --> 00:01:10,656
+I know that that is part of the markup for a header so
+
+14
+00:01:10,912 --> 00:01:11,424
+You need to
+
+15
+00:01:11,680 --> 00:01:12,960
+Know a little bit about
+
+16
+00:01:13,216 --> 00:01:13,728
+Markdown
+
+17
+00:01:13,984 --> 00:01:16,032
+Sorry not markup markdown
+
+18
+00:01:16,288 --> 00:01:20,640
+to you know what is placeholders and what is not
+
+19
+00:01:21,152 --> 00:01:27,296
+That is why I added The Script so you can sort of get an idea of everything that are placeholders
+
+20
+00:01:27,552 --> 00:01:30,624
+And these place holders are
+
+21
+00:01:31,136 --> 00:01:37,024
+Automatically updated from the details that are in these Fields here so
+
+22
+00:01:37,792 --> 00:01:39,840
+So you can see
+
+23
+00:01:40,096 --> 00:01:41,888
+The the actual placeholders
+
+24
+00:01:42,400 --> 00:01:47,264
+Names it's nice so if you change the version here
+
+25
+00:01:48,544 --> 00:01:49,824
+It'll updated there
+
+26
+00:01:50,336 --> 00:01:51,360
+Automatically
+
+27
+00:01:52,384 --> 00:01:54,688
+So that is just read me file
+
+28
+00:01:55,200 --> 00:01:59,296
+Really a place for you to give a lot of information to those who are using
+
+29
+00:01:59,808 --> 00:02:00,320
+Your
+
+30
+00:02:01,344 --> 00:02:02,880
+Application
+
+31
+00:02:03,136 --> 00:02:06,464
+so Maybe you can add some links to it or you could
+
+32
+00:02:07,488 --> 00:02:12,096
+has Some links to help menus or even instructions on installing it
+
+33
+00:02:12,608 --> 00:02:17,472
+or anything else that you'd like to share through the ReadMe file
+
+34
+00:02:17,728 --> 00:02:23,872
+I would ask if it's if it's not too much for you you know for you to leave this area this commenting
+
+35
+00:02:25,152 --> 00:02:29,504
+The more people using component builder the more involve within a community
+
+36
+00:02:29,760 --> 00:02:30,784
+Others getting
+
+37
+00:02:31,040 --> 00:02:32,064
+This training set
+
+38
+00:02:32,576 --> 00:02:35,136
+Help us to sustain this project
+
+39
+00:02:35,392 --> 00:02:35,904
+So if
+
+40
+00:02:36,160 --> 00:02:37,952
+you leave that in it will certainly be helpful
+
+41
+00:02:38,464 --> 00:02:41,024
+you not Compulsory
+
+42
+00:02:41,536 --> 00:02:42,560
+I mean it's only if you want to
+
+43
+00:02:43,072 --> 00:02:46,144
+And then if you wanna know more about markup markdown
+
+44
+00:02:46,400 --> 00:02:47,168
+markdown not markup
+
+45
+00:02:48,704 --> 00:02:52,032
+Then you can open this link here
+
+46
+00:02:53,824 --> 00:02:56,640
+And it shows you the
+
+47
+00:02:56,896 --> 00:03:00,224
+this little bit of a cheat sheet of everything that you can do
+
+48
+00:03:00,480 --> 00:03:04,576
+Ok so that is looking at the ReadMe area
+
+49
+00:03:04,832 --> 00:03:06,368
+This admin View area
+
+50
+00:03:06,624 --> 00:03:08,416
+And the site View area
+
+51
+00:03:08,672 --> 00:03:14,048
+Should be seen as a place where you can create new admin views
+
+52
+00:03:14,304 --> 00:03:19,680
+Do realize that if you create a new admin view it's not necessarily linked to this component
+
+53
+00:03:19,936 --> 00:03:24,032
+You need to still link it in here in settings under admin view
+
+54
+00:03:25,056 --> 00:03:27,872
+This is more a place to create admin view so if you click on new
+
+55
+00:03:29,152 --> 00:03:34,016
+Or to edit existing admin views that are linked to this component
+
+56
+00:03:34,272 --> 00:03:40,416
+Same goes with the site views so it's simply a way for you to to gain access to editing those
+
+57
+00:03:40,672 --> 00:03:45,280
+site views that already linked to this application easily
+
+58
+00:03:47,584 --> 00:03:49,120
+And then the third one
+
+59
+00:03:49,376 --> 00:03:50,656
+forth actually 
+
+60
+00:03:51,680 --> 00:03:57,824
+one two three four we wanna look at is the FTP server that FTP server basically been added to
+
+61
+00:03:58,080 --> 00:04:01,920
+Give you a hand in moving this application this component
+
+62
+00:04:02,176 --> 00:04:08,320
+to your server and also add the feature of that automated updating that is inside
+
+63
+00:04:08,576 --> 00:04:11,392
+of Joomla. So the update server
+
+64
+00:04:11,648 --> 00:04:13,440
+Is actually a Joomla concept
+
+65
+00:04:13,952 --> 00:04:18,303
+And if you open a component
+
+66
+00:04:18,559 --> 00:04:20,095
+So I'll open
+
+67
+00:04:21,631 --> 00:04:22,911
+Summon distributor wait over there
+
+68
+00:04:28,543 --> 00:04:30,591
+This is the front I need to look at the backend
+
+69
+00:04:37,759 --> 00:04:39,039
+And we look at the
+
+70
+00:04:39,807 --> 00:04:41,599
+XML file of this component
+
+71
+00:04:41,855 --> 00:04:45,439
+Component builder obviously built this whole file for you
+
+72
+00:04:46,207 --> 00:04:47,743
+But at the very bottom
+
+73
+00:04:47,999 --> 00:04:49,535
+You see that there is a
+
+74
+00:04:50,303 --> 00:04:51,583
+App updates server
+
+75
+00:04:52,095 --> 00:04:53,119
+That is being added
+
+76
+00:04:53,375 --> 00:04:55,935
+Now this is not added if you
+
+77
+00:04:56,191 --> 00:04:56,703
+Have not
+
+78
+00:04:56,959 --> 00:04:59,007
+Set the service it will set to no
+
+79
+00:04:59,263 --> 00:05:03,103
+It will not be adding an update server if you add this
+
+80
+00:05:03,359 --> 00:05:05,919
+Then you can set the link
+
+81
+00:05:06,175 --> 00:05:09,247
+To where the update server is you know gonna be hosted
+
+82
+00:05:10,015 --> 00:05:13,087
+And it will automatically take that link
+
+83
+00:05:13,343 --> 00:05:16,415
+in added into your XML file like it's done here
+
+84
+00:05:18,207 --> 00:05:18,975
+And
+
+85
+00:05:19,231 --> 00:05:20,511
+That file itself
+
+86
+00:05:20,767 --> 00:05:23,327
+Component Builder Can also build that file for you
+
+87
+00:05:24,095 --> 00:05:25,119
+The way does it
+
+88
+00:05:26,143 --> 00:05:27,423
+Is that
+
+89
+00:05:28,191 --> 00:05:29,215
+This obviously
+
+90
+00:05:31,007 --> 00:05:34,591
+Should look like that host = hostname
+
+91
+00:05:35,103 --> 00:05:36,895
+And port = port
+
+92
+00:05:37,151 --> 00:05:38,431
+Int&
+
+93
+00:05:38,943 --> 00:05:40,991
+And option bracket type
+
+94
+00:05:41,247 --> 00:05:43,551
+= FTP BINARY
+
+95
+00:05:44,319 --> 00:05:45,855
+Now this FTP binary
+
+96
+00:05:48,671 --> 00:05:50,975
+usually is 15 sorry 
+
+97
+00:05:52,511 --> 00:05:55,583
+That is the the default value FTP binary
+
+98
+00:05:55,839 --> 00:05:59,679
+Where is that would usually be 21 and that would usually be 15
+
+99
+00:05:59,935 --> 00:06:03,775
+And then username and a password
+
+100
+00:06:04,031 --> 00:06:08,127
+Now this FTP details should actually login directly
+
+101
+00:06:08,639 --> 00:06:12,735
+To this folder that you have up here this updates folder
+
+102
+00:06:12,991 --> 00:06:14,271
+Ok that one
+
+103
+00:06:15,295 --> 00:06:21,439
+So that basically all component builder does is it loggs into your server move this file in there and then this disconnects
+
+104
+00:06:24,511 --> 00:06:27,583
+And this information is what will make it possible for him to do that
+
+105
+00:06:27,839 --> 00:06:32,959
+Same goes with the sales server the sales server usually
+
+106
+00:06:33,215 --> 00:06:33,727
+Would be
+
+107
+00:06:33,983 --> 00:06:36,799
+Very much the same concept
+
+108
+00:06:37,311 --> 00:06:43,455
+You'de Simply be adding the same kind of string here except usually the
+
+109
+00:06:43,711 --> 00:06:47,551
+The update server and the sales server is not the same place
+
+110
+00:06:47,807 --> 00:06:53,951
+The update server let's the user know that there is an update where is the sales service actually where this component
+
+111
+00:06:54,207 --> 00:07:00,351
+Zip file will be stored on your server so you have something like whmcs
+
+112
+00:07:00,607 --> 00:07:02,143
+Or Another
+
+113
+00:07:02,399 --> 00:07:08,287
+Component through which you are selling your extensions you can
+
+114
+00:07:08,543 --> 00:07:14,431
+Use the folder in on your server which it's looking for the files
+
+115
+00:07:14,687 --> 00:07:20,831
+You can use that folder you know great in FTP Account to that folder and then set that details 
+
+116
+00:07:21,087 --> 00:07:22,623
+In this field here
+
+117
+00:07:22,879 --> 00:07:24,159
+And then
+
+118
+00:07:24,671 --> 00:07:27,487
+Component Builder on the moment that you could compile
+
+119
+00:07:27,743 --> 00:07:30,559
+It has a
+
+120
+00:07:30,815 --> 00:07:36,959
+An option here it says add backup folder and save sales server you click that to
+
+121
+00:07:37,215 --> 00:07:41,567
+Yes and if you compile it now
+
+122
+00:07:41,823 --> 00:07:42,591
+It will move
+
+123
+00:07:43,103 --> 00:07:49,247
+The zip file to sales server as well as creating a backup now the backup and the Git 
+
+124
+00:07:49,503 --> 00:07:55,647
+Folder is actually set up in your components Global options so we
+
+125
+00:07:55,903 --> 00:08:02,047
+We haven't really spoken much about the global options let us open it now here
+
+126
+00:08:05,375 --> 00:08:08,191
+We saw in this area here
+
+127
+00:08:08,447 --> 00:08:14,591
+That it says that this field is encrypted now in component builder if you go to Global
+
+128
+00:08:14,847 --> 00:08:16,127
+Settings it says
+
+129
+00:08:16,383 --> 00:08:18,431
+Encryption settings in in here
+
+130
+00:08:18,687 --> 00:08:21,247
+You would add a your own key
+
+131
+00:08:21,503 --> 00:08:24,575
+By which it will encrypt once you've added this key
+
+132
+00:08:25,087 --> 00:08:29,439
+You shouldn't change it because it will obviously not be able to decrypt
+
+133
+00:08:29,695 --> 00:08:33,023
+Because it's used to encrypt and as well to decrypt
+
+134
+00:08:33,279 --> 00:08:39,423
+The data so if you well that just means everything that's been encrypted it is now needs to
+
+135
+00:08:39,679 --> 00:08:45,823
+To be redone which in this case is is gonna be these these login
+
+136
+00:08:46,079 --> 00:08:49,407
+Information is FTP login information
+
+137
+00:08:49,663 --> 00:08:55,807
+That's this is the basic encryption which we spoke of on talk about storing types you got basic encryption
+
+138
+00:08:56,063 --> 00:08:58,879
+and advanced encryption now this is
+
+139
+00:08:59,135 --> 00:09:01,183
+Basic encryption way basically having such a
+
+140
+00:09:01,439 --> 00:09:02,975
+Is also called basic key
+
+141
+00:09:04,255 --> 00:09:07,327
+Then you have files here or folder paths
+
+142
+00:09:07,583 --> 00:09:13,727
+These two first folder paths called compiler folder and custom folder I would leave them
+
+143
+00:09:13,983 --> 00:09:20,127
+For now they are a little buggy I haven't fully managed to achieve them being
+
+144
+00:09:20,383 --> 00:09:23,967
+Flexible so to move them at this stage is difficult
+
+145
+00:09:24,223 --> 00:09:28,831
+For a number of reasons for now I would suggest you just leave them blank
+
+146
+00:09:30,623 --> 00:09:32,671
+But here you would add a backup folder
+
+147
+00:09:32,927 --> 00:09:37,279
+And this obviously should be related to the root of your server
+
+148
+00:09:37,535 --> 00:09:38,047
+So
+
+149
+00:09:38,303 --> 00:09:40,863
+As well as a Git folder
+
+150
+00:09:41,631 --> 00:09:47,775
+And Git folder would be where component builder creates a folder with all the compounds
+
+151
+00:09:48,031 --> 00:09:49,823
+Files without zipping them
+
+152
+00:09:50,079 --> 00:09:55,967
+And then you can go to that folder and create a git
+
+153
+00:09:56,223 --> 00:09:58,015
+create a git repository there
+
+154
+00:09:58,271 --> 00:10:00,575
+And from that folder you can push to Github
+
+155
+00:10:00,831 --> 00:10:02,623
+Or any other git server
+
+156
+00:10:03,903 --> 00:10:04,671
+Respectively
+
+157
+00:10:05,183 --> 00:10:09,791
+So basically it's able to create a folder from which you can do Github or any other kind of
+
+158
+00:10:10,047 --> 00:10:11,327
+Repository work
+
+159
+00:10:11,583 --> 00:10:17,727
+Which are separate from your backup folder and also separate from the temporary folder in which
+
+160
+00:10:17,983 --> 00:10:23,103
+compiles the component so you can move it out of your Joomla install basically
+
+161
+00:10:23,359 --> 00:10:26,175
+And that's what these folder paths are for
+
+162
+00:10:26,431 --> 00:10:32,575
+So when you do the compiling of the component it does that git repository it won't delete
+
+163
+00:10:32,831 --> 00:10:38,975
+the Dot git file sorry folder it will just replace all the files in it
+
+164
+00:10:39,231 --> 00:10:44,607
+Basically first remove the old ones then add the new ones and git obviously we'll see that
+
+165
+00:10:44,863 --> 00:10:51,007
+Only the files that is been changed it will notice and those who you need to do a recommit well just obviously a normal commit
+
+166
+00:10:53,823 --> 00:10:59,967
+To get it into your repository obviously if you don't know Git then possibly this then possibly doesn't make sense to you
+
+167
+00:11:00,223 --> 00:11:06,367
+There's some great courses as well about Git on lynda.com as well as Udome
+
+168
+00:11:06,623 --> 00:11:11,743
+So you can just go look at those ok so that's a backup folder
+
+169
+00:11:11,999 --> 00:11:18,143
+And the sales server the same goes here this FTP
+
+170
+00:11:18,399 --> 00:11:24,543
+credentials should be that direct folder in which these zip files should be stored
+
+171
+00:11:24,799 --> 00:11:27,359
+Unfortunately component builder cannot
+
+172
+00:11:27,615 --> 00:11:33,759
+Storing and subfolders at this point so the FTP details he will just login to that FTP account
+
+173
+00:11:34,015 --> 00:11:40,159
+And in that very folder which here is which he has the access to you'll put the file there
+
+174
+00:11:40,415 --> 00:11:42,975
+So no subfolders or
+
+175
+00:11:43,231 --> 00:11:49,375
+Other folders the FTP details should be going directly to the folder now
+
+176
+00:11:49,631 --> 00:11:55,775
+In the component builder I was thinking just for your own
+
+177
+00:11:56,031 --> 00:12:02,175
+Peace of mind if you look in component builder so
+
+178
+00:12:02,431 --> 00:12:08,575
+That will be in the backend components component builder and then
+
+179
+00:12:08,831 --> 00:12:14,207
+Helpers there is a file called compiler if you open that file
+
+180
+00:12:14,463 --> 00:12:20,607
+You would see that we have a function here built me and here's all the place holders
+
+181
+00:12:20,863 --> 00:12:26,495
+That you can use in the built me file and will be replaced with the relative information
+
+182
+00:12:27,007 --> 00:12:32,383
+And then there is a function here called move file to FTP server
+
+183
+00:12:32,639 --> 00:12:37,503
+This move file to FTP server calls another function called
+
+184
+00:12:39,039 --> 00:12:44,927
+Where is it getFTP now getFTP is this function here
+
+185
+00:12:45,183 --> 00:12:51,327
+And basically it takes the signature checks whether we are ready made such a connection before
+
+186
+00:12:51,583 --> 00:12:53,631
+And then loads that object
+
+187
+00:12:54,143 --> 00:13:00,287
+But here basically I'm using this parse string function
+
+188
+00:13:00,543 --> 00:13:06,687
+To convert the string into the variables so all the
+
+189
+00:13:06,943 --> 00:13:11,807
+Variables in that string is converted to erase all variables respectively
+
+190
+00:13:12,063 --> 00:13:18,207
+And that then is used to actually make use of
+
+191
+00:13:18,463 --> 00:13:24,607
+Joomlas own client FTP class so if you wanna know where that is you can
+
+192
+00:13:24,863 --> 00:13:31,007
+NetBeans you'd click control spacebar and it shows you it's in library JclientsFTP
+
+193
+00:13:31,263 --> 00:13:37,407
+.PHP that's where the file is you click there open it
+
+194
+00:13:37,663 --> 00:13:43,807
+So we basically using Joomlas built-in FTP client and we passing the host the port the option the
+
+195
+00:13:44,063 --> 00:13:49,951
+Username the password and making a connection and then we sending that off
+
+196
+00:13:50,207 --> 00:13:54,815
+To do this move file which then basically takes the file content and moves it
+
+197
+00:13:55,071 --> 00:13:57,119
+To the server
+
+198
+00:13:57,375 --> 00:13:58,655
+So that's just for your own piece of mind that the data itself is not 
+
+199
+00:14:01,727 --> 00:14:02,239
+Being leaked or compromised
+
+200
+00:14:04,543 --> 00:14:05,055
+It's
+
+201
+00:14:05,311 --> 00:14:06,591
+So all handled right here and you can 
+
+202
+00:14:07,615 --> 00:14:08,127
+Follow its events in component builder from
+
+203
+00:14:12,991 --> 00:14:13,503
+Relations to the update
+
+204
+00:14:14,783 --> 00:14:15,295
+Server as well as to the
+
+205
+00:14:17,343 --> 00:14:18,111
+Sales server
+
+206
+00:14:18,879 --> 00:14:20,415
+The other thing that I know is quite in
+
+207
+00:14:20,671 --> 00:14:21,183
+Important
+
+208
+00:14:21,695 --> 00:14:23,231
+Is this update server
+
+209
+00:14:23,999 --> 00:14:25,023
+Is an XML file
+
+210
+00:14:25,535 --> 00:14:27,071
+And this XML file
+
+211
+00:14:27,583 --> 00:14:28,351
+is basically build up
+
+212
+00:14:28,863 --> 00:14:29,887
+of versions
+
+213
+00:14:30,399 --> 00:14:31,167
+And download links to those versions
+
+214
+00:14:33,471 --> 00:14:33,983
+So
+
+215
+00:14:34,239 --> 00:14:36,799
+Like I explain to you in a previous video
+
+216
+00:14:37,055 --> 00:14:39,359
+There is this reality that while you are developing your component
+
+217
+00:14:41,919 --> 00:14:42,687
+Your users
+
+218
+00:14:44,223 --> 00:14:45,503
+Excuse me wouldn't need
+
+219
+00:14:46,015 --> 00:14:46,527
+Any
+
+220
+00:14:47,039 --> 00:14:47,551
+change
+
+221
+00:14:47,807 --> 00:14:48,575
+Updates or anything are there
+
+222
+00:14:48,831 --> 00:14:50,367
+The moment you put your component out there on the web
+
+223
+00:14:52,415 --> 00:14:53,183
+Immediately 
+
+224
+00:14:53,439 --> 00:14:53,951
+You need to
+
+225
+00:14:54,207 --> 00:14:54,719
+Consider
+
+226
+00:14:54,975 --> 00:14:55,743
+When you make a change in the application
+
+227
+00:14:57,279 --> 00:14:58,303
+How will you user to be able adapt 
+
+228
+00:15:00,095 --> 00:15:00,863
+to that change
+
+229
+00:15:01,119 --> 00:15:02,399
+And the biggest changes you can make
+
+230
+00:15:03,423 --> 00:15:03,935
+Is adding new views
+
+231
+00:15:04,959 --> 00:15:05,471
+or adding new
+
+232
+00:15:06,239 --> 00:15:06,751
+Fields
+
+233
+00:15:07,519 --> 00:15:08,287
+To the component
+
+234
+00:15:09,055 --> 00:15:11,103
+And so that makes it a little hard
+
+235
+00:15:11,871 --> 00:15:13,407
+But like I explain previously
+
+236
+00:15:13,663 --> 00:15:15,199
+With the history component
+
+237
+00:15:16,223 --> 00:15:17,247
+We've done scripting to take you know take control of
+
+238
+00:15:19,039 --> 00:15:19,551
+That problem
+
+239
+00:15:20,319 --> 00:15:20,831
+But
+
+240
+00:15:21,087 --> 00:15:22,111
+You also need to think about the database
+
+241
+00:15:23,135 --> 00:15:24,159
+So we created this thing called
+
+242
+00:15:25,183 --> 00:15:25,695
+Version Updates
+
+243
+00:15:27,487 --> 00:15:27,999
+Which
+
+244
+00:15:28,511 --> 00:15:30,559
+Gives you the ability
+
+245
+00:15:31,071 --> 00:15:32,351
+To actually add sql
+
+246
+00:15:32,607 --> 00:15:33,119
+Scripting
+
+247
+00:15:33,887 --> 00:15:35,423
+Which needs to be executed upon the updating
+
+248
+00:15:36,703 --> 00:15:38,495
+Now the way for you to think about this
+
+249
+00:15:39,263 --> 00:15:41,055
+If you have a new version that's a 1.2.9
+
+250
+00:15:43,359 --> 00:15:46,943
+Then and now you know that there needs to be a table alteration
+
+251
+00:15:47,199 --> 00:15:49,503
+Obviously you need to know see if MySQL commands
+
+252
+00:15:49,759 --> 00:15:52,575
+To do that I'm not gonna teach you that you just
+
+253
+00:15:52,831 --> 00:15:58,975
+Need to put that MySQL command in here according to the Joomla conventions which means
+
+254
+00:15:59,231 --> 00:16:05,375
+The table name must have that hash underscore underscore in front of it and Joomla will dynamicaly
+
+255
+00:16:05,631 --> 00:16:11,775
+put in the prefix so you might just simply will do a
+
+256
+00:16:12,031 --> 00:16:18,175
+MySQL script here but if you are making a change and the new releases 1.2.9
+
+257
+00:16:19,455 --> 00:16:19,967
+And
+
+258
+00:16:21,247 --> 00:16:22,271
+1.0
+
+259
+00:16:22,527 --> 00:16:23,295
+Didn't have that
+
+260
+00:16:23,551 --> 00:16:24,831
+Specific field of view
+
+261
+00:16:25,599 --> 00:16:27,135
+Then you must realize that
+
+262
+00:16:27,391 --> 00:16:28,927
+You're updating this one and so the sql must come next to that specific version
+
+263
+00:16:33,023 --> 00:16:34,303
+The update must be placed
+
+264
+00:16:35,071 --> 00:16:36,095
+at the version
+
+265
+00:16:36,351 --> 00:16:36,863
+Which Needs the update
+
+266
+00:16:37,887 --> 00:16:40,703
+So if you make it change don't put it here
+
+267
+00:16:40,959 --> 00:16:41,471
+Because it won't
+
+268
+00:16:41,727 --> 00:16:42,495
+Update correctly
+
+269
+00:16:43,263 --> 00:16:44,287
+You need to put the update next
+
+270
+00:16:44,799 --> 00:16:45,311
+to the Version that needs to be updated
+
+271
+00:16:47,103 --> 00:16:48,383
+And then over here
+
+272
+00:16:48,639 --> 00:16:49,407
+You would put the link
+
+273
+00:16:50,687 --> 00:16:51,199
+To the respective
+
+274
+00:16:51,455 --> 00:16:51,967
+Downloads
+
+275
+00:16:52,735 --> 00:16:53,247
+Ok so
+
+276
+00:16:53,503 --> 00:16:54,527
+Like here we had
+
+277
+00:16:55,039 --> 00:16:55,551
+Version 2.
+
+278
+00:16:55,807 --> 00:16:56,319
+9
+
+279
+00:16:57,087 --> 00:16:58,111
+And then we had version 1.3.
+
+280
+00:16:59,135 --> 00:16:59,647
+0
+
+281
+00:17:00,159 --> 00:17:00,671
+And
+
+282
+00:17:01,183 --> 00:17:01,951
+We added the 1.3.0 link here
+
+283
+00:17:03,999 --> 00:17:06,303
+Obviously I'm using GitHub as my distributing
+
+284
+00:17:07,839 --> 00:17:09,119
+Platform of the application
+
+285
+00:17:10,655 --> 00:17:12,191
+You could use any URL
+
+286
+00:17:12,703 --> 00:17:14,751
+And these URLs is what will be used
+
+287
+00:17:15,007 --> 00:17:15,519
+In your updates
+
+288
+00:17:15,775 --> 00:17:16,287
+Server
+
+289
+00:17:16,799 --> 00:17:17,823
+So the update server
+
+290
+00:17:18,335 --> 00:17:19,871
+If I was to open that for us first let me close this and we will go to the update server 
+
+291
+00:17:27,551 --> 00:17:28,063
+Link copy that 
+
+292
+00:17:33,439 --> 00:17:34,975
+You'd see that it has this
+
+293
+00:17:35,487 --> 00:17:36,767
+URLs here for the download
+
+294
+00:17:38,559 --> 00:17:39,327
+And as we move on it
+
+295
+00:17:39,839 --> 00:17:40,351
+3, 3.1, 3.2
+
+296
+00:17:42,655 --> 00:17:44,191
+And so it's getting these
+
+297
+00:17:44,447 --> 00:17:45,215
+these 
+
+298
+00:17:45,471 --> 00:17:45,983
+Details
+
+299
+00:17:46,495 --> 00:17:47,263
+It is getting them
+
+300
+00:17:48,031 --> 00:17:48,543
+From
+
+301
+00:17:49,055 --> 00:17:49,823
+This version
+
+302
+00:17:50,335 --> 00:17:50,847
+update area
+
+303
+00:17:52,127 --> 00:17:54,175
+And so the last version in this
+
+304
+00:17:54,431 --> 00:17:54,943
+List being 1.3.
+
+305
+00:17:56,991 --> 00:17:57,503
+2
+
+306
+00:17:57,759 --> 00:17:58,783
+Must be the same
+
+307
+00:17:59,039 --> 00:17:59,551
+Is the one that you set here
+
+308
+00:18:01,087 --> 00:18:01,599
+That is important
+
+309
+00:18:04,159 --> 00:18:07,231
+So that it will know ok now we are at the current version
+
+310
+00:18:07,743 --> 00:18:08,255
+And it will do the necessary you know the adjustments to that
+
+311
+00:18:14,399 --> 00:18:15,167
+Ok so that is
+
+312
+00:18:15,423 --> 00:18:16,191
+Basically
+
+313
+00:18:16,703 --> 00:18:18,495
+All the concepts that would be
+
+314
+00:18:18,751 --> 00:18:19,775
+Necessary
+
+315
+00:18:20,031 --> 00:18:20,543
+To cover
+
+316
+00:18:21,055 --> 00:18:22,079
+Regarding the
+
+317
+00:18:22,335 --> 00:18:22,847
+Component
+
+318
+00:18:23,103 --> 00:18:23,615
+Area
+
+319
+00:18:24,383 --> 00:18:25,407
+We've looked at adding admin views
+
+320
+00:18:26,943 --> 00:18:28,991
+We will again look at site views and adding them
+
+321
+00:18:30,271 --> 00:18:31,295
+as well as your custom admin views
+
+322
+00:18:33,599 --> 00:18:34,623
+And we will possibly
+
+323
+00:18:34,879 --> 00:18:35,391
+Going to more depths 
+
+324
+00:18:35,903 --> 00:18:36,415
+about this MySQL tweak
+
+325
+00:18:39,743 --> 00:18:40,511
+What we briefly spoke about
+
+326
+00:18:41,279 --> 00:18:42,047
+But the
+
+327
+00:18:43,071 --> 00:18:44,607
+For most part that's or the 
+
+328
+00:18:46,143 --> 00:18:46,655
+ at Component
+
+329
+00:18:46,911 --> 00:18:47,423
+Area
+
+330
+00:18:48,191 --> 00:18:48,959
+And all it's nice
+
+331
+00:18:49,983 --> 00:18:50,495
+Features
+
+332
+00:18:51,263 --> 00:18:52,543
+Obviously it all stacks upon
+
+333
+00:18:52,799 --> 00:18:53,567
+each other from the
+
+334
+00:18:54,591 --> 00:18:55,615
+Fields then the admin
+
+335
+00:18:55,871 --> 00:18:56,383
+Views and then the components themselves
+
+336
+00:18:59,967 --> 00:19:01,503
+And if you have come this far
+
+337
+00:19:02,271 --> 00:19:03,039
+you Set out your component
+
+338
+00:19:03,551 --> 00:19:04,063
+You have added some admin views
+
+339
+00:19:05,087 --> 00:19:06,111
+You are now ready to
+
+340
+00:19:06,367 --> 00:19:06,879
+Start building the front
+
+341
+00:19:08,159 --> 00:19:08,671
+and the site area
+
+342
+00:19:09,439 --> 00:19:09,951
+Which
+
+343
+00:19:10,207 --> 00:19:10,975
+You wouldn't be able to
+
+344
+00:19:11,231 --> 00:19:11,999
+To really do effectively until now
+
+345
+00:19:13,535 --> 00:19:14,303
+It is really necessary to
+
+346
+00:19:15,071 --> 00:19:15,583
+First do the admin views
+
+347
+00:19:17,119 --> 00:19:17,631
+And then only do the site views
+
+348
+00:19:19,679 --> 00:19:20,703
+Well Thank you for watching
+

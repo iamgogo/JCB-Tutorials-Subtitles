@@ -1,0 +1,1316 @@
+1
+00:00:03,072 --> 00:00:04,864
+I"d like to give you a
+
+2
+00:00:06,144 --> 00:00:09,984
+Quick overview of the new implementation that we've added
+
+3
+00:00:11,008 --> 00:00:12,288
+To JCB
+
+4
+00:00:13,568 --> 00:00:17,152
+That allows you to do translation
+
+5
+00:00:18,176 --> 00:00:19,456
+via a
+
+6
+00:00:19,712 --> 00:00:20,736
+Excel spreadsheet
+
+7
+00:00:22,528 --> 00:00:24,320
+It is really just to
+
+8
+00:00:25,600 --> 00:00:27,136
+Make it easy for you to
+
+9
+00:00:27,648 --> 00:00:28,672
+Build your component
+
+10
+00:00:29,184 --> 00:00:31,232
+Extract your language strings
+
+11
+00:00:31,488 --> 00:00:32,768
+And give it to someone else
+
+12
+00:00:33,280 --> 00:00:36,352
+Have them do the translation in whichever language you like
+
+13
+00:00:36,864 --> 00:00:38,912
+Have them give the spreadsheet back to you
+
+14
+00:00:39,168 --> 00:00:41,728
+And imported into JCB without
+
+15
+00:00:42,752 --> 00:00:46,848
+The necessity of struggling with INI files any of that
+
+16
+00:00:47,616 --> 00:00:50,944
+So that was what we wanted to achieve
+
+17
+00:00:51,456 --> 00:00:52,992
+The other thing that you need to know
+
+18
+00:00:53,504 --> 00:00:54,784
+Is that JCB
+
+19
+00:00:55,296 --> 00:00:57,600
+Doesn't really work with placeholders
+
+20
+00:00:57,856 --> 00:01:00,160
+When it comes to these translation strings
+
+21
+00:01:01,696 --> 00:01:04,512
+It actually works directly with the English
+
+22
+00:01:04,768 --> 00:01:06,048
+String
+
+23
+00:01:06,304 --> 00:01:07,584
+And the reason we did that
+
+24
+00:01:08,096 --> 00:01:10,656
+Is because the place holders
+
+25
+00:01:11,168 --> 00:01:13,472
+Which in the INI file is the
+
+26
+00:01:13,728 --> 00:01:14,496
+Let me just show you
+
+27
+00:01:14,752 --> 00:01:15,520
+Quickly
+
+28
+00:01:16,288 --> 00:01:17,312
+If you look at these
+
+29
+00:01:17,568 --> 00:01:19,104
+For example may be back
+
+30
+00:01:21,920 --> 00:01:22,688
+This
+
+31
+00:01:23,200 --> 00:01:23,712
+Word
+
+32
+00:01:24,224 --> 00:01:25,504
+This English word here
+
+33
+00:01:26,528 --> 00:01:31,648
+Might be ended up being used in multiple views the same English word
+
+34
+00:01:31,904 --> 00:01:33,184
+But with a different
+
+35
+00:01:34,976 --> 00:01:35,744
+you know a placeholder
+
+36
+00:01:37,024 --> 00:01:37,536
+So
+
+37
+00:01:37,792 --> 00:01:40,864
+What we did instead as we said to Ourselves ok
+
+38
+00:01:41,376 --> 00:01:47,264
+To ensure that you always translate this specific English string only once
+
+39
+00:01:47,776 --> 00:01:53,664
+We will only add the string and wherever it is reoccurs will replace it
+
+40
+00:01:54,432 --> 00:01:55,456
+The string itself
+
+41
+00:01:57,504 --> 00:01:59,040
+This should be an advantage
+
+42
+00:01:59,296 --> 00:02:00,832
+I can understand that
+
+43
+00:02:01,344 --> 00:02:03,648
+That you might want to have a differently
+
+44
+00:02:04,160 --> 00:02:06,208
+But this is how we've gone about doing this
+
+45
+00:02:06,720 --> 00:02:09,024
+And so when you think about create new
+
+46
+00:02:09,280 --> 00:02:12,096
+Create new comes you know is used
+
+47
+00:02:12,352 --> 00:02:13,888
+Many places over in
+
+48
+00:02:14,144 --> 00:02:16,192
+In the you know in the files
+
+49
+00:02:16,704 --> 00:02:17,728
+sorry
+
+50
+00:02:17,984 --> 00:02:20,032
+In relation to these placeholders
+
+51
+00:02:20,800 --> 00:02:25,152
+But you only need to translate it this create new ones
+
+52
+00:02:25,664 --> 00:02:26,944
+And we will add it
+
+53
+00:02:27,456 --> 00:02:28,992
+The compiler will add it
+
+54
+00:02:29,248 --> 00:02:30,016
+Correctly
+
+55
+00:02:30,272 --> 00:02:32,320
+In every other place where it belongs
+
+56
+00:02:32,832 --> 00:02:34,112
+So that's really
+
+57
+00:02:34,368 --> 00:02:36,416
+The first thing you need to keep in mind
+
+58
+00:02:36,928 --> 00:02:38,208
+The second thing which is
+
+59
+00:02:38,720 --> 00:02:40,000
+Almost as important
+
+60
+00:02:40,512 --> 00:02:44,608
+Is that you often have strings that are across multiple components
+
+61
+00:02:45,120 --> 00:02:48,448
+So the string back for example again or cancel
+
+62
+00:02:48,704 --> 00:02:49,728
+or close
+
+63
+00:02:50,240 --> 00:02:54,080
+It is not only used in one component is used in many components
+
+64
+00:02:54,848 --> 00:02:59,200
+And so we also said to Ourselves we want to still just translate close
+
+65
+00:02:59,456 --> 00:03:00,224
+Once
+
+66
+00:03:00,736 --> 00:03:03,808
+And then in every other component where it's used
+
+67
+00:03:04,320 --> 00:03:06,368
+It will automatically be used
+
+68
+00:03:06,880 --> 00:03:13,024
+And so when we go to JCB if you have a fresh install of JCB
+
+69
+00:03:13,280 --> 00:03:16,608
+And you scroll down and your open language translations
+
+70
+00:03:16,864 --> 00:03:19,168
+You see that there is no values there
+
+71
+00:03:20,448 --> 00:03:24,544
+A same as if you opened languages there's also no values there
+
+72
+00:03:26,080 --> 00:03:27,872
+If you want to have JCB
+
+73
+00:03:28,128 --> 00:03:31,200
+Populate the translation the English strings
+
+74
+00:03:31,712 --> 00:03:35,808
+So where does it get them well it gets them from your fields
+
+75
+00:03:36,064 --> 00:03:37,856
+And from your site views
+
+76
+00:03:38,368 --> 00:03:39,136
+And from
+
+77
+00:03:39,392 --> 00:03:40,928
+Any other place either
+
+78
+00:03:41,184 --> 00:03:42,720
+Your admin view or
+
+79
+00:03:43,232 --> 00:03:43,744
+you know
+
+80
+00:03:44,000 --> 00:03:46,304
+Any other place where you use
+
+81
+00:03:47,584 --> 00:03:49,376
+Translation strings
+
+82
+00:03:49,632 --> 00:03:55,776
+In then it populates dynamically the language translation so you don't really ever need to click
+
+83
+00:03:56,032 --> 00:03:56,544
+New
+
+84
+00:03:56,800 --> 00:03:59,360
+To create any it creates it
+
+85
+00:03:59,616 --> 00:04:03,968
+For you so the way to do that if you would go to the compiler
+
+86
+00:04:04,480 --> 00:04:07,040
+You select the component that you would like to compile
+
+87
+00:04:07,808 --> 00:04:13,952
+And you simply click compile and you need that do that only once now you can just clear that out again
+
+88
+00:04:14,208 --> 00:04:15,232
+You don't need to use it
+
+89
+00:04:15,744 --> 00:04:18,559
+Now if we go back to language translations
+
+90
+00:04:19,071 --> 00:04:19,839
+Suddenly
+
+91
+00:04:20,095 --> 00:04:25,471
+There's a whole bunch of strings here and also tells you that it hasn't been translated and all
+
+92
+00:04:25,727 --> 00:04:28,287
+So just that's quickly and we got
+
+93
+00:04:28,543 --> 00:04:29,823
+Almost 
+
+94
+00:04:30,079 --> 00:04:31,359
+249 strings here
+
+95
+00:04:31,871 --> 00:04:37,247
+And like I said close will only be shown up once
+
+96
+00:04:37,503 --> 00:04:38,015
+So
+
+97
+00:04:40,319 --> 00:04:42,367
+It is with every other strain
+
+98
+00:04:42,623 --> 00:04:45,439
+If we then open one of these
+
+99
+00:04:47,487 --> 00:04:51,583
+You see that you cannot edit the English string now we've had request
+
+100
+00:04:51,839 --> 00:04:57,983
+The people would like to edit the string but it doesn't really make sense because if the string is
+
+101
+00:04:58,239 --> 00:04:58,751
+Is being used
+
+102
+00:04:59,007 --> 00:05:00,031
+In a
+
+103
+00:05:00,543 --> 00:05:01,055
+Field
+
+104
+00:05:01,311 --> 00:05:03,615
+How would we be able to know
+
+105
+00:05:03,871 --> 00:05:06,431
+That their relationship here needs to change
+
+106
+00:05:06,687 --> 00:05:08,991
+For example if you update a string here
+
+107
+00:05:09,247 --> 00:05:11,039
+Now JCB needs to know
+
+108
+00:05:11,295 --> 00:05:14,367
+In that field in needs to update the label for example
+
+109
+00:05:15,135 --> 00:05:16,415
+There's no way for us to it
+
+110
+00:05:16,671 --> 00:05:17,951
+you know to determine that
+
+111
+00:05:18,207 --> 00:05:22,047
+So you'd basically change the string and it won't be useful
+
+112
+00:05:22,303 --> 00:05:24,863
+Because it JCB on compilation
+
+113
+00:05:25,119 --> 00:05:28,447
+Will deter will detect that this string doesn't exist
+
+114
+00:05:28,703 --> 00:05:29,983
+And it will just create it again
+
+115
+00:05:30,239 --> 00:05:34,847
+So the way that you would change a string which is found here
+
+116
+00:05:35,103 --> 00:05:39,455
+Is you need to go and change it in this either
+
+117
+00:05:40,479 --> 00:05:43,039
+The field where it was created
+
+118
+00:05:43,295 --> 00:05:45,343
+Or the site view or the admin View
+
+119
+00:05:45,599 --> 00:05:49,695
+And I mean in this case we know that this word demo
+
+120
+00:05:49,951 --> 00:05:55,327
+Is the components name right so if you wanna translate that string
+
+121
+00:05:55,839 --> 00:05:58,655
+Oh sorry change that string
+
+122
+00:05:59,167 --> 00:06:01,983
+So for example I'll quickly demonstrate that
+
+123
+00:06:04,287 --> 00:06:06,847
+I'm gonna change this demo to two o
+
+124
+00:06:07,103 --> 00:06:08,383
+Like that
+
+125
+00:06:09,151 --> 00:06:11,455
+And then save and close
+
+126
+00:06:14,015 --> 00:06:17,087
+Now I'll compile it again
+
+127
+00:06:23,487 --> 00:06:27,839
+And just cleared out and then go back to our language translation
+
+128
+00:06:28,863 --> 00:06:29,887
+And now
+
+129
+00:06:30,911 --> 00:06:33,215
+You see the demo is gone because
+
+130
+00:06:33,471 --> 00:06:35,775
+Demo is no longer being used anywhere
+
+131
+00:06:36,031 --> 00:06:39,871
+Another component either so the system will automatically remove it
+
+132
+00:06:40,383 --> 00:06:43,711
+If you go to the end of the string will see the new ones
+
+133
+00:06:43,967 --> 00:06:44,735
+Have been added
+
+134
+00:06:45,247 --> 00:06:46,015
+See there
+
+135
+00:06:46,783 --> 00:06:48,319
+So that's how you would
+
+136
+00:06:48,575 --> 00:06:52,671
+Change a English string is you'd go back to where you set it
+
+137
+00:06:53,439 --> 00:06:55,999
+And then from there have it been changed
+
+138
+00:06:57,535 --> 00:07:00,351
+I'm gonna just changed it back quickly
+
+139
+00:07:01,119 --> 00:07:03,167
+And then compile it again
+
+140
+00:07:07,519 --> 00:07:09,823
+Clear it out again
+
+141
+00:07:10,335 --> 00:07:12,127
+Go back to language translations
+
+142
+00:07:12,639 --> 00:07:16,735
+And you see that it's removed the other one and it's added to correct one back
+
+143
+00:07:17,503 --> 00:07:18,271
+Now
+
+144
+00:07:18,783 --> 00:07:23,391
+I'm gonna translate or I would like to translate only this one string
+
+145
+00:07:23,647 --> 00:07:25,439
+And if I wanna do that
+
+146
+00:07:25,695 --> 00:07:28,255
+You see that there's no language is available
+
+147
+00:07:28,511 --> 00:07:33,375
+We decided to allow the languages to be set dynamically meaning
+
+148
+00:07:33,631 --> 00:07:35,679
+That you would manually create them
+
+149
+00:07:35,935 --> 00:07:37,215
+And use them as you like
+
+150
+00:07:37,983 --> 00:07:39,775
+So there is an area called languages
+
+151
+00:07:40,287 --> 00:07:41,823
+You'd click new here
+
+152
+00:07:42,847 --> 00:07:47,455
+And then you'd give the language name and it's tag now the tag
+
+153
+00:07:47,711 --> 00:07:49,759
+We've given you an example here
+
+154
+00:07:50,015 --> 00:07:52,831
+But if you do not know how this should look
+
+155
+00:07:53,087 --> 00:07:56,927
+There are ways for you to find out one of the easiest ways
+
+156
+00:07:57,439 --> 00:08:01,279
+Is there actually just go to Joomlas translation area
+
+157
+00:08:01,535 --> 00:08:03,327
+So if you go to community
+
+158
+00:08:03,583 --> 00:08:07,167
+.Joomla.Org/translations.HTML
+
+159
+00:08:07,679 --> 00:08:09,215
+And then you select
+
+160
+00:08:09,471 --> 00:08:11,775
+I would say just selective
+
+161
+00:08:12,031 --> 00:08:13,567
+This one that's the newest
+
+162
+00:08:14,079 --> 00:08:16,639
+And then you'll see there's a whole bunch of languages here
+
+163
+00:08:17,407 --> 00:08:19,199
+Clicking on any of these
+
+164
+00:08:19,455 --> 00:08:21,503
+Will take you down to that language
+
+165
+00:08:21,759 --> 00:08:24,063
+And basically this is
+
+166
+00:08:24,319 --> 00:08:26,879
+The little tag that you would look be looking for
+
+167
+00:08:27,647 --> 00:08:32,255
+So if you want to do for example Dutch
+
+168
+00:08:35,583 --> 00:08:37,119
+Then this is the the one
+
+169
+00:08:37,631 --> 00:08:39,423
+The the tag that you would use
+
+170
+00:08:39,935 --> 00:08:41,215
+You would use the
+
+171
+00:08:41,727 --> 00:08:43,775
+Dutch as the name
+
+172
+00:08:44,031 --> 00:08:45,567
+And then that as the tag
+
+173
+00:08:45,823 --> 00:08:50,175
+I'm gonna set up just for example I'm gonna setup Afrikaans
+
+174
+00:08:50,687 --> 00:08:52,223
+Is my native language
+
+175
+00:08:52,991 --> 00:08:53,503
+So
+
+176
+00:08:54,015 --> 00:08:55,295
+I'm just gonna use Afrikaans
+
+177
+00:08:57,343 --> 00:08:59,391
+As the language we wanna create
+
+178
+00:08:59,903 --> 00:09:01,951
+And obviously then this is the
+
+179
+00:09:03,231 --> 00:09:03,743
+The tag
+
+180
+00:09:07,839 --> 00:09:11,167
+And you can create any of the languages you want to use
+
+181
+00:09:11,935 --> 00:09:15,263
+We might at some point at a few major languages here
+
+182
+00:09:15,775 --> 00:09:17,823
+And ship it like that but
+
+183
+00:09:18,079 --> 00:09:20,127
+Just that you know you could just create a language
+
+184
+00:09:20,639 --> 00:09:25,247
+You Cannot create a translation for that language unless you've done this
+
+185
+00:09:25,503 --> 00:09:27,295
+You must first create the language
+
+186
+00:09:28,063 --> 00:09:29,343
+It is just the way it works
+
+187
+00:09:31,903 --> 00:09:34,207
+Now we can go back and
+
+188
+00:09:37,023 --> 00:09:39,071
+Let's take a string that
+
+189
+00:09:40,095 --> 00:09:42,143
+Would look different in Afrikaans
+
+190
+00:09:42,399 --> 00:09:45,215
+So let's take author
+
+191
+00:09:47,263 --> 00:09:52,127
+So now here if there's more components which the word author is used in
+
+192
+00:09:52,383 --> 00:09:57,247
+It'll all be linked in here and it all be done automatically you wouldn't need to do any of that
+
+193
+00:09:57,759 --> 00:10:03,903
+You will only really need to focus on this translation area so author in Afrikaans is
+
+194
+00:10:04,159 --> 00:10:06,463
+skrywer
+
+195
+00:10:07,743 --> 00:10:08,767
+or outeur
+
+196
+00:10:11,327 --> 00:10:14,911
+So will use the outeur which is actually more correct
+
+197
+00:10:15,167 --> 00:10:15,935
+And then
+
+198
+00:10:16,447 --> 00:10:19,775
+Will you select the language for which that string belongs
+
+199
+00:10:20,543 --> 00:10:22,079
+And then save and close
+
+200
+00:10:22,591 --> 00:10:24,127
+And that is as simple as that
+
+201
+00:10:25,151 --> 00:10:27,199
+From now on in any component
+
+202
+00:10:27,455 --> 00:10:29,247
+Where the word author is used
+
+203
+00:10:29,759 --> 00:10:30,271
+If
+
+204
+00:10:30,527 --> 00:10:33,855
+The Afrikaans translation with relation to the other strings
+
+205
+00:10:34,367 --> 00:10:35,135
+Is enough
+
+206
+00:10:35,647 --> 00:10:38,207
+It'll dynamically add this language
+
+207
+00:10:38,719 --> 00:10:40,511
+To the component
+
+208
+00:10:41,023 --> 00:10:43,327
+And you would not need to translate it again
+
+209
+00:10:44,863 --> 00:10:51,007
+Now this is all been the way it's been working up till now so this is none of this is new
+
+210
+00:10:51,519 --> 00:10:52,799
+The area that is new
+
+211
+00:10:53,055 --> 00:10:55,871
+Is that you can actually export
+
+212
+00:10:56,127 --> 00:10:57,407
+these strings
+
+213
+00:10:57,663 --> 00:10:58,687
+To a spreadsheet
+
+214
+00:10:59,711 --> 00:11:00,479
+And then
+
+215
+00:11:00,991 --> 00:11:02,527
+You can import them
+
+216
+00:11:04,319 --> 00:11:08,415
+From the spreadsheet and it will dynamically be added so
+
+217
+00:11:08,927 --> 00:11:15,071
+I'm gonna just select a few strings here you don't need to select any of the already translated
+
+218
+00:11:15,327 --> 00:11:16,095
+strings
+
+219
+00:11:16,607 --> 00:11:21,215
+But if you do it will also be used if it doesn't really matter
+
+220
+00:11:21,471 --> 00:11:24,287
+I'm just gonna select a few
+
+221
+00:11:24,543 --> 00:11:25,055
+And
+
+222
+00:11:25,567 --> 00:11:27,615
+Click export data
+
+223
+00:11:27,871 --> 00:11:29,407
+This will create a
+
+224
+00:11:29,919 --> 00:11:31,455
+Excel
+
+225
+00:11:31,711 --> 00:11:32,223
+Spreadsheet
+
+226
+00:11:32,735 --> 00:11:35,295
+Which you can then save
+
+227
+00:11:35,807 --> 00:11:40,159
+I have now open that spreadsheet and you see that it has a bunch IDs
+
+228
+00:11:41,183 --> 00:11:42,975
+And then it has English
+
+229
+00:11:43,743 --> 00:11:45,023
+It's got the
+
+230
+00:11:45,535 --> 00:11:47,327
+The tag of the language
+
+231
+00:11:47,583 --> 00:11:50,399
+And it's got the value that we already set
+
+232
+00:11:51,423 --> 00:11:52,959
+So now I'm gonna set
+
+233
+00:11:53,215 --> 00:11:56,543
+The value for these others in the spreadsheet
+
+234
+00:11:57,055 --> 00:11:58,335
+So now you got your
+
+235
+00:11:59,103 --> 00:11:59,871
+Language
+
+236
+00:12:00,127 --> 00:12:02,431
+File back from your translators
+
+237
+00:12:03,199 --> 00:12:05,247
+And they basically translated it
+
+238
+00:12:05,503 --> 00:12:06,783
+This column
+
+239
+00:12:07,039 --> 00:12:11,647
+Now you can have multiple language every every language will have its own column
+
+240
+00:12:12,159 --> 00:12:13,183
+And
+
+241
+00:12:13,439 --> 00:12:15,999
+All you need to ensure that this top header
+
+242
+00:12:16,767 --> 00:12:18,815
+Is the language tag
+
+243
+00:12:19,071 --> 00:12:22,143
+That's really what's important and that this language
+
+244
+00:12:22,399 --> 00:12:25,471
+Is created and published in your system
+
+245
+00:12:25,983 --> 00:12:28,543
+Do not let them change to English string
+
+246
+00:12:29,311 --> 00:12:31,103
+When you import this file
+
+247
+00:12:31,615 --> 00:12:34,943
+The system will look for the ID and the string
+
+248
+00:12:35,199 --> 00:12:38,271
+To identify that this value exists
+
+249
+00:12:38,783 --> 00:12:41,599
+If it doesn't exist it will simply ignore it
+
+250
+00:12:42,111 --> 00:12:43,903
+So if you change author
+
+251
+00:12:44,415 --> 00:12:46,719
+Even though the ID Remains the Same
+
+252
+00:12:46,975 --> 00:12:51,327
+It will not find it and it will simply ignore this line
+
+253
+00:12:51,583 --> 00:12:55,935
+On the way I'll demonstrate this is I'm just gonna change back to having to k's
+
+254
+00:12:57,727 --> 00:12:58,239
+And
+
+255
+00:12:58,495 --> 00:12:59,775
+Save this document
+
+256
+00:13:00,031 --> 00:13:03,615
+And then let's go back and import it
+
+257
+00:13:04,639 --> 00:13:08,479
+Now the imported is simple we just click on import data
+
+258
+00:13:09,247 --> 00:13:12,063
+Then we select the file from our system
+
+259
+00:13:13,343 --> 00:13:16,159
+Click upload file
+
+260
+00:13:16,415 --> 00:13:21,535
+And it should dynamically mapped the columns in your spreadsheet
+
+261
+00:13:21,791 --> 00:13:23,071
+To the
+
+262
+00:13:23,327 --> 00:13:25,375
+Table columns so you would have
+
+263
+00:13:25,631 --> 00:13:27,935
+Your language strings if you got multiple language
+
+264
+00:13:28,447 --> 00:13:30,239
+It should automatically mapped in
+
+265
+00:13:30,495 --> 00:13:35,359
+If you are having multiple languages and you only one import for the one language
+
+266
+00:13:35,615 --> 00:13:41,759
+Then all you need do is add this ignore the column next to the language as you do not want to 
+
+267
+00:13:42,015 --> 00:13:42,527
+import
+
+268
+00:13:43,295 --> 00:13:45,855
+Ok and then you click continue
+
+269
+00:13:47,135 --> 00:13:49,439
+And that is it you will now see
+
+270
+00:13:50,207 --> 00:13:53,791
+That it has added translations
+
+271
+00:13:54,559 --> 00:13:55,583
+Except for back
+
+272
+00:13:56,607 --> 00:13:57,119
+Now
+
+273
+00:13:57,375 --> 00:14:03,519
+At first it didn't actually add these so I had to quickly go and add a little fixed to the
+
+274
+00:14:03,775 --> 00:14:04,287
+import
+
+275
+00:14:04,543 --> 00:14:06,335
+I didn't realize that
+
+276
+00:14:06,847 --> 00:14:07,615
+At the moment
+
+277
+00:14:08,127 --> 00:14:10,943
+It actually would stop at the first failure
+
+278
+00:14:11,199 --> 00:14:12,735
+And not import further
+
+279
+00:14:12,991 --> 00:14:14,783
+But I've just fix that and should
+
+280
+00:14:15,039 --> 00:14:17,343
+Within the next update this should be resolved
+
+281
+00:14:17,855 --> 00:14:18,623
+Anyway
+
+282
+00:14:18,879 --> 00:14:19,647
+the point is
+
+283
+00:14:19,903 --> 00:14:23,231
+Once you've imported it you'll see that it is added
+
+284
+00:14:23,487 --> 00:14:25,535
+The translations to
+
+285
+00:14:25,791 --> 00:14:26,815
+Those
+
+286
+00:14:27,839 --> 00:14:28,607
+Strings
+
+287
+00:14:28,863 --> 00:14:31,423
+And it's also mapped it to the correct language
+
+288
+00:14:34,239 --> 00:14:39,359
+But back was not imported because the English string didn't actually correspond
+
+289
+00:14:39,871 --> 00:14:41,919
+If we go back to our spreadsheet
+
+290
+00:14:42,431 --> 00:14:45,503
+And fix this little error
+
+291
+00:14:46,783 --> 00:14:49,599
+And in fact make a little tweak to
+
+292
+00:14:50,111 --> 00:14:52,159
+What are the other strings
+
+293
+00:14:52,671 --> 00:14:54,463
+Just for example sake
+
+294
+00:14:55,231 --> 00:14:59,327
+And then go back to importing this file after Saving it of course
+
+295
+00:14:59,839 --> 00:15:00,351
+Save
+
+296
+00:15:02,911 --> 00:15:05,727
+So again import data
+
+297
+00:15:07,007 --> 00:15:07,775
+Browse
+
+298
+00:15:14,431 --> 00:15:16,735
+Now you'll see that back is been done
+
+299
+00:15:19,295 --> 00:15:22,879
+And the other one that we also played with was disclosing new
+
+300
+00:15:23,391 --> 00:15:26,207
+We added to the double T there
+
+301
+00:15:27,231 --> 00:15:30,047
+So now you are able to export
+
+302
+00:15:30,303 --> 00:15:32,095
+This language strings
+
+303
+00:15:32,351 --> 00:15:33,887
+Translate them in a spreadsheet
+
+304
+00:15:34,399 --> 00:15:36,191
+And easily import that spreadsheet
+
+305
+00:15:36,447 --> 00:15:38,495
+Which word automatically update
+
+306
+00:15:38,751 --> 00:15:41,311
+Your values here if you
+
+307
+00:15:42,335 --> 00:15:46,687
+Have updated more than 50% of the English strings
+
+308
+00:15:47,199 --> 00:15:48,735
+To a specific language
+
+309
+00:15:49,247 --> 00:15:51,551
+It will automatically be added to your component
+
+310
+00:15:52,831 --> 00:15:55,391
+You can change this percentage
+
+311
+00:15:55,647 --> 00:15:57,183
+By going to options
+
+312
+00:15:57,439 --> 00:15:59,487
+In JCB
+
+313
+00:16:00,255 --> 00:16:02,815
+And then basically changing this
+
+314
+00:16:03,583 --> 00:16:08,191
+Select the percentage any language should be translated before the system
+
+315
+00:16:08,447 --> 00:16:11,519
+Should add the language to component during compilation
+
+316
+00:16:12,799 --> 00:16:14,079
+So that means
+
+317
+00:16:14,335 --> 00:16:18,175
+If more than 50% of your English strings have been translated
+
+318
+00:16:18,431 --> 00:16:20,479
+It starts adding it to the component
+
+319
+00:16:21,503 --> 00:16:22,271
+If not
+
+320
+00:16:22,527 --> 00:16:25,087
+It will just ignore it
+
+321
+00:16:25,855 --> 00:16:27,135
+Ok that is
+
+322
+00:16:27,903 --> 00:16:32,511
+Giving you a quick demostration of the new import export
+
+323
+00:16:32,767 --> 00:16:34,815
+Option in translating
+
+324
+00:16:35,071 --> 00:16:36,863
+The strings in your system
+
+325
+00:16:37,375 --> 00:16:41,215
+And knowing that if you have translated any of these strings will only
+
+326
+00:16:41,471 --> 00:16:43,007
+You need to do it once
+
+327
+00:16:43,519 --> 00:16:49,407
+And it will dynamically be available to every other component that uses that field or that View
+
+328
+00:16:49,663 --> 00:16:53,247
+And therefore these English strings
+
+329
+00:16:54,783 --> 00:16:56,063
+Thanks for watching
+

@@ -1,0 +1,436 @@
+1
+00:00:00,768 --> 00:00:01,280
+Hi
+
+2
+00:00:01,792 --> 00:00:06,400
+Sometimes one would like to add extra styling like this
+
+3
+00:00:06,912 --> 00:00:08,192
+Or like that
+
+4
+00:00:08,960 --> 00:00:10,240
+To a listview
+
+5
+00:00:11,264 --> 00:00:13,568
+The problem though is that by Default
+
+6
+00:00:14,080 --> 00:00:19,200
+All of the fields all of these field values are being escaped
+
+7
+00:00:20,224 --> 00:00:20,992
+And so
+
+8
+00:00:21,760 --> 00:00:24,832
+If you would like to add let's say this this kind of styling
+
+9
+00:00:25,600 --> 00:00:27,136
+to a field view
+
+10
+00:00:27,392 --> 00:00:28,672
+Let me show you how I did it
+
+11
+00:00:31,488 --> 00:00:34,304
+In the job order admin View area
+
+12
+00:00:34,560 --> 00:00:37,888
+If you go to PHP
+
+13
+00:00:39,680 --> 00:00:45,824
+There is a method called add PHP getitems method before translation fix and decryption
+
+14
+00:00:47,616 --> 00:00:48,896
+So this happens before
+
+15
+00:00:49,408 --> 00:00:52,480
+The translation or The Fixer or the decryption
+
+16
+00:00:53,248 --> 00:00:55,808
+Sorry the translation fix or the decryption of any field
+
+17
+00:00:58,368 --> 00:01:04,000
+This is not the ideal place you usually would add it after that was done but in this case I did it before
+
+18
+00:01:05,024 --> 00:01:07,584
+So basically I am setting up
+
+19
+00:01:08,096 --> 00:01:09,120
+A value
+
+20
+00:01:09,888 --> 00:01:12,960
+That when I wanna use danger when I wanna use warning
+
+21
+00:01:13,472 --> 00:01:14,496
+Simply using
+
+22
+00:01:15,008 --> 00:01:15,520
+The
+
+23
+00:01:15,776 --> 00:01:18,336
+The getDate and modifying it
+
+24
+00:01:18,848 --> 00:01:23,200
+By the danger time and the warning time from the
+
+25
+00:01:23,456 --> 00:01:24,480
+Job tracking
+
+26
+00:01:26,784 --> 00:01:32,928
+Configuration values so this is a configuration field that I've added to the component and it
+
+27
+00:01:33,184 --> 00:01:36,000
+It's names are warning time and danger time
+
+28
+00:01:36,256 --> 00:01:39,328
+And the default is 3 weeks 1 week
+
+29
+00:01:39,840 --> 00:01:42,144
+And basically this is the date
+
+30
+00:01:42,400 --> 00:01:44,448
+The dates that I would then use
+
+31
+00:01:44,704 --> 00:01:47,008
+I then look through the data
+
+32
+00:01:47,520 --> 00:01:49,568
+And when I identify
+
+33
+00:01:49,824 --> 00:01:52,384
+data that is actually
+
+34
+00:01:53,408 --> 00:01:54,688
+Part of the target
+
+35
+00:01:57,248 --> 00:01:58,528
+I add
+
+36
+00:01:59,040 --> 00:02:00,320
+This
+
+37
+00:02:00,576 --> 00:02:01,856
+Value to it
+
+38
+00:02:03,392 --> 00:02:07,488
+That then intern turns this red
+
+39
+00:02:08,768 --> 00:02:09,280
+Ok
+
+40
+00:02:09,792 --> 00:02:12,096
+And then the next one
+
+41
+00:02:12,352 --> 00:02:13,632
+Is I check the dates
+
+42
+00:02:14,400 --> 00:02:19,264
+And then depending on its values I again add some HTML value
+
+43
+00:02:19,520 --> 00:02:22,592
+To the the date and I use a custom
+
+44
+00:02:23,104 --> 00:02:25,664
+A method in a helper class call fancyDate
+
+45
+00:02:25,920 --> 00:02:27,712
+Where I convert the
+
+46
+00:02:28,224 --> 00:02:28,736
+Default
+
+47
+00:02:29,760 --> 00:02:30,784
+Sequel date
+
+48
+00:02:31,040 --> 00:02:33,344
+to a better date or a better looking date
+
+49
+00:02:33,600 --> 00:02:35,136
+2nd of April or something
+
+50
+00:02:36,160 --> 00:02:36,672
+Ok
+
+51
+00:02:36,928 --> 00:02:37,440
+So
+
+52
+00:02:37,696 --> 00:02:38,976
+The problem is though
+
+53
+00:02:39,232 --> 00:02:40,512
+If you do this
+
+54
+00:02:41,792 --> 00:02:42,816
+And you
+
+55
+00:02:43,328 --> 00:02:49,472
+Compile your component add items go look at it you'd see that it actually escapes those values and it prints it
+
+56
+00:02:49,728 --> 00:02:50,240
+Out
+
+57
+00:02:50,496 --> 00:02:51,520
+Like a
+
+58
+00:02:52,032 --> 00:02:53,824
+You know like you see it over here
+
+59
+00:02:54,592 --> 00:02:55,872
+It actually prints out
+
+60
+00:02:56,384 --> 00:02:56,896
+That
+
+61
+00:02:57,152 --> 00:02:57,920
+Around
+
+62
+00:02:58,176 --> 00:02:58,944
+The value
+
+63
+00:02:59,712 --> 00:03:03,040
+And that's obviously not what you'd like and the reason why it does that
+
+64
+00:03:03,296 --> 00:03:05,856
+Because all values are being escaped
+
+65
+00:03:06,624 --> 00:03:09,952
+Now there is a way to to stop that from being
+
+66
+00:03:10,208 --> 00:03:10,976
+from happening
+
+67
+00:03:12,768 --> 00:03:15,328
+And that that is really what this tutorial is about
+
+68
+00:03:15,840 --> 00:03:18,144
+To show you how to prevent
+
+69
+00:03:18,656 --> 00:03:20,192
+That escaping
+
+70
+00:03:22,752 --> 00:03:25,056
+So the value we have here is to create date
+
+71
+00:03:25,312 --> 00:03:27,360
+As well as the job status
+
+72
+00:03:27,872 --> 00:03:31,200
+So I'm gonna go in I'm still in the
+
+73
+00:03:31,968 --> 00:03:34,272
+The back end of the component
+
+74
+00:03:34,784 --> 00:03:35,808
+Job order
+
+75
+00:03:36,064 --> 00:03:38,368
+And I'm going to go to the fields
+
+76
+00:03:38,880 --> 00:03:42,464
+And then I'm gonna scroll down to that that value
+
+77
+00:03:45,536 --> 00:03:51,680
+Let 's see where is it now Job status
+
+78
+00:03:51,936 --> 00:03:53,472
+Ok I'm gonna open it
+
+79
+00:03:53,728 --> 00:03:56,544
+And if I then
+
+80
+00:03:56,800 --> 00:04:00,896
+Having a it open and I can scroll down and even here
+
+81
+00:04:01,152 --> 00:04:02,944
+You see that there
+
+82
+00:04:03,200 --> 00:04:09,344
+It doesn't show up here sorry I should actually had it but the reality is 
+
+83
+00:04:09,600 --> 00:04:12,672
+way at the bottom you see I added this little line
+
+84
+00:04:13,184 --> 00:04:14,208
+I set escape
+
+85
+00:04:14,720 --> 00:04:15,744
+Equals
+
+86
+00:04:16,256 --> 00:04:17,791
+False
+
+87
+00:04:18,815 --> 00:04:22,399
+So you would simply add this line
+
+88
+00:04:22,655 --> 00:04:26,495
+And then when component Builder compiles
+
+89
+00:04:27,263 --> 00:04:29,311
+It will actually in the body
+
+90
+00:04:29,567 --> 00:04:32,127
+Of the component where that field is loaded
+
+91
+00:04:32,383 --> 00:04:34,175
+It will tell the
+
+92
+00:04:34,431 --> 00:04:36,735
+Escape method not to escape it
+
+93
+00:04:37,759 --> 00:04:39,039
+So that it would then
+
+94
+00:04:39,295 --> 00:04:42,623
+Display the html instead of printing it out
+
+95
+00:04:43,903 --> 00:04:46,975
+So that is really what it's all about maybe it's
+
+96
+00:04:47,487 --> 00:04:50,047
+Got a lot of explanation for such a simple thing
+
+97
+00:04:50,559 --> 00:04:55,167
+But I can tell you what if you can't do that it's quite frustrating because
+
+98
+00:04:55,423 --> 00:04:59,263
+Sometimes you would like to give some indication with some HTML
+
+99
+00:05:00,031 --> 00:05:02,079
+upon the value and then this
+
+100
+00:05:02,335 --> 00:05:05,663
+Feature actually allows that like you could see here
+
+101
+00:05:05,919 --> 00:05:09,247
+We were able to add a nice button around these dates
+
+102
+00:05:09,503 --> 00:05:15,647
+And as well as adding some colour to to these words here and yeah
+
+103
+00:05:15,903 --> 00:05:22,047
+So that is a quick demonstration of how to make use of the not escape
+
+104
+00:05:22,559 --> 00:05:24,863
+Method or concept
+
+105
+00:05:25,119 --> 00:05:28,959
+When it comes to list views around the field values
+
+106
+00:05:29,471 --> 00:05:30,751
+Hope that makes sense
+
+107
+00:05:31,263 --> 00:05:36,383
+You have any questions please don't hesitate to let me know
+
+108
+00:05:36,639 --> 00:05:37,407
+And
+
+109
+00:05:37,919 --> 00:05:40,223
+Until next time take care thanks for watching
+

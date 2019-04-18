@@ -1,0 +1,7304 @@
+﻿1
+00:00:00,256 --> 00:00:02,560
+Ok if those of you who have
+
+2
+00:00:02,816 --> 00:00:04,096
+not already
+
+3
+00:00:04,352 --> 00:00:05,632
+Watch this
+
+4
+00:00:06,144 --> 00:00:07,680
+How to use the field type
+
+5
+00:00:08,192 --> 00:00:09,728
+To the file field type
+
+6
+00:00:09,984 --> 00:00:10,496
+To upload a
+
+7
+00:00:10,752 --> 00:00:11,264
+A file in JCB
+
+8
+00:00:12,544 --> 00:00:13,824
+If you haven't watched this
+
+9
+00:00:14,336 --> 00:00:14,848
+Then
+
+10
+00:00:15,360 --> 00:00:18,432
+I would suggest if your first come and watch this tutorial
+
+11
+00:00:18,688 --> 00:00:19,968
+Cause a lot of things
+
+12
+00:00:20,480 --> 00:00:21,504
+that I explain in here
+
+13
+00:00:22,016 --> 00:00:23,808
+Which I'm not gonna go into that depth
+
+14
+00:00:24,064 --> 00:00:24,832
+Again
+
+15
+00:00:25,088 --> 00:00:25,600
+Otherwise
+
+16
+00:00:25,856 --> 00:00:26,624
+It's gonna be 2 hours
+
+17
+00:00:27,392 --> 00:00:30,208
+But in this tutorial I'm going to the sort of the
+
+18
+00:00:30,464 --> 00:00:32,256
+Talk about a Drag and Drop
+
+19
+00:00:32,768 --> 00:00:33,280
+Automated
+
+20
+00:00:33,536 --> 00:00:34,048
+Crop
+
+21
+00:00:34,816 --> 00:00:35,840
+Functionality
+
+22
+00:00:36,352 --> 00:00:38,400
+Which could also be used instead of this
+
+23
+00:00:38,656 --> 00:00:39,168
+Implementation
+
+24
+00:00:40,192 --> 00:00:41,728
+So this implementation would be
+
+25
+00:00:43,264 --> 00:00:45,824
+I said much more limited
+
+26
+00:00:47,872 --> 00:00:48,896
+You could do a crop
+
+27
+00:00:49,408 --> 00:00:50,432
+With this one as well
+
+28
+00:00:51,200 --> 00:00:52,224
+But we haven't
+
+29
+00:00:52,480 --> 00:00:56,320
+Actually demonstrated that we going to demonstrate it now
+
+30
+00:00:56,576 --> 00:00:57,344
+In this tutorial
+
+31
+00:00:58,112 --> 00:00:58,624
+And
+
+32
+00:00:58,880 --> 00:01:01,184
+The library I'm going to use before I
+
+33
+00:01:01,440 --> 00:01:02,208
+go on let me just
+
+34
+00:01:03,488 --> 00:01:06,304
+I'll actually add a link to this video
+
+35
+00:01:06,560 --> 00:01:07,328
+Underneath
+
+36
+00:01:08,096 --> 00:01:09,376
+The one that you watching
+
+37
+00:01:11,424 --> 00:01:11,936
+Ok
+
+38
+00:01:12,448 --> 00:01:12,960
+So
+
+39
+00:01:13,216 --> 00:01:15,520
+The other thing you need to know about is UIKit
+
+40
+00:01:15,776 --> 00:01:17,568
+Of course I suppose by now
+
+41
+00:01:18,080 --> 00:01:19,104
+You're very aware of UIkit
+
+42
+00:01:19,616 --> 00:01:22,688
+UIkit has a very nice
+
+43
+00:01:22,944 --> 00:01:25,504
+File uploading front-end
+
+44
+00:01:26,272 --> 00:01:28,320
+Which I have used quite often
+
+45
+00:01:28,832 --> 00:01:29,344
+So
+
+46
+00:01:29,600 --> 00:01:31,392
+I am gonna demonstrate using
+
+47
+00:01:31,648 --> 00:01:32,928
+UI kits upload
+
+48
+00:01:33,440 --> 00:01:33,952
+But
+
+49
+00:01:34,208 --> 00:01:36,256
+If you know anything about
+
+50
+00:01:36,768 --> 00:01:38,816
+JavaScript and that kind of stuff
+
+51
+00:01:39,584 --> 00:01:40,608
+It wouldn't be hard to
+
+52
+00:01:40,864 --> 00:01:41,376
+Plug-in
+
+53
+00:01:41,632 --> 00:01:42,656
+Bootstraps or
+
+54
+00:01:43,168 --> 00:01:44,448
+Any other library which
+
+55
+00:01:44,960 --> 00:01:47,008
+You actually wanna use JCB
+
+56
+00:01:47,264 --> 00:01:48,544
+Can be scaled
+
+57
+00:01:48,800 --> 00:01:52,128
+To be using other libraries it is go to libraries in
+
+58
+00:01:52,640 --> 00:01:54,688
+Set up the new library and then in your
+
+59
+00:01:56,992 --> 00:01:58,784
+Include the files in your admin View
+
+60
+00:01:59,040 --> 00:02:00,832
+And there you go so
+
+61
+00:02:01,600 --> 00:02:02,368
+At this point
+
+62
+00:02:03,904 --> 00:02:06,720
+I'm just gonna use JCB sorry
+
+63
+00:02:06,976 --> 00:02:08,256
+UIkit now
+
+64
+00:02:08,768 --> 00:02:12,352
+I'm gonna use the older version to you UIkit in my
+
+65
+00:02:12,864 --> 00:02:13,632
+Presentation
+
+66
+00:02:14,144 --> 00:02:17,984
+And that's simply because that's the one I've already got going in some of my projects
+
+67
+00:02:19,776 --> 00:02:23,104
+I'm a little lazy or a little reluctant
+
+68
+00:02:23,360 --> 00:02:24,640
+To actually
+
+69
+00:02:24,896 --> 00:02:27,200
+Embrace the later release
+
+70
+00:02:27,456 --> 00:02:31,296
+Because of his lack of compatibility backward compatibility
+
+71
+00:02:33,088 --> 00:02:34,112
+Which is to me like
+
+72
+00:02:35,136 --> 00:02:36,672
+not good
+
+73
+00:02:36,928 --> 00:02:37,952
+Ok anyway let me
+
+74
+00:02:38,208 --> 00:02:39,488
+rant about that
+
+75
+00:02:40,000 --> 00:02:41,792
+So where you wanna go
+
+76
+00:02:43,072 --> 00:02:44,608
+You would like to go to get
+
+77
+00:02:45,120 --> 00:02:45,888
+UIkit
+
+78
+00:02:46,144 --> 00:02:47,168
+Version 2
+
+79
+00:02:47,424 --> 00:02:49,728
+And actually to components
+
+80
+00:02:50,752 --> 00:02:53,056
+This is where you would like to actually go
+
+81
+00:02:53,824 --> 00:02:54,336
+Then
+
+82
+00:02:54,848 --> 00:02:55,616
+You would see
+
+83
+00:02:55,872 --> 00:02:56,384
+Sorry
+
+84
+00:02:57,152 --> 00:02:58,432
+You'll see there is a
+
+85
+00:02:58,688 --> 00:03:00,224
+Upload at the very bottom
+
+86
+00:03:00,480 --> 00:03:02,272
+That actually explains to you
+
+87
+00:03:02,528 --> 00:03:04,832
+How to use this
+
+88
+00:03:06,112 --> 00:03:06,624
+This library
+
+89
+00:03:07,392 --> 00:03:09,696
+This is the JavaScript that will be using
+
+90
+00:03:10,720 --> 00:03:13,024
+So it's got a nice progress bar and everything
+
+91
+00:03:14,304 --> 00:03:14,816
+
+
+92
+00:03:15,328 --> 00:03:15,840
+And
+
+93
+00:03:16,096 --> 00:03:17,376
+This is the HTML
+
+94
+00:03:17,632 --> 00:03:18,400
+that we'll be using
+
+95
+00:03:18,912 --> 00:03:19,936
+And it's got a nice
+
+96
+00:03:20,448 --> 00:03:20,960
+You know
+
+97
+00:03:21,472 --> 00:03:22,752
+Drag and drop area
+
+98
+00:03:23,008 --> 00:03:24,544
+And selecting area
+
+99
+00:03:24,800 --> 00:03:25,312
+So you can
+
+100
+00:03:25,824 --> 00:03:26,336
+give some
+
+101
+00:03:26,592 --> 00:03:28,128
+Information here to the user
+
+102
+00:03:28,640 --> 00:03:31,712
+As well as have them drop the file right there
+
+103
+00:03:32,224 --> 00:03:33,248
+And it works very well
+
+104
+00:03:33,504 --> 00:03:35,296
+I've used it for
+
+105
+00:03:35,552 --> 00:03:36,576
+Number of years now
+
+106
+00:03:37,088 --> 00:03:38,880
+It's got some some
+
+107
+00:03:39,392 --> 00:03:40,416
+Events here
+
+108
+00:03:40,672 --> 00:03:43,488
+And it's very similar to Version 3
+
+109
+00:03:43,744 --> 00:03:48,352
+So if you wanted to see version threes option you'd simply click on version 3
+
+110
+00:03:48,608 --> 00:03:49,888
+documentation
+
+111
+00:03:50,144 --> 00:03:51,680
+And scroll
+
+112
+00:03:53,728 --> 00:03:56,032
+Somewhere to the bottom it says download
+
+113
+00:03:56,288 --> 00:03:57,824
+And here it is
+
+114
+00:03:58,080 --> 00:03:58,848
+Select
+
+115
+00:03:59,104 --> 00:04:00,640
+there is the markup for the select
+
+116
+00:04:01,408 --> 00:04:03,456
+And then the Drag and Drop there is the markup for the
+
+117
+00:04:03,712 --> 00:04:04,992
+Drag and Drop so you'd use
+
+118
+00:04:05,248 --> 00:04:05,760
+This
+
+119
+00:04:06,528 --> 00:04:08,064
+And then this JavaScript
+
+120
+00:04:09,600 --> 00:04:13,440
+So it's look very much the same as the few changes of course
+
+121
+00:04:14,208 --> 00:04:15,232
+Little bit changes in the
+
+122
+00:04:16,256 --> 00:04:17,024
+those but
+
+123
+00:04:17,280 --> 00:04:23,423
+For the more part it's generally the same kind of approach so you would naturally just be able to plug-in this
+
+124
+00:04:23,935 --> 00:04:25,215
+If instead you wanna use UIkit
+
+125
+00:04:25,471 --> 00:04:25,983
+3
+
+126
+00:04:26,239 --> 00:04:27,263
+Or any other library
+
+127
+00:04:28,799 --> 00:04:33,407
+You gonna see me making for example this dynamic
+
+128
+00:04:33,663 --> 00:04:34,943
+And
+
+129
+00:04:35,199 --> 00:04:37,503
+The URL is going to be dynamic
+
+130
+00:04:37,759 --> 00:04:42,879
+And whether it's going to be allowing multiple or only one all those kind of
+
+131
+00:04:45,695 --> 00:04:48,255
+Let me I don't think the previous one and had the multiple option
+
+132
+00:04:48,767 --> 00:04:50,303
+But this one also has allowed
+
+133
+00:04:50,559 --> 00:04:52,095
+You know what what
+
+134
+00:04:52,607 --> 00:04:56,447
+What type of image of file do you want to permit to be uploaded
+
+135
+00:04:58,239 --> 00:05:00,287
+And the action is where the URL is right
+
+136
+00:05:02,335 --> 00:05:06,175
+And yeah so you'll see me actually make some of this dynamic
+
+137
+00:05:06,687 --> 00:05:07,967
+With the script that I'm using
+
+138
+00:05:08,479 --> 00:05:10,783
+And of course here we are talking Ajax
+
+139
+00:05:12,063 --> 00:05:14,111
+Oh so you are able to upload the
+
+140
+00:05:14,367 --> 00:05:15,647
+File without saving
+
+141
+00:05:15,903 --> 00:05:16,415
+The item
+
+142
+00:05:17,439 --> 00:05:19,743
+Whether for this area is available
+
+143
+00:05:20,255 --> 00:05:22,303
+And you simply can use a note
+
+144
+00:05:22,815 --> 00:05:23,839
+To actually
+
+145
+00:05:24,095 --> 00:05:24,607
+Add this
+
+146
+00:05:24,863 --> 00:05:26,655
+Script to your page
+
+147
+00:05:27,167 --> 00:05:30,751
+So that's what I usually do I use a note and just add this
+
+148
+00:05:31,263 --> 00:05:34,335
+Somebody drop something here it's gonna post to the server
+
+149
+00:05:34,591 --> 00:05:37,407
+And so if the item has ID I passed the ID
+
+150
+00:05:37,663 --> 00:05:40,479
+So that it gets stored in the database immediately
+
+151
+00:05:40,735 --> 00:05:43,295
+so even if you save it
+
+152
+00:05:43,551 --> 00:05:47,135
+or don't save the file actually gets added to that item
+
+153
+00:05:47,647 --> 00:05:53,791
+And if it's a new item which means no ID we actually add a hidden field
+
+154
+00:05:54,047 --> 00:05:55,071
+To the form
+
+155
+00:05:55,583 --> 00:05:59,679
+So we return the actual value that must go to the database
+
+156
+00:05:59,935 --> 00:06:02,239
+And we put it in that hidden field
+
+157
+00:06:02,495 --> 00:06:04,799
+So did when you then do save the item
+
+158
+00:06:05,055 --> 00:06:06,079
+It actually does
+
+159
+00:06:06,335 --> 00:06:08,383
+store it in the correct place
+
+160
+00:06:08,895 --> 00:06:09,919
+So that's sort of the approach
+
+161
+00:06:10,431 --> 00:06:12,223
+I'm gonna demonstrate that to you
+
+162
+00:06:12,479 --> 00:06:13,247
+Step-by-step
+
+163
+00:06:13,503 --> 00:06:16,575
+With an existing component which I really
+
+164
+00:06:16,831 --> 00:06:18,367
+I got out there and which
+
+165
+00:06:18,623 --> 00:06:19,135
+is using
+
+166
+00:06:19,391 --> 00:06:20,927
+And it is actually available
+
+167
+00:06:21,183 --> 00:06:26,303
+In JCB so you'll see there this new import JCB packages
+
+168
+00:06:26,559 --> 00:06:28,607
+You could either click on this
+
+169
+00:06:28,863 --> 00:06:32,959
+Or you can go to Joomla components and click on import components
+
+170
+00:06:33,215 --> 00:06:35,007
+Is the same is really the same thing
+
+171
+00:06:35,775 --> 00:06:37,311
+So I'm gonna go back to dashboard
+
+172
+00:06:37,823 --> 00:06:39,871
+And click on import JCB packages
+
+173
+00:06:40,639 --> 00:06:44,479
+There has been a release fix I think it was been in a
+
+174
+00:06:44,991 --> 00:06:49,599
+The previous release if you clicked on import JCB packages it actually didn't
+
+175
+00:06:50,111 --> 00:06:52,927
+Yeah I didn't give you this doesn't give you
+
+176
+00:06:53,183 --> 00:06:54,463
+This
+
+177
+00:06:54,719 --> 00:06:56,255
+Package tab here
+
+178
+00:06:56,767 --> 00:06:58,047
+It gave you only those
+
+179
+00:06:58,303 --> 00:07:01,375
+In fact it's a little broken
+
+180
+00:07:01,631 --> 00:07:03,935
+So best then go to Joomla components
+
+181
+00:07:04,447 --> 00:07:04,959
+And
+
+182
+00:07:05,471 --> 00:07:06,495
+Ensure to click on
+
+183
+00:07:06,751 --> 00:07:08,287
+Import components
+
+184
+00:07:08,543 --> 00:07:10,335
+Then to be sure that it gives you this
+
+185
+00:07:10,591 --> 00:07:12,383
+VDM packages tab
+
+186
+00:07:12,639 --> 00:07:16,991
+This VDM and packages tab is in new extension on the import of components
+
+187
+00:07:17,759 --> 00:07:19,295
+It's actually the only
+
+188
+00:07:19,551 --> 00:07:22,623
+Part of the import of the components that already does
+
+189
+00:07:23,135 --> 00:07:25,695
+Actual validation on the package integrity
+
+190
+00:07:26,207 --> 00:07:31,327
+So for each of these packages that I hear we actually do have a validation
+
+191
+00:07:31,583 --> 00:07:34,655
+so giving your example Hello World is not
+
+192
+00:07:34,911 --> 00:07:35,423
+Already
+
+193
+00:07:35,935 --> 00:07:36,447
+if we come here will
+
+194
+00:07:36,703 --> 00:07:38,239
+See Hello World isn't here
+
+195
+00:07:38,495 --> 00:07:39,263
+So
+
+196
+00:07:39,519 --> 00:07:41,311
+If I was to now
+
+197
+00:07:41,567 --> 00:07:42,847
+Select Hello World
+
+198
+00:07:44,127 --> 00:07:45,407
+Click get package
+
+199
+00:07:45,663 --> 00:07:47,967
+It actually fetches it from GitHub
+
+200
+00:07:48,223 --> 00:07:51,295
+And it has a method of actually
+
+201
+00:07:52,319 --> 00:07:53,855
+Getting a hash a checksum
+
+202
+00:07:54,111 --> 00:07:55,135
+Of the package
+
+203
+00:07:55,647 --> 00:07:57,183
+Now you can make sure that
+
+204
+00:07:57,439 --> 00:08:00,511
+It tells you here that the validation so now this point the package
+
+205
+00:08:00,767 --> 00:08:01,535
+is on your server
+
+206
+00:08:02,303 --> 00:08:06,399
+Now you can click cancel and that will delete the package from your server
+
+207
+00:08:06,911 --> 00:08:08,447
+But
+
+208
+00:08:08,703 --> 00:08:12,287
+This here tells you that the validation is pass so what is
+
+209
+00:08:12,543 --> 00:08:16,127
+The actual package that we are distributing is the one you've now got
+
+210
+00:08:16,383 --> 00:08:18,175
+And you can verify that
+
+211
+00:08:18,431 --> 00:08:21,247
+By click on this link so if you click on this link
+
+212
+00:08:21,503 --> 00:08:24,319
+It should open a simple
+
+213
+00:08:24,575 --> 00:08:26,367
+A text string it's taking a moment my network here
+
+214
+00:08:29,183 --> 00:08:30,719
+Ok and this text string
+
+215
+00:08:30,975 --> 00:08:32,255
+Should be the same
+
+216
+00:08:32,511 --> 00:08:33,023
+As the one
+
+217
+00:08:33,279 --> 00:08:33,791
+You see here
+
+218
+00:08:34,815 --> 00:08:38,655
+That is sort of just a heads up and its an area which we now
+
+219
+00:08:39,167 --> 00:08:40,191
+We started adding some
+
+220
+00:08:40,703 --> 00:08:41,983
+that checks on validation
+
+221
+00:08:42,239 --> 00:08:46,335
+And yeah it's not military grade but it's
+
+222
+00:08:47,103 --> 00:08:47,615
+Fair enough
+
+223
+00:08:47,871 --> 00:08:51,711
+I think I anyone trying to NOW stand in the middle of this
+
+224
+00:08:51,967 --> 00:08:53,247
+He's gonna have
+
+225
+00:08:53,503 --> 00:08:55,551
+Quite crazy gymnastics too
+
+226
+00:08:58,623 --> 00:08:59,647
+To take care of
+
+227
+00:09:01,695 --> 00:09:03,487
+Ok so at this point we
+
+228
+00:09:03,743 --> 00:09:06,047
+The package which is being imported is
+
+229
+00:09:06,559 --> 00:09:08,607
+Displayed here and you just click
+
+230
+00:09:08,863 --> 00:09:11,679
+Quiet means that
+
+231
+00:09:11,935 --> 00:09:16,031
+You don't see all of the things it's doing I would suggest you
+
+232
+00:09:16,287 --> 00:09:18,335
+Say no you wanna see everything
+
+233
+00:09:19,103 --> 00:09:20,383
+Force update
+
+234
+00:09:20,639 --> 00:09:26,783
+Means that if it finds a similar field type or a similar field or a similar admin
+
+235
+00:09:27,039 --> 00:09:28,575
+View anything that is similar
+
+236
+00:09:29,087 --> 00:09:31,647
+And the creation date
+
+237
+00:09:32,159 --> 00:09:32,671
+Is
+
+238
+00:09:33,439 --> 00:09:35,487
+Younger in your system
+
+239
+00:09:35,743 --> 00:09:36,767
+It actually
+
+240
+00:09:37,023 --> 00:09:38,303
+Overwrites it
+
+241
+00:09:38,815 --> 00:09:40,607
+Because you're forced it if it
+
+242
+00:09:40,863 --> 00:09:44,703
+If it finds it and the actual current date in your system
+
+243
+00:09:44,959 --> 00:09:45,983
+Is older
+
+244
+00:09:46,495 --> 00:09:51,103
+So that the one you importing is younger it automatically update it
+
+245
+00:09:51,359 --> 00:09:52,127
+With the latest
+
+246
+00:09:52,383 --> 00:09:53,151
+Newest version
+
+247
+00:09:53,919 --> 00:09:55,199
+This is how it works
+
+248
+00:09:55,711 --> 00:09:57,759
+And that's why we telling you to make backups
+
+249
+00:09:58,015 --> 00:10:02,879
+Because well the other advantages if you get to field type that was overwritten
+
+250
+00:10:03,135 --> 00:10:05,183
+And it's not really what you expected
+
+251
+00:10:05,695 --> 00:10:07,999
+You actually got history you can go back one step
+
+252
+00:10:08,255 --> 00:10:09,279
+Usually you would
+
+253
+00:10:10,559 --> 00:10:11,071
+Ok
+
+254
+00:10:11,327 --> 00:10:14,143
+So I'm gonna say yes force that and then continue
+
+255
+00:10:14,655 --> 00:10:16,447
+And that simply adds
+
+256
+00:10:16,959 --> 00:10:17,727
+a whole list of
+
+257
+00:10:17,983 --> 00:10:18,751
+What it's done
+
+258
+00:10:19,007 --> 00:10:20,031
+What is imported
+
+259
+00:10:20,287 --> 00:10:22,847
+And it also moved an image shows you that
+
+260
+00:10:23,359 --> 00:10:24,383
+Tells you done
+
+261
+00:10:24,639 --> 00:10:26,431
+Ok so there we go Hello World is
+
+262
+00:10:26,687 --> 00:10:27,967
+Is now in the system
+
+263
+00:10:28,223 --> 00:10:28,735
+Now
+
+264
+00:10:29,247 --> 00:10:32,319
+We are going to look at something completely different
+
+265
+00:10:33,599 --> 00:10:35,135
+And it is actually
+
+266
+00:10:35,647 --> 00:10:36,159
+The
+
+267
+00:10:37,439 --> 00:10:39,743
+Document manager is it paid
+
+268
+00:10:40,255 --> 00:10:41,279
+Is a paid package
+
+269
+00:10:41,535 --> 00:10:42,303
+which
+
+270
+00:10:42,815 --> 00:10:44,095
+We distribute
+
+271
+00:10:44,351 --> 00:10:46,655
+You can obviously buy this package
+
+272
+00:10:47,935 --> 00:10:48,447
+From us
+
+273
+00:10:49,215 --> 00:10:54,335
+It actually does have all this functionality that I'm going to demonstrate now
+
+274
+00:10:54,847 --> 00:10:59,455
+In it and so I'm just gonna use that can I add a key here and click
+
+275
+00:10:59,711 --> 00:11:00,479
+Continue
+
+276
+00:11:02,015 --> 00:11:05,087
+And then basically install this component
+
+277
+00:11:05,343 --> 00:11:06,111
+In JCB
+
+278
+00:11:06,367 --> 00:11:09,695
+And then from there we will start demonstrating it's functionality
+
+279
+00:11:11,743 --> 00:11:16,095
+Ok so we got document manager now installed here
+
+280
+00:11:16,863 --> 00:11:19,423
+Let me quickly show you how
+
+281
+00:11:19,935 --> 00:11:20,959
+it looks in action
+
+282
+00:11:21,983 --> 00:11:25,823
+So I'm gonna install it to this component Joomla website
+
+283
+00:11:26,591 --> 00:11:27,615
+And demonstrate it
+
+284
+00:11:29,407 --> 00:11:31,455
+Ok
+
+285
+00:11:31,711 --> 00:11:32,223
+Now
+
+286
+00:11:32,735 --> 00:11:34,527
+We have a here component manager
+
+287
+00:11:35,039 --> 00:11:36,063
+Sorry document manager
+
+288
+00:11:36,575 --> 00:11:40,415
+and we can create a document quite easily
+
+289
+00:11:40,671 --> 00:11:46,815
+By clicking a new document and you'll see that there is some allowed image formats are not set in the global settings please
+
+290
+00:11:47,071 --> 00:11:47,839
+Notify your system
+
+291
+00:11:48,351 --> 00:11:48,863
+administrator
+
+292
+00:11:49,375 --> 00:11:51,679
+So you can't at this point upload
+
+293
+00:11:51,935 --> 00:11:52,959
+Actually anything
+
+294
+00:11:53,215 --> 00:11:56,287
+Neither image neither documents neither any media
+
+295
+00:11:56,799 --> 00:12:02,943
+So we'll go out of this and in the options of the component there is actually
+
+296
+00:12:03,199 --> 00:12:04,223
+A media tab
+
+297
+00:12:04,735 --> 00:12:07,295
+That says what type of documents you wanna allow
+
+298
+00:12:07,807 --> 00:12:08,319
+So
+
+299
+00:12:08,575 --> 00:12:13,695
+For our purpose I'm just gonna say PDF for now with the media I'm just
+
+300
+00:12:13,951 --> 00:12:14,975
+MP3
+
+301
+00:12:15,231 --> 00:12:17,791
+and with the images just jpeg
+
+302
+00:12:18,303 --> 00:12:19,583
+Now with
+
+303
+00:12:19,839 --> 00:12:21,375
+The images
+
+304
+00:12:21,887 --> 00:12:22,911
+I know in my
+
+305
+00:12:23,167 --> 00:12:27,775
+This component I'm only having one image and I wanted to be a specific dimension
+
+306
+00:12:28,287 --> 00:12:28,799
+So
+
+307
+00:12:29,055 --> 00:12:31,103
+I'm gonna say I want the width
+
+308
+00:12:31,359 --> 00:12:32,639
+To be 200
+
+309
+00:12:32,895 --> 00:12:34,175
+And the heights
+
+310
+00:12:34,431 --> 00:12:37,247
+To be 300 so make it 350
+
+311
+00:12:37,759 --> 00:12:38,783
+So it's almost like a book
+
+312
+00:12:39,295 --> 00:12:40,319
+A four kind of
+
+313
+00:12:40,575 --> 00:12:41,855
+Dimensions
+
+314
+00:12:42,111 --> 00:12:43,647
+I'm so that's gonna
+
+315
+00:12:43,903 --> 00:12:44,671
+Be used
+
+316
+00:12:45,183 --> 00:12:49,023
+to crop my Image I'm using a library which l'll
+
+317
+00:12:49,279 --> 00:12:52,095
+Show you in a moment which gets these values
+
+318
+00:12:52,351 --> 00:12:54,143
+To decide upon how to
+
+319
+00:12:54,399 --> 00:12:55,423
+Actually go ahead
+
+320
+00:12:55,679 --> 00:12:56,191
+and crop the image
+
+321
+00:12:56,959 --> 00:12:57,471
+It's an image
+
+322
+00:12:57,727 --> 00:13:01,567
+Obviously if it's any of these it doesn't do anything only if it's an image
+
+323
+00:13:01,823 --> 00:13:03,871
+Does it actually use the crop mechanism
+
+324
+00:13:04,639 --> 00:13:09,759
+And it doesn't via on Ajax ok so we've done that save and close
+
+325
+00:13:10,271 --> 00:13:10,783
+If we now
+
+326
+00:13:11,039 --> 00:13:12,575
+Again click on new documents
+
+327
+00:13:13,855 --> 00:13:16,415
+We see this Drag and Drop area
+
+328
+00:13:16,671 --> 00:13:17,183
+Like
+
+329
+00:13:17,439 --> 00:13:19,743
+We are looked here I GitHub
+
+330
+00:13:19,999 --> 00:13:20,511
+Sorry on
+
+331
+00:13:20,767 --> 00:13:22,047
+UI kit
+
+332
+00:13:22,303 --> 00:13:27,423
+We see this thing in action really so we see it says that your
+
+333
+00:13:27,679 --> 00:13:29,983
+Upload your image and it tells you
+
+334
+00:13:31,263 --> 00:13:31,775
+That
+
+335
+00:13:32,031 --> 00:13:34,335
+This is the what the dimensions should be
+
+336
+00:13:35,103 --> 00:13:37,919
+And if not the doc will be cropped to this size
+
+337
+00:13:38,175 --> 00:13:44,319
+So that means if it's not this Dimension it will be cropped that either large or
+
+338
+00:13:44,575 --> 00:13:45,087
+you know downsize
+
+339
+00:13:45,855 --> 00:13:50,207
+By dropping the file here or selecting a file from your computer
+
+340
+00:13:50,463 --> 00:13:51,743
+And formats allowed
+
+341
+00:13:51,999 --> 00:13:52,511
+JPEG
+
+342
+00:13:53,023 --> 00:13:55,071
+So it tells you what formats are allowed
+
+343
+00:13:55,327 --> 00:13:56,095
+This is all
+
+344
+00:13:56,351 --> 00:13:56,863
+Done
+
+345
+00:13:57,375 --> 00:13:59,423
+Basically to dynamically through this
+
+346
+00:13:59,679 --> 00:14:00,959
+Script that I'll show you the moment
+
+347
+00:14:01,215 --> 00:14:07,359
+Then the same goes here with the document it tells your PDF is allowed and with the media tells you MP3
+
+348
+00:14:07,615 --> 00:14:10,943
+Now the image I'm only allowing one image
+
+349
+00:14:11,455 --> 00:14:14,015
+Where as with the documents I'm allowing multiple
+
+350
+00:14:14,271 --> 00:14:17,087
+documents and multiple media for one document
+
+351
+00:14:17,599 --> 00:14:20,927
+How this displays in works on the front end
+
+352
+00:14:21,183 --> 00:14:22,463
+Works lovely no problems
+
+353
+00:14:22,975 --> 00:14:26,047
+I'm going to demonstrate that that's not what this is all about I'm just
+
+354
+00:14:26,303 --> 00:14:27,071
+Just gonna demonstrate
+
+355
+00:14:27,327 --> 00:14:30,143
+this functionality of uploading a file
+
+356
+00:14:30,655 --> 00:14:33,727
+And you need to you know if you use this in your own
+
+357
+00:14:33,983 --> 00:14:39,359
+Component you will need to extend that and use it and make it more functional as a
+
+358
+00:14:40,639 --> 00:14:41,151
+As it should
+
+359
+00:14:41,407 --> 00:14:41,919
+Should be in your
+
+360
+00:14:42,431 --> 00:14:42,943
+Component
+
+361
+00:14:43,199 --> 00:14:43,711
+Ok
+
+362
+00:14:43,967 --> 00:14:46,527
+So now let's go and look at the code
+
+363
+00:14:48,063 --> 00:14:52,415
+There which we need to focus on first is basically the document
+
+364
+00:14:52,671 --> 00:14:53,439
+Area of course
+
+365
+00:14:54,975 --> 00:14:55,743
+We'll have to
+
+366
+00:14:55,999 --> 00:14:58,815
+Look at some of its fields that is attached here
+
+367
+00:14:59,071 --> 00:15:00,607
+Some of its JavaScript
+
+368
+00:15:00,863 --> 00:15:01,375
+And
+
+369
+00:15:01,887 --> 00:15:04,703
+The Ajax area which is really where everything
+
+370
+00:15:04,959 --> 00:15:05,471
+Things happening
+
+371
+00:15:06,495 --> 00:15:08,287
+As you'll see I'm using custom
+
+372
+00:15:08,543 --> 00:15:09,311
+code placeholders
+
+373
+00:15:09,823 --> 00:15:10,591
+Most everywhere
+
+374
+00:15:11,359 --> 00:15:13,407
+Because I'm re using a lot of the scripts
+
+375
+00:15:13,663 --> 00:15:15,199
+Everywhere under components
+
+376
+00:15:15,967 --> 00:15:16,479
+And
+
+377
+00:15:16,735 --> 00:15:18,015
+I've therefore
+
+378
+00:15:18,527 --> 00:15:21,599
+Adapted it so that it could be used multiple places
+
+379
+00:15:22,879 --> 00:15:26,463
+So you'll see you're also of God upload file remove file
+
+380
+00:15:26,975 --> 00:15:27,743
+Functions
+
+381
+00:15:28,511 --> 00:15:29,535
+And it's got target and
+
+382
+00:15:29,791 --> 00:15:32,351
+Type and field filename target Flush
+
+383
+00:15:32,607 --> 00:15:33,119
+Type
+
+384
+00:15:33,887 --> 00:15:34,655
+it got values
+
+385
+00:15:35,167 --> 00:15:40,287
+All these values play a role within the behaviour that we will eventually have
+
+386
+00:15:40,543 --> 00:15:42,335
+Or did we demonstrated
+
+387
+00:15:42,847 --> 00:15:44,127
+On a pay well I didn't
+
+388
+00:15:44,383 --> 00:15:45,151
+demonstrate it I just
+
+389
+00:15:45,407 --> 00:15:48,479
+Showed you how it is I will actually demonstrate it still
+
+390
+00:15:49,759 --> 00:15:54,367
+You also see here I've got this set a vastdevmod
+
+391
+00:15:54,879 --> 00:15:56,159
+Which is basically
+
+392
+00:15:56,671 --> 00:15:57,951
+A function
+
+393
+00:15:58,463 --> 00:15:59,743
+That generates
+
+394
+00:16:00,767 --> 00:16:02,303
+For us some variables
+
+395
+00:16:02,559 --> 00:16:04,351
+Which this case is called
+
+396
+00:16:05,119 --> 00:16:05,631
+VDM
+
+397
+00:16:07,679 --> 00:16:09,471
+Which gets placed in a
+
+398
+00:16:10,239 --> 00:16:11,007
+variable
+
+399
+00:16:11,263 --> 00:16:13,055
+Called vastDevMod
+
+400
+00:16:14,335 --> 00:16:16,127
+This formation
+
+401
+00:16:16,639 --> 00:16:19,455
+Is what is used to identify the view
+
+402
+00:16:20,223 --> 00:16:21,759
+From which the query is made
+
+403
+00:16:23,039 --> 00:16:28,415
+This is a long string which really is related to the cash
+
+404
+00:16:28,671 --> 00:16:29,439
+At that stage
+
+405
+00:16:29,695 --> 00:16:31,999
+Of The View ID and name
+
+406
+00:16:33,791 --> 00:16:36,351
+This is how I passed the view name and ID
+
+407
+00:16:36,863 --> 00:16:39,167
+So I do not really pass it via
+
+408
+00:16:39,423 --> 00:16:39,935
+The
+
+409
+00:16:40,191 --> 00:16:41,215
+Ajax query
+
+410
+00:16:41,471 --> 00:16:42,751
+I actually have it in
+
+411
+00:16:43,007 --> 00:16:43,775
+Session memory
+
+412
+00:16:44,287 --> 00:16:46,847
+And only if these keys validate does it
+
+413
+00:16:47,359 --> 00:16:48,383
+Actually work
+
+414
+00:16:49,151 --> 00:16:50,943
+..... sort of another layer
+
+415
+00:16:51,455 --> 00:16:54,015
+And another layer this many layers in this to
+
+416
+00:16:54,271 --> 00:16:55,551
+To try and make this secure
+
+417
+00:16:57,599 --> 00:17:01,695
+Then this adminKittwo is where I am actually loading
+
+418
+00:17:02,207 --> 00:17:02,975
+All the
+
+419
+00:17:03,487 --> 00:17:04,255
+Uikit
+
+420
+00:17:05,023 --> 00:17:05,535
+Files
+
+421
+00:17:06,559 --> 00:17:09,119
+So I am manually adding it to the
+
+422
+00:17:09,375 --> 00:17:11,679
+View the admin backend
+
+423
+00:17:11,935 --> 00:17:15,519
+Doesn't actually work as the site views where
+
+424
+00:17:16,031 --> 00:17:17,311
+We could select
+
+425
+00:17:17,567 --> 00:17:18,079
+A
+
+426
+00:17:19,615 --> 00:17:20,895
+Library and it dynamically
+
+427
+00:17:21,151 --> 00:17:27,295
+answer to the view on compilation you have to manually add it to the view and you'll do it basically
+
+428
+00:17:27,551 --> 00:17:28,063
+in the custom
+
+429
+00:17:29,087 --> 00:17:30,623
+Script of the document
+
+430
+00:17:31,647 --> 00:17:32,415
+Now
+
+431
+00:17:32,671 --> 00:17:35,743
+I can show you some of these Snippets
+
+432
+00:17:37,279 --> 00:17:38,303
+And then
+
+433
+00:17:38,559 --> 00:17:40,095
+Then we can take it further
+
+434
+00:17:40,351 --> 00:17:43,423
+There's obviously in the custom buttons area
+
+435
+00:17:43,679 --> 00:17:48,031
+This is the get VDM which I have
+
+436
+00:17:48,287 --> 00:17:48,799
+Explained
+
+437
+00:17:49,055 --> 00:17:51,103
+Again we have some custom script here
+
+438
+00:17:53,151 --> 00:17:55,455
+And that's basically all that we have there
+
+439
+00:17:56,223 --> 00:18:00,319
+And then in the JavaScript area we again have set file
+
+440
+00:18:01,343 --> 00:18:03,903
+which is part of the script that will have to look at
+
+441
+00:18:05,695 --> 00:18:07,999
+And you see I'm using set file here
+
+442
+00:18:08,511 --> 00:18:09,023
+Here and
+
+443
+00:18:09,279 --> 00:18:11,583
+I'm here because we have an image We have
+
+444
+00:18:13,375 --> 00:18:13,887
+Documents
+
+445
+00:18:14,143 --> 00:18:15,423
+And we have media
+
+446
+00:18:15,679 --> 00:18:16,703
+And they all
+
+447
+00:18:16,959 --> 00:18:18,239
+Using the set file
+
+448
+00:18:18,495 --> 00:18:19,263
+Method
+
+449
+00:18:19,519 --> 00:18:20,543
+Which is the JavaScript
+
+450
+00:18:21,055 --> 00:18:21,823
+Function
+
+451
+00:18:22,079 --> 00:18:24,383
+Which is declared in this custom
+
+452
+00:18:24,639 --> 00:18:26,687
+Script and here at the bottom of the footer
+
+453
+00:18:27,199 --> 00:18:27,711
+We got
+
+454
+00:18:27,967 --> 00:18:31,295
+What is known as get file
+
+455
+00:18:31,551 --> 00:18:37,695
+Snippet which again deals with actual some of the automated integration
+
+456
+00:18:37,951 --> 00:18:38,719
+Of the file when
+
+457
+00:18:38,975 --> 00:18:39,999
+Drag and drop
+
+458
+00:18:40,255 --> 00:18:41,535
+And that it actually immediately
+
+459
+00:18:42,047 --> 00:18:42,559
+displays
+
+460
+00:18:42,815 --> 00:18:45,631
+On the page this this takes care of that
+
+461
+00:18:45,887 --> 00:18:47,167
+Ok so
+
+462
+00:18:47,679 --> 00:18:50,239
+We'll go and look at those individual
+
+463
+00:18:50,495 --> 00:18:51,263
+Concepts
+
+464
+00:18:51,775 --> 00:18:55,359
+We also going to see like I said previously
+
+465
+00:18:55,615 --> 00:18:56,127
+Some notes
+
+466
+00:18:56,639 --> 00:18:57,407
+So here is the
+
+467
+00:18:57,919 --> 00:19:01,247
+Main media apploader note
+
+468
+00:19:01,759 --> 00:19:07,135
+There is the main document apploader the note and there is the document image apploader
+
+469
+00:19:07,391 --> 00:19:08,159
+note
+
+470
+00:19:08,415 --> 00:19:11,743
+And so this is where I've added the HTML
+
+471
+00:19:12,255 --> 00:19:15,583
+For the drag and drop that you see in the
+
+472
+00:19:15,839 --> 00:19:16,351
+Admin View
+
+473
+00:19:17,119 --> 00:19:20,703
+Then we have for each of those correspondingly a hidden
+
+474
+00:19:20,959 --> 00:19:22,751
+value
+
+475
+00:19:23,519 --> 00:19:25,311
+For the document image key
+
+476
+00:19:26,079 --> 00:19:26,847
+Main document
+
+477
+00:19:27,359 --> 00:19:27,871
+Documents
+
+478
+00:19:28,127 --> 00:19:29,151
+key and a
+
+479
+00:19:29,407 --> 00:19:30,687
+Main media key
+
+480
+00:19:30,943 --> 00:19:32,223
+All of these are hidden
+
+481
+00:19:32,735 --> 00:19:33,503
+Fields
+
+482
+00:19:34,015 --> 00:19:34,527
+Which
+
+483
+00:19:35,039 --> 00:19:37,087
+Basically is where we store
+
+484
+00:19:37,343 --> 00:19:38,367
+These values
+
+485
+00:19:39,391 --> 00:19:40,159
+and
+
+486
+00:19:40,415 --> 00:19:41,439
+That's what
+
+487
+00:19:41,695 --> 00:19:43,999
+We'll look at as well
+
+488
+00:19:44,255 --> 00:19:44,767
+Ok
+
+489
+00:19:45,023 --> 00:19:45,535
+So
+
+490
+00:19:45,791 --> 00:19:49,887
+Let's go and see the code that is used
+
+491
+00:19:51,679 --> 00:19:52,447
+maybe let's start in the interface
+
+492
+00:19:52,959 --> 00:19:53,727
+Right
+
+493
+00:19:53,983 --> 00:19:56,543
+So let's first look at one of these
+
+494
+00:19:56,799 --> 00:19:57,823
+Uploading
+
+495
+00:19:58,335 --> 00:19:58,847
+Concepts
+
+496
+00:19:59,103 --> 00:20:03,711
+But since I know what's happening there I am already aware that
+
+497
+00:20:03,967 --> 00:20:05,759
+The actual code is not there
+
+498
+00:20:06,271 --> 00:20:08,575
+So it's actually also custom
+
+499
+00:20:08,831 --> 00:20:13,439
+Placeholder snippet so before we actually dive in let me
+
+500
+00:20:13,695 --> 00:20:14,463
+Anyway
+
+501
+00:20:14,975 --> 00:20:19,071
+Open the custom code area and go back into criptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptdocuments
+
+502
+00:20:20,095 --> 00:20:22,143
+So that when we see the code
+
+503
+00:20:22,399 --> 00:20:22,911
+Snippet
+
+504
+00:20:23,167 --> 00:20:25,983
+We can actually go and
+
+505
+00:20:27,007 --> 00:20:27,775
+Look at the code snippet
+
+506
+00:20:28,287 --> 00:20:30,847
+Let's use this documents apploader
+
+507
+00:20:31,359 --> 00:20:32,127
+Note
+
+508
+00:20:32,383 --> 00:20:33,407
+And open that
+
+509
+00:20:34,943 --> 00:20:37,503
+So here we have the document apploader note
+
+510
+00:20:38,271 --> 00:20:40,063
+Basically we have a diff
+
+511
+00:20:40,319 --> 00:20:41,599
+All the way down there
+
+512
+00:20:42,367 --> 00:20:43,647
+Which has an ID
+
+513
+00:20:45,183 --> 00:20:46,719
+And then it has the
+
+514
+00:20:46,975 --> 00:20:48,511
+Class for the placeholder
+
+515
+00:20:48,767 --> 00:20:50,047
+Some icons
+
+516
+00:20:52,095 --> 00:20:53,375
+And you'll see
+
+517
+00:20:53,631 --> 00:20:59,775
+Try again have here upload your documents
+
+518
+00:21:00,031 --> 00:21:05,407
+There, here I've got a span tag
+
+519
+00:21:05,663 --> 00:21:11,807
+That says main documents formats so it's basically gone
+
+520
+00:21:12,063 --> 00:21:15,647
+Be the place we load the formats with JavaScript
+
+521
+00:21:15,903 --> 00:21:17,696
+And
+
+522
+00:21:17,952 --> 00:21:21,024
+Then select the file from your computer is
+
+523
+00:21:21,536 --> 00:21:24,608
+So this is all basically
+
+524
+00:21:24,864 --> 00:21:25,888
+It's this snippet
+
+525
+00:21:26,912 --> 00:21:28,960
+Just with a little bit of extra
+
+526
+00:21:29,472 --> 00:21:29,984
+Flavour
+
+527
+00:21:30,240 --> 00:21:32,288
+Yeah that's really all we looking at
+
+528
+00:21:33,568 --> 00:21:37,152
+And then obviously there are some conventions
+
+529
+00:21:37,408 --> 00:21:39,712
+Like main documents apploader
+
+530
+00:21:39,968 --> 00:21:41,760
+That again here
+
+531
+00:21:42,016 --> 00:21:48,160
+Upload drop main documents there are conventions which if we go over the code
+
+532
+00:21:48,416 --> 00:21:54,560
+Eventually you'll see that those conventions is what really makes this
+
+533
+00:21:54,816 --> 00:21:59,680
+reusable then in the scripts area I added a JavaScript to
+
+534
+00:22:00,192 --> 00:22:00,960
+View footer
+
+535
+00:22:01,216 --> 00:22:03,264
+And a JavaScript I'm using
+
+536
+00:22:03,520 --> 00:22:09,664
+Is this Uikit file apploader custom code so let's look at that then First
+
+537
+00:22:09,920 --> 00:22:12,224
+We can just search for it
+
+538
+00:22:14,272 --> 00:22:19,904
+There it is we can open that so this is the code that gets added
+
+539
+00:22:20,160 --> 00:22:23,232
+So it's got a little bit of PHP here
+
+540
+00:22:25,536 --> 00:22:27,584
+And it is saying ok great
+
+541
+00:22:27,840 --> 00:22:29,120
+Argument zero
+
+542
+00:22:30,144 --> 00:22:35,776
+Formats so we are asking we getting the global parameters
+
+543
+00:22:36,032 --> 00:22:37,568
+Of the formats reset
+
+544
+00:22:37,824 --> 00:22:43,968
+Which remember I showed you we said it in the global settings so here we are saying document is the First
+
+545
+00:22:44,224 --> 00:22:45,504
+Parameter passing
+
+546
+00:22:45,760 --> 00:22:50,368
+So we are basically saying document formats here
+
+547
+00:22:50,624 --> 00:22:54,208
+So we getting the document formats and then
+
+548
+00:22:54,720 --> 00:22:59,840
+Here we have arg 2 and arg 1 progress bar
+
+549
+00:23:00,096 --> 00:23:02,144
+So if you think about the ID here
+
+550
+00:23:02,912 --> 00:23:04,448
+It says progress bar
+
+551
+00:23:04,704 --> 00:23:05,472
+The 2nd
+
+552
+00:23:05,728 --> 00:23:07,776
+Which is the third argument
+
+553
+00:23:08,288 --> 00:23:09,568
+Is Main
+
+554
+00:23:09,824 --> 00:23:11,360
+Documents is the
+
+555
+00:23:12,640 --> 00:23:16,224
+Second argument sorry the first argument because we counting from
+
+556
+00:23:16,480 --> 00:23:19,040
+zero, so it's actually saying
+
+557
+00:23:20,320 --> 00:23:21,344
+Main documents
+
+558
+00:23:22,112 --> 00:23:27,488
+So if you look back at our thing here it says main documents
+
+559
+00:23:27,744 --> 00:23:28,256
+Formats
+
+560
+00:23:30,048 --> 00:23:31,584
+So this is all part
+
+561
+00:23:32,096 --> 00:23:32,608
+Of
+
+562
+00:23:33,376 --> 00:23:33,888
+Main
+
+563
+00:23:34,144 --> 00:23:34,656
+Documents
+
+564
+00:23:37,216 --> 00:23:38,752
+It is the way we
+
+565
+00:23:39,008 --> 00:23:43,616
+Identify the progress bar to progress bar ,let's see
+
+566
+00:23:44,640 --> 00:23:47,200
+where is the progress bar
+
+567
+00:23:51,040 --> 00:23:52,064
+Here it is
+
+568
+00:23:52,320 --> 00:23:56,672
+Progress bar main documents so it's an ID
+
+569
+00:23:56,928 --> 00:23:58,464
+There's only one of them on the page
+
+570
+00:23:58,976 --> 00:24:03,328
+So it's targeting it here saying ok that's the progress bar we gonna
+
+571
+00:24:04,352 --> 00:24:05,120
+And
+
+572
+00:24:05,632 --> 00:24:06,400
+Then
+
+573
+00:24:06,656 --> 00:24:10,752
+Is having some settings the settings obviously the action
+
+574
+00:24:11,008 --> 00:24:15,872
+We using J router now this J router is a little
+
+575
+00:24:16,128 --> 00:24:16,896
+JavaScript
+
+576
+00:24:17,408 --> 00:24:20,992
+Trick that I wrote because often times
+
+577
+00:24:21,504 --> 00:24:23,552
+You have this
+
+578
+00:24:23,808 --> 00:24:26,112
+Site view or are the admin View
+
+579
+00:24:26,368 --> 00:24:27,648
+You have it in the back end
+
+580
+00:24:27,904 --> 00:24:29,440
+And you have it in the front end
+
+581
+00:24:29,696 --> 00:24:35,328
+And so this is this just takes care of whether it's a backend or front-end call
+
+582
+00:24:35,840 --> 00:24:38,400
+So that it actually executes correctly
+
+583
+00:24:40,448 --> 00:24:43,264
+Now that is your component name
+
+584
+00:24:43,520 --> 00:24:47,616
+The argument one again would be the second argument
+
+585
+00:24:47,872 --> 00:24:49,664
+Which is in our case
+
+586
+00:24:52,224 --> 00:24:52,736
+Documents
+
+587
+00:24:53,760 --> 00:24:59,904
+So basically there it says documents the type and then this the third argument which is showing as a
+
+588
+00:25:00,160 --> 00:25:01,440
+Second one is Main
+
+589
+00:25:01,952 --> 00:25:04,768
+So it's passing the target is main
+
+590
+00:25:05,280 --> 00:25:10,400
+Raw is true it has the token and there is our key
+
+591
+00:25:10,912 --> 00:25:16,800
+Which is being used to identify the view ok so it's making a query
+
+592
+00:25:17,056 --> 00:25:17,568
+On this
+
+593
+00:25:17,824 --> 00:25:18,848
+This area here
+
+594
+00:25:19,104 --> 00:25:20,640
+And it is set dynamically
+
+595
+00:25:21,664 --> 00:25:22,944
+Then over here
+
+596
+00:25:23,456 --> 00:25:25,760
+We know that the formats must be
+
+597
+00:25:26,272 --> 00:25:29,344
+Added to this area with pipe between it
+
+598
+00:25:29,856 --> 00:25:31,392
+It's like you remember here
+
+599
+00:25:31,648 --> 00:25:33,184
+It adds the formats
+
+600
+00:25:33,440 --> 00:25:34,464
+With a pipe
+
+601
+00:25:34,976 --> 00:25:39,328
+So we're just basically exploding the array we got here from the global parameters
+
+602
+00:25:39,584 --> 00:25:41,376
+For documents
+
+603
+00:25:41,632 --> 00:25:42,656
+And it displays it
+
+604
+00:25:42,912 --> 00:25:43,424
+In here
+
+605
+00:25:44,448 --> 00:25:48,032
+Then again we have other
+
+606
+00:25:48,288 --> 00:25:51,360
+This actual snippet
+
+607
+00:25:51,872 --> 00:25:56,224
+I will add under this name on a
+
+608
+00:25:56,480 --> 00:25:57,248
+GitHub gist
+
+609
+00:25:57,504 --> 00:26:03,136
+So you could actually copy paste it from there and adapted for your purpose
+
+610
+00:26:03,392 --> 00:26:05,184
+Begin here
+
+611
+00:26:05,440 --> 00:26:06,720
+We are also
+
+612
+00:26:06,976 --> 00:26:09,792
+Imploding the formats because he wanted display it
+
+613
+00:26:10,048 --> 00:26:11,840
+I want to show the use of the formats
+
+614
+00:26:12,608 --> 00:26:13,632
+So we have here
+
+615
+00:26:13,888 --> 00:26:15,936
+Second argument or sorry
+
+616
+00:26:16,192 --> 00:26:18,752
+Third argument and
+
+617
+00:26:19,008 --> 00:26:22,336
+The second argument formats which would be
+
+618
+00:26:22,592 --> 00:26:25,664
+Documents and Main so if we look at our diff
+
+619
+00:26:25,920 --> 00:26:28,224
+We see there the formats as
+
+620
+00:26:28,480 --> 00:26:33,088
+Documents and main format so it's targeting this span tag
+
+621
+00:26:33,600 --> 00:26:35,904
+And basically adding it in there
+
+622
+00:26:36,928 --> 00:26:38,720
+Ok so that is
+
+623
+00:26:38,976 --> 00:26:40,256
+Adding the formats
+
+624
+00:26:40,512 --> 00:26:42,560
+HTML to this ID
+
+625
+00:26:43,328 --> 00:26:44,352
+Then if
+
+626
+00:26:44,608 --> 00:26:46,656
+We've detected up here
+
+627
+00:26:46,912 --> 00:26:50,240
+That you didn't have any formats set
+
+628
+00:26:50,496 --> 00:26:53,568
+We basically gonna update the whole
+
+629
+00:26:53,824 --> 00:26:54,336
+diff
+
+630
+00:26:54,848 --> 00:27:00,480
+Which is the upload drop area with allowed formats are not set in a global setting
+
+631
+00:27:00,992 --> 00:27:02,016
+Please notify system
+
+632
+00:27:02,272 --> 00:27:02,784
+administrator
+
+633
+00:27:03,296 --> 00:27:09,440
+So that's the final part of our JavaScript so we have JavaScript next in with
+
+634
+00:27:09,696 --> 00:27:10,208
+HTML
+
+635
+00:27:10,464 --> 00:27:11,488
+Taking care of
+
+636
+00:27:11,744 --> 00:27:12,256
+Some of the
+
+637
+00:27:12,512 --> 00:27:16,096
+displays behaviour on that page
+
+638
+00:27:16,864 --> 00:27:19,424
+Ok so that is the reusable snippet
+
+639
+00:27:19,680 --> 00:27:24,544
+So I'm reusing this same snippet file apploader
+
+640
+00:27:24,800 --> 00:27:28,384
+For various areas
+
+641
+00:27:28,640 --> 00:27:29,152
+So
+
+642
+00:27:29,408 --> 00:27:31,200
+If we were to close out here
+
+643
+00:27:35,296 --> 00:27:39,136
+And I was then to actually open the media
+
+644
+00:27:39,392 --> 00:27:39,904
+Note
+
+645
+00:27:40,672 --> 00:27:46,816
+You'll see that it's really just using the same snippet so if it goes the script it's the same snippet
+
+646
+00:27:47,072 --> 00:27:52,192
+I'm just changing the variables I'm passing here is saying media media Main
+
+647
+00:27:52,448 --> 00:27:56,544
+Where's the other one was saying document documents plural and
+
+648
+00:27:56,800 --> 00:27:57,312
+Main
+
+649
+00:27:57,568 --> 00:27:59,616
+This one is saying media media main
+
+650
+00:28:00,128 --> 00:28:00,896
+And then
+
+651
+00:28:01,152 --> 00:28:03,456
+The same goes with the image
+
+652
+00:28:04,736 --> 00:28:07,296
+The image we also have
+
+653
+00:28:08,832 --> 00:28:10,112
+That kind of behaviour
+
+654
+00:28:10,624 --> 00:28:16,768
+Say Uikit image apploader, this one is not using the file apploader
+
+655
+00:28:17,024 --> 00:28:21,120
+Is using the image apploader which is a little different
+
+656
+00:28:21,376 --> 00:28:23,168
+There is an image
+
+657
+00:28:23,424 --> 00:28:27,776
+apploader and there is images apploader in my custom Snippets
+
+658
+00:28:28,288 --> 00:28:29,056
+I'll show you
+
+659
+00:28:29,312 --> 00:28:30,848
+Why there are difference
+
+660
+00:28:31,104 --> 00:28:32,640
+One allows one image
+
+661
+00:28:33,152 --> 00:28:35,200
+And the other one allows
+
+662
+00:28:35,968 --> 00:28:36,480
+More
+
+663
+00:28:37,504 --> 00:28:40,576
+Wait him I'm over file one
+
+664
+00:28:40,832 --> 00:28:41,856
+Allows one
+
+665
+00:28:42,112 --> 00:28:44,160
+A more than one this one only allows one
+
+666
+00:28:45,184 --> 00:28:48,000
+So it has a little bit of a different flavour and behaviour
+
+667
+00:28:48,256 --> 00:28:51,072
+And yes I will also
+
+668
+00:28:51,328 --> 00:28:53,120
+Show place this out there and Git
+
+669
+00:28:54,144 --> 00:28:55,168
+For you to have a look at
+
+670
+00:28:55,424 --> 00:28:59,008
+Always remember these arguments are
+
+671
+00:28:59,264 --> 00:29:01,568
+Behaving the similar way as an array
+
+672
+00:29:01,824 --> 00:29:07,968
+Which means that the first argument will always be zero the second argument one and so forth
+
+673
+00:29:08,224 --> 00:29:10,784
+So I'm basically using arguments in
+
+674
+00:29:11,040 --> 00:29:16,672
+And this snippet everywhere where I declare it I am actually passing
+
+675
+00:29:16,928 --> 00:29:23,072
+The three arguments that is required use this plus there to pass
+
+676
+00:29:23,328 --> 00:29:25,376
+And the
+
+677
+00:29:25,632 --> 00:29:31,520
+diff obviously looks very similar except that it now would say images
+
+678
+00:29:31,776 --> 00:29:32,800
+And
+
+679
+00:29:34,336 --> 00:29:35,104
+Images
+
+680
+00:29:35,360 --> 00:29:39,456
+you see there it's using different placeholders
+
+681
+00:29:39,712 --> 00:29:41,760
+So you need to update those accordingly
+
+682
+00:29:42,272 --> 00:29:43,040
+As it's needed
+
+683
+00:29:43,808 --> 00:29:45,856
+So that's just to set up the field
+
+684
+00:29:46,112 --> 00:29:50,976
+Set up the field you need to have that JavaScript in place and you need to have that diff
+
+685
+00:29:51,232 --> 00:29:52,256
+Sort of in place
+
+686
+00:29:52,512 --> 00:29:58,656
+Regarding the hidden if I was to take one of the hidden Fields let's say the documents
+
+687
+00:29:58,912 --> 00:30:03,776
+Hidden field you'll see there is some naming conventions here that
+
+688
+00:30:04,288 --> 00:30:04,800
+you need to follow
+
+689
+00:30:05,056 --> 00:30:08,640
+So it says main documents it doesn't do say documents
+
+690
+00:30:10,176 --> 00:30:14,528
+And you'll see when we actually add the value back to the page
+
+691
+00:30:14,784 --> 00:30:20,928
+Were able to target it based on these naming conventions so yeah that's
+
+692
+00:30:21,184 --> 00:30:24,768
+Quite important and then for some security
+
+693
+00:30:25,280 --> 00:30:25,792
+Which
+
+694
+00:30:26,304 --> 00:30:28,352
+It's really just a little extra layer
+
+695
+00:30:28,608 --> 00:30:31,680
+I like the guy one guy said, that it's not that we can
+
+696
+00:30:31,936 --> 00:30:34,496
+Really stop them, we can just make it very hard
+
+697
+00:30:34,752 --> 00:30:40,896
+So there are different encryption options this medium encryption local file key
+
+698
+00:30:41,920 --> 00:30:47,040
+Is actually better than the basic the basic stores the the key in the database
+
+699
+00:30:47,296 --> 00:30:53,440
+Which in that case means that if somebody sweeped your database , they actually do have the key
+
+700
+00:30:54,208 --> 00:31:00,352
+But it could happen that they were able to get hold of your database but not actually all of your files
+
+701
+00:31:00,864 --> 00:31:07,008
+Specially those that are behind the public repository so the medium incription option can actually generate
+
+702
+00:31:07,264 --> 00:31:13,408
+File behind the public folder which therefore is not publicly accessible
+
+703
+00:31:13,664 --> 00:31:14,432
+And
+
+704
+00:31:14,688 --> 00:31:18,528
+That makes it just that little bit more difficult to actually get a key to open
+
+705
+00:31:18,784 --> 00:31:19,296
+The value
+
+706
+00:31:19,808 --> 00:31:23,136
+And the reason is let's say your documents are
+
+707
+00:31:23,392 --> 00:31:29,536
+You know not available to every group on your system maybe to some groups can access that document then
+
+708
+00:31:29,792 --> 00:31:34,656
+This is another layer of security that's already by default built into the field behaviour
+
+709
+00:31:34,912 --> 00:31:36,704
+Ok
+
+710
+00:31:37,216 --> 00:31:38,240
+So that is
+
+711
+00:31:38,496 --> 00:31:44,640
+Really just looking at the fields now the admin view documents have some
+
+712
+00:31:44,896 --> 00:31:46,944
+Custom script in it as well
+
+713
+00:31:47,200 --> 00:31:52,064
+So we got to here the set file which really is the JavaScript that
+
+714
+00:31:52,320 --> 00:31:53,856
+fires
+
+715
+00:31:54,112 --> 00:31:56,160
+when it
+
+716
+00:31:56,416 --> 00:32:02,560
+Gets the request back from the Ajax call
+
+717
+00:32:02,816 --> 00:32:07,424
+You'll see, let me show you if we go back
+
+718
+00:32:07,680 --> 00:32:09,472
+Here
+
+719
+00:32:11,264 --> 00:32:14,336
+on
+
+720
+00:32:14,848 --> 00:32:17,408
+all complete there is a function
+
+721
+00:32:17,664 --> 00:32:18,432
+And then
+
+722
+00:32:18,688 --> 00:32:24,832
+At some point when everything is satisfied it has here a set file key
+
+723
+00:32:28,416 --> 00:32:30,720
+And it passes a bunch of variables to it
+
+724
+00:32:31,488 --> 00:32:34,048
+this is really the function
+
+725
+00:32:34,304 --> 00:32:35,840
+That we're gonna have to look at
+
+726
+00:32:36,352 --> 00:32:37,632
+So
+
+727
+00:32:37,888 --> 00:32:41,472
+Let's say let's use that setFileJS
+
+728
+00:32:42,240 --> 00:32:44,032
+And insert it here
+
+729
+00:32:45,312 --> 00:32:47,872
+So here we go
+
+730
+00:32:49,664 --> 00:32:53,504
+So we'll see here there is a set file key function
+
+731
+00:32:53,760 --> 00:32:54,528
+In the
+
+732
+00:32:54,784 --> 00:32:55,296
+Document
+
+733
+00:32:55,808 --> 00:32:56,320
+And
+
+734
+00:32:56,832 --> 00:33:00,928
+so in your Ajax which you're using
+
+735
+00:33:01,184 --> 00:33:03,232
+Uikits
+
+736
+00:33:03,488 --> 00:33:04,000
+function here
+
+737
+00:33:04,256 --> 00:33:08,352
+It has an auto complete So even if you look here
+
+738
+00:33:08,608 --> 00:33:14,752
+at allcomplete which is a place where there when you know the server has told you
+
+739
+00:33:15,008 --> 00:33:21,152
+It's done everything is good then you can do some house cleaning in the browser
+
+740
+00:33:21,408 --> 00:33:22,944
+And that's really what we doing
+
+741
+00:33:23,200 --> 00:33:25,504
+We're checking if it's done
+
+742
+00:33:27,040 --> 00:33:33,184
+We take away the progress bar and if it has an error we actually
+
+743
+00:33:34,208 --> 00:33:40,352
+Pop out the errors and alert if it's successful because we decide what this response going
+
+744
+00:33:40,608 --> 00:33:41,120
+to be
+
+745
+00:33:41,376 --> 00:33:43,680
+So we decided to give a successful
+
+746
+00:33:43,936 --> 00:33:50,080
+Value in the array then we fire the set file key
+
+747
+00:33:50,848 --> 00:33:52,896
+Which is actually
+
+748
+00:33:53,152 --> 00:33:55,200
+looking at our
+
+749
+00:33:55,968 --> 00:33:56,480
+Admin View
+
+750
+00:33:56,992 --> 00:34:02,112
+Where adding this custom code in here and it is actually adding all this code that
+
+751
+00:34:02,624 --> 00:34:03,136
+you see here
+
+752
+00:34:03,392 --> 00:34:04,416
+Is being added
+
+753
+00:34:04,672 --> 00:34:05,696
+it's quite a lot of code
+
+754
+00:34:07,232 --> 00:34:08,768
+But it's all being added
+
+755
+00:34:09,024 --> 00:34:12,864
+To the admin view and it can be used for different admin views
+
+756
+00:34:13,120 --> 00:34:19,264
+If it's obviously dealing with either images documents or media so I'm gonna try
+
+757
+00:34:19,520 --> 00:34:22,848
+and explain all this,it looks almost as if I'm going to end up teaching you some JavaScript
+
+758
+00:34:23,104 --> 00:34:29,248
+altough I'm being accused of writing Javascript like PHP yeah sorry
+
+759
+00:34:31,040 --> 00:34:33,344
+the point is
+
+760
+00:34:33,600 --> 00:34:39,744
+The JavaScript here actually does some checking and validating and I'll put this
+
+761
+00:34:40,000 --> 00:34:42,560
+I'll just put it out there and
+
+762
+00:34:43,072 --> 00:34:48,192
+Really when it discovers that everything is fine the file actually was added
+
+763
+00:34:48,448 --> 00:34:50,752
+Then it
+
+764
+00:34:51,264 --> 00:34:52,544
+You know goes ahead
+
+765
+00:34:52,800 --> 00:34:58,944
+here it's checking the length of the filename see if the filename length is not
+
+766
+00:34:59,200 --> 00:35:00,480
+Not greater than 20
+
+767
+00:35:01,760 --> 00:35:03,808
+.
+
+768
+00:35:04,064 --> 00:35:06,624
+and if it's not an image or a document
+
+769
+00:35:06,880 --> 00:35:09,184
+Then it must be removed
+
+770
+00:35:09,696 --> 00:35:13,536
+So the return values are here quite key
+
+771
+00:35:14,048 --> 00:35:15,328
+To make sure that
+
+772
+00:35:15,584 --> 00:35:16,352
+We have this
+
+773
+00:35:16,608 --> 00:35:18,400
+remove file from server
+
+774
+00:35:18,912 --> 00:35:19,936
+Function in place
+
+775
+00:35:20,448 --> 00:35:21,728
+where I showed you in the admin
+
+776
+00:35:21,984 --> 00:35:24,800
+View that we've got these
+
+777
+00:35:25,056 --> 00:35:26,592
+Remove file tasks
+
+778
+00:35:26,848 --> 00:35:31,712
+And the methods well this basically is going to be as I
+
+779
+00:35:31,968 --> 00:35:32,736
+Scroll down a bit
+
+780
+00:35:32,992 --> 00:35:33,504
+Here
+
+781
+00:35:35,040 --> 00:35:35,808
+Here it is
+
+782
+00:35:36,064 --> 00:35:36,832
+It's basically
+
+783
+00:35:37,088 --> 00:35:37,856
+querying that, you see
+
+784
+00:35:38,368 --> 00:35:38,880
+Remove that
+
+785
+00:35:39,904 --> 00:35:42,464
+And it's passing all the necessary variables
+
+786
+00:35:42,720 --> 00:35:44,512
+To remove the correct file
+
+787
+00:35:46,304 --> 00:35:48,608
+Yeah it's also checking
+
+788
+00:35:48,864 --> 00:35:55,008
+That a person who is trying to remove the files actually logged in user and on the file
+
+789
+00:35:55,264 --> 00:36:01,408
+Where we will look at in a moment,at the actual PHP which will again
+
+790
+00:36:01,664 --> 00:36:04,992
+Validate that that user actually has permission to remove
+
+791
+00:36:05,248 --> 00:36:05,760
+The file
+
+792
+00:36:06,272 --> 00:36:12,416
+So there are all these checks and balances across every step of the this implementation
+
+793
+00:36:12,672 --> 00:36:18,816
+And as you by now I might realise this implementation is far more complicated than
+
+794
+00:36:19,072 --> 00:36:25,216
+the normal file upload, that's simple this really gets into the
+
+795
+00:36:25,472 --> 00:36:31,616
+Nitty gritty of some of these things because you wanna give a real easy sort of
+
+796
+00:36:32,128 --> 00:36:34,944
+Behaviour for your user
+
+797
+00:36:35,456 --> 00:36:38,016
+But that will mean that you need to do way more
+
+798
+00:36:38,528 --> 00:36:41,088
+To sort of thing for them and protect them
+
+799
+00:36:41,600 --> 00:36:42,112
+So they don't
+
+800
+00:36:42,368 --> 00:36:44,672
+Actually become vulnerable at any time
+
+801
+00:36:45,440 --> 00:36:46,464
+Ok so
+
+802
+00:36:47,488 --> 00:36:50,560
+Once we satisfied that the file is correct and it doesn't need to
+
+803
+00:36:50,816 --> 00:36:51,328
+To be removed
+
+804
+00:36:52,096 --> 00:36:52,864
+We actually
+
+805
+00:36:54,400 --> 00:36:54,912
+Trigger
+
+806
+00:36:55,680 --> 00:36:56,192
+A few
+
+807
+00:36:56,448 --> 00:36:59,520
+Things which actually puts the file
+
+808
+00:37:00,544 --> 00:37:01,312
+In the page
+
+809
+00:37:01,824 --> 00:37:03,360
+That's really what we wanna
+
+810
+00:37:03,616 --> 00:37:04,640
+Eventually end up doing
+
+811
+00:37:05,408 --> 00:37:06,176
+Set file
+
+812
+00:37:06,944 --> 00:37:07,456
+Is what
+
+813
+00:37:07,712 --> 00:37:08,224
+We are moving
+
+814
+00:37:08,480 --> 00:37:08,992
+Towards
+
+815
+00:37:09,504 --> 00:37:11,808
+Because we want to make sure
+
+816
+00:37:12,064 --> 00:37:12,576
+that
+
+817
+00:37:12,832 --> 00:37:16,672
+The file now after you've dragged and dropped it on the page
+
+818
+00:37:16,928 --> 00:37:20,512
+Boom it shows in the page once it's really on the server
+
+819
+00:37:21,280 --> 00:37:22,816
+And that's really what's
+
+820
+00:37:23,072 --> 00:37:27,680
+Being done here a little bit It's doing a little bit of checking just to make sure we're all good
+
+821
+00:37:27,936 --> 00:37:28,704
+Everything's fine
+
+822
+00:37:29,216 --> 00:37:31,008
+And we end up with what we now called
+
+823
+00:37:31,264 --> 00:37:31,776
+File name
+
+824
+00:37:32,288 --> 00:37:33,824
+And it get past here
+
+825
+00:37:35,360 --> 00:37:36,384
+And now
+
+826
+00:37:36,896 --> 00:37:37,664
+We are moving
+
+827
+00:37:39,456 --> 00:37:40,480
+Into set file
+
+828
+00:37:41,248 --> 00:37:44,064
+And the sent file is gonna take the the target
+
+829
+00:37:45,600 --> 00:37:47,392
+And it's going to
+
+830
+00:37:47,904 --> 00:37:48,416
+Determine
+
+831
+00:37:48,672 --> 00:37:49,952
+What kind of target it is and
+
+832
+00:37:50,720 --> 00:37:53,024
+Get the format get the this ,get the that
+
+833
+00:37:54,560 --> 00:37:56,608
+So we can build the file name correctly
+
+834
+00:37:57,120 --> 00:37:59,424
+And now I've got some functions here
+
+835
+00:37:59,936 --> 00:38:01,984
+Which maybe not what you need
+
+836
+00:38:02,240 --> 00:38:02,752
+But I mean
+
+837
+00:38:03,008 --> 00:38:04,032
+You look through this
+
+838
+00:38:04,544 --> 00:38:06,080
+And you decide what
+
+839
+00:38:06,592 --> 00:38:07,104
+Keeping what is
+
+840
+00:38:07,360 --> 00:38:08,128
+Throughout
+
+841
+00:38:09,664 --> 00:38:12,224
+But we end up building a notice
+
+842
+00:38:12,736 --> 00:38:14,272
+Which actually has
+
+843
+00:38:15,808 --> 00:38:16,832
+You know
+
+844
+00:38:17,088 --> 00:38:18,368
+You're so so have been
+
+845
+00:38:18,624 --> 00:38:19,136
+Set
+
+846
+00:38:20,928 --> 00:38:21,440
+And
+
+847
+00:38:22,464 --> 00:38:22,976
+Then
+
+848
+00:38:23,488 --> 00:38:24,000
+It Triggers
+
+849
+00:38:24,256 --> 00:38:25,024
+The get file
+
+850
+00:38:25,536 --> 00:38:27,840
+The get file is
+
+851
+00:38:30,400 --> 00:38:31,936
+the other function
+
+852
+00:38:32,192 --> 00:38:33,728
+Which if you look at the admin View
+
+853
+00:38:34,496 --> 00:38:35,264
+Let's go back here
+
+854
+00:38:35,776 --> 00:38:36,288
+to the JavaScript
+
+855
+00:38:37,056 --> 00:38:38,336
+We've got here the set file
+
+856
+00:38:38,592 --> 00:38:40,128
+And here we've gotta get file
+
+857
+00:38:41,152 --> 00:38:47,296
+The get file is it getting another layer of validation and also just like
+
+858
+00:38:47,552 --> 00:38:49,088
+just make sure that everything
+
+859
+00:38:49,344 --> 00:38:50,112
+Is really
+
+860
+00:38:52,160 --> 00:38:53,952
+Behaving as we would want and
+
+861
+00:38:54,464 --> 00:38:55,744
+expect it to behave
+
+862
+00:38:56,256 --> 00:39:00,608
+So the rest of the snippet here is just a remove file and is Json's
+
+863
+00:39:00,864 --> 00:39:01,888
+String we also have a little snippet
+
+864
+00:39:02,656 --> 00:39:03,424
+to check if
+
+865
+00:39:03,680 --> 00:39:04,704
+If it's a Json string
+
+866
+00:39:05,728 --> 00:39:06,240
+and if it's empty
+
+867
+00:39:07,264 --> 00:39:08,288
+it's all part of just
+
+868
+00:39:08,544 --> 00:39:10,080
+Sanitizing and validating
+
+869
+00:39:10,848 --> 00:39:11,616
+Making sure everything
+
+870
+00:39:12,128 --> 00:39:12,896
+Is the way we expect
+
+871
+00:39:13,664 --> 00:39:14,432
+Ok so
+
+872
+00:39:14,688 --> 00:39:15,712
+we
+
+873
+00:39:16,480 --> 00:39:19,552
+now wanna look at the get's file JS
+
+874
+00:39:20,320 --> 00:39:20,832
+Which
+
+875
+00:39:22,112 --> 00:39:22,880
+Has different
+
+876
+00:39:23,136 --> 00:39:24,672
+Implementation and as you can see
+
+877
+00:39:24,928 --> 00:39:27,744
+It is in the footer,the view footer so we have
+
+878
+00:39:28,000 --> 00:39:28,512
+PHP
+
+879
+00:39:28,768 --> 00:39:32,352
+In that area of the JavaScript
+
+880
+00:39:33,888 --> 00:39:35,424
+So is the set and this is
+
+881
+00:39:35,680 --> 00:39:36,704
+The get file
+
+882
+00:39:37,728 --> 00:39:39,264
+In the get file
+
+883
+00:39:39,520 --> 00:39:41,056
+We have a
+
+884
+00:39:41,312 --> 00:39:42,336
+Again a link
+
+885
+00:39:42,592 --> 00:39:43,616
+That was a echoed
+
+886
+00:39:44,384 --> 00:39:47,200
+Which we are now gonna use to actually load the file
+
+887
+00:39:48,736 --> 00:39:50,272
+To make it that it can be downloaded
+
+888
+00:39:50,784 --> 00:39:52,064
+Now that's really the issue
+
+889
+00:39:52,320 --> 00:39:54,624
+If it's a document or if it's a media
+
+890
+00:39:55,136 --> 00:39:58,208
+We obviously don't wanna display it but we wanna have you be able to
+
+891
+00:39:58,464 --> 00:39:58,976
+To download it
+
+892
+00:39:59,488 --> 00:40:01,792
+So we have different behaviours for image and
+
+893
+00:40:02,048 --> 00:40:02,560
+Images
+
+894
+00:40:03,072 --> 00:40:03,840
+As well as if you
+
+895
+00:40:04,096 --> 00:40:04,608
+Scroll down for
+
+896
+00:40:04,864 --> 00:40:06,400
+Documents at for media
+
+897
+00:40:06,912 --> 00:40:11,264
+So it has different behaviours it continues building Buttons and displays
+
+898
+00:40:11,776 --> 00:40:12,544
+And I'll
+
+899
+00:40:12,800 --> 00:40:15,104
+Pop this code also out there on the Gits
+
+900
+00:40:15,360 --> 00:40:16,384
+And you can look at it
+
+901
+00:40:16,896 --> 00:40:17,408
+And
+
+902
+00:40:18,176 --> 00:40:19,712
+See if you can make sense out of it
+
+903
+00:40:20,224 --> 00:40:22,272
+This thing here the document link
+
+904
+00:40:23,808 --> 00:40:25,344
+Or the document button
+
+905
+00:40:25,600 --> 00:40:26,112
+Is
+
+906
+00:40:26,624 --> 00:40:28,928
+The potential idea about this
+
+907
+00:40:29,440 --> 00:40:31,232
+If we go to actually
+
+908
+00:40:32,000 --> 00:40:33,024
+let me Close out here
+
+909
+00:40:33,792 --> 00:40:36,864
+And go to the actual document manager
+
+910
+00:40:41,984 --> 00:40:44,288
+In the document manager when you create a document
+
+911
+00:40:44,800 --> 00:40:48,384
+You have here what we call description
+
+912
+00:40:49,408 --> 00:40:54,528
+So if you add a document you can actually use those Place holders
+
+913
+00:40:54,784 --> 00:40:55,552
+In the description
+
+914
+00:40:56,320 --> 00:40:56,832
+And
+
+915
+00:40:57,088 --> 00:40:58,368
+It's the beginning of
+
+916
+00:40:58,624 --> 00:41:00,416
+Actually using these documents
+
+917
+00:41:00,672 --> 00:41:02,464
+Across the website
+
+918
+00:41:02,720 --> 00:41:04,256
+And not just in the component
+
+919
+00:41:04,512 --> 00:41:06,560
+So we'll eventually write a little plugin
+
+920
+00:41:07,072 --> 00:41:08,864
+And if you actually use
+
+921
+00:41:09,376 --> 00:41:10,912
+This place holder which
+
+922
+00:41:11,168 --> 00:41:11,680
+it generates
+
+923
+00:41:12,192 --> 00:41:13,728
+If you use that
+
+924
+00:41:14,240 --> 00:41:14,752
+Anywhere
+
+925
+00:41:15,264 --> 00:41:17,312
+The plugin will identify it
+
+926
+00:41:17,824 --> 00:41:20,128
+And will load either a link or a button
+
+927
+00:41:20,384 --> 00:41:21,664
+Depending on which one you're using
+
+928
+00:41:21,920 --> 00:41:23,456
+This is the bottom this is the link
+
+929
+00:41:23,968 --> 00:41:25,760
+That's really what it's doing
+
+930
+00:41:26,016 --> 00:41:26,528
+So
+
+931
+00:41:27,296 --> 00:41:29,088
+You might say I don't need placeholders and you
+
+932
+00:41:29,856 --> 00:41:30,880
+can grab that part and
+
+933
+00:41:31,136 --> 00:41:31,648
+Take it out
+
+934
+00:41:32,416 --> 00:41:34,208
+also then wherever
+
+935
+00:41:34,720 --> 00:41:36,256
+The bar placeholder
+
+936
+00:41:36,512 --> 00:41:37,792
+is being used and
+
+937
+00:41:38,048 --> 00:41:38,560
+You need to remove
+
+938
+00:41:39,840 --> 00:41:40,352
+For example over
+
+939
+00:41:40,608 --> 00:41:41,120
+There
+
+940
+00:41:41,632 --> 00:41:42,912
+Because we got a file box that
+
+941
+00:41:43,424 --> 00:41:43,936
+we are building
+
+942
+00:41:44,192 --> 00:41:46,240
+And it's basically getting the place holders
+
+943
+00:41:46,496 --> 00:41:48,288
+The download and a delete buttons
+
+944
+00:41:50,336 --> 00:41:51,360
+All of them get loaded into
+
+945
+00:41:51,616 --> 00:41:52,384
+the file box
+
+946
+00:41:53,407 --> 00:41:53,919
+And
+
+947
+00:41:54,431 --> 00:41:56,479
+If we are having more than one file
+
+948
+00:41:57,247 --> 00:41:58,015
+We are treating it differently than just having one file
+
+949
+00:42:01,087 --> 00:42:04,415
+And really that is what we do here being the document
+
+950
+00:42:04,671 --> 00:42:05,183
+and a little different
+
+951
+00:42:05,695 --> 00:42:08,767
+Behaviour but somewhat the same
+
+952
+00:42:09,023 --> 00:42:09,535
+And
+
+953
+00:42:09,791 --> 00:42:12,095
+That is what actually then does the final stretch
+
+954
+00:42:12,607 --> 00:42:13,375
+it's like a relay
+
+955
+00:42:13,887 --> 00:42:17,727
+race, one carries it this far and then the other one takes it over
+
+956
+00:42:17,983 --> 00:42:19,263
+Carries it a little further
+
+957
+00:42:19,519 --> 00:42:22,335
+And this one is at the very last end of the match
+
+958
+00:42:23,103 --> 00:42:25,151
+Where it is now finally putting the image
+
+959
+00:42:25,663 --> 00:42:26,687
+Back into the page
+
+960
+00:42:26,943 --> 00:42:27,455
+And
+
+961
+00:42:27,711 --> 00:42:28,991
+All of the nice little
+
+962
+00:42:29,503 --> 00:42:31,295
+thrills, bells and whistles happens here
+
+963
+00:42:32,831 --> 00:42:35,135
+And of course this is where you can really spice it up with some
+
+964
+00:42:35,647 --> 00:42:36,159
+JavaScript
+
+965
+00:42:36,415 --> 00:42:36,927
+And
+
+966
+00:42:37,439 --> 00:42:39,487
+And you can see I 'm using Uikit to actually deal with
+
+967
+00:42:40,255 --> 00:42:41,279
+most of the styling
+
+968
+00:42:43,327 --> 00:42:43,839
+Ok
+
+969
+00:42:44,095 --> 00:42:44,607
+So
+
+970
+00:42:45,119 --> 00:42:45,887
+Now you've seen
+
+971
+00:42:46,399 --> 00:42:46,911
+The
+
+972
+00:42:47,423 --> 00:42:47,935
+Front-end
+
+973
+00:42:48,191 --> 00:42:49,215
+As we would call it
+
+974
+00:42:49,471 --> 00:42:51,519
+Of the behaviour of our
+
+975
+00:42:52,031 --> 00:42:53,311
+Drag an Drop
+
+976
+00:42:53,567 --> 00:42:55,615
+So you've seen how I set up the field
+
+977
+00:42:56,127 --> 00:42:57,151
+You've seen
+
+978
+00:42:57,407 --> 00:42:59,711
+When the Ajax has finished it's request
+
+979
+00:43:00,479 --> 00:43:01,503
+It actually
+
+980
+00:43:02,015 --> 00:43:04,063
+Runs this set file key
+
+981
+00:43:04,575 --> 00:43:05,855
+And the set file key
+
+982
+00:43:06,111 --> 00:43:07,135
+Then Triggers a
+
+983
+00:43:07,647 --> 00:43:08,415
+Whole bunch of things
+
+984
+00:43:09,695 --> 00:43:10,463
+Which ends up
+
+985
+00:43:10,719 --> 00:43:11,231
+Adding the
+
+986
+00:43:11,487 --> 00:43:12,511
+The file to the page
+
+987
+00:43:13,279 --> 00:43:15,071
+Let me demonstrate here
+
+988
+00:43:15,327 --> 00:43:16,095
+In the
+
+989
+00:43:16,351 --> 00:43:16,863
+In our little
+
+990
+00:43:17,375 --> 00:43:18,399
+New document
+
+991
+00:43:18,911 --> 00:43:20,703
+Let me demonstrate some of these function
+
+992
+00:43:21,471 --> 00:43:21,983
+so you can see
+
+993
+00:43:22,239 --> 00:43:24,799
+That which I now explained and exactly what it does
+
+994
+00:43:25,823 --> 00:43:27,615
+So here I've got a bunch of images
+
+995
+00:43:27,871 --> 00:43:29,151
+Is Just generic open source
+
+996
+00:43:29,407 --> 00:43:29,919
+kind of
+
+997
+00:43:30,175 --> 00:43:31,455
+Images
+
+998
+00:43:31,967 --> 00:43:33,247
+So I'm just gonna grab one
+
+999
+00:43:34,015 --> 00:43:34,783
+And dump it in here
+
+1000
+00:43:36,575 --> 00:43:37,087
+And
+
+1001
+00:43:37,343 --> 00:43:38,623
+You didn't see that
+
+1002
+00:43:39,903 --> 00:43:40,415
+let me scroll down
+
+1003
+00:43:43,231 --> 00:43:43,999
+Get that image again
+
+1004
+00:43:45,535 --> 00:43:48,095
+Put it down a little lower let me get another one
+
+1005
+00:43:48,351 --> 00:43:49,631
+Let's use this house
+
+1006
+00:43:50,143 --> 00:43:52,703
+And I'm gonna drag it there and highlights it
+
+1007
+00:43:53,727 --> 00:43:57,311
+then for a moment it has this little apploader because we are
+
+1008
+00:43:59,103 --> 00:43:59,615
+on Local network
+
+1009
+00:43:59,871 --> 00:44:00,639
+It's very fast
+
+1010
+00:44:00,895 --> 00:44:02,175
+But usually would see it
+
+1011
+00:44:03,199 --> 00:44:03,967
+Uploads
+
+1012
+00:44:04,223 --> 00:44:07,039
+And then when it started says your document images set
+
+1013
+00:44:07,295 --> 00:44:08,063
+So that was built with
+
+1014
+00:44:08,319 --> 00:44:08,831
+JavaScript
+
+1015
+00:44:09,599 --> 00:44:10,623
+And there is the document
+
+1016
+00:44:10,879 --> 00:44:11,903
+image on display
+
+1017
+00:44:12,415 --> 00:44:14,463
+And there is now remove document image
+
+1018
+00:44:14,975 --> 00:44:18,559
+I can Click that and it'll tell me are you sure you wanted to leave this document
+
+1019
+00:44:18,815 --> 00:44:19,327
+Yes, and boom it gone
+
+1020
+00:44:21,119 --> 00:44:22,911
+Ok so and we back at Square One
+
+1021
+00:44:23,167 --> 00:44:24,447
+As if we had nothing
+
+1022
+00:44:24,959 --> 00:44:28,543
+And it doesn't only deleted from the page it actually removed
+
+1023
+00:44:29,055 --> 00:44:29,567
+from the server
+
+1024
+00:44:29,823 --> 00:44:30,335
+As well
+
+1025
+00:44:31,359 --> 00:44:33,151
+So let's drag another one just
+
+1026
+00:44:33,407 --> 00:44:34,687
+Drag it there and drop
+
+1027
+00:44:34,943 --> 00:44:38,527
+Uploads there is our nicely cropped image
+
+1028
+00:44:38,783 --> 00:44:41,599
+Obviously crops in the centre of the Image because
+
+1029
+00:44:41,855 --> 00:44:42,879
+How does it know the house is on
+
+1030
+00:44:43,135 --> 00:44:43,647
+On the side
+
+1031
+00:44:43,903 --> 00:44:44,671
+It not doing that kind of
+
+1032
+00:44:45,183 --> 00:44:45,695
+Smart
+
+1033
+00:44:46,463 --> 00:44:47,231
+Detection yet
+
+1034
+00:44:47,743 --> 00:44:49,279
+We just cropping the image
+
+1035
+00:44:49,535 --> 00:44:50,303
+in the most
+
+1036
+00:44:50,559 --> 00:44:51,327
+Sensible way
+
+1037
+00:44:51,839 --> 00:44:54,399
+Now with the uploading of a document
+
+1038
+00:44:54,911 --> 00:44:57,215
+More less the same let me just get a document
+
+1039
+00:44:57,471 --> 00:44:59,519
+Ok so we got a document here
+
+1040
+00:45:00,031 --> 00:45:00,543
+And you can
+
+1041
+00:45:01,055 --> 00:45:01,567
+Drag and
+
+1042
+00:45:01,823 --> 00:45:02,847
+Drop it in there
+
+1043
+00:45:03,359 --> 00:45:04,895
+And again it uploads it
+
+1044
+00:45:05,151 --> 00:45:06,687
+And with the upload
+
+1045
+00:45:07,199 --> 00:45:10,015
+It generates those links I told you would you could
+
+1046
+00:45:10,271 --> 00:45:10,783
+Copy
+
+1047
+00:45:11,295 --> 00:45:13,087
+And now put it in
+
+1048
+00:45:13,599 --> 00:45:14,111
+In the
+
+1049
+00:45:14,367 --> 00:45:15,135
+Description
+
+1050
+00:45:15,391 --> 00:45:15,903
+If you want
+
+1051
+00:45:16,415 --> 00:45:17,695
+Or you could test it
+
+1052
+00:45:18,463 --> 00:45:20,255
+What is noteworthy here
+
+1053
+00:45:20,511 --> 00:45:22,559
+Is that the name of the document doesn't
+
+1054
+00:45:22,815 --> 00:45:23,839
+Actually get lost
+
+1055
+00:45:24,351 --> 00:45:25,119
+While
+
+1056
+00:45:25,631 --> 00:45:28,703
+The the place where documents are added
+
+1057
+00:45:29,215 --> 00:45:31,775
+Is actually in the same
+
+1058
+00:45:32,031 --> 00:45:32,799
+folder so
+
+1059
+00:45:33,311 --> 00:45:35,103
+You could add multiple documents to
+
+1060
+00:45:35,359 --> 00:45:36,639
+This document
+
+1061
+00:45:37,151 --> 00:45:40,479
+I'll just keep on stacking them though they even have the same name
+
+1062
+00:45:40,735 --> 00:45:42,783
+each one will be
+
+1063
+00:45:43,039 --> 00:45:45,087
+uniquely tagged
+
+1064
+00:45:45,599 --> 00:45:47,647
+to not be the same as the other
+
+1065
+00:45:48,671 --> 00:45:52,767
+Which means that on the server we are storing this document with a
+
+1066
+00:45:53,535 --> 00:45:54,559
+Long hash
+
+1067
+00:45:55,071 --> 00:45:56,351
+Sort of added onto
+
+1068
+00:45:56,863 --> 00:45:57,375
+The name
+
+1069
+00:45:57,631 --> 00:46:00,447
+Which is an extra layer of security so people
+
+1070
+00:46:00,703 --> 00:46:02,751
+If they could access the folder they at least
+
+1071
+00:46:03,519 --> 00:46:04,799
+know what the name is
+
+1072
+00:46:05,055 --> 00:46:07,871
+Same with the image if we were to
+
+1073
+00:46:08,127 --> 00:46:09,663
+Actually inspect the
+
+1074
+00:46:09,919 --> 00:46:10,431
+Image
+
+1075
+00:46:11,711 --> 00:46:12,479
+You'll see
+
+1076
+00:46:12,735 --> 00:46:13,759
+That that image
+
+1077
+00:46:14,271 --> 00:46:15,295
+it got this
+
+1078
+00:46:15,551 --> 00:46:21,183
+Huge name doc image Jpeg wrrllll&&&&&&& ext.
+
+1079
+00:46:21,439 --> 00:46:24,255
+So it's no longer than same name as
+
+1080
+00:46:24,511 --> 00:46:25,535
+the one you uploaded
+
+1081
+00:46:25,791 --> 00:46:29,631
+It actually changes it if there is preserve the name for example in
+
+1082
+00:46:29,887 --> 00:46:30,399
+the documents
+
+1083
+00:46:30,655 --> 00:46:31,423
+Option here
+
+1084
+00:46:31,935 --> 00:46:35,519
+So did you giving to someone the document they get what you expect
+
+1085
+00:46:37,055 --> 00:46:38,335
+But we do actually
+
+1086
+00:46:38,591 --> 00:46:39,359
+Adapt the names
+
+1087
+00:46:39,615 --> 00:46:40,383
+For security
+
+1088
+00:46:40,895 --> 00:46:41,663
+So that
+
+1089
+00:46:41,919 --> 00:46:43,711
+You can't be actually allocated
+
+1090
+00:46:43,967 --> 00:46:45,503
+On the server if for some reason not a good document
+
+1091
+00:46:50,111 --> 00:46:52,927
+Ok and so you could test it by clicking here
+
+1092
+00:46:53,183 --> 00:46:54,463
+And it should then just
+
+1093
+00:46:54,975 --> 00:46:55,487
+Bring it up in
+
+1094
+00:46:55,743 --> 00:46:57,279
+And be available as a download
+
+1095
+00:46:57,535 --> 00:47:01,119
+Now how the download works here with the document
+
+1096
+00:47:01,375 --> 00:47:04,959
+I'm actually using a controller so if we
+
+1097
+00:47:05,215 --> 00:47:06,239
+Hovered over this
+
+1098
+00:47:07,519 --> 00:47:08,287
+Link here
+
+1099
+00:47:08,799 --> 00:47:10,079
+You see ok you can't see
+
+1100
+00:47:10,335 --> 00:47:10,847
+See that
+
+1101
+00:47:12,127 --> 00:47:12,639
+Showed you
+
+1102
+00:47:13,151 --> 00:47:13,663
+Well
+
+1103
+00:47:13,919 --> 00:47:15,455
+Maybe I'll just show you the
+
+1104
+00:47:18,783 --> 00:47:20,831
+Ok I've copy the link here now
+
+1105
+00:47:21,855 --> 00:47:23,903
+it's a little huge because we are using
+
+1106
+00:47:25,439 --> 00:47:26,975
+Basically a very much of a
+
+1107
+00:47:27,487 --> 00:47:27,999
+Encrypted
+
+1108
+00:47:28,767 --> 00:47:31,583
+Path to the file
+
+1109
+00:47:32,607 --> 00:47:34,655
+it could sometimes being encrypted or sometimes just be
+
+1110
+00:47:34,911 --> 00:47:35,935
+basically
+
+1111
+00:47:36,191 --> 00:47:36,703
+64 encrypted
+
+1112
+00:47:37,727 --> 00:47:43,359
+But the point is we have what we see here as a task and download
+
+1113
+00:47:43,615 --> 00:47:47,199
+Document so there is actually a controller called download
+
+1114
+00:47:47,967 --> 00:47:48,991
+In my component
+
+1115
+00:47:50,783 --> 00:47:53,855
+And I will show you how this download document
+
+1116
+00:47:54,367 --> 00:47:56,927
+Concept works but
+
+1117
+00:47:57,183 --> 00:47:59,231
+You'll need to write that
+
+1118
+00:48:00,255 --> 00:48:00,767
+You need to
+
+1119
+00:48:01,023 --> 00:48:01,791
+To figure that one out
+
+1120
+00:48:02,047 --> 00:48:02,815
+That's sort of
+
+1121
+00:48:03,327 --> 00:48:04,095
+Onto you
+
+1122
+00:48:04,351 --> 00:48:06,143
+That's if you want people to download your
+
+1123
+00:48:06,655 --> 00:48:07,167
+Your documents
+
+1124
+00:48:07,423 --> 00:48:08,959
+If it's just to upload images
+
+1125
+00:48:09,215 --> 00:48:09,727
+of course
+
+1126
+00:48:09,983 --> 00:48:11,519
+You don't need any of this
+
+1127
+00:48:12,031 --> 00:48:14,591
+But it is only when you gonna actually have a downloadable
+
+1128
+00:48:16,127 --> 00:48:16,639
+File
+
+1129
+00:48:16,895 --> 00:48:17,663
+Or media
+
+1130
+00:48:17,919 --> 00:48:19,967
+So next one we wanted to show you here
+
+1131
+00:48:20,479 --> 00:48:22,271
+It's just upload some media file
+
+1132
+00:48:23,551 --> 00:48:26,111
+Ok so here I have a bunch of audio files
+
+1133
+00:48:26,623 --> 00:48:28,415
+And I'm going to upload them
+
+1134
+00:48:28,927 --> 00:48:31,487
+What I'm going to do is I'm going to select
+
+1135
+00:48:31,743 --> 00:48:32,511
+Whole bunch of them
+
+1136
+00:48:33,023 --> 00:48:35,327
+And then upload them all at once
+
+1137
+00:48:36,095 --> 00:48:38,655
+Which is really what this apploader can actually do
+
+1138
+00:48:39,423 --> 00:48:40,191
+So
+
+1139
+00:48:46,079 --> 00:48:47,615
+let me see, there we go
+
+1140
+00:48:48,127 --> 00:48:48,895
+Drop it there
+
+1141
+00:48:49,407 --> 00:48:50,431
+And
+
+1142
+00:48:50,687 --> 00:48:54,271
+Can't see it yet but it's actually uploading uploading uploading
+
+1143
+00:48:54,783 --> 00:48:55,295
+And
+
+1144
+00:48:57,855 --> 00:48:59,135
+Think I need to refresh the page
+
+1145
+00:48:59,903 --> 00:49:00,927
+So let's give it a name
+
+1146
+00:49:01,439 --> 00:49:02,463
+Let's say
+
+1147
+00:49:02,719 --> 00:49:03,231
+The
+
+1148
+00:49:03,999 --> 00:49:05,535
+Document
+
+1149
+00:49:07,583 --> 00:49:09,119
+Let's say
+
+1150
+00:49:09,887 --> 00:49:10,399
+More
+
+1151
+00:49:10,911 --> 00:49:11,423
+Soon
+
+1152
+00:49:12,959 --> 00:49:13,983
+And then save this
+
+1153
+00:49:17,567 --> 00:49:19,359
+And then see ok it didn't
+
+1154
+00:49:19,871 --> 00:49:20,639
+Actually upload all of them
+
+1155
+00:49:21,919 --> 00:49:23,711
+Interesting
+
+1156
+00:49:24,223 --> 00:49:26,015
+Let me try again
+
+1157
+00:49:26,271 --> 00:49:32,415
+Ok now I've got 6 of them uploaded so I can see there are 6 documents and you can
+
+1158
+00:49:32,671 --> 00:49:34,975
+Actually download them and test them
+
+1159
+00:49:35,231 --> 00:49:36,511
+See if they are still fine
+
+1160
+00:49:37,023 --> 00:49:38,047
+Why the home
+
+1161
+00:49:38,815 --> 00:49:41,375
+The order of the home
+
+1162
+00:49:42,143 --> 00:49:42,655
+Yes
+
+1163
+00:49:46,495 --> 00:49:47,775
+We see that the
+
+1164
+00:49:48,031 --> 00:49:51,359
+media is working
+
+1165
+00:49:51,871 --> 00:49:54,943
+let's also do that with documents let's add some more documents
+
+1166
+00:49:57,247 --> 00:49:58,783
+So I've got a few selected and
+
+1167
+00:49:59,039 --> 00:50:00,831
+Drag and drop them there
+
+1168
+00:50:01,087 --> 00:50:02,111
+123
+
+1169
+00:50:02,367 --> 00:50:08,511
+And is uploaded I need to maybe check some of the JavaScript I see you didn't add the download button here
+
+1170
+00:50:09,279 --> 00:50:15,423
+But without saving if we just refresh the page you'll see that it actually has
+
+1171
+00:50:15,679 --> 00:50:16,959
+All those documents are there
+
+1172
+00:50:17,215 --> 00:50:19,007
+Because it's really used Ajax to
+
+1173
+00:50:19,263 --> 00:50:20,543
+Store them in the Database
+
+1174
+00:50:21,055 --> 00:50:24,127
+And so at the end of day
+
+1175
+00:50:24,895 --> 00:50:31,039
+That is the behaviour we wanted here in our component we wanted the option to upload multiple
+
+1176
+00:50:31,295 --> 00:50:34,623
+Documents to one document and multiple media files
+
+1177
+00:50:35,135 --> 00:50:36,415
+And
+
+1178
+00:50:36,671 --> 00:50:39,999
+To be able to test them in the backend if you wanted to test any of them
+
+1179
+00:50:40,511 --> 00:50:43,583
+And in even be able to remove
+
+1180
+00:50:43,839 --> 00:50:45,119
+Any of them
+
+1181
+00:50:45,375 --> 00:50:46,399
+At any time
+
+1182
+00:50:47,167 --> 00:50:52,031
+Just click on remove and it will be removed and in the front
+
+1183
+00:50:52,287 --> 00:50:55,359
+We'll be able to use the file names and
+
+1184
+00:50:55,615 --> 00:50:56,383
+The user
+
+1185
+00:50:56,639 --> 00:50:59,455
+Would be able to identify oh ok so this is what I want
+
+1186
+00:50:59,711 --> 00:51:02,527
+And so the filenames actually get preserved
+
+1187
+00:51:03,039 --> 00:51:05,599
+While it is actually being stored
+
+1188
+00:51:05,855 --> 00:51:07,135
+in the server
+
+1189
+00:51:07,391 --> 00:51:07,903
+With this
+
+1190
+00:51:08,159 --> 00:51:09,183
+Hash behind it
+
+1191
+00:51:09,695 --> 00:51:10,207
+And so
+
+1192
+00:51:10,975 --> 00:51:17,119
+We are seeing the JavaScript we looked at earlier in action it is uploading it is deleting
+
+1193
+00:51:17,887 --> 00:51:21,215
+This one is actually cropping which will look at it a little more
+
+1194
+00:51:22,495 --> 00:51:23,263
+So
+
+1195
+00:51:23,519 --> 00:51:25,311
+That is seeing our Drag and Drop
+
+1196
+00:51:26,079 --> 00:51:27,615
+Options in action
+
+1197
+00:51:28,383 --> 00:51:31,199
+Now let's go look at the server side of this
+
+1198
+00:51:31,455 --> 00:51:32,991
+implementation
+
+1199
+00:51:33,247 --> 00:51:36,831
+The server side we have in the documents admin View
+
+1200
+00:51:37,343 --> 00:51:39,135
+we're opening the PHP tab
+
+1201
+00:51:39,647 --> 00:51:41,439
+Got this Ajax area
+
+1202
+00:51:41,695 --> 00:51:42,463
+And
+
+1203
+00:51:42,719 --> 00:51:43,999
+Like I showed before
+
+1204
+00:51:44,255 --> 00:51:49,631
+you would obviously need to set up the Ajax with this area targets the controller
+
+1205
+00:51:50,143 --> 00:51:53,983
+So in the controller it creates all these necessary script
+
+1206
+00:51:54,495 --> 00:51:55,007
+To make this
+
+1207
+00:51:55,519 --> 00:51:56,543
+Method
+
+1208
+00:51:56,799 --> 00:52:00,127
+Which is again we gonna look at inside of that
+
+1209
+00:52:00,639 --> 00:52:01,407
+Custom code
+
+1210
+00:52:02,687 --> 00:52:06,271
+Make this method available to the Ajax call
+
+1211
+00:52:06,527 --> 00:52:11,903
+There are some values that we set because every
+
+1212
+00:52:12,159 --> 00:52:18,303
+Component I used this stuff in is different and so for some we're using images
+
+1213
+00:52:18,559 --> 00:52:19,839
+,documents and media
+
+1214
+00:52:20,095 --> 00:52:21,887
+As the types
+
+1215
+00:52:22,399 --> 00:52:23,423
+And for some
+
+1216
+00:52:23,935 --> 00:52:30,079
+The target or Main and Doc and the allow view there's only one of you in this component that is allowed
+
+1217
+00:52:30,335 --> 00:52:36,479
+To use the apploader and that is the document view and so they get view ID
+
+1218
+00:52:36,735 --> 00:52:37,759
+Is the function
+
+1219
+00:52:38,783 --> 00:52:41,343
+With which I get the actual view name
+
+1220
+00:52:41,599 --> 00:52:42,367
+And ID
+
+1221
+00:52:42,623 --> 00:52:44,671
+And it is basically using
+
+1222
+00:52:44,927 --> 00:52:48,255
+The session to sort of throw that around
+
+1223
+00:52:48,767 --> 00:52:50,047
+to insure
+
+1224
+00:52:50,303 --> 00:52:52,351
+That nobody is able to tamper with
+
+1225
+00:52:52,607 --> 00:52:55,679
+That value through the front in anyway
+
+1226
+00:52:55,935 --> 00:52:59,263
+So little extra little gymnastics to make
+
+1227
+00:52:59,519 --> 00:53:00,799
+Just add another layer there
+
+1228
+00:53:01,311 --> 00:53:06,687
+Ok so we gonna look now at this PHP Ajax apploader in the custom codes area
+
+1229
+00:53:07,199 --> 00:53:09,247
+So let's just go here and then
+
+1230
+00:53:09,503 --> 00:53:10,527
+Search for it
+
+1231
+00:53:10,783 --> 00:53:16,927
+So here in the custom codes area and why I'm using custom code because I'm
+
+1232
+00:53:17,183 --> 00:53:17,951
+Reusing this
+
+1233
+00:53:18,207 --> 00:53:24,351
+At the moment it doesn't look like I'm reusing it many places it only says it's used in component but this is not the
+
+1234
+00:53:24,607 --> 00:53:28,703
+The area where I'm actually doing my work this is just for tutorials
+
+1235
+00:53:28,959 --> 00:53:33,055
+I'm using a whole different developing environment
+
+1236
+00:53:33,311 --> 00:53:34,335
+or rather a developing
+
+1237
+00:53:34,847 --> 00:53:40,223
+System Joomla website than this one, so this one is just for
+
+1238
+00:53:40,735 --> 00:53:41,247
+Explaining and
+
+1239
+00:53:41,503 --> 00:53:44,319
+demonstrating ok so
+
+1240
+00:53:44,575 --> 00:53:45,599
+I'm reusing
+
+1241
+00:53:46,623 --> 00:53:48,415
+This code in many components
+
+1242
+00:53:48,927 --> 00:53:49,951
+And here
+
+1243
+00:53:50,207 --> 00:53:53,279
+We have formats, image formats that are allowed
+
+1244
+00:53:53,535 --> 00:53:54,047
+In the system
+
+1245
+00:53:54,815 --> 00:53:57,631
+Document formats that are allowed in the system
+
+1246
+00:53:57,887 --> 00:54:04,031
+Media formats that is allowed in the system and this you can adapt to whatever you need
+
+1247
+00:54:04,799 --> 00:54:06,335
+At the end of the day
+
+1248
+00:54:06,591 --> 00:54:09,407
+Is up to you to decide what you want to
+
+1249
+00:54:09,663 --> 00:54:15,807
+Allow and what you wouldn't, the reality is this is the available formats but as you remember
+
+1250
+00:54:16,063 --> 00:54:17,599
+Here where was it again
+
+1251
+00:54:17,855 --> 00:54:20,415
+in the options area of our component
+
+1252
+00:54:20,671 --> 00:54:26,815
+It has a media area and there we have allowed documents allowed media formats and allowed image
+
+1253
+00:54:27,071 --> 00:54:28,351
+Formats and
+
+1254
+00:54:28,607 --> 00:54:30,143
+These is
+
+1255
+00:54:30,399 --> 00:54:36,543
+Should be the same right it should be the same list having the same values But these are what is
+
+1256
+00:54:36,799 --> 00:54:39,359
+a field we created in Joomla
+
+1257
+00:54:39,871 --> 00:54:42,687
+a List field and so we manually added this
+
+1258
+00:54:42,943 --> 00:54:47,807
+to the components configuration area so if you don't know what that is
+
+1259
+00:54:48,319 --> 00:54:49,855
+Let me quickly show you
+
+1260
+00:54:51,903 --> 00:54:53,695
+So in the component
+
+1261
+00:54:53,951 --> 00:54:56,767
+Here is our component it has this
+
+1262
+00:54:57,023 --> 00:55:03,167
+component config
+
+1263
+00:55:03,679 --> 00:55:08,543
+If your component doesn't show one like this Hello World doesn't show a component config
+
+1264
+00:55:08,799 --> 00:55:12,127
+You can go into the component
+
+1265
+00:55:13,663 --> 00:55:16,223
+And then here in
+
+1266
+00:55:16,479 --> 00:55:20,319
+Let's see think settings
+
+1267
+00:55:23,903 --> 00:55:26,719
+There is this button here of create component config
+
+1268
+00:55:26,975 --> 00:55:33,119
+For this Joomla component and it's in this I'm gonna close out here I don't want to do that one of
+
+1269
+00:55:33,375 --> 00:55:34,399
+I could just show you with a document
+
+1270
+00:55:34,655 --> 00:55:35,167
+Manager
+
+1271
+00:55:35,679 --> 00:55:36,959
+Basically
+
+1272
+00:55:37,215 --> 00:55:40,543
+we could use the same button in settings
+
+1273
+00:55:40,799 --> 00:55:42,079
+There it is
+
+1274
+00:55:42,591 --> 00:55:47,199
+We can actually edit or now if it hasn't have one you can
+
+1275
+00:55:47,455 --> 00:55:49,759
+Create and here you select fields
+
+1276
+00:55:50,015 --> 00:55:52,575
+With a custom values and the tabs in which they should
+
+1277
+00:55:52,831 --> 00:55:58,975
+display and it's basically as you can see here I've selected allowed document formats list
+
+1278
+00:55:59,231 --> 00:56:00,511
+Which is just a list of
+
+1279
+00:56:00,767 --> 00:56:04,095
+The formats and I obviously said it to allow multiple selection
+
+1280
+00:56:04,607 --> 00:56:10,751
+So that's how I'm doing this allowed media allowed image and allowed documents and
+
+1281
+00:56:11,007 --> 00:56:17,151
+then here's the crop document image and if you do not know how to create a field and how to
+
+1282
+00:56:17,407 --> 00:56:18,687
+Set radio buttons or list
+
+1283
+00:56:19,199 --> 00:56:21,503
+Then go review the videos about that I'm gonna
+
+1284
+00:56:22,271 --> 00:56:23,039
+explain that now
+
+1285
+00:56:23,295 --> 00:56:29,439
+But that's really how we deal with that and that list that list that we looked at now
+
+1286
+00:56:29,695 --> 00:56:31,743
+is the same list as what
+
+1287
+00:56:31,999 --> 00:56:32,511
+To see here
+
+1288
+00:56:33,279 --> 00:56:34,047
+It should be the same
+
+1289
+00:56:34,815 --> 00:56:35,583
+Because
+
+1290
+00:56:36,095 --> 00:56:37,375
+This is the allowed
+
+1291
+00:56:37,631 --> 00:56:38,399
+And that list
+
+1292
+00:56:38,655 --> 00:56:39,423
+Shows the
+
+1293
+00:56:39,679 --> 00:56:43,007
+user what is allowed for the system
+
+1294
+00:56:43,263 --> 00:56:44,799
+So how can I
+
+1295
+00:56:45,311 --> 00:56:48,127
+Sorry notice
+
+1296
+00:57:03,487 --> 00:57:07,071
+Sorry about that
+
+1297
+00:57:07,583 --> 00:57:10,399
+Notice came up and messed up everything
+
+1298
+00:57:10,911 --> 00:57:12,959
+But I hate to start over now
+
+1299
+00:57:13,215 --> 00:57:13,727
+Anyway
+
+1300
+00:57:13,983 --> 00:57:20,127
+So this is what you could say as available formats and then those
+
+1301
+00:57:20,383 --> 00:57:23,967
+Dropdowns is what you as the owner of this website
+
+1302
+00:57:24,223 --> 00:57:27,295
+Where this application will run is what you will allow
+
+1303
+00:57:28,063 --> 00:57:34,207
+Ok and that this list should be the same as the one there but it also is sort of going
+
+1304
+00:57:34,463 --> 00:57:36,255
+to be use so that people
+
+1305
+00:57:36,511 --> 00:57:38,303
+Post a specific type
+
+1306
+00:57:38,815 --> 00:57:43,679
+As if it is allowed we're gonna able to sort of bounce this and make sure that
+
+1307
+00:57:43,935 --> 00:57:45,215
+Security wise we are safe
+
+1308
+00:57:45,727 --> 00:57:48,287
+So here is the upload file function
+
+1309
+00:57:49,055 --> 00:57:52,383
+And the upload file starts by first getting the view ID
+
+1310
+00:57:52,639 --> 00:57:53,663
+checking it
+
+1311
+00:57:53,919 --> 00:57:54,687
+And
+
+1312
+00:57:54,943 --> 00:57:59,295
+Then making sure that there is a view set
+
+1313
+00:57:59,551 --> 00:58:00,063
+of course
+
+1314
+00:58:00,575 --> 00:58:06,719
+And that that view is actually part of the allowed views array so they allowed views array if you remember
+
+1315
+00:58:06,975 --> 00:58:08,511
+In our
+
+1316
+00:58:08,767 --> 00:58:11,583
+Where did I show you that
+
+1317
+00:58:13,119 --> 00:58:15,167
+Ok it's in the admin
+
+1318
+00:58:15,423 --> 00:58:20,543
+View document admin view Maybe this one no here it is
+
+1319
+00:58:20,799 --> 00:58:23,359
+The allowed views is documents
+
+1320
+00:58:24,383 --> 00:58:27,711
+So that's why I'm saying I'm setting that outside of the
+
+1321
+00:58:27,967 --> 00:58:30,015
+Custom code because it
+
+1322
+00:58:30,271 --> 00:58:33,343
+Depends on which component we are working in right
+
+1323
+00:58:34,879 --> 00:58:37,183
+So if it is an allowed View
+
+1324
+00:58:37,695 --> 00:58:39,231
+We then get the target
+
+1325
+00:58:40,511 --> 00:58:45,631
+And the type and we set it to Global target and global target type
+
+1326
+00:58:45,887 --> 00:58:48,191
+Then we check that this type
+
+1327
+00:58:49,983 --> 00:58:53,311
+What is the format that we are talking about so
+
+1328
+00:58:53,567 --> 00:58:55,615
+If we think about
+
+1329
+00:58:56,383 --> 00:58:56,895
+The format
+
+1330
+00:58:58,175 --> 00:59:00,223
+There is
+
+1331
+00:59:00,479 --> 00:59:03,295
+Again we go back to this one, where is it?
+
+1332
+00:59:04,831 --> 00:59:08,671
+Here let's move it closer so we
+
+1333
+00:59:08,927 --> 00:59:09,695
+Close to each other
+
+1334
+00:59:10,975 --> 00:59:12,511
+That is the
+
+1335
+00:59:12,767 --> 00:59:17,119
+Formats that we allow the types because we want to
+
+1336
+00:59:17,375 --> 00:59:21,215
+Sort of validate that the person and who is uploading
+
+1337
+00:59:21,471 --> 00:59:27,615
+Is uploading the things we anticipate so it is setting the format with the type
+
+1338
+00:59:28,895 --> 00:59:30,943
+So if it's image it will be images
+
+1339
+00:59:31,199 --> 00:59:33,247
+If it's images it will be images
+
+1340
+00:59:33,503 --> 00:59:39,647
+If it's document it will be document if it's documents it'll be document and media will be media so that's the
+
+1341
+00:59:39,903 --> 00:59:41,439
+Types
+
+1342
+00:59:41,695 --> 00:59:47,839
+And we setting that is the format type now then we using a function get package from
+
+1343
+00:59:48,095 --> 00:59:54,239
+upload now if you watch the previous tutorial of using the file type uploader
+
+1344
+00:59:54,495 --> 01:00:00,639
+Then it's more or less the same kind of function
+
+1345
+01:00:00,895 --> 01:00:02,431
+So if I scroll down
+
+1346
+01:00:02,687 --> 01:00:08,319
+We'll get to it where is it get package from upload so
+
+1347
+01:00:08,575 --> 01:00:11,647
+the only differences we doing the application at get and the
+
+1348
+01:00:11,903 --> 01:00:13,183
+input in the function
+
+1349
+01:00:13,695 --> 01:00:19,839
+And we are targeting files because we are passing those values in the files place
+
+1350
+01:00:20,095 --> 01:00:21,375
+Then
+
+1351
+01:00:21,631 --> 01:00:27,775
+We are seeing what is the file we are checking whether these things are allowed warning import a file
+
+1352
+01:00:28,031 --> 01:00:28,543
+Error
+
+1353
+01:00:28,799 --> 01:00:31,871
+This kind of error you'll see I'm not throwing it
+
+1354
+01:00:32,383 --> 01:00:33,151
+to Joomla
+
+1355
+01:00:33,407 --> 01:00:35,455
+I'm adding it to the error messages
+
+1356
+01:00:35,711 --> 01:00:36,991
+Error error message
+
+1357
+01:00:37,247 --> 01:00:40,063
+Because we gonna have to give it back to the view
+
+1358
+01:00:40,319 --> 01:00:45,951
+We're not able to this is Ajaxs call he did nobody will see it if we just
+
+1359
+01:00:46,463 --> 01:00:49,023
+You know used the arrays warning or something
+
+1360
+01:00:49,279 --> 01:00:52,095
+So we are actually grabbing the value in saying
+
+1361
+01:00:52,351 --> 01:00:58,495
+We done here get out of here if we still going and so you see you could go through this and
+
+1362
+01:00:58,751 --> 01:01:04,895
+Very much the same implementation than the one we've demonstrated the only difference though is our
+
+1363
+01:01:05,151 --> 01:01:08,223
+Check method is actually
+
+1364
+01:01:08,479 --> 01:01:09,759
+a little bit more
+
+1365
+01:01:10,015 --> 01:01:11,807
+Taking that View
+
+1366
+01:01:12,575 --> 01:01:14,111
+And again validating it
+
+1367
+01:01:14,367 --> 01:01:18,207
+So we doing a 2nd layer of validation here
+
+1368
+01:01:18,463 --> 01:01:24,607
+And then checking whether this specific user that is now logged in has the right to actually
+
+1369
+01:01:24,863 --> 01:01:31,007
+Edit this item so it is doing some user validation
+
+1370
+01:01:31,263 --> 01:01:33,567
+And if not it removes the archive
+
+1371
+01:01:34,847 --> 01:01:40,991
+And it's really we still can have that remove method with little bit of the code that you saw me take out
+
+1372
+01:01:41,247 --> 01:01:42,271
+Is still left in it here
+
+1373
+01:01:43,039 --> 01:01:43,551
+In the previous
+
+1374
+01:01:43,807 --> 01:01:49,951
+Tutorial I use some of these codes and yeah so that's really all the
+
+1375
+01:01:50,207 --> 01:01:56,351
+Same I'm not gonna go into depth if you don't understand what I've just looked at here then please go back to the
+
+1376
+01:01:56,607 --> 01:01:58,399
+The previous tutorial watch that
+
+1377
+01:01:58,655 --> 01:02:04,799
+It gives you enough information so that we actually up here in our file upload
+
+1378
+01:02:05,055 --> 01:02:11,199
+Upload file here we at this point have the package
+
+1379
+01:02:11,455 --> 01:02:14,527
+And we passed the package to upload now
+
+1380
+01:02:15,039 --> 01:02:18,623
+Now move the file into place so remember we had to do that in the
+
+1381
+01:02:18,879 --> 01:02:25,023
+The previous here I'm using a function upload now and in the upload now function
+
+1382
+01:02:25,279 --> 01:02:27,071
+We are returning and if
+
+1383
+01:02:27,327 --> 01:02:29,375
+Any error now still remains
+
+1384
+01:02:29,631 --> 01:02:35,007
+It's gonna be doubt here where is errors that might have a curred here if this was false
+
+1385
+01:02:35,263 --> 01:02:36,287
+We would use that
+
+1386
+01:02:36,543 --> 01:02:38,591
+See that's the error message put it in error
+
+1387
+01:02:38,847 --> 01:02:41,663
+And Pass It out and if we were having
+
+1388
+01:02:41,919 --> 01:02:47,807
+Any other issues we will do there it's been an error and will pass it out so this error handling there already
+
+1389
+01:02:48,063 --> 01:02:50,879
+Now in upload now package
+
+1390
+01:02:51,391 --> 01:02:57,535
+We are checking whether the package is actually there the package name and we're starting to
+
+1391
+01:02:57,791 --> 01:02:59,839
+From that we are building the
+
+1392
+01:03:00,095 --> 01:03:02,655
+Name. Now remember I showed you or explain to you
+
+1393
+01:03:02,911 --> 01:03:04,191
+That we are using
+
+1394
+01:03:04,447 --> 01:03:10,591
+This we're preserving the filename but we are sort of hiding the filename so we
+
+1395
+01:03:10,847 --> 01:03:16,991
+Using the target the target type the file format and then this random key generator
+
+1396
+01:03:17,247 --> 01:03:18,015
+Now
+
+1397
+01:03:18,527 --> 01:03:24,671
+I'm not exactly sure I think all JCB helper classes comes out with this
+
+1398
+01:03:24,927 --> 01:03:31,071
+Random key so you could just use it in your component and you can decide how long this string should
+
+1399
+01:03:31,327 --> 01:03:37,215
+Be and then I'm using a little place holder which is little generic placeholder VDM
+
+1400
+01:03:37,471 --> 01:03:39,007
+And
+
+1401
+01:03:39,263 --> 01:03:45,407
+Then I'm adding the actual name of the file after this placeholder so that everything before
+
+1402
+01:03:45,663 --> 01:03:46,431
+this placeholder
+
+1403
+01:03:46,687 --> 01:03:52,831
+Is really internal my system uses this but the client uses everything this
+
+1404
+01:03:53,087 --> 01:03:53,599
+Side
+
+1405
+01:03:54,623 --> 01:03:56,415
+And so then if it's a document
+
+1406
+01:03:56,927 --> 01:04:03,071
+We are gonna need the folder path for hidden file path so again
+
+1407
+01:04:03,327 --> 01:04:07,423
+Get folder path is a function which I wrote
+
+1408
+01:04:07,679 --> 01:04:09,727
+And I'm not gonna share that with you
+
+1409
+01:04:09,983 --> 01:04:13,311
+But you can build your own helper class function
+
+1410
+01:04:13,567 --> 01:04:19,711
+To get the path to where you wanna put the file this is up to you I'm using a hidden file path
+
+1411
+01:04:20,223 --> 01:04:20,991
+But there is
+
+1412
+01:04:21,247 --> 01:04:21,759
+A lot of
+
+1413
+01:04:22,015 --> 01:04:23,039
+Discussion behind that
+
+1414
+01:04:23,295 --> 01:04:25,599
+If I don't pass any values
+
+1415
+01:04:26,111 --> 01:04:27,391
+like in this case
+
+1416
+01:04:28,159 --> 01:04:31,231
+It most probably return a public path
+
+1417
+01:04:31,999 --> 01:04:33,535
+And which would be where the images
+
+1418
+01:04:33,791 --> 01:04:36,351
+So every documents go in a hidden area
+
+1419
+01:04:36,863 --> 01:04:37,887
+Images go public
+
+1420
+01:04:38,143 --> 01:04:41,215
+And usually because the image you wanted to load somewhere
+
+1421
+01:04:41,471 --> 01:04:43,519
+So you don't want it to be behind
+
+1422
+01:04:43,775 --> 01:04:45,567
+The root folder of your website
+
+1423
+01:04:46,335 --> 01:04:52,223
+Ok now we end up here with the full path which is the file path
+
+1424
+01:04:52,479 --> 01:04:54,015
+Sorry for this this one here
+
+1425
+01:04:54,527 --> 01:04:57,087
+The filename and the file format
+
+1426
+01:04:57,343 --> 01:04:59,903
+So that becomes the file name
+
+1427
+01:05:01,183 --> 01:05:02,207
+And this becomes
+
+1428
+01:05:02,463 --> 01:05:03,231
+The file format
+
+1429
+01:05:03,999 --> 01:05:07,071
+Now I think you will notice that at this stage
+
+1430
+01:05:07,583 --> 01:05:08,351
+The package
+
+1431
+01:05:08,607 --> 01:05:09,119
+Name
+
+1432
+01:05:10,399 --> 01:05:10,911
+Is
+
+1433
+01:05:11,167 --> 01:05:12,703
+Is really what it's used to build this name here
+
+1434
+01:05:13,983 --> 01:05:17,055
+And we stripping the file format from that package name
+
+1435
+01:05:18,591 --> 01:05:19,103
+making sure
+
+1436
+01:05:19,615 --> 01:05:21,407
+That it doesn't have a file format in it
+
+1437
+01:05:23,967 --> 01:05:25,759
+Really to ensure that this
+
+1438
+01:05:26,527 --> 01:05:32,159
+Yeah this file is stored in exactly the format we detected as and not as what do I say it is
+
+1439
+01:05:34,207 --> 01:05:34,975
+Now
+
+1440
+01:05:35,231 --> 01:05:36,511
+We move
+
+1441
+01:05:36,767 --> 01:05:37,279
+The package
+
+1442
+01:05:38,047 --> 01:05:38,559
+This is where
+
+1443
+01:05:38,815 --> 01:05:39,583
+get interesting
+
+1444
+01:05:40,095 --> 01:05:43,423
+To its Final Destination if something fails at this point
+
+1445
+01:05:43,679 --> 01:05:44,447
+like it doesn't move
+
+1446
+01:05:45,471 --> 01:05:48,287
+We actually remove the package and we say there was an error
+
+1447
+01:05:48,799 --> 01:05:50,591
+So we just like we are done
+
+1448
+01:05:50,847 --> 01:05:52,127
+We not gonna worry about it
+
+1449
+01:05:52,639 --> 01:05:57,247
+If it succeeds then obviously if it's an image
+
+1450
+01:05:57,503 --> 01:05:58,271
+At this stage
+
+1451
+01:05:58,783 --> 01:05:59,295
+Image
+
+1452
+01:05:59,807 --> 01:06:04,159
+We definitely want to resize it so I've got a resize
+
+1453
+01:06:04,415 --> 01:06:05,183
+Image helper
+
+1454
+01:06:05,439 --> 01:06:05,951
+Class
+
+1455
+01:06:07,487 --> 01:06:12,095
+This is also something that you would need to write yourself
+
+1456
+01:06:12,607 --> 01:06:14,143
+Which
+
+1457
+01:06:14,399 --> 01:06:16,447
+Helps me to resize my image
+
+1458
+01:06:17,215 --> 01:06:18,751
+I passing it some values
+
+1459
+01:06:19,007 --> 01:06:23,103
+to actually target the image and resize it
+
+1460
+01:06:23,359 --> 01:06:26,943
+And it really doesn't change anything with the image location
+
+1461
+01:06:27,199 --> 01:06:30,015
+Or anything like that so I don't need any value back
+
+1462
+01:06:30,271 --> 01:06:34,367
+I just need it to resize it and get it done and I don't need to know anything else
+
+1463
+01:06:35,135 --> 01:06:37,439
+Then I'm doing some encryption here
+
+1464
+01:06:37,695 --> 01:06:40,767
+To see whether the basic encryption is available in this program
+
+1465
+01:06:41,535 --> 01:06:42,047
+And
+
+1466
+01:06:42,303 --> 01:06:44,607
+Then to actually use that encryption
+
+1467
+01:06:46,143 --> 01:06:47,679
+When I start storing the documents
+
+1468
+01:06:47,935 --> 01:06:48,703
+To the database
+
+1469
+01:06:49,471 --> 01:06:50,239
+So
+
+1470
+01:06:50,495 --> 01:06:51,775
+Here is a local file
+
+1471
+01:06:52,543 --> 01:06:53,055
+And
+
+1472
+01:06:53,311 --> 01:06:55,615
+We are checking if it's a document or a media
+
+1473
+01:06:56,127 --> 01:06:56,895
+We are going to encrypt it
+
+1474
+01:06:59,199 --> 01:06:59,711
+And
+
+1475
+01:06:59,967 --> 01:07:03,807
+Then again here we make sure that this ID value
+
+1476
+01:07:04,063 --> 01:07:07,903
+Is greater than zero because if it's still a unsaved item
+
+1477
+01:07:08,159 --> 01:07:10,463
+We don't have any place in the database to add this
+
+1478
+01:07:10,719 --> 01:07:12,255
+So we could just skip this basically
+
+1479
+01:07:13,279 --> 01:07:15,071
+So if we realize ok this
+
+1480
+01:07:15,327 --> 01:07:17,119
+This file or this
+
+1481
+01:07:17,631 --> 01:07:18,399
+Upload
+
+1482
+01:07:18,655 --> 01:07:19,679
+Doesn't have an ID
+
+1483
+01:07:21,983 --> 01:07:25,311
+Then we skip this function here and we rather do if it's an image
+
+1484
+01:07:25,567 --> 01:07:26,847
+If it's a document or is it it
+
+1485
+01:07:27,871 --> 01:07:28,895
+excuse me if it's a media
+
+1486
+01:07:29,151 --> 01:07:30,175
+Then we load
+
+1487
+01:07:30,431 --> 01:07:31,967
+The filename like that
+
+1488
+01:07:32,991 --> 01:07:33,503
+And
+
+1489
+01:07:34,271 --> 01:07:36,575
+We are going to pass it back
+
+1490
+01:07:37,087 --> 01:07:37,599
+to
+
+1491
+01:07:37,855 --> 01:07:39,135
+The View
+
+1492
+01:07:39,647 --> 01:07:41,183
+Basically taking the results you
+
+1493
+01:07:41,695 --> 01:07:42,207
+See here
+
+1494
+01:07:42,463 --> 01:07:44,767
+Formats it's got a lock value
+
+1495
+01:07:45,023 --> 01:07:46,559
+Then a token
+
+1496
+01:07:46,815 --> 01:07:47,327
+Link
+
+1497
+01:07:48,095 --> 01:07:49,375
+So it has different behavior for different things
+
+1498
+01:07:50,655 --> 01:07:53,471
+And all builds this result array and this is what we
+
+1499
+01:07:53,727 --> 01:07:54,495
+Give them back
+
+1500
+01:07:54,751 --> 01:07:56,031
+We give them back to result array
+
+1501
+01:07:56,543 --> 01:07:58,591
+And it gets started over here
+
+1502
+01:08:00,127 --> 01:08:02,175
+So the File format is added
+
+1503
+01:08:02,431 --> 01:08:06,015
+Success gets the file name which is this value here
+
+1504
+01:08:06,527 --> 01:08:08,831
+And then we start building some other things
+
+1505
+01:08:09,087 --> 01:08:09,855
+Switch are necessary
+
+1506
+01:08:10,879 --> 01:08:12,159
+Like the token link
+
+1507
+01:08:12,671 --> 01:08:13,439
+for the link
+
+1508
+01:08:13,951 --> 01:08:16,511
+Because you want to have the downloadable if
+
+1509
+01:08:17,023 --> 01:08:19,071
+Media document or if it's media
+
+1510
+01:08:19,839 --> 01:08:23,935
+If it's an image no we don't need any of this we can just skip that
+
+1511
+01:08:25,215 --> 01:08:26,239
+And then the key name
+
+1512
+01:08:26,751 --> 01:08:27,519
+And there we go
+
+1513
+01:08:27,775 --> 01:08:28,287
+We done
+
+1514
+01:08:28,543 --> 01:08:31,871
+Where is it it is actually a safe item
+
+1515
+01:08:32,127 --> 01:08:34,943
+We are going to update the database right now
+
+1516
+01:08:35,455 --> 01:08:37,247
+With this new target type
+
+1517
+01:08:38,015 --> 01:08:38,783
+And Target
+
+1518
+01:08:39,295 --> 01:08:41,087
+So this is where the hidden field name
+
+1519
+01:08:41,343 --> 01:08:42,367
+Remember I said to you there's
+
+1520
+01:08:42,623 --> 01:08:43,135
+Some convention
+
+1521
+01:08:43,903 --> 01:08:44,415
+In the hidden
+
+1522
+01:08:44,671 --> 01:08:45,183
+Field name
+
+1523
+01:08:45,695 --> 01:08:47,487
+Well this is where that Convention comes into
+
+1524
+01:08:47,743 --> 01:08:50,559
+To play the hidden field name is build up from Target
+
+1525
+01:08:50,815 --> 01:08:51,583
+And target type
+
+1526
+01:08:52,095 --> 01:08:56,703
+and if these two are not correct we are going to not save this value
+
+1527
+01:08:56,959 --> 01:08:57,471
+At all
+
+1528
+01:08:58,751 --> 01:09:00,543
+And so we are building an object
+
+1529
+01:09:01,055 --> 01:09:02,079
+Which then we take
+
+1530
+01:09:02,335 --> 01:09:04,639
+And since we have validated this this is definitely
+
+1531
+01:09:04,895 --> 01:09:06,175
+the allowed view
+
+1532
+01:09:06,943 --> 01:09:10,271
+And this Object and this ID and then we update the database
+
+1533
+01:09:11,039 --> 01:09:11,551
+And
+
+1534
+01:09:11,807 --> 01:09:12,319
+Yes
+
+1535
+01:09:12,575 --> 01:09:13,087
+We're done
+
+1536
+01:09:13,343 --> 01:09:13,855
+We've got the
+
+1537
+01:09:14,111 --> 01:09:14,623
+File name
+
+1538
+01:09:14,879 --> 01:09:19,999
+And we are basically going to pass the filename
+
+1539
+01:09:20,511 --> 01:09:21,023
+Here
+
+1540
+01:09:21,535 --> 01:09:22,303
+Same way
+
+1541
+01:09:22,559 --> 01:09:23,583
+And return to the browser
+
+1542
+01:09:24,095 --> 01:09:25,887
+So that's the service side
+
+1543
+01:09:26,399 --> 01:09:27,935
+Of this implementation
+
+1544
+01:09:28,447 --> 01:09:31,007
+There are some things which I haven't explained
+
+1545
+01:09:32,543 --> 01:09:33,055
+Like
+
+1546
+01:09:33,311 --> 01:09:34,079
+This
+
+1547
+01:09:34,591 --> 01:09:35,103
+Encryption
+
+1548
+01:09:35,359 --> 01:09:36,127
+Sorry
+
+1549
+01:09:36,383 --> 01:09:37,407
+Resizing of the image
+
+1550
+01:09:37,663 --> 01:09:38,431
+I didn't give much explanation
+
+1551
+01:09:39,711 --> 01:09:41,503
+Get the folder path didn't
+
+1552
+01:09:41,759 --> 01:09:42,783
+You need to write all that up
+
+1553
+01:09:44,319 --> 01:09:45,087
+But
+
+1554
+01:09:45,343 --> 01:09:47,903
+You could make this work without knowing those things
+
+1555
+01:09:48,159 --> 01:09:48,671
+You
+
+1556
+01:09:48,927 --> 01:09:49,439
+You could
+
+1557
+01:09:49,695 --> 01:09:50,207
+Put a
+
+1558
+01:09:50,463 --> 01:09:51,743
+Hardcoded path
+
+1559
+01:09:51,999 --> 01:09:53,535
+Here is the file path
+
+1560
+01:09:54,047 --> 01:09:54,559
+And you could
+
+1561
+01:09:55,071 --> 01:09:55,839
+You know not do any
+
+1562
+01:09:56,095 --> 01:09:57,119
+cropping and let
+
+1563
+01:09:57,375 --> 01:09:58,143
+Let the user
+
+1564
+01:09:58,399 --> 01:09:59,679
+Make sure about
+
+1565
+01:09:59,935 --> 01:10:00,447
+The cropping
+
+1566
+01:10:01,983 --> 01:10:03,007
+That is really
+
+1567
+01:10:03,519 --> 01:10:05,567
+How I upload many of my
+
+1568
+01:10:06,335 --> 01:10:06,847
+Documents and
+
+1569
+01:10:07,103 --> 01:10:07,615
+Things
+
+1570
+01:10:07,871 --> 01:10:08,895
+Obviously this is constantly
+
+1571
+01:10:09,151 --> 01:10:10,175
+improving
+
+1572
+01:10:10,943 --> 01:10:12,991
+Because I'm using the snippet across multiple
+
+1573
+01:10:13,247 --> 01:10:13,759
+Places
+
+1574
+01:10:14,271 --> 01:10:16,063
+It's very easy for me to come in here
+
+1575
+01:10:16,319 --> 01:10:17,599
+And say oh this is not
+
+1576
+01:10:17,855 --> 01:10:18,623
+Ideal and
+
+1577
+01:10:18,879 --> 01:10:19,391
+Fix it
+
+1578
+01:10:19,647 --> 01:10:20,415
+And then it fix it
+
+1579
+01:10:20,671 --> 01:10:22,463
+Everywhere for every every place it's
+
+1580
+01:10:22,975 --> 01:10:23,487
+been used
+
+1581
+01:10:24,767 --> 01:10:30,911
+And so there is sometimes the Need of decoupling some of these functions in some but I'm trying to
+
+1582
+01:10:32,191 --> 01:10:34,239
+Yes try as much as I can to not
+
+1583
+01:10:34,495 --> 01:10:35,007
+Do that
+
+1584
+01:10:37,055 --> 01:10:41,407
+So set filename array that's another function that you saw
+
+1585
+01:10:41,919 --> 01:10:43,711
+Here in in the upload where is it
+
+1586
+01:10:47,039 --> 01:10:48,319
+Set filename array
+
+1587
+01:10:51,135 --> 01:10:53,951
+This set file name array  is really
+
+1588
+01:10:54,207 --> 01:10:57,023
+a key when you realize that the actual file
+
+1589
+01:10:57,279 --> 01:10:59,071
+Already exists
+
+1590
+01:10:59,327 --> 01:11:00,607
+So the ID is there
+
+1591
+01:11:00,863 --> 01:11:05,471
+Because that means that there are other files possibly still already in the database
+
+1592
+01:11:05,983 --> 01:11:07,007
+So with
+
+1593
+01:11:07,263 --> 01:11:13,151
+The add and basic view we actually trigger the set filename array
+
+1594
+01:11:13,407 --> 01:11:13,919
+Function
+
+1595
+01:11:14,687 --> 01:11:15,711
+To check the database
+
+1596
+01:11:16,223 --> 01:11:16,735
+For that specific
+
+1597
+01:11:16,991 --> 01:11:17,503
+Target
+
+1598
+01:11:17,759 --> 01:11:19,039
+Field get the values
+
+1599
+01:11:19,551 --> 01:11:21,599
+I decrypt them and
+
+1600
+01:11:22,111 --> 01:11:23,903
+Load new values to that
+
+1601
+01:11:24,415 --> 01:11:26,207
+And then basically
+
+1602
+01:11:26,463 --> 01:11:27,487
+Pass it back to us
+
+1603
+01:11:27,999 --> 01:11:30,303
+Where if the item doesn't exist
+
+1604
+01:11:30,815 --> 01:11:32,863
+That means it doesn't have an ID
+
+1605
+01:11:34,399 --> 01:11:35,679
+I don't know if you remember when we
+
+1606
+01:11:35,935 --> 01:11:37,471
+Did some demonstration I was
+
+1607
+01:11:37,727 --> 01:11:39,519
+Actually adding multiple
+
+1608
+01:11:40,543 --> 01:11:43,103
+Media files that only one ended up
+
+1609
+01:11:43,359 --> 01:11:44,383
+Being remembered
+
+1610
+01:11:44,895 --> 01:11:46,687
+And that sort of the downside
+
+1611
+01:11:46,943 --> 01:11:48,479
+Of the current
+
+1612
+01:11:49,247 --> 01:11:50,271
+Implementation
+
+1613
+01:11:50,783 --> 01:11:52,063
+Is that if the ID doesn't
+
+1614
+01:11:52,319 --> 01:11:52,831
+Exist
+
+1615
+01:11:53,087 --> 01:11:54,879
+We're not able to actually keep track of that
+
+1616
+01:11:55,903 --> 01:11:57,951
+So it's only when the ID exist
+
+1617
+01:11:58,719 --> 01:12:00,255
+That we are able to
+
+1618
+01:12:00,767 --> 01:12:02,303
+Actually do multiple uploads at
+
+1619
+01:12:02,559 --> 01:12:03,071
+Once
+
+1620
+01:12:03,327 --> 01:12:04,095
+So I should actually
+
+1621
+01:12:04,351 --> 01:12:06,143
+Give a little bit heads up of the about that
+
+1622
+01:12:06,655 --> 01:12:08,191
+That you want to save the item
+
+1623
+01:12:08,703 --> 01:12:09,983
+You're actually ready to
+
+1624
+01:12:10,239 --> 01:12:11,775
+To expand upon it
+
+1625
+01:12:12,031 --> 01:12:13,055
+And to allow
+
+1626
+01:12:13,311 --> 01:12:14,079
+Multiple upload at
+
+1627
+01:12:14,591 --> 01:12:15,103
+Once
+
+1628
+01:12:15,615 --> 01:12:18,175
+So the set filename array is
+
+1629
+01:12:18,431 --> 01:12:24,319
+Is really dealing with multiple when you are having multiple so you'll see there is image
+
+1630
+01:12:24,575 --> 01:12:25,343
+And document
+
+1631
+01:12:25,599 --> 01:12:26,623
+Is when the file
+
+1632
+01:12:26,879 --> 01:12:27,647
+I'm using the
+
+1633
+01:12:27,903 --> 01:12:28,671
+The plural
+
+1634
+01:12:29,439 --> 01:12:30,207
+to tell me
+
+1635
+01:12:30,463 --> 01:12:31,999
+That it should allow multiple
+
+1636
+01:12:32,767 --> 01:12:34,047
+So if it's singular
+
+1637
+01:12:34,303 --> 01:12:34,815
+Image
+
+1638
+01:12:35,327 --> 01:12:38,399
+And document then I don't allow multiple
+
+1639
+01:12:38,655 --> 01:12:40,447
+I'm just gonna remove the old one
+
+1640
+01:12:40,703 --> 01:12:41,215
+And add the new
+
+1641
+01:12:41,471 --> 01:12:41,983
+Done
+
+1642
+01:12:42,495 --> 01:12:44,031
+And when it is plural
+
+1643
+01:12:44,287 --> 01:12:46,335
+And we are using the set filename array
+
+1644
+01:12:46,847 --> 01:12:47,871
+And we basically building
+
+1645
+01:12:48,383 --> 01:12:48,895
+It to
+
+1646
+01:12:50,175 --> 01:12:50,687
+actually be
+
+1647
+01:12:51,199 --> 01:12:51,711
+Multiple
+
+1648
+01:12:52,223 --> 01:12:52,991
+And then
+
+1649
+01:12:53,503 --> 01:12:54,527
+One thing I didn't
+
+1650
+01:12:54,783 --> 01:12:55,295
+Emphasize
+
+1651
+01:12:55,551 --> 01:12:56,319
+here
+
+1652
+01:12:56,831 --> 01:12:57,599
+Is
+
+1653
+01:12:59,135 --> 01:13:01,183
+That we actually remove the
+
+1654
+01:13:01,439 --> 01:13:02,463
+files as well
+
+1655
+01:13:04,255 --> 01:13:06,047
+There is a remove file right
+
+1656
+01:13:06,815 --> 01:13:08,095
+There's remove file
+
+1657
+01:13:08,351 --> 01:13:11,167
+And it also at some point does a validation
+
+1658
+01:13:11,935 --> 01:13:13,215
+To check whether the user has the
+
+1659
+01:13:13,471 --> 01:13:15,263
+Permission to remove files
+
+1660
+01:13:16,031 --> 01:13:16,543
+And
+
+1661
+01:13:16,799 --> 01:13:18,591
+And then will basically remove
+
+1662
+01:13:18,847 --> 01:13:19,359
+the file
+
+1663
+01:13:20,127 --> 01:13:20,895
+So that is
+
+1664
+01:13:21,407 --> 01:13:21,919
+Also and it's
+
+1665
+01:13:22,175 --> 01:13:22,943
+Also uses
+
+1666
+01:13:23,199 --> 01:13:23,967
+Is this file name
+
+1667
+01:13:24,479 --> 01:13:26,271
+But then it passes the remove
+
+1668
+01:13:26,527 --> 01:13:27,551
+Variable to it
+
+1669
+01:13:28,063 --> 01:13:31,391
+Which then means the action is not to add but to take
+
+1670
+01:13:31,647 --> 01:13:32,159
+Away and
+
+1671
+01:13:32,415 --> 01:13:33,183
+You will see that there
+
+1672
+01:13:33,695 --> 01:13:34,463
+The action here
+
+1673
+01:13:35,231 --> 01:13:35,743
+There is the
+
+1674
+01:13:35,999 --> 01:13:36,511
+Add and there is the take away option
+
+1675
+01:13:39,583 --> 01:13:40,607
+So behave still different
+
+1676
+01:13:41,119 --> 01:13:47,007
+So we still basically get back the array we still build an object and we still updated Database
+
+1677
+01:13:47,263 --> 01:13:48,799
+As well as
+
+1678
+01:13:49,311 --> 01:13:51,871
+Actually removing the file here
+
+1679
+01:13:53,151 --> 01:13:57,247
+Ok so all of this code I will dump on GitHub and the gits
+
+1680
+01:13:58,783 --> 01:14:03,135
+For you to reuse as you see fit you'll obviously have to Adapt it
+
+1681
+01:14:04,671 --> 01:14:05,183
+And
+
+1682
+01:14:05,951 --> 01:14:07,487
+Keep it under an open source licence
+
+1683
+01:14:08,767 --> 01:14:09,279
+That's
+
+1684
+01:14:09,535 --> 01:14:10,559
+Only requirement
+
+1685
+01:14:12,863 --> 01:14:13,887
+Ok well
+
+1686
+01:14:14,399 --> 01:14:17,727
+That if all those things line-up and are in place
+
+1687
+01:14:18,495 --> 01:14:20,287
+Going back to our
+
+1688
+01:14:20,543 --> 01:14:22,079
+Admin View
+
+1689
+01:14:22,335 --> 01:14:23,103
+Basically
+
+1690
+01:14:23,359 --> 01:14:24,383
+That needs to be there
+
+1691
+01:14:26,175 --> 01:14:26,687
+These things
+
+1692
+01:14:27,199 --> 01:14:27,967
+Need to be here so you could
+
+1693
+01:14:28,223 --> 01:14:28,991
+Pause the film
+
+1694
+01:14:29,247 --> 01:14:30,015
+And
+
+1695
+01:14:30,271 --> 01:14:30,783
+Video
+
+1696
+01:14:31,295 --> 01:14:33,343
+And just make sure that you have the same kind of
+
+1697
+01:14:33,855 --> 01:14:34,623
+Ajax
+
+1698
+01:14:34,879 --> 01:14:36,159
+Query calls option
+
+1699
+01:14:37,183 --> 01:14:39,999
+And then here I am actually
+
+1700
+01:14:40,255 --> 01:14:42,815
+Doing some opening of the files
+
+1701
+01:14:43,071 --> 01:14:45,887
+You see that I'm building but I'm called links
+
+1702
+01:14:47,935 --> 01:14:49,727
+So this is going a little Beyond
+
+1703
+01:14:49,983 --> 01:14:53,311
+Just showing you a little bit of my implementation and these links
+
+1704
+01:14:54,079 --> 01:14:55,103
+Eventually
+
+1705
+01:14:55,359 --> 01:14:56,639
+End up on the page
+
+1706
+01:14:57,407 --> 01:14:58,687
+So we've go back
+
+1707
+01:14:59,199 --> 01:14:59,711
+to
+
+1708
+01:15:00,223 --> 01:15:01,503
+Our JavaScript
+
+1709
+01:15:01,759 --> 01:15:02,271
+Here
+
+1710
+01:15:02,783 --> 01:15:03,551
+Scroll down
+
+1711
+01:15:04,063 --> 01:15:06,111
+We see this get filed JS
+
+1712
+01:15:06,623 --> 01:15:07,391
+Now let's
+
+1713
+01:15:07,647 --> 01:15:09,951
+Again look at that get file JS
+
+1714
+01:15:10,207 --> 01:15:10,719
+Because
+
+1715
+01:15:11,231 --> 01:15:12,511
+You'll see that those links
+
+1716
+01:15:13,023 --> 01:15:13,791
+Actually come in
+
+1717
+01:15:14,303 --> 01:15:15,071
+To play there
+
+1718
+01:15:15,583 --> 01:15:16,095
+If I Remember correctly
+
+1719
+01:15:19,423 --> 01:15:19,935
+let see here
+
+1720
+01:15:23,007 --> 01:15:25,311
+Oh I see now is not in that JavaScript
+
+1721
+01:15:25,567 --> 01:15:26,591
+Is actually down here
+
+1722
+01:15:27,103 --> 01:15:28,639
+You see that here I got a
+
+1723
+01:15:28,895 --> 01:15:30,943
+Load the links to the page document links
+
+1724
+01:15:31,967 --> 01:15:35,551
+And I'm actually adding it to a variable called document
+
+1725
+01:15:36,319 --> 01:15:36,831
+links you see
+
+1726
+01:15:37,343 --> 01:15:38,111
+So in the
+
+1727
+01:15:38,367 --> 01:15:39,647
+Custom script
+
+1728
+01:15:40,159 --> 01:15:40,671
+Where is it it's not this one
+
+1729
+01:15:47,583 --> 01:15:50,911
+It's this one you'll see if I
+
+1730
+01:15:51,167 --> 01:15:52,191
+If I now search
+
+1731
+01:15:52,447 --> 01:15:53,983
+So I'll take this copy
+
+1732
+01:15:55,007 --> 01:15:56,543
+and here I'll search
+
+1733
+01:15:58,079 --> 01:16:00,639
+You'll see that I'm actually using that array
+
+1734
+01:16:01,407 --> 01:16:02,175
+And saying is this
+
+1735
+01:16:02,431 --> 01:16:03,455
+property there
+
+1736
+01:16:03,967 --> 01:16:05,503
+And then creating a link
+
+1737
+01:16:06,783 --> 01:16:09,343
+And so that is how we deal with some of that
+
+1738
+01:16:09,855 --> 01:16:11,391
+And it it works very well
+
+1739
+01:16:11,647 --> 01:16:13,439
+To sort of pass value
+
+1740
+01:16:13,695 --> 01:16:14,207
+from
+
+1741
+01:16:14,463 --> 01:16:14,975
+JavaScript
+
+1742
+01:16:15,231 --> 01:16:15,743
+to PHP
+
+1743
+01:16:16,511 --> 01:16:18,815
+And have it available there
+
+1744
+01:16:19,327 --> 01:16:20,351
+Ok well
+
+1745
+01:16:20,863 --> 01:16:22,143
+I know this was a lot of
+
+1746
+01:16:22,399 --> 01:16:28,543
+Things to sort of take in and I would expect you to realize that that previous implementation is
+
+1747
+01:16:28,799 --> 01:16:31,103
+So much easier
+
+1748
+01:16:31,359 --> 01:16:32,639
+But like you've seen
+
+1749
+01:16:33,151 --> 01:16:36,479
+When someone actually does create a document
+
+1750
+01:16:36,991 --> 01:16:38,271
+And they
+
+1751
+01:16:38,527 --> 01:16:41,087
+Are able to so easily
+
+1752
+01:16:41,599 --> 01:16:42,623
+Just drag and
+
+1753
+01:16:42,879 --> 01:16:43,647
+Drop stuff
+
+1754
+01:16:43,903 --> 01:16:44,927
+And it just crops and
+
+1755
+01:16:45,183 --> 01:16:51,327
+It just gives your component so much an easier you know for you feel to it
+
+1756
+01:16:52,095 --> 01:16:52,863
+Instead of
+
+1757
+01:16:53,119 --> 01:16:55,679
+The olds you could still do the old select
+
+1758
+01:16:56,191 --> 01:16:57,215
+But the Drag and Drop is
+
+1759
+01:16:57,471 --> 01:16:59,775
+Becoming quite popular
+
+1760
+01:17:00,031 --> 01:17:01,823
+And this implementation is
+
+1761
+01:17:02,079 --> 01:17:02,591
+Really
+
+1762
+01:17:03,103 --> 01:17:04,127
+Very
+
+1763
+01:17:04,639 --> 01:17:05,151
+Very
+
+1764
+01:17:05,663 --> 01:17:06,943
+Yeah it's very nice to have
+
+1765
+01:17:08,735 --> 01:17:13,855
+And I'm sure from what I've shown you you should be able to get this going in your component
+
+1766
+01:17:14,367 --> 01:17:18,463
+I'm not really gonna give support on to this meaning that
+
+1767
+01:17:18,719 --> 01:17:20,511
+If you get stuck you on your own
+
+1768
+01:17:21,791 --> 01:17:22,815
+Because if
+
+1769
+01:17:23,071 --> 01:17:27,423
+It is really the truth that you will need to know your JavaScript you'll need to
+
+1770
+01:17:27,679 --> 01:17:28,191
+know
+
+1771
+01:17:28,447 --> 01:17:28,959
+Your PHP
+
+1772
+01:17:29,215 --> 01:17:31,519
+and you will need to know how to debug
+
+1773
+01:17:32,031 --> 01:17:33,567
+And how to line-up these
+
+1774
+01:17:34,079 --> 01:17:34,591
+Concepts
+
+1775
+01:17:34,847 --> 01:17:35,615
+That they all
+
+1776
+01:17:36,127 --> 01:17:36,639
+I work in
+
+1777
+01:17:36,895 --> 01:17:37,919
+Synergy together
+
+1778
+01:17:39,455 --> 01:17:40,479
+It's not gonna be
+
+1779
+01:17:40,991 --> 01:17:41,759
+So easy for me to
+
+1780
+01:17:42,015 --> 01:17:42,527
+Do that
+
+1781
+01:17:42,783 --> 01:17:45,343
+Specially since I usually do not see the code
+
+1782
+01:17:47,391 --> 01:17:50,719
+But if there isn't any of the code that I've share on
+
+1783
+01:17:50,975 --> 01:17:51,487
+Gits
+
+1784
+01:17:51,743 --> 01:17:54,559
+Which I will also put in the description below this video
+
+1785
+01:17:55,071 --> 01:17:56,863
+Even have that code has issues in it
+
+1786
+01:17:57,375 --> 01:17:59,423
+Or errors in it that the
+
+1787
+01:18:00,447 --> 01:18:01,983
+That are like ok
+
+1788
+01:18:02,495 --> 01:18:05,055
+a very big problem or something
+
+1789
+01:18:05,311 --> 01:18:07,871
+Then please do feel free to
+
+1790
+01:18:08,127 --> 01:18:09,663
+Give me a heads up over there
+
+1791
+01:18:10,175 --> 01:18:11,199
+And we'll collaborate
+
+1792
+01:18:11,455 --> 01:18:11,967
+Improve it as
+
+1793
+01:18:12,223 --> 01:18:12,991
+Necessary
+
+1794
+01:18:14,271 --> 01:18:18,111
+At the end of the day This feature is really way behind
+
+1795
+01:18:18,367 --> 01:18:19,391
+What
+
+1796
+01:18:19,903 --> 01:18:20,927
+What you really need
+
+1797
+01:18:21,439 --> 01:18:22,975
+There is a media manager in
+
+1798
+01:18:23,231 --> 01:18:23,743
+In Joomla
+
+1799
+01:18:24,255 --> 01:18:26,047
+Which is actually ideal
+
+1800
+01:18:26,559 --> 01:18:29,887
+The advantage about this way is that your user is
+
+1801
+01:18:30,143 --> 01:18:32,703
+Is never gonna interfere with other users documents or images or
+
+1802
+01:18:33,983 --> 01:18:34,495
+Stuff
+
+1803
+01:18:35,007 --> 01:18:39,615
+So if you use this concept they not ever gonna actually look on your server at a list
+
+1804
+01:18:39,871 --> 01:18:40,639
+And select stuff
+
+1805
+01:18:41,151 --> 01:18:42,943
+This is why I think people would like this
+
+1806
+01:18:43,455 --> 01:18:44,735
+Because they can upload stuff in
+
+1807
+01:18:45,503 --> 01:18:48,063
+It doesn't affect other people it doesn't make
+
+1808
+01:18:48,319 --> 01:18:50,623
+you more vulnerable as the owner of the system
+
+1809
+01:18:51,647 --> 01:18:52,927
+Who uses the application
+
+1810
+01:18:53,695 --> 01:18:56,511
+So it is I think we better approach
+
+1811
+01:18:57,023 --> 01:18:59,583
+But like I said there is a media manager
+
+1812
+01:19:00,095 --> 01:19:02,143
+So if you go to content
+
+1813
+01:19:02,399 --> 01:19:03,679
+There is a media manager
+
+1814
+01:19:04,191 --> 01:19:05,983
+And there is a media file type
+
+1815
+01:19:06,239 --> 01:19:06,751
+Which
+
+1816
+01:19:07,007 --> 01:19:08,031
+Works very well
+
+1817
+01:19:08,543 --> 01:19:09,055
+And
+
+1818
+01:19:09,311 --> 01:19:10,079
+And can also add
+
+1819
+01:19:10,335 --> 01:19:12,895
+These kind of functionality to your component
+
+1820
+01:19:13,663 --> 01:19:16,223
+If this is a little bit too challenge
+
+1821
+01:19:17,247 --> 01:19:17,759
+To a big of a challenge for you
+
+1822
+01:19:18,527 --> 01:19:19,807
+Anyway thanks for watching
+
+1823
+01:19:21,087 --> 01:19:23,647
+I know this might again be so such a long
+
+1824
+01:19:23,903 --> 01:19:24,415
+Tutorial
+
+1825
+01:19:24,927 --> 01:19:26,463
+But I'm trying my very best
+
+1826
+01:19:26,719 --> 01:19:27,999
+To sort of get you on your feet and you to go.OK.
+

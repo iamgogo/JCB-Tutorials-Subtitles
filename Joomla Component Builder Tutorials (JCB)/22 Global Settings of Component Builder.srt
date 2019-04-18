@@ -1,0 +1,1296 @@
+1
+00:00:01,280 --> 00:00:01,792
+Hi
+
+2
+00:00:02,560 --> 00:00:03,584
+Today we would like to look
+
+3
+00:00:03,840 --> 00:00:04,352
+At
+
+4
+00:00:04,608 --> 00:00:05,888
+Component builders
+
+5
+00:00:06,400 --> 00:00:06,912
+Options
+
+6
+00:00:07,168 --> 00:00:09,728
+Or what we would call Global settings
+
+7
+00:00:10,752 --> 00:00:12,544
+Now I possibly through the
+
+8
+00:00:12,800 --> 00:00:13,824
+Tutorials have
+
+9
+00:00:14,592 --> 00:00:17,152
+From time to time touched on certain areas
+
+10
+00:00:17,920 --> 00:00:19,712
+Now we would like to give a more
+
+11
+00:00:19,968 --> 00:00:21,248
+Precise look at
+
+12
+00:00:21,504 --> 00:00:23,040
+The options area of
+
+13
+00:00:23,296 --> 00:00:24,064
+Component Builder
+
+14
+00:00:24,832 --> 00:00:27,136
+It's accessible through the options button
+
+15
+00:00:27,904 --> 00:00:28,928
+And if you have the
+
+16
+00:00:29,184 --> 00:00:30,720
+Permissions you'll see this button
+
+17
+00:00:32,000 --> 00:00:32,768
+and I can open it
+
+18
+00:00:33,280 --> 00:00:34,048
+The Permissions
+
+19
+00:00:34,304 --> 00:00:38,656
+By that I mean certain users may not see this button if they are in it
+
+20
+00:00:39,168 --> 00:00:40,960
+Different group than that Global
+
+21
+00:00:41,216 --> 00:00:41,728
+administrator
+
+22
+00:00:42,752 --> 00:00:43,776
+And
+
+23
+00:00:44,288 --> 00:00:47,104
+You can change those permissional structures is as needed
+
+24
+00:00:47,872 --> 00:00:49,152
+So you click on options
+
+25
+00:00:50,688 --> 00:00:51,712
+And this will open
+
+26
+00:00:51,968 --> 00:00:57,856
+The component builder configurations or global settings as it's often referred to
+
+27
+00:00:58,368 --> 00:01:00,416
+or options or settings
+
+28
+00:01:00,672 --> 00:01:06,304
+And there are number of switches here that is worth knowing about
+
+29
+00:01:07,072 --> 00:01:11,168
+These areas here you could add your own details if you would like to
+
+30
+00:01:11,424 --> 00:01:12,704
+have it displayed
+
+31
+00:01:13,216 --> 00:01:15,520
+In the components front-end
+
+32
+00:01:16,032 --> 00:01:20,640
+Then there is a switch here at check-in timer
+
+33
+00:01:21,920 --> 00:01:26,016
+We build into component builder the option to check in the items
+
+34
+00:01:26,272 --> 00:01:27,296
+Every so often
+
+35
+00:01:28,064 --> 00:01:29,344
+And here you can check
+
+36
+00:01:29,600 --> 00:01:35,744
+If an item have been locked out for 5 hours it brings it back in 12 hours
+
+37
+00:01:36,000 --> 00:01:36,768
+24 hours
+
+38
+00:01:37,280 --> 00:01:40,096
+Every second day once a week or never
+
+39
+00:01:40,864 --> 00:01:42,912
+So the check-in timer is set here
+
+40
+00:01:43,424 --> 00:01:47,264
+And you can change it to whatever is best suited to your system
+
+41
+00:01:47,520 --> 00:01:50,080
+And then enabling version
+
+42
+00:01:51,104 --> 00:01:52,128
+Version control
+
+43
+00:01:52,640 --> 00:01:54,944
+Is what this area is all about
+
+44
+00:01:55,712 --> 00:01:58,272
+You can disable it by simply saying no
+
+45
+00:01:59,808 --> 00:02:02,112
+Or enable it by yes
+
+46
+00:02:02,624 --> 00:02:04,672
+And then you can say how many
+
+47
+00:02:04,928 --> 00:02:07,488
+Versions should be kept of the item
+
+48
+00:02:08,256 --> 00:02:12,352
+If 0 all all versions will be saved so 0 means
+
+49
+00:02:12,608 --> 00:02:13,376
+Everything
+
+50
+00:02:14,144 --> 00:02:16,960
+And so you can Limit it
+
+51
+00:02:17,472 --> 00:02:19,520
+To sort of prevent your system from
+
+52
+00:02:20,288 --> 00:02:22,592
+of being overloaded with data in the database
+
+53
+00:02:25,152 --> 00:02:25,664
+Then
+
+54
+00:02:25,920 --> 00:02:27,712
+You have minify JS
+
+55
+00:02:28,224 --> 00:02:28,736
+Feature
+
+56
+00:02:29,504 --> 00:02:32,320
+Basically all the JS that is being built
+
+57
+00:02:33,088 --> 00:02:34,624
+In a component Builder
+
+58
+00:02:35,904 --> 00:02:36,416
+Can be
+
+59
+00:02:36,672 --> 00:02:38,464
+Changed to be minified
+
+60
+00:02:38,976 --> 00:02:39,744
+So
+
+61
+00:02:40,000 --> 00:02:41,536
+Why you are in production
+
+62
+00:02:41,792 --> 00:02:44,096
+You can export your components
+
+63
+00:02:44,352 --> 00:02:46,400
+Without minifying the j s
+
+64
+00:02:47,680 --> 00:02:51,008
+In the files and in the footers of the of the documents
+
+65
+00:02:51,776 --> 00:02:53,824
+But the moment you feel that you've reached
+
+66
+00:02:54,080 --> 00:02:58,432
+The place where minification is necessary and you want to use it
+
+67
+00:02:58,944 --> 00:03:00,992
+Then you'd simply trip the switch here
+
+68
+00:03:01,504 --> 00:03:04,576
+And that would minify JS which is your
+
+69
+00:03:04,832 --> 00:03:05,856
+JavaScript
+
+70
+00:03:06,624 --> 00:03:07,392
+In the component
+
+71
+00:03:07,904 --> 00:03:08,672
+While it's being complied
+
+72
+00:03:10,720 --> 00:03:11,232
+Ok
+
+73
+00:03:11,488 --> 00:03:14,304
+And then just some details my wife
+
+74
+00:03:14,816 --> 00:03:15,840
+Being very involved in
+
+75
+00:03:17,376 --> 00:03:18,144
+Discussing
+
+76
+00:03:18,400 --> 00:03:20,192
+She is a Java Developer
+
+77
+00:03:20,704 --> 00:03:21,728
+And
+
+78
+00:03:22,240 --> 00:03:25,312
+Helping me look at some of the implementations
+
+79
+00:03:25,824 --> 00:03:28,128
+As well as my own details
+
+80
+00:03:28,384 --> 00:03:32,480
+And like I said you can add more contributors here and they will show up
+
+81
+00:03:32,736 --> 00:03:35,296
+in the dashboard underneath contributors
+
+82
+00:03:36,832 --> 00:03:37,600
+Then the 
+
+83
+00:03:37,856 --> 00:03:38,368
+UiKit
+
+84
+00:03:38,880 --> 00:03:40,672
+ settings
+
+85
+00:03:42,464 --> 00:03:48,096
+This is primarily for the backend at the moment being implemented in certain areas
+
+86
+00:03:48,608 --> 00:03:52,704
+But this is only really needed most of the time and the front-end framework
+
+87
+00:03:53,216 --> 00:03:54,240
+Of your component
+
+88
+00:03:54,752 --> 00:03:58,336
+So I've added it to component builder simply so that
+
+89
+00:03:58,592 --> 00:03:59,104
+There
+
+90
+00:03:59,360 --> 00:04:00,384
+If I
+
+91
+00:04:00,896 --> 00:04:03,200
+At some point decide to start adding
+
+92
+00:04:03,456 --> 00:04:06,784
+a front end shop for the components that's being developed
+
+93
+00:04:07,552 --> 00:04:13,184
+That's part of what we possibly would design eventually is a front end Distributing
+
+94
+00:04:13,952 --> 00:04:14,720
+Software
+
+95
+00:04:15,488 --> 00:04:18,815
+That was built by component Builder
+
+96
+00:04:19,071 --> 00:04:21,119
+So you could install this and
+
+97
+00:04:21,375 --> 00:04:22,911
+Then run it from your
+
+98
+00:04:23,679 --> 00:04:26,495
+It's Like factory with a front end basically
+
+99
+00:04:27,007 --> 00:04:29,311
+That is still in planning
+
+100
+00:04:29,567 --> 00:04:35,455
+We still looking at some of the security risks since so far we've been encouraging people to use the
+
+101
+00:04:35,967 --> 00:04:38,527
+Component builder offline and not online
+
+102
+00:04:39,295 --> 00:04:43,903
+So we not even sure how this will work possibly we might end up with two
+
+103
+00:04:44,159 --> 00:04:50,303
+Components ok then the encryption settings component builder has a few places where it encrypts
+
+104
+00:04:50,559 --> 00:04:53,375
+Some of the data in the database
+
+105
+00:04:53,631 --> 00:04:59,775
+And we are using a basic encryption which means we are using this key that you enter here
+
+106
+00:05:00,799 --> 00:05:02,335
+Once you've entered this key
+
+107
+00:05:02,847 --> 00:05:05,919
+I think because it shifts without a key in it
+
+108
+00:05:06,175 --> 00:05:07,455
+So look like that
+
+109
+00:05:08,223 --> 00:05:09,759
+So once you've entered the key
+
+110
+00:05:10,527 --> 00:05:12,319
+Please ensure that you don't change it
+
+111
+00:05:13,087 --> 00:05:13,855
+Because
+
+112
+00:05:14,111 --> 00:05:15,391
+This key is what
+
+113
+00:05:15,647 --> 00:05:18,719
+Locks the data and it's the only key that can unlock it
+
+114
+00:05:19,231 --> 00:05:25,375
+So if you remove this key you cannot unlock it so you could remove it if you wanted to
+
+115
+00:05:25,631 --> 00:05:28,703
+Prevent people from knowing the data in those fields
+
+116
+00:05:30,495 --> 00:05:34,079
+But then you need to save it somewhere else because if you don't have it
+
+117
+00:05:34,335 --> 00:05:36,639
+Then you can't retrieve the data
+
+118
+00:05:36,895 --> 00:05:37,663
+And decrypt it
+
+119
+00:05:38,687 --> 00:05:39,199
+Ok
+
+120
+00:05:40,223 --> 00:05:42,015
+The next up his folder paths
+
+121
+00:05:42,527 --> 00:05:43,551
+.
+
+122
+00:05:43,807 --> 00:05:49,183
+There are two folder paths that you already can make use of the backup folder and the get folder path
+
+123
+00:05:49,439 --> 00:05:51,487
+Please read related
+
+124
+00:05:51,743 --> 00:05:53,791
+Notation here
+
+125
+00:05:54,303 --> 00:05:58,655
+Where is the custom folder path in the compiler folder path
+
+126
+00:05:58,911 --> 00:06:02,751
+I would suggest at this stage that you don't make any changes to them
+
+127
+00:06:03,519 --> 00:06:09,663
+I added these fields because I envisioned the possibility that we want to move these folders
+
+128
+00:06:09,919 --> 00:06:10,943
+Out of our
+
+129
+00:06:11,199 --> 00:06:11,967
+Web
+
+130
+00:06:12,223 --> 00:06:14,015
+Area of developing
+
+131
+00:06:14,271 --> 00:06:16,319
+Since these are part of the security
+
+132
+00:06:16,575 --> 00:06:17,855
+Concerns we have
+
+133
+00:06:18,111 --> 00:06:22,207
+That these files and his folders might be targeted
+
+134
+00:06:22,719 --> 00:06:27,583
+But I haven't fully implemented this all cross the compiler infrastructure
+
+135
+00:06:27,839 --> 00:06:31,679
+So currently it's best to leave that
+
+136
+00:06:32,959 --> 00:06:37,055
+folders the way they are by not adding any data in here
+
+137
+00:06:38,335 --> 00:06:42,175
+Sorry I clicked on the back button there anyway
+
+138
+00:06:42,431 --> 00:06:44,991
+Said by just leaving this fields blank
+
+139
+00:06:45,503 --> 00:06:46,527
+We ensure that
+
+140
+00:06:46,783 --> 00:06:47,551
+The
+
+141
+00:06:50,111 --> 00:06:52,159
+Next type we can look at the permissions
+
+142
+00:06:52,415 --> 00:06:55,487
+Now the permisional structure in component Builder
+
+143
+00:06:55,743 --> 00:06:58,303
+Is not that intense
+
+144
+00:06:58,815 --> 00:07:02,143
+But as you can see there are a lot of permission switches
+
+145
+00:07:02,911 --> 00:07:06,239
+With the latest Joomla release of Joomla 3.5
+
+146
+00:07:06,495 --> 00:07:12,127
+This permissional structure updating construct is made much easier
+
+147
+00:07:12,639 --> 00:07:13,407
+In the past
+
+148
+00:07:13,663 --> 00:07:14,943
+We had a problem
+
+149
+00:07:15,199 --> 00:07:18,015
+Were the data set of your permissions is so big
+
+150
+00:07:18,527 --> 00:07:24,671
+That when you save it it just freezes up your browser and even the server doesn't wanna receive the data set it's to big
+
+151
+00:07:26,719 --> 00:07:29,535
+Now they have added Ajax per field
+
+152
+00:07:30,303 --> 00:07:32,351
+Which makes this so much easier
+
+153
+00:07:32,607 --> 00:07:34,399
+That means that currently
+
+154
+00:07:34,911 --> 00:07:41,055
+Without clicking save and close You can make changes to the permissional structure and that
+
+155
+00:07:41,311 --> 00:07:43,103
+Immediately will be stored to the data base
+
+156
+00:07:43,615 --> 00:07:46,175
+That's from version 3.5 Joomla
+
+157
+00:07:46,687 --> 00:07:47,455
+Now
+
+158
+00:07:47,711 --> 00:07:53,087
+How would that be a see we still have these areas that we also want to store
+
+159
+00:07:53,599 --> 00:07:54,367
+So
+
+160
+00:07:54,623 --> 00:07:57,439
+What I have thought might work
+
+161
+00:07:58,719 --> 00:08:01,023
+Possibly my implementation isn't that accurate
+
+162
+00:08:01,791 --> 00:08:02,303
+But
+
+163
+00:08:03,071 --> 00:08:08,447
+You have here configurations only as a permission so I would say take a
+
+164
+00:08:08,703 --> 00:08:09,727
+Certain group
+
+165
+00:08:10,239 --> 00:08:13,311
+Give them that configuration only
+
+166
+00:08:13,823 --> 00:08:14,847
+Access
+
+167
+00:08:15,871 --> 00:08:16,895
+And then
+
+168
+00:08:17,151 --> 00:08:18,175
+Log out
+
+169
+00:08:19,199 --> 00:08:23,295
+Of this user login to a user that is in that group
+
+170
+00:08:23,807 --> 00:08:26,111
+Then this permissional or tab won't show
+
+171
+00:08:26,623 --> 00:08:28,927
+they will only see the settings
+
+172
+00:08:29,439 --> 00:08:31,743
+And which are in these tabs right
+
+173
+00:08:32,255 --> 00:08:36,351
+And so they can make changes to these and save them without any
+
+174
+00:08:36,607 --> 00:08:38,911
+Browser latency or
+
+175
+00:08:39,167 --> 00:08:40,191
+Overload
+
+176
+00:08:40,447 --> 00:08:46,591
+Where is you can come in and you can just tweak the permissions when you are in the global or super administrate
+
+177
+00:08:47,871 --> 00:08:51,199
+So you can come in here and you can tweak the permissions accordingly
+
+178
+00:08:51,711 --> 00:08:53,247
+So as you saw previously
+
+179
+00:08:53,503 --> 00:08:57,087
+What I was here the manager area I could just changed
+
+180
+00:08:57,599 --> 00:09:02,207
+Change this and it does a Ajax storing of the value in the database
+
+181
+00:09:02,719 --> 00:09:06,559
+Which is really smart I am very grateful that they've done that
+
+182
+00:09:07,071 --> 00:09:11,679
+Search for the main reason that this this set of the
+
+183
+00:09:11,935 --> 00:09:12,703
+Remissions
+
+184
+00:09:13,215 --> 00:09:14,751
+Became so huge
+
+185
+00:09:15,263 --> 00:09:21,407
+That I had in some places had to do server adjustments on some of my components
+
+186
+00:09:22,175 --> 00:09:27,039
+To to ensure that the user could still save and change the permissions
+
+187
+00:09:27,551 --> 00:09:28,319
+Now
+
+188
+00:09:28,575 --> 00:09:30,367
+So you have your
+
+189
+00:09:31,135 --> 00:09:35,487
+You're a global create delete edit edit State edit own
+
+190
+00:09:35,999 --> 00:09:39,327
+Edit created by and edit created date
+
+191
+00:09:39,839 --> 00:09:41,375
+And then you get
+
+192
+00:09:41,631 --> 00:09:42,655
+The per
+
+193
+00:09:42,911 --> 00:09:43,423
+View
+
+194
+00:09:43,679 --> 00:09:44,959
+permission structure
+
+195
+00:09:45,215 --> 00:09:49,311
+So here is the admin view then the custom admin view the dynamic get
+
+196
+00:09:49,823 --> 00:09:51,615
+And they all have their own
+
+197
+00:09:53,151 --> 00:09:56,479
+Different areas that you can change permissions
+
+198
+00:09:56,735 --> 00:09:59,295
+Four groups to be able to do this or that
+
+199
+00:10:01,343 --> 00:10:03,391
+The same permission implementation
+
+200
+00:10:03,647 --> 00:10:04,927
+Options and
+
+201
+00:10:05,439 --> 00:10:06,463
+Structures
+
+202
+00:10:06,719 --> 00:10:10,559
+Are available to all components built by component Builder
+
+203
+00:10:10,815 --> 00:10:14,143
+As you trip the switches for the fields as well as
+
+204
+00:10:14,655 --> 00:10:15,935
+For your
+
+205
+00:10:16,191 --> 00:10:16,703
+Certain
+
+206
+00:10:17,983 --> 00:10:19,263
+Views
+
+207
+00:10:19,519 --> 00:10:21,567
+Let me just go out of this to show you
+
+208
+00:10:22,335 --> 00:10:23,615
+Components
+
+209
+00:10:24,383 --> 00:10:26,431
+Then first be look at
+
+210
+00:10:27,711 --> 00:10:28,479
+components
+
+211
+00:10:30,527 --> 00:10:32,063
+Sermon distributor
+
+212
+00:10:34,879 --> 00:10:35,647
+here
+
+213
+00:10:37,183 --> 00:10:40,511
+In the admin views
+
+214
+00:10:41,023 --> 00:10:43,839
+You have here
+
+215
+00:10:54,335 --> 00:10:56,383
+This access control
+
+216
+00:10:56,639 --> 00:10:59,967
+But this is not the only place of implementation
+
+217
+00:11:05,599 --> 00:11:06,623
+save and close
+
+218
+00:11:10,719 --> 00:11:12,511
+If you go to the admin views
+
+219
+00:11:14,303 --> 00:11:16,095
+And let's say we open
+
+220
+00:11:23,519 --> 00:11:24,031
+Preacher
+
+221
+00:11:28,639 --> 00:11:30,943
+You have the permissional structure here
+
+222
+00:11:33,503 --> 00:11:34,015
+Edit
+
+223
+00:11:34,527 --> 00:11:38,367
+Now if select view is gonna use the view name if you select core
+
+224
+00:11:38,623 --> 00:11:41,183
+you will fall back on the core edit
+
+225
+00:11:41,695 --> 00:11:42,207
+And
+
+226
+00:11:42,463 --> 00:11:42,975
+Delete
+
+227
+00:11:43,231 --> 00:11:44,767
+Features corresponding
+
+228
+00:11:45,279 --> 00:11:47,327
+So if you use the word View
+
+229
+00:11:47,583 --> 00:11:48,351
+View dot edit
+
+230
+00:11:48,863 --> 00:11:51,167
+you will see in the permissional structure and edit
+
+231
+00:11:51,423 --> 00:11:54,495
+Switch with this views name preacher dot edit
+
+232
+00:11:55,263 --> 00:11:56,799
+Where as you use the word
+
+233
+00:11:57,055 --> 00:11:59,103
+Core dot edit that you would only see
+
+234
+00:11:59,615 --> 00:12:01,663
+Edit or delete or create whatever
+
+235
+00:12:02,687 --> 00:12:03,199
+Select
+
+236
+00:12:03,711 --> 00:12:08,319
+And this in relation to its record means that it will be added
+
+237
+00:12:08,831 --> 00:12:12,415
+To the record itself you can tweak the edit structure
+
+238
+00:12:12,927 --> 00:12:17,023
+This is only the global setting or this is for both
+
+239
+00:12:18,559 --> 00:12:22,911
+And so that is party how you control some of the permissional switches we just looked at
+
+240
+00:12:23,167 --> 00:12:25,215
+The other area is in fields itself
+
+241
+00:12:25,983 --> 00:12:29,823
+You have your a permissional structure
+
+242
+00:12:30,079 --> 00:12:33,663
+Where you can say ok this specific field let say the preacher name
+
+243
+00:12:33,919 --> 00:12:39,039
+I wanna control that permission who can edit it
+
+244
+00:12:39,295 --> 00:12:41,599
+Is what you would add
+
+245
+00:12:41,855 --> 00:12:42,879
+who Edit button
+
+246
+00:12:43,135 --> 00:12:46,463
+Currently we are not yet implementing who can View
+
+247
+00:12:47,231 --> 00:12:49,279
+Since we were having problems with
+
+248
+00:12:49,535 --> 00:12:50,815
+Tremendous overload of
+
+249
+00:12:51,071 --> 00:12:53,631
+Switches being added to the permissional structure
+
+250
+00:12:54,143 --> 00:12:57,983
+Joomla now made this change we might possibly add that in
+
+251
+00:12:58,495 --> 00:13:00,031
+Then you can't even have a
+
+252
+00:13:00,287 --> 00:13:02,079
+View who can view that
+
+253
+00:13:02,335 --> 00:13:03,359
+That field
+
+254
+00:13:04,127 --> 00:13:06,431
+Where is this is currently just who can edit it
+
+255
+00:13:08,735 --> 00:13:09,503
+Ok
+
+256
+00:13:10,527 --> 00:13:14,367
+So this is how you get a Fields permissional switch
+
+257
+00:13:14,623 --> 00:13:15,135
+Now
+
+258
+00:13:15,391 --> 00:13:17,951
+Let me give you this is an example
+
+259
+00:13:18,463 --> 00:13:19,999
+Let's make that one for now
+
+260
+00:13:22,047 --> 00:13:22,815
+Name
+
+261
+00:13:23,327 --> 00:13:24,607
+Say that it must be permission
+
+262
+00:13:25,119 --> 00:13:26,143
+Save and close
+
+263
+00:13:27,167 --> 00:13:28,191
+Save and close
+
+264
+00:13:29,471 --> 00:13:33,311
+Here I have sermon distributer open so I will open it's options
+
+265
+00:13:34,591 --> 00:13:36,383
+Go to his permissional tab
+
+266
+00:13:36,639 --> 00:13:38,175
+Then scroll down
+
+267
+00:13:38,431 --> 00:13:40,735
+And I see first here is the help documents
+
+268
+00:13:41,247 --> 00:13:42,271
+And here's preacher
+
+269
+00:13:43,295 --> 00:13:47,135
+And preacher has side access and an access to preacher itself
+
+270
+00:13:47,391 --> 00:13:49,183
+And batch create
+
+271
+00:13:49,439 --> 00:13:52,511
+Dashboard add dashboard list delete edit
+
+272
+00:13:53,279 --> 00:13:55,327
+edit created by edit created date
+
+273
+00:13:56,351 --> 00:13:59,167
+Edit own edit State edit version
+
+274
+00:13:59,423 --> 00:14:03,007
+Export import submenu and then it starts with series
+
+275
+00:14:03,263 --> 00:14:06,335
+So as you can see it doesn't show name here yet
+
+276
+00:14:06,591 --> 00:14:11,199
+So what we'll do is now will go back to component builder go to compiler
+
+277
+00:14:12,735 --> 00:14:17,087
+And we will select sermon distributor
+
+278
+00:14:17,343 --> 00:14:19,135
+And compile it
+
+279
+00:14:21,439 --> 00:14:25,023
+Wanted completed I'll just click on the install button here
+
+280
+00:14:25,279 --> 00:14:26,815
+To do a quick install
+
+281
+00:14:27,839 --> 00:14:32,447
+Now that that is completed let's go back to the configuration and just refresh
+
+282
+00:14:32,703 --> 00:14:35,519
+The page I'll just click on the refresh here at the top
+
+283
+00:14:36,543 --> 00:14:39,871
+Now if we scroll down again it we'll get here we said
+
+284
+00:14:40,127 --> 00:14:46,015
+See it got a new field here called preacher edit name and how I can decide
+
+285
+00:14:46,271 --> 00:14:51,647
+Can this group edit that name or is it denied or should it be inherited
+
+286
+00:14:51,903 --> 00:14:55,743
+So the permission or structure per field can be added in this way
+
+287
+00:14:56,255 --> 00:14:58,047
+I'm gonna go back and revert that
+
+288
+00:14:58,303 --> 00:15:00,095
+Because I actually don't want
+
+289
+00:15:00,351 --> 00:15:04,191
+I don't want that area to be monitored
+
+290
+00:15:04,703 --> 00:15:05,983
+So go back
+
+291
+00:15:07,263 --> 00:15:09,311
+Open preacher
+
+292
+00:15:09,567 --> 00:15:10,079
+Back to the
+
+293
+00:15:10,335 --> 00:15:11,871
+Fields
+
+294
+00:15:12,383 --> 00:15:13,151
+Say no
+
+295
+00:15:16,223 --> 00:15:19,295
+Close compiler
+
+296
+00:15:21,087 --> 00:15:23,647
+Select sermon distributer compiling it
+
+297
+00:15:24,415 --> 00:15:26,719
+Then installing it
+
+298
+00:15:28,511 --> 00:15:30,047
+Going back refresh
+
+299
+00:15:34,399 --> 00:15:36,959
+And we see that the field is gone
+
+300
+00:15:37,471 --> 00:15:40,799
+So it's no longer being controlled by this permission
+
+301
+00:15:41,311 --> 00:15:42,079
+Infrastructure
+
+302
+00:15:42,847 --> 00:15:45,919
+And so that is how you can
+
+303
+00:15:46,175 --> 00:15:47,199
+Tell which
+
+304
+00:15:47,967 --> 00:15:50,783
+Group is able to access which fields
+
+305
+00:15:51,039 --> 00:15:52,831
+And even a which
+
+306
+00:15:53,087 --> 00:15:54,879
+Views are accessible
+
+307
+00:15:55,391 --> 00:15:57,951
+Through the permissional of structures
+
+308
+00:15:58,207 --> 00:16:04,351
+This is an amazing advantage of component builder in its ability to integrate the
+
+309
+00:16:04,607 --> 00:16:06,143
+Permissions not only per view
+
+310
+00:16:06,399 --> 00:16:07,679
+But also
+
+311
+00:16:07,935 --> 00:16:08,447
+Per
+
+312
+00:16:08,703 --> 00:16:10,495
+Field in a view
+
+313
+00:16:10,751 --> 00:16:16,895
+And your normal control also related to a specific view and not only that it
+
+314
+00:16:17,151 --> 00:16:20,223
+Also adds these permissions to every item
+
+315
+00:16:20,991 --> 00:16:24,063
+So you could override an item
+
+316
+00:16:24,319 --> 00:16:29,183
+And say ok this item I don't want that group to actually access this field
+
+317
+00:16:29,951 --> 00:16:34,303
+And this is one of the advantages that component Builder
+
+318
+00:16:35,327 --> 00:16:37,119
+Has above other
+
+319
+00:16:38,911 --> 00:16:40,959
+Similar applications out there
+
+320
+00:16:41,471 --> 00:16:47,615
+It's it's ability to implement some of the most advanced concepts that are currently accessed
+
+321
+00:16:50,431 --> 00:16:52,991
+Ok so that's a quick look at the
+
+322
+00:16:53,503 --> 00:16:55,551
+Global configuration options
+
+323
+00:16:55,807 --> 00:16:57,087
+for component Builder
+
+324
+00:16:58,367 --> 00:16:59,135
+Thank you for watching
+

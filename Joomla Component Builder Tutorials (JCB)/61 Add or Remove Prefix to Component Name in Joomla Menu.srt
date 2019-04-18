@@ -1,0 +1,236 @@
+1
+00:00:01,536 --> 00:00:07,680
+I would like to demonstrate you the new feature of removing and adding a prefix to your
+
+2
+00:00:08,448 --> 00:00:11,776
+Component name in the Joomla menu
+
+3
+00:00:12,032 --> 00:00:14,592
+Take a look at the menu there's this little arrow
+
+4
+00:00:15,104 --> 00:00:17,152
+in front of Component Builder
+
+5
+00:00:17,408 --> 00:00:19,200
+And that's the prefix we talking about
+
+6
+00:00:19,712 --> 00:00:21,760
+in the past it would add that automatically
+
+7
+00:00:22,272 --> 00:00:26,368
+Now it will still do that but you can actually change it so
+
+8
+00:00:26,880 --> 00:00:29,440
+Go to the global options of a component
+
+9
+00:00:31,232 --> 00:00:33,280
+And under the global tab
+
+10
+00:00:34,816 --> 00:00:37,888
+You see a new area called Add Menu Prefix
+
+11
+00:00:38,912 --> 00:00:41,216
+And there's a little description there
+
+12
+00:00:41,472 --> 00:00:42,752
+And you can say no
+
+13
+00:00:43,264 --> 00:00:45,312
+And then it won't have any prefix
+
+14
+00:00:45,824 --> 00:00:47,616
+Or you can change this to any
+
+15
+00:00:48,128 --> 00:00:49,664
+Other prefix you want
+
+16
+00:00:50,176 --> 00:00:56,320
+Are there you don't need to add a space here and the space is automatically done so you can check out
+
+17
+00:00:56,576 --> 00:01:00,160
+This list here. There is a link to a list
+
+18
+00:01:00,416 --> 00:01:05,792
+of HTML character entities that you need to use here
+
+19
+00:01:06,304 --> 00:01:08,352
+This will obviously translate to that arrow
+
+20
+00:01:09,888 --> 00:01:10,400
+And
+
+21
+00:01:10,656 --> 00:01:16,800
+You need to make sure to use something that can be it just placed inside of an XML file
+
+22
+00:01:17,312 --> 00:01:18,592
+So
+
+23
+00:01:19,616 --> 00:01:23,712
+That means that if you wanna use strange characters like that arrow
+
+24
+00:01:23,968 --> 00:01:29,088
+You need to use the HTML you could also use your company name or
+
+25
+00:01:29,344 --> 00:01:33,184
+You can use anything it'll basically just add that
+
+26
+00:01:33,440 --> 00:01:36,000
+As a prefix to the component name
+
+27
+00:01:36,512 --> 00:01:38,560
+So just of illustrate this
+
+28
+00:01:38,816 --> 00:01:41,120
+Let me change this a little bit
+
+29
+00:01:41,888 --> 00:01:44,192
+So I am grabbing the the value here
+
+30
+00:01:44,448 --> 00:01:48,544
+The one without the x is the one we looking for so this the & hash
+
+31
+00:01:49,056 --> 00:01:50,336
+Value this one here
+
+32
+00:01:50,592 --> 00:01:54,944
+I'm gonna grab that little circle with a dot. Well let's take the one with the
+
+33
+00:01:55,200 --> 00:01:57,248
+Circle in a circle that looks nice
+
+34
+00:01:57,760 --> 00:01:59,552
+Ok I'm gonna take that one
+
+35
+00:02:00,064 --> 00:02:02,112
+I'm gonna add it in here
+
+36
+00:02:04,672 --> 00:02:06,976
+And I'm going to click save
+
+37
+00:02:08,768 --> 00:02:11,840
+Ok it's asking me to add some other info as well
+
+38
+00:02:13,632 --> 00:02:15,424
+Ok try again save and close
+
+39
+00:02:15,936 --> 00:02:17,728
+Now let's go and compile
+
+40
+00:02:18,240 --> 00:02:19,008
+one of the
+
+41
+00:02:19,264 --> 00:02:20,800
+demo components here
+
+42
+00:02:21,568 --> 00:02:22,848
+So you can say demo
+
+43
+00:02:23,616 --> 00:02:24,896
+And compile
+
+44
+00:02:27,712 --> 00:02:30,016
+And install it
+
+45
+00:02:31,040 --> 00:02:33,344
+Now you'll see it has this little circle
+
+46
+00:02:33,856 --> 00:02:35,392
+Next to the demo name
+
+47
+00:02:36,160 --> 00:02:37,696
+That's the way we can
+
+48
+00:02:37,952 --> 00:02:39,232
+Change that little
+
+49
+00:02:39,744 --> 00:02:40,768
+Prefix
+
+50
+00:02:41,024 --> 00:02:44,864
+And then obviously the option to just remove it altogether
+
+51
+00:02:45,376 --> 00:02:46,400
+It's also there
+
+52
+00:02:46,656 --> 00:02:47,424
+Basically
+
+53
+00:02:48,192 --> 00:02:52,544
+Saying no prefix save and close
+
+54
+00:02:53,824 --> 00:02:55,360
+And let's do it again
+
+55
+00:02:55,616 --> 00:02:56,384
+Compile and
+
+56
+00:02:56,896 --> 00:02:59,712
+install
+
+57
+00:03:00,992 --> 00:03:05,088
+And now you'll see it's just the way usual components will look there is the demo
+
+58
+00:03:06,112 --> 00:03:07,136
+So this little
+
+59
+00:03:07,648 --> 00:03:12,512
+Prefix can be added or removed now thanks to this new feature
+

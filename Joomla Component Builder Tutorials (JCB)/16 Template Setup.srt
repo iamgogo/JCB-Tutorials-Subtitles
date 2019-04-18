@@ -1,0 +1,404 @@
+1
+00:00:01,024 --> 00:00:04,096
+In the previous tutorial we where looking at setting up
+
+2
+00:00:04,352 --> 00:00:04,864
+Of
+
+3
+00:00:05,888 --> 00:00:06,912
+Templates and
+
+4
+00:00:07,424 --> 00:00:09,472
+Layout to a site View
+
+5
+00:00:10,496 --> 00:00:15,616
+Now inside of the side view we see that we are loading preacher panel
+
+6
+00:00:16,128 --> 00:00:17,152
+Preachersmall
+
+7
+00:00:17,408 --> 00:00:18,176
+Preacherbox
+
+8
+00:00:18,688 --> 00:00:19,200
+So
+
+9
+00:00:19,712 --> 00:00:22,784
+Let's go look at how to create those templates
+
+10
+00:00:23,552 --> 00:00:24,832
+I'll go to templates
+
+11
+00:00:27,392 --> 00:00:29,696
+And here they are already created
+
+12
+00:00:30,464 --> 00:00:33,024
+You can click on new to start with a new template
+
+13
+00:00:33,280 --> 00:00:35,072
+You could also copy an old one
+
+14
+00:00:35,584 --> 00:00:36,608
+By selecting
+
+15
+00:00:36,864 --> 00:00:38,144
+The template
+
+16
+00:00:39,168 --> 00:00:41,216
+you would like to copy click on batch
+
+17
+00:00:41,728 --> 00:00:43,776
+And then there is a copy feature here
+
+18
+00:00:44,544 --> 00:00:45,568
+And click process
+
+19
+00:00:46,336 --> 00:00:47,616
+And it'll copy it for you
+
+20
+00:00:48,896 --> 00:00:49,664
+Ok so
+
+21
+00:00:49,920 --> 00:00:50,688
+here I have
+
+22
+00:00:50,944 --> 00:00:52,480
+Preacher panel open
+
+23
+00:00:52,992 --> 00:00:59,136
+In Preacher panel it's the same concept it's an HTML area so if I wanna use PHP I need to go
+
+24
+00:00:59,392 --> 00:01:01,184
+Into the PHP
+
+25
+00:01:01,440 --> 00:01:02,976
+And then I can go out again
+
+26
+00:01:03,488 --> 00:01:07,072
+And I can also add this text placeholders
+
+27
+00:01:07,328 --> 00:01:08,864
+Which helps us to ensure
+
+28
+00:01:09,376 --> 00:01:10,400
+The text itself
+
+29
+00:01:10,912 --> 00:01:11,936
+Is translatable
+
+30
+00:01:12,704 --> 00:01:16,288
+You can just do your normal English text like that sermon count
+
+31
+00:01:16,544 --> 00:01:18,080
+Sermon total downloads
+
+32
+00:01:18,848 --> 00:01:19,872
+And
+
+33
+00:01:20,128 --> 00:01:23,968
+Component Builder will add these strings to the language file for you
+
+34
+00:01:24,736 --> 00:01:25,248
+And
+
+35
+00:01:25,504 --> 00:01:29,344
+You don't need to be concerned though at this stage only does
+
+36
+00:01:29,856 --> 00:01:30,368
+Your
+
+37
+00:01:31,136 --> 00:01:33,440
+British English language file
+
+38
+00:01:34,720 --> 00:01:35,232
+And
+
+39
+00:01:35,488 --> 00:01:37,536
+If you need to add more languages
+
+40
+00:01:38,048 --> 00:01:43,168
+You need to look up the documentation of adding languages to a third-party extension
+
+41
+00:01:44,192 --> 00:01:44,704
+And
+
+42
+00:01:45,216 --> 00:01:47,008
+do that same implementation
+
+43
+00:01:48,800 --> 00:01:52,128
+Ok so here we see that you can add layouts
+
+44
+00:01:52,640 --> 00:01:55,456
+To this template by using any of the Snippets
+
+45
+00:01:56,224 --> 00:01:58,272
+to this template 
+
+46
+00:01:58,528 --> 00:02:00,320
+
+
+47
+00:02:00,832 --> 00:02:03,648
+And you can add other templates to it
+
+48
+00:02:03,904 --> 00:02:06,464
+So you can use templates inside of templates
+
+49
+00:02:06,720 --> 00:02:12,608
+And you could have use layouts as well so more or less the same behaviour as in site view
+
+50
+00:02:13,376 --> 00:02:15,680
+You also have your snippet box here
+
+51
+00:02:15,936 --> 00:02:18,240
+Which you can make use of adding
+
+52
+00:02:18,496 --> 00:02:19,776
+Script quickly
+
+53
+00:02:20,032 --> 00:02:21,056
+To your page
+
+54
+00:02:21,312 --> 00:02:22,592
+Like that
+
+55
+00:02:23,872 --> 00:02:24,640
+Refresh
+
+56
+00:02:25,152 --> 00:02:29,248
+We see that that script that I just looked at here
+
+57
+00:02:30,784 --> 00:02:32,064
+In the preacher panel
+
+58
+00:02:33,088 --> 00:02:36,672
+If we go to the code preacher panel
+
+59
+00:02:36,928 --> 00:02:42,816
+it Is exactly the same script that you seeing here
+
+60
+00:02:43,072 --> 00:02:45,632
+Ok now
+
+61
+00:02:46,912 --> 00:02:49,472
+There are a few
+
+62
+00:02:49,728 --> 00:02:52,288
+exciting points here
+
+63
+00:02:53,312 --> 00:02:57,152
+One of them is a side note is that in your details tab
+
+64
+00:02:57,408 --> 00:02:58,944
+In the template area
+
+65
+00:02:59,200 --> 00:03:00,224
+You're at the bottom
+
+66
+00:03:00,736 --> 00:03:02,016
+You can add
+
+67
+00:03:02,272 --> 00:03:03,040
+JavaScript
+
+68
+00:03:03,296 --> 00:03:05,344
+With your normal script tags
+
+69
+00:03:07,648 --> 00:03:11,232
+So you can just add your JavaScript in there
+
+70
+00:03:11,488 --> 00:03:12,768
+And
+
+71
+00:03:13,024 --> 00:03:13,536
+It will work
+
+72
+00:03:13,792 --> 00:03:15,584
+And be loaded into the page
+
+73
+00:03:15,840 --> 00:03:17,120
+Through the small snippet
+
+74
+00:03:17,632 --> 00:03:19,680
+That's That's a nice
+
+75
+00:03:19,936 --> 00:03:21,216
+Thing to know
+
+76
+00:03:21,472 --> 00:03:23,520
+As well as
+
+77
+00:03:25,056 --> 00:03:27,616
+You are still have access as I said before
+
+78
+00:03:28,128 --> 00:03:29,664
+to all the global
+
+79
+00:03:29,920 --> 00:03:31,456
+This field values
+
+80
+00:03:31,712 --> 00:03:33,248
+Like you can see there
+
+81
+00:03:35,296 --> 00:03:36,576
+You can access those
+
+82
+00:03:38,112 --> 00:03:38,880
+quite easily 
+
+83
+00:03:39,648 --> 00:03:43,744
+And that is basically how to set up a template
+
+84
+00:03:44,000 --> 00:03:47,840
+Is the same kind of conventions as setting up a site View
+
+85
+00:03:48,096 --> 00:03:52,192
+Except that this is not the main view it is a template used
+
+86
+00:03:52,448 --> 00:03:55,520
+Somewhere in a main view through
+
+87
+00:03:55,776 --> 00:03:57,568
+Adding this code snippet
+
+88
+00:03:57,824 --> 00:04:00,640
+With Joomla class get
+
+89
+00:04:00,896 --> 00:04:01,408
+template
+
+90
+00:04:01,664 --> 00:04:02,176
+Method
+
+91
+00:04:02,432 --> 00:04:03,456
+And
+
+92
+00:04:03,712 --> 00:04:04,480
+Then
+
+93
+00:04:05,760 --> 00:04:06,784
+Basically this
+
+94
+00:04:10,368 --> 00:04:12,416
+Load template
+
+95
+00:04:12,672 --> 00:04:13,696
+Is the method
+
+96
+00:04:14,464 --> 00:04:16,256
+That is being used with that name
+
+97
+00:04:16,512 --> 00:04:18,047
+And then it adds it
+
+98
+00:04:18,303 --> 00:04:22,399
+Do your component site view as well as
+
+99
+00:04:22,655 --> 00:04:23,935
+Adds the code to it and everything else
+
+100
+00:04:25,727 --> 00:04:29,055
+So that is a template next up let's look at a layout
+
+101
+00:04:29,567 --> 00:04:31,615
+And it really get excited there
+

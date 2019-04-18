@@ -1,0 +1,1736 @@
+﻿1
+00:00:01,024 --> 00:00:01,536
+Hi
+
+2
+00:00:02,304 --> 00:00:03,328
+I've got Joomla
+
+3
+00:00:05,120 --> 00:00:06,400
+Installed here with
+
+4
+00:00:06,656 --> 00:00:07,424
+JCB
+
+5
+00:00:07,680 --> 00:00:09,216
+Joomla component Builder
+
+6
+00:00:09,472 --> 00:00:11,520
+2.5.6
+
+7
+00:00:12,288 --> 00:00:14,848
+I've got quite a lot of components
+
+8
+00:00:15,616 --> 00:00:16,384
+That I have
+
+9
+00:00:16,640 --> 00:00:17,408
+Imported
+
+10
+00:00:18,176 --> 00:00:19,968
+From another day JCB
+
+11
+00:00:20,224 --> 00:00:21,504
+And
+
+12
+00:00:22,016 --> 00:00:24,576
+Basically all of it is working
+
+13
+00:00:25,088 --> 00:00:26,880
+If we were to look
+
+14
+00:00:27,648 --> 00:00:28,672
+Inside of them
+
+15
+00:00:29,184 --> 00:00:31,744
+It really looks the way that it should
+
+16
+00:00:32,256 --> 00:00:33,536
+And it's expected
+
+17
+00:00:34,560 --> 00:00:35,072
+Now
+
+18
+00:00:35,840 --> 00:00:37,120
+Joomla has
+
+19
+00:00:37,888 --> 00:00:38,656
+Conveniently
+
+20
+00:00:38,912 --> 00:00:40,192
+Decided to
+
+21
+00:00:40,704 --> 00:00:42,752
+Get rid of this repeatable
+
+22
+00:00:43,008 --> 00:00:43,520
+Field
+
+23
+00:00:45,568 --> 00:00:47,616
+Which pops up into a little
+
+24
+00:00:48,128 --> 00:00:48,896
+Model
+
+25
+00:00:49,664 --> 00:00:50,176
+And
+
+26
+00:00:50,432 --> 00:00:54,272
+So we have systemically been removing this field
+
+27
+00:00:54,784 --> 00:00:56,320
+From JCB
+
+28
+00:00:58,624 --> 00:00:59,648
+Just to show you
+
+29
+00:01:00,160 --> 00:01:01,440
+We've already done that
+
+30
+00:01:01,696 --> 00:01:04,256
+in other areas of JCB
+
+31
+00:01:06,560 --> 00:01:08,096
+Like in the language area
+
+32
+00:01:08,864 --> 00:01:09,632
+If we would to
+
+33
+00:01:10,144 --> 00:01:10,656
+Open
+
+34
+00:01:11,424 --> 00:01:12,448
+Any of these
+
+35
+00:01:13,216 --> 00:01:14,496
+Language strings
+
+36
+00:01:16,032 --> 00:01:18,848
+You see that we already have the repeatable field
+
+37
+00:01:19,616 --> 00:01:20,640
+Set up here
+
+38
+00:01:21,408 --> 00:01:21,920
+Now
+
+39
+00:01:22,176 --> 00:01:24,992
+This would have been a simple as changing the field type
+
+40
+00:01:25,760 --> 00:01:27,552
+Within JCB to achieve
+
+41
+00:01:28,064 --> 00:01:28,576
+Only
+
+42
+00:01:28,832 --> 00:01:30,880
+Reality is that the compiler
+
+43
+00:01:31,392 --> 00:01:36,000
+As well as one other feature which is the Joomla components
+
+44
+00:01:36,256 --> 00:01:39,840
+Can be exported in JCB packages and imported
+
+45
+00:01:40,352 --> 00:01:41,120
+And so
+
+46
+00:01:42,144 --> 00:01:46,240
+These features are mapping into these component concepts
+
+47
+00:01:46,752 --> 00:01:47,776
+You know the
+
+48
+00:01:48,032 --> 00:01:51,104
+Field structures really how data stored
+
+49
+00:01:51,360 --> 00:01:52,384
+In a json
+
+50
+00:01:52,896 --> 00:01:54,432
+By the repeatable fields
+
+51
+00:01:54,688 --> 00:01:58,272
+Are different from how it's being stored in the subform fields
+
+52
+00:01:59,296 --> 00:02:02,368
+Are gonna go into explaining what the difference is
+
+53
+00:02:02,624 --> 00:02:03,648
+There is actually
+
+54
+00:02:04,160 --> 00:02:06,976
+Few tickets been open on GitHub about this
+
+55
+00:02:07,488 --> 00:02:09,280
+And so
+
+56
+00:02:09,536 --> 00:02:10,048
+We have
+
+57
+00:02:10,304 --> 00:02:13,632
+Taken on the task of just Sporting all of this
+
+58
+00:02:13,888 --> 00:02:19,520
+With this next release which is JCB 2.5.8
+
+59
+00:02:20,288 --> 00:02:22,848
+The whole admin View area
+
+60
+00:02:23,104 --> 00:02:27,712
+Will now be moved over to this new form
+
+61
+00:02:27,968 --> 00:02:28,992
+Subform layout
+
+62
+00:02:29,760 --> 00:02:32,832
+So if I was to open an admin View now
+
+63
+00:02:33,600 --> 00:02:35,392
+It basically has
+
+64
+00:02:35,648 --> 00:02:36,160
+The old
+
+65
+00:02:36,672 --> 00:02:38,208
+Repeatable field concept
+
+66
+00:02:38,976 --> 00:02:42,560
+As you would have learned with all the tutorials we've done
+
+67
+00:02:43,072 --> 00:02:46,400
+So your permissions is one of those taps the fields
+
+68
+00:02:46,912 --> 00:02:48,960
+The conditions the linked fields
+
+69
+00:02:49,472 --> 00:02:54,080
+And then you have a list of the fields that are linked to the admin View
+
+70
+00:02:54,848 --> 00:02:58,176
+And you've got some custom buttons you could
+
+71
+00:02:58,688 --> 00:03:00,224
+Setup and it's also
+
+72
+00:03:00,736 --> 00:03:01,248
+A
+
+73
+00:03:01,760 --> 00:03:03,552
+Repeatable field
+
+74
+00:03:04,064 --> 00:03:07,136
+As well as linking a sequel
+
+75
+00:03:07,648 --> 00:03:10,976
+Clicking on table this is also repeatable field
+
+76
+00:03:11,744 --> 00:03:13,024
+In a model
+
+77
+00:03:13,280 --> 00:03:17,888
+So all of these different fields are now gonna be moved to subfields
+
+78
+00:03:18,400 --> 00:03:22,752
+Because of space and statistics
+
+79
+00:03:23,008 --> 00:03:23,776
+We will
+
+80
+00:03:24,032 --> 00:03:26,336
+Move some of these Fields into taps
+
+81
+00:03:26,592 --> 00:03:31,712
+I will try and do it in a way that seems obvious and that he wouldn't feel lost
+
+82
+00:03:31,968 --> 00:03:33,760
+So just up front
+
+83
+00:03:34,016 --> 00:03:36,064
+The fields
+
+84
+00:03:36,576 --> 00:03:37,856
+This Fields button
+
+85
+00:03:38,112 --> 00:03:40,416
+Are going to be moved
+
+86
+00:03:41,184 --> 00:03:43,232
+To the fields tab
+
+87
+00:03:45,280 --> 00:03:46,560
+And so does
+
+88
+00:03:46,816 --> 00:03:49,120
+The conditions move there
+
+89
+00:03:49,888 --> 00:03:55,776
+There will be in new tab called settings so basically this tab will stay there
+
+90
+00:03:57,056 --> 00:04:00,384
+And will call that details and a new tab with settings
+
+91
+00:04:00,640 --> 00:04:03,200
+And the rest of the repeatable fields that are remaining
+
+92
+00:04:03,456 --> 00:04:05,760
+On this side will be placed there
+
+93
+00:04:06,272 --> 00:04:09,344
+Ok so that's just a heads up on what's gonna happen
+
+94
+00:04:10,880 --> 00:04:14,720
+But this is gonna happen really without you doing much
+
+95
+00:04:15,488 --> 00:04:18,047
+Basically all you need to do is upgrade
+
+96
+00:04:18,815 --> 00:04:19,327
+And
+
+97
+00:04:19,583 --> 00:04:21,887
+We have added a number of scripts
+
+98
+00:04:22,143 --> 00:04:23,935
+That you can actually go and look at
+
+99
+00:04:24,447 --> 00:04:26,239
+On GitHub if you like
+
+100
+00:04:27,775 --> 00:04:29,311
+As I'm doing this recording
+
+101
+00:04:31,103 --> 00:04:32,895
+The staging branch
+
+102
+00:04:33,151 --> 00:04:35,455
+Is where you will see these changes
+
+103
+00:04:35,967 --> 00:04:36,735
+So
+
+104
+00:04:36,991 --> 00:04:39,551
+Basically if we would to go to the script
+
+105
+00:04:40,319 --> 00:04:42,367
+This is the script that will
+
+106
+00:04:42,623 --> 00:04:43,391
+Convert
+
+107
+00:04:43,903 --> 00:04:47,231
+The Fields and all the tables and everything
+
+108
+00:04:47,487 --> 00:04:49,535
+So let me just go down to that area
+
+109
+00:04:50,559 --> 00:04:52,351
+So here we have a function
+
+110
+00:04:52,863 --> 00:04:55,167
+Inside of a method
+
+111
+00:04:56,447 --> 00:04:57,983
+More like an anonymous function
+
+112
+00:04:58,495 --> 00:04:59,263
+And
+
+113
+00:05:00,287 --> 00:05:03,615
+Basically this is what converts the repeatable fields
+
+114
+00:05:04,127 --> 00:05:06,431
+So I'll be using this function over and over
+
+115
+00:05:06,943 --> 00:05:08,479
+As you can see we've done
+
+116
+00:05:08,735 --> 00:05:12,575
+It with a upgrade to version 2.5.5
+
+117
+00:05:13,343 --> 00:05:13,855
+And
+
+118
+00:05:14,111 --> 00:05:20,255
+Then there is another upgrade 2.7 which was not really released because having made this
+
+119
+00:05:20,511 --> 00:05:21,279
+This change
+
+120
+00:05:21,535 --> 00:05:24,863
+We still need to to convert the repeatable fields
+
+121
+00:05:25,375 --> 00:05:29,471
+And that will continue to run until 2.5.9
+
+122
+00:05:29,727 --> 00:05:30,751
+Now
+
+123
+00:05:31,263 --> 00:05:32,543
+The way it does this
+
+124
+00:05:33,055 --> 00:05:34,079
+Is it really
+
+125
+00:05:34,335 --> 00:05:35,359
+Targets
+
+126
+00:05:35,615 --> 00:05:36,639
+The various
+
+127
+00:05:40,479 --> 00:05:41,247
+Up here
+
+128
+00:05:41,759 --> 00:05:47,135
+There's to convert repeatable function it Target all these fields
+
+129
+00:05:47,647 --> 00:05:48,415
+as you can see
+
+130
+00:05:48,927 --> 00:05:50,463
+Inside the admin View
+
+131
+00:05:51,487 --> 00:05:53,791
+And it passes it over to this
+
+132
+00:05:54,047 --> 00:05:55,583
+Convert repeatable
+
+133
+00:05:56,351 --> 00:06:00,191
+Which is really going to do the work and this function
+
+134
+00:06:00,703 --> 00:06:02,751
+Like I said you can look at it
+
+135
+00:06:03,263 --> 00:06:04,031
+Over here
+
+136
+00:06:04,799 --> 00:06:07,103
+If you are uncertain of doing this
+
+137
+00:06:07,359 --> 00:06:09,407
+You can come and look at this function here
+
+138
+00:06:10,175 --> 00:06:11,199
+And
+
+139
+00:06:11,711 --> 00:06:15,807
+I will now also demonstrate that it actually does work well
+
+140
+00:06:16,063 --> 00:06:19,135
+The only thing that I have actually noticed
+
+141
+00:06:19,391 --> 00:06:22,463
+It's like with this website that we are working on here
+
+142
+00:06:22,975 --> 00:06:26,303
+We talking about thousands of values
+
+143
+00:06:26,559 --> 00:06:27,071
+Well
+
+144
+00:06:27,327 --> 00:06:28,607
+Even more than thousands
+
+145
+00:06:29,119 --> 00:06:30,143
+And
+
+146
+00:06:30,399 --> 00:06:31,935
+I have found that
+
+147
+00:06:32,191 --> 00:06:35,775
+It sometimes does not convert every single value
+
+148
+00:06:36,287 --> 00:06:38,079
+And so because of that
+
+149
+00:06:38,591 --> 00:06:41,919
+We actually did another fix
+
+150
+00:06:42,687 --> 00:06:43,199
+Which
+
+151
+00:06:43,455 --> 00:06:48,063
+Goes beyond and ensures that this upgrade will not cause any
+
+152
+00:06:48,575 --> 00:06:50,111
+Internal conflicts
+
+153
+00:06:50,367 --> 00:06:52,159
+And that is within the
+
+154
+00:06:52,671 --> 00:06:53,439
+Backend
+
+155
+00:06:54,975 --> 00:06:56,767
+And within the model
+
+156
+00:06:58,559 --> 00:07:02,143
+There are a few places where these New fields will now exist
+
+157
+00:07:02,911 --> 00:07:04,703
+One of them is conditions
+
+158
+00:07:04,959 --> 00:07:09,311
+Field conditions and the other one is admin Fields so I'll open that one
+
+159
+00:07:10,079 --> 00:07:11,103
+Open this one
+
+160
+00:07:11,615 --> 00:07:12,639
+And obviously
+
+161
+00:07:13,151 --> 00:07:13,919
+in a
+
+162
+00:07:14,175 --> 00:07:14,687
+Oh not
+
+163
+00:07:15,199 --> 00:07:15,967
+Not that one
+
+164
+00:07:17,247 --> 00:07:18,527
+It's this admin View
+
+165
+00:07:19,551 --> 00:07:24,159
+These are the models in which these field changes will take place
+
+166
+00:07:24,415 --> 00:07:26,975
+And you'll see that within the
+
+167
+00:07:27,487 --> 00:07:28,767
+Get item
+
+168
+00:07:29,023 --> 00:07:31,071
+Method at the very end
+
+169
+00:07:31,583 --> 00:07:32,607
+Of this method
+
+170
+00:07:33,887 --> 00:07:35,167
+In the admin View
+
+171
+00:07:35,935 --> 00:07:37,215
+We added a function
+
+172
+00:07:37,983 --> 00:07:40,031
+Which would basically check
+
+173
+00:07:40,543 --> 00:07:41,567
+If this
+
+174
+00:07:41,823 --> 00:07:44,895
+These Fields were updated during the upgrade
+
+175
+00:07:45,407 --> 00:07:47,199
+And if it were not updated
+
+176
+00:07:47,455 --> 00:07:52,063
+That is while the field is busy loading and you're opening the page
+
+177
+00:07:52,575 --> 00:07:54,367
+It'll check whether it's been updated
+
+178
+00:07:54,623 --> 00:07:56,927
+If it's not updated it will actually make
+
+179
+00:07:57,439 --> 00:07:58,463
+Do the update
+
+180
+00:07:58,975 --> 00:08:01,279
+And add it to the update object
+
+181
+00:08:02,047 --> 00:08:04,095
+And then basically check every field
+
+182
+00:08:04,863 --> 00:08:05,887
+All the way down
+
+183
+00:08:06,143 --> 00:08:07,167
+Till here
+
+184
+00:08:07,423 --> 00:08:10,495
+And then if it sees that there is been any one of those fields
+
+185
+00:08:11,007 --> 00:08:12,031
+Found to be
+
+186
+00:08:12,543 --> 00:08:14,079
+You know ready to update
+
+187
+00:08:14,591 --> 00:08:15,871
+Then we will run the update
+
+188
+00:08:16,127 --> 00:08:17,919
+And after that it will never
+
+189
+00:08:18,431 --> 00:08:19,199
+Do it again
+
+190
+00:08:19,711 --> 00:08:21,247
+Because you see the way the
+
+191
+00:08:22,015 --> 00:08:24,575
+A the array is constructed
+
+192
+00:08:24,831 --> 00:08:25,599
+This
+
+193
+00:08:25,855 --> 00:08:30,207
+Will no longer exist once it's been moved to a subform
+
+194
+00:08:34,303 --> 00:08:35,327
+Storage
+
+195
+00:08:35,583 --> 00:08:37,631
+The subform array structure is different
+
+196
+00:08:38,399 --> 00:08:38,911
+So
+
+197
+00:08:39,167 --> 00:08:45,311
+Once you open any of the items it will automatically convert it and make sure that it's 
+
+198
+00:08:45,567 --> 00:08:46,079
+Converted
+
+199
+00:08:46,335 --> 00:08:48,127
+The other thing that we've done
+
+200
+00:08:48,895 --> 00:08:53,503
+Because you most probably will not all open every view or every
+
+201
+00:08:53,759 --> 00:08:55,039
+Admin View
+
+202
+00:08:55,295 --> 00:08:55,807
+Is
+
+203
+00:08:56,063 --> 00:08:59,647
+Even when the new admins Fields we've done the same
+
+204
+00:08:59,903 --> 00:09:01,183
+So you can see here
+
+205
+00:09:01,695 --> 00:09:05,535
+In the Admin Fields we are also making sure that that update is there
+
+206
+00:09:05,791 --> 00:09:08,351
+And the same with the Admin field conditions
+
+207
+00:09:09,631 --> 00:09:10,911
+It's also there
+
+208
+00:09:11,423 --> 00:09:15,007
+But then there is one more place where we also add these
+
+209
+00:09:15,263 --> 00:09:17,567
+Checks and that's actually in the compiler
+
+210
+00:09:17,823 --> 00:09:23,455
+So even if you didn't go and open any of these views and you just went straight to the compiler
+
+211
+00:09:23,967 --> 00:09:26,527
+And try to compile any of your components
+
+212
+00:09:26,783 --> 00:09:29,855
+The compiler obviously now been adapted
+
+213
+00:09:30,623 --> 00:09:31,647
+to instead
+
+214
+00:09:31,903 --> 00:09:32,927
+Actually
+
+215
+00:09:33,183 --> 00:09:35,487
+Use the new subform structure
+
+216
+00:09:35,999 --> 00:09:37,791
+Within it's compilation
+
+217
+00:09:38,047 --> 00:09:43,679
+To within the get file where most of these subforms are now needed
+
+218
+00:09:44,191 --> 00:09:44,959
+We have
+
+219
+00:09:45,471 --> 00:09:47,263
+In the get admin
+
+220
+00:09:47,519 --> 00:09:49,311
+Function let me just get there
+
+221
+00:09:50,591 --> 00:09:52,639
+So here is the get admin View
+
+222
+00:09:53,407 --> 00:09:55,455
+Method of function class method
+
+223
+00:09:55,711 --> 00:09:58,015
+And you see we are checking
+
+224
+00:09:58,527 --> 00:10:01,855
+Whether it's still in a repeatable field
+
+225
+00:10:02,111 --> 00:10:03,135
+And if it is
+
+226
+00:10:03,391 --> 00:10:04,415
+We convert it
+
+227
+00:10:04,671 --> 00:10:08,255
+And we again store it to the update object
+
+228
+00:10:08,767 --> 00:10:09,279
+That
+
+229
+00:10:09,791 --> 00:10:13,119
+While it's getting this one Admin view at the very end
+
+230
+00:10:13,631 --> 00:10:15,167
+So every where it's doing it check
+
+231
+00:10:15,679 --> 00:10:19,263
+If it's not being converted converts it's sets it back to the data set
+
+232
+00:10:19,775 --> 00:10:23,359
+And also to ensure that we store it back into the database
+
+233
+00:10:23,615 --> 00:10:24,639
+Little String
+
+234
+00:10:25,151 --> 00:10:26,687
+And So It Goes On
+
+235
+00:10:27,199 --> 00:10:28,479
+Doing it everywhere
+
+236
+00:10:28,735 --> 00:10:29,759
+Where we
+
+237
+00:10:30,015 --> 00:10:31,039
+You know expect
+
+238
+00:10:31,295 --> 00:10:33,855
+To find values that still
+
+239
+00:10:34,111 --> 00:10:35,391
+You know me I've been missed
+
+240
+00:10:35,903 --> 00:10:38,719
+And then here it very end of this function
+
+241
+00:10:38,975 --> 00:10:39,743
+Which is a little
+
+242
+00:10:39,999 --> 00:10:40,767
+big I supposed
+
+243
+00:10:43,071 --> 00:10:46,399
+If we found that there are any updates we run the update
+
+244
+00:10:46,655 --> 00:10:52,799
+And after that that view is been updated and it will never need to be updated again so these are the
+
+245
+00:10:53,055 --> 00:10:53,567
+Kind of
+
+246
+00:10:55,103 --> 00:10:56,383
+Switches
+
+247
+00:10:56,639 --> 00:10:57,407
+How can I put it
+
+248
+00:10:58,687 --> 00:10:59,967
+Fixes really
+
+249
+00:11:00,223 --> 00:11:06,367
+That we put in place when you already have a JCB with horrendous amount of
+
+250
+00:11:06,623 --> 00:11:11,487
+Data and it is just too big to do just with the normal install
+
+251
+00:11:11,999 --> 00:11:14,815
+Then all these admin views will
+
+252
+00:11:15,583 --> 00:11:16,095
+Be
+
+253
+00:11:17,119 --> 00:11:18,911
+Updated and adapted
+
+254
+00:11:19,423 --> 00:11:21,471
+As you start using JCB
+
+255
+00:11:21,983 --> 00:11:26,079
+And you should not really anywhere at any time experience
+
+256
+00:11:26,335 --> 00:11:27,615
+Any conflicts
+
+257
+00:11:27,871 --> 00:11:31,711
+In fact if you do the reason for me making this tutorial
+
+258
+00:11:31,967 --> 00:11:34,015
+Is it you can actually get into the code
+
+259
+00:11:34,527 --> 00:11:36,063
+And that you can
+
+260
+00:11:36,319 --> 00:11:36,831
+You know
+
+261
+00:11:37,087 --> 00:11:38,623
+Open an issue on GitHub
+
+262
+00:11:39,135 --> 00:11:40,927
+And give me heads up so I can
+
+263
+00:11:41,183 --> 00:11:42,975
+You know Patch whatever you find
+
+264
+00:11:43,487 --> 00:11:45,791
+And push it out the rest the community
+
+265
+00:11:46,303 --> 00:11:50,143
+Ok so that was just a code side of things now getting back to
+
+266
+00:11:50,655 --> 00:11:52,191
+to our install here
+
+267
+00:11:53,471 --> 00:11:55,263
+I think what I'll do is I'll
+
+268
+00:11:55,519 --> 00:11:56,543
+just open
+
+269
+00:11:58,079 --> 00:12:00,127
+Maybe this Admin view
+
+270
+00:12:01,407 --> 00:12:02,431
+And then
+
+271
+00:12:02,687 --> 00:12:03,711
+I'm gonna go
+
+272
+00:12:03,967 --> 00:12:04,735
+And
+
+273
+00:12:04,991 --> 00:12:06,015
+Basically
+
+274
+00:12:06,527 --> 00:12:07,551
+Install
+
+275
+00:12:08,063 --> 00:12:08,831
+The
+
+276
+00:12:09,343 --> 00:12:10,111
+The upgrade
+
+277
+00:12:11,903 --> 00:12:15,231
+I'm just gonna selected it's not been released yet
+
+278
+00:12:15,743 --> 00:12:17,791
+So this is a pre-demostration
+
+279
+00:12:19,327 --> 00:12:21,375
+Just to ensure everything works
+
+280
+00:12:21,631 --> 00:12:23,679
+So if it doesn't you even see that
+
+281
+00:12:23,935 --> 00:12:27,519
+So let's just select this file from my computer
+
+282
+00:12:31,871 --> 00:12:34,431
+Ok there it goes busy installing it
+
+283
+00:12:35,711 --> 00:12:38,271
+It should take a while it's quite a big dataset
+
+284
+00:12:38,783 --> 00:12:40,319
+And you can just wait it out
+
+285
+00:12:41,087 --> 00:12:44,671
+I'd wouldn't shout at you if it missed certain values
+
+286
+00:12:44,927 --> 00:12:46,975
+I don't know why doesn't but
+
+287
+00:12:47,231 --> 00:12:47,999
+there it goes
+
+288
+00:12:48,255 --> 00:12:49,791
+Your upgrade is been successful
+
+289
+00:12:50,047 --> 00:12:54,399
+And you are now on version 2.5.8
+
+290
+00:12:55,423 --> 00:12:57,727
+And if we were to open that Admin view
+
+291
+00:12:57,983 --> 00:12:58,495
+Which
+
+292
+00:12:58,751 --> 00:12:59,519
+Basically looked
+
+293
+00:12:59,775 --> 00:13:00,543
+Like this
+
+294
+00:13:01,311 --> 00:13:03,359
+And now just refresh it
+
+295
+00:13:05,151 --> 00:13:06,687
+It should now look like that
+
+296
+00:13:07,711 --> 00:13:09,503
+So you see it's moved
+
+297
+00:13:09,759 --> 00:13:11,295
+These Fields to the side
+
+298
+00:13:11,551 --> 00:13:13,599
+There's now a settings field
+
+299
+00:13:14,111 --> 00:13:19,231
+And as you can see all the data is just been updated and moved to subform
+
+300
+00:13:19,487 --> 00:13:20,511
+ values
+
+301
+00:13:21,023 --> 00:13:22,815
+Same with the taps
+
+302
+00:13:23,327 --> 00:13:25,887
+And if we go to field and conditions
+
+303
+00:13:26,143 --> 00:13:26,911
+There we go
+
+304
+00:13:27,167 --> 00:13:29,983
+That's how the new field and conditions view looks like
+
+305
+00:13:31,263 --> 00:13:31,775
+Now
+
+306
+00:13:32,031 --> 00:13:37,919
+Because of many reasons we couldn't keep the subform fields within the admin View
+
+307
+00:13:38,431 --> 00:13:39,455
+Especially when you
+
+308
+00:13:39,711 --> 00:13:40,479
+Start having
+
+309
+00:13:40,735 --> 00:13:41,503
+More than 
+
+310
+00:13:42,783 --> 00:13:48,927
+50 admin Fields which in my case I have quite a few of those it's not advisable
+
+311
+00:13:49,183 --> 00:13:52,255
+Because it actually causes the tremendous
+
+312
+00:13:52,511 --> 00:13:58,655
+Slow down on page load I mean imagine each of these lines are actually 1 2 3 4 
+
+313
+00:13:58,911 --> 00:13:59,935
+5 6 7
+
+314
+00:14:00,191 --> 00:14:03,263
+8 9 10 11 12 13 fields
+
+315
+00:14:04,031 --> 00:14:07,103
+And if you start having a huge a lot of those fields
+
+316
+00:14:07,359 --> 00:14:09,151
+Which you could have up to 800
+
+317
+00:14:09,407 --> 00:14:14,783
+By the limit we've set it really takes a long time to load that into the page
+
+318
+00:14:15,039 --> 00:14:15,551
+Ok
+
+319
+00:14:15,807 --> 00:14:18,367
+Enough about that how does it work now
+
+320
+00:14:18,623 --> 00:14:21,695
+Well you could either click on this edit button here
+
+321
+00:14:22,207 --> 00:14:27,583
+Or this edit button here to actually go and edit these and change their values
+
+322
+00:14:27,839 --> 00:14:31,679
+If you would like to just edit one specific field
+
+323
+00:14:32,191 --> 00:14:34,751
+You could click on any of these
+
+324
+00:14:35,007 --> 00:14:36,543
+you know pencil editing
+
+325
+00:14:37,055 --> 00:14:38,079
+Links
+
+326
+00:14:38,591 --> 00:14:40,895
+So for example if I click on name
+
+327
+00:14:41,407 --> 00:14:46,015
+It will ask me whether I've saved all my values in this current View
+
+328
+00:14:46,271 --> 00:14:48,063
+And yes I just click ok
+
+329
+00:14:48,575 --> 00:14:50,879
+And it will now open the name field
+
+330
+00:14:51,135 --> 00:14:54,207
+And I can now come in here do any edits that I'd like
+
+331
+00:14:54,719 --> 00:15:00,095
+And then save and close or just close out again if you wanna only wanna get some information
+
+332
+00:15:00,863 --> 00:15:01,631
+Now
+
+333
+00:15:01,887 --> 00:15:02,911
+Back into
+
+334
+00:15:03,167 --> 00:15:03,935
+This area
+
+335
+00:15:04,447 --> 00:15:09,311
+The same goes with the custom Fields I could click on any of those to edit them
+
+336
+00:15:09,567 --> 00:15:12,127
+Or I could click on this edit here
+
+337
+00:15:12,639 --> 00:15:13,151
+And it will
+
+338
+00:15:13,407 --> 00:15:15,455
+again ask me if I saved all my work
+
+339
+00:15:15,711 --> 00:15:17,503
+And then if I did
+
+340
+00:15:17,759 --> 00:15:18,783
+click ok
+
+341
+00:15:19,039 --> 00:15:20,063
+And opens
+
+342
+00:15:20,319 --> 00:15:22,623
+Those values right here
+
+343
+00:15:23,135 --> 00:15:27,487
+A nice new tweak with added is that it only loads the fields
+
+344
+00:15:27,743 --> 00:15:30,047
+That are actually linked to this Admin view
+
+345
+00:15:30,559 --> 00:15:32,095
+So that you can only Target
+
+346
+00:15:32,351 --> 00:15:33,887
+The specific fields
+
+347
+00:15:34,143 --> 00:15:35,679
+Which really makes sense
+
+348
+00:15:36,191 --> 00:15:36,959
+That
+
+349
+00:15:37,215 --> 00:15:39,775
+Those are the fields that needs to be targeted
+
+350
+00:15:40,287 --> 00:15:41,823
+With this conditional option
+
+351
+00:15:42,591 --> 00:15:46,431
+Then you could also create a field but creating a field will not
+
+352
+00:15:46,687 --> 00:15:49,759
+Necessarily add it to the admin View
+
+353
+00:15:50,015 --> 00:15:52,319
+It will just make it available to you
+
+354
+00:15:52,575 --> 00:15:53,855
+If you were to have
+
+355
+00:15:54,111 --> 00:15:55,135
+You know add it
+
+356
+00:15:55,391 --> 00:15:57,183
+By going to admin fields
+
+357
+00:15:57,439 --> 00:16:00,767
+Oh yes let me just say this this button here
+
+358
+00:16:01,023 --> 00:16:02,559
+And this one here is the same button
+
+359
+00:16:03,071 --> 00:16:04,351
+Just this is a shortcut
+
+360
+00:16:04,607 --> 00:16:07,423
+Because sometimes you might have a lot of fields
+
+361
+00:16:07,679 --> 00:16:10,239
+And it's a way down there to get to conditions
+
+362
+00:16:10,495 --> 00:16:12,287
+So we added some shortcuts up here
+
+363
+00:16:13,823 --> 00:16:15,359
+There's also the tutorial
+
+364
+00:16:15,871 --> 00:16:20,479
+On how to use this but the tutorial still was made when we had the old Fields layout
+
+365
+00:16:20,991 --> 00:16:25,343
+It should still make sense I mean you just need to keep in mind that things change a little
+
+366
+00:16:26,111 --> 00:16:27,647
+So you could click here
+
+367
+00:16:27,903 --> 00:16:29,183
+On any of these links
+
+368
+00:16:29,439 --> 00:16:30,975
+To actually open
+
+369
+00:16:31,231 --> 00:16:33,535
+That area where the fields are now found
+
+370
+00:16:34,303 --> 00:16:35,583
+And make the changes
+
+371
+00:16:36,351 --> 00:16:40,959
+So that's really the new admin Fields and
+
+372
+00:16:41,471 --> 00:16:43,775
+moving away from repeatable fields
+
+373
+00:16:44,287 --> 00:16:46,847
+To start using subforms for all our
+
+374
+00:16:47,103 --> 00:16:48,639
+Repeatable concepts
+
+375
+00:16:49,407 --> 00:16:50,687
+It's really what
+
+376
+00:16:50,943 --> 00:16:52,991
+This upgrade is all about
+
+377
+00:16:53,503 --> 00:16:58,111
+There is 1 heads up which I know is little different to how things were done previously
+
+378
+00:16:58,879 --> 00:17:01,183
+Let me just close out of this
+
+379
+00:17:01,439 --> 00:17:02,463
+Admin View
+
+380
+00:17:03,231 --> 00:17:04,255
+Oh yes
+
+381
+00:17:04,511 --> 00:17:05,791
+I could just mention this
+
+382
+00:17:06,303 --> 00:17:12,447
+Here is a shortcut to get to the admin Fields without opening the admin view and then opening the admin fields
+
+383
+00:17:12,703 --> 00:17:14,751
+You can click on this right here
+
+384
+00:17:15,007 --> 00:17:16,799
+and it will automatically take you
+
+385
+00:17:17,055 --> 00:17:18,847
+to the admin fields
+
+386
+00:17:19,359 --> 00:17:21,663
+And you can make changes here
+
+387
+00:17:21,919 --> 00:17:23,711
+And obviously it's link to the look
+
+388
+00:17:23,967 --> 00:17:24,479
+Area
+
+389
+00:17:24,991 --> 00:17:26,783
+or the look admin view
+
+390
+00:17:27,295 --> 00:17:30,367
+And the same is true when looking at
+
+391
+00:17:30,879 --> 00:17:34,719
+The conditions there the second button here is for conditions
+
+392
+00:17:35,231 --> 00:17:40,351
+The thing that has changed is if you create a new admin View
+
+393
+00:17:40,863 --> 00:17:41,631
+Now
+
+394
+00:17:42,399 --> 00:17:47,519
+You would obviously add the single record name the list record name the short description
+
+395
+00:17:47,775 --> 00:17:49,055
+And the system name
+
+396
+00:17:49,311 --> 00:17:51,359
+And that's really all you need to add
+
+397
+00:17:51,871 --> 00:17:56,223
+To save the admin view for the first time because
+
+398
+00:17:56,479 --> 00:17:58,527
+The admin view at this stage
+
+399
+00:17:58,783 --> 00:18:00,063
+It cannot be linked
+
+400
+00:18:00,319 --> 00:18:02,367
+to any Fields until it has an ID
+
+401
+00:18:03,135 --> 00:18:05,439
+Now I might still work on this and try and
+
+402
+00:18:05,951 --> 00:18:06,463
+You know
+
+403
+00:18:07,999 --> 00:18:09,279
+Tune it in a way that
+
+404
+00:18:09,791 --> 00:18:12,095
+When you click the button and if the
+
+405
+00:18:12,351 --> 00:18:14,911
+Admin view is not saved it saves it for you
+
+406
+00:18:15,167 --> 00:18:15,679
+But
+
+407
+00:18:15,935 --> 00:18:18,495
+I haven't done that yet so at this stage
+
+408
+00:18:19,775 --> 00:18:25,919
+Since the admin field doesn't have an ID it's still new because we haven't clicked save
+
+409
+00:18:26,175 --> 00:18:26,687
+Even once
+
+410
+00:18:27,455 --> 00:18:30,271
+You can't link any Fields to them
+
+411
+00:18:30,783 --> 00:18:32,319
+To it so what you would
+
+412
+00:18:32,575 --> 00:18:34,367
+Natural do is just add some
+
+413
+00:18:34,879 --> 00:18:36,159
+Add some name here
+
+414
+00:18:39,743 --> 00:18:40,511
+And
+
+415
+00:18:47,423 --> 00:18:48,959
+And then just save it once
+
+416
+00:18:53,055 --> 00:18:57,151
+And having done that if you now go to Fields and conditions
+
+417
+00:18:57,407 --> 00:18:58,943
+It basically says create
+
+418
+00:18:59,199 --> 00:19:02,527
+To this button here and that one here is the same button
+
+419
+00:19:03,039 --> 00:19:05,855
+You can click on any of them to create fields
+
+420
+00:19:06,111 --> 00:19:07,647
+So if you would create a field
+
+421
+00:19:07,903 --> 00:19:09,695
+So yes I did save everything
+
+422
+00:19:10,207 --> 00:19:11,743
+And then
+
+423
+00:19:12,255 --> 00:19:12,767
+I
+
+424
+00:19:13,023 --> 00:19:15,327
+You can just click on this plus over here
+
+425
+00:19:15,583 --> 00:19:19,167
+And there's a first field and you can start you know adding fields
+
+426
+00:19:19,679 --> 00:19:21,983
+And tweak them as you would before
+
+427
+00:19:22,495 --> 00:19:23,519
+And
+
+428
+00:19:23,775 --> 00:19:25,567
+Yep so there you go
+
+429
+00:19:25,823 --> 00:19:27,359
+That's the new subform
+
+430
+00:19:27,615 --> 00:19:29,663
+Fields for admin views
+
+431
+00:19:30,175 --> 00:19:33,503
+And that's what this upgrade is really all about
+
+432
+00:19:34,015 --> 00:19:37,855
+I trust that it all benefit all of us in the future
+
+433
+00:19:38,111 --> 00:19:42,719
+And make it more easier for us to transition into Joomla 4
+
+434
+00:19:43,231 --> 00:19:44,255
+And thank you for watching.
+

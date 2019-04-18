@@ -1,0 +1,2772 @@
+﻿1
+00:00:01,280 --> 00:00:07,424
+We want to do a quick demonstration of how to build a little bit more advanced
+
+2
+00:00:07,680 --> 00:00:08,704
+List View
+
+3
+00:00:09,216 --> 00:00:13,568
+the type that you would find in sermon distributor
+
+4
+00:00:14,848 --> 00:00:19,712
+this list view is comprised of templates and layouts
+
+5
+00:00:19,968 --> 00:00:21,504
+And various
+
+6
+00:00:22,272 --> 00:00:25,600
+Integrations so let me
+
+7
+00:00:25,856 --> 00:00:29,184
+Take one of them and change them
+
+8
+00:00:30,208 --> 00:00:30,976
+to
+
+9
+00:00:33,024 --> 00:00:34,304
+Yeah to be our example
+
+10
+00:00:35,840 --> 00:00:37,120
+So first of all
+
+11
+00:00:38,400 --> 00:00:44,544
+we've just looking at the site views already there so there's Sermon Preachers, Preacher series's
+
+12
+00:00:44,800 --> 00:00:46,592
+Categories category
+
+13
+00:00:47,360 --> 00:00:48,384
+And an API
+
+14
+00:00:50,688 --> 00:00:51,200
+So
+
+15
+00:00:51,968 --> 00:00:54,272
+I think we'll use this
+
+16
+00:00:55,040 --> 00:00:56,320
+preacher
+
+17
+00:00:57,344 --> 00:00:58,624
+Because it is a
+
+18
+00:01:00,672 --> 00:01:01,440
+List query
+
+19
+00:01:02,208 --> 00:01:05,024
+So let's go look at its Dynamic get
+
+20
+00:01:05,536 --> 00:01:06,816
+Now
+
+21
+00:01:10,400 --> 00:01:13,216
+There are two ways for us to build
+
+22
+00:01:13,472 --> 00:01:14,240
+a
+
+23
+00:01:14,496 --> 00:01:17,312
+List of items in a site View
+
+24
+00:01:17,824 --> 00:01:20,384
+Before I go into the dynamic get
+
+25
+00:01:20,896 --> 00:01:22,432
+I need to just
+
+26
+00:01:22,688 --> 00:01:24,224
+Show you the difference here
+
+27
+00:01:26,528 --> 00:01:27,808
+The one way
+
+28
+00:01:28,064 --> 00:01:29,088
+Which I prefer
+
+29
+00:01:29,600 --> 00:01:30,624
+Is the Ajax Way
+
+30
+00:01:31,392 --> 00:01:34,208
+Because I can load up to 10000
+
+31
+00:01:34,720 --> 00:01:35,744
+rows
+
+32
+00:01:36,000 --> 00:01:37,024
+Or items
+
+33
+00:01:37,280 --> 00:01:38,304
+The page
+
+34
+00:01:39,072 --> 00:01:43,168
+Where is the normal way and that's the dynamic Get way
+
+35
+00:01:44,960 --> 00:01:46,240
+Can only load
+
+36
+00:01:47,520 --> 00:01:48,544
+Quite
+
+37
+00:01:49,312 --> 00:01:50,592
+Yeah let's say
+
+38
+00:01:51,872 --> 00:01:53,152
+In a way that is
+
+39
+00:01:53,920 --> 00:01:54,944
+Not too slow
+
+40
+00:01:55,200 --> 00:02:01,088
+About 100 items per page and so you basically need to use pagination
+
+41
+00:02:01,344 --> 00:02:03,392
+If you don't use pagination
+
+42
+00:02:03,648 --> 00:02:08,256
+It takes very long for the page to load if it's more than 100 items
+
+43
+00:02:08,512 --> 00:02:13,632
+If you wanna load more than 100 items I suggest you go the Ajax Way
+
+44
+00:02:13,888 --> 00:02:20,032
+Ajax I'm using footable plugin
+
+45
+00:02:20,288 --> 00:02:21,312
+And it is
+
+46
+00:02:21,568 --> 00:02:24,384
+Yeah I assure there's other ways to do it
+
+47
+00:02:24,640 --> 00:02:27,712
+like most things
+
+48
+00:02:27,968 --> 00:02:29,248
+It's the thing I
+
+49
+00:02:29,504 --> 00:02:35,648
+The plugin that I have been using for many years now and it's always
+
+50
+00:02:35,904 --> 00:02:39,744
+been improving the developers are constantly improving it
+
+51
+00:02:40,000 --> 00:02:42,816
+And if we If we open this
+
+52
+00:02:43,328 --> 00:02:44,608
+This URL here
+
+53
+00:02:45,120 --> 00:02:46,656
+let me open that
+
+54
+00:02:48,192 --> 00:02:50,752
+I'm going to refresh the page
+
+55
+00:02:51,008 --> 00:02:54,080
+To give you a full idea of what we're talking about
+
+56
+00:02:54,592 --> 00:02:56,384
+So going to refresh it
+
+57
+00:02:56,896 --> 00:03:03,040
+Now scroll down here is the example we count 1234 and there we go it's now
+
+58
+00:03:03,296 --> 00:03:07,392
+in that moment we waited it loaded 10000
+
+59
+00:03:07,648 --> 00:03:10,976
+Rows which is a 1000
+
+60
+00:03:12,512 --> 00:03:18,656
+Pages so if I click here to go to the very last one you see it's 10000
+
+61
+00:03:20,192 --> 00:03:26,336
+Items and I mean it was very quick in loading those items into this table
+
+62
+00:03:26,592 --> 00:03:27,872
+Why I like
+
+63
+00:03:28,128 --> 00:03:30,432
+FooTable so much is if you
+
+64
+00:03:31,200 --> 00:03:33,760
+Now resize your screen here
+
+65
+00:03:34,272 --> 00:03:35,296
+it will automatically
+
+66
+00:03:36,832 --> 00:03:42,976
+Load those items like this and I know there is such library also in
+
+67
+00:03:43,232 --> 00:03:44,000
+Joomla
+
+68
+00:03:44,256 --> 00:03:45,792
+I realize that
+
+69
+00:03:47,328 --> 00:03:47,840
+And
+
+70
+00:03:48,096 --> 00:03:54,240
+Are you welcome to use any of those I just like this
+
+71
+00:03:54,496 --> 00:03:55,776
+Components approach
+
+72
+00:03:56,288 --> 00:03:58,592
+Look at our little JavaScript you need
+
+73
+00:03:58,848 --> 00:03:59,616
+On the page
+
+74
+00:03:59,872 --> 00:04:02,432
+To basically need a URL
+
+75
+00:04:02,688 --> 00:04:06,784
+To the column headers which are basically these values
+
+76
+00:04:07,296 --> 00:04:08,064
+And
+
+77
+00:04:08,320 --> 00:04:10,624
+Then you need a URL to get the Json
+
+78
+00:04:11,392 --> 00:04:12,416
+And
+
+79
+00:04:12,672 --> 00:04:16,512
+That's the only HTML you need on the page
+
+80
+00:04:16,768 --> 00:04:22,911
+And that's as simple it is to load 10000
+
+81
+00:04:23,167 --> 00:04:26,239
+Items like that in a table
+
+82
+00:04:26,495 --> 00:04:29,567
+It has interesting
+
+83
+00:04:30,079 --> 00:04:36,223
+Opportunity even with regarding to editing if I scroll down here
+
+84
+00:04:36,479 --> 00:04:36,991
+Here
+
+85
+00:04:37,247 --> 00:04:39,039
+It has editing rows
+
+86
+00:04:39,807 --> 00:04:40,575
+Option here
+
+87
+00:04:41,343 --> 00:04:42,879
+And the editing rows option
+
+88
+00:04:43,647 --> 00:04:46,207
+Gives you option to add new rows
+
+89
+00:04:46,463 --> 00:04:48,767
+And edit existing rows
+
+90
+00:04:49,023 --> 00:04:55,167
+I mean this is crazy load a 10000 size
+
+91
+00:04:55,423 --> 00:05:01,567
+Table of 10000 items and then edit any of them I really think this plugin and it is a amazing
+
+92
+00:05:01,823 --> 00:05:02,335
+Tool
+
+93
+00:05:02,847 --> 00:05:05,919
+And I'm not even that good with JavaScript
+
+94
+00:05:06,175 --> 00:05:11,295
+and I can manage this, so I'm sure all of you would be able to do the same
+
+95
+00:05:11,551 --> 00:05:14,111
+I'm not gonna demonstrate
+
+96
+00:05:14,879 --> 00:05:21,023
+This now I don't have time it's a little bit more complicated I suppose
+
+97
+00:05:22,047 --> 00:05:24,095
+Because I need to show you how to build
+
+98
+00:05:24,351 --> 00:05:25,887
+These
+
+99
+00:05:26,143 --> 00:05:31,519
+And maybe we can look at that but I'm first going to
+
+100
+00:05:32,031 --> 00:05:33,567
+To look at
+
+101
+00:05:33,823 --> 00:05:35,615
+This normal
+
+102
+00:05:35,871 --> 00:05:42,015
+Implementation that uses Dynamic get because in any case usually if I'm going
+
+103
+00:05:42,271 --> 00:05:42,783
+This way
+
+104
+00:05:43,039 --> 00:05:49,183
+I first build something here and then move it there that's how I do it but that's just me
+
+105
+00:05:49,439 --> 00:05:55,583
+Let JCB write some of the code for me and I move it to the a to the Ajax basically
+
+106
+00:05:55,839 --> 00:05:56,607
+backend
+
+107
+00:05:56,863 --> 00:05:57,375
+Ok
+
+108
+00:05:57,631 --> 00:05:58,655
+So
+
+109
+00:05:58,911 --> 00:06:00,191
+Back to our component
+
+110
+00:06:00,703 --> 00:06:01,983
+We have
+
+111
+00:06:02,239 --> 00:06:04,287
+a few dynamic gets here already
+
+112
+00:06:04,799 --> 00:06:05,823
+All of them
+
+113
+00:06:06,079 --> 00:06:07,871
+are list queries
+
+114
+00:06:08,127 --> 00:06:08,895
+So
+
+115
+00:06:09,407 --> 00:06:10,431
+That means
+
+116
+00:06:10,687 --> 00:06:16,831
+They are able to get more than one item from the database now
+
+117
+00:06:17,087 --> 00:06:23,231
+The request was made to get all the sermons and not have a filter
+
+118
+00:06:23,487 --> 00:06:26,303
+Which is quite easy I'm gonna use this one
+
+119
+00:06:27,583 --> 00:06:30,399
+And I'm gonna just change this to
+
+120
+00:06:30,655 --> 00:06:31,423
+To all
+
+121
+00:06:33,727 --> 00:06:34,239
+Then
+
+122
+00:06:34,495 --> 00:06:36,031
+I'm going to the tweak
+
+123
+00:06:36,543 --> 00:06:38,591
+And I'm going to
+
+124
+00:06:39,103 --> 00:06:41,663
+Just remove that one option
+
+125
+00:06:42,431 --> 00:06:44,991
+I'm gonna leave the access level
+
+126
+00:06:45,759 --> 00:06:46,527
+You know what
+
+127
+00:06:47,295 --> 00:06:53,439
+That's just good practice you have access levels in your tables and
+
+128
+00:06:53,695 --> 00:06:58,303
+The user isn't supposed to access an item it's always good to
+
+129
+00:06:58,559 --> 00:07:04,703
+not allow them if you don't want any filter you simply remove this
+
+130
+00:07:04,959 --> 00:07:05,727
+This
+
+131
+00:07:05,983 --> 00:07:08,287
+And you can even remove the ordering
+
+132
+00:07:08,543 --> 00:07:10,847
+and it will work ok
+
+133
+00:07:11,103 --> 00:07:12,127
+So
+
+134
+00:07:12,639 --> 00:07:18,271
+That is all you need to do to get all of the sermons from the table
+
+135
+00:07:20,063 --> 00:07:21,599
+I am going to
+
+136
+00:07:21,855 --> 00:07:22,367
+Just
+
+137
+00:07:23,391 --> 00:07:29,535
+Remove this one for my purpose we can look at the joint options and they seem ok
+
+138
+00:07:29,791 --> 00:07:30,815
+Leave them that way
+
+139
+00:07:31,071 --> 00:07:33,887
+And then the custom scripting
+
+140
+00:07:35,167 --> 00:07:37,727
+What I'm doing here
+
+141
+00:07:37,983 --> 00:07:39,519
+With a custom scripting
+
+142
+00:07:40,031 --> 00:07:45,919
+I'm basically setting up links links to the series links to the categories
+
+143
+00:07:46,175 --> 00:07:47,967
+Links to the actual sermon
+
+144
+00:07:48,479 --> 00:07:50,271
+Links to the series
+
+145
+00:07:52,063 --> 00:07:53,087
+And
+
+146
+00:07:53,343 --> 00:07:55,647
+Basically first create a Slug
+
+147
+00:07:55,903 --> 00:07:56,927
+And then
+
+148
+00:07:57,183 --> 00:07:59,487
+This helper route
+
+149
+00:07:59,743 --> 00:08:01,279
+Get sermon route
+
+150
+00:08:01,535 --> 00:08:07,679
+Get series route and get category route Is a helper class which
+
+151
+00:08:07,935 --> 00:08:14,079
+Is common in Joomla for your router now I'll show you how where to find this class
+
+152
+00:08:16,127 --> 00:08:17,663
+So if we go to
+
+153
+00:08:17,919 --> 00:08:18,687
+The
+
+154
+00:08:18,943 --> 00:08:24,319
+Front-end not the administrative area but the front end and we go down to sermons
+
+155
+00:08:24,575 --> 00:08:28,159
+Are we go to helpers no not helpers
+
+156
+00:08:29,439 --> 00:08:35,071
+Yeah it is actually helpers we going to helpers then we see there is a file called route
+
+157
+00:08:35,327 --> 00:08:37,119
+So we open that
+
+158
+00:08:37,631 --> 00:08:40,447
+And that is where you find the
+
+159
+00:08:40,703 --> 00:08:42,495
+Route helper class
+
+160
+00:08:42,751 --> 00:08:44,543
+So in our code
+
+161
+00:08:45,311 --> 00:08:48,383
+I have used this placeholder option
+
+162
+00:08:48,639 --> 00:08:52,223
+Which dynamically add the word sermon distributor
+
+163
+00:08:52,735 --> 00:08:54,527
+To helper route
+
+164
+00:08:54,783 --> 00:08:57,343
+And that's simply were
+
+165
+00:08:57,855 --> 00:09:00,415
+Where it builds this class name
+
+166
+00:09:00,927 --> 00:09:06,559
+How does class is loaded into the component dynamically so you don't need to do it again
+
+167
+00:09:07,071 --> 00:09:08,607
+And it's doing it here
+
+168
+00:09:09,119 --> 00:09:12,447
+You see there is registering the class
+
+169
+00:09:13,215 --> 00:09:14,495
+In the main
+
+170
+00:09:14,751 --> 00:09:17,311
+PHP file of the component
+
+171
+00:09:17,567 --> 00:09:23,455
+So now in this class we have some static functions get Sermon route
+
+172
+00:09:23,711 --> 00:09:29,343
+Get preacher route get preachers plural and preacher
+
+173
+00:09:29,599 --> 00:09:30,367
+Singular
+
+174
+00:09:30,623 --> 00:09:34,975
+And categories and category
+
+175
+00:09:35,743 --> 00:09:36,255
+And
+
+176
+00:09:36,767 --> 00:09:38,047
+Series list
+
+177
+00:09:38,559 --> 00:09:39,583
+And series
+
+178
+00:09:40,351 --> 00:09:41,119
+And
+
+179
+00:09:41,375 --> 00:09:42,399
+API
+
+180
+00:09:43,423 --> 00:09:44,703
+And that's about it
+
+181
+00:09:44,959 --> 00:09:51,103
+So that's where I get the names if I am going to Target any of these areas
+
+182
+00:09:51,359 --> 00:09:57,503
+I'm coming in here and I can see how it's building it basically just
+
+183
+00:09:57,759 --> 00:10:03,391
+Building the link right it's grabbing the necessary string
+
+184
+00:10:03,647 --> 00:10:06,975
+With the right option the right View
+
+185
+00:10:07,231 --> 00:10:12,095
+Adding the ID then we have a little function here find item
+
+186
+00:10:12,351 --> 00:10:17,471
+Which is in the same class you can search for it it's way at the bottom
+
+187
+00:10:17,983 --> 00:10:19,519
+Just give it a little space there
+
+188
+00:10:19,775 --> 00:10:25,919
+and what this does and I mean if any of you feel you can do this better please make a pull request
+
+189
+00:10:26,175 --> 00:10:26,687
+Let me know
+
+190
+00:10:26,943 --> 00:10:30,527
+It's trying to find where this item
+
+191
+00:10:30,783 --> 00:10:34,623
+Which we're building this link is maybe linked to a menu
+
+192
+00:10:35,647 --> 00:10:38,207
+So that we can append
+
+193
+00:10:38,463 --> 00:10:39,999
+The menu ID
+
+194
+00:10:40,255 --> 00:10:41,535
+To the item
+
+195
+00:10:42,047 --> 00:10:47,167
+And doing that get the correct URL
+
+196
+00:10:47,423 --> 00:10:52,799
+Ok so that's what that's all about and then like I said we get the ID
+
+197
+00:10:53,055 --> 00:10:57,919
+We dump it in here we add the item ID to the link and we return the link
+
+198
+00:10:58,175 --> 00:10:59,199
+Now
+
+199
+00:10:59,455 --> 00:11:00,479
+Back in the
+
+200
+00:11:00,735 --> 00:11:01,759
+Code here
+
+201
+00:11:02,527 --> 00:11:05,855
+We add just one little tweak and this is this route
+
+202
+00:11:06,367 --> 00:11:12,511
+Jroute which converts that long URL to whatever the system
+
+203
+00:11:12,767 --> 00:11:18,911
+Setting is currently in regards to your search engine optimisation so that's what this
+
+204
+00:11:19,167 --> 00:11:19,935
+String here
+
+205
+00:11:20,191 --> 00:11:25,055
+Is all about it is basically creating links based on The Slug
+
+206
+00:11:25,311 --> 00:11:31,455
+Now The Slug is a concept which takes the Alias is of an item and it's ID
+
+207
+00:11:33,247 --> 00:11:35,039
+Combines it with his double
+
+208
+00:11:35,295 --> 00:11:37,343
+With this colon between it
+
+209
+00:11:39,391 --> 00:11:40,415
+So that
+
+210
+00:11:40,671 --> 00:11:45,791
+You can use it in your search engine optimisation router ok
+
+211
+00:11:46,047 --> 00:11:52,191
+So that's what this custom code here is about to we don't need to change this that's what's all this issue here
+
+212
+00:11:52,447 --> 00:11:58,591
+Your filtering doesn't affect this whatever you grab you want these links on the page
+
+213
+00:11:58,847 --> 00:12:04,991
+So you could click to those areas right you want to have it ready to use
+
+214
+00:12:05,247 --> 00:12:09,343
+And then here's little tweak we made for the router
+
+215
+00:12:10,879 --> 00:12:14,719
+To identify the correct Elias
+
+216
+00:12:14,975 --> 00:12:19,583
+So we want to get the correct Elias in relation to
+
+217
+00:12:19,839 --> 00:12:21,375
+These different areas
+
+218
+00:12:21,631 --> 00:12:27,775
+So in this one we going to be in the Sermon we would be doing sermons here
+
+219
+00:12:28,031 --> 00:12:29,055
+So we could
+
+220
+00:12:30,847 --> 00:12:32,127
+Change this
+
+221
+00:12:32,639 --> 00:12:33,663
+S View
+
+222
+00:12:34,431 --> 00:12:34,943
+to
+
+223
+00:12:36,735 --> 00:12:37,503
+Sermon
+
+224
+00:12:41,087 --> 00:12:42,111
+Like that
+
+225
+00:12:42,367 --> 00:12:43,903
+Because we know
+
+226
+00:12:45,951 --> 00:12:50,815
+Oh wait a minute we don't we will be looking at a list of sermons
+
+227
+00:12:51,327 --> 00:12:52,607
+Ok so that case
+
+228
+00:12:52,863 --> 00:12:59,007
+We not gonna be able to very effectively build a Elias
+
+229
+00:12:59,263 --> 00:13:05,151
+Because at the moment it used to be them the preachers name so that that would have been
+
+230
+00:13:05,407 --> 00:13:11,551
+Preacher in here this place holder would have been replaced with preacher now because we're not
+
+231
+00:13:11,807 --> 00:13:17,951
+going to be filtering by preacher or category we gonna end up having to just
+
+232
+00:13:18,207 --> 00:13:21,535
+Use the ID because there is
+
+233
+00:13:22,047 --> 00:13:28,191
+No identity if I could say there's no way to link the page to a specific identity
+
+234
+00:13:28,447 --> 00:13:32,031
+So what I would usually do in that case
+
+235
+00:13:32,287 --> 00:13:33,567
+I would just
+
+236
+00:13:33,823 --> 00:13:37,407
+Turn this off and see what is the default behaviour
+
+237
+00:13:37,919 --> 00:13:39,711
+What comes out ok
+
+238
+00:13:39,967 --> 00:13:46,111
+So let's walk through that and see how that works out for us
+
+239
+00:13:46,623 --> 00:13:50,207
+Ok so now we just gonna save as copy
+
+240
+00:13:50,463 --> 00:13:56,607
+That's we we gonna do leave the Pagination on because like I said you want to be able to return
+
+241
+00:13:56,863 --> 00:14:00,447
+Only at most 100 items per page
+
+242
+00:14:00,959 --> 00:14:02,239
+So save as copy
+
+243
+00:14:04,543 --> 00:14:06,079
+And close
+
+244
+00:14:06,847 --> 00:14:09,407
+So now we have a new
+
+245
+00:14:09,663 --> 00:14:12,991
+List query called sermons all
+
+246
+00:14:14,015 --> 00:14:16,831
+And it is ready to be used
+
+247
+00:14:17,343 --> 00:14:21,695
+And it basically only filters by access this is what I want and
+
+248
+00:14:21,951 --> 00:14:23,743
+That should do that should do it
+
+249
+00:14:23,999 --> 00:14:26,815
+Now let's go to our site views
+
+250
+00:14:27,071 --> 00:14:30,655
+We basically took this item
+
+251
+00:14:30,911 --> 00:14:31,679
+And
+
+252
+00:14:31,935 --> 00:14:33,471
+We changed it
+
+253
+00:14:34,751 --> 00:14:36,543
+Get That's what we did
+
+254
+00:14:38,079 --> 00:14:39,615
+Wait no not this one
+
+255
+00:14:40,127 --> 00:14:41,407
+This one
+
+256
+00:14:41,663 --> 00:14:42,431
+Because
+
+257
+00:14:42,687 --> 00:14:43,967
+You see it has
+
+258
+00:14:44,223 --> 00:14:49,343
+A Preacher ID but it's actually having a list query for the sermons
+
+259
+00:14:49,855 --> 00:14:51,135
+And then it has
+
+260
+00:14:51,391 --> 00:14:57,535
+A bunch of custom gets to get the number of downloads the number of sermons and the actual
+
+261
+00:14:57,791 --> 00:14:59,327
+Preachers information
+
+262
+00:14:59,583 --> 00:15:03,935
+So we want to change this now this View
+
+263
+00:15:04,447 --> 00:15:09,055
+To actually just get all the sermons in the system right
+
+264
+00:15:10,079 --> 00:15:12,639
+The first thing will do is will change this
+
+265
+00:15:12,895 --> 00:15:15,199
+To this sermon all
+
+266
+00:15:15,967 --> 00:15:16,479
+Option
+
+267
+00:15:17,503 --> 00:15:20,831
+And will change this also do that to see how they will look
+
+268
+00:15:21,599 --> 00:15:27,743
+Basically looks exactly the same you see so that means we don't really need to change anything
+
+269
+00:15:27,999 --> 00:15:31,583
+Here all of this should still work
+
+270
+00:15:31,839 --> 00:15:33,375
+Just the way it was
+
+271
+00:15:34,143 --> 00:15:37,215
+If you want to do your own implementation here
+
+272
+00:15:37,727 --> 00:15:39,519
+Then you'll need to
+
+273
+00:15:39,775 --> 00:15:41,055
+Basically use
+
+274
+00:15:41,311 --> 00:15:42,591
+These values
+
+275
+00:15:43,103 --> 00:15:46,431
+to build your own implementation
+
+276
+00:15:48,223 --> 00:15:49,247
+I'm using
+
+277
+00:15:49,503 --> 00:15:50,271
+A lot of
+
+278
+00:15:50,783 --> 00:15:52,063
+Uikit
+
+279
+00:15:52,319 --> 00:15:58,463
+Classes here you see and in these templates this is also what's being
+
+280
+00:15:58,719 --> 00:16:02,303
+Done so we have many
+
+281
+00:16:02,559 --> 00:16:08,703
+Different implementations but now you see we have these params in here now
+
+282
+00:16:08,959 --> 00:16:15,103
+This params brings to us a certain values linked to the preacher page
+
+283
+00:16:15,359 --> 00:16:21,503
+But we are going to change this this is no longer going to be preacher because it can't have the
+
+284
+00:16:21,759 --> 00:16:25,087
+Same codes name of as another page
+
+285
+00:16:25,343 --> 00:16:28,159
+So we'll have to change this and
+
+286
+00:16:28,415 --> 00:16:30,719
+We gonna change this to all
+
+287
+00:16:30,975 --> 00:16:34,303
+Just like that
+
+288
+00:16:34,559 --> 00:16:38,911
+And change this to all so everywhere where we dealing with
+
+289
+00:16:39,167 --> 00:16:40,447
+params
+
+290
+00:16:40,959 --> 00:16:44,543
+We need to change the params so we can highlight them
+
+291
+00:16:45,055 --> 00:16:47,103
+And we need to change that
+
+292
+00:16:47,615 --> 00:16:48,383
+Because
+
+293
+00:16:49,151 --> 00:16:51,455
+We are changing this view
+
+294
+00:16:51,967 --> 00:16:53,247
+We calling it all
+
+295
+00:16:55,295 --> 00:16:55,807
+Ok
+
+296
+00:17:03,999 --> 00:17:04,767
+Like that
+
+297
+00:17:14,751 --> 00:17:16,031
+Ok
+
+298
+00:17:16,287 --> 00:17:22,431
+Now this I'm going to call this sermon
+
+299
+00:17:22,687 --> 00:17:26,527
+we are working with sermons
+
+300
+00:17:26,783 --> 00:17:28,319
+So the context is sermon
+
+301
+00:17:28,831 --> 00:17:34,207
+Because if we check permissions everything you wanna check that against the sermon
+
+302
+00:17:34,463 --> 00:17:35,999
+Permission structure
+
+303
+00:17:36,511 --> 00:17:37,279
+So
+
+304
+00:17:37,535 --> 00:17:39,071
+I'm gonna use sermon there
+
+305
+00:17:39,839 --> 00:17:45,983
+And everywhere else I'm gonna just change this to all and remember this because we're gonna have
+
+306
+00:17:46,239 --> 00:17:48,287
+To go add a whole lot of new fields
+
+307
+00:17:48,799 --> 00:17:52,383
+To this component to have those values ok
+
+308
+00:17:54,175 --> 00:17:55,711
+So just keep that in mind
+
+309
+00:17:56,735 --> 00:18:01,855
+We need we need to have this extra switch
+
+310
+00:18:02,111 --> 00:18:03,903
+For the all display
+
+311
+00:18:04,159 --> 00:18:04,927
+All
+
+312
+00:18:05,439 --> 00:18:08,255
+Sermons display all sermons display
+
+313
+00:18:11,071 --> 00:18:12,095
+Now
+
+314
+00:18:12,607 --> 00:18:16,447
+Mind you this area shouldn't even be here now
+
+315
+00:18:16,959 --> 00:18:21,311
+Because we are not going to retrieve a Preacher information
+
+316
+00:18:21,567 --> 00:18:22,847
+So we taking that out
+
+317
+00:18:23,103 --> 00:18:27,199
+So we only want you all sermons all sermons
+
+318
+00:18:27,711 --> 00:18:29,759
+And then let's look at this
+
+319
+00:18:30,527 --> 00:18:33,855
+I'm thinking you you know I don't wanna get
+
+320
+00:18:34,111 --> 00:18:35,647
+Too complicated here
+
+321
+00:18:36,159 --> 00:18:38,207
+So let me change this
+
+322
+00:18:38,463 --> 00:18:39,231
+Back
+
+323
+00:18:40,511 --> 00:18:46,143
+It could work if we just leave it the way it was
+
+324
+00:18:46,655 --> 00:18:52,799
+But no, you know I started going down this way so let me show you what that mean
+
+325
+00:18:53,055 --> 00:18:55,359
+to add these values in
+
+326
+00:18:56,383 --> 00:18:58,175
+It's just that in our
+
+327
+00:18:58,687 --> 00:19:02,527
+Templates sermon table and sermon Grid And sermon list
+
+328
+00:19:02,783 --> 00:19:06,111
+Were also gonna have to look at some param values
+
+329
+00:19:06,367 --> 00:19:08,159
+And make some tweaks
+
+330
+00:19:08,415 --> 00:19:09,183
+So
+
+331
+00:19:09,439 --> 00:19:11,231
+When we need to take
+
+332
+00:19:12,255 --> 00:19:14,559
+Take basically copy these
+
+333
+00:19:14,815 --> 00:19:16,095
+Down somewhere
+
+334
+00:19:16,351 --> 00:19:17,375
+So we can
+
+335
+00:19:20,447 --> 00:19:23,007
+We can go look at them so it's that one
+
+336
+00:19:23,263 --> 00:19:25,311
+sermon list
+
+337
+00:19:28,127 --> 00:19:31,967
+sermon grid and table
+
+338
+00:19:35,807 --> 00:19:40,415
+Ok So those are the three areas we need to go look at
+
+339
+00:19:41,695 --> 00:19:44,255
+So let's do that now
+
+340
+00:19:44,511 --> 00:19:49,119
+Save as copy before we do it you want to check out some other things
+
+341
+00:19:51,167 --> 00:19:51,679
+Ok
+
+342
+00:19:51,935 --> 00:19:52,447
+let's see
+
+343
+00:19:53,983 --> 00:19:55,775
+We have some colour settings here
+
+344
+00:19:56,799 --> 00:19:59,103
+This also be changed to all
+
+345
+00:20:01,663 --> 00:20:05,247
+So we just checking for these params right so we can
+
+346
+00:20:06,015 --> 00:20:08,063
+Update everything correctly
+
+347
+00:20:10,879 --> 00:20:12,159
+Now this
+
+348
+00:20:15,743 --> 00:20:16,767
+Is for hits
+
+349
+00:20:18,815 --> 00:20:20,863
+We're not gonna need the hits area
+
+350
+00:20:21,631 --> 00:20:22,655
+Because
+
+351
+00:20:22,911 --> 00:20:25,215
+When I do targeting a Preacher
+
+352
+00:20:25,727 --> 00:20:27,775
+So I'm going to take this out
+
+353
+00:20:28,031 --> 00:20:29,055
+We don't need this
+
+354
+00:20:32,895 --> 00:20:34,175
+That should be enough
+
+355
+00:20:35,455 --> 00:20:37,247
+Just check that it's not up here
+
+356
+00:20:40,831 --> 00:20:43,135
+Basically take that out as well
+
+357
+00:20:46,463 --> 00:20:50,815
+I had to take that out because it was calling that function hit
+
+358
+00:20:52,095 --> 00:20:52,607
+Which was
+
+359
+00:20:53,119 --> 00:20:54,911
+In in this area here
+
+360
+00:20:55,167 --> 00:20:58,495
+But I took that out because we not getting a Preacher
+
+361
+00:20:58,751 --> 00:21:02,847
+So since we not getting a Preacher we don't need to increment the hit
+
+362
+00:21:03,359 --> 00:21:07,967
+Because we not counting anything so that's why I took that out
+
+363
+00:21:08,735 --> 00:21:14,879
+I'm here I'm doing some fooTable Styles this is still using an old version of fooTable
+
+364
+00:21:16,416 --> 00:21:17,440
+So
+
+365
+00:21:17,696 --> 00:21:23,840
+This might be a good time to update this but ok I don't have time now so I'm just gonna fall back
+
+366
+00:21:24,096 --> 00:21:25,376
+To this for now
+
+367
+00:21:25,632 --> 00:21:26,144
+Ok
+
+368
+00:21:26,656 --> 00:21:29,216
+So here Everything looks fine
+
+369
+00:21:29,472 --> 00:21:31,520
+I'm gonna say save as copy
+
+370
+00:21:33,056 --> 00:21:35,360
+Close I did I do that already
+
+371
+00:21:35,616 --> 00:21:39,200
+No that was good ok so now we have a new
+
+372
+00:21:39,456 --> 00:21:40,480
+Site view
+
+373
+00:21:40,992 --> 00:21:43,808
+And we need to go look at these templates
+
+374
+00:21:44,320 --> 00:21:46,112
+So let's go out of here
+
+375
+00:21:46,624 --> 00:21:47,904
+Go to templates
+
+376
+00:21:48,416 --> 00:21:52,000
+So the templates we wanna look at it is these three
+
+377
+00:21:52,768 --> 00:21:54,816
+So it is first one
+
+378
+00:21:58,656 --> 00:22:03,008
+Sermons table it's this one here let's open that
+
+379
+00:22:05,824 --> 00:22:06,592
+Ok
+
+380
+00:22:06,848 --> 00:22:12,224
+So now we'll see that we have again
+
+381
+00:22:12,480 --> 00:22:14,016
+A whole lot of
+
+382
+00:22:14,528 --> 00:22:15,552
+Params here
+
+383
+00:22:16,576 --> 00:22:17,344
+With
+
+384
+00:22:17,600 --> 00:22:18,624
+Placeholders
+
+385
+00:22:19,392 --> 00:22:24,000
+Site view site view site view so now we gonna have a problem
+
+386
+00:22:24,512 --> 00:22:29,888
+No not really because we are using all so this will update to all
+
+387
+00:22:30,144 --> 00:22:36,288
+Now I have to set this params for sermons
+
+388
+00:22:36,544 --> 00:22:42,432
+Description sermon preacher series category so all of these
+
+389
+00:22:42,944 --> 00:22:45,760
+Params which are actually fields
+
+390
+00:22:46,016 --> 00:22:52,160
+In the configuration of this component I have to update so this
+
+391
+00:22:52,416 --> 00:22:58,560
+SView will fall back to the view where this
+
+392
+00:22:58,816 --> 00:23:02,912
+Template is going to be used so that the site view
+
+393
+00:23:03,680 --> 00:23:06,496
+Which we working with its code name is all
+
+394
+00:23:07,264 --> 00:23:08,288
+So
+
+395
+00:23:09,568 --> 00:23:11,360
+It's going to fall back to the word
+
+396
+00:23:11,616 --> 00:23:12,128
+All
+
+397
+00:23:12,896 --> 00:23:14,944
+This is what it's going to fall back to
+
+398
+00:23:15,200 --> 00:23:21,344
+Ok so in that template everywhere you see S view it is
+
+399
+00:23:21,600 --> 00:23:23,392
+Going to be call all
+
+400
+00:23:23,648 --> 00:23:28,768
+So if we go to the sermons list same thing here
+
+401
+00:23:29,024 --> 00:23:30,048
+let's see
+
+402
+00:23:33,888 --> 00:23:35,680
+This seems fine
+
+403
+00:23:35,936 --> 00:23:36,960
+Hear this one
+
+404
+00:23:37,728 --> 00:23:40,032
+It's going to fall back to all
+
+405
+00:23:40,288 --> 00:23:41,056
+Like that
+
+406
+00:23:42,080 --> 00:23:42,848
+So
+
+407
+00:23:43,104 --> 00:23:49,248
+We need to set a value for this and that will then decide what type of
+
+408
+00:23:49,504 --> 00:23:50,528
+List file
+
+409
+00:23:50,784 --> 00:23:51,552
+This will have
+
+410
+00:23:52,320 --> 00:23:54,112
+The same would go for the grid
+
+411
+00:23:54,368 --> 00:23:55,648
+If we opened preacher
+
+412
+00:23:55,904 --> 00:23:57,952
+not preacher, sermons grid
+
+413
+00:24:01,792 --> 00:24:02,304
+Here
+
+414
+00:24:03,584 --> 00:24:04,864
+We're again seeing
+
+415
+00:24:05,120 --> 00:24:06,144
+A lot of
+
+416
+00:24:06,400 --> 00:24:08,960
+Sview.....Sview
+
+417
+00:24:09,216 --> 00:24:10,240
+Values
+
+418
+00:24:10,496 --> 00:24:11,776
+All over the place
+
+419
+00:24:12,288 --> 00:24:14,592
+And it is going to affect
+
+420
+00:24:15,360 --> 00:24:20,736
+The component if we don't set these
+
+421
+00:24:20,992 --> 00:24:23,552
+Parameters in the global settings
+
+422
+00:24:23,808 --> 00:24:26,880
+Then it won't find this but it will fall back to zero
+
+423
+00:24:27,904 --> 00:24:34,048
+So you'll still work but it won't load anything because zero means nul ok
+
+424
+00:24:34,304 --> 00:24:38,656
+So it will not load the preacher
+
+425
+00:24:38,912 --> 00:24:39,680
+Values
+
+426
+00:24:40,192 --> 00:24:46,336
+And that's why it might look like things are not working because these
+
+427
+00:24:46,592 --> 00:24:49,920
+Configuration values are not existing yet
+
+428
+00:24:50,176 --> 00:24:52,736
+We need to create them I'll show you how
+
+429
+00:24:53,504 --> 00:24:59,648
+I was hoping to skip that but I realize
+
+430
+00:24:59,904 --> 00:25:02,464
+It's a helpful thing to know how to do that
+
+431
+00:25:02,720 --> 00:25:03,744
+So
+
+432
+00:25:04,000 --> 00:25:10,144
+For now first step would be to add this
+
+433
+00:25:10,400 --> 00:25:11,424
+Site view
+
+434
+00:25:11,680 --> 00:25:14,240
+So I'm gonna just add a down here
+
+435
+00:25:17,056 --> 00:25:20,640
+Under before sermon I'm gonna say
+
+436
+00:25:22,176 --> 00:25:23,712
+All sermons
+
+437
+00:25:23,968 --> 00:25:30,112
+I'm gonna give it an add menu it has meta
+
+438
+00:25:30,368 --> 00:25:36,512
+Country that has access and it's public ok so
+
+439
+00:25:36,768 --> 00:25:38,048
+I'm adding it in there
+
+440
+00:25:38,816 --> 00:25:40,864
+To the components site views
+
+441
+00:25:41,120 --> 00:25:47,264
+Save and close so if I compile this now we will
+
+442
+00:25:47,520 --> 00:25:53,664
+Get that view added to the component and everything should be there so
+
+443
+00:25:53,920 --> 00:25:56,736
+Let's do that compile it quickly
+
+444
+00:26:01,088 --> 00:26:02,880
+Ok now I've got it installed
+
+445
+00:26:03,136 --> 00:26:05,952
+So we go here Sermon distributor
+
+446
+00:26:06,464 --> 00:26:09,280
+We have all our values here
+
+447
+00:26:09,792 --> 00:26:14,656
+We have no preachers or sermons or anything created
+
+448
+00:26:14,912 --> 00:26:21,056
+So we won't have a fully functional front end but if we go to menus
+
+449
+00:26:22,336 --> 00:26:24,640
+And we would to change our home
+
+450
+00:26:25,408 --> 00:26:26,432
+to
+
+451
+00:26:27,200 --> 00:26:29,760
+Sermons all sermons
+
+452
+00:26:31,040 --> 00:26:32,832
+Save and close
+
+453
+00:26:35,136 --> 00:26:36,928
+we'll go back to sermons
+
+454
+00:26:37,184 --> 00:26:38,208
+And options
+
+455
+00:26:39,744 --> 00:26:43,072
+Then to permissions and we search for
+
+456
+00:26:43,328 --> 00:26:44,352
+Site
+
+457
+00:26:45,120 --> 00:26:46,656
+Then we see there is a site
+
+458
+00:26:47,424 --> 00:26:53,568
+All sermons access and it said to allow but sometimes if you're busy updating
+
+459
+00:26:53,824 --> 00:26:56,896
+It may not be set to allow so you must change that
+
+460
+00:26:57,152 --> 00:26:58,688
+for your public
+
+461
+00:26:59,712 --> 00:27:00,224
+And
+
+462
+00:27:00,480 --> 00:27:02,784
+Now if we go front end
+
+463
+00:27:03,040 --> 00:27:04,832
+OK, we have a error account
+
+464
+00:27:05,600 --> 00:27:06,880
+So let's look at that
+
+465
+00:27:07,392 --> 00:27:08,672
+That's on
+
+466
+00:27:09,952 --> 00:27:12,768
+View HTML 5
+
+467
+00:27:13,024 --> 00:27:15,072
+No ...HTML PHP
+
+468
+00:27:15,328 --> 00:27:18,400
+48 let's go look at that no sermons were found
+
+469
+00:27:20,704 --> 00:27:22,240
+So here
+
+470
+00:27:23,520 --> 00:27:24,544
+Our
+
+471
+00:27:25,056 --> 00:27:29,152
+line 48 in the sermons
+
+472
+00:27:29,408 --> 00:27:30,432
+Views all
+
+473
+00:27:31,200 --> 00:27:37,344
+Line 48 we have a number of sermons now since there is no number in
+
+474
+00:27:37,600 --> 00:27:38,112
+And the system
+
+475
+00:27:38,368 --> 00:27:39,904
+It's giving us an error
+
+476
+00:27:40,416 --> 00:27:44,256
+Let's so let's fix that that shouldn't be that hard to fix
+
+477
+00:27:45,024 --> 00:27:46,304
+We go back
+
+478
+00:27:46,560 --> 00:27:49,888
+To our component in Joomla
+
+479
+00:27:51,168 --> 00:27:52,704
+In the site views
+
+480
+00:27:53,472 --> 00:27:55,264
+We open all sermons
+
+481
+00:27:56,288 --> 00:27:57,568
+Go to PHP
+
+482
+00:27:58,336 --> 00:27:59,104
+And
+
+483
+00:27:59,872 --> 00:28:01,152
+It's basically
+
+484
+00:28:04,736 --> 00:28:05,760
+This one here
+
+485
+00:28:07,296 --> 00:28:08,576
+So what we can do
+
+486
+00:28:10,112 --> 00:28:11,136
+As we can
+
+487
+00:28:12,416 --> 00:28:13,184
+do a little
+
+488
+00:28:13,440 --> 00:28:14,208
+Check here
+
+489
+00:28:14,720 --> 00:28:15,488
+We say
+
+490
+00:28:20,608 --> 00:28:24,448
+Something like that we first check is it a array
+
+491
+00:28:24,960 --> 00:28:26,752
+And if it is then
+
+492
+00:28:27,008 --> 00:28:30,592
+We count the array because that's how many sermons they are
+
+493
+00:28:30,848 --> 00:28:32,896
+And we we added here
+
+494
+00:28:33,664 --> 00:28:35,968
+And then here we can just say
+
+495
+00:28:36,736 --> 00:28:37,248
+You know
+
+496
+00:28:38,016 --> 00:28:38,528
+Nul
+
+497
+00:28:38,784 --> 00:28:39,552
+If there's none
+
+498
+00:28:40,832 --> 00:28:44,160
+Ok now we actually don't need these values anymore
+
+499
+00:28:44,672 --> 00:28:46,464
+Because we're not actually
+
+500
+00:28:46,720 --> 00:28:52,608
+Getting a Preacher ID and preacher ID so I'm gonna remove this as well
+
+501
+00:28:52,864 --> 00:28:54,400
+From from the component
+
+502
+00:28:54,656 --> 00:28:57,216
+Because we don't have a Preacher
+
+503
+00:28:57,472 --> 00:28:58,240
+In this
+
+504
+00:28:58,496 --> 00:28:59,776
+Return set
+
+505
+00:29:00,288 --> 00:29:01,824
+So we don't need those values
+
+506
+00:29:02,080 --> 00:29:04,128
+So I'm taking them out just
+
+507
+00:29:04,384 --> 00:29:06,688
+For good practice
+
+508
+00:29:07,712 --> 00:29:09,504
+And then that should then
+
+509
+00:29:09,760 --> 00:29:10,528
+Get us going
+
+510
+00:29:10,784 --> 00:29:13,088
+Let's compile it again
+
+511
+00:29:13,344 --> 00:29:14,112
+and install
+
+512
+00:29:15,136 --> 00:29:17,952
+Now we have is no sermons were found
+
+513
+00:29:18,976 --> 00:29:25,120
+We can go back to our component and we can add a few you know values
+
+514
+00:29:25,888 --> 00:29:27,680
+Ok so I've Now added
+
+515
+00:29:27,936 --> 00:29:29,472
+a whole lot of sermons
+
+516
+00:29:31,520 --> 00:29:32,288
+And just
+
+517
+00:29:32,544 --> 00:29:33,568
+Randomly
+
+518
+00:29:33,824 --> 00:29:34,848
+Sorted them
+
+519
+00:29:35,360 --> 00:29:37,920
+We should have enough to work with here
+
+520
+00:29:38,688 --> 00:29:40,736
+Let's see that's is about
+
+521
+00:29:42,784 --> 00:29:44,320
+About 400
+
+522
+00:29:44,576 --> 00:29:45,600
+400 sermons
+
+523
+00:29:46,368 --> 00:29:49,440
+Ok so now on the front
+
+524
+00:29:50,976 --> 00:29:53,280
+We gonna diss refresh the front page
+
+525
+00:29:54,560 --> 00:29:55,328
+And wallah
+
+526
+00:29:55,840 --> 00:29:58,656
+We now have all of these showing up
+
+527
+00:29:59,936 --> 00:30:02,240
+And it is all of the sermons
+
+528
+00:30:03,008 --> 00:30:06,848
+And there is going to that specific sermon
+
+529
+00:30:08,640 --> 00:30:10,944
+And then this specific
+
+530
+00:30:12,992 --> 00:30:14,272
+Series
+
+531
+00:30:15,040 --> 00:30:18,112
+And it's showing us the hits of every sermon
+
+532
+00:30:19,904 --> 00:30:20,672
+And
+
+533
+00:30:20,928 --> 00:30:23,488
+We can page to other pages
+
+534
+00:30:24,256 --> 00:30:28,864
+pagination we can change this to a greater amount
+
+535
+00:30:30,656 --> 00:30:31,936
+Click the wrong button here
+
+536
+00:30:32,704 --> 00:30:34,496
+Ok so now we have 100
+
+537
+00:30:37,056 --> 00:30:38,080
+Yeah so
+
+538
+00:30:38,336 --> 00:30:42,176
+Our new list is working as we expected
+
+539
+00:30:42,688 --> 00:30:47,296
+So but we still haven't set
+
+540
+00:30:47,552 --> 00:30:48,576
+The
+
+541
+00:30:49,600 --> 00:30:50,624
+The correct
+
+542
+00:30:51,392 --> 00:30:54,976
+Values here so let me show you what I mean
+
+543
+00:30:57,536 --> 00:31:01,376
+In our display we have this all sermon table colour
+
+544
+00:31:03,680 --> 00:31:05,728
+And we have that set here
+
+545
+00:31:06,752 --> 00:31:08,800
+Then we have also
+
+546
+00:31:09,824 --> 00:31:10,592
+Some
+
+547
+00:31:11,616 --> 00:31:12,896
+If we open the
+
+548
+00:31:14,432 --> 00:31:18,016
+Default page we have this display
+
+549
+00:31:18,784 --> 00:31:19,552
+And
+
+550
+00:31:21,600 --> 00:31:22,112
+Yeah
+
+551
+00:31:22,368 --> 00:31:23,648
+So the first one
+
+552
+00:31:23,904 --> 00:31:28,256
+Although if it doesn't find one or two it defaults to list
+
+553
+00:31:28,768 --> 00:31:33,632
+So we don't have these values where are these values found
+
+554
+00:31:34,144 --> 00:31:36,704
+They are found in the components
+
+555
+00:31:37,728 --> 00:31:38,752
+Config
+
+556
+00:31:39,008 --> 00:31:42,336
+So if I go to the member of the administrative area
+
+557
+00:31:44,128 --> 00:31:46,176
+And I open the config.xml
+
+558
+00:31:46,944 --> 00:31:50,272
+Then those values should be in this file
+
+559
+00:31:50,528 --> 00:31:52,064
+This file
+
+560
+00:31:52,576 --> 00:31:54,112
+If we scroll down
+
+561
+00:31:54,880 --> 00:31:58,464
+We will see there sermon default icon
+
+562
+00:31:59,232 --> 00:32:01,280
+Box scroll down scroll down
+
+563
+00:32:02,048 --> 00:32:08,192
+Here's the preacher remember preacher display we change that to all display and
+
+564
+00:32:08,448 --> 00:32:09,728
+list style
+
+565
+00:32:10,240 --> 00:32:13,312
+Now so we see the Preacher's values are here
+
+566
+00:32:13,824 --> 00:32:15,360
+How did it get here
+
+567
+00:32:17,664 --> 00:32:19,200
+In component Builder
+
+568
+00:32:19,712 --> 00:32:22,016
+If I go back to component builder
+
+569
+00:32:22,784 --> 00:32:26,368
+There is an area called component config
+
+570
+00:32:26,880 --> 00:32:28,416
+If you open that
+
+571
+00:32:31,744 --> 00:32:36,096
+You'll find a whole lot of fields here
+
+572
+00:32:37,376 --> 00:32:37,888
+And
+
+573
+00:32:38,144 --> 00:32:44,288
+It's got tab names that bundle them so the series bundles all these
+
+574
+00:32:44,544 --> 00:32:45,568
+Values
+
+575
+00:32:45,824 --> 00:32:48,384
+So we'll have to
+
+576
+00:32:49,152 --> 00:32:51,456
+Go up all the way here
+
+577
+00:32:51,968 --> 00:32:53,504
+Two preachers
+
+578
+00:32:53,760 --> 00:32:56,320
+Actually preacher singular this one
+
+579
+00:32:56,576 --> 00:33:02,720
+And we'll have to go create each of these Fields except
+
+580
+00:33:02,976 --> 00:33:03,744
+These
+
+581
+00:33:04,256 --> 00:33:06,816
+Menu this one will have to do
+
+582
+00:33:08,096 --> 00:33:09,376
+This we won't
+
+583
+00:33:09,632 --> 00:33:15,776
+Because we not getting the preacher right so we just need to get the values that are related to the sermon
+
+584
+00:33:16,032 --> 00:33:17,056
+Layout
+
+585
+00:33:17,312 --> 00:33:19,360
+So it's from here
+
+586
+00:33:19,872 --> 00:33:23,968
+Basically from these values. We will need the
+
+587
+00:33:26,016 --> 00:33:28,832
+Will need to get it from after the spacer
+
+588
+00:33:31,648 --> 00:33:36,512
+Table grid list style colour icon description
+
+589
+00:33:38,048 --> 00:33:39,072
+Series
+
+590
+00:33:40,608 --> 00:33:41,632
+Category
+
+591
+00:33:42,400 --> 00:33:43,936
+Sermon counter
+
+592
+00:33:44,704 --> 00:33:45,728
+Hits
+
+593
+00:33:46,240 --> 00:33:52,384
+Downloads and a switch sermon preacher open so these are the
+
+594
+00:33:52,640 --> 00:33:56,736
+Fields we'll have to go and recreate
+
+595
+00:33:56,992 --> 00:33:59,808
+For the all view
+
+596
+00:34:00,064 --> 00:34:03,648
+So we can copy switch sermons
+
+597
+00:34:05,696 --> 00:34:06,720
+fords
+
+598
+00:34:06,976 --> 00:34:08,768
+Bracket preacher
+
+599
+00:34:09,024 --> 00:34:09,792
+And weekend
+
+600
+00:34:10,048 --> 00:34:12,608
+Search for this in the field area
+
+601
+00:34:14,400 --> 00:34:15,936
+Basically this string
+
+602
+00:34:17,216 --> 00:34:18,496
+just to be the same
+
+603
+00:34:19,264 --> 00:34:20,800
+As the one you see there
+
+604
+00:34:22,592 --> 00:34:24,384
+So we're going to fields
+
+605
+00:34:25,664 --> 00:34:28,224
+And we type in that string and search
+
+606
+00:34:28,480 --> 00:34:34,624
+And so here are all those values that we need to also create
+
+607
+00:34:35,392 --> 00:34:40,000
+So there are two ways to do this one is I can just copy them all
+
+608
+00:34:40,256 --> 00:34:41,536
+With this batch
+
+609
+00:34:42,304 --> 00:34:43,584
+Option
+
+610
+00:34:44,352 --> 00:34:46,912
+or the other is to do them one at a time
+
+611
+00:34:47,936 --> 00:34:49,216
+So I'm gonna do them
+
+612
+00:34:49,472 --> 00:34:52,544
+Just let's just do at least one
+
+613
+00:34:53,312 --> 00:34:58,176
+So I need to change a few values here I need to change this to all
+
+614
+00:34:59,200 --> 00:35:01,504
+I need to change that to all
+
+615
+00:35:03,552 --> 00:35:04,320
+And
+
+616
+00:35:06,368 --> 00:35:07,904
+This as well all
+
+617
+00:35:12,000 --> 00:35:12,768
+All
+
+618
+00:35:14,304 --> 00:35:15,840
+Table grid list
+
+619
+00:35:16,352 --> 00:35:17,632
+the default is grid
+
+620
+00:35:17,888 --> 00:35:18,656
+That's 2
+
+621
+00:35:19,424 --> 00:35:23,264
+Ok so that is the first one I'm gonna save as copy
+
+622
+00:35:25,568 --> 00:35:26,336
+And then
+
+623
+00:35:26,592 --> 00:35:27,360
+Close
+
+624
+00:35:28,384 --> 00:35:29,664
+Now the second one
+
+625
+00:35:30,944 --> 00:35:32,480
+And So It Goes On
+
+626
+00:35:32,736 --> 00:35:34,272
+I need to
+
+627
+00:35:34,784 --> 00:35:36,320
+Convert these fields
+
+628
+00:35:36,832 --> 00:35:38,112
+For the all view
+
+629
+00:35:41,440 --> 00:35:44,512
+We can leave this to be sermons
+
+630
+00:35:44,768 --> 00:35:50,144
+Set if sermon hits to be shown should be staying that's right that's right this would be all hits that
+
+631
+00:35:50,400 --> 00:35:51,424
+And then
+
+632
+00:35:52,448 --> 00:35:53,728
+Save as copy
+
+633
+00:35:55,008 --> 00:35:55,776
+Close
+
+634
+00:35:57,056 --> 00:35:58,080
+Now description
+
+635
+00:36:01,408 --> 00:36:02,176
+All
+
+636
+00:36:03,200 --> 00:36:04,992
+Show sermon description
+
+637
+00:36:05,504 --> 00:36:08,064
+This would be fine fine that must be all
+
+638
+00:36:08,576 --> 00:36:09,600
+we change that to
+
+639
+00:36:09,856 --> 00:36:10,368
+all
+
+640
+00:36:11,392 --> 00:36:12,416
+Save as copy
+
+641
+00:36:13,952 --> 00:36:16,000
+I think that's more than enough
+
+642
+00:36:16,256 --> 00:36:20,352
+Now we go back to the component and to the config area
+
+643
+00:36:23,680 --> 00:36:25,728
+And then underneath
+
+644
+00:36:26,752 --> 00:36:27,776
+The
+
+645
+00:36:29,568 --> 00:36:31,616
+I think I'm gonna do it here
+
+646
+00:36:33,408 --> 00:36:34,688
+Before sermon
+
+647
+00:36:35,456 --> 00:36:36,224
+Right here
+
+648
+00:36:36,736 --> 00:36:37,760
+Just add a few
+
+649
+00:36:38,016 --> 00:36:38,784
+Fields
+
+650
+00:36:40,064 --> 00:36:44,160
+So it should be marked as Global we gonna change this to all
+
+651
+00:36:46,208 --> 00:36:46,976
+All
+
+652
+00:36:52,352 --> 00:36:53,376
+And then
+
+653
+00:36:54,912 --> 00:36:56,448
+We'll just search for it
+
+654
+00:36:56,960 --> 00:36:57,984
+I will use the
+
+655
+00:36:58,240 --> 00:36:59,264
+The grid
+
+656
+00:37:00,288 --> 00:37:01,312
+And the hits
+
+657
+00:37:02,080 --> 00:37:05,152
+And the description I'm just gonna do those 3
+
+658
+00:37:05,408 --> 00:37:07,712
+So we are doing that for all
+
+659
+00:37:07,968 --> 00:37:10,528
+The table the hits the description
+
+660
+00:37:10,784 --> 00:37:12,064
+Save and close
+
+661
+00:37:14,112 --> 00:37:16,160
+And can compile and install
+
+662
+00:37:16,416 --> 00:37:20,768
+Now when we opened sermon distributor backend we go to options
+
+663
+00:37:21,280 --> 00:37:23,840
+We'll now I have a new tab you're called all
+
+664
+00:37:24,608 --> 00:37:30,752
+And we can change this to table grid or List.  It is already on list so let's let's change it
+
+665
+00:37:31,008 --> 00:37:31,776
+to table
+
+666
+00:37:32,288 --> 00:37:36,128
+Let's say don't show hits and don't show description
+
+667
+00:37:36,640 --> 00:37:37,664
+And save
+
+668
+00:37:37,920 --> 00:37:39,200
+This value
+
+669
+00:37:40,224 --> 00:37:44,320
+So it is loading it correctly now
+
+670
+00:37:44,576 --> 00:37:45,600
+As a table
+
+671
+00:37:46,112 --> 00:37:48,672
+Now let's make another change here
+
+672
+00:37:48,928 --> 00:37:49,696
+let's
+
+673
+00:37:50,208 --> 00:37:55,072
+Let's say show hits and show description and let's make it a grid and save
+
+674
+00:37:58,912 --> 00:38:00,704
+Now we refresh it
+
+675
+00:38:00,960 --> 00:38:02,240
+And there we go
+
+676
+00:38:02,496 --> 00:38:05,056
+We have it all now in gridlayout
+
+677
+00:38:05,568 --> 00:38:07,360
+Now it's again
+
+678
+00:38:07,872 --> 00:38:09,152
+Just giving us
+
+679
+00:38:09,664 --> 00:38:10,944
+The last hundred
+
+680
+00:38:11,968 --> 00:38:13,248
+And we can
+
+681
+00:38:13,504 --> 00:38:15,296
+paginate through them
+
+682
+00:38:15,552 --> 00:38:16,320
+Correctly
+
+683
+00:38:16,832 --> 00:38:22,976
+So it's it's falling Back To The Way It Used To Work except that it doesn't show the 
+
+684
+00:38:23,232 --> 00:38:23,744
+actual
+
+685
+00:38:25,536 --> 00:38:26,560
+It's not
+
+686
+00:38:26,816 --> 00:38:31,424
+Filtering it by preacher it just grabbing all of the values
+
+687
+00:38:32,448 --> 00:38:34,752
+Ok I think that's all for now
+
+688
+00:38:36,288 --> 00:38:38,080
+To show you how to
+
+689
+00:38:38,592 --> 00:38:41,408
+Load a a list of values
+
+690
+00:38:41,920 --> 00:38:43,200
+in JCB
+
+691
+00:38:44,224 --> 00:38:48,576
+With pagination without any filter like
+
+692
+00:38:48,832 --> 00:38:50,112
+For example preacher
+
+693
+00:38:50,368 --> 00:38:52,672
+Ok well thanks for watching
+

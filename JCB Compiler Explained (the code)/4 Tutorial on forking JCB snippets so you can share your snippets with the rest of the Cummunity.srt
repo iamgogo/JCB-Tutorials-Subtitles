@@ -1,0 +1,3032 @@
+1
+00:00:01,024 --> 00:00:04,608
+Now that we've given you a general overview of how are things work
+
+2
+00:00:04,864 --> 00:00:06,656
+in the new snippet manager
+
+3
+00:00:07,680 --> 00:00:08,704
+I would like to
+
+4
+00:00:08,960 --> 00:00:11,008
+Take You The Next Step and that is
+
+5
+00:00:11,264 --> 00:00:13,824
+Showing you how to take shared snippets
+
+6
+00:00:14,080 --> 00:00:15,360
+And
+
+7
+00:00:15,616 --> 00:00:16,384
+Basically
+
+8
+00:00:17,152 --> 00:00:18,176
+Share them
+
+9
+00:00:18,944 --> 00:00:20,992
+There are two things that should be done
+
+10
+00:00:21,248 --> 00:00:22,272
+What is
+
+11
+00:00:22,528 --> 00:00:23,552
+You need to fork
+
+12
+00:00:24,320 --> 00:00:25,088
+The
+
+13
+00:00:25,600 --> 00:00:27,648
+JCB community Snippets
+
+14
+00:00:27,904 --> 00:00:30,208
+On get up so you need a github account
+
+15
+00:00:32,000 --> 00:00:33,024
+The second thing
+
+16
+00:00:33,280 --> 00:00:34,048
+Is once you
+
+17
+00:00:34,304 --> 00:00:34,816
+Done that
+
+18
+00:00:35,584 --> 00:00:40,192
+You would export the Snippets here that you would like to contribute
+
+19
+00:00:41,728 --> 00:00:43,008
+And you will add it
+
+20
+00:00:43,264 --> 00:00:44,032
+To this
+
+21
+00:00:44,288 --> 00:00:49,152
+Repository that you forked and cloned down to your developing environment
+
+22
+00:00:50,688 --> 00:00:54,272
+And you would make commit messages on every change that you are
+
+23
+00:00:55,040 --> 00:00:55,808
+Intending to make
+
+24
+00:00:57,856 --> 00:01:02,976
+The second thing you would do Although there are few steps in each of these
+
+25
+00:01:03,488 --> 00:01:07,072
+Things the second thing is that you would then
+
+26
+00:01:07,840 --> 00:01:09,376
+Make a pull request
+
+27
+00:01:10,144 --> 00:01:13,472
+So this tutorial I'm just gonna focus on the first
+
+28
+00:01:14,240 --> 00:01:15,264
+Few things you need to do
+
+29
+00:01:16,288 --> 00:01:18,080
+And that is just to get you
+
+30
+00:01:18,336 --> 00:01:19,616
+Basically ready
+
+31
+00:01:20,640 --> 00:01:26,528
+All the things you need to do until the very point when you are now ready to actually do a pull request
+
+32
+00:01:27,552 --> 00:01:28,576
+Ok so now
+
+33
+00:01:28,832 --> 00:01:33,440
+There are three things that I suspect we can do one is to improve
+
+34
+00:01:34,208 --> 00:01:36,000
+Already existing snippet
+
+35
+00:01:36,256 --> 00:01:38,304
+And then contribute that to the community
+
+36
+00:01:39,840 --> 00:01:43,168
+The second thing is to move and existing snippet
+
+37
+00:01:43,424 --> 00:01:49,568
+To a new type this isn't something I hope will happen often but it can't happen
+
+38
+00:01:49,824 --> 00:01:55,200
+That a snippet is in a specific type that is not the best suit for it
+
+39
+00:01:55,968 --> 00:01:56,480
+And
+
+40
+00:01:56,992 --> 00:01:59,040
+You might wanna suggest us changing that
+
+41
+00:01:59,552 --> 00:02:01,088
+So that would be a second thing
+
+42
+00:02:01,600 --> 00:02:02,624
+And the third one
+
+43
+00:02:02,880 --> 00:02:06,720
+Would be to actually add a whole new snippet completely
+
+44
+00:02:06,976 --> 00:02:10,816
+So I think I'm just gonna demonstrate all three of those
+
+45
+00:02:11,328 --> 00:02:14,144
+And then we'll see how that all plays Out
+
+46
+00:02:14,912 --> 00:02:18,240
+Until the very point where we are now ready to make a pull request
+
+47
+00:02:19,520 --> 00:02:21,312
+Ok first things first
+
+48
+00:02:22,080 --> 00:02:22,592
+We need
+
+49
+00:02:22,848 --> 00:02:23,616
+Repository
+
+50
+00:02:23,872 --> 00:02:26,432
+And we need to understand git
+
+51
+00:02:26,688 --> 00:02:28,224
+Now if you do not know get
+
+52
+00:02:28,992 --> 00:02:30,784
+The story is not gonna cover that
+
+53
+00:02:31,040 --> 00:02:32,576
+You need to do your homework
+
+54
+00:02:32,832 --> 00:02:34,112
+And study upon git
+
+55
+00:02:34,880 --> 00:02:39,744
+When you do an export of a package for example if I were to click here on these
+
+56
+00:02:41,536 --> 00:02:42,048
+three herein
+
+57
+00:02:42,304 --> 00:02:43,584
+Clickshare Snippets
+
+58
+00:02:44,352 --> 00:02:49,472
+You see that it ends up showing you a bunch of links here and one of them is quick start for git
+
+59
+00:02:49,984 --> 00:02:50,752
+On Yodomy
+
+60
+00:02:51,008 --> 00:02:57,152
+At this link here I just searched on Google found it I didn't actually watch it myself I hope it's not bad
+
+61
+00:02:57,920 --> 00:02:59,200
+If you got a better one
+
+62
+00:02:59,456 --> 00:03:00,480
+Please share it
+
+63
+00:03:00,736 --> 00:03:04,832
+On on the issue somewhere and will will improve this link
+
+64
+00:03:05,344 --> 00:03:09,696
+I'm your even if you've got your own and you would like us to promote your
+
+65
+00:03:10,208 --> 00:03:11,744
+Tutorials on get sure
+
+66
+00:03:12,000 --> 00:03:12,512
+Why not
+
+67
+00:03:12,768 --> 00:03:14,560
+We will support those who support
+
+68
+00:03:14,816 --> 00:03:16,096
+our community
+
+69
+00:03:16,608 --> 00:03:17,376
+Very gladly
+
+70
+00:03:17,888 --> 00:03:18,912
+Reality is
+
+71
+00:03:19,424 --> 00:03:20,704
+You need to get some
+
+72
+00:03:20,960 --> 00:03:23,008
+Your head around some of the git basics
+
+73
+00:03:23,264 --> 00:03:25,056
+So that you can actually do
+
+74
+00:03:25,312 --> 00:03:25,824
+A
+
+75
+00:03:26,080 --> 00:03:27,104
+Fork of the
+
+76
+00:03:27,360 --> 00:03:29,664
+JCB Snippets on github
+
+77
+00:03:30,176 --> 00:03:31,968
+And then make a pull request
+
+78
+00:03:32,480 --> 00:03:32,992
+So this
+
+79
+00:03:33,248 --> 00:03:39,392
+Video here is the one I'm busy making so it will end up that being that link how to fork
+
+80
+00:03:39,648 --> 00:03:42,208
+JCB Snippets and get all this done
+
+81
+00:03:42,720 --> 00:03:45,024
+And then after that I'll be making this video
+
+82
+00:03:45,280 --> 00:03:47,072
+So we'll get to that in a moment
+
+83
+00:03:47,584 --> 00:03:48,096
+Ok
+
+84
+00:03:48,352 --> 00:03:48,864
+Now
+
+85
+00:03:49,376 --> 00:03:51,168
+You need a an account on GitHub
+
+86
+00:03:51,680 --> 00:03:54,496
+And so I'm just gonna use my own account
+
+87
+00:03:55,008 --> 00:03:55,520
+And
+
+88
+00:03:55,776 --> 00:03:56,800
+Simply go and
+
+89
+00:03:57,056 --> 00:04:00,128
+Fork the repository and use that as the demonstration
+
+90
+00:04:01,920 --> 00:04:05,504
+So needless to say I've got an account I've gone through all those hoops
+
+91
+00:04:06,016 --> 00:04:09,088
+And now I'm simply go to fork  this repository
+
+92
+00:04:09,344 --> 00:04:10,880
+To get to this repository
+
+93
+00:04:11,392 --> 00:04:13,184
+It's this your all up here
+
+94
+00:04:13,440 --> 00:04:15,488
+Another way to get here
+
+95
+00:04:16,000 --> 00:04:16,512
+Is
+
+96
+00:04:16,768 --> 00:04:19,583
+You go to get Snippets
+
+97
+00:04:19,839 --> 00:04:25,983
+And then the moment it's finish loading there is a link that you can click which will take you
+
+98
+00:04:27,263 --> 00:04:31,359
+To the GitHub repository and it's this link over here so we could click that
+
+99
+00:04:32,383 --> 00:04:34,687
+And as you see we're end up at the same place
+
+100
+00:04:34,943 --> 00:04:35,455
+it be good
+
+101
+00:04:36,223 --> 00:04:37,503
+So you could either just
+
+102
+00:04:37,759 --> 00:04:41,087
+Follow this URL appear all good just use that link
+
+103
+00:04:41,855 --> 00:04:44,927
+But you wanna get to Joomla component builder snippets
+
+104
+00:04:45,695 --> 00:04:46,975
+And I suppose
+
+105
+00:04:47,487 --> 00:04:50,303
+Since everybody that wants to contribute will need to fork it
+
+106
+00:04:50,815 --> 00:04:54,143
+I suspect this numbers here will change
+
+107
+00:04:54,399 --> 00:05:00,287
+And of course well this respositry is like 6 days old I haven't even finished the ReadMe
+
+108
+00:05:00,799 --> 00:05:03,359
+So there will be a lot of changes to this
+
+109
+00:05:03,615 --> 00:05:05,663
+Repository and it will improve
+
+110
+00:05:06,687 --> 00:05:11,551
+So the first thing you do is click on this button here and forked repository
+
+111
+00:05:11,807 --> 00:05:13,599
+This will then ask you to select
+
+112
+00:05:14,111 --> 00:05:18,207
+Where you want to fork it if you belong to organisations whatever but then
+
+113
+00:05:18,463 --> 00:05:21,023
+Obviously by then I don't need to explain to you how it works
+
+114
+00:05:21,791 --> 00:05:27,423
+But if for some reason you don't then you select your personal or whatever organisation
+
+115
+00:05:27,679 --> 00:05:29,727
+You want a fork to appear in
+
+116
+00:05:29,983 --> 00:05:31,519
+And then it will basically
+
+117
+00:05:31,775 --> 00:05:33,311
+copy this repository
+
+118
+00:05:33,567 --> 00:05:34,079
+For you
+
+119
+00:05:35,103 --> 00:05:39,967
+Ok so now it's busy doing that I'm basically just copying it into my personal
+
+120
+00:05:40,479 --> 00:05:41,503
+Account
+
+121
+00:05:42,271 --> 00:05:42,783
+Now
+
+122
+00:05:43,039 --> 00:05:44,063
+Good practice
+
+123
+00:05:44,319 --> 00:05:47,391
+Every time you wanna make it change
+
+124
+00:05:47,903 --> 00:05:48,415
+Then
+
+125
+00:05:48,671 --> 00:05:50,719
+You need to follow a few steps
+
+126
+00:05:51,231 --> 00:05:51,743
+In
+
+127
+00:05:51,999 --> 00:05:54,559
+Having this repository in sync
+
+128
+00:05:55,071 --> 00:05:56,095
+With the
+
+129
+00:05:56,607 --> 00:06:00,447
+What we call upstream repository this VDM dot IO
+
+130
+00:06:00,703 --> 00:06:02,495
+Joomla component Builders snippets
+
+131
+00:06:02,751 --> 00:06:04,543
+This is what we call the upstream
+
+132
+00:06:04,799 --> 00:06:08,895
+All the master branch or whatever you wanna call it this is the main
+
+133
+00:06:09,407 --> 00:06:15,551
+Branch the one that is being used inside of JCB yours is indirectly being used
+
+134
+00:06:15,807 --> 00:06:19,647
+So whatever changes you make here would not necessarily affect us at all
+
+135
+00:06:20,415 --> 00:06:21,951
+But you obviously want them
+
+136
+00:06:22,719 --> 00:06:24,767
+Commit your changes to your branch
+
+137
+00:06:25,279 --> 00:06:26,303
+And then
+
+138
+00:06:26,559 --> 00:06:27,839
+Make a pull request
+
+139
+00:06:28,351 --> 00:06:30,911
+To the upstream branch
+
+140
+00:06:31,167 --> 00:06:33,983
+Where you would like to share this with the community
+
+141
+00:06:34,239 --> 00:06:35,007
+So that's
+
+142
+00:06:35,263 --> 00:06:38,591
+Sort of a quick explanation we'll do this slowly
+
+143
+00:06:38,847 --> 00:06:40,639
+I'm not gonna do the pool request
+
+144
+00:06:40,895 --> 00:06:42,431
+Now in this tutorial
+
+145
+00:06:42,687 --> 00:06:48,575
+But I'll take you all the way up to the wall and then we will get the ladder out and finish that in the next tutorial
+
+146
+00:06:50,623 --> 00:06:55,487
+Ok so once you've done this forking of the main
+
+147
+00:06:55,743 --> 00:06:56,511
+Repository
+
+148
+00:06:57,023 --> 00:06:59,583
+You need to clone this repository down
+
+149
+00:06:59,839 --> 00:07:01,631
+to your own developing environment
+
+150
+00:07:02,399 --> 00:07:02,911
+And
+
+151
+00:07:03,167 --> 00:07:04,959
+So that is what I'll do next
+
+152
+00:07:07,007 --> 00:07:08,287
+You would click on this
+
+153
+00:07:08,543 --> 00:07:09,567
+Clone and
+
+154
+00:07:09,823 --> 00:07:13,663
+Depending on how you've got get set up on your developing environment
+
+155
+00:07:14,175 --> 00:07:17,247
+Again those tutorials you need to do before coming here
+
+156
+00:07:17,759 --> 00:07:22,879
+You would select either SSH or https  I would suggest using https
+
+157
+00:07:23,135 --> 00:07:26,207
+as this is of course more secure
+
+158
+00:07:26,975 --> 00:07:27,999
+But ok
+
+159
+00:07:28,511 --> 00:07:30,815
+So we'll just copy that and then we go
+
+160
+00:07:31,071 --> 00:07:32,863
+To I'm just gonna use my
+
+161
+00:07:34,911 --> 00:07:35,423
+My
+
+162
+00:07:35,679 --> 00:07:37,983
+New users home folder for now
+
+163
+00:07:40,543 --> 00:07:43,103
+So here I am in the command line
+
+164
+00:07:43,359 --> 00:07:47,711
+I'm running Linux so if you're running using Windows
+
+165
+00:07:47,967 --> 00:07:52,063
+You need to watch tutorials on how to do get in Windows
+
+166
+00:07:52,575 --> 00:07:55,903
+You might end up using a tool instead of command line
+
+167
+00:07:56,159 --> 00:07:59,487
+But if you did that you also be having had watched
+
+168
+00:07:59,743 --> 00:08:02,559
+Tutorials to help you sort of understand what I'm doing
+
+169
+00:08:04,095 --> 00:08:04,607
+Ok
+
+170
+00:08:04,863 --> 00:08:08,447
+So first thing first we gonna clone it let's get that done
+
+171
+00:08:09,983 --> 00:08:11,263
+So I've cloned it
+
+172
+00:08:11,519 --> 00:08:13,311
+And we now have a folder
+
+173
+00:08:13,567 --> 00:08:15,871
+Call Joomla component Builders snippets
+
+174
+00:08:16,383 --> 00:08:18,431
+So I'm gonna change into that folder now
+
+175
+00:08:19,967 --> 00:08:24,575
+Just CD and a folder name and there we go I'm in the folder
+
+176
+00:08:25,343 --> 00:08:29,183
+And if I do LSLA  will basically see all the files
+
+177
+00:08:29,695 --> 00:08:33,023
+That was on get up now in that folder
+
+178
+00:08:33,791 --> 00:08:35,583
+Now we want to change these files
+
+179
+00:08:35,839 --> 00:08:39,423
+But we not going to change them directly
+
+180
+00:08:39,935 --> 00:08:43,263
+We're going to use JCB to do the dirty work for us
+
+181
+00:08:43,775 --> 00:08:48,639
+Because we might have issues with escaping and all kinds of things that can go wrong
+
+182
+00:08:48,895 --> 00:08:50,687
+So just to have good convention
+
+183
+00:08:51,199 --> 00:08:56,831
+Whatever changes wanna make even if you wanna add files or new libraries whatever
+
+184
+00:08:57,087 --> 00:08:59,903
+You do it in JCB and you do the export package
+
+185
+00:09:01,695 --> 00:09:04,767
+And you should check that if you export a snippet
+
+186
+00:09:05,023 --> 00:09:06,559
+That it has three
+
+187
+00:09:06,815 --> 00:09:08,351
+Values always set
+
+188
+00:09:08,863 --> 00:09:10,655
+And that does three values
+
+189
+00:09:10,911 --> 00:09:16,543
+Well will obviously scrutinise it when you make her pull request
+
+190
+00:09:17,055 --> 00:09:19,615
+But that does name conventions
+
+191
+00:09:19,871 --> 00:09:20,639
+be standard
+
+192
+00:09:21,407 --> 00:09:26,015
+It's quite important as you can see this but got the library name you like it
+
+193
+00:09:26,271 --> 00:09:30,367
+And it's uppercase U and space lowercase V2
+
+194
+00:09:30,879 --> 00:09:32,927
+And then common with uppercase
+
+195
+00:09:33,183 --> 00:09:35,231
+And that is the type of snippet
+
+196
+00:09:35,487 --> 00:09:37,279
+And then it's the name
+
+197
+00:09:37,535 --> 00:09:39,071
+And obviously Jason file
+
+198
+00:09:39,583 --> 00:09:40,095
+So
+
+199
+00:09:40,351 --> 00:09:41,375
+This is the convention
+
+200
+00:09:41,631 --> 00:09:44,959
+And at this stage JCB built that for you
+
+201
+00:09:45,471 --> 00:09:48,031
+And I'm gonna show you where it gets this convention
+
+202
+00:09:48,543 --> 00:09:52,383
+Because to follow this Convention is what's really gonna be very important
+
+203
+00:09:53,151 --> 00:09:55,711
+If you making a new Snippets
+
+204
+00:09:55,967 --> 00:09:58,527
+For the UI kit version two library
+
+205
+00:09:58,783 --> 00:10:01,087
+You need to ensure that your
+
+206
+00:10:01,343 --> 00:10:06,207
+Version 2 naming in your system is the same as it is here
+
+207
+00:10:06,463 --> 00:10:11,583
+And if you are adding a new library that isn't already in our repository
+
+208
+00:10:12,351 --> 00:10:14,399
+Then you need to make sure that you use
+
+209
+00:10:14,655 --> 00:10:17,215
+The naming as found wall
+
+210
+00:10:17,471 --> 00:10:20,543
+As others will understand it as most common
+
+211
+00:10:21,055 --> 00:10:23,103
+The most common name in convention
+
+212
+00:10:23,615 --> 00:10:28,223
+And obviously if you need help on that you can open an issue and ask one of the admin
+
+213
+00:10:28,735 --> 00:10:29,503
+Do you know
+
+214
+00:10:29,759 --> 00:10:31,551
+Maybe give you a suggestion of what
+
+215
+00:10:31,807 --> 00:10:32,831
+To call the library
+
+216
+00:10:33,343 --> 00:10:33,855
+But
+
+217
+00:10:34,367 --> 00:10:36,415
+The Long and the short end of it is
+
+218
+00:10:36,671 --> 00:10:38,463
+Please stick to the naming conventions
+
+219
+00:10:38,975 --> 00:10:42,047
+Don't change this UI kit
+
+220
+00:10:42,559 --> 00:10:45,887
+To maybe the remove the space here or something that
+
+221
+00:10:46,143 --> 00:10:47,679
+Because it will end up
+
+222
+00:10:47,935 --> 00:10:49,727
+Just miss matching things and
+
+223
+00:10:49,983 --> 00:10:51,519
+One of word that from happening
+
+224
+00:10:52,287 --> 00:10:56,383
+Ok so first thing with done with forked repository and with now cloned it
+
+225
+00:10:56,895 --> 00:10:58,943
+Do offline developing environment
+
+226
+00:10:59,455 --> 00:11:03,807
+And now I'm going to go to JCB
+
+227
+00:11:04,063 --> 00:11:08,671
+I'm gonna export does 3 Snippets the one is a new snippet
+
+228
+00:11:09,439 --> 00:11:12,255
+The second is a changed or improved snippet
+
+229
+00:11:12,511 --> 00:11:17,119
+And in the 3rd is when you actually move a snippet to a different type
+
+230
+00:11:17,375 --> 00:11:19,423
+the one I'm going to target here
+
+231
+00:11:19,679 --> 00:11:20,703
+Is let me see
+
+232
+00:11:21,727 --> 00:11:23,263
+Think it's
+
+233
+00:11:24,543 --> 00:11:26,079
+Not showing here now
+
+234
+00:11:26,335 --> 00:11:27,359
+I hear this
+
+235
+00:11:27,871 --> 00:11:28,639
+Food table
+
+236
+00:11:29,151 --> 00:11:30,943
+The food table snippet
+
+237
+00:11:31,199 --> 00:11:32,991
+Is at the moment in layout
+
+238
+00:11:33,503 --> 00:11:35,295
+I think there is a better
+
+239
+00:11:35,551 --> 00:11:38,623
+Type for this snippet and I know the snippet isn't
+
+240
+00:11:39,135 --> 00:11:40,927
+At this stage maybe the best
+
+241
+00:11:41,183 --> 00:11:46,303
+We could add some more food table Snippets but I'll leave that to some with you to do
+
+242
+00:11:47,583 --> 00:11:49,887
+The point is I'm gonna move this one
+
+243
+00:11:50,143 --> 00:11:52,703
+To the tables because it is a table right
+
+244
+00:11:53,215 --> 00:11:57,055
+So that'll be the one change I'm gonna make then I'm gonna add one snippet
+
+245
+00:11:57,311 --> 00:11:59,103
+To the UI kit versions 3
+
+246
+00:11:59,615 --> 00:12:05,759
+Since those tickets are still coming I'll just add 1 as they mistration and then I'll make a little change
+
+247
+00:12:06,271 --> 00:12:10,367
+To one of these Snippets just for them mistration ok great let me do that
+
+248
+00:12:11,391 --> 00:12:14,975
+Ok first thing a food table click on that one
+
+249
+00:12:15,231 --> 00:12:17,023
+Change it from layout
+
+250
+00:12:18,047 --> 00:12:19,327
+To tables
+
+251
+00:12:21,375 --> 00:12:24,447
+I'm gonna make any other changes I'm just changing the type
+
+252
+00:12:24,703 --> 00:12:28,799
+And this brings us to those three values that must always be set
+
+253
+00:12:29,823 --> 00:12:35,199
+And shouldn't change unless it's really seriously necessary the one is the name
+
+254
+00:12:35,711 --> 00:12:40,831
+You wouldn't wanna change this name unless you are 100% sure it should be changed
+
+255
+00:12:41,087 --> 00:12:44,415
+Because in effect it will create a new snippet
+
+256
+00:12:46,463 --> 00:12:50,303
+Because the way the Snippets work it builds the filename
+
+257
+00:12:50,559 --> 00:12:51,583
+With name
+
+258
+00:12:51,839 --> 00:12:53,631
+The library and the type
+
+259
+00:12:54,399 --> 00:12:57,983
+Those three components together makes up the file name
+
+260
+00:12:58,495 --> 00:13:02,079
+To changing any of those will in effect greater New snippet
+
+261
+00:13:02,591 --> 00:13:04,383
+And create a duplicate
+
+262
+00:13:04,895 --> 00:13:07,711
+And that's really wanna would try to avoid that
+
+263
+00:13:08,223 --> 00:13:09,247
+And I realised
+
+264
+00:13:09,759 --> 00:13:13,343
+This is gonna what I'm doing here now is inevitably gonna cause that
+
+265
+00:13:14,879 --> 00:13:19,487
+And I think it will show you why it's not a good thing to do it
+
+266
+00:13:19,999 --> 00:13:23,583
+But so I'm doing this more really for the demonstration
+
+267
+00:13:23,839 --> 00:13:29,983
+And so the ideal reality is that when we add snippet we added to the correct library and type
+
+268
+00:13:30,495 --> 00:13:32,031
+And give it the correct name
+
+269
+00:13:32,287 --> 00:13:35,359
+From the start and it we don't need to change those three again
+
+270
+00:13:36,127 --> 00:13:37,151
+If we do
+
+271
+00:13:37,407 --> 00:13:39,967
+Most of the time I would expect
+
+272
+00:13:40,223 --> 00:13:42,527
+That your pull request will be rejected
+
+273
+00:13:43,039 --> 00:13:46,623
+Because this will mess up many conventions and cause
+
+274
+00:13:46,879 --> 00:13:49,183
+Many duplicates across the system
+
+275
+00:13:49,439 --> 00:13:54,303
+In other developers environment where they would import this new snippet
+
+276
+00:13:54,559 --> 00:13:57,119
+And yet end up having to the same Snippets
+
+277
+00:13:58,655 --> 00:14:00,703
+Ok I've said enough about that
+
+278
+00:14:00,959 --> 00:14:04,287
+I hope you understand that important this part is
+
+279
+00:14:04,543 --> 00:14:06,335
+So let's go ahead save and close
+
+280
+00:14:06,847 --> 00:14:08,639
+The next one I'm gonna do
+
+281
+00:14:08,895 --> 00:14:12,735
+Is basically add a new snippet now since I've done this recording
+
+282
+00:14:13,247 --> 00:14:15,295
+Second time now
+
+283
+00:14:15,551 --> 00:14:19,391
+I've already done that and this is a accordion snippet  here
+
+284
+00:14:19,903 --> 00:14:22,975
+So you'll see that I've basically
+
+285
+00:14:23,487 --> 00:14:25,279
+Said that is a JavaScript snippet
+
+286
+00:14:25,791 --> 00:14:27,583
+It's an accordion
+
+287
+00:14:28,095 --> 00:14:30,143
+It's Yohaa kid Version 3
+
+288
+00:14:30,655 --> 00:14:33,215
+I look down these types
+
+289
+00:14:33,727 --> 00:14:39,359
+I'm wonder if some one of the other guys won't be better at this identifying of the types
+
+290
+00:14:39,871 --> 00:14:41,151
+So I might even
+
+291
+00:14:41,407 --> 00:14:43,967
+Not be the guy to make the call on this
+
+292
+00:14:44,991 --> 00:14:47,295
+I really am open to some
+
+293
+00:14:47,551 --> 00:14:48,831
+With better prospective
+
+294
+00:14:49,087 --> 00:14:51,647
+Maybe knows these libraries assorting
+
+295
+00:14:51,903 --> 00:14:53,439
+It is better
+
+296
+00:14:53,695 --> 00:14:56,767
+I think there's a place called
+
+297
+00:14:57,279 --> 00:14:57,791
+What is it
+
+298
+00:14:59,071 --> 00:14:59,839
+Collapse
+
+299
+00:15:00,351 --> 00:15:01,375
+Yeah collaps
+
+300
+00:15:01,631 --> 00:15:05,727
+It accordions could also fit other under this collapse I suppose
+
+301
+00:15:06,495 --> 00:15:07,775
+No let me do that
+
+302
+00:15:08,031 --> 00:15:11,871
+I know the first accordian we added for UI kit version 2
+
+303
+00:15:12,383 --> 00:15:14,431
+That is actually found on the JavaScript
+
+304
+00:15:14,687 --> 00:15:17,247
+But then we didn't have these many types
+
+305
+00:15:17,503 --> 00:15:18,271
+So
+
+306
+00:15:18,527 --> 00:15:20,831
+I'll just add it under this collaps  for now
+
+307
+00:15:22,111 --> 00:15:25,951
+Again I realise that this might be a difficult thing
+
+308
+00:15:26,207 --> 00:15:26,719
+And
+
+309
+00:15:27,231 --> 00:15:31,327
+What could help is going back to the actual  library itself
+
+310
+00:15:31,583 --> 00:15:32,095
+This
+
+311
+00:15:32,351 --> 00:15:33,119
+This is the
+
+312
+00:15:33,375 --> 00:15:34,399
+The link for it
+
+313
+00:15:34,911 --> 00:15:36,703
+And to try and see how they
+
+314
+00:15:36,959 --> 00:15:39,775
+Organised it and that's the problem
+
+315
+00:15:40,031 --> 00:15:41,055
+UI kit
+
+316
+00:15:41,311 --> 00:15:41,823
+Didn't
+
+317
+00:15:44,383 --> 00:15:47,711
+Give more breakdown besides calling it components
+
+318
+00:15:48,735 --> 00:15:51,039
+So it's only call the component it doesn't
+
+319
+00:15:51,551 --> 00:15:53,855
+Specifically added into a type
+
+320
+00:15:54,367 --> 00:15:56,927
+Whereas Bootstrap is doing a little better at that
+
+321
+00:15:57,183 --> 00:15:58,719
+So that's why
+
+322
+00:15:58,975 --> 00:16:02,047
+I'm not sure exactly where to place it now
+
+323
+00:16:03,839 --> 00:16:04,863
+bootsstrap
+
+324
+00:16:05,119 --> 00:16:07,167
+Actually adds it on the collapse
+
+325
+00:16:07,679 --> 00:16:09,727
+I think we won't go wrong to do the same
+
+326
+00:16:11,519 --> 00:16:12,799
+So save and close
+
+327
+00:16:14,079 --> 00:16:15,871
+There we go we got now
+
+328
+00:16:16,127 --> 00:16:19,711
+A very crazy risky change of a type
+
+329
+00:16:20,223 --> 00:16:23,551
+And a new snippet now let me take another
+
+330
+00:16:23,807 --> 00:16:26,623
+Snippet and just make a little improvement to it
+
+331
+00:16:27,647 --> 00:16:29,183
+I think I would use this
+
+332
+00:16:29,439 --> 00:16:30,975
+UI kit version 2
+
+333
+00:16:31,231 --> 00:16:32,255
+Form snippet
+
+334
+00:16:32,511 --> 00:16:35,583
+I'm just gonna add some usage information to it
+
+335
+00:16:37,375 --> 00:16:38,399
+Ok there we go
+
+336
+00:16:39,167 --> 00:16:40,191
+And I'm gonna save it
+
+337
+00:16:40,703 --> 00:16:41,471
+save and close
+
+338
+00:16:42,239 --> 00:16:44,031
+So now I've made a change
+
+339
+00:16:44,543 --> 00:16:45,567
+Basically two
+
+340
+00:16:46,079 --> 00:16:46,847
+This one
+
+341
+00:16:47,103 --> 00:16:52,479
+This one and that that one and So those are the only ones I'm actually going to share
+
+342
+00:16:52,735 --> 00:16:56,831
+This one when I created it it added my details
+
+343
+00:16:57,087 --> 00:16:58,111
+As the
+
+344
+00:16:59,135 --> 00:17:00,159
+Contributor
+
+345
+00:17:00,415 --> 00:17:02,207
+Which if you created a snippet
+
+346
+00:17:02,463 --> 00:17:06,303
+You know add your details you will notice when you create a new snippet
+
+347
+00:17:06,559 --> 00:17:11,167
+It takes a while before it's finish saving and it's because it's actually phoning
+
+348
+00:17:11,423 --> 00:17:12,191
+Github
+
+349
+00:17:12,447 --> 00:17:15,263
+And trying to see if there isn't a snippet
+
+350
+00:17:15,519 --> 00:17:16,799
+Already with that
+
+351
+00:17:17,055 --> 00:17:19,871
+Relationship as explained in a previous tutorial
+
+352
+00:17:20,383 --> 00:17:24,735
+And that takes a while I'm I'm still wondering if that's the best idea
+
+353
+00:17:24,991 --> 00:17:27,039
+If we should continue doing that
+
+354
+00:17:27,551 --> 00:17:28,575
+I'm open for
+
+355
+00:17:28,831 --> 00:17:30,111
+Suggestions
+
+356
+00:17:30,367 --> 00:17:32,927
+But at this stage we just trying to confirm that
+
+357
+00:17:33,183 --> 00:17:33,951
+that snippet
+
+358
+00:17:34,207 --> 00:17:36,511
+Wasn't already created
+
+359
+00:17:36,767 --> 00:17:38,303
+And to avoid conflicts
+
+360
+00:17:38,815 --> 00:17:39,327
+Now
+
+361
+00:17:40,095 --> 00:17:45,983
+That means if it doesn't find it it adds your details which is set here in the option Global options
+
+362
+00:17:46,495 --> 00:17:48,799
+And as I explained in that tutorial
+
+363
+00:17:49,055 --> 00:17:51,871
+You can add your details and you would get some
+
+364
+00:17:52,127 --> 00:17:54,943
+exposure out there the community
+
+365
+00:17:55,455 --> 00:17:56,735
+With your details there
+
+366
+00:17:57,247 --> 00:17:59,807
+With these that I've just changed
+
+367
+00:18:01,087 --> 00:18:02,879
+The contributor will stay the same
+
+368
+00:18:03,135 --> 00:18:05,951
+But your name will come in on the blame
+
+369
+00:18:06,207 --> 00:18:06,975
+Layout
+
+370
+00:18:07,231 --> 00:18:12,095
+And your GitHub name will display there as recognition for your support
+
+371
+00:18:12,607 --> 00:18:15,679
+Ok so now and next thing share Snippets
+
+372
+00:18:16,191 --> 00:18:17,727
+Well the reason I
+
+373
+00:18:19,263 --> 00:18:21,823
+Made it that it actually compiles is zip
+
+374
+00:18:22,079 --> 00:18:22,591
+File
+
+375
+00:18:23,103 --> 00:18:24,895
+Because it's easier to move around
+
+376
+00:18:26,687 --> 00:18:30,015
+We could argue that we might want to just have it zip
+
+377
+00:18:30,271 --> 00:18:31,551
+Move
+
+378
+00:18:32,063 --> 00:18:34,111
+Rather move the
+
+379
+00:18:34,367 --> 00:18:36,927
+Files right into your
+
+380
+00:18:37,183 --> 00:18:38,463
+A local cloned
+
+381
+00:18:38,719 --> 00:18:39,487
+Folder
+
+382
+00:18:39,743 --> 00:18:42,559
+And so I am thinking at this stage maybe
+
+383
+00:18:42,815 --> 00:18:45,631
+We should add a switch here in the global options
+
+384
+00:18:45,887 --> 00:18:51,775
+That could make you choose it to do this or the other depending on what is most convenient for you
+
+385
+00:18:52,287 --> 00:18:54,591
+So I'm gonna go take the snippet
+
+386
+00:18:55,103 --> 00:18:59,199
+And then I'm gonna go and basically unzip it into
+
+387
+00:18:59,455 --> 00:18:59,967
+That
+
+388
+00:19:00,223 --> 00:19:02,527
+Repository that we've cloned
+
+389
+00:19:04,319 --> 00:19:08,159
+So here we are in that folder I'm gonna first unzip it right here
+
+390
+00:19:09,439 --> 00:19:11,999
+There there is those 3 files
+
+391
+00:19:12,255 --> 00:19:15,071
+That we want to make part of the repository
+
+392
+00:19:15,583 --> 00:19:16,863
+Now like I said I
+
+393
+00:19:17,119 --> 00:19:20,703
+Actually clone to repository right into my
+
+394
+00:19:21,215 --> 00:19:21,983
+user
+
+395
+00:19:23,519 --> 00:19:24,543
+Folder
+
+396
+00:19:24,799 --> 00:19:26,335
+So let us go to that folder
+
+397
+00:19:26,847 --> 00:19:28,383
+Just go to cut it here
+
+398
+00:19:28,895 --> 00:19:29,407
+Cut
+
+399
+00:19:31,455 --> 00:19:32,735
+And then paste
+
+400
+00:19:34,015 --> 00:19:35,295
+It right into that folder
+
+401
+00:19:35,807 --> 00:19:38,111
+Now we are updating
+
+402
+00:19:38,623 --> 00:19:39,903
+21 file
+
+403
+00:19:40,415 --> 00:19:43,487
+So it's asking you ready contains this file
+
+404
+00:19:43,999 --> 00:19:48,863
+Now so when you make an improvement on a file you will obviously have to replace it
+
+405
+00:19:49,631 --> 00:19:50,911
+So we click replace
+
+406
+00:19:52,191 --> 00:19:53,215
+Now that you've
+
+407
+00:19:53,471 --> 00:19:55,007
+Added those two new files
+
+408
+00:19:55,519 --> 00:19:56,543
+And you have
+
+409
+00:19:57,055 --> 00:19:58,079
+Replaced one of them
+
+410
+00:19:59,103 --> 00:20:00,383
+The third one
+
+411
+00:20:01,151 --> 00:20:03,199
+You see that we now have this
+
+412
+00:20:03,455 --> 00:20:04,479
+Food table
+
+413
+00:20:04,735 --> 00:20:06,015
+The tables version
+
+414
+00:20:06,527 --> 00:20:08,319
+And we have it also
+
+415
+00:20:09,343 --> 00:20:12,415
+Add the layout version now one of them needs to go
+
+416
+00:20:12,671 --> 00:20:13,951
+We don't want duplicates
+
+417
+00:20:14,207 --> 00:20:16,767
+So you have to remove this one but
+
+418
+00:20:17,023 --> 00:20:18,815
+Don't remove it via the
+
+419
+00:20:19,327 --> 00:20:20,351
+The Interface
+
+420
+00:20:20,607 --> 00:20:22,143
+Use use git
+
+421
+00:20:22,399 --> 00:20:23,423
+To remove the file
+
+422
+00:20:23,935 --> 00:20:25,983
+So that you can also add a message
+
+423
+00:20:26,495 --> 00:20:30,335
+So that when you make your pull request and we see their files removed
+
+424
+00:20:30,847 --> 00:20:32,383
+It will know why you did it
+
+425
+00:20:32,639 --> 00:20:35,199
+And obviously then it will become a discussion
+
+426
+00:20:35,711 --> 00:20:38,527
+And this will demonstrate in the next tutorial
+
+427
+00:20:39,295 --> 00:20:41,599
+Ok so let's get back to command line
+
+428
+00:20:42,879 --> 00:20:44,671
+Yeah we are we can say git
+
+429
+00:20:44,927 --> 00:20:51,071
+Status to see what happened and we see wow ok what has been modified and these two has been added
+
+430
+00:20:52,095 --> 00:20:55,423
+The first thing we wanna do is remove the one that we don't want
+
+431
+00:20:56,191 --> 00:21:00,799
+Now because we have chosen to leave spaces within a file names
+
+432
+00:21:01,567 --> 00:21:02,591
+You need to
+
+433
+00:21:02,847 --> 00:21:06,687
+In put the file name in quotations
+
+434
+00:21:07,199 --> 00:21:09,503
+To ensure that it actually you know
+
+435
+00:21:10,271 --> 00:21:12,063
+Not misunderstand what you doing
+
+436
+00:21:13,599 --> 00:21:17,184
+So we will do a git  "rm" for remove
+
+437
+00:21:17,440 --> 00:21:19,232
+And then the file name
+
+438
+00:21:22,304 --> 00:21:22,816
+So
+
+439
+00:21:23,584 --> 00:21:29,728
+You could click tab after typing food table all about there and then lay out and it
+
+440
+00:21:29,984 --> 00:21:32,032
+Will basically grab the name for you
+
+441
+00:21:32,800 --> 00:21:34,336
+And then click enter
+
+442
+00:21:34,848 --> 00:21:38,688
+So it is removed it if we now to get status
+
+443
+00:21:38,944 --> 00:21:41,248
+Will see that it's in the deleted
+
+444
+00:21:41,504 --> 00:21:43,552
+Area and you need to actually
+
+445
+00:21:45,088 --> 00:21:46,112
+Make a commit
+
+446
+00:21:46,368 --> 00:21:47,392
+to
+
+447
+00:21:47,648 --> 00:21:49,696
+Explain what you've done so it's get
+
+448
+00:21:51,488 --> 00:21:52,512
+Commit "m"
+
+449
+00:21:52,768 --> 00:21:54,816
+And removed table-layout
+
+450
+00:21:55,584 --> 00:21:56,096
+Since
+
+451
+00:21:56,352 --> 00:21:56,864
+I
+
+452
+00:21:57,120 --> 00:21:57,632
+Moved
+
+453
+00:21:57,888 --> 00:21:58,400
+Did
+
+454
+00:21:58,656 --> 00:21:59,936
+Food table snippet
+
+455
+00:22:00,448 --> 00:22:01,216
+Tables
+
+456
+00:22:01,472 --> 00:22:02,752
+To the tables type
+
+457
+00:22:03,520 --> 00:22:04,032
+So
+
+458
+00:22:04,544 --> 00:22:07,104
+We're not at this stage exactly sure
+
+459
+00:22:07,360 --> 00:22:09,920
+How we are going to
+
+460
+00:22:10,176 --> 00:22:13,504
+What kind of conventions we gotta follow with these commit messages
+
+461
+00:22:14,016 --> 00:22:20,160
+There are reasons to have a few conventions here I just haven't had time to sort of get my head around it
+
+462
+00:22:20,416 --> 00:22:20,928
+so for now
+
+463
+00:22:21,184 --> 00:22:22,464
+we will keep it basic
+
+464
+00:22:22,720 --> 00:22:26,560
+But I'm sure as to community develops things will become more
+
+465
+00:22:27,072 --> 00:22:29,632
+Explained and so if you need help
+
+466
+00:22:30,144 --> 00:22:33,472
+Will most probably have some documentation up
+
+467
+00:22:33,728 --> 00:22:34,752
+At some stage
+
+468
+00:22:35,008 --> 00:22:36,288
+to get you
+
+469
+00:22:36,544 --> 00:22:37,568
+Do you know how to
+
+470
+00:22:37,824 --> 00:22:39,872
+Correctly do a commit message
+
+471
+00:22:40,384 --> 00:22:44,736
+I mean just what you should say first and what you shouldn't say and those kind of things
+
+472
+00:22:45,760 --> 00:22:49,856
+Ok so I've got a key that signs of every commit they make
+
+473
+00:22:50,368 --> 00:22:54,720
+You may not have that don't worry about it it's not really compulsory at this stage
+
+474
+00:22:55,232 --> 00:22:58,560
+It's just the way I can make sure that everybody knows
+
+475
+00:22:59,072 --> 00:23:00,352
+That it's me
+
+476
+00:23:00,864 --> 00:23:01,376
+Ok
+
+477
+00:23:02,144 --> 00:23:02,656
+Now
+
+478
+00:23:03,168 --> 00:23:05,216
+The next thing here is we wanna
+
+479
+00:23:05,472 --> 00:23:07,520
+Add this new file so as we do git
+
+480
+00:23:08,032 --> 00:23:08,800
+Status
+
+481
+00:23:09,312 --> 00:23:11,616
+We'll see that now that file is been
+
+482
+00:23:12,128 --> 00:23:13,664
+Made part of the commit
+
+483
+00:23:14,176 --> 00:23:15,200
+At the branch
+
+484
+00:23:15,712 --> 00:23:18,272
+or the local files of this clone
+
+485
+00:23:18,784 --> 00:23:21,344
+And we wanna add those to other files
+
+486
+00:23:21,856 --> 00:23:23,648
+The first one I'm gonna Target
+
+487
+00:23:25,440 --> 00:23:28,256
+Is adding the food table which we just removed
+
+488
+00:23:29,024 --> 00:23:29,792
+So get
+
+489
+00:23:30,560 --> 00:23:31,328
+Status
+
+490
+00:23:32,096 --> 00:23:32,608
+Oops
+
+491
+00:23:39,008 --> 00:23:41,312
+Ok so now we've got that one added
+
+492
+00:23:41,568 --> 00:23:43,360
+And we need to give it a commit message
+
+493
+00:23:43,872 --> 00:23:45,408
+Now I understand
+
+494
+00:23:45,920 --> 00:23:47,456
+When we are doing such
+
+495
+00:23:47,968 --> 00:23:51,808
+Dangerous thing as moving a snippet to another type
+
+496
+00:23:52,064 --> 00:23:56,672
+I would expect us to actually make a commit message for every
+
+497
+00:23:56,928 --> 00:23:58,464
+Step of what we're doing
+
+498
+00:23:59,232 --> 00:24:04,608
+But if you're adding Like A Whole New Library and you got like 300 new Snippets that you contribute in
+
+499
+00:24:05,120 --> 00:24:08,704
+I wouldn't mind you adding all of that on the one commit message
+
+500
+00:24:08,960 --> 00:24:11,520
+Just making sure that the it was exported
+
+501
+00:24:11,776 --> 00:24:14,336
+via Joomla's component Builder
+
+502
+00:24:14,848 --> 00:24:16,896
+So that we don't have
+
+503
+00:24:17,408 --> 00:24:20,992
+You know the wrong kind of code within does snippet files
+
+504
+00:24:23,040 --> 00:24:24,832
+And obviously we will at the
+
+505
+00:24:25,088 --> 00:24:26,368
+Pull request
+
+506
+00:24:26,624 --> 00:24:30,976
+Will scrutinize those files and we will have to look through them to insure
+
+507
+00:24:31,232 --> 00:24:34,304
+That it won't make any one system unstable
+
+508
+00:24:34,816 --> 00:24:40,960
+And so basically got a police some of this to do in sure that nothing gets you know
+
+509
+00:24:41,216 --> 00:24:43,264
+Merged into the master branch
+
+510
+00:24:43,776 --> 00:24:47,616
+That will put every anyone at risk as much as as far as we are able to
+
+511
+00:24:47,872 --> 00:24:49,408
+To prevent that we wanna do that
+
+512
+00:24:49,920 --> 00:24:55,808
+Well we working with snippet so it should be fine but just in case we wanna be careful
+
+513
+00:24:57,600 --> 00:25:01,440
+So when you making changes to one specific snippet
+
+514
+00:25:01,952 --> 00:25:03,488
+And you're not really like doing
+
+515
+00:25:03,744 --> 00:25:05,024
+Many at a time
+
+516
+00:25:05,536 --> 00:25:09,120
+I think be as detailed as you can in your commit messages
+
+517
+00:25:09,376 --> 00:25:11,680
+Because the more we know of What U doing
+
+518
+00:25:11,936 --> 00:25:15,008
+I think the easier it will be to merge it into
+
+519
+00:25:15,264 --> 00:25:18,592
+The branch and to basically approve your pull request
+
+520
+00:25:19,616 --> 00:25:22,432
+So the next commit message I'm just gonna say
+
+521
+00:25:22,688 --> 00:25:23,456
+Git commit
+
+522
+00:25:23,968 --> 00:25:29,344
+Message update the food table layout food table Dot Jason to food table
+
+523
+00:25:29,856 --> 00:25:30,880
+Table
+
+524
+00:25:31,136 --> 00:25:32,928
+Food table Dot Jason since
+
+525
+00:25:33,184 --> 00:25:35,232
+It is more correct snippet type
+
+526
+00:25:36,000 --> 00:25:37,536
+Ok so that would then
+
+527
+00:25:38,560 --> 00:25:40,608
+Deal with that added file
+
+528
+00:25:41,120 --> 00:25:42,912
+Now we want to
+
+529
+00:25:43,168 --> 00:25:46,752
+At the accordion which is the the new snippet
+
+530
+00:25:48,800 --> 00:25:52,128
+So it's just get Ad and we can select the file name
+
+531
+00:25:52,640 --> 00:25:54,432
+There is a shortcut to this
+
+532
+00:25:54,688 --> 00:26:00,832
+Is when you use the dot get dot ad that's usually when you have lots of files who just wanna add them all
+
+533
+00:26:01,088 --> 00:26:05,440
+It's like I explain if you doing in a whole bunch of snippets it's for a specific library
+
+534
+00:26:05,696 --> 00:26:10,304
+I would suggest doing library per library instead of just mixing them all up
+
+535
+00:26:10,816 --> 00:26:14,144
+Because if we target a library and just add a bunch of snippets for it
+
+536
+00:26:14,656 --> 00:26:19,776
+And then have a commit message just for that then we could explain that within the commit message
+
+537
+00:26:20,032 --> 00:26:22,592
+that it's for the specific library and so forth
+
+538
+00:26:22,848 --> 00:26:24,640
+Because usually with new libraries
+
+539
+00:26:25,664 --> 00:26:27,456
+You know it's good for us too
+
+540
+00:26:27,712 --> 00:26:29,504
+Sort of take it one step at a time
+
+541
+00:26:30,016 --> 00:26:34,112
+Ok now we've added that file now just going to add commit message for it
+
+542
+00:26:35,136 --> 00:26:37,440
+I'm just gonna say added to Accordion snippet
+
+543
+00:26:37,952 --> 00:26:41,024
+For you are cute Version 3 as demonstration
+
+544
+00:26:43,072 --> 00:26:45,120
+On how this should work
+
+545
+00:26:46,912 --> 00:26:49,216
+Ok and then just again
+
+546
+00:26:49,728 --> 00:26:50,752
+Sign-off that's
+
+547
+00:26:51,264 --> 00:26:51,776
+Commit
+
+548
+00:26:52,032 --> 00:26:53,568
+Get status
+
+549
+00:26:56,896 --> 00:27:00,992
+We'll see ok we've got one file left and we already 3 commits
+
+550
+00:27:01,248 --> 00:27:02,016
+Ahead
+
+551
+00:27:02,272 --> 00:27:03,296
+Of our
+
+552
+00:27:05,856 --> 00:27:06,368
+Our
+
+553
+00:27:06,880 --> 00:27:08,160
+Branch that we have
+
+554
+00:27:09,952 --> 00:27:10,464
+Cloned
+
+555
+00:27:10,976 --> 00:27:12,256
+So just this last
+
+556
+00:27:12,512 --> 00:27:13,536
+file which is the
+
+557
+00:27:14,048 --> 00:27:16,096
+You know the update we made
+
+558
+00:27:16,864 --> 00:27:17,376
+So
+
+559
+00:27:18,144 --> 00:27:19,680
+We gonna first add the file
+
+560
+00:27:20,704 --> 00:27:22,496
+And then add a commit message
+
+561
+00:27:23,008 --> 00:27:24,544
+To explain what we did
+
+562
+00:27:26,080 --> 00:27:30,944
+Added the uses paragraph to explain how to use the Yohaa kid version 2 layout form
+
+563
+00:27:32,992 --> 00:27:36,064
+Yeah I think just writing out file name like that is
+
+564
+00:27:36,832 --> 00:27:38,112
+Clear enough
+
+565
+00:27:38,624 --> 00:27:39,392
+And enter
+
+566
+00:27:39,904 --> 00:27:41,184
+again to sign off on that
+
+567
+00:27:41,696 --> 00:27:43,488
+Again if you don't have
+
+568
+00:27:43,744 --> 00:27:45,536
+Keys to then
+
+569
+00:27:46,048 --> 00:27:49,888
+It's good go Google this Start signing your request
+
+570
+00:27:50,656 --> 00:27:53,472
+But at this stage it's not a requirement as I said
+
+571
+00:27:53,984 --> 00:27:56,288
+Ok if we do get status now
+
+572
+00:27:58,336 --> 00:28:00,640
+Will see that we are 4 commits ahead
+
+573
+00:28:01,152 --> 00:28:03,200
+Now this is here where
+
+574
+00:28:03,456 --> 00:28:05,760
+We wanna do a few more things
+
+575
+00:28:06,016 --> 00:28:07,040
+To your
+
+576
+00:28:07,296 --> 00:28:09,600
+Commit all sorry to you all
+
+577
+00:28:10,880 --> 00:28:11,648
+Your 
+
+578
+00:28:12,160 --> 00:28:12,672
+Forked
+
+579
+00:28:13,184 --> 00:28:14,976
+And therefore cloned repository
+
+580
+00:28:15,744 --> 00:28:18,048
+Is what we wanna do something that will keep
+
+581
+00:28:18,304 --> 00:28:19,072
+Your
+
+582
+00:28:21,632 --> 00:28:24,960
+Repository in sync with the upstream
+
+583
+00:28:25,472 --> 00:28:28,032
+So I'm just gonna go and Google this quickly
+
+584
+00:28:28,544 --> 00:28:30,336
+This is a very helpful document
+
+585
+00:28:31,104 --> 00:28:36,480
+We first need to do this configure a remote that points to an upstream repository
+
+586
+00:28:36,992 --> 00:28:38,528
+So let's first look at that one
+
+587
+00:28:40,832 --> 00:28:42,112
+So this gives you
+
+588
+00:28:42,368 --> 00:28:44,160
+Little explanation
+
+589
+00:28:44,672 --> 00:28:46,464
+Of you know what you should do
+
+590
+00:28:46,976 --> 00:28:47,744
+So
+
+591
+00:28:48,000 --> 00:28:49,792
+First you basically
+
+592
+00:28:51,328 --> 00:28:52,608
+List the current
+
+593
+00:28:53,632 --> 00:28:54,912
+Remote branches
+
+594
+00:28:55,424 --> 00:28:56,192
+That you have
+
+595
+00:28:56,960 --> 00:28:59,520
+So I've done that and it shows us that I've got this git
+
+596
+00:29:00,288 --> 00:29:02,080
+What the origin
+
+597
+00:29:02,336 --> 00:29:03,872
+And it's the fetched and they pushed
+
+598
+00:29:05,152 --> 00:29:06,432
+Remote branches
+
+599
+00:29:07,200 --> 00:29:07,712
+Now
+
+600
+00:29:08,480 --> 00:29:14,624
+It's gonna I say specify a new remote upstream repository that will be synced with this fork
+
+601
+00:29:15,392 --> 00:29:20,512
+So we'll use the original owner and the original repository
+
+602
+00:29:21,024 --> 00:29:22,304
+Name
+
+603
+00:29:22,816 --> 00:29:25,888
+Which In our case is the following
+
+604
+00:29:26,400 --> 00:29:28,192
+The original owner is this
+
+605
+00:29:28,448 --> 00:29:29,216
+VDM
+
+606
+00:29:29,472 --> 00:29:31,008
+Dot IO and
+
+607
+00:29:31,776 --> 00:29:33,824
+The repositories this one
+
+608
+00:29:34,080 --> 00:29:35,616
+so to get that name
+
+609
+00:29:36,128 --> 00:29:37,664
+You could come here
+
+610
+00:29:38,432 --> 00:29:39,200
+And
+
+611
+00:29:42,016 --> 00:29:43,040
+Yeah think you could get
+
+612
+00:29:43,552 --> 00:29:44,576
+This name here
+
+613
+00:29:45,856 --> 00:29:46,624
+There we go
+
+614
+00:29:46,880 --> 00:29:47,392
+That part
+
+615
+00:29:48,672 --> 00:29:49,184
+copy
+
+616
+00:29:51,744 --> 00:29:53,536
+So going back to our little tutotial
+
+617
+00:29:54,304 --> 00:29:55,584
+We will not type the
+
+618
+00:29:55,840 --> 00:30:00,960
+Get and I suppose you'll have to get the https version
+
+619
+00:30:01,728 --> 00:30:04,288
+Since you will not have permission to
+
+620
+00:30:04,544 --> 00:30:06,592
+Work with the SSH version
+
+621
+00:30:06,848 --> 00:30:09,152
+So let's get the http one
+
+622
+00:30:09,664 --> 00:30:12,736
+Which basically means that you should click http here
+
+623
+00:30:12,992 --> 00:30:15,296
+And then grab that version to jusy copy it
+
+624
+00:30:15,808 --> 00:30:16,320
+And
+
+625
+00:30:16,576 --> 00:30:17,600
+Control
+
+626
+00:30:17,856 --> 00:30:20,160
+Shift we will paste it in
+
+627
+00:30:20,928 --> 00:30:23,488
+Into command line or some
+
+628
+00:30:23,744 --> 00:30:26,048
+Command lines even gives you this option to paste
+
+629
+00:30:26,816 --> 00:30:27,328
+With a mouse
+
+630
+00:30:28,864 --> 00:30:30,656
+Ok so now we got that there
+
+631
+00:30:31,168 --> 00:30:32,704
+And we press enter
+
+632
+00:30:32,960 --> 00:30:33,984
+So it's now
+
+633
+00:30:35,008 --> 00:30:36,032
+Typo
+
+634
+00:30:36,544 --> 00:30:37,056
+Try again
+
+635
+00:30:37,568 --> 00:30:39,360
+I didn't add remote add
+
+636
+00:30:39,872 --> 00:30:41,408
+So it was looking for a file
+
+637
+00:30:41,664 --> 00:30:44,736
+Ok there we go now if we did that version
+
+638
+00:30:44,992 --> 00:30:46,016
+Will see now
+
+639
+00:30:46,272 --> 00:30:48,576
+It has this upstream there is well
+
+640
+00:30:49,088 --> 00:30:51,904
+Ok so that was just add to remote
+
+641
+00:30:52,416 --> 00:30:53,696
+All the upstream
+
+642
+00:30:54,720 --> 00:30:56,256
+Repository to the
+
+643
+00:30:56,512 --> 00:30:57,280
+Cloned
+
+644
+00:30:59,584 --> 00:31:01,120
+Version that you have here
+
+645
+00:31:01,376 --> 00:31:03,424
+Now let's go see how to keep it in sync
+
+646
+00:31:04,192 --> 00:31:06,752
+So here it says that you would open the terminal
+
+647
+00:31:07,264 --> 00:31:09,568
+And you would do get fetch upstream
+
+648
+00:31:09,824 --> 00:31:11,872
+And it will basically pull down
+
+649
+00:31:12,128 --> 00:31:12,640
+This
+
+650
+00:31:12,896 --> 00:31:16,992
+And make sure that there is a branch called upstream Master
+
+651
+00:31:17,760 --> 00:31:19,808
+When you Checkout Master
+
+652
+00:31:20,064 --> 00:31:22,112
+And switch the master branch
+
+653
+00:31:22,368 --> 00:31:24,672
+and do merge upstream Master
+
+654
+00:31:25,184 --> 00:31:30,304
+Which if while you were busy doing these slippets improvements and things
+
+655
+00:31:30,816 --> 00:31:33,632
+And there's been commits to the master branch
+
+656
+00:31:34,144 --> 00:31:35,680
+You wanna make sure
+
+657
+00:31:35,936 --> 00:31:36,960
+That you
+
+658
+00:31:37,216 --> 00:31:40,544
+Actually before pushing all this upstream
+
+659
+00:31:41,056 --> 00:31:42,336
+Before making a
+
+660
+00:31:42,848 --> 00:31:45,408
+you know a pull request that you first merge
+
+661
+00:31:45,664 --> 00:31:48,224
+The already Changes from the master branch
+
+662
+00:31:48,736 --> 00:31:52,064
+Into your branch and then make your commits on top of that
+
+663
+00:31:52,832 --> 00:31:55,136
+This will help to try and avoid
+
+664
+00:31:55,392 --> 00:32:01,536
+You not having specific commits in your branch I know it gets a little bit complicated
+
+665
+00:32:01,792 --> 00:32:02,304
+ but
+
+666
+00:32:02,816 --> 00:32:04,352
+If you get stuck
+
+667
+00:32:04,608 --> 00:32:07,168
+We will most of the times be able to just help you
+
+668
+00:32:07,424 --> 00:32:08,448
+Figure this out again
+
+669
+00:32:09,984 --> 00:32:12,032
+But like I explained in the beginning
+
+670
+00:32:12,288 --> 00:32:13,824
+To know how to work with Git
+
+671
+00:32:14,080 --> 00:32:16,128
+Is really your responsibility
+
+672
+00:32:16,384 --> 00:32:16,896
+So that
+
+673
+00:32:17,152 --> 00:32:20,480
+You and you are wanting to communicate or sorry to
+
+674
+00:32:20,736 --> 00:32:23,040
+Share with the community Snippets
+
+675
+00:32:23,552 --> 00:32:26,112
+You know how to first make a pull
+
+676
+00:32:26,368 --> 00:32:28,416
+Request sorry emerge
+
+677
+00:32:28,928 --> 00:32:31,232
+Your upstream with your master branch
+
+678
+00:32:31,744 --> 00:32:36,352
+And ensure that you are up-to-date with that before making a push
+
+679
+00:32:36,608 --> 00:32:38,912
+ to your branch and
+
+680
+00:32:39,424 --> 00:32:45,568
+Yes I hope you understand anyway if you don't please Google it and do some homework to get you
+
+681
+00:32:45,824 --> 00:32:46,336
+Get
+
+682
+00:32:46,592 --> 00:32:48,384
+Knowledge or freshen up and ready
+
+683
+00:32:49,664 --> 00:32:54,528
+Now I know we didn't make any changes to the master branch during this tutorial
+
+684
+00:32:55,040 --> 00:32:56,064
+So
+
+685
+00:32:56,320 --> 00:32:58,880
+I can demonstrate the process of git
+
+686
+00:32:59,392 --> 00:33:00,160
+Fetch
+
+687
+00:33:01,952 --> 00:33:02,720
+Upstream
+
+688
+00:33:03,232 --> 00:33:04,768
+And it will do that
+
+689
+00:33:05,792 --> 00:33:09,376
+But since I know that we didn't actually make any changes
+
+690
+00:33:09,888 --> 00:33:10,912
+In the end of the day
+
+691
+00:33:11,168 --> 00:33:12,960
+We we will not be
+
+692
+00:33:13,472 --> 00:33:14,752
+Really seeing any
+
+693
+00:33:15,264 --> 00:33:17,568
+Great fireworks happening right now
+
+694
+00:33:18,848 --> 00:33:22,432
+And I suppose some of you will experience it a little different
+
+695
+00:33:22,944 --> 00:33:25,248
+Especially if there's been changes to the upstream
+
+696
+00:33:25,504 --> 00:33:26,272
+while you
+
+697
+00:33:26,528 --> 00:33:27,808
+ been working
+
+698
+00:33:28,320 --> 00:33:29,088
+So git
+
+699
+00:33:29,600 --> 00:33:31,648
+Checkout Master
+
+700
+00:33:31,904 --> 00:33:34,976
+It's usually the bronze at your own but just to make sure
+
+701
+00:33:35,232 --> 00:33:37,024
+You're ready on the master branch
+
+702
+00:33:37,280 --> 00:33:38,048
+Then git
+
+703
+00:33:38,304 --> 00:33:39,328
+merge
+
+704
+00:33:40,608 --> 00:33:41,632
+I missed out to get there
+
+705
+00:33:44,448 --> 00:33:45,216
+Merge
+
+706
+00:33:45,472 --> 00:33:47,008
+Upstream Master
+
+707
+00:33:48,800 --> 00:33:51,104
+And it says like now it's already up to date
+
+708
+00:33:51,616 --> 00:33:53,920
+If it wasn't it will actually
+
+709
+00:33:55,200 --> 00:33:56,992
+Merge those two branches
+
+710
+00:33:57,248 --> 00:33:58,784
+With the changes you've made
+
+711
+00:33:59,552 --> 00:34:00,064
+Now
+
+712
+00:34:00,320 --> 00:34:02,880
+That's what you should do before you do the following
+
+713
+00:34:06,208 --> 00:34:06,976
+Git
+
+714
+00:34:08,256 --> 00:34:08,768
+Push
+
+715
+00:34:09,280 --> 00:34:11,840
+Which will now take these changes you've made
+
+716
+00:34:12,864 --> 00:34:14,656
+And you wanna push them
+
+717
+00:34:14,912 --> 00:34:16,448
+To origin
+
+718
+00:34:21,568 --> 00:34:22,592
+Origin Master
+
+719
+00:34:23,872 --> 00:34:24,384
+Now
+
+720
+00:34:24,640 --> 00:34:25,920
+Everything you've done
+
+721
+00:34:26,176 --> 00:34:30,016
+All the commit you made all the commit messages the files you removed
+
+722
+00:34:30,528 --> 00:34:32,320
+All of that now gets pushed up
+
+723
+00:34:32,832 --> 00:34:34,624
+To your cloned version
+
+724
+00:34:35,136 --> 00:34:35,904
+On GitHub
+
+725
+00:34:36,160 --> 00:34:38,976
+So if we go to your version now on Githup
+
+726
+00:34:40,512 --> 00:34:42,560
+And we just refresh the page
+
+727
+00:34:44,608 --> 00:34:45,632
+He'll say
+
+728
+00:34:45,888 --> 00:34:49,472
+This branch is 4 commits a head of EDM IO Master
+
+729
+00:34:50,496 --> 00:34:53,056
+Which means you are now ready
+
+730
+00:34:53,568 --> 00:34:54,592
+To make a pull request
+
+731
+00:34:55,872 --> 00:34:58,944
+A pull request is what we will deal within the next tutorial
+
+732
+00:34:59,712 --> 00:35:05,856
+So everything we've done so far and this tutorial is to get the Snippets that you've changed the contribution
+
+733
+00:35:06,112 --> 00:35:06,880
+You wanna make
+
+734
+00:35:07,392 --> 00:35:09,440
+Into the branch that you forked
+
+735
+00:35:10,208 --> 00:35:14,048
+And to do it in a way that you're not completely out of sync
+
+736
+00:35:14,304 --> 00:35:15,840
+With a master branch
+
+737
+00:35:16,096 --> 00:35:17,120
+Which is living
+
+738
+00:35:17,376 --> 00:35:19,424
+Basically on EDM dot IO
+
+739
+00:35:19,936 --> 00:35:22,240
+Joomla component Builders snippets This is the
+
+740
+00:35:22,752 --> 00:35:24,288
+Master branch that you forked
+
+741
+00:35:25,056 --> 00:35:27,872
+So you've got those commits in your forked branch
+
+742
+00:35:28,128 --> 00:35:30,432
+And now you want to actually make
+
+743
+00:35:30,688 --> 00:35:31,712
+A pull request
+
+744
+00:35:32,480 --> 00:35:36,576
+To merge these changes you've made into that Master branch
+
+745
+00:35:36,832 --> 00:35:39,392
+So that it will eventually become available
+
+746
+00:35:39,648 --> 00:35:41,696
+To the whole community of JCB
+
+747
+00:35:42,720 --> 00:35:44,512
+Ok thank you for watching
+
+748
+00:35:46,304 --> 00:35:48,352
+If you have any issues
+
+749
+00:35:48,608 --> 00:35:49,632
+Please Google
+
+750
+00:35:49,888 --> 00:35:50,912
+Do research
+
+751
+00:35:51,424 --> 00:35:54,240
+Git is an amazing technology and
+
+752
+00:35:54,496 --> 00:35:55,520
+The quicker you can
+
+753
+00:35:56,032 --> 00:35:58,080
+Get your hands on it and
+
+754
+00:35:58,848 --> 00:35:59,616
+Become
+
+755
+00:35:59,872 --> 00:36:02,176
+Comfortable with working with it the better
+
+756
+00:36:02,944 --> 00:36:03,456
+Ok
+
+757
+00:36:03,968 --> 00:36:04,992
+Next tutorial
+
+758
+00:36:05,504 --> 00:36:07,296
+Will deal with the pull request
+

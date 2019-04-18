@@ -1,0 +1,1512 @@
+1
+00:00:00,768 --> 00:00:06,400
+So we have a new feature in JCB version 2.9.
+
+2
+00:00:06,656 --> 00:00:07,424
+14
+
+3
+00:00:07,936 --> 00:00:14,080
+It's the latest release if you look at the release notes
+
+4
+00:00:14,336 --> 00:00:16,896
+Added the new placeholder area for Global
+
+5
+00:00:17,408 --> 00:00:21,248
+And component level placeholders now
+
+6
+00:00:21,760 --> 00:00:26,112
+Those of you did know did know that JCB already has a few placeholders
+
+7
+00:00:26,624 --> 00:00:28,672
+Which you can use across
+
+8
+00:00:28,928 --> 00:00:29,440
+The
+
+9
+00:00:29,696 --> 00:00:30,208
+System
+
+10
+00:00:31,744 --> 00:00:33,792
+If I have to show you those in the code
+
+11
+00:00:34,048 --> 00:00:35,584
+They are as follow
+
+12
+00:00:36,608 --> 00:00:42,752
+So once I've set of Place holders is the word component and this HHH is
+
+13
+00:00:43,008 --> 00:00:43,520
+Basically
+
+14
+00:00:45,056 --> 00:00:46,592
+It is the same as
+
+15
+00:00:47,616 --> 00:00:50,176
+3 of those and then again on this side
+
+16
+00:00:50,688 --> 00:00:52,480
+Three of those
+
+17
+00:00:53,504 --> 00:00:59,392
+So three opening angle brackets and three closing angle brackets
+
+18
+00:00:59,904 --> 00:01:02,976
+That's what the hh the sorry no that's what the
+
+19
+00:01:03,232 --> 00:01:04,256
+bbb
+
+20
+00:01:04,512 --> 00:01:06,304
+And a ddd stands for
+
+21
+00:01:06,816 --> 00:01:10,656
+Where is the hhh stands for hashes
+
+22
+00:01:10,912 --> 00:01:11,424
+one two 
+
+23
+00:01:11,680 --> 00:01:12,960
+three of those the side
+
+24
+00:01:13,472 --> 00:01:14,496
+And
+
+25
+00:01:15,008 --> 00:01:16,032
+Three of those
+
+26
+00:01:16,288 --> 00:01:17,824
+This side
+
+27
+00:01:18,080 --> 00:01:20,384
+So those are placeholders that you know
+
+28
+00:01:20,640 --> 00:01:22,944
+Should know about already and gives you the
+
+29
+00:01:23,200 --> 00:01:24,736
+The possibility to
+
+30
+00:01:24,992 --> 00:01:26,784
+Add component name
+
+31
+00:01:27,040 --> 00:01:29,856
+lower case all
+
+32
+00:01:30,368 --> 00:01:31,392
+Uppercase First
+
+33
+00:01:31,648 --> 00:01:32,416
+Letter
+
+34
+00:01:32,928 --> 00:01:33,952
+All uppercase
+
+35
+00:01:34,208 --> 00:01:36,512
+And then with hashes as well as with
+
+36
+00:01:37,024 --> 00:01:38,304
+Opening angle
+
+37
+00:01:38,560 --> 00:01:40,608
+Brackets enclosing angle brackets
+
+38
+00:01:41,376 --> 00:01:41,888
+So
+
+39
+00:01:42,144 --> 00:01:44,704
+That's the first set of placeholders which
+
+40
+00:01:44,960 --> 00:01:46,496
+You should know about already
+
+41
+00:01:47,008 --> 00:01:48,032
+If not
+
+42
+00:01:48,288 --> 00:01:49,824
+Then it's possibly
+
+43
+00:01:50,080 --> 00:01:51,616
+The truth that you haven't watched
+
+44
+00:01:51,872 --> 00:01:52,896
+Previous tutorials
+
+45
+00:01:53,664 --> 00:01:59,808
+Which I would encourage you to do the other set is basically the view
+
+46
+00:02:00,064 --> 00:02:00,832
+Placeholder
+
+47
+00:02:02,624 --> 00:02:08,768
+The view has a few variations and it's not always available in every area depending on
+
+48
+00:02:09,024 --> 00:02:10,048
+What the
+
+49
+00:02:10,304 --> 00:02:11,584
+Area is
+
+50
+00:02:11,840 --> 00:02:17,472
+So for example in the backend the admin area It has view and views
+
+51
+00:02:17,728 --> 00:02:18,752
+For the list
+
+52
+00:02:19,264 --> 00:02:23,872
+And again you have this hashes and you have the open Square
+
+53
+00:02:24,128 --> 00:02:24,640
+Braces
+
+54
+00:02:24,896 --> 00:02:25,408
+Bracket
+
+55
+00:02:25,664 --> 00:02:27,712
+And they closing Square brackets
+
+56
+00:02:29,504 --> 00:02:30,016
+And
+
+57
+00:02:31,040 --> 00:02:35,648
+Again all lowercase then one uppercase and then all uppercase
+
+58
+00:02:36,160 --> 00:02:38,208
+So it's variations of
+
+59
+00:02:38,464 --> 00:02:39,232
+View
+
+60
+00:02:39,744 --> 00:02:44,608
+Now the reason why you have the s at times is because there is
+
+61
+00:02:45,120 --> 00:02:45,632
+A list
+
+62
+00:02:45,888 --> 00:02:46,400
+View name
+
+63
+00:02:46,912 --> 00:02:48,448
+And then there is the
+
+64
+00:02:48,704 --> 00:02:49,472
+View name
+
+65
+00:02:49,728 --> 00:02:50,752
+As the edit View
+
+66
+00:02:51,008 --> 00:02:52,544
+Single View name
+
+67
+00:02:53,312 --> 00:02:54,592
+And so
+
+68
+00:02:55,104 --> 00:02:59,456
+These place holders are also available but just when you are busy working
+
+69
+00:02:59,712 --> 00:03:00,736
+In the admin
+
+70
+00:03:01,760 --> 00:03:03,040
+Admin View area
+
+71
+00:03:03,808 --> 00:03:04,320
+So
+
+72
+00:03:04,576 --> 00:03:07,392
+With regards to the site View area
+
+73
+00:03:07,648 --> 00:03:09,440
+There is also a placeholder
+
+74
+00:03:11,232 --> 00:03:13,792
+Let me see if I can quickly find that here
+
+75
+00:03:15,328 --> 00:03:16,096
+Ok here it is
+
+76
+00:03:16,608 --> 00:03:20,704
+So it has a capital S in front or a lower s
+
+77
+00:03:21,472 --> 00:03:21,984
+So
+
+78
+00:03:22,240 --> 00:03:22,752
+Again
+
+79
+00:03:23,264 --> 00:03:24,800
+It's because we don't have a
+
+80
+00:03:25,056 --> 00:03:31,200
+Different site view doesn't have a list view it can actually be a listview or it can be
+
+81
+00:03:31,712 --> 00:03:32,736
+A Single View
+
+82
+00:03:32,992 --> 00:03:34,528
+Based on the dynamic get
+
+83
+00:03:35,040 --> 00:03:36,832
+So that's why there isn't really
+
+84
+00:03:37,088 --> 00:03:37,856
+a difference
+
+85
+00:03:38,112 --> 00:03:38,624
+So
+
+86
+00:03:38,880 --> 00:03:41,184
+So we working with S View
+
+87
+00:03:41,440 --> 00:03:47,584
+Uppercase and lowercase all uppercase again with hashes and with braces again
+
+88
+00:03:48,864 --> 00:03:53,728
+We have this function to add the list option but you see
+
+89
+00:03:54,240 --> 00:03:56,288
+It is actually the exact same
+
+90
+00:03:56,544 --> 00:03:58,336
+Code so
+
+91
+00:03:58,592 --> 00:04:01,152
+If there by some reason is a
+
+92
+00:04:01,408 --> 00:04:01,920
+List
+
+93
+00:04:02,432 --> 00:04:03,712
+Implementation somewhere
+
+94
+00:04:03,968 --> 00:04:05,248
+It's really just replacing with
+
+95
+00:04:05,504 --> 00:04:06,784
+With the same code
+
+96
+00:04:07,040 --> 00:04:10,624
+So those are the custom Place holders or
+
+97
+00:04:11,136 --> 00:04:11,904
+What's the word
+
+98
+00:04:12,160 --> 00:04:13,184
+the core place holders
+
+99
+00:04:13,696 --> 00:04:16,000
+That already exist in the system
+
+100
+00:04:16,512 --> 00:04:17,024
+And
+
+101
+00:04:18,559 --> 00:04:22,655
+They already were taking JCB to a place where
+
+102
+00:04:22,911 --> 00:04:26,751
+We could achieve a lot of dynamic reusability
+
+103
+00:04:27,263 --> 00:04:30,591
+Of use of Fields and all sorts of
+
+104
+00:04:30,847 --> 00:04:32,127
+Other implementations
+
+105
+00:04:33,151 --> 00:04:34,943
+But then came along
+
+106
+00:04:35,199 --> 00:04:36,479
+The idea
+
+107
+00:04:36,735 --> 00:04:41,855
+To actually be able to set our own place holders in the gooey
+
+108
+00:04:42,111 --> 00:04:42,879
+Of JCB
+
+109
+00:04:43,391 --> 00:04:46,463
+And to reuse them wherever we would like to
+
+110
+00:04:46,719 --> 00:04:49,023
+Just like custom code with behave accept
+
+111
+00:04:49,791 --> 00:04:51,327
+It's a string and not
+
+112
+00:04:51,583 --> 00:04:54,143
+A code snippet so
+
+113
+00:04:54,399 --> 00:04:55,935
+That's the major difference
+
+114
+00:04:56,447 --> 00:05:00,031
+And it also doesn't come with an IDE
+
+115
+00:05:00,543 --> 00:05:01,823
+Roundabout
+
+116
+00:05:02,335 --> 00:05:03,103
+Editing
+
+117
+00:05:03,359 --> 00:05:06,431
+Feature as custom code snippets do
+
+118
+00:05:06,687 --> 00:05:10,271
+It's just a in place replacement behaviour
+
+119
+00:05:10,527 --> 00:05:11,807
+So
+
+120
+00:05:12,575 --> 00:05:15,391
+Let's go back to the IDE to show you that
+
+121
+00:05:16,671 --> 00:05:17,183
+I mean
+
+122
+00:05:17,439 --> 00:05:19,231
+Not the ID the the gooey
+
+123
+00:05:19,487 --> 00:05:20,511
+JCB itself
+
+124
+00:05:22,047 --> 00:05:25,631
+So in JCB there is now a place called Place holders
+
+125
+00:05:26,655 --> 00:05:27,167
+And
+
+126
+00:05:27,679 --> 00:05:28,959
+You can open that up
+
+127
+00:05:29,215 --> 00:05:33,311
+And if you have imported some of my components you might have some values in
+
+128
+00:05:33,567 --> 00:05:34,335
+here already
+
+129
+00:05:34,591 --> 00:05:36,383
+If not it might have no values
+
+130
+00:05:37,151 --> 00:05:39,455
+So we still having these 3
+
+131
+00:05:39,711 --> 00:05:40,735
+Open Square
+
+132
+00:05:40,991 --> 00:05:43,551
+Brackets and closing Square brackets
+
+133
+00:05:44,063 --> 00:05:48,927
+Surrounding our place holders if I was to create a new place holder
+
+134
+00:05:49,183 --> 00:05:52,511
+And type in any word
+
+135
+00:05:52,767 --> 00:05:55,327
+It it automatically adds
+
+136
+00:05:55,583 --> 00:05:56,351
+The
+
+137
+00:05:56,607 --> 00:05:58,911
+Brackets around the word
+
+138
+00:05:59,679 --> 00:06:03,775
+An immediately starts a surge all across JCB
+
+139
+00:06:04,031 --> 00:06:06,335
+To see if it's being used anywhere
+
+140
+00:06:07,103 --> 00:06:09,663
+If not obviously it tells you it's not being used
+
+141
+00:06:10,431 --> 00:06:16,575
+Now any word in this case I can add any type of string on this side
+
+142
+00:06:16,831 --> 00:06:22,463
+So as long as it is a one-liner string it can really be anything
+
+143
+00:06:22,719 --> 00:06:23,743
+It can have
+
+144
+00:06:24,511 --> 00:06:27,327
+Dollar sign in it it can have brackets in it
+
+145
+00:06:27,583 --> 00:06:29,375
+It can have multiple brackets in it
+
+146
+00:06:29,887 --> 00:06:30,655
+It can have
+
+147
+00:06:31,167 --> 00:06:35,519
+Even braces in it and again brackets and braces
+
+148
+00:06:36,031 --> 00:06:38,847
+And it can have dollar signs in well
+
+149
+00:06:39,615 --> 00:06:40,895
+It's supposed to
+
+150
+00:06:41,151 --> 00:06:44,735
+If you find something and it breaks stuff
+
+151
+00:06:44,991 --> 00:06:45,759
+Let me know
+
+152
+00:06:46,271 --> 00:06:50,367
+in GitHub tell me about it it's a bug it's supposed to be able to
+
+153
+00:06:50,623 --> 00:06:56,767
+To handle any type of string now I've said all that now let's see if it actually does like clicking 
+
+154
+00:06:57,023 --> 00:06:57,535
+save here
+
+155
+00:06:58,559 --> 00:06:59,071
+Oh yeah
+
+156
+00:06:59,327 --> 00:07:01,119
+So it kept it exactly that way
+
+157
+00:07:01,887 --> 00:07:02,399
+Now
+
+158
+00:07:02,911 --> 00:07:09,055
+That means where ever in my program I am you all let me just for safety add this as comment
+
+159
+00:07:09,567 --> 00:07:11,103
+So it's basically a comment string
+
+160
+00:07:12,639 --> 00:07:18,783
+It could have been a variable name it could have been another string now you might say why not just
+
+161
+00:07:19,039 --> 00:07:20,319
+Type that string
+
+162
+00:07:20,575 --> 00:07:21,855
+In that area
+
+163
+00:07:22,623 --> 00:07:23,391
+Well
+
+164
+00:07:23,647 --> 00:07:27,743
+You see JCB we are starting to embark upon
+
+165
+00:07:27,999 --> 00:07:29,535
+A idea
+
+166
+00:07:30,047 --> 00:07:32,351
+With I'm not sure how far it will go
+
+167
+00:07:32,607 --> 00:07:35,423
+Or how wide or broad it will expand
+
+168
+00:07:35,679 --> 00:07:40,031
+But it is the possibility of reusing code
+
+169
+00:07:40,799 --> 00:07:44,127
+From your custom code area in different components
+
+170
+00:07:44,383 --> 00:07:46,175
+In different views
+
+171
+00:07:47,199 --> 00:07:48,991
+This often requires
+
+172
+00:07:49,247 --> 00:07:50,527
+That certain little strings
+
+173
+00:07:50,783 --> 00:07:51,551
+Be different
+
+174
+00:07:52,575 --> 00:07:53,087
+But
+
+175
+00:07:53,343 --> 00:07:59,487
+There is a place where passing a string at from every component becomes very tedious
+
+176
+00:07:59,743 --> 00:08:03,071
+Because yes custom codes has this feature
+
+177
+00:08:03,327 --> 00:08:04,863
+Where you can pass this string
+
+178
+00:08:05,631 --> 00:08:06,911
+To the
+
+179
+00:08:07,423 --> 00:08:11,007
+Code and then it updates that string in the code
+
+180
+00:08:11,263 --> 00:08:11,775
+But
+
+181
+00:08:12,031 --> 00:08:15,871
+There was this idea that we really don't want to be passing any string
+
+182
+00:08:16,127 --> 00:08:17,663
+And yet have a
+
+183
+00:08:18,431 --> 00:08:19,199
+Automated
+
+184
+00:08:19,967 --> 00:08:23,039
+Updating string behaviour in custom code
+
+185
+00:08:23,295 --> 00:08:23,807
+So
+
+186
+00:08:24,319 --> 00:08:26,623
+This is where placeholders come in
+
+187
+00:08:26,879 --> 00:08:29,183
+So if I save and close out of this
+
+188
+00:08:29,695 --> 00:08:31,999
+I now have this new place holder any word
+
+189
+00:08:32,511 --> 00:08:33,535
+And I can now
+
+190
+00:08:33,791 --> 00:08:34,815
+Go to
+
+191
+00:08:35,071 --> 00:08:37,119
+A component
+
+192
+00:08:37,887 --> 00:08:39,167
+And let's say
+
+193
+00:08:39,423 --> 00:08:42,751
+I'm gonna take this anthropometry component as an example
+
+194
+00:08:43,519 --> 00:08:44,031
+And
+
+195
+00:08:44,287 --> 00:08:47,871
+I'm going to just add this place holder here like that
+
+196
+00:08:49,151 --> 00:08:49,663
+And
+
+197
+00:08:49,919 --> 00:08:51,967
+Save and close this is in the helper class
+
+198
+00:08:52,223 --> 00:08:53,759
+So I just added it to
+
+199
+00:08:54,015 --> 00:08:56,831
+anthropometry now I'm also gonna add it to this
+
+200
+00:08:57,087 --> 00:08:59,391
+Medical aid one
+
+201
+00:08:59,903 --> 00:09:04,255
+Again the same place order like that save and close
+
+202
+00:09:04,767 --> 00:09:09,119
+Now I know for this implementation what I'm showing you right now
+
+203
+00:09:09,375 --> 00:09:11,167
+It might not be that exciting
+
+204
+00:09:11,679 --> 00:09:13,215
+But I'm telling you if
+
+205
+00:09:13,471 --> 00:09:15,007
+You start to sort of
+
+206
+00:09:15,775 --> 00:09:16,799
+Think about the
+
+207
+00:09:17,055 --> 00:09:18,335
+Greater implication
+
+208
+00:09:18,847 --> 00:09:20,895
+For example if we were to
+
+209
+00:09:21,407 --> 00:09:23,199
+Go to the dynamic code
+
+210
+00:09:23,455 --> 00:09:26,271
+And for example get method get member
+
+211
+00:09:26,783 --> 00:09:28,831
+This get member function oh wait I'm 
+
+212
+00:09:29,343 --> 00:09:31,903
+on the wrong place I'm talking custom code
+
+213
+00:09:32,159 --> 00:09:35,487
+Now let's say which one
+
+214
+00:09:37,279 --> 00:09:38,047
+I think I have
+
+215
+00:09:40,863 --> 00:09:44,703
+This little dot trick which is just a little JavaScript
+
+216
+00:09:44,959 --> 00:09:47,007
+That sort of runs and
+
+217
+00:09:47,519 --> 00:09:49,311
+Populates a little dot
+
+218
+00:09:49,567 --> 00:09:52,127
+Tick tick tick tick tick showing like there's a progress
+
+219
+00:09:52,895 --> 00:09:54,687
+Just a little snippet
+
+220
+00:09:54,943 --> 00:09:55,455
+Now
+
+221
+00:09:57,247 --> 00:10:00,831
+It's being used quite a few places and
+
+222
+00:10:01,087 --> 00:10:02,623
+I might want to
+
+223
+00:10:03,135 --> 00:10:06,463
+use like for example
+
+224
+00:10:06,719 --> 00:10:07,487
+Let's say
+
+225
+00:10:08,511 --> 00:10:14,143
+Member profile I might be using member profile in more than one component
+
+226
+00:10:15,423 --> 00:10:15,935
+And
+
+227
+00:10:16,191 --> 00:10:16,703
+Now
+
+228
+00:10:17,215 --> 00:10:19,263
+That means this specific
+
+229
+00:10:19,775 --> 00:10:25,919
+Site view the specific site view is being used in different components
+
+230
+00:10:26,175 --> 00:10:26,687
+Now
+
+231
+00:10:26,943 --> 00:10:30,783
+If I want to have the code be different when used in
+
+232
+00:10:31,039 --> 00:10:31,807
+One component
+
+233
+00:10:32,063 --> 00:10:37,695
+Then used in another that's where placeholders really come in it's full strength
+
+234
+00:10:38,207 --> 00:10:41,279
+So if I was to place that snippet here any word
+
+235
+00:10:42,559 --> 00:10:43,839
+As an example
+
+236
+00:10:45,119 --> 00:10:46,655
+And save and close this
+
+237
+00:10:47,423 --> 00:10:49,471
+I now have in this little
+
+238
+00:10:49,727 --> 00:10:55,871
+Nice little dot trick I have a placeholder which will
+
+239
+00:10:56,127 --> 00:10:57,663
+Be replaced with
+
+240
+00:10:58,175 --> 00:10:58,943
+This value
+
+241
+00:11:00,735 --> 00:11:02,015
+But let's say
+
+242
+00:11:02,527 --> 00:11:03,295
+I instead
+
+243
+00:11:04,575 --> 00:11:05,343
+want to
+
+244
+00:11:05,855 --> 00:11:10,463
+Have it be different in one of the components that uses that little dot
+
+245
+00:11:10,719 --> 00:11:11,999
+Code snippet
+
+246
+00:11:12,255 --> 00:11:14,047
+I can go to that specific
+
+247
+00:11:14,303 --> 00:11:15,071
+Component
+
+248
+00:11:16,095 --> 00:11:17,375
+And I can add
+
+249
+00:11:17,887 --> 00:11:19,423
+That place holder here
+
+250
+00:11:20,191 --> 00:11:20,703
+And
+
+251
+00:11:21,215 --> 00:11:22,751
+Say not
+
+252
+00:11:23,263 --> 00:11:23,775
+Like
+
+253
+00:11:24,287 --> 00:11:28,383
+The other and now for this component
+
+254
+00:11:28,639 --> 00:11:30,687
+This place holder will be
+
+255
+00:11:31,711 --> 00:11:34,015
+Basically not like the other
+
+256
+00:11:34,271 --> 00:11:39,135
+So now you have a placeholder with within this component behaves differently
+
+257
+00:11:39,647 --> 00:11:41,951
+Then it does within other components
+
+258
+00:11:42,975 --> 00:11:45,279
+And that's really where placeholders
+
+259
+00:11:46,303 --> 00:11:48,351
+So let's compile this and see what happens
+
+260
+00:11:48,863 --> 00:11:55,007
+I have a few here so we got medical aid I'm gonna compile that let's see I don't have it installed
+
+261
+00:11:56,031 --> 00:11:57,823
+So I've have to first do coral
+
+262
+00:11:58,591 --> 00:11:59,871
+This is a project
+
+263
+00:12:00,127 --> 00:12:02,687
+Which we are planning to launch quite soon
+
+264
+00:12:02,943 --> 00:12:05,503
+I'm quite excited about this project
+
+265
+00:12:07,039 --> 00:12:09,343
+It's gonna be one of our proprietary projects
+
+266
+00:12:10,111 --> 00:12:12,927
+Ok so what's happened here oh yeah
+
+267
+00:12:13,183 --> 00:12:14,463
+We haven't set up the
+
+268
+00:12:14,975 --> 00:12:15,487
+The path ok just
+
+269
+00:12:17,279 --> 00:12:18,047
+Put it in
+
+270
+00:12:18,815 --> 00:12:24,191
+Now so we gonna have to backup folder path setup now I can do anthropometry
+
+271
+00:12:25,727 --> 00:12:26,751
+And have it
+
+272
+00:12:27,263 --> 00:12:30,335
+Compile it's actually updating and placing all those
+
+273
+00:12:30,847 --> 00:12:31,615
+Placeholders and stuff
+
+274
+00:12:31,871 --> 00:12:34,943
+Ok so we gonna see the difference
+
+275
+00:12:35,199 --> 00:12:39,551
+And then I'm also going to add the medical aid one
+
+276
+00:12:40,063 --> 00:12:42,879
+Which is the one that doesn't have that overwrite
+
+277
+00:12:43,391 --> 00:12:45,951
+So it should use the global
+
+278
+00:12:47,487 --> 00:12:48,255
+Implementation
+
+279
+00:12:49,023 --> 00:12:51,327
+Ok so now with basically added
+
+280
+00:12:52,095 --> 00:12:53,119
+These two
+
+281
+00:12:53,375 --> 00:12:55,679
+Components to our
+
+282
+00:12:57,215 --> 00:12:57,983
+Joomla website
+
+283
+00:12:58,495 --> 00:12:59,263
+And
+
+284
+00:12:59,519 --> 00:13:01,311
+We have used placeholders
+
+285
+00:13:01,823 --> 00:13:02,847
+That actually Target
+
+286
+00:13:03,615 --> 00:13:05,919
+A specific any word
+
+287
+00:13:06,175 --> 00:13:07,967
+And we've placed that
+
+288
+00:13:09,503 --> 00:13:11,807
+In those components helper classes
+
+289
+00:13:12,319 --> 00:13:14,111
+And also within 1
+
+290
+00:13:14,623 --> 00:13:16,159
+Custom codes snippet
+
+291
+00:13:16,927 --> 00:13:17,439
+Called
+
+292
+00:13:18,207 --> 00:13:20,511
+Little nice little dot trick
+
+293
+00:13:20,767 --> 00:13:26,911
+Now to see in which of those components where there's little nice little dog trick is going to appear
+
+294
+00:13:28,447 --> 00:13:32,031
+It's basically gonna be in the member profile of Corel
+
+295
+00:13:32,543 --> 00:13:33,055
+So
+
+296
+00:13:33,567 --> 00:13:36,383
+Yeah that means we'll go look and see what it did
+
+297
+00:13:37,919 --> 00:13:41,247
+So first I'm going to open the helper class
+
+298
+00:13:41,759 --> 00:13:42,783
+Of coral
+
+299
+00:13:43,039 --> 00:13:44,063
+It's this one here
+
+300
+00:13:44,575 --> 00:13:45,599
+And then
+
+301
+00:13:46,623 --> 00:13:49,695
+Scroll down to that where that snippet should have been added
+
+302
+00:13:50,719 --> 00:13:56,607
+So in the anthropometry component it set not like the other because we added the overwrite
+
+303
+00:13:57,119 --> 00:14:00,447
+Then in the medical aid component it added those
+
+304
+00:14:00,703 --> 00:14:03,775
+That's very strange string A typed out
+
+305
+00:14:04,031 --> 00:14:06,335
+And in the coral component
+
+306
+00:14:06,591 --> 00:14:08,127
+Nice little dot trick
+
+307
+00:14:08,383 --> 00:14:10,943
+It also added that little
+
+308
+00:14:11,455 --> 00:14:11,967
+Snippet
+
+309
+00:14:12,479 --> 00:14:16,831
+Now to show you how easy it is to overwrite this again on a component level
+
+310
+00:14:17,343 --> 00:14:18,623
+Let me open this up
+
+311
+00:14:19,135 --> 00:14:20,671
+Let me go to the components
+
+312
+00:14:21,951 --> 00:14:22,463
+And
+
+313
+00:14:22,975 --> 00:14:23,743
+to Coral
+
+314
+00:14:25,535 --> 00:14:28,607
+An add a that snippet in here
+
+315
+00:14:30,143 --> 00:14:30,655
+And
+
+316
+00:14:31,679 --> 00:14:32,959
+That
+
+317
+00:14:33,983 --> 00:14:35,263
+Easy
+
+318
+00:14:36,287 --> 00:14:37,311
+Save and close
+
+319
+00:14:38,591 --> 00:14:40,895
+And then we compile that one again
+
+320
+00:14:47,551 --> 00:14:49,343
+Now we open the IDE again
+
+321
+00:14:51,135 --> 00:14:52,159
+And that easy
+
+322
+00:14:53,951 --> 00:14:54,463
+So
+
+323
+00:14:54,719 --> 00:15:00,863
+That is the power of placeholders it really replaces only from where the placeholder starts to where it ends.
+
+324
+00:15:01,119 --> 00:15:07,263
+It means you have the ability to change that little text to have the ability to
+
+325
+00:15:07,519 --> 00:15:08,031
+Change
+
+326
+00:15:08,287 --> 00:15:09,055
+You know
+
+327
+00:15:09,311 --> 00:15:09,823
+This
+
+328
+00:15:11,359 --> 00:15:12,383
+Yes you actually able to
+
+329
+00:15:12,639 --> 00:15:14,175
+Change even the little dot 
+
+330
+00:15:14,431 --> 00:15:15,455
+You add a space
+
+331
+00:15:15,711 --> 00:15:16,223
+Or
+
+332
+00:15:16,479 --> 00:15:17,759
+I'm not sure about the
+
+333
+00:15:18,015 --> 00:15:18,527
+Space one
+
+334
+00:15:19,807 --> 00:15:21,599
+That might be over eager but
+
+335
+00:15:22,111 --> 00:15:27,487
+The reality is it's really powerful you're able to anywhere add a dynamic string
+
+336
+00:15:27,999 --> 00:15:30,815
+Which you then can overwrite on a component level
+
+337
+00:15:32,863 --> 00:15:36,447
+So yes I hope you find it very useful
+
+338
+00:15:36,703 --> 00:15:42,335
+Because I am finding it at this stage I have components that
+
+339
+00:15:42,847 --> 00:15:43,615
+Actually
+
+340
+00:15:43,871 --> 00:15:45,663
+Run together or
+
+341
+00:15:45,919 --> 00:15:46,687
+How can I say
+
+342
+00:15:46,943 --> 00:15:49,759
+And all these components build on top of coral
+
+343
+00:15:50,527 --> 00:15:51,295
+Coral
+
+344
+00:15:51,551 --> 00:15:53,087
+Itself is a
+
+345
+00:15:53,343 --> 00:15:53,855
+Sort of
+
+346
+00:15:54,367 --> 00:15:54,879
+Central
+
+347
+00:15:55,135 --> 00:15:57,951
+Integration hub if you will
+
+348
+00:15:58,463 --> 00:15:59,999
+Where all these components
+
+349
+00:16:00,511 --> 00:16:02,047
+you know connect into
+
+350
+00:16:02,303 --> 00:16:02,815
+Coral
+
+351
+00:16:03,327 --> 00:16:04,607
+And create
+
+352
+00:16:05,119 --> 00:16:06,655
+Exciting kind of
+
+353
+00:16:06,911 --> 00:16:07,935
+Interface
+
+354
+00:16:08,959 --> 00:16:15,103
+So that means I often need to rename certain values differently just based
+
+355
+00:16:15,359 --> 00:16:15,871
+On
+
+356
+00:16:16,127 --> 00:16:17,407
+The actual component
+
+357
+00:16:17,919 --> 00:16:18,431
+And
+
+358
+00:16:18,687 --> 00:16:22,271
+This way I'm able to have that kind of placeholder Power
+
+359
+00:16:22,783 --> 00:16:25,855
+And replacing it and have the same code snippet
+
+360
+00:16:26,111 --> 00:16:32,255
+Across these components but just because it's now in this component is actually being updated differently
+
+361
+00:16:32,511 --> 00:16:35,071
+Then it would in for example this one
+
+362
+00:16:36,095 --> 00:16:38,143
+And yeah they are even more
+
+363
+00:16:38,399 --> 00:16:39,167
+Implementations
+
+364
+00:16:39,423 --> 00:16:42,751
+But I think this would be enough to get you going
+
+365
+00:16:44,031 --> 00:16:45,055
+and help you understand
+
+366
+00:16:45,311 --> 00:16:47,615
+Why we added placeholders
+
+367
+00:16:48,895 --> 00:16:51,711
+And where we think it will be able to
+
+368
+00:16:52,223 --> 00:16:54,527
+Take the JCB community
+
+369
+00:16:55,039 --> 00:16:55,551
+With
+
+370
+00:16:55,807 --> 00:16:58,111
+More creative abilities
+
+371
+00:16:58,623 --> 00:16:59,647
+Right inside
+
+372
+00:16:59,903 --> 00:17:00,671
+The 
+
+373
+00:17:01,183 --> 00:17:02,719
+The graphic interface
+
+374
+00:17:02,975 --> 00:17:03,999
+Of JCB
+
+375
+00:17:04,767 --> 00:17:05,791
+Well again
+
+376
+00:17:06,047 --> 00:17:07,839
+As always thank you for watching
+
+377
+00:17:08,095 --> 00:17:13,215
+Let me know if you have any questions either in the comments or on the Forum
+
+378
+00:17:13,727 --> 00:17:14,495
+You're most welcome.
+

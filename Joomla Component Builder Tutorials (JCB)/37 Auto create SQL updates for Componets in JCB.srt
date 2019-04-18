@@ -1,0 +1,720 @@
+1
+00:00:00,768 --> 00:00:01,280
+Hi
+
+2
+00:00:01,536 --> 00:00:06,400
+I would like to demonstrate to you one of the latest features that's been added to JCB
+
+3
+00:00:07,168 --> 00:00:09,984
+If it's a request was made about 11 days ago
+
+4
+00:00:10,496 --> 00:00:13,056
+Auto generate my update SQL
+
+5
+00:00:13,568 --> 00:00:16,128
+After a lengthy discussion
+
+6
+00:00:16,384 --> 00:00:18,944
+the decision was made to add the
+
+7
+00:00:19,968 --> 00:00:26,112
+The future and I am basically done doing so first let me give you some 
+
+8
+00:00:26,368 --> 00:00:28,416
+Background so you can understand where we coming from
+
+9
+00:00:29,184 --> 00:00:32,000
+When you create a component in Joomla
+
+10
+00:00:32,768 --> 00:00:38,144
+Then usually you have a set of views and the views and the backend are linked to a set of tables
+
+11
+00:00:38,400 --> 00:00:40,960
+I'm so on the installation of the component
+
+12
+00:00:43,264 --> 00:00:46,592
+For example if we do so here with JCB
+
+13
+00:00:46,848 --> 00:00:48,128
+It actually
+
+14
+00:00:48,640 --> 00:00:51,712
+Builds the tables for those views on installation
+
+15
+00:00:51,968 --> 00:00:55,552
+So then if you go to the back end of the component
+
+16
+00:00:57,088 --> 00:00:57,600
+And
+
+17
+00:00:57,856 --> 00:00:59,904
+You create a new item
+
+18
+00:01:09,120 --> 00:01:12,192
+it actually stores the value in the database
+
+19
+00:01:12,448 --> 00:01:15,520
+So that it can be retrieved that's very basic
+
+20
+00:01:15,776 --> 00:01:17,312
+The reality is
+
+21
+00:01:17,568 --> 00:01:19,872
+If you as a developer make a change
+
+22
+00:01:20,128 --> 00:01:21,152
+To this component
+
+23
+00:01:21,664 --> 00:01:23,712
+Which involves new tables
+
+24
+00:01:24,224 --> 00:01:24,992
+Then
+
+25
+00:01:25,760 --> 00:01:28,064
+Obviously you would need to add
+
+26
+00:01:28,320 --> 00:01:30,624
+Extra script to your components package
+
+27
+00:01:30,880 --> 00:01:32,928
+So did upon installation
+
+28
+00:01:33,184 --> 00:01:39,328
+If it finds that there is already an existing component it will actually update the database accordingly to the
+
+29
+00:01:39,584 --> 00:01:43,424
+New settings the new tables or any Fields added or so forth
+
+30
+00:01:43,936 --> 00:01:46,496
+So we gonna demonstrate this
+
+31
+00:01:47,008 --> 00:01:53,152
+In JCB there used to be a way to do that which still works by the way it was
+
+32
+00:01:53,408 --> 00:01:59,552
+manual way a way for you to manually add the new SQL statements
+
+33
+00:01:59,808 --> 00:02:05,952
+That are needed to make the update, it was done under this version updates tab so you would click on a version 
+
+34
+00:02:06,208 --> 00:02:12,352
+Updates tab and here you would add your specific sequel
+
+35
+00:02:12,608 --> 00:02:17,216
+Query script and upon installation
+
+36
+00:02:17,472 --> 00:02:20,032
+If the existing version is below
+
+37
+00:02:22,080 --> 00:02:27,712
+This update it will grab this and install it into the database creating the new tables and so forth
+
+38
+00:02:28,224 --> 00:02:29,248
+So
+
+39
+00:02:29,504 --> 00:02:34,880
+What I'm gonna do now is you'll see that at the moment
+
+40
+00:02:35,136 --> 00:02:38,720
+This admin view has only 1 2 3 4 5 6
+
+41
+00:02:38,976 --> 00:02:39,744
+Views
+
+42
+00:02:40,000 --> 00:02:43,072
+I'm gonna add another View to this component
+
+43
+00:02:47,168 --> 00:02:49,472
+You can see it doesn't have these buttons ticked
+
+44
+00:02:49,984 --> 00:02:52,800
+I don't not know how to resolve this it seems like
+
+45
+00:02:53,056 --> 00:02:54,592
+This is a Joomla problem
+
+46
+00:02:54,848 --> 00:02:56,128
+Because there are multiple
+
+47
+00:02:56,384 --> 00:02:59,456
+Columns in this view
+
+48
+00:02:59,712 --> 00:03:01,760
+Because if you close it and click it again
+
+49
+00:03:02,016 --> 00:03:08,160
+And actually fixes that anyway that's just by the way so now here I'm gonna add a new
+
+50
+00:03:08,416 --> 00:03:09,184
+View
+
+51
+00:03:09,696 --> 00:03:14,560
+Called help documents and just make some minor changes to the defaults
+
+52
+00:03:14,816 --> 00:03:16,864
+Add it to the 7th position
+
+53
+00:03:17,120 --> 00:03:20,448
+And then click save and click save again
+
+54
+00:03:20,704 --> 00:03:26,080
+So now we basically add a new view which means a new table to the database
+
+55
+00:03:26,336 --> 00:03:28,896
+But we haven't written any of the SQL
+
+56
+00:03:29,152 --> 00:03:35,296
+Because with the new changes this is gonna be done for you automatically on the moment to compile this
+
+57
+00:03:35,552 --> 00:03:36,064
+Component
+
+58
+00:03:36,832 --> 00:03:37,856
+So let's do that
+
+59
+00:03:39,904 --> 00:03:46,048
+So now here we are, we are going again compile this component you see it's version is it still 
+
+60
+00:03:46,560 --> 00:03:48,608
+1.4.1
+
+61
+00:03:49,120 --> 00:03:49,632
+So
+
+62
+00:03:49,888 --> 00:03:50,912
+We are compiling it
+
+63
+00:03:51,680 --> 00:03:57,824
+Now what the system is doing is, it is checking the history and it's making a lot of calculation
+
+64
+00:03:58,080 --> 00:04:02,176
+To dynamically realise that there is been a new table increment
+
+65
+00:04:02,432 --> 00:04:03,968
+The version number
+
+66
+00:04:04,224 --> 00:04:04,736
+And
+
+67
+00:04:04,992 --> 00:04:06,784
+If I now
+
+68
+00:04:07,552 --> 00:04:09,600
+Install this component
+
+69
+00:04:10,368 --> 00:04:13,696
+And I go and open that component
+
+70
+00:04:15,488 --> 00:04:19,839
+I'll see that the new view is here if I open the view there is no errors
+
+71
+00:04:20,351 --> 00:04:21,631
+if I create new
+
+72
+00:04:22,143 --> 00:04:28,031
+ it'll automatically start behaving the way that is expected
+
+73
+00:04:30,079 --> 00:04:31,103
+And
+
+74
+00:04:31,615 --> 00:04:32,383
+That is really
+
+75
+00:04:33,407 --> 00:04:34,431
+Let say,
+
+76
+00:04:34,687 --> 00:04:35,199
+text
+
+77
+00:04:35,455 --> 00:04:36,991
+And then, hi
+
+78
+00:04:38,015 --> 00:04:39,551
+So we are targeting
+
+79
+00:04:40,063 --> 00:04:40,831
+The
+
+80
+00:04:41,087 --> 00:04:42,623
+External sources
+
+81
+00:04:43,135 --> 00:04:44,671
+So forgot
+
+82
+00:04:45,695 --> 00:04:46,719
+Few other things here
+
+83
+00:04:48,511 --> 00:04:49,535
+as you can see
+
+84
+00:04:49,791 --> 00:04:52,095
+The database already stores the values
+
+85
+00:04:52,351 --> 00:04:58,495
+And the new table is actually therefore in the database and working as expected now
+
+86
+00:04:58,751 --> 00:05:00,287
+ you realize that
+
+87
+00:05:00,799 --> 00:05:02,335
+This means that our
+
+88
+00:05:02,847 --> 00:05:04,127
+JCB component
+
+89
+00:05:04,383 --> 00:05:07,199
+Has been updated so if I refresh this page
+
+90
+00:05:11,295 --> 00:05:13,855
+You'll see that the version number has been incremented
+
+91
+00:05:14,111 --> 00:05:19,999
+And if you open the version updates and scroll down you would see that one point
+
+92
+00:05:20,255 --> 00:05:21,023
+.......
+
+93
+00:05:21,535 --> 00:05:23,071
+1.4 .1
+
+94
+00:05:23,327 --> 00:05:24,351
+Got this new
+
+95
+00:05:24,863 --> 00:05:27,423
+creating of a help document
+
+96
+00:05:27,679 --> 00:05:28,447
+Table
+
+97
+00:05:28,959 --> 00:05:31,775
+And a new version got allocated here
+
+98
+00:05:32,031 --> 00:05:38,175
+Obviously we do not know what is this link and so we add this demo link here which you need to manually update
+
+99
+00:05:38,431 --> 00:05:38,943
+ still
+
+100
+00:05:39,199 --> 00:05:44,063
+But that is by far a tremendous improvement
+
+101
+00:05:44,319 --> 00:05:47,391
+Ok this also works not only with
+
+102
+00:05:47,647 --> 00:05:53,791
+The adding of a new view but also if you were to add a field
+
+103
+00:05:54,047 --> 00:05:58,911
+To an existing view so let me demonstrate that quickly
+
+104
+00:05:59,935 --> 00:06:03,007
+So I'm gonna be adding a new field to the preacher View
+
+105
+00:06:03,263 --> 00:06:07,871
+I'm simply gonna select any Fields since I will removed again
+
+106
+00:06:08,127 --> 00:06:09,663
+Let's call it
+
+107
+00:06:16,575 --> 00:06:17,599
+Image
+
+108
+00:06:19,391 --> 00:06:22,463
+And I'm gonna add this to left
+
+109
+00:06:23,743 --> 00:06:24,767
+One
+
+110
+00:06:25,535 --> 00:06:27,327
+That must be then two
+
+111
+00:06:27,839 --> 00:06:28,863
+And save
+
+112
+00:06:29,631 --> 00:06:30,911
+And save and close
+
+113
+00:06:31,423 --> 00:06:33,983
+So now I've added a new field to preachers
+
+114
+00:06:34,751 --> 00:06:37,567
+And again I'll be going to the compiler
+
+115
+00:06:40,639 --> 00:06:44,479
+And I'll select the component and just compile
+
+116
+00:06:44,991 --> 00:06:49,855
+And again since it detected there's been a field change it incremented the version number
+
+117
+00:06:50,879 --> 00:06:53,183
+And if I install the component
+
+118
+00:06:53,439 --> 00:06:54,975
+And we go to the component
+
+119
+00:06:56,767 --> 00:06:58,047
+To the preachers View
+
+120
+00:07:00,095 --> 00:07:01,119
+We'll now see
+
+121
+00:07:02,143 --> 00:07:03,935
+That new field actually there
+
+122
+00:07:04,191 --> 00:07:04,703
+Image
+
+123
+00:07:05,727 --> 00:07:07,519
+And if I was to select an image
+
+124
+00:07:11,103 --> 00:07:12,127
+And save
+
+125
+00:07:13,919 --> 00:07:14,943
+You'll see that it
+
+126
+00:07:15,199 --> 00:07:15,711
+Really
+
+127
+00:07:15,967 --> 00:07:19,807
+Oops I see I actually missed it
+
+128
+00:07:20,063 --> 00:07:21,599
+The reason was that
+
+129
+00:07:23,135 --> 00:07:29,279
+This component didn't have any history so I had to go and make a few changes take into
+
+130
+00:07:29,535 --> 00:07:33,631
+account that your building a component from the ground up it will have history
+
+131
+00:07:33,887 --> 00:07:38,751
+So this is only gonna be happening when you have install a component
+
+132
+00:07:39,007 --> 00:07:44,639
+via the import function in the components or maybe using the demo component
+
+133
+00:07:45,151 --> 00:07:51,295
+So what I would advise it just open all the views and save them at least once so that there is history recorded for
+
+134
+00:07:51,551 --> 00:07:52,063
+For that View
+
+135
+00:07:52,319 --> 00:07:58,463
+That is one of the drawbacks there is really no way for me to my negate that issue
+
+136
+00:07:58,719 --> 00:08:00,255
+Since the history
+
+137
+00:08:00,511 --> 00:08:03,583
+Of each of these different items
+
+138
+00:08:03,839 --> 00:08:09,983
+Being at the admin view and the fields actually needs to be created the moment that you saved the item
+
+139
+00:08:10,239 --> 00:08:12,799
+And it's really can't be done before then
+
+140
+00:08:13,311 --> 00:08:14,079
+Ok
+
+141
+00:08:14,335 --> 00:08:15,871
+So taking that an account
+
+142
+00:08:16,127 --> 00:08:19,199
+I'll recompile it again and fix
+
+143
+00:08:19,455 --> 00:08:22,783
+That so it should increment it to 1.4.3
+
+144
+00:08:24,319 --> 00:08:26,111
+I will just install that
+
+145
+00:08:26,367 --> 00:08:26,879
+Again
+
+146
+00:08:31,231 --> 00:08:35,071
+Going back to refreshing the preacher will see that
+
+147
+00:08:36,863 --> 00:08:38,655
+Image field is back
+
+148
+00:08:39,423 --> 00:08:40,959
+now select an image
+
+149
+00:08:43,775 --> 00:08:45,823
+Click save and now you'll see
+
+150
+00:08:46,591 --> 00:08:49,407
+That it actually does store the data for this image
+
+151
+00:08:49,663 --> 00:08:51,711
+Because if we refresh the
+
+152
+00:08:55,551 --> 00:08:58,367
+The component will see that it is again
+
+153
+00:08:58,879 --> 00:09:00,159
+Incremented the version
+
+154
+00:09:00,415 --> 00:09:01,695
+If I open the
+
+155
+00:09:02,207 --> 00:09:03,487
+Update area
+
+156
+00:09:03,999 --> 00:09:05,791
+You see that it actually
+
+157
+00:09:06,047 --> 00:09:07,583
+Added this new
+
+158
+00:09:08,095 --> 00:09:11,679
+Altering of the preacher table adding the image
+
+159
+00:09:11,935 --> 00:09:12,447
+Field
+
+160
+00:09:12,703 --> 00:09:14,751
+And it is also added the new
+
+161
+00:09:16,287 --> 00:09:18,079
+Version to this list
+
+162
+00:09:19,103 --> 00:09:24,223
+Ok so that is a quick demonstration of this new feature automated feature
+
+163
+00:09:24,735 --> 00:09:27,295
+It is in its very beta
+
+164
+00:09:27,551 --> 00:09:29,855
+Phase we obviously still gonna
+
+165
+00:09:30,367 --> 00:09:33,439
+Be working at it to make sure that it's completely stable
+
+166
+00:09:33,951 --> 00:09:35,999
+So please
+
+167
+00:09:37,023 --> 00:09:43,167
+Take a go at it if you find any bugs open look for other open issues which may be
+
+168
+00:09:43,423 --> 00:09:45,215
+Someone already reported
+
+169
+00:09:45,471 --> 00:09:48,799
+And start commenting on that what you think should be done
+
+170
+00:09:49,311 --> 00:09:54,943
+And if you don't find any then please open an issue and let us let us fix this issue
+
+171
+00:09:55,199 --> 00:10:00,063
+I think this will be a tremendous improvement to JCB
+
+172
+00:10:00,319 --> 00:10:01,343
+Making it
+
+173
+00:10:01,599 --> 00:10:04,159
+Again with the one of the best
+
+174
+00:10:04,671 --> 00:10:05,695
+Joomla component
+
+175
+00:10:05,951 --> 00:10:06,975
+Developing tools
+
+176
+00:10:07,231 --> 00:10:08,255
+Out there today
+
+177
+00:10:08,511 --> 00:10:12,351
+Where it is even writing your update sequel for you
+
+178
+00:10:13,887 --> 00:10:17,471
+Just by you being busy working and improving your component
+
+179
+00:10:17,983 --> 00:10:20,799
+Without being concerned about that
+
+180
+00:10:21,311 --> 00:10:22,335
+Thank you for watching
+

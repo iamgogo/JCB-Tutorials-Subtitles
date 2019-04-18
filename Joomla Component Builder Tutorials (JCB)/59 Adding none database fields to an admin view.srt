@@ -1,0 +1,480 @@
+1
+00:00:01,280 --> 00:00:03,072
+We've added a new function
+
+2
+00:00:03,584 --> 00:00:07,168
+To JCB which allows you to add a field
+
+3
+00:00:07,936 --> 00:00:08,960
+to a view
+
+4
+00:00:09,728 --> 00:00:12,288
+Without adding the field to the database
+
+5
+00:00:13,056 --> 00:00:14,592
+Now when will that be useful
+
+6
+00:00:15,360 --> 00:00:16,128
+Usually
+
+7
+00:00:16,384 --> 00:00:20,736
+When you have a field which maybe is getting data from another table
+
+8
+00:00:21,248 --> 00:00:22,016
+And
+
+9
+00:00:22,272 --> 00:00:27,904
+You want to actually change the behaviour on the page based on the data selected
+
+10
+00:00:28,928 --> 00:00:31,232
+But that selection itself isn't relevant
+
+11
+00:00:32,000 --> 00:00:35,072
+Or when you want to actually combine two fields
+
+12
+00:00:35,328 --> 00:00:37,888
+As one in the database
+
+13
+00:00:38,400 --> 00:00:40,960
+Then you could have both fields on the page
+
+14
+00:00:41,216 --> 00:00:45,312
+And on submission in your save area in the admin View
+
+15
+00:00:45,824 --> 00:00:49,152
+You can add some custom PHP script
+
+16
+00:00:49,408 --> 00:00:51,712
+To take the value from that other field
+
+17
+00:00:52,480 --> 00:00:53,504
+And actually
+
+18
+00:00:53,760 --> 00:00:55,552
+Save it in to this
+
+19
+00:00:56,064 --> 00:00:57,600
+Field that you intend to
+
+20
+00:00:58,624 --> 00:01:00,416
+Combine the two values
+
+21
+00:01:01,184 --> 00:01:05,280
+And so you don't want both values to be stored in the database
+
+22
+00:01:07,328 --> 00:01:11,168
+Or the other option is you have fields on a page which
+
+23
+00:01:11,680 --> 00:01:15,264
+Actually only get used to generate data in another table
+
+24
+00:01:16,288 --> 00:01:20,640
+So when you save that item it takes those values put it into
+
+25
+00:01:20,896 --> 00:01:22,432
+The other table
+
+26
+00:01:23,200 --> 00:01:24,736
+And basically
+
+27
+00:01:24,992 --> 00:01:27,296
+Leave just one value in this table
+
+28
+00:01:27,808 --> 00:01:32,160
+Which next time you open it up all those fields are hidden based on that value selection
+
+29
+00:01:32,416 --> 00:01:33,184
+Something like that
+
+30
+00:01:34,208 --> 00:01:39,328
+So it's really got multiple implementations and sort of helps you to get
+
+31
+00:01:39,584 --> 00:01:41,376
+A subform on the page
+
+32
+00:01:41,632 --> 00:01:43,680
+Or any kind of other field type
+
+33
+00:01:44,192 --> 00:01:47,008
+To be able to you know use it
+
+34
+00:01:47,264 --> 00:01:48,032
+Once
+
+35
+00:01:48,288 --> 00:01:52,384
+You know what use it within your custom scripting either in JavaScript
+
+36
+00:01:52,896 --> 00:01:54,176
+Or in PHP
+
+37
+00:01:54,688 --> 00:01:59,552
+A previously this wasn't possible if you add a field to view it always gonna get
+
+38
+00:02:00,064 --> 00:02:01,600
+Stored into the database
+
+39
+00:02:02,112 --> 00:02:02,880
+But now
+
+40
+00:02:03,648 --> 00:02:05,184
+If you go to admin views
+
+41
+00:02:07,232 --> 00:02:07,744
+And
+
+42
+00:02:08,256 --> 00:02:09,024
+You well
+
+43
+00:02:10,560 --> 00:02:12,864
+Let's take one
+
+44
+00:02:13,632 --> 00:02:15,680
+That has this function going
+
+45
+00:02:16,448 --> 00:02:17,984
+We use the admin view
+
+46
+00:02:19,776 --> 00:02:20,288
+Fields
+
+47
+00:02:24,128 --> 00:02:26,176
+So you'll see that this new
+
+48
+00:02:26,432 --> 00:02:27,456
+Feature is
+
+49
+00:02:28,224 --> 00:02:31,040
+Replaced your admin view list option
+
+50
+00:02:31,808 --> 00:02:33,856
+Because now you got show in list
+
+51
+00:02:34,368 --> 00:02:37,184
+And then you have the default which was the previous
+
+52
+00:02:37,696 --> 00:02:39,232
+Check or uncheck option
+
+53
+00:02:40,256 --> 00:02:42,304
+Which basically is 1 and 0
+
+54
+00:02:44,096 --> 00:02:45,632
+But now you got a third one
+
+55
+00:02:45,888 --> 00:02:48,448
+Which is called No DB
+
+56
+00:02:49,728 --> 00:02:55,872
+I have a field called not required which basically is what you would usually add
+
+57
+00:02:56,384 --> 00:02:57,664
+If you are using
+
+58
+00:03:00,736 --> 00:03:02,528
+Conditional JCBs
+
+59
+00:03:02,784 --> 00:03:04,576
+Internal conditional option
+
+60
+00:03:04,832 --> 00:03:07,904
+And you have Fields that actually are required
+
+61
+00:03:08,416 --> 00:03:11,744
+But within certain criteria those fields are hidden
+
+62
+00:03:12,000 --> 00:03:13,792
+And obviously then not required
+
+63
+00:03:14,560 --> 00:03:17,376
+Then I'm using this not required field
+
+64
+00:03:18,144 --> 00:03:22,752
+To basically Store Some values with JavaScript that upon submission
+
+65
+00:03:23,264 --> 00:03:26,080
+It did adapts the validation on the server side
+
+66
+00:03:27,104 --> 00:03:27,616
+Now
+
+67
+00:03:28,128 --> 00:03:31,456
+I don't really want that value in the database so I'm using this
+
+68
+00:03:31,968 --> 00:03:33,504
+Non DB option
+
+69
+00:03:34,016 --> 00:03:38,112
+If you changed any other Fields I'm just gonna do demonstration
+
+70
+00:03:38,368 --> 00:03:42,208
+Obviously I do want this field in the database but just to sort of show you
+
+71
+00:03:42,720 --> 00:03:44,512
+If you select no DB
+
+72
+00:03:45,280 --> 00:03:47,584
+It will automatically give you this notice
+
+73
+00:03:48,352 --> 00:03:50,144
+Basically these two notices
+
+74
+00:03:50,656 --> 00:03:53,216
+The one saying the non DB option
+
+75
+00:03:53,728 --> 00:03:57,056
+Will remove this field from being saved in the database
+
+76
+00:03:57,568 --> 00:03:58,848
+And then this one
+
+77
+00:03:59,104 --> 00:04:03,456
+Only use the non DB option if you're planning on targeting this field
+
+78
+00:04:03,968 --> 00:04:06,272
+With JavaScript or custom PHP
+
+79
+00:04:07,040 --> 00:04:12,160
+To move it's value into another field that does get saved
+
+80
+00:04:12,416 --> 00:04:13,184
+to the database
+
+81
+00:04:13,440 --> 00:04:16,256
+In one form or another basically saying to you
+
+82
+00:04:16,512 --> 00:04:20,607
+But if you use this value we not gonna store whatever is placed
+
+83
+00:04:20,863 --> 00:04:21,375
+In it
+
+84
+00:04:21,631 --> 00:04:23,423
+In the database for you
+
+85
+00:04:23,679 --> 00:04:24,959
+You will need to manually
+
+86
+00:04:25,471 --> 00:04:25,983
+Do that
+
+87
+00:04:26,751 --> 00:04:29,567
+So that's really why it's there it's really for custom
+
+88
+00:04:29,823 --> 00:04:33,151
+customization to your components behaviour
+
+89
+00:04:34,687 --> 00:04:37,247
+And so you'll see that also clears out
+
+90
+00:04:37,503 --> 00:04:40,319
+All your selections because None of these features
+
+91
+00:04:40,575 --> 00:04:41,599
+Will be
+
+92
+00:04:41,855 --> 00:04:45,951
+Of you know be used well a vailable to this field
+
+93
+00:04:46,207 --> 00:04:47,231
+Because this field
+
+94
+00:04:47,743 --> 00:04:49,023
+After saving
+
+95
+00:04:49,279 --> 00:04:51,839
+Dumps is value and it doesn't exist
+
+96
+00:04:52,607 --> 00:04:54,655
+Unless you grab it and
+
+97
+00:04:54,911 --> 00:04:55,935
+you know
+
+98
+00:04:56,703 --> 00:04:57,983
+Use it into your script
+
+99
+00:04:59,007 --> 00:04:59,775
+Ok so
+
+100
+00:05:00,543 --> 00:05:02,335
+If you use the list option
+
+101
+00:05:03,871 --> 00:05:05,663
+We now have this automated
+
+102
+00:05:05,919 --> 00:05:06,943
+Counter adding
+
+103
+00:05:07,455 --> 00:05:07,967
+So
+
+104
+00:05:08,223 --> 00:05:11,551
+Every time you do that if counts all the fields that are available
+
+105
+00:05:11,807 --> 00:05:13,087
+Already in your script
+
+106
+00:05:13,599 --> 00:05:15,903
+And then it adds the next
+
+107
+00:05:16,415 --> 00:05:17,439
+Logic number
+
+108
+00:05:17,695 --> 00:05:22,815
+But anyway that's Beyond of what I'm actually explaining or demonstrating
+
+109
+00:05:23,327 --> 00:05:24,351
+So for now
+
+110
+00:05:24,607 --> 00:05:25,631
+Our
+
+111
+00:05:26,399 --> 00:05:27,423
+Purpose here
+
+112
+00:05:27,935 --> 00:05:30,239
+Is to show you that there is a new
+
+113
+00:05:30,495 --> 00:05:31,519
+No DB
+
+114
+00:05:32,799 --> 00:05:34,079
+Field behaviour
+
+115
+00:05:34,847 --> 00:05:37,151
+Which Some of you have been requesting
+
+116
+00:05:37,919 --> 00:05:40,223
+And I also needed it in the past
+
+117
+00:05:40,991 --> 00:05:43,295
+So it's available now
+
+118
+00:05:43,551 --> 00:05:45,343
+You can try it out play with it
+
+119
+00:05:46,111 --> 00:05:48,927
+And of course if it doesn't make sense to you just don't use it
+
+120
+00:05:49,183 --> 00:05:51,999
+Ok well thanks for watching
+
