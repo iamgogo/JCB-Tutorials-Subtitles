@@ -4,15 +4,15 @@ So we've added another nice sort of improvement I would say by request
 
 2
 00:00:07,168 --> 00:00:08,448
-Of one of our
+of one of our
 
 3
 00:00:10,752 --> 00:00:11,520
-Shallow
+fellow
 
 4
 00:00:12,032 --> 00:00:13,056
-Developers
+developers
 
 5
 00:00:14,592 --> 00:00:16,128
@@ -277,3 +277,4 @@ Database values for your Fields well enjoy
 70
 00:03:24,544 --> 00:03:25,568
 Thanks for watching
+
