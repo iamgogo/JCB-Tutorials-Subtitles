@@ -2000,7 +2000,7 @@ Anyway
 
 501
 00:20:14,975 --> 00:20:19,071
-Open the custom code area and go back into criptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptcriptdocuments
+Open the custom code area and go back into documents
 
 502
 00:20:20,095 --> 00:20:22,143
